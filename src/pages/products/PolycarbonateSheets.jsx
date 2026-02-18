@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { FaArrowLeft, FaCheckCircle, FaSun, FaMapMarkerAlt } from 'react-icons/fa';
+import SEO from '../../components/shared/SEO';
 import Card from '../../components/shared/Card';
 import Button from '../../components/shared/Button';
 import styles from './ProductCategory.module.css';
@@ -70,6 +72,14 @@ const PolycarbonateSheets = () => {
 
     return (
         <div className={styles.productPage}>
+            <SEO
+                title="High-Rib Polycarbonate Sheets in Navi Mumbai | Zinco"
+                description="Unbreakable high-rib polycarbonate roofing sheets for industrial skylights in Taloja, Rabale, and Panvel. Superior light transmission and UV protection."
+                keywords="polycarbonate sheets navi mumbai, high rib polycarbonate, industrial skylights, transparent roofing sheets"
+            />
+            <Helmet>
+                <link rel="preload" as="image" href={heroImg} />
+            </Helmet>
             <div className={styles.hero} style={{ '--hero-image': `url(${heroImg})` }} fetchpriority="high">
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>

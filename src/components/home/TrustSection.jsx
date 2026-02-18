@@ -74,7 +74,7 @@ const TrustSection = () => {
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
                     >
-                        Why Industry Leaders Trust Us
+                        PUF Panel & Metal Roofing Experts in Navi Mumbai
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}

@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { FaArrowLeft, FaCheckCircle, FaTools, FaMapMarkerAlt } from 'react-icons/fa';
+import SEO from '../../components/shared/SEO';
 import Card from '../../components/shared/Card';
 import Button from '../../components/shared/Button';
 import heroImage from '../../assets/services-hero.png';
@@ -64,6 +66,14 @@ const UPVCHighRibSheets = () => {
 
     return (
         <div className={styles.productPage}>
+            <SEO
+                title="3-Layer UPVC High-Rib Sheets in Navi Mumbai | Zinco"
+                description="Anti-corrosive 3-layer UPVC roofing sheets for chemical factories in Taloja, Uran, and Panvel. Heat insulating and acid resistant."
+                keywords="upvc roofing sheets, 3 layer upvc sheets, anti corrosion roofing, chemical factory roofing mumbai, upvc high rib"
+            />
+            <Helmet>
+                <link rel="preload" as="image" href={heroImage} />
+            </Helmet>
             <div className={styles.hero} style={{ '--hero-image': `url(${heroImage})` }} fetchpriority="high">
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>

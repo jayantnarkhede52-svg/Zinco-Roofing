@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { FaArrowLeft, FaCheckCircle, FaShieldAlt, FaMapMarkerAlt, FaExpand } from 'react-icons/fa';
+import { Helmet } from 'react-helmet-async';
+import { FaArrowLeft, FaCheckCircle, FaShieldAlt, FaMapMarkerAlt, FaExpand, FaPuzzlePiece } from 'react-icons/fa';
+import SEO from '../../components/shared/SEO';
 import Card from '../../components/shared/Card';
 import Button from '../../components/shared/Button';
 import styles from './ProductCategory.module.css';
@@ -75,6 +77,14 @@ const UPVCSheets = () => {
 
     return (
         <div className={styles.productPage}>
+            <SEO
+                title="UPVC Roofing Sheets in Navi Mumbai & Panvel | Zinco"
+                description="Durable UPVC roofing sheets for industrial and warehousing projects in Taloja, Panvel, and JNPT. Corrosion-free and heat reducing."
+                keywords="upvc sheets navi mumbai, plastic roofing sheets, industrial roofing sheets, upvc roof panels, heat resistant roofing"
+            />
+            <Helmet>
+                <link rel="preload" as="image" href={heroImg} />
+            </Helmet>
             <div className={styles.hero} style={{ '--hero-image': `url(${heroImg})` }} fetchpriority="high">
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>
@@ -138,6 +148,40 @@ const UPVCSheets = () => {
                                 ))}
                             </div>
                         </Card>
+                    </section>
+
+                    <section className={styles.section}>
+                        <h2>Accessories List</h2>
+                        <div className={styles.accessoriesGrid}>
+                            {[
+                                { name: '4-way Ridge' },
+                                { name: 'Wall Flashing' },
+                                { name: 'Top Ridge Cover' },
+                                { name: 'Top Ridge' },
+                                { name: 'Three Way Ridge' },
+                                { name: 'Inside Corner Deflector' },
+                                { name: 'Synthetic Resin Tile' },
+                                { name: 'Side Cover' },
+                                { name: 'Diagonal Ridge' },
+                                { name: 'End of Ridge' },
+                                { name: 'Sealing Eaves Tile' },
+                                { name: 'Upvc Screw with Cap' }
+                            ].map((item, index) => (
+                                <motion.div
+                                    key={index}
+                                    className={styles.accessoryCard}
+                                    initial={{ opacity: 0, scale: 0.9 }}
+                                    whileInView={{ opacity: 1, scale: 1 }}
+                                    viewport={{ once: true }}
+                                    transition={{ delay: index * 0.05 }}
+                                >
+                                    <div className={styles.accessoryIcon}>
+                                        <FaPuzzlePiece />
+                                    </div>
+                                    <h4>{item.name}</h4>
+                                </motion.div>
+                            ))}
+                        </div>
                     </section>
 
                     <section className={styles.section}>

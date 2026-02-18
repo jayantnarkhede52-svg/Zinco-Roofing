@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { FaArrowLeft, FaCheckCircle, FaStar, FaMapMarkerAlt } from 'react-icons/fa';
+import SEO from '../../components/shared/SEO';
 import Card from '../../components/shared/Card';
 import Button from '../../components/shared/Button';
 import heroImg from '../../assets/productshero/rockwool-hero.png';
@@ -58,6 +60,14 @@ const RockwoolGlasswool = () => {
 
     return (
         <div className={styles.productPage}>
+            <SEO
+                title="Rockwool & Glasswool Roof Panels in Navi Mumbai | Zinco"
+                description="Fire-resistant Rockwool and Glasswool insulated roof panels for industrial sheds and sound studios in Taloja, Rabale, and Mumbai. High acoustic control."
+                keywords="rockwool panels, glasswool insulation, fire resistant roofing, acoustic roof panels mumbai, industrial insulation"
+            />
+            <Helmet>
+                <link rel="preload" as="image" href={heroImg} />
+            </Helmet>
             <div className={styles.hero} style={{ '--hero-image': `url(${heroImg})` }} fetchpriority="high">
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>

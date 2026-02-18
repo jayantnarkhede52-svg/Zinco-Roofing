@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { FaArrowLeft, FaCheckCircle, FaStar, FaMapMarkerAlt, FaExpand } from 'react-icons/fa';
+import SEO from '../../components/shared/SEO';
 import Card from '../../components/shared/Card';
 import Button from '../../components/shared/Button';
 import styles from './ProductCategory.module.css';
@@ -95,6 +97,14 @@ const RoofingMetalSheets = () => {
 
     return (
         <div className={styles.productPage}>
+            <SEO
+                title="Colour Coated Roofing Sheets Manufacturer in Navi Mumbai"
+                description="High-quality color coated roofing sheets (PPGI/PPGL) for industrial sheds in Taloja, Panvel, and Mumbai. Anti-corrosion and durable."
+                keywords="colour coated roofing sheets, ppgi sheets manufacturer, metal roofing sheets navi mumbai, industrial roofing sheets"
+            />
+            <Helmet>
+                <link rel="preload" as="image" href={heroImg} />
+            </Helmet>
             <div className={styles.hero} style={{ '--hero-image': `url(${heroImg})` }} fetchpriority="high">
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>

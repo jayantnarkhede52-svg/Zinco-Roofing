@@ -1,37 +1,62 @@
+import { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
-import Home from './pages/Home';
-import Projects from './pages/Projects';
-import Services from './pages/Services';
-import Products from './pages/Products';
-import Contact from './pages/Contact';
-import Gallery from './pages/Gallery';
-
-// Product Category Pages
-import RoofingMetalSheets from './pages/products/RoofingMetalSheets';
-import InsulatedSheets from './pages/products/InsulatedSheets';
-import RoofingAccessories from './pages/products/RoofingAccessories';
-import PVCUPVCSheets from './pages/products/PVCUPVCSheets';
-import Purlins from './pages/products/Purlins';
-import PolycarbonateSheets from './pages/products/PolycarbonateSheets';
-import Ventilators from './pages/products/Ventilators';
-import PEBFabrication from './pages/products/PEBFabrication';
-import DeckingSheet from './pages/products/DeckingSheet';
-import Shingles from './pages/products/Shingles';
-import MetalTileSheet from './pages/products/MetalTileSheet';
-import RockwoolGlasswool from './pages/products/RockwoolGlasswool';
-import HighRoofSeam from './pages/products/HighRoofSeam';
-import AerolamSheet from './pages/products/AerolamSheet';
-import PVCTileSheet from './pages/products/PVCTileSheet';
-import MultiwallSheets from './pages/products/MultiwallSheets';
-import UPVCHighRibSheets from './pages/products/UPVCHighRibSheets';
-import SyntheticRoof from './pages/products/SyntheticRoof';
-import UPVCSheets from './pages/products/UPVCSheets';
-
 import ScrollToTop from './components/shared/ScrollToTop';
 import Chatbot from './components/shared/Chatbot';
 import './styles/animations.css';
+
+// Lazy load pages
+const Home = lazy(() => import('./pages/Home'));
+const Projects = lazy(() => import('./pages/Projects'));
+const Services = lazy(() => import('./pages/Services'));
+const Products = lazy(() => import('./pages/Products'));
+const Contact = lazy(() => import('./pages/Contact'));
+const Gallery = lazy(() => import('./pages/Gallery'));
+
+// Lazy load product categories
+const RoofingMetalSheets = lazy(() => import('./pages/products/RoofingMetalSheets'));
+const InsulatedSheets = lazy(() => import('./pages/products/InsulatedSheets'));
+const RoofingAccessories = lazy(() => import('./pages/products/RoofingAccessories'));
+const PVCUPVCSheets = lazy(() => import('./pages/products/PVCUPVCSheets'));
+const Purlins = lazy(() => import('./pages/products/Purlins'));
+const PolycarbonateSheets = lazy(() => import('./pages/products/PolycarbonateSheets'));
+const Ventilators = lazy(() => import('./pages/products/Ventilators'));
+const PEBFabrication = lazy(() => import('./pages/products/PEBFabrication'));
+const DeckingSheet = lazy(() => import('./pages/products/DeckingSheet'));
+const Shingles = lazy(() => import('./pages/products/Shingles'));
+const MetalTileSheet = lazy(() => import('./pages/products/MetalTileSheet'));
+const RockwoolGlasswool = lazy(() => import('./pages/products/RockwoolGlasswool'));
+const HighRoofSeam = lazy(() => import('./pages/products/HighRoofSeam'));
+const AerolamSheet = lazy(() => import('./pages/products/AerolamSheet'));
+const PVCTileSheet = lazy(() => import('./pages/products/PVCTileSheet'));
+const MultiwallSheets = lazy(() => import('./pages/products/MultiwallSheets'));
+const UPVCHighRibSheets = lazy(() => import('./pages/products/UPVCHighRibSheets'));
+const SyntheticRoof = lazy(() => import('./pages/products/SyntheticRoof'));
+const UPVCSheets = lazy(() => import('./pages/products/UPVCSheets'));
+
+// Location SEO Pages
+const NaviMumbaiRoofing = lazy(() => import('./pages/locations/NaviMumbaiRoofing'));
+const MumbaiRoofing = lazy(() => import('./pages/locations/MumbaiRoofing'));
+const PanvelRoofing = lazy(() => import('./pages/locations/PanvelRoofing'));
+const ThaneRoofing = lazy(() => import('./pages/locations/ThaneRoofing'));
+const PUFPanelNaviMumbai = lazy(() => import('./pages/locations/PUFPanelNaviMumbai'));
+const Areas = lazy(() => import('./pages/Areas'));
+
+// Loading component
+const PageLoader = () => (
+  <div style={{
+    height: '60vh',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    color: 'var(--accent-500)',
+    fontSize: 'var(--text-xl)',
+    fontWeight: '600'
+  }}>
+    <div className="loading-spinner">Loading...</div>
+  </div>
+);
 
 function App() {
   return (
@@ -40,36 +65,46 @@ function App() {
       <div className="App">
         <Navbar />
         <main style={{ marginTop: '80px' }}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/products" element={<Products />} />
+          <Suspense fallback={<PageLoader />}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/products" element={<Products />} />
 
-            {/* Detailed Product Routes */}
-            <Route path="/products/roofing-metal-sheets" element={<RoofingMetalSheets />} />
-            <Route path="/products/insulated-sheets" element={<InsulatedSheets />} />
-            <Route path="/products/roofing-accessories" element={<RoofingAccessories />} />
-            <Route path="/products/pvc-upvc-sheets" element={<PVCUPVCSheets />} />
-            <Route path="/products/purlins" element={<Purlins />} />
-            <Route path="/products/polycarbonate-sheets" element={<PolycarbonateSheets />} />
-            <Route path="/products/ventilators" element={<Ventilators />} />
-            <Route path="/products/peb-fabrication" element={<PEBFabrication />} />
-            <Route path="/products/decking-sheet" element={<DeckingSheet />} />
-            <Route path="/products/shingles" element={<Shingles />} />
-            <Route path="/products/metal-tile-sheet" element={<MetalTileSheet />} />
-            <Route path="/products/rockwool-glasswool" element={<RockwoolGlasswool />} />
-            <Route path="/products/high-roof-seam" element={<HighRoofSeam />} />
-            <Route path="/products/aerolam-sheet" element={<AerolamSheet />} />
-            <Route path="/products/pvc-tile-sheet" element={<PVCTileSheet />} />
-            <Route path="/products/multiwall-sheets" element={<MultiwallSheets />} />
-            <Route path="/products/upvc-high-rib-sheets" element={<UPVCHighRibSheets />} />
-            <Route path="/products/synthetic-roof" element={<SyntheticRoof />} />
-            <Route path="/products/upvc-sheets" element={<UPVCSheets />} />
+              {/* Detailed Product Routes */}
+              <Route path="/products/roofing-metal-sheets" element={<RoofingMetalSheets />} />
+              <Route path="/products/insulated-sheets" element={<InsulatedSheets />} />
+              <Route path="/products/roofing-accessories" element={<RoofingAccessories />} />
+              <Route path="/products/pvc-upvc-sheets" element={<PVCUPVCSheets />} />
+              <Route path="/products/purlins" element={<Purlins />} />
+              <Route path="/products/polycarbonate-sheets" element={<PolycarbonateSheets />} />
+              <Route path="/products/ventilators" element={<Ventilators />} />
+              <Route path="/products/peb-fabrication" element={<PEBFabrication />} />
+              <Route path="/products/decking-sheet" element={<DeckingSheet />} />
+              <Route path="/products/shingles" element={<Shingles />} />
+              <Route path="/products/metal-tile-sheet" element={<MetalTileSheet />} />
+              <Route path="/products/rockwool-glasswool" element={<RockwoolGlasswool />} />
+              <Route path="/products/high-roof-seam" element={<HighRoofSeam />} />
+              <Route path="/products/aerolam-sheet" element={<AerolamSheet />} />
+              <Route path="/products/pvc-tile-sheet" element={<PVCTileSheet />} />
+              <Route path="/products/multiwall-sheets" element={<MultiwallSheets />} />
+              <Route path="/products/upvc-high-rib-sheets" element={<UPVCHighRibSheets />} />
+              <Route path="/products/synthetic-roof" element={<SyntheticRoof />} />
+              <Route path="/products/upvc-sheets" element={<UPVCSheets />} />
 
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
+              {/* Location SEO Routes */}
+              <Route path="/roofing-contractors-navi-mumbai" element={<NaviMumbaiRoofing />} />
+              <Route path="/roofing-contractors-mumbai" element={<MumbaiRoofing />} />
+              <Route path="/roofing-contractors-panvel" element={<PanvelRoofing />} />
+              <Route path="/roofing-contractors-thane" element={<ThaneRoofing />} />
+              <Route path="/puf-panel-manufacturer-navi-mumbai" element={<PUFPanelNaviMumbai />} />
+              <Route path="/areas" element={<Areas />} />
+
+              <Route path="/gallery" element={<Gallery />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </Suspense>
         </main>
         <Footer />
         <Chatbot />

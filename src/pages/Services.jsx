@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { FaDraftingCompass, FaHandshake, FaPaintBrush, FaHardHat, FaCheckCircle } from 'react-icons/fa';
+import SEO from '../components/shared/SEO';
 import heroImage from '../assets/services-hero.png';
 import planningImg from '../assets/img 5.png';
 import consultationImg from '../assets/img4.png';
@@ -49,6 +50,11 @@ const Services = () => {
 
     return (
         <div className={styles.services}>
+            <SEO
+                title="Expert Roofing & Waterproofing Services"
+                description="Comprehensive roofing services including installation, waterproofing, retrofitting, and fabrication for industrial and commercial buildings."
+                keywords="roofing installation service, industrial waterproofing, roof retrofitting, fabrication services"
+            />
             <section className={styles.hero} style={{ backgroundImage: `url(${heroImage})` }} fetchpriority="high">
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>

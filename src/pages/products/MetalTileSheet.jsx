@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { FaArrowLeft, FaCheckCircle, FaStar, FaMapMarkerAlt } from 'react-icons/fa';
+import SEO from '../../components/shared/SEO';
 import Card from '../../components/shared/Card';
 import Button from '../../components/shared/Button';
 import heroImage from '../../assets/services-hero.png';
@@ -58,6 +60,14 @@ const MetalTileSheet = () => {
 
     return (
         <div className={styles.productPage}>
+            <SEO
+                title="Metal Tile Sheets in Navi Mumbai | Zinco"
+                description="Aesthetic metal tile roofing sheets for resorts and bungalows in Alibaug, Panvel, and Konkan. Lightweight, leak-proof, and durable tile profile."
+                keywords="metal tile sheets, mangalore tile profile, metal roofing tiles, resort roofing alibaug"
+            />
+            <Helmet>
+                <link rel="preload" as="image" href={heroImage} />
+            </Helmet>
             <div className={styles.hero} style={{ '--hero-image': `url(${heroImage})` }} fetchpriority="high">
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>

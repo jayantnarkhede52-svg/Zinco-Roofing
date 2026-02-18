@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { FaArrowLeft, FaCheckCircle, FaStar, FaMapMarkerAlt, FaExpand } from 'react-icons/fa';
+import SEO from '../../components/shared/SEO';
 import Card from '../../components/shared/Card';
 import Button from '../../components/shared/Button';
 import styles from './ProductCategory.module.css';
@@ -74,6 +76,14 @@ const PVCTileSheet = () => {
 
     return (
         <div className={styles.productPage}>
+            <SEO
+                title="PVC Tile Sheets in Navi Mumbai | Spanish Tile Roof"
+                description="Traditional Spanish-style PVC roofing tiles for bungalows and resorts in Alibaug, Panvel, and Navi Mumbai. Lightweight, durable, and leak-proof."
+                keywords="pvc tile sheets, spanish tile roofing, plastic roof tiles, resort roofing alibaug, bungalow roofing mumbai"
+            />
+            <Helmet>
+                <link rel="preload" as="image" href={tileImg1} />
+            </Helmet>
             <div className={styles.hero} style={{ '--hero-image': `url(${tileImg1})` }} fetchpriority="high">
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>

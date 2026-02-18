@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { FaMapMarkerAlt, FaBuilding, FaIndustry, FaPlaceOfWorship } from 'react-icons/fa';
+import SEO from '../components/shared/SEO';
 import heroImage from '../assets/projects-hero.png';
 import metalFeatured from '../assets/Metal roofing images/Metal roofing images/coloured-roofing-sheet-500x500-1.jpg';
 import pufFeatured from '../assets/Puf panel images/Puf panel images/1001155532.jpg';
@@ -35,6 +36,11 @@ const projects = [
 const Projects = () => {
     return (
         <div className={styles.projects}>
+            <SEO
+                title="Industrial & Commercial Roofing Projects"
+                description="Explore our portfolio of industrial roofing projects in Taloja, Panvel, and Mumbai. See our work with PUF panels, PEB structures, and waterproofing."
+                keywords="roofing projects gallery, industrial roofing portfolio, done site photos"
+            />
             <div className={styles.hero} style={{ '--hero-image': `url(${heroImage})` }}>
                 <div className={styles.container}>
                     <motion.h1
@@ -139,25 +145,25 @@ const Projects = () => {
                             viewport={{ once: true }}
                         >
                             <div className={styles.showcaseItem}>
-                                <img src={metalFeatured} alt="Metal Roofing" />
+                                <img src={metalFeatured} alt="Metal Roofing" loading="lazy" decoding="async" />
                                 <div className={styles.showcaseOverlay}>
                                     <span>Metal Sheet Solutions</span>
                                 </div>
                             </div>
                             <div className={styles.showcaseItem}>
-                                <img src={pufFeatured} alt="PUF Panels" />
+                                <img src={pufFeatured} alt="PUF Panels" loading="lazy" decoding="async" />
                                 <div className={styles.showcaseOverlay}>
                                     <span>PUF Insulated Panels</span>
                                 </div>
                             </div>
                             <div className={styles.showcaseItem}>
-                                <img src={polyFeatured} alt="Polycarbonate" />
+                                <img src={polyFeatured} alt="Polycarbonate" loading="lazy" decoding="async" />
                                 <div className={styles.showcaseOverlay}>
                                     <span>Polycarbonate Lighting</span>
                                 </div>
                             </div>
                             <div className={styles.showcaseItem}>
-                                <img src={deckFeatured} alt="Decking Sheets" />
+                                <img src={deckFeatured} alt="Decking Sheets" loading="lazy" decoding="async" />
                                 <div className={styles.showcaseOverlay}>
                                     <span>Structural Decking</span>
                                 </div>
@@ -188,7 +194,7 @@ const Projects = () => {
                                 India have trusted us with their high-value infrastructure.
                             </p>
                             <div className={styles.inlineImageWrapper}>
-                                <img src={industrialShot} alt="Industrial Roofing Installation" className={styles.inlineImage} />
+                                <img src={industrialShot} alt="Industrial Roofing Installation" className={styles.inlineImage} loading="lazy" decoding="async" />
                             </div>
                         </motion.div>
 
@@ -214,7 +220,7 @@ const Projects = () => {
                                 that is rare in the construction sector. When Zinco commits to a deadline, we meet it.
                             </p>
                             <div className={styles.inlineImageWrapper}>
-                                <img src={warehouseShot} alt="Large Scale Warehouse Roofing" className={styles.inlineImage} />
+                                <img src={warehouseShot} alt="Large Scale Warehouse Roofing" className={styles.inlineImage} loading="lazy" decoding="async" />
                             </div>
                         </motion.div>
                     </div>

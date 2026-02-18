@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { CONTACT_INFO } from '../utils/constants';
+import SEO from '../components/shared/SEO';
 import heroImage from '../assets/productshero/Contact-hero.png';
 import Card from '../components/shared/Card';
 import styles from './Contact.module.css';
@@ -9,6 +10,11 @@ const Contact = () => {
 
     return (
         <div className={styles.contactPage}>
+            <SEO
+                title="Contact Best Roofing Contractors in Navi Mumbai"
+                description="Get a free quote for your roofing project. Contact Zinco Roofing in Navi Mumbai for expert consultation and site inspection. Call now!"
+                keywords="contact roofing contractors, get roofing quote, roofing consultants navi mumbai"
+            />
             {/* Hero Section */}
             <section className={styles.hero} style={{ '--hero-image': `url(${heroImage})` }}>
                 <div className={styles.container}>

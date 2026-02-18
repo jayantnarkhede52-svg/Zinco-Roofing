@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { FaArrowLeft, FaCheckCircle, FaLayerGroup, FaMapMarkerAlt, FaExpand } from 'react-icons/fa';
+import SEO from '../../components/shared/SEO';
 import Card from '../../components/shared/Card';
 import Button from '../../components/shared/Button';
 import styles from './ProductCategory.module.css';
@@ -87,6 +89,14 @@ const DeckingSheet = () => {
 
     return (
         <div className={styles.productPage}>
+            <SEO
+                title="Super Deck - Composite Flooring Sheets in Mumbai"
+                description="High-strength composite metal deck flooring sheets for multi-story buildings and industrial mezzanines in Navi Mumbai and Panvel. Faster slab casting."
+                keywords="metal decking sheets, composite flooring sheets, decking profile, floor decking mumbai"
+            />
+            <Helmet>
+                <link rel="preload" as="image" href={heroImg} />
+            </Helmet>
             <div className={styles.hero} style={{ '--hero-image': `url(${heroImg})` }} fetchpriority="high">
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>

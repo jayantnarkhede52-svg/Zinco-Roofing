@@ -58,7 +58,7 @@ const ServicesShowcase = () => {
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
                     >
-                        Complete Roofing Solutions
+                        Industrial & Commercial Roofing Contractor
                     </motion.h2>
                 </div>
 

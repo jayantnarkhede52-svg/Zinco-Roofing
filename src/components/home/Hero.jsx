@@ -5,8 +5,11 @@ import heroVideo from '../../assets/videos/hero video.mp4';
 import { SOCIAL_LINKS } from '../../utils/constants';
 import styles from './Hero.module.css';
 
+import posterImage from '../../assets/services-hero.png';
+
 const Hero = () => {
     const heroRef = useRef(null);
+    // ... rest of the variants ...
 
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -53,6 +56,7 @@ const Hero = () => {
                     loop
                     playsInline
                     preload="auto"
+                    poster={posterImage}
                 >
                     <source src={heroVideo} type="video/mp4" />
                 </video>
@@ -92,7 +96,7 @@ const Hero = () => {
             >
                 <motion.div className={styles.titleWrapper}>
                     <motion.h1 className={styles.title} variants={titleVariants}>
-                        ZINCO ROOFING SOLUTIONS
+                        Roofing Solutions in Navi Mumbai
                     </motion.h1>
                     <motion.div className={styles.underline} variants={itemVariants} />
                 </motion.div>
@@ -110,8 +114,8 @@ const Hero = () => {
                     <Button href={SOCIAL_LINKS.whatsapp} size="lg" target="_blank" rel="noopener noreferrer">
                         Get Free Quote
                     </Button>
-                    <Button href="/projects" variant="outline" size="lg">
-                        View Our Work
+                    <Button href="/products" variant="outline" size="lg">
+                        View Our Products
                     </Button>
                 </motion.div>
 

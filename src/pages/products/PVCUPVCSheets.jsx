@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { FaArrowLeft, FaCheckCircle, FaIndustry, FaMapMarkerAlt } from 'react-icons/fa';
+import SEO from '../../components/shared/SEO';
 import Card from '../../components/shared/Card';
 import Button from '../../components/shared/Button';
 import heroImage from '../../assets/services-hero.png';
@@ -58,6 +60,14 @@ const PVCUPVCSheets = () => {
 
     return (
         <div className={styles.productPage}>
+            <SEO
+                title="PVC & UPVC Roofing Sheets in Mumbai & Panvel"
+                description="Corrosion-proof UPVC roofing sheets for chemical industries in Taloja, Rasayani, and coastal areas. Heat-resistant and durable."
+                keywords="upvc roofing sheets, pvc roofing, chemical resistant roofing, plastic roofing sheets mumbai"
+            />
+            <Helmet>
+                <link rel="preload" as="image" href={heroImage} />
+            </Helmet>
             <div className={styles.hero} style={{ '--hero-image': `url(${heroImage})` }} fetchpriority="high">
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>

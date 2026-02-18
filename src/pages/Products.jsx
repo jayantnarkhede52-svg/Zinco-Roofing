@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link, useSearchParams } from 'react-router-dom';
 import { FaArrowLeft, FaIndustry, FaTemperatureHigh, FaLayerGroup, FaTools } from 'react-icons/fa';
+import SEO from '../components/shared/SEO';
 import heroImage from '../assets/products-hero.png';
 import Card from '../components/shared/Card';
 import styles from './Products.module.css';
@@ -214,6 +215,11 @@ const Products = () => {
 
     return (
         <div className={styles.products}>
+            <SEO
+                title="Premium Roofing Sheets & PUF Panels"
+                description="Wide range of roofing products: PUF panels, UPVC sheets, metal roofing, polycarbonate sheets, and ventilators for industrial use."
+                keywords="roofing products, puf panels, upvc roofing sheets, metal roof sheets, industrial ventilators"
+            />
             <div className={styles.hero} style={{ '--hero-image': `url(${heroImage})` }} fetchpriority="high">
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>

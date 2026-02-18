@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { FaArrowLeft, FaCheckCircle, FaStar, FaMapMarkerAlt } from 'react-icons/fa';
+import SEO from '../../components/shared/SEO';
 import Card from '../../components/shared/Card';
 import Button from '../../components/shared/Button';
 import heroImg from '../../assets/productshero/highroof-hero.png';
@@ -58,6 +60,14 @@ const HighRoofSeam = () => {
 
     return (
         <div className={styles.productPage}>
+            <SEO
+                title="High Roof Seam Systems in Navi Mumbai | Standing Seam"
+                description="Leak-proof standing seam roofing systems (High Roof Seam) for airports, warehouses, and industrial sheds in Taloja and Panvel. Concealed fastener technology."
+                keywords="standing seam roofing, high roof seam, leak proof roofing, concealed fastener roofing, industrial roofing mumbai"
+            />
+            <Helmet>
+                <link rel="preload" as="image" href={heroImg} />
+            </Helmet>
             <div className={styles.hero} style={{ '--hero-image': `url(${heroImg})` }} fetchpriority="high">
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>

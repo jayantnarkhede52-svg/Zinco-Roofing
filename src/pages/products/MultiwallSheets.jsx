@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { FaArrowLeft, FaCheckCircle, FaLightbulb, FaMapMarkerAlt, FaExpand } from 'react-icons/fa';
+import SEO from '../../components/shared/SEO';
 import Card from '../../components/shared/Card';
 import Button from '../../components/shared/Button';
 import styles from './ProductCategory.module.css';
@@ -80,6 +82,14 @@ const MultiwallSheets = () => {
 
     return (
         <div className={styles.productPage}>
+            <SEO
+                title="High-Rib Multiwall Sheets in Navi Mumbai | Zinco"
+                description="High-rib multiwall polycarbonate sheets for industrial skylights and daylighting in Taloja, Bhiwandi, and Navi Mumbai. UV protected and energy efficient."
+                keywords="multiwall polycarbonate sheets, high rib polycarbonate, industrial daylighting, skylight sheets mumbai, polycarbonate roofing"
+            />
+            <Helmet>
+                <link rel="preload" as="image" href={mwImg1} />
+            </Helmet>
             <div className={styles.hero} style={{ '--hero-image': `url(${mwImg1})` }} fetchpriority="high">
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>

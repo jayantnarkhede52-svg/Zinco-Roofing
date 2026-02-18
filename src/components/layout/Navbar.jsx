@@ -13,6 +13,7 @@ const Navbar = () => {
     const navLinks = [
         { path: '/', label: 'Home' },
         { path: '/projects', label: 'Projects' },
+        { path: '/areas', label: 'Areas' },
         { path: '/services', label: 'Services' },
         { path: '/products', label: 'Products' },
         { path: '/gallery', label: 'Gallery' },
@@ -31,7 +32,7 @@ const Navbar = () => {
             <div className={styles.container}>
                 <Link to="/" className={styles.logo}>
                     <div className={styles.logoWrapper}>
-                        <img src={logo} alt="Zinco Roofing Solution" className={styles.logoImage} />
+                        <img src={logo} alt="Zinco Roofing Solution" className={styles.logoImage} decoding="async" />
                     </div>
                 </Link>
 

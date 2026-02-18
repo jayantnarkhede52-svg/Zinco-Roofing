@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { FaArrowLeft, FaCheckCircle, FaStar, FaMapMarkerAlt } from 'react-icons/fa';
+import SEO from '../../components/shared/SEO';
 import Card from '../../components/shared/Card';
 import Button from '../../components/shared/Button';
 import heroImg from '../../assets/productshero/aerolam-hero.png';
@@ -58,6 +60,14 @@ const AerolamSheet = () => {
 
     return (
         <div className={styles.productPage}>
+            <SEO
+                title="Aerolam Thermal Insulation Sheets in Navi Mumbai | Zinco"
+                description="Reflective radiant barrier insulation (Aerolam) for industrial sheds in Taloja, Panvel, and Mumbai. Reduces heat by up to 10°C. Energy efficient."
+                keywords="aerolam insulation, bubble foil insulation, radiant barrier, thermal insulation sheet, roof insulation mumbai"
+            />
+            <Helmet>
+                <link rel="preload" as="image" href={heroImg} />
+            </Helmet>
             <div className={styles.hero} style={{ '--hero-image': `url(${heroImg})` }} fetchpriority="high">
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>

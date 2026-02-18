@@ -32,7 +32,7 @@ const Footer = () => {
                     {/* Company Info */}
                     <div className={styles.section}>
                         <Link to="/" className={styles.brandContainer}>
-                            <img src={logo} alt="Zinco Roofing Logo" className={styles.footerLogo} />
+                            <img src={logo} alt="Zinco Roofing Logo" className={styles.footerLogo} decoding="async" />
                             <h3 className={styles.brand}>
                                 <span>ZINCO</span>
                                 <span className={styles.brandAccent}>ROOFING</span>
@@ -109,6 +109,12 @@ const Footer = () => {
                                         {area}
                                     </span>
                                 ))}
+                            </div>
+                            <div className={styles.areaLinks} style={{ marginTop: '1rem', display: 'flex', flexWrap: 'wrap', gap: '0.8rem' }}>
+                                <Link to="/roofing-contractors-navi-mumbai" className={styles.bottomLink} style={{ fontSize: '0.85rem', color: '#9ca3af' }}>Navi Mumbai</Link>
+                                <Link to="/roofing-contractors-mumbai" className={styles.bottomLink} style={{ fontSize: '0.85rem', color: '#9ca3af' }}>Mumbai</Link>
+                                <Link to="/roofing-contractors-panvel" className={styles.bottomLink} style={{ fontSize: '0.85rem', color: '#9ca3af' }}>Panvel</Link>
+                                <Link to="/roofing-contractors-thane" className={styles.bottomLink} style={{ fontSize: '0.85rem', color: '#9ca3af' }}>Thane</Link>
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { FaArrowLeft, FaCheckCircle, FaStar, FaMapMarkerAlt } from 'react-icons/fa';
+import SEO from '../../components/shared/SEO';
 import Card from '../../components/shared/Card';
 import Button from '../../components/shared/Button';
 import heroImg from '../../assets/productshero/shingles-hero.png';
@@ -58,6 +60,14 @@ const Shingles = () => {
 
     return (
         <div className={styles.productPage}>
+            <SEO
+                title="Premium Roofing Shingles in Mumbai | Zinco"
+                description="Luxury asphalt roofing shingles for villas and resorts in Lonavala, Alibaug, and Karjat. Durable, weather-resistant, and aesthetically superior."
+                keywords="roofing shingles mumbai, asphalt shingles, villa roofing, resort roofing lonavala, shingle roof contractors"
+            />
+            <Helmet>
+                <link rel="preload" as="image" href={heroImg} />
+            </Helmet>
             <div className={styles.hero} style={{ '--hero-image': `url(${heroImg})` }} fetchpriority="high">
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>

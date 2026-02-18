@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { FaArrowLeft, FaCheckCircle, FaThermometerHalf, FaBuilding, FaExpand } from 'react-icons/fa';
+import SEO from '../../components/shared/SEO';
 import Card from '../../components/shared/Card';
 import Button from '../../components/shared/Button';
 import styles from './ProductCategory.module.css';
@@ -84,6 +86,14 @@ const InsulatedSheets = () => {
 
     return (
         <div className={styles.productPage}>
+            <SEO
+                title="PUF Insulated Roofing Sheets Manufacturer in Navi Mumbai"
+                description="Premium PUF insulated roofing panels for cold storage and industrial sheds in Taloja, Mahape, and Navi Mumbai. Energy-efficient roofing solutions."
+                keywords="puf insulated sheets, puf panels navi mumbai, cold storage panels, insulated roofing sheets"
+            />
+            <Helmet>
+                <link rel="preload" as="image" href={heroImg} />
+            </Helmet>
             <div className={styles.hero} style={{ '--hero-image': `url(${heroImg})` }} fetchpriority="high">
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>

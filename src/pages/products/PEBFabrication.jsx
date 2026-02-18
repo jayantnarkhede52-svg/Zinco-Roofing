@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { FaArrowLeft, FaCheckCircle, FaIndustry, FaMapMarkerAlt } from 'react-icons/fa';
+import SEO from '../../components/shared/SEO';
 import Card from '../../components/shared/Card';
 import Button from '../../components/shared/Button';
 import heroImage from '../../assets/services-hero.png';
@@ -58,6 +60,14 @@ const PEBFabrication = () => {
 
     return (
         <div className={styles.productPage}>
+            <SEO
+                title="PEB Structure Fabrication in Navi Mumbai & Panvel"
+                description="Turnkey Pre-Engineered Building (PEB) solutions, industrial sheds, and warehouse construction in Taloja, Bhiwandi, and Mumbai. Fast erection and cost-effective."
+                keywords="peb structure fabrication, industrial shed contractor, pre engineered builders, warehouse construction mumbai"
+            />
+            <Helmet>
+                <link rel="preload" as="image" href={heroImage} />
+            </Helmet>
             <div className={styles.hero} style={{ '--hero-image': `url(${heroImage})` }} fetchpriority="high">
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>

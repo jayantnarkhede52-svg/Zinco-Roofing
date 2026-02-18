@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { FaArrowLeft, FaCheckCircle, FaLeaf, FaMapMarkerAlt } from 'react-icons/fa';
+import SEO from '../../components/shared/SEO';
 import Card from '../../components/shared/Card';
 import Button from '../../components/shared/Button';
 import heroImage from '../../assets/services-hero.png';
@@ -58,6 +60,14 @@ const SyntheticRoof = () => {
 
     return (
         <div className={styles.productPage}>
+            <SEO
+                title="Synthetic Thatch & Shingle Roofing in Mumbai | Zinco"
+                description="Premium synthetic thatch and shingle roofing for resorts and farmhouses in Alibaug, Lonavala, and Karjat. Fire-retardant and zero maintenance."
+                keywords="synthetic thatch roofing, synthetic shingles, resort roofing mumbai, artificial thatch, eco friendly roofing"
+            />
+            <Helmet>
+                <link rel="preload" as="image" href={heroImage} />
+            </Helmet>
             <div className={styles.hero} style={{ '--hero-image': `url(${heroImage})` }} fetchpriority="high">
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>

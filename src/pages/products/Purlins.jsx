@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { FaArrowLeft, FaCheckCircle, FaProjectDiagram, FaMapMarkerAlt } from 'react-icons/fa';
+import SEO from '../../components/shared/SEO';
 import Card from '../../components/shared/Card';
 import Button from '../../components/shared/Button';
 import heroImage from '../../assets/services-hero.png';
@@ -58,6 +60,14 @@ const Purlins = () => {
 
     return (
         <div className={styles.productPage}>
+            <SEO
+                title="C & Z Purlins Manufacturer in Navi Mumbai"
+                description="High-strength Galvanized C & Z Purlins for PEB structures in Panvel, Taloja, and Bhiwandi. Custom sizes and quick delivery."
+                keywords="c purlins, z purlins, galvanized purlins, structural steel navi mumbai, peb structural members"
+            />
+            <Helmet>
+                <link rel="preload" as="image" href={heroImage} />
+            </Helmet>
             <div className={styles.hero} style={{ '--hero-image': `url(${heroImage})` }} fetchpriority="high">
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>

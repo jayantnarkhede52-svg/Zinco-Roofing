@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { FaArrowLeft, FaCheckCircle, FaWrench, FaMapMarkerAlt } from 'react-icons/fa';
+import SEO from '../../components/shared/SEO';
 import Card from '../../components/shared/Card';
 import Button from '../../components/shared/Button';
 import heroImage from '../../assets/services-hero.png';
@@ -49,6 +51,14 @@ const RoofingAccessories = () => {
 
     return (
         <div className={styles.productPage}>
+            <SEO
+                title="Roofing Accessories Supplier in Navi Mumbai & Panvel"
+                description="Complete range of roofing accessories: ridges, gutters, turbo ventilators, and fasteners available in Panvel, Taloja, and Vashi."
+                keywords="roofing accessories, turbo ventilators, gutters, roofing screws, ridges"
+            />
+            <Helmet>
+                <link rel="preload" as="image" href={heroImage} />
+            </Helmet>
             <div className={styles.hero} style={{ '--hero-image': `url(${heroImage})` }} fetchpriority="high">
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>
