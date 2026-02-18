@@ -1,5 +1,6 @@
 import { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import ScrollToTop from './components/shared/ScrollToTop';
@@ -116,6 +117,7 @@ function App() {
         <Footer />
         <Chatbot />
         <WhatsAppButton />
+        <Analytics />
       </div>
     </Router>
   );
