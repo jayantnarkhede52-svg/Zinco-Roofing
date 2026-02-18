@@ -125,9 +125,9 @@ const Footer = () => {
                         © {currentYear} Zinco Roofing Solution. All rights reserved. GSTIN: {CONTACT_INFO.gstin}
                     </p>
                     <div className={styles.bottomLinks}>
-                        <a href="#" className={styles.bottomLink}>Privacy Policy</a>
+                        <Link to="/privacy-policy" className={styles.bottomLink}>Privacy Policy</Link>
                         <span className={styles.separator}>•</span>
-                        <a href="#" className={styles.bottomLink}>Terms of Service</a>
+                        <Link to="/terms-of-service" className={styles.bottomLink}>Terms of Service</Link>
                     </div>
                 </div>
             </div>

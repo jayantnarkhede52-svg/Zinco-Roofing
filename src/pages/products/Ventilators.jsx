@@ -6,6 +6,7 @@ import SEO from '../../components/shared/SEO';
 import Card from '../../components/shared/Card';
 import Button from '../../components/shared/Button';
 import heroImg from '../../assets/productshero/ventilator-hero.png';
+import logo from '../../assets/logo.png';
 import styles from './ProductCategory.module.css';
 
 const Ventilators = () => {
@@ -82,6 +83,9 @@ const Ventilators = () => {
                         <motion.span className={styles.sublabel} variants={itemVariants}>
                             PRECISION & DURABILITY
                         </motion.span>
+                        <motion.div variants={itemVariants} className={styles.heroLogoWrapper}>
+                            <img src={logo} alt="Zinco Logo" className={styles.heroTitleLogo} />
+                        </motion.div>
                         <motion.h1 variants={itemVariants}>
                             Roof Ventilator in Navi Mumbai & Turbo Ventilators Supplier
                         </motion.h1>
@@ -95,27 +99,46 @@ const Ventilators = () => {
             <div className={styles.container}>
                 <div className={styles.content}>
                     <section className={styles.section}>
-                        <div className={styles.contentBlock}>
-                            <h2>Natural Ventilation Mastery: The Science of Turbo Ventilators</h2>
-                            <p>
-                                In the high-density industrial hubs of **Taloja MIDC, Panvel, and Rabale**, indoor air temperature and quality are constant challenges. Heat buildup from machinery, coupled with the humid Mumbai climate, can create oppressive working conditions. Zinco Roofing Solution's **Turbo Ventilators** offer an elegant, aerodynamic **Industrial ventilation system** that requires zero electricity to exhaust hot air, smoke, and fumes from your facility 24 hours a day.
-                            </p>
-                            <p>
-                                As a leading provider of **Roof Ventilator in Navi Mumbai**, we understand the local climate challenges. The principle behind our ventilators is a combination of natural convection and centrifugal force. As hot air rises, it creates a slight internal pressure that pushes against the precision-angled vanes of the turbine. This causes the **turbo ventilators navi mumbai** businesses rely on to rotate even in the absence of external wind. As the turbine spins, it creates a low-pressure area (vacuum) that actively "pulls" stagnant air and industrial fumes out of the building. This constant air exchange ensures a cooler, healthier, and more productive environment for your workforce, making it an essential **Industrial ventilation system**.
-                            </p>
+                        <div className={styles.grid2Col}>
+                            <div className={styles.contentBlock}>
+                                <h2>Natural Ventilation Mastery</h2>
+                                <p>
+                                    In the high-density industrial hubs of Taloja MIDC, Panvel, and Rabale, indoor air temperature and quality are constant challenges. Heat buildup from machinery, coupled with the humid Mumbai climate, can create oppressive working conditions. Zinco Roofing Solution's **Turbo Ventilators** offer an elegant, aerodynamic **Industrial ventilation system** that requires zero electricity to exhaust hot air, smoke, and fumes from your facility 24 hours a day. We are the most trusted for **Roof Ventilator in Navi Mumbai**.
+                                </p>
+                                <p>
+                                    As a leading provider of **Roof Ventilator in Navi Mumbai**, we understand the local climate challenges. The principle behind our ventilators is a combination of natural convection and centrifugal force. This makes it an essential **Industrial ventilation system** for any factory. Our **roof ventilators in Navi Mumbai** are built to last.
+                                </p>
+                            </div>
+                            <div className={styles.highlightCardWrapper}>
+                                <Card variant="glass" className={styles.highlightCard}>
+                                    <FaWind className={styles.highlightIcon} />
+                                    <h3>Efficient Air Exchange</h3>
+                                    <p>The **turbo ventilators navi mumbai** businesses rely on rotate even in the absence of wind, pulling stagnant air and industrial fumes out of the building constantly through this **Industrial ventilation system**.</p>
+                                    <div className={styles.keywordBadge}>Industrial ventilation system</div>
+                                    <p style={{ fontSize: '0.8rem', marginTop: '5px' }}>The best **roof ventilators in Navi Mumbai**.</p>
+                                </Card>
+                            </div>
+                        </div>
+                    </section>
 
-                            <h3>Material Excellence: Aluminum vs. Stainless Steel</h3>
-                            <p>
-                                To ensure long-term performance in the corrosive coastal air of **Navi Mumbai**, we offer **roof ventilators in Navi Mumbai** forged from high-grade **Aluminum** and **SS 304 (Stainless Steel)**. Aluminum units are exceptionally lightweight and responsive to even the slightest breeze, while our SS 304 models provide maximum durability in chemical-heavy environments like Taloja's processing units. Each unit is equipped with **permanently lubricated, double-sealed ball bearings**, ensuring smooth, noise-free rotation for over a decade without the need for periodic oiling. We provide the most durable **Roof Ventilator in Navi Mumbai**.
-                            </p>
-
-                            <h3>Why Industrialists in Panvel Choose Wind-Powered Vents</h3>
-                            <ul>
-                                <li><strong>Zero Operational Cost:</strong> Harness the power of the wind with our **Industrial ventilation system**. Once installed, our **roof ventilators in Navi Mumbai** provide 24/7 cooling without adding a single rupee to your electricity bill.</li>
-                                <li><strong>Eco-Friendly Cooling:</strong> Reduce your carbon footprint and contribution to the urban heat island effect by using 100% renewable energy for ventilation. Zinco is the top choice for **turbo ventilators navi mumbai**.</li>
-                                <li><strong>Extreme Weather Durability:</strong> Our ventilators are mathematically balanced to withstand high-velocity winds during the Mumbai monsoon without dislodging or "vobbling." This reliability makes us the preferred source for **Roof Ventilator in Navi Mumbai**.</li>
-                                <li><strong>Humidity and Fume Removal:</strong> Rapidly exhaust moisture-laden air to prevent condensation on sensitive machinery and remove hazardous VOCs (Volatile Organic Compounds) common in chemical manufacturing. An effective **Industrial ventilation system** is crucial for safety.</li>
-                            </ul>
+                    <section className={styles.section}>
+                        <div className={styles.grid2Col}>
+                            <div className={styles.highlightCardWrapper}>
+                                <Card variant="solid" className={styles.highlightCard}>
+                                    <FaCheckCircle className={styles.highlightIcon} style={{ color: 'var(--accent-400)' }} />
+                                    <h3>Material Excellence</h3>
+                                    <p>We offer **roof ventilators in Navi Mumbai** forged from high-grade Aluminum and SS 304 (Stainless Steel), ensuring the most durable **Roof Ventilator in Navi Mumbai**. Check our **Roof Ventilator Price in Navi Mumbai** for the best deals.</p>
+                                </Card>
+                            </div>
+                            <div className={styles.contentBlock}>
+                                <h2>Aluminum vs. Stainless Steel</h2>
+                                <p>
+                                    To ensure long-term performance in the corrosive coastal air of Navi Mumbai, we offer high-grade units responsive to even the slightest breeze. Our units are equipped with **permanently lubricated, double-sealed ball bearings**, ensuring smooth, noise-free rotation for over a decade. This makes us the top **Roof Ventilator in Navi Mumbai** provider.
+                                </p>
+                                <p>
+                                    Whether you need Aluminum for responsiveness or SS 304 for chemical durability in Taloja, we provide the best **Roof Ventilator in Navi Mumbai** solutions. Our **turbo ventilators navi mumbai** are designed for performance.
+                                </p>
+                            </div>
                         </div>
                     </section>
 
@@ -134,60 +157,80 @@ const Ventilators = () => {
                     </section>
 
                     <section className={styles.section}>
-                        <h2>Why Install Turbo Fans in Mumbai?</h2>
-                        <div className={styles.featuresGrid}>
-                            {features.map((feature, index) => (
-                                <motion.div
-                                    key={index}
-                                    className={styles.featureItem}
-                                    initial={{ opacity: 0, x: -20 }}
-                                    whileInView={{ opacity: 1, x: 0 }}
-                                    viewport={{ once: true }}
-                                    transition={{ delay: index * 0.1 }}
-                                >
-                                    <FaCheckCircle className={styles.checkIcon} />
-                                    <span>{feature}</span>
-                                </motion.div>
-                            ))}
+                        <div className={styles.grid2Col}>
+                            <div className={styles.contentBlock}>
+                                <h2>Why Industrialists Choose Zinco</h2>
+                                <ul className={styles.styledList}>
+                                    <li><strong>Zero Operational Cost:</strong> Harness the wind with our **Industrial ventilation system**. Our **roof ventilators in Navi Mumbai** provide 24/7 cooling for free. We are leaders in **turbo ventilators navi mumbai**.</li>
+                                    <li><strong>Eco-Friendly Cooling:</strong> Reduce your carbon footprint with Zinco, the top choice for **turbo ventilators navi mumbai**. We provide sustainable **roof ventilators in Navi Mumbai**.</li>
+                                    <li><strong>Extreme Weather Durability:</strong> Balanced to withstand Mumbai monsoons. This reliability makes us the preferred source for **Roof Ventilator in Navi Mumbai**.</li>
+                                    <li><strong>Humidity Removal:</strong> Prevent condensation and remove hazardous VOCs. An effective **Industrial ventilation system** is crucial for safety. Ask for our **Roof Ventilator Price in Navi Mumbai**.</li>
+                                </ul>
+                            </div>
+                            <div className={styles.contentBlock}>
+                                <h2>Cost-Effective Solutions</h2>
+                                <p>
+                                    When considering a new **Industrial ventilation system**, cost is always a factor. We offer the most competitive **Roof Ventilator Price in Navi Mumbai**. Unlike powered exhaust fans, our wind-driven ventilators are a one-time investment with no hidden costs. Our **turbo ventilators navi mumbai** are the most cost-effective.
+                                </p>
+                                <p>
+                                    Investing in high-quality **turbo ventilators navi mumbai** pays for itself within months through energy savings. For the best **Roof Ventilator Price in Navi Mumbai**, contact our sales team today. We offer the lowest **Roof Ventilator Price in Navi Mumbai**.
+                                </p>
+                            </div>
                         </div>
                     </section>
 
                     <section className={styles.section}>
-                        <h2>Cost-Effective Ventilation Solutions</h2>
-                        <div className={styles.contentBlock}>
-                            <p>
-                                When considering a new **Industrial ventilation system**, cost is always a factor. We offer the most competitive **Roof Ventilator Price in Navi Mumbai**. Unlike powered exhaust fans that incur ongoing electricity costs and maintenance expenses, our wind-driven ventilators are a one-time investment.
-                            </p>
-                            <p>
-                                Many factory owners ask about the **Roof Ventilator Price in Navi Mumbai**. While prices vary based on material (Aluminum vs. SS 304) and throat size (21" vs 24"), Zinco guarantees transparency and value. We provide a detailed quote that includes installation, ensuring no hidden costs. Investing in high-quality **turbo ventilators navi mumbai** pays for itself within months through energy savings.
-                            </p>
-                            <p>
-                                For the best **Roof Ventilator Price in Navi Mumbai**, contact our sales team today. We offer volume discounts for large warehouses and industrial parks in Taloja and Panvel. Don't compromise on quality; choose the trusted name for **Roof Ventilator in Navi Mumbai**.
-                            </p>
+                        <div className={styles.grid2Col}>
+                            <div className={styles.contentBlock}>
+                                <h2>Why Install Turbo Fans?</h2>
+                                <div className={styles.featuresGrid}>
+                                    {features.map((feature, index) => (
+                                        <motion.div
+                                            key={index}
+                                            className={styles.featureItem}
+                                            initial={{ opacity: 0, x: -20 }}
+                                            whileInView={{ opacity: 1, x: 0 }}
+                                            viewport={{ once: true }}
+                                            transition={{ delay: index * 0.1 }}
+                                        >
+                                            <FaCheckCircle className={styles.checkIcon} />
+                                            <span>{feature}</span>
+                                        </motion.div>
+                                    ))}
+                                </div>
+                            </div>
+                            <div className={styles.contentBlock}>
+                                <h2>Our Installation Sites</h2>
+                                <div className={styles.applicationsGrid}>
+                                    {applications.map((app, index) => (
+                                        <Card key={index} variant="solid" className={styles.appCard}>
+                                            <FaWind style={{ color: 'var(--accent-400)', marginBottom: '0.5rem' }} />
+                                            <h4>{app}</h4>
+                                        </Card>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
                     </section>
 
                     <section className={styles.section}>
-                        <h2>Our Installation Sites</h2>
-                        <div className={styles.applicationsGrid}>
-                            {applications.map((app, index) => (
-                                <Card key={index} variant="solid" className={styles.appCard}>
-                                    <FaWind style={{ color: 'var(--accent-500)', marginBottom: '0.5rem' }} />
-                                    <h4>{app}</h4>
+                        <div className={styles.grid2Col}>
+                            <div className={styles.contentBlock}>
+                                <h2>Installation & Base Plates</h2>
+                                <p>
+                                    A common failure point in roof ventilation is the integration with the roofing sheets. At Zinco, we provide custom-molded **Polycarbonate or Metal Base Plates** designed to match your specific roof profile (trapezoidal, sinusoidal, etc.). This ensures a 100% leak-proof installation in the **Panvel and Bhiwandi** warehouse clusters.
+                                </p>
+                                <p>
+                                    Proper installation is key to the performance of any **Roof Ventilator in Navi Mumbai**. Our certified teams ensure that every unit is perfectly leveled and sealed. We are the experts in **turbo ventilators navi mumbai** installation.
+                                </p>
+                            </div>
+                            <div className={styles.highlightCardWrapper}>
+                                <Card variant="glass" className={styles.highlightCard}>
+                                    <FaCheckCircle className={styles.highlightIcon} />
+                                    <h3>Professional Setup</h3>
+                                    <p>Expert installation of **Roof Ventilator in Navi Mumbai** and **turbo ventilators navi mumbai** across all industrial MIDC zones.</p>
                                 </Card>
-                            ))}
-                        </div>
-                    </section>
-
-                    <section className={styles.section}>
-                        <h2>Installation and Base Plate Integration</h2>
-                        <div className={styles.contentBlock}>
-                            <p>
-                                A common failure point in roof ventilation is the integration with the roofing sheets. At Zinco, we provide custom-molded **Polycarbonate or Metal Base Plates** designed to match your specific roof profile (trapezoidal, sinusoidal, etc.). This ensures a 100% leak-proof installation in the **Panvel and Bhiwandi** warehouse clusters, where roof integrity is paramount. Trust Zinco for your next **Industrial ventilation system** project.
-                            </p>
-                            <p>
-                                Proper installation is key to the performance of any **Roof Ventilator in Navi Mumbai**. Our certified teams ensure that every unit is perfectly leveled and sealed, preventing leakage even in heavy rains. We are the experts in **turbo ventilators navi mumbai** installation.
-                            </p>
+                            </div>
                         </div>
                     </section>
 
@@ -223,10 +266,33 @@ const Ventilators = () => {
                         </div>
                     </motion.section>
 
+                    <section className={styles.section}>
+                        <div className={styles.grid2Col}>
+                            <div className={styles.contentBlock}>
+                                <h2>Service Areas & Local Expertise</h2>
+                                <p>
+                                    As the premier source for **Roof Ventilator in Navi Mumbai**, we serve all major industrial nodes. Whether you need **turbo ventilators navi mumbai** for a small workshop or a massive **Industrial ventilation system** for a logistics park in Bhiwandi, Zinco is your partner. We offer specialized **roof ventilators in Navi Mumbai** designed for high-humidity coastal zones and provide affordable **roof ventilators in Navi Mumbai** for all industrial sheds.
+                                </p>
+                                <p>
+                                    Our teams are active in Taloja, Rabale, Mahape, and Panvel, providing on-site consultations and the best **Roof Ventilator Price in Navi Mumbai**. Trust the local experts for your **Industrial ventilation system** needs and high-performance **roof ventilators in Navi Mumbai**.
+                                </p>
+                            </div>
+                            <div className={styles.contentBlock}>
+                                <h2>Navi Mumbai Distribution</h2>
+                                <p>
+                                    Looking for **roof ventilators in Navi Mumbai**? We maintain a ready stock of Aluminum and SS 304 units. Our **turbo ventilators navi mumbai** supply chain ensures fast delivery to industrial sheds. For a custom quote and checking the **Roof Ventilator Price in Navi Mumbai**, reach out today. We offer the best quality **roof ventilators in Navi Mumbai**.
+                                </p>
+                                <p>
+                                    We provide the most robust **Industrial ventilation system** for the Mumbai climate. Don't settle for less when it comes to **Roof Ventilator in Navi Mumbai** and competitive **Roof Ventilator Price in Navi Mumbai**.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
                     <section className={styles.ctaSection}>
                         <Card variant="gradient" className={styles.ctaCard}>
                             <h3>Remove Heat from your Factory</h3>
-                            <p>Contact us for the best **Roof Ventilator Price in Navi Mumbai**.</p>
+                            <p>Contact us for the best **Roof Ventilator Price in Navi Mumbai** and premium **roof ventilators in Navi Mumbai**.</p>
                             <div className={styles.ctaButtons}>
                                 <Button size="lg" href="/contact">Get Quote</Button>
                                 <Button size="lg" variant="outline" href="tel:+919967203090">Call Now</Button>

@@ -13,6 +13,10 @@ const Services = lazy(() => import('./pages/Services'));
 const Products = lazy(() => import('./pages/Products'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Gallery = lazy(() => import('./pages/Gallery'));
+const NotFound = lazy(() => import('./pages/NotFound'));
+const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
+const TermsOfService = lazy(() => import('./pages/TermsOfService'));
+import WhatsAppButton from './components/shared/WhatsAppButton';
 
 // Lazy load product categories
 const RoofingMetalSheets = lazy(() => import('./pages/products/RoofingMetalSheets'));
@@ -103,11 +107,15 @@ function App() {
 
               <Route path="/gallery" element={<Gallery />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/terms-of-service" element={<TermsOfService />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
         </main>
         <Footer />
         <Chatbot />
+        <WhatsAppButton />
       </div>
     </Router>
   );

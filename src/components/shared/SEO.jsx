@@ -21,6 +21,45 @@ const SEO = ({ title, description, keywords, canonicalUrl }) => {
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content={title} />
             <meta name="twitter:description" content={description} />
+
+            {/* Schema Markup */}
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "LocalBusiness",
+                    "name": "Zinco Roofing Solution",
+                    "image": "https://zincoroofing.com/logo.png",
+                    "@id": "https://zincoroofing.com",
+                    "url": "https://zincoroofing.com",
+                    "telephone": "+919967203090",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Industrial Hub",
+                        "addressLocality": "Navi Mumbai",
+                        "addressRegion": "Maharashtra",
+                        "postalCode": "410208",
+                        "addressCountry": "IN"
+                    },
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": 19.166111,
+                        "longitude": 73.073611
+                    },
+                    "openingHoursSpecification": {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": [
+                            "Monday",
+                            "Tuesday",
+                            "Wednesday",
+                            "Thursday",
+                            "Friday",
+                            "Saturday"
+                        ],
+                        "opens": "09:00",
+                        "closes": "19:00"
+                    }
+                })}
+            </script>
         </Helmet>
     );
 };

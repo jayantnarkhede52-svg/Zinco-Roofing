@@ -5,6 +5,7 @@ import ServicesShowcase from '../components/home/ServicesShowcase';
 import TrustSection from '../components/home/TrustSection';
 import MaterialComparison from '../components/home/MaterialComparison';
 import InteractiveRoofFinder from '../components/home/InteractiveRoofFinder';
+import FAQ from '../components/home/FAQ';
 import styles from './Home.module.css';
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
             <TrustSection />
             <MaterialComparison />
             <InteractiveRoofFinder />
+            <FAQ />
         </div>
     );
 };
