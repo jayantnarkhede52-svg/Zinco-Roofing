@@ -1,0 +1,54 @@
+.card {
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-xl);
+    position: relative;
+    overflow: hidden;
+}
+
+.glass {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    color: var(--white);
+}
+
+.solid {
+    background: var(--gray-900);
+    border: 1px solid var(--gray-800);
+    box-shadow: var(--shadow-lg);
+    color: var(--white);
+}
+
+.gradient {
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 41, 59, 0.9) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: var(--shadow-2xl);
+    color: var(--white);
+}
+
+.surface {
+    background: var(--gray-900);
+    border: 1px solid var(--gray-800);
+    box-shadow: var(--shadow-lg);
+    color: var(--white);
+}
+
+/* Gradient Border Effect on Hover */
+.card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius-xl);
+    padding: 2px;
+    background: linear-gradient(135deg, var(--accent-500), var(--secondary-500));
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity var(--transition-base);
+    pointer-events: none;
+}
+
+.card:hover::before {
+    opacity: 0.5;
+}
