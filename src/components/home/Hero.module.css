@@ -15,15 +15,26 @@
     z-index: 0;
 }
 
-.videoBackground {
+.heroImage {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transform: translate(-50%, -50%);
     opacity: 1;
+    /* Override global img opacity: 0 */
+    animation: kenBurns 25s ease-in-out infinite alternate;
+}
+
+@keyframes kenBurns {
+    0% {
+        transform: scale(1) translateY(0);
+    }
+
+    100% {
+        transform: scale(1.08) translateY(-2%);
+    }
 }
 
 .overlay {

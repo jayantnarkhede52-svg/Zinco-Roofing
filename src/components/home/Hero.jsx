@@ -1,15 +1,13 @@
 import { motion } from 'framer-motion';
 import { useRef } from 'react';
 import Button from '../shared/Button';
-import heroVideo from '../../assets/videos/hero video.mp4';
 import { SOCIAL_LINKS } from '../../utils/constants';
 import styles from './Hero.module.css';
 
-import posterImage from '../../assets/services-hero.png';
+import heroImage from '../../assets/home-hero.png';
 
 const Hero = () => {
     const heroRef = useRef(null);
-    // ... rest of the variants ...
 
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -49,17 +47,12 @@ const Hero = () => {
     return (
         <section ref={heroRef} className={styles.hero}>
             <div className={styles.background}>
-                <video
-                    className={styles.videoBackground}
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    preload="auto"
-                    poster={posterImage}
-                >
-                    <source src={heroVideo} type="video/mp4" />
-                </video>
+                <img
+                    className={styles.heroImage}
+                    src={heroImage}
+                    alt="Professional roofing solutions in Navi Mumbai - Zinco Roofing"
+                    loading="eager"
+                />
                 <div className={styles.overlay}></div>
                 <div className={styles.gradientMesh}></div>
                 <div className={styles.particles}>
