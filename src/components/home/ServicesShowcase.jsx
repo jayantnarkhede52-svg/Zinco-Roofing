@@ -10,32 +10,32 @@ import styles from './ServicesShowcase.module.css';
 
 const services = [
     {
-        id: 'fabrication',
-        title: 'Custom Fabrication',
-        desc: 'Precision cutting and bending of roofing sheets to your exact specifications.',
+        id: 'metal-roofing',
+        title: 'Roofing Metal Sheets',
+        desc: 'Premium colour coated, decking, and metal roofing profiles for durable industrial sheds.',
         image: img1,
-        color: '#3b82f6'
+        path: '/products/roofing-metal-sheets'
     },
     {
-        id: 'installation',
-        title: 'Professional Installation',
-        desc: 'Expert on-site installation by our certified team ensuring leak-proof roofs.',
+        id: 'puf-panels',
+        title: 'PUF Sandwich Panels',
+        desc: 'Advanced thermal insulation panels for cold storage and energy-efficient industrial buildings.',
         image: img2,
-        color: '#f59e0b'
+        path: '/products/insulated-sheets'
     },
     {
-        id: 'maintenance',
-        title: 'Repair & Maintenance',
-        desc: 'Annual maintenance contracts and quick repairs for existing industrial roofs.',
+        id: 'polycarbonate',
+        title: 'Polycarbonate Sheets',
+        desc: 'High-impact transparent roofing solutions for natural lighting and skylights.',
         image: img3,
-        color: '#ef4444'
+        path: '/products/polycarbonate-sheets'
     },
     {
-        id: 'consultation',
-        title: 'Project Consultation',
-        desc: 'Technical guidance on material selection and structural design optimization.',
+        id: 'decking-sheets',
+        title: 'Decking Sheets',
+        desc: 'High-strength structural floor decking sheets for modern infrastructure projects.',
         image: img4,
-        color: '#10b981'
+        path: '/products/decking-sheet'
     }
 ];
 
@@ -50,7 +50,7 @@ const ServicesShowcase = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                     >
-                        WHAT WE DO
+                        OUR CATEGORIES
                     </motion.span>
                     <motion.h2
                         initial={{ opacity: 0, y: 10 }}
@@ -58,7 +58,7 @@ const ServicesShowcase = () => {
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
                     >
-                        Industrial & Commercial Roofing Contractor
+                        Precision Roofing & Building Solutions
                     </motion.h2>
                 </div>
 
@@ -85,11 +85,11 @@ const ServicesShowcase = () => {
                                     <h3>{service.title}</h3>
                                     <p>{service.desc}</p>
                                     <div className={styles.learnMore}>
-                                        <span>Learn more</span>
+                                        <span>Explore Category</span>
                                         <FaArrowRight size={12} />
                                     </div>
                                 </div>
-                                <Link to="/services" className={styles.cardLink} aria-label={`View ${service.title}`} />
+                                <Link to={service.path} className={styles.cardLink} aria-label={`View ${service.title}`} />
                             </Card>
                         </motion.div>
                     ))}

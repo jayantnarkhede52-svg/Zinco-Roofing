@@ -1,0 +1,81 @@
+.quoteSection {
+    padding: var(--spacing-3xl) 0;
+    background: var(--bg-secondary);
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: var(--spacing-3xl);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sublabel {
+    display: block;
+    font-size: var(--text-sm);
+    color: var(--accent-500);
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    margin-bottom: var(--spacing-xs);
+    text-transform: uppercase;
+}
+
+.header h2 {
+    font-size: clamp(var(--text-3xl), 4vw, var(--text-5xl));
+    margin-bottom: var(--spacing-md);
+    color: var(--text-primary);
+    font-weight: 800;
+}
+
+.header p {
+    color: var(--text-secondary);
+    font-size: var(--text-lg);
+    line-height: 1.6;
+}
+
+.formWrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.formCard {
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid var(--gray-200);
+    box-shadow: var(--shadow-2xl);
+}
+
+.iframeContainer {
+    width: 100%;
+    min-height: 600px;
+    background: var(--surface);
+}
+
+.fbIframe {
+    width: 100%;
+    height: 700px;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .quoteSection {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .iframeContainer {
+        min-height: 800px;
+    }
+
+    .fbIframe {
+        height: 850px;
+    }
+}

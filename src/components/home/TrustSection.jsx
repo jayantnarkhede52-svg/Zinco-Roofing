@@ -82,7 +82,7 @@ const TrustSection = () => {
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
                     >
-                        We don't just provide roofing; we provide long-term protection for your industrial assets.
+                        As a leading **Roofing Contractor in Navi Mumbai**, we don't just provide roofing; we provide long-term protection for your industrial assets with precision engineering and high-quality materials.
                     </motion.p>
                 </div>
 

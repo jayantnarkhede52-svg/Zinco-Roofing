@@ -4,7 +4,7 @@ import Button from '../shared/Button';
 import { SOCIAL_LINKS } from '../../utils/constants';
 import styles from './Hero.module.css';
 
-import heroImage from '../../assets/home-hero.webp';
+import heroVideo from '../../assets/videos/hero video.mp4';
 
 const Hero = () => {
     const heroRef = useRef(null);
@@ -47,11 +47,13 @@ const Hero = () => {
     return (
         <section ref={heroRef} className={styles.hero}>
             <div className={styles.background}>
-                <img
-                    className={styles.heroImage}
-                    src={heroImage}
-                    alt="Professional roofing solutions in Navi Mumbai - Zinco Roofing"
-                    loading="eager"
+                <video
+                    className={styles.heroVideo}
+                    src={heroVideo}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
                 />
                 <div className={styles.overlay}></div>
                 <div className={styles.gradientMesh}></div>
@@ -89,7 +91,7 @@ const Hero = () => {
             >
                 <motion.div className={styles.titleWrapper}>
                     <motion.h1 className={styles.title} variants={titleVariants}>
-                        Roofing Solutions in Navi Mumbai
+                        Roofing Contractor in Navi Mumbai
                     </motion.h1>
                     <motion.div className={styles.underline} variants={itemVariants} />
                 </motion.div>
@@ -100,7 +102,7 @@ const Hero = () => {
                 </motion.p>
 
                 <motion.p className={styles.description} variants={itemVariants}>
-                    Expert roof installation, repair, and waterproofing services with 10+ years of excellence
+                    Expert roof installation, repair, and waterproofing services with 8+ years of excellence
                 </motion.p>
 
                 <motion.div className={styles.buttonGroup} variants={itemVariants}>
