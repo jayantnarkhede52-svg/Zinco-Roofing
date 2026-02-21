@@ -4,7 +4,7 @@ import Button from '../shared/Button';
 import { SOCIAL_LINKS } from '../../utils/constants';
 import styles from './Hero.module.css';
 
-import heroImage from '../../assets/home-hero.png';
+import heroImage from '../../assets/home-hero.webp';
 
 const Hero = () => {
     const heroRef = useRef(null);

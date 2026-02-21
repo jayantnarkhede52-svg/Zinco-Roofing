@@ -95,6 +95,28 @@ const Contact = () => {
                         </motion.div>
                     </div>
 
+                    <div className={styles.formSection}>
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.5 }}
+                        >
+                            <div className={styles.formHeader}>
+                                <h2>Send us a Message</h2>
+                                <p>Fill out the form below and our team will get back to you within 24 hours.</p>
+                            </div>
+                            <div className={styles.formWrapper}>
+                                <iframe
+                                    src="https://app.formbricks.com/s/cmlwc1cpkstiwu401uisuaoys"
+                                    frameBorder="0"
+                                    className={styles.fbIframe}
+                                    title="Formbricks Contact Form"
+                                ></iframe>
+                            </div>
+                        </motion.div>
+                    </div>
+
                     <div className={styles.mapSectionFull}>
                         <motion.div
                             className={styles.mapWrapper}

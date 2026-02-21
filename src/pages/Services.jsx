@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 import { FaDraftingCompass, FaHandshake, FaPaintBrush, FaHardHat, FaCheckCircle } from 'react-icons/fa';
 import SEO from '../components/shared/SEO';
-import heroImage from '../assets/services-hero.png';
-import planningImg from '../assets/img 5.png';
-import consultationImg from '../assets/img4.png';
-import designImg from '../assets/img 6.png';
-import executionImg from '../assets/img 7.png';
+import heroImage from '../assets/services-hero.webp';
+import planningImg from '../assets/img 5.webp';
+import consultationImg from '../assets/img4.webp';
+import designImg from '../assets/img 6.webp';
+import executionImg from '../assets/img 7.webp';
 import styles from './Services.module.css';
 
 const Services = () => {

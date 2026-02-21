@@ -40,7 +40,11 @@
 .overlay {
     position: absolute;
     inset: 0;
-    background: transparent;
+    /* Adding a dark tint to improve text visibility */
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.45) 0%,
+            rgba(0, 0, 0, 0.65) 100%);
+    z-index: 1;
 }
 
 .gradientMesh {

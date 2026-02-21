@@ -12,35 +12,35 @@ async function optimizeImage(filePath) {
     try {
         const metadata = await sharp(filePath).metadata();
         const originalSize = fs.statSync(filePath).size;
+        const ext = path.extname(filePath);
+        const name = path.basename(filePath, ext);
+        const dir = path.dirname(filePath);
+        const targetPath = path.join(dir, `${name}.webp`);
 
         let transform = sharp(filePath);
 
-        // Resize if width > 1920
-        if (metadata.width > 1920) {
-            transform = transform.resize({ width: 1920, withoutEnlargement: true });
+        // Resize if width > 1600 (better for performance while maintaining quality)
+        if (metadata.width > 1600) {
+            transform = transform.resize({ width: 1600, withoutEnlargement: true });
         }
 
-        // Compress based on format
-        if (metadata.format === 'jpeg' || metadata.format === 'jpg') {
-            transform = transform.jpeg({ quality: 80, mozjpeg: true });
-        } else if (metadata.format === 'png') {
-            transform = transform.png({ quality: 80, compressionLevel: 8 });
-        } else if (metadata.format === 'webp') {
-            transform = transform.webp({ quality: 80 });
-        } else {
-            console.log(`Skipping unsupported format: ${filePath}`);
-            return;
-        }
+        // Convert to WebP with 82% quality
+        transform = transform.webp({ quality: 82, effort: 6 });
 
         const buffer = await transform.toBuffer();
         const newSize = buffer.length;
 
-        if (newSize < originalSize) {
-            fs.writeFileSync(filePath, buffer);
-            const savings = ((originalSize - newSize) / originalSize * 100).toFixed(2);
-            console.log(`Optimized: ${path.basename(filePath)} | Saved: ${savings}% (${(originalSize / 1024).toFixed(2)}KB -> ${(newSize / 1024).toFixed(2)}KB)`);
-        } else {
-            console.log(`Skipped (no savings): ${path.basename(filePath)}`);
+        // Save as WebP
+        fs.writeFileSync(targetPath, buffer);
+
+        const savings = ((originalSize - newSize) / originalSize * 100).toFixed(2);
+        console.log(`Optimized: ${path.basename(filePath)} -> ${name}.webp | Saved: ${savings}% (${(originalSize / 1024).toFixed(2)}KB -> ${(newSize / 1024).toFixed(2)}KB)`);
+
+        // If it was a png or jpg, we should ideally delete the original to save space in the build,
+        // but for now, let's keep them and we'll update the code to point to .webp
+        if (ext.toLowerCase() !== '.webp') {
+            // Optional: fs.unlinkSync(filePath); 
+            // Better to keep for now until code is updated.
         }
     } catch (error) {
         console.error(`Error processing ${filePath}:`, error.message);
