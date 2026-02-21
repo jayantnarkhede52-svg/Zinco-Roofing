@@ -24,48 +24,44 @@ const recommendationLogic = {
 };
 
 const productsData = {
-    'puf-roof-panel': {
-        name: 'PUF Insulated Panels',
-        description: 'Best for heat reduction. Keeps interiors cool.',
-        link: '/products/insulated-sheets'
-    },
-    'shingles': {
-        name: 'Architectural Shingles',
-        description: 'Premium aesthetic appeal for homes.',
-        link: '/products/shingles'
-    },
-    'metal-tile-sheet': {
-        name: 'Metal Tile Sheets',
-        description: 'Classic tile look with steel strength.',
-        link: '/products/metal-tile-sheet'
-    },
-    'decking-sheet': {
-        name: 'Super Deck Sheets',
-        description: 'High structural stability for floors/roofs.',
-        link: '/products/decking-sheet'
-    },
-    'colour-coated-sheet': {
-        name: 'Colour Coated Sheets',
-        description: 'Economical and durable industrial standard.',
-        link: '/products/roofing-metal-sheets'
-    },
-    'polycarbonate-sheets': {
-        name: 'Polycarbonate Sheets',
-        description: 'Natural lighting for commercial spaces.',
-        link: '/products/polycarbonate-sheets'
-    },
-    'high-roof-seam': {
-        name: 'High Roof Seam',
-        description: 'Leak-proof system for large roofs.',
-        link: '/products/high-roof-seam'
-    }
+    // Metal Sheets
+    'colour-coated-sheet': { name: 'Colour Coated Sheets', description: 'Premium trapezoidal and corrugated profiles.', link: '/products/roofing-metal-sheets' },
+    'decking-sheet': { name: 'Super Deck Sheets', description: 'High structural stability for floor and roof deck applications.', link: '/products/decking-sheet' },
+    'shingles': { name: 'Architectural Shingles', description: 'Superior aesthetics and weather protection.', link: '/products/shingles' },
+    'metal-tile-sheet': { name: 'Metal Tile Sheets', description: 'Classic look with steel strength.', link: '/products/metal-tile-sheet' },
+    'high-roof-seam': { name: 'High Roof Seam', description: 'Maximum leak protection Standing Seam system.', link: '/products/high-roof-seam' },
+
+    // Insulation
+    'puf-roof-panel': { name: 'PUF Insulated Panels', description: 'Pre-insulated sandwich panels for thermal efficiency.', link: '/products/insulated-sheets' },
+    'rockwool-glasswool': { name: 'Rockwool & Glasswool', description: 'Fire-resistant and sound-absorbing insulation.', link: '/products/rockwool-glasswool' },
+    'aerolam-sheet': { name: 'Aerolam Sheets', description: 'Advanced moisture and heat control sheets.', link: '/products/aerolam-sheet' },
+
+    // UPVC/Poly
+    'pvc-tile-sheet': { name: 'PVC Tile Sheets', description: 'Lightweight roofing with traditional tile look.', link: '/products/pvc-tile-sheet' },
+    'polycarbonate-sheets': { name: 'Polycarbonate Sheets', description: 'High-impact transparent sheets for natural light.', link: '/products/polycarbonate-sheets' },
+    'multiwall-sheets': { name: 'Multiwall Sheets', description: 'Multi-layered polycarbonate for superior insulation.', link: '/products/multiwall-sheets' },
+    'upvc-high-rib-sheets': { name: 'UPVC High-Rib Sheets', description: 'Corrosion-resistant profile for industries.', link: '/products/upvc-high-rib-sheets' },
+    'synthetic-roof': { name: 'Synthetic Roofing', description: 'Modern materials for long-term protection.', link: '/products/synthetic-roof' },
+    'upvc-sheets': { name: 'Standard UPVC Sheets', description: 'Versatile weatherproof roofing solution.', link: '/products/upvc-sheets' },
+
+    // Additional
+    'ventilators': { name: 'Turbo Ventilators', description: 'Natural airflow and ventilation systems.', link: '/products/ventilators' },
+    'peb-fabrication': { name: 'PEB Solutions', description: 'Pre-engineered industrial building structures.', link: '/products/peb-fabrication' },
+    'roofing-accessories': { name: 'Roofing Accessories', description: 'Ridge caps, gutters, and structural parts.', link: '/products/roofing-accessories' }
 };
+
+const productCategories = [
+    { label: "Metal Sheets", value: "cat_metal", items: ['colour-coated-sheet', 'decking-sheet', 'shingles', 'metal-tile-sheet', 'high-roof-seam'] },
+    { label: "Insulation Panels", value: "cat_insulation", items: ['puf-roof-panel', 'rockwool-glasswool', 'aerolam-sheet'] },
+    { label: "UPVC & Polycarbonate", value: "cat_upvc", items: ['pvc-tile-sheet', 'polycarbonate-sheets', 'multiwall-sheets', 'upvc-high-rib-sheets', 'synthetic-roof', 'upvc-sheets'] },
+    { label: "Industrial Building & Ventilation", value: "cat_industrial", items: ['ventilators', 'peb-fabrication', 'roofing-accessories'] }
+];
 
 const Chatbot = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [messages, setMessages] = useState([]);
     const [isTyping, setIsTyping] = useState(false);
-    const [conversationState, setConversationState] = useState('start'); // start, building, priority, result
+    const [conversationState, setConversationState] = useState('start');
     const [userSelections, setUserSelections] = useState({});
     const messagesEndRef = useRef(null);
     const navigate = useNavigate();
@@ -76,13 +72,13 @@ const Chatbot = () => {
 
     useEffect(() => {
         if (isOpen && messages.length === 0) {
-            addBotMessage("Hi there! I'm ZincoBot. I can help you find the perfect roofing solution. Want to get started?", [
-                { label: "Yes, help me find a roof", value: "start_quiz" },
-                { label: "Just browsing", value: "browsing" }
+            addBotMessage("Hi! I'm ZincoBot. How can I assist you today?", [
+                { label: "Help me find a roof (Quiz)", value: "start_quiz" },
+                { label: "Browse Product Categories", value: "browse_categories" },
+                { label: "Talk to an Expert", value: "contact" }
             ]);
         }
-        scrollToBottom();
-    }, [isOpen, messages]);
+    }, [isOpen]);
 
     useEffect(() => {
         scrollToBottom();
@@ -93,7 +89,7 @@ const Chatbot = () => {
         setTimeout(() => {
             setIsTyping(false);
             setMessages(prev => [...prev, { type: 'bot', text, options }]);
-        }, 1000);
+        }, 800);
     };
 
     const addUserMessage = (text) => {
@@ -105,17 +101,42 @@ const Chatbot = () => {
 
         if (option.value === 'start_quiz') {
             setConversationState('building');
-            addBotMessage("Great! First, what type of building are you working on?", [
+            addBotMessage("Great! What type of building are you working on?", [
                 { label: "Home / Residential", value: "residential" },
                 { label: "Factory / Industrial", value: "industrial" },
                 { label: "Commercial / Office", value: "commercial" }
             ]);
-        } else if (option.value === 'browsing') {
-            addBotMessage("No problem! Feel free to ask if you change your mind.");
+        } else if (option.value === 'browse_categories') {
+            addBotMessage("Select a category to see our specific roofing solutions:",
+                productCategories.map(cat => ({ label: cat.label, value: cat.value }))
+            );
+        } else if (option.value.startsWith('cat_')) {
+            const category = productCategories.find(c => c.value === option.value);
+            addBotMessage(`Here are our products for ${category.label}:`,
+                category.items.map(id => ({ label: productsData[id].name, value: `prod_${id}` }))
+            );
+        } else if (option.value.startsWith('prod_')) {
+            const productId = option.value.replace('prod_', '');
+            const product = productsData[productId];
+            addBotMessage(`Excellent choice! Here is more about ${product.name}:`, []);
+            setTimeout(() => {
+                setMessages(prev => [...prev, {
+                    type: 'bot',
+                    text: product.description,
+                    product: product
+                }]);
+            }, 600);
+        } else if (option.value === 'contact') {
+            addBotMessage("You can reach our experts at +91 91375 79872 or visit our contact page.", [
+                { label: "Go to Contact Page", value: "nav_contact" },
+                { label: "Back to Main Menu", value: "restart" }
+            ]);
+        } else if (option.value === 'nav_contact') {
+            handleProductView('/contact');
         } else if (['residential', 'industrial', 'commercial'].includes(option.value)) {
             setUserSelections(prev => ({ ...prev, building: option.value }));
             setConversationState('priority');
-            addBotMessage("Got it. What is your main priority for the roof?", [
+            addBotMessage("And what is your main priority for the roof?", [
                 { label: "Heat Reduction", value: "heat" },
                 { label: "Waterproofing", value: "waterproof" },
                 { label: "Durability / Strength", value: "durability" }
@@ -129,18 +150,18 @@ const Chatbot = () => {
             setConversationState('start');
             setUserSelections({});
             setTimeout(() => {
-                addBotMessage("Let's start over. What type of building is it?", [
-                    { label: "Home / Residential", value: "residential" },
-                    { label: "Factory / Industrial", value: "industrial" },
-                    { label: "Commercial / Office", value: "commercial" }
+                addBotMessage("How can I help you today?", [
+                    { label: "Help me find a roof (Quiz)", value: "start_quiz" },
+                    { label: "Browse Product Categories", value: "browse_categories" },
+                    { label: "Talk to an Expert", value: "contact" }
                 ]);
-            }, 500);
+            }, 300);
         }
     };
 
     const recommendProduct = (selections) => {
         const { building, priority } = selections;
-        let productId = 'colour-coated-sheet'; // Default
+        let productId = 'colour-coated-sheet';
 
         if (recommendationLogic[building]) {
             productId = recommendationLogic[building][priority] || recommendationLogic[building].standard || recommendationLogic[building].durability;
@@ -156,7 +177,7 @@ const Chatbot = () => {
                 text: `Based on your needs, I recommend:`,
                 product: product
             }]);
-        }, 1500);
+        }, 1200);
     };
 
     const handleProductView = (link) => {
