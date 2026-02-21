@@ -415,23 +415,30 @@
 @media (max-width: 768px) {
     .introText {
         font-size: var(--text-lg);
-        padding: 0 var(--spacing-md);
+        padding: 0 var(--spacing-xs);
+        /* Reduced from var(--spacing-md) */
+        width: 100%;
     }
 
     .introText::before {
-        font-size: 3rem;
-        top: -15px;
+        font-size: 2.5rem;
+        top: -20px;
+        left: -10px;
     }
 
     .introText::after {
-        font-size: 3rem;
-        bottom: -30px;
+        font-size: 2.5rem;
+        bottom: -40px;
+        right: -10px;
     }
 
     .narrativeSection,
     .introSection {
-        padding: var(--spacing-xl) var(--spacing-md);
+        padding: var(--spacing-xl) 0;
+        /* Removed horizontal padding to rely on parent container */
         max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .narrativeBlock h2 {
