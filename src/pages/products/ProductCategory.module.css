@@ -364,6 +364,20 @@
 }
 
 @media (max-width: 768px) {
+    .hero {
+        padding: var(--spacing-3xl) 0;
+        min-height: 300px;
+    }
+
+    .hero h1 {
+        font-size: var(--text-3xl);
+    }
+
+    .heroDesc {
+        font-size: var(--text-base);
+        padding: 0 var(--spacing-md);
+    }
+
     .grid2Col {
         grid-template-columns: 1fr;
     }
@@ -387,10 +401,29 @@
 
     .ctaButtons {
         flex-direction: column;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
     }
 
     .ctaButtons>* {
         width: 100%;
+    }
+
+    .content {
+        padding: var(--spacing-xl) 0;
+    }
+
+    .section h2 {
+        font-size: var(--text-2xl);
+    }
+
+    .benefitCard {
+        padding: var(--spacing-lg);
+    }
+
+    .ctaCard {
+        padding: var(--spacing-xl) var(--spacing-md);
     }
 }
 

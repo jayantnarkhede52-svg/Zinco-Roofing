@@ -20,7 +20,7 @@
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 var(--spacing-xl);
+    padding: 0 var(--spacing-md);
 }
 
 .sublabel {
@@ -271,6 +271,10 @@
 }
 
 @media (max-width: 968px) {
+    .hero {
+        padding: var(--spacing-3xl) 0;
+    }
+
     .sectionWrapper {
         flex-direction: column !important;
         gap: var(--spacing-xl);
@@ -282,9 +286,40 @@
 
     .abstractVisual {
         height: 250px;
+        padding: var(--spacing-lg);
+    }
+
+    .number {
+        font-size: 5rem;
     }
 
     .featureList {
         grid-template-columns: 1fr;
+    }
+
+    .textBlock h2 {
+        font-size: var(--text-2xl);
+    }
+
+    .descriptionText {
+        font-size: var(--text-base);
+    }
+
+    .ctaBox {
+        padding: var(--spacing-xl);
+    }
+
+    .ctaBox h2 {
+        font-size: var(--text-2xl);
+    }
+}
+
+@media (max-width: 480px) {
+    .number {
+        font-size: 4rem;
+    }
+
+    .serviceSection {
+        padding: var(--spacing-2xl) 0;
     }
 }

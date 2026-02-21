@@ -413,11 +413,53 @@
 }
 
 @media (max-width: 768px) {
+    .introText {
+        font-size: var(--text-lg);
+        padding: 0 var(--spacing-md);
+    }
+
+    .introText::before {
+        font-size: 3rem;
+        top: -15px;
+    }
+
+    .introText::after {
+        font-size: 3rem;
+        bottom: -30px;
+    }
+
+    .narrativeSection,
+    .introSection {
+        padding: var(--spacing-xl) var(--spacing-md);
+        max-width: 100%;
+    }
+
+    .narrativeBlock h2 {
+        font-size: var(--text-2xl);
+    }
+
+    .narrativeBlock p {
+        font-size: var(--text-md);
+    }
+
     .showcaseGrid {
         grid-template-columns: 1fr;
     }
 
     .detailedContentGrid {
         grid-template-columns: 1fr;
+    }
+
+    .productShowcase {
+        padding: var(--spacing-md);
+        margin: var(--spacing-2xl) 0;
+    }
+
+    .hero h1 {
+        font-size: var(--text-3xl);
+    }
+
+    .hero p {
+        font-size: var(--text-lg);
     }
 }

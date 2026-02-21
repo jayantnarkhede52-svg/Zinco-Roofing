@@ -136,12 +136,44 @@
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+
     .infoGrid {
         grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .infoCard {
+        padding: var(--spacing-xl) var(--spacing-lg);
     }
 
     .hero {
-        padding: var(--spacing-2xl) 0;
+        padding: var(--spacing-3xl) 0;
+        min-height: 40vh;
+    }
+
+    .hero h1 {
+        font-size: var(--text-3xl);
+    }
+
+    .hero p {
+        font-size: var(--text-lg);
+        padding: 0 var(--spacing-md);
+    }
+
+    .formSection {
+        padding: var(--spacing-xl) 0;
+        margin-top: var(--spacing-2xl);
+    }
+
+    .formHeader h2 {
+        font-size: var(--text-2xl);
+    }
+
+    .mapWrapper h2 {
+        font-size: var(--text-2xl);
     }
 }
 
