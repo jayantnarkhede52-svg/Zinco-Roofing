@@ -117,26 +117,6 @@ const Contact = () => {
                         </motion.div>
                     </div>
 
-                    <div className={styles.mapSectionFull}>
-                        <motion.div
-                            className={styles.mapWrapper}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                        >
-                            <h2>Our Location</h2>
-                            <p>Visit our office for detailed project discussions</p>
-                            <iframe
-                                title="Zinco Location"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1884.4421254818604!2d73.07497388775614!3d19.156481082064912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bf211d52b805%3A0x4c28f8f1c53c9b0c!2sZinco%20Roofing%20Solution!5e0!3m2!1sen!2sin!4v1740588000000!5m2!1sen!2sin"
-                                width="100%"
-                                height="450px"
-                                style={{ border: 0, borderRadius: 'var(--radius-lg)', marginTop: '2rem' }}
-                                allowFullScreen=""
-                                loading="lazy"
-                            ></iframe>
-                        </motion.div>
-                    </div>
                 </div>
             </div>
         </div>
