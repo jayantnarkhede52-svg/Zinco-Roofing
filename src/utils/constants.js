@@ -4,7 +4,7 @@ export const CONTACT_INFO = {
     email: "info.zincoroof@gmail.com",
     gstin: "27EUQPS0801H1ZD",
     website: "www.zincocompany.com",
-    mapLink: "https://maps.app.goo.gl/LodhaEliteCHSLtdIWing" // Direct link
+    mapLink: "https://www.google.com/maps/place/Zinco+Roofing+Solution/@19.1564248,73.0757568,17z"
 };
 
 export const SOCIAL_LINKS = {
