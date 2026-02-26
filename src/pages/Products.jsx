@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Link, useSearchParams } from 'react-router-dom';
-import { FaArrowLeft, FaIndustry, FaTemperatureHigh, FaLayerGroup, FaTools } from 'react-icons/fa';
+import { useNavigate, Link, useSearchParams } from 'react-router-dom';
+import { FaArrowLeft, FaIndustry, FaTemperatureHigh, FaLayerGroup, FaTools, FaSolarPanel, FaPaintRoller } from 'react-icons/fa';
 import SEO from '../components/shared/SEO';
 import heroImage from '../assets/products-hero.png';
 import Card from '../components/shared/Card';
@@ -14,12 +14,17 @@ import polyFeatured from '../assets/Transparent polycarbonate/Transparent polyca
 import deckFeatured from '../assets/Dect sheet/Dect sheet/1000014053.jpg';
 
 const Products = () => {
+    const navigate = useNavigate();
     const [searchParams, setSearchParams] = useSearchParams();
     const activeCategory = searchParams.get('category');
 
     // Helper to set category (preserves history stack behavior options if needed, but default push is fine)
-    const handleCategorySelect = (title) => {
-        setSearchParams({ category: title });
+    const handleCategorySelect = (group) => {
+        if (group.directPath) {
+            navigate(group.directPath);
+        } else {
+            setSearchParams({ category: group.title });
+        }
     };
 
     const handleBackToCategories = () => {
@@ -185,22 +190,20 @@ const Products = () => {
                     description: 'Complete pre-engineered building structures and designs.',
                     icon: '🏭',
                     path: '/products/peb-fabrication'
-                },
-                {
-                    id: 'structural-painting',
-                    title: 'Industrial / Structural Painting',
-                    description: 'Professional industrial and structural painting services for long-term protection.',
-                    icon: '🎨',
-                    path: '/products/structural-painting'
-                },
-                {
-                    id: 'solar-installation',
-                    title: 'Solar Panel Installation',
-                    description: 'Expert solar panel mounting and installation for industrial and commercial roofs.',
-                    icon: '☀️',
-                    path: '/products/solar-installation'
                 }
             ]
+        },
+        {
+            title: 'Industrial / Structural Painting',
+            icon: <FaPaintRoller />,
+            description: 'Professional industrial and structural painting services for protection.',
+            directPath: '/products/structural-painting'
+        },
+        {
+            title: 'Solar Panel Installation',
+            icon: <FaSolarPanel />,
+            description: 'Expert solar panel mounting and installation for industrial roofs.',
+            directPath: '/products/solar-installation'
         }
     ];
 
@@ -271,7 +274,7 @@ const Products = () => {
                                 {productGroups.map((group, index) => (
                                     <div
                                         key={group.title}
-                                        onClick={() => handleCategorySelect(group.title)}
+                                        onClick={() => handleCategorySelect(group)}
                                         className={styles.categorySelectionCardWrapper}
                                     >
                                         <Card variant="glass" className={`${styles.categorySelectionCard} ${group.image ? styles.hasImage : ''}`}>
