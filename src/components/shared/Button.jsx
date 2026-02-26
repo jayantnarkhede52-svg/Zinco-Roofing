@@ -1,15 +1,16 @@
 import { motion } from 'framer-motion';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import styles from './Button.module.css';
 
-const Button = ({ 
-  children, 
-  variant = 'primary', 
-  size = 'md', 
-  onClick, 
-  href, 
+const Button = ({
+  children,
+  variant = 'primary',
+  size = 'md',
+  onClick,
+  href,
   className = '',
-  ...props 
+  ...props
 }) => {
   const buttonVariants = {
     hover: {
@@ -28,17 +29,35 @@ const Button = ({
   const baseClass = `${styles.button} ${styles[variant]} ${styles[size]} ${className}`;
 
   if (href) {
+    const isExternal = href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('tel:');
+
+    if (isExternal) {
+      return (
+        <motion.a
+          href={href}
+          className={baseClass}
+          variants={buttonVariants}
+          whileHover="hover"
+          whileTap="tap"
+          {...props}
+        >
+          {children}
+        </motion.a>
+      );
+    }
+
     return (
-      <motion.a
-        href={href}
-        className={baseClass}
-        variants={buttonVariants}
-        whileHover="hover"
-        whileTap="tap"
-        {...props}
-      >
-        {children}
-      </motion.a>
+      <Link to={href} className={styles.linkWrapper}>
+        <motion.div
+          variants={buttonVariants}
+          whileHover="hover"
+          whileTap="tap"
+          className={baseClass}
+          {...props}
+        >
+          {children}
+        </motion.div>
+      </Link>
     );
   }
 

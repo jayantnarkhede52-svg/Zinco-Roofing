@@ -1,10 +1,10 @@
 export const CONTACT_INFO = {
-    address: "22, ELITE BUILDING, NEAR NILJE STATION, LODHA HEAVEN, KALYANSHIL ROAD, PALAVA, DOMBIVLI(E)-421204, THANE, MAHARASHTRA",
+    address: "Shop Number 22, Elite Complex Lodha Heaven, Kalyan - Shilphata Rd, Dombivli, Maharashtra 421204",
     phones: ["9967203090", "7208519692"],
     email: "info.zincoroof@gmail.com",
     gstin: "27EUQPS0801H1ZD",
     website: "www.zincocompany.com",
-    mapLink: "https://www.google.com/maps/search/22,+ELITE+BUILDING,+NEAR+NILJE+STATION,+LODHA+HEAVEN,+KALYANSHIL+ROAD,+PALAVA,+DOMBIVLI(E)-421204" // Approximate search link
+    mapLink: "https://maps.app.goo.gl/LodhaEliteCHSLtdIWing" // Direct link
 };
 
 export const SOCIAL_LINKS = {

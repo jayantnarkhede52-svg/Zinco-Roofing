@@ -102,7 +102,7 @@ const Hero = () => {
                 </motion.p>
 
                 <motion.p className={styles.description} variants={itemVariants}>
-                    Expert roof installation, repair, and waterproofing services with 8+ years of excellence
+                    Expert Roof installation, PUF panel installation & Structural Painting services with 8+ years experience
                 </motion.p>
 
                 <motion.div className={styles.buttonGroup} variants={itemVariants}>

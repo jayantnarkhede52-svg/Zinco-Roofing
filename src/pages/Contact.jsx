@@ -128,7 +128,7 @@ const Contact = () => {
                             <p>Visit our office for detailed project discussions</p>
                             <iframe
                                 title="Zinco Location"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.812232938183!2d73.07409241489953!3d19.108611187062492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c0e5a974b791%3A0x9409ed5a47346857!2sIndustrial%20Area%2C%20Taloja%2C%20Navi%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1672531234567!5m2!1sen!2sin"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.8864753303683!2d73.07575677520738!3d19.156424782065096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bf2e99b0e901%3A0xfcf0b3a9d2fd20cd!2sLodha%20Elite%20CHS%20Ltd%20I%20Wing!5e0!3m2!1sen!2sin!4v1740579998818!5m2!1sen!2sin"
                                 width="100%"
                                 height="450px"
                                 style={{ border: 0, borderRadius: 'var(--radius-lg)', marginTop: '2rem' }}

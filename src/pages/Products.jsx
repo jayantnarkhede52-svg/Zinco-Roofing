@@ -185,6 +185,20 @@ const Products = () => {
                     description: 'Complete pre-engineered building structures and designs.',
                     icon: '🏭',
                     path: '/products/peb-fabrication'
+                },
+                {
+                    id: 'structural-painting',
+                    title: 'Industrial / Structural Painting',
+                    description: 'Professional industrial and structural painting services for long-term protection.',
+                    icon: '🎨',
+                    path: '/products/structural-painting'
+                },
+                {
+                    id: 'solar-installation',
+                    title: 'Solar Panel Installation',
+                    description: 'Expert solar panel mounting and installation for industrial and commercial roofs.',
+                    icon: '☀️',
+                    path: '/products/solar-installation'
                 }
             ]
         }

@@ -38,6 +38,8 @@ const MultiwallSheets = lazy(() => import('./pages/products/MultiwallSheets'));
 const UPVCHighRibSheets = lazy(() => import('./pages/products/UPVCHighRibSheets'));
 const SyntheticRoof = lazy(() => import('./pages/products/SyntheticRoof'));
 const UPVCSheets = lazy(() => import('./pages/products/UPVCSheets'));
+const StructuralPainting = lazy(() => import('./pages/products/StructuralPainting'));
+const SolarInstallation = lazy(() => import('./pages/products/SolarInstallation'));
 
 // Location SEO Pages
 const NaviMumbaiRoofing = lazy(() => import('./pages/locations/NaviMumbaiRoofing'));
@@ -96,6 +98,8 @@ function App() {
               <Route path="/products/upvc-high-rib-sheets" element={<UPVCHighRibSheets />} />
               <Route path="/products/synthetic-roof" element={<SyntheticRoof />} />
               <Route path="/products/upvc-sheets" element={<UPVCSheets />} />
+              <Route path="/products/structural-painting" element={<StructuralPainting />} />
+              <Route path="/products/solar-installation" element={<SolarInstallation />} />
 
               {/* Location SEO Routes */}
               <Route path="/roofing-contractors-navi-mumbai" element={<NaviMumbaiRoofing />} />

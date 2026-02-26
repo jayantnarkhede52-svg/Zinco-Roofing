@@ -8,28 +8,38 @@ import polyFeatured from '../assets/Transparent polycarbonate/Transparent polyca
 import deckFeatured from '../assets/Dect sheet/Dect sheet/1000014053.jpg';
 import warehouseShot from '../assets/Upvc images/Upvc images/1000014135.jpg';
 import industrialShot from '../assets/Upvc images/Upvc images/1000014394.jpg';
+import vortexImage from '../assets/projects/vortex-badlapur.jpeg';
+import godrejImage from '../assets/projects/Godreh-ambarnath.jpeg';
+import valvolineImage from '../assets/projects/Valvoline-ambarnath.jpeg';
+import ltImage from '../assets/projects/L&T construction.jpeg';
+import regencyImage from '../assets/projects/Regency.jpeg';
+import amarStudioImage from '../assets/projects/amar studio.jpeg';
+import cyberteckImage from '../assets/projects/Cyberteck.jpeg';
+import parasnathImage from '../assets/projects/Parasnath temple.jpeg';
 import styles from './Projects.module.css';
 
 const projects = [
-    { name: 'Cybertech Pvt Ltd', location: 'Thane', category: 'Industrial', icon: FaIndustry },
-    { name: 'Amar Studio', location: 'Malad', category: 'Commercial', icon: FaBuilding },
+    { name: 'Knott Vortex', location: 'Badlapur', category: 'Industrial', icon: FaIndustry, image: vortexImage },
+    { name: 'Godrej Industry Ltd', location: 'Ambernath', category: 'Industrial', icon: FaIndustry, image: godrejImage },
+    { name: 'Valvoline Cummins Ltd', location: 'Ambernath', category: 'Industrial', icon: FaIndustry, image: valvolineImage },
+    { name: 'L & T Construction', location: 'Navi Mumbai', category: 'Construction', icon: FaBuilding, image: ltImage },
+    { name: 'Regency Sales Office', location: 'Kalyan', category: 'Commercial', icon: FaBuilding, image: regencyImage },
+    { name: 'Amar Studio', location: 'Malad', category: 'Commercial', icon: FaBuilding, image: amarStudioImage },
+    { name: 'Cyberteck Pvt Ltd', location: 'Thane', category: 'Industrial', icon: FaIndustry, image: cyberteckImage },
+    { name: 'Parasnath Temple', location: 'Jharkhand', category: 'Religious', icon: FaPlaceOfWorship, image: parasnathImage },
     { name: 'Newreka Chemical Pvt Ltd', location: 'Dombivali - MIDC', category: 'Chemical', icon: FaIndustry },
     { name: 'Vedant Dye & Intermediate', location: 'Taloja', category: 'Industrial', icon: FaIndustry },
     { name: 'Iskcon Temple', location: 'Palghar', category: 'Religious', icon: FaPlaceOfWorship },
-    { name: 'Regency Sales Office', location: 'Kalyan', category: 'Commercial', icon: FaBuilding },
     { name: 'Snowman Logistics', location: 'Taloja', category: 'Logistics', icon: FaIndustry },
     { name: 'Paragaon Centre', location: 'Worli', category: 'Commercial', icon: FaBuilding },
     { name: 'Bajaj Electricals', location: 'Chakkan', category: 'Industrial', icon: FaIndustry },
     { name: 'Nd Studio', location: 'Karjat', category: 'Commercial', icon: FaBuilding },
     { name: 'Palms & Water Resort', location: 'Kalyan', category: 'Hospitality', icon: FaBuilding },
-    { name: 'Munters India Humidity Control', location: 'Ambernath', category: 'HVAC', icon: FaIndustry },
     { name: 'Multiwall Sheet Installation', location: 'Palava City', category: 'Residential', icon: FaBuilding },
     { name: 'Alvi Tech Pvt. Ltd.', location: 'Dombivli', category: 'Industrial', icon: FaIndustry },
     { name: 'Mahesh Fashion', location: 'Bhiwandi', category: 'Textile', icon: FaIndustry },
     { name: 'Himalaya Society', location: 'Lodha', category: 'Residential', icon: FaBuilding },
-    { name: 'Parasnath Temple', location: 'Jharkhand', category: 'Religious', icon: FaPlaceOfWorship },
     { name: 'Balaji Builder', location: 'Kalyan', category: 'Construction', icon: FaBuilding },
-    { name: 'Knott Vortex', location: 'Badlapur', category: 'Industrial', icon: FaIndustry },
     { name: 'Adient India Pvt Ltd', location: 'Pune', category: 'Automotive', icon: FaIndustry }
 ];
 
@@ -90,6 +100,11 @@ const Projects = () => {
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.05 }}
                             >
+                                {project.image && (
+                                    <div className={styles.projectImageWrapper}>
+                                        <img src={project.image} alt={project.name} className={styles.projectImage} />
+                                    </div>
+                                )}
                                 <div className={styles.projectContent}>
                                     <div className={styles.headerRow}>
                                         <project.icon className={styles.typeIcon} />
