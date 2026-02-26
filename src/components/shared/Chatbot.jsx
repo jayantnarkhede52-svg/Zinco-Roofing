@@ -127,7 +127,7 @@ const Chatbot = () => {
                 }]);
             }, 600);
         } else if (option.value === 'contact') {
-            addBotMessage("You can reach our experts at +91 91375 79872 or visit our contact page.", [
+            addBotMessage("You can reach our experts at +91 9967203090 or +91 7208519692. You can also visit our contact page.", [
                 { label: "Go to Contact Page", value: "nav_contact" },
                 { label: "Back to Main Menu", value: "restart" }
             ]);
