@@ -374,7 +374,8 @@ const Products = () => {
                     </article>
                 </div>
             </div>
-            );
+        </div>
+    );
 };
 
-            export default Products;
+export default Products;
