@@ -1,5 +1,6 @@
-import { motion } from 'framer-motion';
-import { FaDraftingCompass, FaHandshake, FaPaintBrush, FaHardHat, FaCheckCircle } from 'react-icons/fa';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
+import { FaDraftingCompass, FaHandshake, FaPaintBrush, FaHardHat, FaCheckCircle, FaIndustry, FaTemperatureHigh, FaLayerGroup, FaTools, FaPaintRoller, FaSolarPanel } from 'react-icons/fa';
 import SEO from '../components/shared/SEO';
 import heroImage from '../assets/services-hero.webp';
 import planningImg from '../assets/img 5.webp';
@@ -8,7 +9,53 @@ import designImg from '../assets/img 6.webp';
 import executionImg from '../assets/img 7.webp';
 import styles from './Services.module.css';
 
+import Card from '../components/shared/Card';
+
 const Services = () => {
+    const navigate = useNavigate();
+
+    const productCategories = [
+        {
+            title: 'Metal Sheet Solutions',
+            icon: <FaIndustry />,
+            description: 'Premium colour coated, decking, and metal roofing profiles.'
+        },
+        {
+            title: 'Insulation Sheet Solutions',
+            icon: <FaTemperatureHigh />,
+            description: 'Advanced thermal and acoustic insulation panels for efficiency.'
+        },
+        {
+            title: 'UPVC & Polycarbonate Solutions',
+            icon: <FaLayerGroup />,
+            description: 'Durable, transparent, and chemical-resistant roofing sheets.'
+        },
+        {
+            title: 'Additional Building Solutions',
+            icon: <FaTools />,
+            description: 'Essential accessories, ventilation, and structural components.'
+        },
+        {
+            title: 'Industrial / Structural Painting',
+            icon: <FaPaintRoller />,
+            description: 'Professional industrial and structural painting services.',
+            directPath: '/products/structural-painting'
+        },
+        {
+            title: 'Solar Panel Installation',
+            icon: <FaSolarPanel />,
+            description: 'Expert solar panel mounting and installation for industrial roofs.',
+            directPath: '/products/solar-installation'
+        }
+    ];
+
+    const handleCategoryClick = (category) => {
+        if (category.directPath) {
+            navigate(category.directPath);
+        } else {
+            navigate(`/premium-roofing-sheets-navi-mumbai?category=${encodeURIComponent(category.title)}`);
+        }
+    };
     const serviceSections = [
         {
             id: 'planning',
@@ -51,9 +98,9 @@ const Services = () => {
     return (
         <div className={styles.services}>
             <SEO
-                title="Expert Roofing & Waterproofing Services"
-                description="Comprehensive roofing services including installation, waterproofing, retrofitting, and fabrication for industrial and commercial buildings."
-                keywords="roofing installation service, industrial waterproofing, roof retrofitting, fabrication services"
+                title="Industrial Roofing Services in Navi Mumbai | Zinco Roofing"
+                description="Expert Industrial Roofing Services in Navi Mumbai. Zinco Roofing provides high-quality installation, waterproofing, and retrofitting for factories and warehouses."
+                keywords="Industrial Roofing Services in Navi Mumbai, industrial roofing installation, roof waterproofing, structural roofing solutions, Navi Mumbai roofing"
             />
             <section className={styles.hero} style={{ backgroundImage: `url(${heroImage})` }} fetchpriority="high">
                 <div className={styles.heroOverlay} />
@@ -62,7 +109,7 @@ const Services = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                     >
-                        Engineering Excellence <br />In Every Layer
+                        Industrial Roofing Services <br />In Navi Mumbai
                     </motion.h1>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
@@ -136,6 +183,38 @@ const Services = () => {
                 ))}
             </div>
 
+            <section className={styles.categorySection}>
+                <div className={styles.container}>
+                    <div className={styles.categoryHeader}>
+                        <span>OUR PRODUCT RANGE</span>
+                        <h2>Explore Our Solutions</h2>
+                        <div className={styles.headerUnderline} />
+                    </div>
+
+                    <div className={styles.categoryGrid}>
+                        {productCategories.map((category, index) => (
+                            <div
+                                key={category.title}
+                                className={styles.cardWrapper}
+                                onClick={() => handleCategoryClick(category)}
+                            >
+                                <Card variant="glass" className={styles.categoryCard}>
+                                    <div className={styles.cardIcon}>{category.icon}</div>
+                                    <div className={styles.cardContent}>
+                                        <h3>{category.title}</h3>
+                                        <p>{category.description}</p>
+                                    </div>
+                                    <div className={styles.cardFooter}>
+                                        <span>View Category</span>
+                                        <span className={styles.arrow}>→</span>
+                                    </div>
+                                </Card>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
             <div className={styles.ctaSection}>
                 <div className={styles.container}>
                     <motion.div
@@ -150,6 +229,60 @@ const Services = () => {
                     </motion.div>
                 </div>
             </div>
+
+            <section className={styles.seoSection}>
+                <div className={styles.container}>
+                    <div className={styles.seoHeader}>
+                        <h2>Industrial Roofing Services in Navi Mumbai: The Zinco Excellence</h2>
+                        <div className={styles.headerLine} />
+                    </div>
+
+                    <div className={styles.seoContent}>
+                        <p className={styles.leadPara}>
+                            Finding reliable <strong>Industrial Roofing Services in Navi Mumbai</strong> is the key to protecting your industrial assets from the harsh coastal climate of the Mumbai Metropolitan Region. Zinco Roofing Solutions offers a comprehensive suite of services designed specifically for factories, warehouses, and commercial infrastructures that demand precision, durability, and technical mastery. Our approach combines decades of field experience with modern engineering to deliver roofs that stand the test of time and environmental stress.
+                        </p>
+
+                        <div className={styles.seoGrid}>
+                            <div className={styles.seoCard}>
+                                <h3>Why Our Industrial Roofing Services in Navi Mumbai Stand Out?</h3>
+                                <p>
+                                    Navi Mumbai is a hub for industrial growth, but its proximity to the sea means structures are prone to corrosion and high humidity. Our <strong>Industrial Roofing Services in Navi Mumbai</strong> utilize advanced anti-corrosive materials and specialized coatings that ensure your roof remains structurally sound for decades. We don't just provide a roof; we provide a high-performance shield for your business operations, ensuring minimal downtime and maximum safety for your workforce and machinery.
+                                </p>
+                            </div>
+                            <div className={styles.seoCard}>
+                                <h3>Technical Excellence and Engineering</h3>
+                                <p>
+                                    What differentiates our <strong>Industrial Roofing Services in Navi Mumbai</strong> is our commitment to engineering excellence. We understand that a roof is a critical structural component that impacts the internal temperature, safety, and productivity of your facility. Our <strong>Industrial Roofing Services in Navi Mumbai</strong> include specialized structural collects, advanced CAD modeling, and custom fabrication. This level of detail ensures that your industrial shed or warehouse is optimized for the specific challenges of the local topography.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className={styles.seoTextBody}>
+                            <h3>Comprehensive Industrial Roofing Services in Navi Mumbai for All Sectors</h3>
+                            <p>
+                                From initial technical consultation and planning to precise on-site execution, our <strong>Industrial Roofing Services in Navi Mumbai</strong> cover the entire lifecycle of your roofing project. We specialize in metal sheet installations, insulated sandwich panels, and professional waterproofing. Our team of experts conducts rigorous quality checks at every phase, ensuring that every bolt, seam, and joint meets international engineering standards. Whether it's a new construction or a complex expansion, we provide the scalability and technical depth required for success.
+                            </p>
+
+                            <h3>Waterproofing and Retrofitting: Specialized Industrial Roofing Services in Navi Mumbai</h3>
+                            <p>
+                                In addition to new installations, our <strong>Industrial Roofing Services in Navi Mumbai</strong> encompass high-end retrofitting and professional waterproofing. We investigate every nuance of leaky roofs or aging structures to provide a roadmap for restoration that saves you from costly total replacements. By utilizing our <strong>Industrial Roofing Services in Navi Mumbai</strong>, owners can extend the life of their existing assets while improving the overall thermal performance of the building. This proactive approach to maintenance is a hallmark of our service quality.
+                            </p>
+
+                            <h3>Customization and Sustainability</h3>
+                            <p>
+                                Modern industrial facilities require more than just protection; they require energy efficiency and aesthetic appeal. As part of our <strong>Industrial Roofing Services in Navi Mumbai</strong>, we offer integrated solutions like solar panel mounting, natural ventilation systems, and premium UPVC solutions. By choosing Zinco, you are opting for <strong>Industrial Roofing Services in Navi Mumbai</strong> that prioritize lower lifetime costs and sustainable building practices. We help you create an environment that is both eco-friendly and economically viable.
+                            </p>
+
+                            <div className={styles.seoFooter}>
+                                <h3>Partner with the Leaders in Industrial Roofing Services in Navi Mumbai</h3>
+                                <p>
+                                    Zinco Roofing Solution is dedicated to providing the most honest and technically sound material recommendations in the industry. Our track record of successful projects across Navi Mumbai speaks for itself. If you are looking for <strong>Industrial Roofing Services in Navi Mumbai</strong> that combine creative architectural design with rigid structural integrity, contact us today. Let our experts provide the flawless guidance and execution your industrial project deserves. We are committed to building foundations of trust, one roof at a time.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 };

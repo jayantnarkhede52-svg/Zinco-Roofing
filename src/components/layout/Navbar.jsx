@@ -12,10 +12,10 @@ const Navbar = () => {
 
     const navLinks = [
         { path: '/', label: 'Home' },
-        { path: '/projects', label: 'Projects' },
+        { path: '/industrial-roofing-projects-navi-mumbai', label: 'Projects' },
         { path: '/areas', label: 'Areas' },
-        { path: '/services', label: 'Services' },
-        { path: '/products', label: 'Products' },
+        { path: '/industrial-roofing-services-navi-mumbai', label: 'Services' },
+        { path: '/premium-roofing-sheets-navi-mumbai', label: 'Products' },
         { path: '/gallery', label: 'Gallery' },
         { path: '/contact', label: 'Contact' },
     ];

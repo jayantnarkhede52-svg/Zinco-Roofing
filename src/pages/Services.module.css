@@ -314,6 +314,125 @@
     }
 }
 
+.categorySection {
+    padding: var(--spacing-5xl) 0;
+    background: linear-gradient(180deg, transparent 0%, rgba(37, 99, 235, 0.03) 100%);
+}
+
+.categoryHeader {
+    text-align: center;
+    margin-bottom: var(--spacing-4xl);
+}
+
+.categoryHeader span {
+    color: var(--accent-500);
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    font-size: var(--text-sm);
+    text-transform: uppercase;
+}
+
+.categoryHeader h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: var(--text-4xl);
+    color: var(--text-primary);
+    margin: var(--spacing-sm) 0;
+    font-weight: 800;
+}
+
+.headerUnderline {
+    width: 60px;
+    height: 4px;
+    background: var(--accent-500);
+    margin: var(--spacing-md) auto 0;
+    border-radius: var(--radius-full);
+}
+
+.categoryGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--spacing-xl);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+}
+
+.cardWrapper {
+    cursor: pointer;
+    display: flex;
+}
+
+.categoryCard {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: var(--spacing-2xl) !important;
+    min-height: 280px;
+    background: rgba(15, 23, 42, 0.95) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.cardIcon {
+    font-size: 2.8rem;
+    color: var(--accent-500);
+    margin-bottom: var(--spacing-lg);
+    transition: transform var(--transition-base);
+}
+
+.cardWrapper:hover .cardIcon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.cardContent h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: var(--text-xl);
+    color: var(--white);
+    margin-bottom: var(--spacing-sm);
+    font-weight: 700;
+}
+
+.cardContent p {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    font-size: var(--text-base);
+    margin-bottom: var(--spacing-xl);
+}
+
+.cardFooter {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--accent-500);
+    font-weight: 700;
+    font-size: var(--text-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.cardWrapper:hover .arrow {
+    transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+    .categoryHeader h2 {
+        font-size: var(--text-3xl);
+    }
+
+    .categorySection {
+        padding: var(--spacing-3xl) 0;
+    }
+
+    .categoryGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 480px) {
     .number {
         font-size: 4rem;

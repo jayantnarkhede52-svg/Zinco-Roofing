@@ -159,7 +159,7 @@ const PUFPanelNaviMumbai = () => {
                                     As specialized <strong>Puf panel manufacturers in Navi Mumbai</strong>, we offer a diverse range of panels tailored to specific industrial requirements in the Navi Mumbai micro-markets:
                                 </motion.p>
                                 <div style={{ marginBottom: 'var(--spacing-xl)' }}>
-                                    <Button href="/products" size="lg">View All Products</Button>
+                                    <Button href="/premium-roofing-sheets-navi-mumbai" size="lg">View All Products</Button>
                                 </div>
                             </div>
                             <motion.div
@@ -458,7 +458,7 @@ const PUFPanelNaviMumbai = () => {
                                     Our portfolio demonstrates our ability to deliver results across various sectors, solidifying our status as top <strong>Puf panel manufacturers in Navi Mumbai</strong>:
                                 </p>
                                 <div style={{ marginTop: 'var(--spacing-lg)' }}>
-                                    <Button href="/projects" size="lg">View Our Work</Button>
+                                    <Button href="/industrial-roofing-projects-navi-mumbai" size="lg">View Our Work</Button>
                                 </div>
                             </div>
                             <motion.div

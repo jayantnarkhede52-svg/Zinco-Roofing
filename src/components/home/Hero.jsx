@@ -113,7 +113,7 @@ const Hero = () => {
                     <Button href={SOCIAL_LINKS.whatsapp} size="lg" target="_blank" rel="noopener noreferrer">
                         Get Free Quote
                     </Button>
-                    <Button href="/products" variant="outline" size="lg">
+                    <Button href="/premium-roofing-sheets-navi-mumbai" variant="outline" size="lg">
                         View Our Products
                     </Button>
                 </motion.div>

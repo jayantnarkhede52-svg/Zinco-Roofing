@@ -11,9 +11,9 @@ const Footer = () => {
 
     const quickLinks = [
         { path: '/', label: 'Home' },
-        { path: '/projects', label: 'Projects' },
-        { path: '/services', label: 'Services' },
-        { path: '/products', label: 'Products' },
+        { path: '/industrial-roofing-projects-navi-mumbai', label: 'Projects' },
+        { path: '/industrial-roofing-services-navi-mumbai', label: 'Services' },
+        { path: '/premium-roofing-sheets-navi-mumbai', label: 'Products' },
         { path: '/contact', label: 'Contact' },
     ];
 

@@ -74,9 +74,9 @@ function App() {
           <Suspense fallback={<PageLoader />}>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/products" element={<Products />} />
+              <Route path="/industrial-roofing-projects-navi-mumbai" element={<Projects />} />
+              <Route path="/industrial-roofing-services-navi-mumbai" element={<Services />} />
+              <Route path="/premium-roofing-sheets-navi-mumbai" element={<Products />} />
 
               {/* Detailed Product Routes */}
               <Route path="/products/roofing-metal-sheets" element={<RoofingMetalSheets />} />
