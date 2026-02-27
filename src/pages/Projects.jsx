@@ -102,7 +102,7 @@ const Projects = () => {
                             >
                                 {project.image && (
                                     <div className={styles.projectImageWrapper}>
-                                        <img src={project.image} alt={project.name} className={styles.projectImage} />
+                                        <img src={project.image} alt={project.name} className={styles.projectImage} loading="lazy" decoding="async" />
                                     </div>
                                 )}
                                 <div className={styles.projectContent}>

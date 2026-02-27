@@ -74,7 +74,7 @@ const PUFPanelNaviMumbai = () => {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                             >
-                                <img src={imgIntro} alt="Industrial Skyline of Navi Mumbai" />
+                                <img src={imgIntro} alt="Industrial Skyline of Navi Mumbai" loading="lazy" decoding="async" />
                             </motion.div>
                         </div>
                     </section>
@@ -89,7 +89,7 @@ const PUFPanelNaviMumbai = () => {
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true }}
                                 >
-                                    <img src={imgWhatIs} alt="PUF Panel Structure" />
+                                    <img src={imgWhatIs} alt="PUF Panel Structure" loading="lazy" decoding="async" />
                                 </motion.div>
                                 <div className={styles.textBlock}>
                                     <h2 style={{ color: 'var(--gray-900)', textAlign: 'left', marginBottom: 'var(--spacing-xl)' }}>What Are PUF Panels?</h2>
@@ -168,7 +168,7 @@ const PUFPanelNaviMumbai = () => {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                             >
-                                <img src={imgTypes} alt="Various Types of PUF Panels" />
+                                <img src={imgTypes} alt="Various Types of PUF Panels" loading="lazy" decoding="async" />
                             </motion.div>
                         </div>
 
@@ -263,7 +263,7 @@ const PUFPanelNaviMumbai = () => {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                             >
-                                <img src={imgApplications} alt="Industrial Applications" />
+                                <img src={imgApplications} alt="Industrial Applications" loading="lazy" decoding="async" />
                             </motion.div>
                         </div>
 
@@ -403,7 +403,7 @@ const PUFPanelNaviMumbai = () => {
                                 viewport={{ once: true }}
                                 style={{ height: 'auto', minHeight: 'auto', maxHeight: '500px', alignSelf: 'center' }}
                             >
-                                <img src={imgInstall} alt="Professional Installation Team" />
+                                <img src={imgInstall} alt="Professional Installation Team" loading="lazy" decoding="async" />
                             </motion.div>
                         </div>
                     </section>
@@ -467,7 +467,7 @@ const PUFPanelNaviMumbai = () => {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                             >
-                                <img src={imgProjects} alt="Recent Projects Collage" />
+                                <img src={imgProjects} alt="Recent Projects Collage" loading="lazy" decoding="async" />
                             </motion.div>
                         </div>
 

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
-import { CONTACT_INFO } from '../../utils/constants';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaYoutube } from 'react-icons/fa';
+import { CONTACT_INFO, SOCIAL_LINKS } from '../../utils/constants';
 import logo from '../../assets/logo.png';
 import styles from './Footer.module.css';
 
@@ -42,18 +42,31 @@ const Footer = () => {
                             Premium roofing solutions for residential, commercial, and industrial properties across Mumbai and Navi Mumbai.
                         </p>
                         <div className={styles.social}>
-                            <a href="#" className={styles.socialLink} aria-label="Facebook">
-                                <FaFacebook />
-                            </a>
-                            <a href="#" className={styles.socialLink} aria-label="Instagram">
-                                <FaInstagram />
-                            </a>
-                            <a href="#" className={styles.socialLink} aria-label="Twitter">
-                                <FaTwitter />
-                            </a>
-                            <a href="#" className={styles.socialLink} aria-label="LinkedIn">
-                                <FaLinkedin />
-                            </a>
+                            {SOCIAL_LINKS.facebook && (
+                                <a href={SOCIAL_LINKS.facebook} className={styles.socialLink} aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                                    <FaFacebook />
+                                </a>
+                            )}
+                            {SOCIAL_LINKS.instagram && (
+                                <a href={SOCIAL_LINKS.instagram} className={styles.socialLink} aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                                    <FaInstagram />
+                                </a>
+                            )}
+                            {SOCIAL_LINKS.twitter && (
+                                <a href={SOCIAL_LINKS.twitter} className={styles.socialLink} aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                                    <FaTwitter />
+                                </a>
+                            )}
+                            {SOCIAL_LINKS.linkedin && (
+                                <a href={SOCIAL_LINKS.linkedin} className={styles.socialLink} aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                                    <FaLinkedin />
+                                </a>
+                            )}
+                            {SOCIAL_LINKS.youtube && (
+                                <a href={SOCIAL_LINKS.youtube} className={styles.socialLink} aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                                    <FaYoutube />
+                                </a>
+                            )}
                         </div>
                     </div>
 

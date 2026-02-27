@@ -245,4 +245,17 @@
     .underline {
         width: 150px;
     }
+
+    .decorativeCircle1,
+    .decorativeCircle2 {
+        display: none;
+    }
+
+    .gradientMesh {
+        animation: none;
+    }
+
+    .particles {
+        display: none;
+    }
 }

@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import Button from '../shared/Button';
 import { SOCIAL_LINKS } from '../../utils/constants';
 import styles from './Hero.module.css';
 
-import heroVideo from '../../assets/videos/hero video.mp4';
+import heroVideo from '../../assets/videos/hero-video-compressed.mp4';
+import heroPoster from '../../assets/videos/hero-poster.jpg';
 
 const Hero = () => {
     const heroRef = useRef(null);
@@ -50,15 +51,18 @@ const Hero = () => {
                 <video
                     className={styles.heroVideo}
                     src={heroVideo}
+                    poster={heroPoster}
                     autoPlay
                     loop
                     muted
                     playsInline
+                    preload="metadata"
+                    loading="lazy"
                 />
                 <div className={styles.overlay}></div>
                 <div className={styles.gradientMesh}></div>
                 <div className={styles.particles}>
-                    {[...Array(8)].map((_, i) => (
+                    {[...Array(4)].map((_, i) => (
                         <motion.div
                             key={i}
                             className={styles.particle}

@@ -4,10 +4,13 @@ export const CONTACT_INFO = {
     email: "info.zincoroof@gmail.com",
     gstin: "27EUQPS0801H1ZD",
     website: "www.zincocompany.com",
-    mapLink: "https://www.google.com/maps/place/Zinco+Roofing+Solution/@19.1564248,73.0757568,17z"
+    mapLink: "https://maps.app.goo.gl/qS15Vh3kche6cGHG9"
 };
 
 export const SOCIAL_LINKS = {
     whatsapp: "https://wa.me/919967203090",
+    instagram: "https://www.instagram.com/alock_sao/",
+    facebook: "https://www.facebook.com/share/1HQRraLat1/",
+    youtube: "https://www.youtube.com/@Zinco-10",
     // Add other social links if provided
 };

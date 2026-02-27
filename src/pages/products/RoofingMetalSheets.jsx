@@ -261,7 +261,7 @@ const RoofingMetalSheets = () => {
                                     viewport={{ once: true }}
                                     transition={{ duration: 0.4, delay: idx * 0.05 }}
                                 >
-                                    <img src={img.src} alt={img.title} className={styles.galleryImage} />
+                                    <img src={img.src} alt={img.title} className={styles.galleryImage} loading="lazy" decoding="async" />
                                     <div className={styles.galleryOverlay}>
                                         <span>{img.title}</span>
                                     </div>
