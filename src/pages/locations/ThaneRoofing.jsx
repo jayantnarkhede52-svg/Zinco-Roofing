@@ -10,6 +10,7 @@ import thaneImg3 from '../../assets/projects/L&T construction.jpeg';
 import thaneImg4 from '../../assets/Upvc images/Upvc images/1000014234.jpg';
 import styles from './LocationStyles.module.css';
 import LocationServiceCards from '../../components/shared/LocationServiceCards';
+import AreaLinks from '../../components/shared/AreaLinks';
 
 const ThaneRoofing = () => {
     return (
@@ -34,6 +35,9 @@ const ThaneRoofing = () => {
                     >
                         <h1>Industrial Roofing Contractors in Thane</h1>
                         <p>Providing specialized structural and roofing engineering for Thane's diverse commercial and industrial hubs.</p>
+                        <div className={styles.heroButtons}>
+                            <Link to="/products" className={styles.heroBtn}>View Our Products</Link>
+                        </div>
                     </motion.div>
                 </div>
             </section>
@@ -230,6 +234,8 @@ const ThaneRoofing = () => {
                             </div>
                         </div>
                     </section>
+
+                    <AreaLinks currentLocation="Thane" />
 
                     {/* Final CTA */}
                     <section className={styles.ctaSection}>

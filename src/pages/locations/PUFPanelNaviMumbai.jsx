@@ -11,6 +11,7 @@ import imgInstall from '../../assets/productshero/puf img.png';
 import imgProjects from '../../assets/Puf panel images/Puf panel images/1001155532.jpg';
 import SEO from '../../components/shared/SEO';
 import styles from './LocationStyles.module.css';
+import AreaLinks from '../../components/shared/AreaLinks';
 
 const PUFPanelNaviMumbai = () => {
     return (
@@ -34,7 +35,10 @@ const PUFPanelNaviMumbai = () => {
                     >
                         <h1>Puf Panel Manufacturers in Navi Mumbai</h1>
                         <p>Leading Puf Panel Manufacturers in Navi Mumbai delivering Industrial & Commercial Insulation Solutions for the MMR Region.</p>
-                        <Button href="#contact" size="lg">Get a Quote</Button>
+                        <div className={styles.heroButtons}>
+                            <Button href="/products" size="lg" variant="secondary">View Our Products</Button>
+                            <Button href="#contact" size="lg">Get a Quote</Button>
+                        </div>
                     </motion.div>
                 </div>
             </section>
@@ -241,6 +245,8 @@ const PUFPanelNaviMumbai = () => {
                             </div>
                         </div>
                     </section>
+
+                    <AreaLinks currentLocation="PUF Panel Navi Mumbai" />
 
                     {/* Section 5: Applications */}
                     <section className={styles.introSection}>

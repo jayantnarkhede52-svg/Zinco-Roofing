@@ -10,6 +10,7 @@ import nmImg3 from '../../assets/projects/Cyberteck.jpeg';
 import nmImg4 from '../../assets/Navi mumbai/navimumbai4.png';
 import styles from './LocationStyles.module.css';
 import LocationServiceCards from '../../components/shared/LocationServiceCards';
+import AreaLinks from '../../components/shared/AreaLinks';
 
 const NaviMumbaiRoofing = () => {
     return (
@@ -33,7 +34,10 @@ const NaviMumbaiRoofing = () => {
                         transition={{ duration: 0.8 }}
                     >
                         <h1>Industrial Roofing Contractors in Navi Mumbai</h1>
-                        <p>Delivering high-performance structural engineering for Navi Mumbai's rapidly growing industrial corridors.</p>
+                        <p>Delivering high-performance structural solutions for the core industrial hubs of Navi Mumbai.</p>
+                        <div className={styles.heroButtons}>
+                            <Link to="/products" className={styles.heroBtn}>View Our Products</Link>
+                        </div>
                     </motion.div>
                 </div>
             </section>
@@ -230,6 +234,8 @@ const NaviMumbaiRoofing = () => {
                             </div>
                         </div>
                     </section>
+
+                    <AreaLinks currentLocation="Navi Mumbai" />
 
                     {/* Final CTA */}
                     <section className={styles.ctaSection}>

@@ -1,6 +1,7 @@
 import { useRef, useEffect } from 'react';
 import { motion, useInView, useMotionValue, useSpring, useTransform, animate } from 'framer-motion';
 import { FaShieldAlt, FaTrophy, FaTools, FaHeadset, FaBuilding, FaHandHoldingHeart } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import styles from './TrustSection.module.css';
 
 const Counter = ({ value, duration = 2 }) => {
@@ -74,7 +75,7 @@ const TrustSection = () => {
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
                     >
-                        PUF Panel & Metal Roofing Experts in Navi Mumbai
+                        <Link to="/premium-roofing-sheets-navi-mumbai" style={{ color: 'inherit', textDecoration: 'none' }}>PUF Panel & Metal Roofing Experts</Link> in Navi Mumbai
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
@@ -82,7 +83,7 @@ const TrustSection = () => {
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
                     >
-                        As a leading **Roofing Contractor in Navi Mumbai**, we don't just provide roofing; we provide long-term protection for your industrial assets with precision engineering and high-quality materials.
+                        As a leading <Link to="/roofing-contractors-navi-mumbai" style={{ color: 'var(--accent-500)', fontWeight: '700' }}>Roofing Contractor in Navi Mumbai</Link>, we don't just provide roofing; we provide long-term protection for your industrial assets with precision engineering and high-quality materials.
                     </motion.p>
                 </div>
 

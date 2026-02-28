@@ -10,6 +10,7 @@ import mumbaiImg3 from '../../assets/MUMBAI/MUMBAI 3.png';
 import mumbaiImg4 from '../../assets/MUMBAI/MUMBAI 4.png';
 import styles from './LocationStyles.module.css';
 import LocationServiceCards from '../../components/shared/LocationServiceCards';
+import AreaLinks from '../../components/shared/AreaLinks';
 
 const MumbaiRoofing = () => {
     return (
@@ -33,6 +34,9 @@ const MumbaiRoofing = () => {
                     >
                         <h1>Industrial Roofing Contractors in Mumbai</h1>
                         <p>Specialized structural solutions for Mumbai's demanding industrial and commercial infrastructure.</p>
+                        <div className={styles.heroButtons}>
+                            <Link to="/products" className={styles.heroBtn}>View Our Products</Link>
+                        </div>
                     </motion.div>
                 </div>
             </section>
@@ -234,6 +238,8 @@ const MumbaiRoofing = () => {
                             </div>
                         </div>
                     </section>
+
+                    <AreaLinks currentLocation="Mumbai" />
 
                     {/* Final CTA */}
                     <section className={styles.ctaSection}>

@@ -10,6 +10,7 @@ import panvelImg3 from '../../assets/projects/Godreh-ambarnath.jpeg';
 import panvelImg4 from '../../assets/Upvc images/Upvc images/1000014135.jpg';
 import styles from './LocationStyles.module.css';
 import LocationServiceCards from '../../components/shared/LocationServiceCards';
+import AreaLinks from '../../components/shared/AreaLinks';
 
 const PanvelRoofing = () => {
     return (
@@ -34,6 +35,9 @@ const PanvelRoofing = () => {
                     >
                         <h1>Industrial Roofing Contractors in Panvel</h1>
                         <p>Providing high-speed, durable structural solutions for Panvel's massive warehousing and logistics infrastructure.</p>
+                        <div className={styles.heroButtons}>
+                            <Link to="/products" className={styles.heroBtn}>View Our Products</Link>
+                        </div>
                     </motion.div>
                 </div>
             </section>
@@ -230,6 +234,8 @@ const PanvelRoofing = () => {
                             </div>
                         </div>
                     </section>
+
+                    <AreaLinks currentLocation="Panvel" />
 
                     {/* Final CTA */}
                     <section className={styles.ctaSection}>

@@ -229,6 +229,31 @@
     margin-bottom: var(--spacing-xl);
 }
 
+.heroButtons {
+    display: flex;
+    gap: var(--spacing-lg);
+    justify-content: center;
+    margin-top: var(--spacing-xl);
+}
+
+.heroBtn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: var(--accent-500);
+    color: var(--white);
+    border-radius: var(--radius-full);
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-lg);
+}
+
+.heroBtn:hover {
+    background: var(--accent-600);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-xl);
+}
+
 .mainContent {
     padding: var(--spacing-4xl) 0;
 }

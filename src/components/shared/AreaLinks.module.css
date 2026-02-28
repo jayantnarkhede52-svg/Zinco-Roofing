@@ -1,0 +1,61 @@
+.areaLinksSection {
+    padding: var(--spacing-3xl) 0;
+    background: var(--gray-50);
+    border-radius: var(--radius-2xl);
+    margin: var(--spacing-4xl) 0;
+    border: 1px solid var(--gray-100);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-xl);
+}
+
+.areaLinksSection h3 {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    color: var(--gray-900);
+    font-size: var(--text-xl);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.linkCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-md);
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    color: var(--gray-700);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.linkCard:hover {
+    border-color: var(--accent-500);
+    color: var(--accent-600);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.active {
+    background: var(--accent-50);
+    border-color: var(--accent-200);
+    color: var(--accent-700);
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -7,7 +7,15 @@ import styles from './Footer.module.css';
 const Footer = () => {
     const currentYear = new Date().getFullYear();
 
-    const serviceAreas = ['Navi Mumbai', 'Panvel', 'Taloja', 'Mumbai', 'Dombivli', 'Thane', 'Vashi'];
+    const serviceAreas = [
+        { name: 'Mumbai', path: '/roofing-contractors-mumbai' },
+        { name: 'Navi Mumbai', path: '/roofing-contractors-navi-mumbai' },
+        { name: 'Panvel', path: '/roofing-contractors-panvel' },
+        { name: 'Taloja', path: '/roofing-contractors-taloja' },
+        { name: 'Dombivli', path: '/roofing-contractors-dombivli' },
+        { name: 'Thane', path: '/roofing-contractors-thane' },
+        { name: 'Ambarnath', path: '/roofing-contractors-ambarnath' },
+    ];
 
     const quickLinks = [
         { path: '/', label: 'Home' },
@@ -18,11 +26,11 @@ const Footer = () => {
     ];
 
     const services = [
-        'Roof Installation',
-        'Roof Repair',
-        'Waterproofing',
-        'Industrial Roofing',
-        'PEB Fabrication',
+        { label: 'Roof Installation', path: '/industrial-roofing-services-navi-mumbai' },
+        { label: 'Roof Repair', path: '/industrial-roofing-services-navi-mumbai' },
+        { label: 'Waterproofing', path: '/industrial-roofing-services-navi-mumbai' },
+        { label: 'Industrial Roofing', path: '/industrial-roofing-services-navi-mumbai' },
+        { label: 'PEB Fabrication', path: '/industrial-roofing-services-navi-mumbai' },
     ];
 
     return (
@@ -89,8 +97,8 @@ const Footer = () => {
                         <h4 className={styles.sectionTitle}>Our Services</h4>
                         <ul className={styles.linkList}>
                             {services.map((service) => (
-                                <li key={service}>
-                                    <span className={styles.link}>{service}</span>
+                                <li key={service.label}>
+                                    <Link to={service.path} className={styles.link}>{service.label}</Link>
                                 </li>
                             ))}
                         </ul>
@@ -108,26 +116,21 @@ const Footer = () => {
                                 <FaEnvelope />
                                 <span>{CONTACT_INFO.email}</span>
                             </a>
-                            <div className={styles.contactItem}>
-                                <FaMapMarkerAlt />
-                                <span>{CONTACT_INFO.address}</span>
-                            </div>
                         </div>
 
                         <div className={styles.serviceAreas}>
                             <h5 className={styles.serviceAreasTitle}>Service Areas:</h5>
-                            <div className={styles.badges}>
+                            <div className={styles.areaLinks} style={{ marginTop: '0.5rem', display: 'flex', flexWrap: 'wrap', gap: '0.8rem' }}>
                                 {serviceAreas.map((area) => (
-                                    <span key={area} className={styles.badge}>
-                                        {area}
-                                    </span>
+                                    <Link
+                                        key={area.path}
+                                        to={area.path}
+                                        className={styles.bottomLink}
+                                        style={{ fontSize: '0.85rem', color: '#9ca3af' }}
+                                    >
+                                        {area.name}
+                                    </Link>
                                 ))}
-                            </div>
-                            <div className={styles.areaLinks} style={{ marginTop: '1rem', display: 'flex', flexWrap: 'wrap', gap: '0.8rem' }}>
-                                <Link to="/roofing-contractors-navi-mumbai" className={styles.bottomLink} style={{ fontSize: '0.85rem', color: '#9ca3af' }}>Navi Mumbai</Link>
-                                <Link to="/roofing-contractors-mumbai" className={styles.bottomLink} style={{ fontSize: '0.85rem', color: '#9ca3af' }}>Mumbai</Link>
-                                <Link to="/roofing-contractors-panvel" className={styles.bottomLink} style={{ fontSize: '0.85rem', color: '#9ca3af' }}>Panvel</Link>
-                                <Link to="/roofing-contractors-thane" className={styles.bottomLink} style={{ fontSize: '0.85rem', color: '#9ca3af' }}>Thane</Link>
                             </div>
                         </div>
                     </div>

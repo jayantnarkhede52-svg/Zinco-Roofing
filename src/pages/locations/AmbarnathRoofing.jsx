@@ -10,6 +10,7 @@ import ambImg3 from '../../assets/projects/Valvoline-ambarnath.jpeg';
 import ambImg4 from '../../assets/Upvc images/Upvc images/1000014390.jpg';
 import styles from './LocationStyles.module.css';
 import LocationServiceCards from '../../components/shared/LocationServiceCards';
+import AreaLinks from '../../components/shared/AreaLinks';
 
 const AmbarnathRoofing = () => {
     return (
@@ -34,6 +35,9 @@ const AmbarnathRoofing = () => {
                     >
                         <h1>Industrial Roofing Contractors in Ambarnath</h1>
                         <p>Delivering engineered structural solutions for Ambarnath's diverse industrial and manufacturing landscape.</p>
+                        <div className={styles.heroButtons}>
+                            <Link to="/products" className={styles.heroBtn}>View Our Products</Link>
+                        </div>
                     </motion.div>
                 </div>
             </section>
@@ -230,6 +234,8 @@ const AmbarnathRoofing = () => {
                             </div>
                         </div>
                     </section>
+
+                    <AreaLinks currentLocation="Ambarnath" />
 
                     {/* Final CTA */}
                     <section className={styles.ctaSection}>

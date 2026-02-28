@@ -10,6 +10,7 @@ import talojaImg3 from '../../assets/projects/amar studio.jpeg';
 import talojaImg4 from '../../assets/Upvc images/Upvc images/1000014255.jpg';
 import styles from './LocationStyles.module.css';
 import LocationServiceCards from '../../components/shared/LocationServiceCards';
+import AreaLinks from '../../components/shared/AreaLinks';
 
 const TalojaRoofing = () => {
     return (
@@ -34,6 +35,9 @@ const TalojaRoofing = () => {
                     >
                         <h1>Industrial Roofing Contractors in Taloja</h1>
                         <p>Providing specialized structural and anti-corrosive solutions for Taloja's heavy industrial and chemical belt.</p>
+                        <div className={styles.heroButtons}>
+                            <Link to="/products" className={styles.heroBtn}>View Our Products</Link>
+                        </div>
                     </motion.div>
                 </div>
             </section>
@@ -230,6 +234,8 @@ const TalojaRoofing = () => {
                             </div>
                         </div>
                     </section>
+
+                    <AreaLinks currentLocation="Taloja" />
 
                     {/* Final CTA */}
                     <section className={styles.ctaSection}>

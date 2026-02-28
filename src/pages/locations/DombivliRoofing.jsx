@@ -10,6 +10,7 @@ import domImg3 from '../../assets/projects/Regency.jpeg';
 import domImg4 from '../../assets/Upvc images/Upvc images/1000014394.jpg';
 import styles from './LocationStyles.module.css';
 import LocationServiceCards from '../../components/shared/LocationServiceCards';
+import AreaLinks from '../../components/shared/AreaLinks';
 
 const DombivliRoofing = () => {
     return (
@@ -34,6 +35,9 @@ const DombivliRoofing = () => {
                     >
                         <h1>Industrial Roofing Contractors in Dombivli</h1>
                         <p>Providing specialized structural and roofing engineering for Dombivli's thriving industrial landscape.</p>
+                        <div className={styles.heroButtons}>
+                            <Link to="/products" className={styles.heroBtn}>View Our Products</Link>
+                        </div>
                     </motion.div>
                 </div>
             </section>
@@ -230,6 +234,8 @@ const DombivliRoofing = () => {
                             </div>
                         </div>
                     </section>
+
+                    <AreaLinks currentLocation="Dombivli" />
 
                     {/* Final CTA */}
                     <section className={styles.ctaSection}>
