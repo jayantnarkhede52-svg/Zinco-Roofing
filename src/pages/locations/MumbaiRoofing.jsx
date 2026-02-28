@@ -62,7 +62,7 @@ const MumbaiRoofing = () => {
                     <LocationServiceCards location="Mumbai" />
 
                     {/* Detailed Content Sections */}
-                    <section className={styles.twoColumn}>
+                    <section className={styles.fullWidthSection}>
                         <div className={styles.textContent}>
                             <h2>Advanced Metal Roofing: Why Expert Industrial Roofing Contractors in Mumbai Choose Zinco</h2>
                             <p>
@@ -80,15 +80,12 @@ const MumbaiRoofing = () => {
                                 For businesses in the Mumbai MIDC areas, our metal roofing solutions provide the fastest ROI through durability and minimal maintenance requirements.
                             </p>
                         </div>
-                        <div className={styles.imageBlock}>
+                        <div className={styles.fullWidthImageBlock}>
                             <img src={mumbaiImg1} alt="Industrial Metal Roofing in Mumbai" loading="lazy" />
                         </div>
                     </section>
 
-                    <section className={styles.twoColumn}>
-                        <div className={styles.imageBlock}>
-                            <img src={mumbaiImg2} alt="PUF Panels for Mumbai Industries" loading="lazy" />
-                        </div>
+                    <section className={styles.fullWidthSection}>
                         <div className={styles.textContent}>
                             <h2>Insulated PUF Panels: Engineered by Industrial Roofing Contractors in Mumbai</h2>
                             <p>
@@ -103,9 +100,12 @@ const MumbaiRoofing = () => {
                                 <li><strong>Acoustic Control</strong>: Dampening the intense noise of Mumbai's heavy traffic and industrial machinery.</li>
                             </ul>
                         </div>
+                        <div className={styles.fullWidthImageBlock}>
+                            <img src={mumbaiImg2} alt="PUF Panels for Mumbai Industries" loading="lazy" />
+                        </div>
                     </section>
 
-                    <section className={styles.twoColumn}>
+                    <section className={styles.fullWidthSection}>
                         <div className={styles.textContent}>
                             <h2>Protective Coatings: A Core Service of Industrial Roofing Contractors in Mumbai</h2>
                             <p>
@@ -120,15 +120,12 @@ const MumbaiRoofing = () => {
                                 <li><strong>Aesthetic Professionalism</strong>: Maintaining a world-class appearance for your corporate production facility.</li>
                             </ul>
                         </div>
-                        <div className={styles.imageBlock}>
+                        <div className={styles.fullWidthImageBlock}>
                             <img src={mumbaiImg3} alt="Industrial Painting solutions for Mumbai Factories" loading="lazy" />
                         </div>
                     </section>
 
-                    <section className={styles.twoColumn}>
-                        <div className={styles.imageBlock}>
-                            <img src={mumbaiImg4} alt="uPVC Roofing in Mumbai" loading="lazy" />
-                        </div>
+                    <section className={styles.fullWidthSection}>
                         <div className={styles.textContent}>
                             <h2>uPVC Solutions: Modern Materials for Industrial Roofing Contractors in Mumbai</h2>
                             <p>
@@ -142,6 +139,9 @@ const MumbaiRoofing = () => {
                                 <li><strong>Rain Noise Reduction</strong>: Creating a quieter workspace during Mumbai monsoons.</li>
                                 <li><strong>Lightweight</strong>: Suitable for retrofitting onto older structures without structural reinforcement.</li>
                             </ul>
+                        </div>
+                        <div className={styles.fullWidthImageBlock}>
+                            <img src={mumbaiImg4} alt="uPVC Roofing in Mumbai" loading="lazy" />
                         </div>
                     </section>
 
