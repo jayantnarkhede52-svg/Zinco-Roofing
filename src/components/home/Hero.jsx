@@ -65,6 +65,9 @@ const Hero = () => {
                         src={mobileHero}
                         alt="Zinco Roofing Solutions"
                         className={styles.mobileHeroImage}
+                        fetchpriority="high"
+                        loading="eager"
+                        decoding="async"
                     />
                 ) : (
                     <video

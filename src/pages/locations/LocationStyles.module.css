@@ -151,6 +151,7 @@
     .hero {
         height: auto;
         padding: var(--spacing-4xl) 0;
+        background-attachment: scroll;
     }
 
     .technicalSection {
