@@ -5,6 +5,24 @@ import styles from './Gallery.module.css';
 
 // Import project images
 import heroImg from '../assets/projects-hero.png';
+import amarStudio from '../assets/projects/amar studio.jpeg';
+import bajaj from '../assets/projects/Bajaj electrical.jpeg';
+import cyberteck from '../assets/projects/Cyberteck.jpeg';
+import godreh from '../assets/projects/Godreh-ambarnath.jpeg';
+import iskcon from '../assets/projects/Iskcon temple.jpeg';
+import karjat from '../assets/projects/Karjat farmhouse.jpeg';
+import lt from '../assets/projects/L&T construction.jpeg';
+import lodha from '../assets/projects/lodha ganesh ghar.jpeg';
+import mahesh from '../assets/projects/Mahesh fashion.jpeg';
+import nd from '../assets/projects/Nd Studio.jpeg';
+import newreka from '../assets/projects/newreka chemical.jpeg';
+import palms from '../assets/projects/palms & water resort.jpeg';
+import paragon from '../assets/projects/Paragon.jpeg';
+import parasnath from '../assets/projects/Parasnath temple.jpeg';
+import regency from '../assets/projects/Regency.jpeg';
+import valvoline from '../assets/projects/Valvoline-ambarnath.jpeg';
+import vedant from '../assets/projects/vedant dyes.jpeg';
+import vortex from '../assets/projects/vortex-badlapur.jpeg';
 
 // Dect Sheet images
 import dect1 from '../assets/Dect sheet/Dect sheet/1000014048.jpg';
@@ -125,10 +143,29 @@ const galleryImages = [
     { id: 48, src: multi6, category: 'Polycarbonate', title: 'Factory Sky Panel' },
     { id: 49, src: multi7, category: 'Polycarbonate', title: 'Thermal Poly Sheets' },
     { id: 50, src: multi8, category: 'Polycarbonate', title: 'Multiwall Installation' },
-    { id: 51, src: multi9, category: 'Polycarbonate', title: 'Premium Multiwall' }
+    { id: 51, src: multi9, category: 'Polycarbonate', title: 'Premium Multiwall' },
+
+    { id: 52, src: amarStudio, category: 'Projects', title: 'Amar Studio' },
+    { id: 53, src: bajaj, category: 'Projects', title: 'Bajaj Electricals' },
+    { id: 54, src: cyberteck, category: 'Projects', title: 'Cyberteck Pvt Ltd' },
+    { id: 55, src: godreh, category: 'Projects', title: 'Godreh Ambaranth' },
+    { id: 56, src: iskcon, category: 'Projects', title: 'Iskcon Temple' },
+    { id: 57, src: karjat, category: 'Projects', title: 'Karjat Farmhouse' },
+    { id: 58, src: lt, category: 'Projects', title: 'L&T Construction' },
+    { id: 59, src: lodha, category: 'Projects', title: 'Lodha Ganesh Ghar' },
+    { id: 60, src: mahesh, category: 'Projects', title: 'Mahesh Fashion' },
+    { id: 61, src: nd, category: 'Projects', title: 'Nd Studio' },
+    { id: 62, src: newreka, category: 'Projects', title: 'Newreka Chemical' },
+    { id: 63, src: palms, category: 'Projects', title: 'Palms & Water Resort' },
+    { id: 64, src: paragon, category: 'Projects', title: 'Paragon Centre' },
+    { id: 65, src: parasnath, category: 'Projects', title: 'Parasnath Temple' },
+    { id: 66, src: regency, category: 'Projects', title: 'Regency Sales Office' },
+    { id: 67, src: valvoline, category: 'Projects', title: 'Valvoline Ambaranth' },
+    { id: 68, src: vedant, category: 'Projects', title: 'Vedant Dyes' },
+    { id: 69, src: vortex, category: 'Projects', title: 'Knott Vortex' }
 ];
 
-const categories = ['All', 'PUF Panels', 'Metal Roofing', 'UPVC Sheets', 'Decking Sheets', 'Polycarbonate'];
+const categories = ['All', 'Projects', 'PUF Panels', 'Metal Roofing', 'UPVC Sheets', 'Decking Sheets', 'Polycarbonate'];
 
 const Gallery = () => {
     const [selectedCategory, setSelectedCategory] = useState('All');

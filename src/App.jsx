@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import ScrollToTop from './components/shared/ScrollToTop';
@@ -42,10 +42,13 @@ const StructuralPainting = lazy(() => import('./pages/products/StructuralPaintin
 const SolarInstallation = lazy(() => import('./pages/products/SolarInstallation'));
 
 // Location SEO Pages
-const NaviMumbaiRoofing = lazy(() => import('./pages/locations/NaviMumbaiRoofing'));
 const MumbaiRoofing = lazy(() => import('./pages/locations/MumbaiRoofing'));
 const PanvelRoofing = lazy(() => import('./pages/locations/PanvelRoofing'));
 const ThaneRoofing = lazy(() => import('./pages/locations/ThaneRoofing'));
+const TalojaRoofing = lazy(() => import('./pages/locations/TalojaRoofing'));
+const AmbarnathRoofing = lazy(() => import('./pages/locations/AmbarnathRoofing'));
+const NaviMumbaiRoofing = lazy(() => import('./pages/locations/NaviMumbaiRoofing'));
+const DombivliRoofing = lazy(() => import('./pages/locations/DombivliRoofing'));
 const PUFPanelNaviMumbai = lazy(() => import('./pages/locations/PUFPanelNaviMumbai'));
 const Areas = lazy(() => import('./pages/Areas'));
 
@@ -102,10 +105,13 @@ function App() {
               <Route path="/products/solar-installation" element={<SolarInstallation />} />
 
               {/* Location SEO Routes */}
-              <Route path="/roofing-contractors-navi-mumbai" element={<NaviMumbaiRoofing />} />
-              <Route path="/roofing-contractors-mumbai" element={<MumbaiRoofing />} />
-              <Route path="/roofing-contractors-panvel" element={<PanvelRoofing />} />
-              <Route path="/roofing-contractors-thane" element={<ThaneRoofing />} />
+              <Route path="/industrial-roofing-contractors-in-mumbai" element={<MumbaiRoofing />} />
+              <Route path="/industrial-roofing-contractors-in-panvel" element={<PanvelRoofing />} />
+              <Route path="/industrial-roofing-contractors-in-thane" element={<ThaneRoofing />} />
+              <Route path="/industrial-roofing-contractors-in-taloja" element={<TalojaRoofing />} />
+              <Route path="/industrial-roofing-contractors-in-ambarnath" element={<AmbarnathRoofing />} />
+              <Route path="/industrial-roofing-contractors-in-navi-mumbai" element={<NaviMumbaiRoofing />} />
+              <Route path="/industrial-roofing-contractors-in-dombivli" element={<DombivliRoofing />} />
               <Route path="/puf-panel-manufacturer-navi-mumbai" element={<PUFPanelNaviMumbai />} />
               <Route path="/areas" element={<Areas />} />
 

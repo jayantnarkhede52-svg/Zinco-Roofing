@@ -95,7 +95,7 @@ const Contact = () => {
                         </motion.div>
                     </div>
 
-                    <div className={styles.formSection}>
+                    <div className={styles.formSection} id="contact-form">
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}

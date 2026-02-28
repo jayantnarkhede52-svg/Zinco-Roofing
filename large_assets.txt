@@ -1,0 +1,34 @@
+﻿C:\work\ZINCO ROOFING WEBSITE\src\assets\home-hero.png : 736.17 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\img 5.png : 509.44 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\img 6.png : 514.78 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\img 7.png : 595.92 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\products-hero.png : 617.98 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\projects-hero.png : 508.71 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\services-hero.png : 658.76 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\Dect sheet\Dect sheet\1000014515.jpg : 596.24 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\Dect sheet\Dect sheet\1000014745.jpg : 777.73 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\MUMBAI\MUMBAI 1.png : 2797.57 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\MUMBAI\MUMBAI 2.png : 2787.93 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\MUMBAI\MUMBAI 3.png : 2361.58 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\MUMBAI\MUMBAI 4.png : 2980.89 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\Navi mumbai\navimumbai1.png : 3146.46 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\Navi mumbai\navimumbai2.png : 3056.48 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\Navi mumbai\navimumbai4.png : 3004.25 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\productshero\aerolam-hero.png : 699.14 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\productshero\colored-sheets-hero.png : 583.14 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\productshero\deck-hero.png : 602.68 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\productshero\highroof-hero.png : 575.27 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\productshero\polycarbonate-hero.png : 611.06 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\productshero\puf-panel-hero.png : 678.21 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\productshero\rockwool-hero.png : 733.68 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\productshero\shingles-hero.png : 746.53 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\productshero\upvc-hero.png : 701.09 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\productshero\ventilator-hero.png : 561.85 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\projects\amar studio.jpeg : 2909.7 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\projects\Cyberteck.jpeg : 5040.1 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\projects\Godreh-ambarnath.jpeg : 2595.04 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\projects\L&T construction.jpeg : 2053.42 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\projects\Regency.jpeg : 1584.44 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\projects\Valvoline-ambarnath.jpeg : 1911.26 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\videos\hero video.mp4 : 7348.33 KB
+C:\work\ZINCO ROOFING WEBSITE\src\assets\videos\hero-video-compressed.mp4 : 3047.75 KB

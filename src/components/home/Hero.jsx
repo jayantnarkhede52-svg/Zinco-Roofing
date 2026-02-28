@@ -6,9 +6,21 @@ import styles from './Hero.module.css';
 
 import heroVideo from '../../assets/videos/hero-video-compressed.mp4';
 import heroPoster from '../../assets/videos/hero-poster.jpg';
+import mobileHero from '../../assets/projects-hero.png';
 
 const Hero = () => {
     const heroRef = useRef(null);
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
 
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -48,17 +60,24 @@ const Hero = () => {
     return (
         <section ref={heroRef} className={styles.hero}>
             <div className={styles.background}>
-                <video
-                    className={styles.heroVideo}
-                    src={heroVideo}
-                    poster={heroPoster}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    preload="metadata"
-                    loading="lazy"
-                />
+                {isMobile ? (
+                    <img
+                        src={mobileHero}
+                        alt="Zinco Roofing Solutions"
+                        className={styles.mobileHeroImage}
+                    />
+                ) : (
+                    <video
+                        className={styles.heroVideo}
+                        src={heroVideo}
+                        poster={heroPoster}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        preload="auto"
+                    />
+                )}
                 <div className={styles.overlay}></div>
                 <div className={styles.gradientMesh}></div>
                 <div className={styles.particles}>

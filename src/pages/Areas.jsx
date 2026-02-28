@@ -7,20 +7,20 @@ import styles from './locations/LocationStyles.module.css';
 
 const locations = [
     {
-        id: 'navi-mumbai',
-        title: 'Navi Mumbai',
-        desc: <>Specialized <strong>Industrial & Commercial Roofing</strong> for <strong>MIDC, Taloja</strong>, and <strong>Airoli</strong> zones.</>,
-        icon: <FaIndustry size={32} color="#3b82f6" />,
-        color: '#3b82f6',
-        path: '/roofing-contractors-navi-mumbai'
-    },
-    {
         id: 'mumbai',
         title: 'Mumbai',
         desc: <>Complete <strong>Waterproofing & Retrofitting</strong> solutions tailored for <strong>Residential Towers</strong> and <strong>Old Buildings</strong>.</>,
         icon: <FaCity size={32} color="#f59e0b" />,
         color: '#f59e0b',
-        path: '/roofing-contractors-mumbai'
+        path: '/industrial-roofing-contractors-in-mumbai'
+    },
+    {
+        id: 'navi-mumbai',
+        title: 'Navi Mumbai',
+        desc: <>Specialized <strong>Industrial & Commercial Roofing</strong> for <strong>MIDC, Taloja</strong>, and <strong>Airoli</strong> zones.</>,
+        icon: <FaIndustry size={32} color="#3b82f6" />,
+        color: '#3b82f6',
+        path: '/industrial-roofing-contractors-in-navi-mumbai'
     },
     {
         id: 'panvel',
@@ -28,7 +28,7 @@ const locations = [
         desc: <>Expert roofing for <strong>Large-scale Warehousing</strong> & <strong>Logistics Parks</strong> requiring rapid installation.</>,
         icon: <FaWarehouse size={32} color="#10b981" />,
         color: '#10b981',
-        path: '/roofing-contractors-panvel'
+        path: '/industrial-roofing-contractors-in-panvel'
     },
     {
         id: 'thane',
@@ -36,7 +36,31 @@ const locations = [
         desc: <>Advanced protection for <strong>Commercial Complexes</strong> & <strong>Wagle Estate</strong> against heavy rainfall.</>,
         icon: <FaUmbrella size={32} color="#6366f1" />,
         color: '#6366f1',
-        path: '/roofing-contractors-thane'
+        path: '/industrial-roofing-contractors-in-thane'
+    },
+    {
+        id: 'taloja',
+        title: 'Taloja',
+        desc: <>Heavy-duty <strong>Industrial Roofing</strong> and <strong>Shed Fabrication</strong> for the Taloja MIDC industrial belt.</>,
+        icon: <FaIndustry size={32} color="#8b5cf6" />,
+        color: '#8b5cf6',
+        path: '/industrial-roofing-contractors-in-taloja'
+    },
+    {
+        id: 'ambarnath',
+        title: 'Ambarnath',
+        desc: <>Robust <strong>Industrial Roofing</strong> services tailored for the demanding environments of <strong>Ambarnath MIDC</strong>.</>,
+        icon: <FaIndustry size={32} color="#ec4899" />,
+        color: '#ec4899',
+        path: '/industrial-roofing-contractors-in-ambarnath'
+    },
+    {
+        id: 'dombivli',
+        title: 'Dombivli',
+        desc: <>Expert roofing for <strong>Residential Towers</strong> and <strong>Industrial MIDC</strong> areas across Dombivli.</>,
+        icon: <FaCity size={32} color="#06b6d4" />,
+        color: '#06b6d4',
+        path: '/industrial-roofing-contractors-in-dombivli'
     },
     {
         id: 'puf-navi-mumbai',
@@ -52,9 +76,9 @@ const Areas = () => {
     return (
         <div className={styles.locationPage}>
             <SEO
-                title="Roofing Services in Mumbai, Navi Mumbai & Panvel"
-                description="We serve the entire Mumbai Metropolitan Region including Taloja MIDC, Airoli, Vashi, Thane and Panvel with expert roofing and waterproofing services."
-                keywords="roofing service areas, navi mumbai roofing coverage, panvel roofing contractors"
+                title="Industrial Roofing Contractors in Mumbai, Navi Mumbai & Thane"
+                description="Expert Industrial Roofing Contractors serving Mumbai, Navi Mumbai, Taloja MIDC, and Thane. Heavy-duty factory sheds, PUF panels, and structural fabrication."
+                keywords="industrial roofing contractors, factory shed contractors navi mumbai, mumbai industrial roofing, taloja midc roofing, puf panel manufacturer"
             />
             <section className={styles.hero} style={{ backgroundImage: `url(${heroImage})`, height: '50vh' }}>
                 <div className={styles.heroOverlay} />

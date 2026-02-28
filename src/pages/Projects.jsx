@@ -16,6 +16,16 @@ import regencyImage from '../assets/projects/Regency.jpeg';
 import amarStudioImage from '../assets/projects/amar studio.jpeg';
 import cyberteckImage from '../assets/projects/Cyberteck.jpeg';
 import parasnathImage from '../assets/projects/Parasnath temple.jpeg';
+import bajajImage from '../assets/projects/Bajaj electrical.jpeg';
+import iskconImage from '../assets/projects/Iskcon temple.jpeg';
+import karjatImage from '../assets/projects/Karjat farmhouse.jpeg';
+import lodhaImage from '../assets/projects/lodha ganesh ghar.jpeg';
+import maheshImage from '../assets/projects/Mahesh fashion.jpeg';
+import ndImage from '../assets/projects/Nd Studio.jpeg';
+import newrekaImage from '../assets/projects/newreka chemical.jpeg';
+import palmsImage from '../assets/projects/palms & water resort.jpeg';
+import paragonImage from '../assets/projects/Paragon.jpeg';
+import vedantImage from '../assets/projects/vedant dyes.jpeg';
 import styles from './Projects.module.css';
 
 const projects = [
@@ -27,17 +37,19 @@ const projects = [
     { name: 'Amar Studio', location: 'Malad', category: 'Commercial', icon: FaBuilding, image: amarStudioImage },
     { name: 'Cyberteck Pvt Ltd', location: 'Thane', category: 'Industrial', icon: FaIndustry, image: cyberteckImage },
     { name: 'Parasnath Temple', location: 'Jharkhand', category: 'Religious', icon: FaPlaceOfWorship, image: parasnathImage },
-    { name: 'Newreka Chemical Pvt Ltd', location: 'Dombivali - MIDC', category: 'Chemical', icon: FaIndustry },
-    { name: 'Vedant Dye & Intermediate', location: 'Taloja', category: 'Industrial', icon: FaIndustry },
-    { name: 'Iskcon Temple', location: 'Palghar', category: 'Religious', icon: FaPlaceOfWorship },
+    { name: 'Newreka Chemical Pvt Ltd', location: 'Dombivali - MIDC', category: 'Chemical', icon: FaIndustry, image: newrekaImage },
+    { name: 'Vedant Dye & Intermediate', location: 'Taloja', category: 'Industrial', icon: FaIndustry, image: vedantImage },
+    { name: 'Iskcon Temple', location: 'Palghar', category: 'Religious', icon: FaPlaceOfWorship, image: iskconImage },
+    { name: 'Paragaon Centre', location: 'Worli', category: 'Commercial', icon: FaBuilding, image: paragonImage },
+    { name: 'Bajaj Electricals', location: 'Chakkan', category: 'Industrial', icon: FaIndustry, image: bajajImage },
+    { name: 'Nd Studio', location: 'Karjat', category: 'Commercial', icon: FaBuilding, image: ndImage },
+    { name: 'Palms & Water Resort', location: 'Kalyan', category: 'Hospitality', icon: FaBuilding, image: palmsImage },
+    { name: 'Karjat Farmhouse', location: 'Karjat', category: 'Residential', icon: FaBuilding, image: karjatImage },
+    { name: 'Lodha Ganesh Ghar', location: 'Dombivli', category: 'Religious', icon: FaPlaceOfWorship, image: lodhaImage },
+    { name: 'Mahesh Fashion', location: 'Bhiwandi', category: 'Textile', icon: FaIndustry, image: maheshImage },
     { name: 'Snowman Logistics', location: 'Taloja', category: 'Logistics', icon: FaIndustry },
-    { name: 'Paragaon Centre', location: 'Worli', category: 'Commercial', icon: FaBuilding },
-    { name: 'Bajaj Electricals', location: 'Chakkan', category: 'Industrial', icon: FaIndustry },
-    { name: 'Nd Studio', location: 'Karjat', category: 'Commercial', icon: FaBuilding },
-    { name: 'Palms & Water Resort', location: 'Kalyan', category: 'Hospitality', icon: FaBuilding },
     { name: 'Multiwall Sheet Installation', location: 'Palava City', category: 'Residential', icon: FaBuilding },
     { name: 'Alvi Tech Pvt. Ltd.', location: 'Dombivli', category: 'Industrial', icon: FaIndustry },
-    { name: 'Mahesh Fashion', location: 'Bhiwandi', category: 'Textile', icon: FaIndustry },
     { name: 'Himalaya Society', location: 'Lodha', category: 'Residential', icon: FaBuilding },
     { name: 'Balaji Builder', location: 'Kalyan', category: 'Construction', icon: FaBuilding },
     { name: 'Adient India Pvt Ltd', location: 'Pune', category: 'Automotive', icon: FaIndustry }
