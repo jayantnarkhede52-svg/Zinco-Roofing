@@ -8,15 +8,15 @@ import Button from '../../components/shared/Button';
 import styles from './ProductCategory.module.css';
 
 // Import local deck sheet images
-import heroImg from '../../assets/productshero/deck-hero.png';
-import deckImg1 from '../../assets/Dect sheet/Dect sheet/1000014048.jpg';
-import deckImg2 from '../../assets/Dect sheet/Dect sheet/1000014053.jpg';
-import deckImg3 from '../../assets/Dect sheet/Dect sheet/1000014070.png';
-import deckImg4 from '../../assets/Dect sheet/Dect sheet/1000014504.png';
-import deckImg5 from '../../assets/Dect sheet/Dect sheet/1000014515.jpg';
-import deckImg6 from '../../assets/Dect sheet/Dect sheet/1000014558.jpg';
-import deckImg7 from '../../assets/Dect sheet/Dect sheet/1000014661.jpg';
-import deckImg8 from '../../assets/Dect sheet/Dect sheet/1000014745.jpg';
+import heroImg from '../../assets/productshero/deck-hero.webp';
+import deckImg1 from '../../assets/Dect sheet/Dect sheet/1000014048.webp';
+import deckImg2 from '../../assets/Dect sheet/Dect sheet/1000014053.webp';
+import deckImg3 from '../../assets/Dect sheet/Dect sheet/1000014070.webp';
+import deckImg4 from '../../assets/Dect sheet/Dect sheet/1000014504.webp';
+import deckImg5 from '../../assets/Dect sheet/Dect sheet/1000014515.webp';
+import deckImg6 from '../../assets/Dect sheet/Dect sheet/1000014558.webp';
+import deckImg7 from '../../assets/Dect sheet/Dect sheet/1000014661.webp';
+import deckImg8 from '../../assets/Dect sheet/Dect sheet/1000014745.webp';
 
 const DeckingSheet = () => {
     const navigate = useNavigate();

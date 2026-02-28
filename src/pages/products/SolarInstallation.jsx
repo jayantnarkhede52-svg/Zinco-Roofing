@@ -5,7 +5,7 @@ import { FaArrowLeft, FaSun, FaLightbulb, FaMapMarkerAlt } from 'react-icons/fa'
 import SEO from '../../components/shared/SEO';
 import Card from '../../components/shared/Card';
 import Button from '../../components/shared/Button';
-import heroImage from '../../assets/services-hero.png';
+import heroImage from '../../assets/services-hero.webp';
 import styles from './ProductCategory.module.css';
 
 const SolarInstallation = () => {

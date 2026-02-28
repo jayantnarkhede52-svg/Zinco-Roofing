@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { CONTACT_INFO } from '../../utils/constants';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo.webp';
 import styles from './Navbar.module.css';
 
 const Navbar = () => {

@@ -5,8 +5,8 @@ import { FaArrowLeft, FaCheckCircle, FaWind, FaMapMarkerAlt } from 'react-icons/
 import SEO from '../../components/shared/SEO';
 import Card from '../../components/shared/Card';
 import Button from '../../components/shared/Button';
-import heroImg from '../../assets/productshero/ventilator-hero.png';
-import logo from '../../assets/logo.png';
+import heroImg from '../../assets/productshero/ventilator-hero.webp';
+import logo from '../../assets/logo.webp';
 import styles from './ProductCategory.module.css';
 
 const Ventilators = () => {

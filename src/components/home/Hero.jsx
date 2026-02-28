@@ -5,8 +5,8 @@ import { SOCIAL_LINKS } from '../../utils/constants';
 import styles from './Hero.module.css';
 
 import heroVideo from '../../assets/videos/hero-video-compressed.mp4';
-import heroPoster from '../../assets/videos/hero-poster.jpg';
-import mobileHero from '../../assets/projects-hero.png';
+import heroPoster from '../../assets/videos/hero-poster.webp';
+import mobileHero from '../../assets/projects-hero.webp';
 
 const Hero = () => {
     const heroRef = useRef(null);
@@ -61,8 +61,7 @@ const Hero = () => {
         <section ref={heroRef} className={styles.hero}>
             <div className={styles.background}>
                 {isMobile ? (
-                    <img
-                        src={mobileHero}
+                    <img src={mobileHero}
                         alt="Zinco Roofing Solutions"
                         className={styles.mobileHeroImage}
                         fetchpriority="high"

@@ -8,11 +8,11 @@ import Button from '../../components/shared/Button';
 import styles from './ProductCategory.module.css';
 
 // Import local transparent polycarbonate images
-import heroImg from '../../assets/productshero/polycarbonate-hero.png';
-import polyImg1 from '../../assets/Transparent polycarbonate/Transparent polycarbonate/1000014018.jpg';
-import polyImg2 from '../../assets/Transparent polycarbonate/Transparent polycarbonate/1000014352.jpg';
-import polyImg3 from '../../assets/Transparent polycarbonate/Transparent polycarbonate/1000014425.jpg';
-import polyImg4 from '../../assets/Transparent polycarbonate/Transparent polycarbonate/1000014445.png';
+import heroImg from '../../assets/productshero/polycarbonate-hero.webp';
+import polyImg1 from '../../assets/Transparent polycarbonate/Transparent polycarbonate/1000014018.webp';
+import polyImg2 from '../../assets/Transparent polycarbonate/Transparent polycarbonate/1000014352.webp';
+import polyImg3 from '../../assets/Transparent polycarbonate/Transparent polycarbonate/1000014425.webp';
+import polyImg4 from '../../assets/Transparent polycarbonate/Transparent polycarbonate/1000014445.webp';
 
 const PolycarbonateSheets = () => {
     const navigate = useNavigate();

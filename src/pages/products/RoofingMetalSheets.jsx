@@ -8,19 +8,19 @@ import Button from '../../components/shared/Button';
 import styles from './ProductCategory.module.css';
 
 // Import local images
-import heroImg from '../../assets/productshero/colored-sheets-hero.png';
-import img1 from '../../assets/Metal roofing images/Metal roofing images/coloured-roofing-sheet-500x500-1.jpg';
-import img2 from '../../assets/Metal roofing images/Metal roofing images/1000014774.png';
-import img3 from '../../assets/Metal roofing images/Metal roofing images/1000014712.png';
-import img4 from '../../assets/Metal roofing images/Metal roofing images/1000014602.png';
-import img5 from '../../assets/Metal roofing images/Metal roofing images/1000014600.png';
-import img6 from '../../assets/Metal roofing images/Metal roofing images/1000014546.jpg';
-import img7 from '../../assets/Metal roofing images/Metal roofing images/1000014465.jpg';
-import img8 from '../../assets/Metal roofing images/Metal roofing images/1000014453.png';
-import img9 from '../../assets/Metal roofing images/Metal roofing images/1000014335.jpg';
-import img10 from '../../assets/Metal roofing images/Metal roofing images/1000014152.jpg';
-import img11 from '../../assets/Metal roofing images/Metal roofing images/1000014044.jpg';
-import img12 from '../../assets/Metal roofing images/Metal roofing images/1000014010.jpg';
+import heroImg from '../../assets/productshero/colored-sheets-hero.webp';
+import img1 from '../../assets/Metal roofing images/Metal roofing images/coloured-roofing-sheet-500x500-1.webp';
+import img2 from '../../assets/Metal roofing images/Metal roofing images/1000014774.webp';
+import img3 from '../../assets/Metal roofing images/Metal roofing images/1000014712.webp';
+import img4 from '../../assets/Metal roofing images/Metal roofing images/1000014602.webp';
+import img5 from '../../assets/Metal roofing images/Metal roofing images/1000014600.webp';
+import img6 from '../../assets/Metal roofing images/Metal roofing images/1000014546.webp';
+import img7 from '../../assets/Metal roofing images/Metal roofing images/1000014465.webp';
+import img8 from '../../assets/Metal roofing images/Metal roofing images/1000014453.webp';
+import img9 from '../../assets/Metal roofing images/Metal roofing images/1000014335.webp';
+import img10 from '../../assets/Metal roofing images/Metal roofing images/1000014152.webp';
+import img11 from '../../assets/Metal roofing images/Metal roofing images/1000014044.webp';
+import img12 from '../../assets/Metal roofing images/Metal roofing images/1000014010.webp';
 
 const RoofingMetalSheets = () => {
     const navigate = useNavigate();

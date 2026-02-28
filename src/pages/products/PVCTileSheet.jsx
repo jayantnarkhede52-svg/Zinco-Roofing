@@ -8,12 +8,12 @@ import Button from '../../components/shared/Button';
 import styles from './ProductCategory.module.css';
 
 // Import local images
-import tileImg1 from '../../assets/Upvc images/Upvc images/1000014156.jpg';
-import tileImg2 from '../../assets/Upvc images/Upvc images/1000014234.jpg';
-import tileImg3 from '../../assets/Upvc images/Upvc images/1000014255.jpg';
-import tileImg4 from '../../assets/Upvc images/Upvc images/1000014270.jpg';
-import tileImg5 from '../../assets/Upvc images/Upvc images/1000014273.jpg';
-import tileImg6 from '../../assets/Upvc images/Upvc images/1000014616.jpg';
+import tileImg1 from '../../assets/Upvc images/Upvc images/1000014156.webp';
+import tileImg2 from '../../assets/Upvc images/Upvc images/1000014234.webp';
+import tileImg3 from '../../assets/Upvc images/Upvc images/1000014255.webp';
+import tileImg4 from '../../assets/Upvc images/Upvc images/1000014270.webp';
+import tileImg5 from '../../assets/Upvc images/Upvc images/1000014273.webp';
+import tileImg6 from '../../assets/Upvc images/Upvc images/1000014616.webp';
 
 const PVCTileSheet = () => {
     const navigate = useNavigate();

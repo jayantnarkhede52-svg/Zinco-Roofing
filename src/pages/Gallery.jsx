@@ -4,88 +4,88 @@ import { FaExpandAlt, FaTimes } from 'react-icons/fa';
 import styles from './Gallery.module.css';
 
 // Import project images
-import heroImg from '../assets/projects-hero.png';
-import amarStudio from '../assets/projects/amar studio.jpeg';
-import bajaj from '../assets/projects/Bajaj electrical.jpeg';
-import cyberteck from '../assets/projects/Cyberteck.jpeg';
-import godreh from '../assets/projects/Godreh-ambarnath.jpeg';
-import iskcon from '../assets/projects/Iskcon temple.jpeg';
-import karjat from '../assets/projects/Karjat farmhouse.jpeg';
-import lt from '../assets/projects/L&T construction.jpeg';
-import lodha from '../assets/projects/lodha ganesh ghar.jpeg';
-import mahesh from '../assets/projects/Mahesh fashion.jpeg';
-import nd from '../assets/projects/Nd Studio.jpeg';
-import newreka from '../assets/projects/newreka chemical.jpeg';
-import palms from '../assets/projects/palms & water resort.jpeg';
-import paragon from '../assets/projects/Paragon.jpeg';
-import parasnath from '../assets/projects/Parasnath temple.jpeg';
-import regency from '../assets/projects/Regency.jpeg';
-import valvoline from '../assets/projects/Valvoline-ambarnath.jpeg';
-import vedant from '../assets/projects/vedant dyes.jpeg';
-import vortex from '../assets/projects/vortex-badlapur.jpeg';
+import heroImg from '../assets/projects-hero.webp';
+import amarStudio from '../assets/projects/amar studio.webp';
+import bajaj from '../assets/projects/Bajaj electrical.webp';
+import cyberteck from '../assets/projects/Cyberteck.webp';
+import godreh from '../assets/projects/Godreh-ambarnath.webp';
+import iskcon from '../assets/projects/Iskcon temple.webp';
+import karjat from '../assets/projects/Karjat farmhouse.webp';
+import lt from '../assets/projects/L&T construction.webp';
+import lodha from '../assets/projects/lodha ganesh ghar.webp';
+import mahesh from '../assets/projects/Mahesh fashion.webp';
+import nd from '../assets/projects/Nd Studio.webp';
+import newreka from '../assets/projects/newreka chemical.webp';
+import palms from '../assets/projects/palms & water resort.webp';
+import paragon from '../assets/projects/Paragon.webp';
+import parasnath from '../assets/projects/Parasnath temple.webp';
+import regency from '../assets/projects/Regency.webp';
+import valvoline from '../assets/projects/Valvoline-ambarnath.webp';
+import vedant from '../assets/projects/vedant dyes.webp';
+import vortex from '../assets/projects/vortex-badlapur.webp';
 
 // Dect Sheet images
-import dect1 from '../assets/Dect sheet/Dect sheet/1000014048.jpg';
-import dect2 from '../assets/Dect sheet/Dect sheet/1000014053.jpg';
-import dect3 from '../assets/Dect sheet/Dect sheet/1000014070.png';
-import dect4 from '../assets/Dect sheet/Dect sheet/1000014504.png';
-import dect5 from '../assets/Dect sheet/Dect sheet/1000014515.jpg';
-import dect6 from '../assets/Dect sheet/Dect sheet/1000014558.jpg';
-import dect7 from '../assets/Dect sheet/Dect sheet/1000014661.jpg';
-import dect8 from '../assets/Dect sheet/Dect sheet/1000014745.jpg';
+import dect1 from '../assets/Dect sheet/Dect sheet/1000014048.webp';
+import dect2 from '../assets/Dect sheet/Dect sheet/1000014053.webp';
+import dect3 from '../assets/Dect sheet/Dect sheet/1000014070.webp';
+import dect4 from '../assets/Dect sheet/Dect sheet/1000014504.webp';
+import dect5 from '../assets/Dect sheet/Dect sheet/1000014515.webp';
+import dect6 from '../assets/Dect sheet/Dect sheet/1000014558.webp';
+import dect7 from '../assets/Dect sheet/Dect sheet/1000014661.webp';
+import dect8 from '../assets/Dect sheet/Dect sheet/1000014745.webp';
 
 // PUF Panel images
-import puf1 from '../assets/Puf panel images/Puf panel images/1000014168.jpg';
-import puf2 from '../assets/Puf panel images/Puf panel images/1000014252.jpg';
-import puf3 from '../assets/Puf panel images/Puf panel images/1000014626.jpg';
-import puf4 from '../assets/Puf panel images/Puf panel images/1001155530.jpg';
-import puf5 from '../assets/Puf panel images/Puf panel images/1001155531.jpg';
-import puf6 from '../assets/Puf panel images/Puf panel images/1001155532.jpg';
+import puf1 from '../assets/Puf panel images/Puf panel images/1000014168.webp';
+import puf2 from '../assets/Puf panel images/Puf panel images/1000014252.webp';
+import puf3 from '../assets/Puf panel images/Puf panel images/1000014626.webp';
+import puf4 from '../assets/Puf panel images/Puf panel images/1001155530.webp';
+import puf5 from '../assets/Puf panel images/Puf panel images/1001155531.webp';
+import puf6 from '../assets/Puf panel images/Puf panel images/1001155532.webp';
 
 // Metal Roofing images
-import metal1 from '../assets/Metal roofing images/Metal roofing images/1000014010.jpg';
-import metal2 from '../assets/Metal roofing images/Metal roofing images/1000014044.jpg';
-import metal3 from '../assets/Metal roofing images/Metal roofing images/1000014152.jpg';
-import metal4 from '../assets/Metal roofing images/Metal roofing images/1000014335.jpg';
-import metal5 from '../assets/Metal roofing images/Metal roofing images/1000014453.png';
-import metal6 from '../assets/Metal roofing images/Metal roofing images/1000014465.jpg';
-import metal7 from '../assets/Metal roofing images/Metal roofing images/1000014546.jpg';
-import metal8 from '../assets/Metal roofing images/Metal roofing images/1000014600.png';
-import metal9 from '../assets/Metal roofing images/Metal roofing images/1000014602.png';
-import metal10 from '../assets/Metal roofing images/Metal roofing images/1000014712.png';
-import metal11 from '../assets/Metal roofing images/Metal roofing images/1000014774.png';
-import metal12 from '../assets/Metal roofing images/Metal roofing images/coloured-roofing-sheet-500x500-1.jpg';
+import metal1 from '../assets/Metal roofing images/Metal roofing images/1000014010.webp';
+import metal2 from '../assets/Metal roofing images/Metal roofing images/1000014044.webp';
+import metal3 from '../assets/Metal roofing images/Metal roofing images/1000014152.webp';
+import metal4 from '../assets/Metal roofing images/Metal roofing images/1000014335.webp';
+import metal5 from '../assets/Metal roofing images/Metal roofing images/1000014453.webp';
+import metal6 from '../assets/Metal roofing images/Metal roofing images/1000014465.webp';
+import metal7 from '../assets/Metal roofing images/Metal roofing images/1000014546.webp';
+import metal8 from '../assets/Metal roofing images/Metal roofing images/1000014600.webp';
+import metal9 from '../assets/Metal roofing images/Metal roofing images/1000014602.webp';
+import metal10 from '../assets/Metal roofing images/Metal roofing images/1000014712.webp';
+import metal11 from '../assets/Metal roofing images/Metal roofing images/1000014774.webp';
+import metal12 from '../assets/Metal roofing images/Metal roofing images/coloured-roofing-sheet-500x500-1.webp';
 
 // UPVC images
-import upvc1 from '../assets/Upvc images/Upvc images/1000014026.jpg';
-import upvc2 from '../assets/Upvc images/Upvc images/1000014135.jpg';
-import upvc3 from '../assets/Upvc images/Upvc images/1000014156.jpg';
-import upvc4 from '../assets/Upvc images/Upvc images/1000014234.jpg';
-import upvc5 from '../assets/Upvc images/Upvc images/1000014255.jpg';
-import upvc6 from '../assets/Upvc images/Upvc images/1000014270.jpg';
-import upvc7 from '../assets/Upvc images/Upvc images/1000014273.jpg';
-import upvc8 from '../assets/Upvc images/Upvc images/1000014390.jpg';
-import upvc9 from '../assets/Upvc images/Upvc images/1000014394.jpg';
-import upvc10 from '../assets/Upvc images/Upvc images/1000014497.jpg';
-import upvc11 from '../assets/Upvc images/Upvc images/1000014616.jpg';
-import upvc12 from '../assets/Upvc images/Upvc images/1000014665.jpg';
+import upvc1 from '../assets/Upvc images/Upvc images/1000014026.webp';
+import upvc2 from '../assets/Upvc images/Upvc images/1000014135.webp';
+import upvc3 from '../assets/Upvc images/Upvc images/1000014156.webp';
+import upvc4 from '../assets/Upvc images/Upvc images/1000014234.webp';
+import upvc5 from '../assets/Upvc images/Upvc images/1000014255.webp';
+import upvc6 from '../assets/Upvc images/Upvc images/1000014270.webp';
+import upvc7 from '../assets/Upvc images/Upvc images/1000014273.webp';
+import upvc8 from '../assets/Upvc images/Upvc images/1000014390.webp';
+import upvc9 from '../assets/Upvc images/Upvc images/1000014394.webp';
+import upvc10 from '../assets/Upvc images/Upvc images/1000014497.webp';
+import upvc11 from '../assets/Upvc images/Upvc images/1000014616.webp';
+import upvc12 from '../assets/Upvc images/Upvc images/1000014665.webp';
 
 // Polycarbonate images
-import poly1 from '../assets/Transparent polycarbonate/Transparent polycarbonate/1000014018.jpg';
-import poly2 from '../assets/Transparent polycarbonate/Transparent polycarbonate/1000014352.jpg';
-import poly3 from '../assets/Transparent polycarbonate/Transparent polycarbonate/1000014425.jpg';
-import poly4 from '../assets/Transparent polycarbonate/Transparent polycarbonate/1000014445.png';
+import poly1 from '../assets/Transparent polycarbonate/Transparent polycarbonate/1000014018.webp';
+import poly2 from '../assets/Transparent polycarbonate/Transparent polycarbonate/1000014352.webp';
+import poly3 from '../assets/Transparent polycarbonate/Transparent polycarbonate/1000014425.webp';
+import poly4 from '../assets/Transparent polycarbonate/Transparent polycarbonate/1000014445.webp';
 
 // Multiwall Polycarbonate images
-import multi1 from '../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014216.jpg';
-import multi2 from '../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014298.jpg';
-import multi3 from '../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014339.jpg';
-import multi4 from '../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014422.jpg';
-import multi5 from '../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014502.png';
-import multi6 from '../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014533.jpg';
-import multi7 from '../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014579.jpg';
-import multi8 from '../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014583.png';
-import multi9 from '../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014721.png';
+import multi1 from '../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014216.webp';
+import multi2 from '../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014298.webp';
+import multi3 from '../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014339.webp';
+import multi4 from '../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014422.webp';
+import multi5 from '../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014502.webp';
+import multi6 from '../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014533.webp';
+import multi7 from '../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014579.webp';
+import multi8 from '../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014583.webp';
+import multi9 from '../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014721.webp';
 
 const galleryImages = [
     { id: 1, src: puf1, category: 'PUF Panels', title: 'PUF Panel Installation' },

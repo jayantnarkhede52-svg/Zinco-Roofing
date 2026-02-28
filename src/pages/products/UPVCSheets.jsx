@@ -8,13 +8,13 @@ import Button from '../../components/shared/Button';
 import styles from './ProductCategory.module.css';
 
 // Import local images
-import heroImg from '../../assets/productshero/upvc-hero.png';
-import upvcImg1 from '../../assets/Upvc images/Upvc images/1000014026.jpg';
-import upvcImg2 from '../../assets/Upvc images/Upvc images/1000014135.jpg';
-import upvcImg3 from '../../assets/Upvc images/Upvc images/1000014390.jpg';
-import upvcImg4 from '../../assets/Upvc images/Upvc images/1000014394.jpg';
-import upvcImg5 from '../../assets/Upvc images/Upvc images/1000014497.jpg';
-import upvcImg6 from '../../assets/Upvc images/Upvc images/1000014665.jpg';
+import heroImg from '../../assets/productshero/upvc-hero.webp';
+import upvcImg1 from '../../assets/Upvc images/Upvc images/1000014026.webp';
+import upvcImg2 from '../../assets/Upvc images/Upvc images/1000014135.webp';
+import upvcImg3 from '../../assets/Upvc images/Upvc images/1000014390.webp';
+import upvcImg4 from '../../assets/Upvc images/Upvc images/1000014394.webp';
+import upvcImg5 from '../../assets/Upvc images/Upvc images/1000014497.webp';
+import upvcImg6 from '../../assets/Upvc images/Upvc images/1000014665.webp';
 
 const UPVCSheets = () => {
     const navigate = useNavigate();

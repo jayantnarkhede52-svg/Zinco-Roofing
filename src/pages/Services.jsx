@@ -139,8 +139,7 @@ const Services = () => {
                                     transition={{ duration: 0.6 }}
                                 >
                                     <div className={styles.abstractVisual} style={{ borderLeft: `4px solid ${section.color}` }}>
-                                        <img
-                                            src={section.image}
+                                        <img src={section.image}
                                             alt={section.title}
                                             className={styles.sectionImage}
                                             loading="lazy"

@@ -5,7 +5,7 @@ import { FaArrowLeft, FaCheckCircle, FaStar, FaMapMarkerAlt } from 'react-icons/
 import SEO from '../../components/shared/SEO';
 import Card from '../../components/shared/Card';
 import Button from '../../components/shared/Button';
-import heroImg from '../../assets/productshero/shingles-hero.png';
+import heroImg from '../../assets/productshero/shingles-hero.webp';
 import styles from './ProductCategory.module.css';
 
 const Shingles = () => {

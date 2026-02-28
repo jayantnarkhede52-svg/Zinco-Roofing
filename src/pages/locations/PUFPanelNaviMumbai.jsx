@@ -2,13 +2,13 @@ import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import { FaIndustry, FaLayerGroup, FaShieldAlt, FaTemperatureLow, FaWater } from 'react-icons/fa';
 import Button from '../../components/shared/Button';
-import heroImage from '../../assets/img1.png'; // Using a relevant hero image
-import imgIntro from '../../assets/img 7.png';
-import imgWhatIs from '../../assets/img 6.png';
-import imgTypes from '../../assets/productshero/types-puf.png';
-import imgApplications from '../../assets/Puf panel images/Puf panel images/1001155530.jpg';
-import imgInstall from '../../assets/productshero/puf img.png';
-import imgProjects from '../../assets/Puf panel images/Puf panel images/1001155532.jpg';
+import heroImage from '../../assets/img1.webp'; // Using a relevant hero image
+import imgIntro from '../../assets/img 7.webp';
+import imgWhatIs from '../../assets/img 6.webp';
+import imgTypes from '../../assets/productshero/types-puf.webp';
+import imgApplications from '../../assets/Puf panel images/Puf panel images/1001155530.webp';
+import imgInstall from '../../assets/productshero/puf img.webp';
+import imgProjects from '../../assets/Puf panel images/Puf panel images/1001155532.webp';
 import SEO from '../../components/shared/SEO';
 import styles from './LocationStyles.module.css';
 import AreaLinks from '../../components/shared/AreaLinks';

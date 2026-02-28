@@ -8,13 +8,13 @@ import Button from '../../components/shared/Button';
 import styles from './ProductCategory.module.css';
 
 // Import local images
-import heroImg from '../../assets/productshero/puf-panel-hero.png';
-import pufImg1 from '../../assets/Puf panel images/Puf panel images/1000014168.jpg';
-import pufImg2 from '../../assets/Puf panel images/Puf panel images/1000014252.jpg';
-import pufImg4 from '../../assets/Puf panel images/Puf panel images/1000014626.jpg';
-import pufImg5 from '../../assets/Puf panel images/Puf panel images/1001155530.jpg';
-import pufImg6 from '../../assets/Puf panel images/Puf panel images/1001155531.jpg';
-import pufImg7 from '../../assets/Puf panel images/Puf panel images/1001155532.jpg';
+import heroImg from '../../assets/productshero/puf-panel-hero.webp';
+import pufImg1 from '../../assets/Puf panel images/Puf panel images/1000014168.webp';
+import pufImg2 from '../../assets/Puf panel images/Puf panel images/1000014252.webp';
+import pufImg4 from '../../assets/Puf panel images/Puf panel images/1000014626.webp';
+import pufImg5 from '../../assets/Puf panel images/Puf panel images/1001155530.webp';
+import pufImg6 from '../../assets/Puf panel images/Puf panel images/1001155531.webp';
+import pufImg7 from '../../assets/Puf panel images/Puf panel images/1001155532.webp';
 
 const InsulatedSheets = () => {
     const navigate = useNavigate();

@@ -8,15 +8,15 @@ import Button from '../../components/shared/Button';
 import styles from './ProductCategory.module.css';
 
 // Import local images
-import mwImg1 from '../../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014216.jpg';
-import mwImg2 from '../../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014298.jpg';
-import mwImg3 from '../../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014339.jpg';
-import mwImg4 from '../../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014422.jpg';
-import mwImg5 from '../../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014502.png';
-import mwImg6 from '../../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014533.jpg';
-import mwImg7 from '../../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014579.jpg';
-import mwImg8 from '../../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014583.png';
-import mwImg9 from '../../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014721.png';
+import mwImg1 from '../../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014216.webp';
+import mwImg2 from '../../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014298.webp';
+import mwImg3 from '../../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014339.webp';
+import mwImg4 from '../../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014422.webp';
+import mwImg5 from '../../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014502.webp';
+import mwImg6 from '../../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014533.webp';
+import mwImg7 from '../../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014579.webp';
+import mwImg8 from '../../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014583.webp';
+import mwImg9 from '../../assets/Multiwall polycarbonate images/Multiwall polycarbonate images/1000014721.webp';
 
 const MultiwallSheets = () => {
     const navigate = useNavigate();
@@ -235,8 +235,7 @@ const MultiwallSheets = () => {
                                     viewport={{ once: true }}
                                     transition={{ duration: 0.4, delay: idx * 0.05 }}
                                 >
-                                    <img
-                                        src={img.src}
+                                    <img src={img.src}
                                         alt={img.title}
                                         className={styles.galleryImage}
                                         loading="lazy"

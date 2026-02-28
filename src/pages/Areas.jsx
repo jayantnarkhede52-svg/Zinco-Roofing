@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FaCity, FaIndustry, FaWarehouse, FaUmbrella, FaLayerGroup } from 'react-icons/fa';
 import SEO from '../components/shared/SEO';
-import heroImage from '../assets/img4.png'; // Using a generic image
+import heroImage from '../assets/img4.webp'; // Using a generic image
 import styles from './locations/LocationStyles.module.css';
 
 const locations = [

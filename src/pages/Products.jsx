@@ -3,15 +3,15 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate, Link, useSearchParams } from 'react-router-dom';
 import { FaArrowLeft, FaIndustry, FaTemperatureHigh, FaLayerGroup, FaTools, FaSolarPanel, FaPaintRoller } from 'react-icons/fa';
 import SEO from '../components/shared/SEO';
-import heroImage from '../assets/products-hero.png';
+import heroImage from '../assets/products-hero.webp';
 import Card from '../components/shared/Card';
 import styles from './Products.module.css';
 
 // Import featured images for category cards
-import metalFeatured from '../assets/Metal roofing images/Metal roofing images/coloured-roofing-sheet-500x500-1.jpg';
-import pufFeatured from '../assets/Puf panel images/Puf panel images/1001155532.jpg';
-import polyFeatured from '../assets/Transparent polycarbonate/Transparent polycarbonate/1000014018.jpg';
-import deckFeatured from '../assets/Dect sheet/Dect sheet/1000014053.jpg';
+import metalFeatured from '../assets/Metal roofing images/Metal roofing images/coloured-roofing-sheet-500x500-1.webp';
+import pufFeatured from '../assets/Puf panel images/Puf panel images/1001155532.webp';
+import polyFeatured from '../assets/Transparent polycarbonate/Transparent polycarbonate/1000014018.webp';
+import deckFeatured from '../assets/Dect sheet/Dect sheet/1000014053.webp';
 
 const Products = () => {
     const navigate = useNavigate();
@@ -282,8 +282,7 @@ const Products = () => {
                                         <Card variant="glass" className={`${styles.categorySelectionCard} ${group.image ? styles.hasImage : ''}`}>
                                             {group.image && (
                                                 <div className={styles.cardImageContainer}>
-                                                    <img
-                                                        src={group.image}
+                                                    <img src={group.image}
                                                         alt={group.title}
                                                         className={styles.cardImage}
                                                         loading="lazy"

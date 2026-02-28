@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { CONTACT_INFO } from '../utils/constants';
 import SEO from '../components/shared/SEO';
-import heroImage from '../assets/productshero/Contact-hero.png';
+import heroImage from '../assets/productshero/Contact-hero.webp';
 import Card from '../components/shared/Card';
 import styles from './Contact.module.css';
 

@@ -28,7 +28,7 @@ const SEO = ({ title, description, keywords, canonicalUrl }) => {
                     "@context": "https://schema.org",
                     "@type": "LocalBusiness",
                     "name": "Zinco Roofing Solution",
-                    "image": "https://zincoroofing.com/logo.png",
+                    "image": "https://zincoroofing.com/logo.webp",
                     "@id": "https://zincoroofing.com",
                     "url": "https://zincoroofing.com",
                     "telephone": "+919967203090",
