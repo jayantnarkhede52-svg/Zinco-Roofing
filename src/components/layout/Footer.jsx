@@ -8,13 +8,13 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     const serviceAreas = [
-        { name: 'Mumbai', path: '/roofing-contractors-mumbai' },
-        { name: 'Navi Mumbai', path: '/roofing-contractors-navi-mumbai' },
-        { name: 'Panvel', path: '/roofing-contractors-panvel' },
-        { name: 'Taloja', path: '/roofing-contractors-taloja' },
-        { name: 'Dombivli', path: '/roofing-contractors-dombivli' },
-        { name: 'Thane', path: '/roofing-contractors-thane' },
-        { name: 'Ambarnath', path: '/roofing-contractors-ambarnath' },
+        { name: 'Mumbai', path: '/industrial-roofing-contractors-in-mumbai' },
+        { name: 'Navi Mumbai', path: '/industrial-roofing-contractors-in-navi-mumbai' },
+        { name: 'Panvel', path: '/industrial-roofing-contractors-in-panvel' },
+        { name: 'Taloja', path: '/industrial-roofing-contractors-in-taloja' },
+        { name: 'Dombivli', path: '/industrial-roofing-contractors-in-dombivli' },
+        { name: 'Thane', path: '/industrial-roofing-contractors-in-thane' },
+        { name: 'Ambarnath', path: '/industrial-roofing-contractors-in-ambarnath' },
     ];
 
     const quickLinks = [

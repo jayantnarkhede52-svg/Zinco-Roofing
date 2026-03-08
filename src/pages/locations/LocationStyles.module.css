@@ -12,6 +12,13 @@
     margin-bottom: var(--spacing-3xl);
 }
 
+.technicalSection.darkMode p,
+.technicalSection.darkMode strong,
+.technicalSection.darkMode li,
+.technicalSection.darkMode td {
+    color: var(--white);
+}
+
 .tableWrapper {
     overflow-x: auto;
     margin-top: var(--spacing-2xl);
@@ -82,6 +89,7 @@
 }
 
 .ctaSection {
+    background-color: var(--accent-700);
     background: linear-gradient(135deg, var(--accent-600), var(--accent-800));
     padding: var(--spacing-4xl) 0;
     border-radius: var(--radius-2xl);
@@ -97,7 +105,8 @@
 
 .ctaContent p {
     font-size: var(--text-lg);
-    opacity: 0.9;
+    color: var(--white);
+    opacity: 0.95;
     margin-bottom: var(--spacing-2xl);
     max-width: 700px;
     margin-left: auto;
@@ -376,4 +385,43 @@
 .faqItem p {
     color: var(--gray-700);
     line-height: 1.6;
+}
+
+/* Benefit Cards & Grid */
+.benefitGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-2xl);
+}
+
+.benefitCard {
+    background: var(--white);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--gray-100);
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+    display: flex;
+    flex-direction: column;
+}
+
+.benefitCard:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--accent-500);
+}
+
+.benefitCard h3 {
+    font-size: 1.25rem;
+    color: var(--gray-900);
+    margin-bottom: var(--spacing-sm);
+    font-weight: 700;
+}
+
+.benefitCard p {
+    color: var(--gray-600);
+    line-height: 1.6;
+    font-size: var(--text-sm);
+    margin-bottom: 0;
 }

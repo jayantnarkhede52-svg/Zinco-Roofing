@@ -5,8 +5,12 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
+    // Target modern browsers for smaller output
+    target: 'es2015',
     // Use built-in esbuild minifier (no extra deps needed)
     minify: 'esbuild',
+    // Minify CSS with esbuild too
+    cssMinify: 'esbuild',
     // Chunk splitting for better caching
     rollupOptions: {
       output: {
@@ -19,7 +23,7 @@ export default defineConfig({
     },
     // Increase chunk size warning limit
     chunkSizeWarningLimit: 600,
-    // Asset file name hashing for cache busting
-    assetsInlineLimit: 4096,
+    // Lower inline limit to prevent large Base64 strings in JS bundles
+    assetsInlineLimit: 2048,
   },
 })

@@ -28,6 +28,8 @@
   --accent-500: #2563eb;
   --accent-600: #1d4ed8;
   --accent-700: #1e40af;
+  --accent-800: #1e3a8a;
+  --accent-900: #172554;
 
   /* Neutrals */
   --gray-50: #f8fafc;
@@ -120,10 +122,6 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: var(--font-body);
   background-color: var(--bg-primary);
@@ -138,26 +136,23 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  opacity: 0;
-  animation: imgFadeIn 0.8s var(--transition-base) forwards;
 }
 
-/* Skip animation for small icons if needed, but usually fine */
-img.no-animate {
-  animation: none;
-  opacity: 1;
-}
-
+/* Opt-in fade-in animation for non-critical images */
 @keyframes imgFadeIn {
   from {
     opacity: 0;
     transform: translateY(10px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.fade-in-img {
+  opacity: 0;
+  animation: imgFadeIn 0.8s ease-out forwards;
 }
 
 /* Typography */
@@ -248,6 +243,7 @@ a:hover {
 
 .section {
   padding: var(--spacing-3xl) 0;
+  scroll-margin-top: 80px; /* Offset for sticky navbar */
 }
 
 .text-gradient {

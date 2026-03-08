@@ -94,7 +94,7 @@
 
 .cardImageContainer {
     width: 100%;
-    height: 180px;
+    height: 140px;
     overflow: hidden;
 }
 
@@ -110,7 +110,7 @@
 }
 
 .cardContent {
-    padding: var(--spacing-xl);
+    padding: var(--spacing-lg);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,7 +118,7 @@
 }
 
 .categorySelectionCard:not(.hasImage) .cardContent {
-    padding-top: var(--spacing-3xl);
+    padding-top: var(--spacing-2xl);
 }
 
 .categorySelectionCard:hover {
@@ -130,21 +130,27 @@
 .selectionIcon {
     font-size: 4rem;
     color: var(--accent-500);
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+    transition: transform 0.3s ease;
+}
+
+.categorySelectionCard:hover .selectionIcon {
+    transform: scale(1.1);
 }
 
 .selectionTitle {
-    font-size: var(--text-2xl);
+    font-size: var(--text-xl);
     color: var(--text-primary);
     font-weight: 800;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
 }
 
 .selectionDesc {
     color: var(--text-secondary);
-    line-height: 1.6;
+    line-height: 1.5;
     font-weight: 500;
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
+    font-size: var(--text-sm);
 }
 
 .exploreLink {
@@ -334,22 +340,33 @@
     font-size: var(--text-base);
 }
 
+.seoArticle {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-2xl);
+    align-items: start;
+}
+
+.seoArticleItem {
+    padding-bottom: var(--spacing-xl);
+}
+
 .seoArticle h3 {
     font-family: 'Outfit', sans-serif;
-    font-size: var(--text-2xl);
+    font-size: 1.25rem;
     color: var(--accent-600);
-    margin: var(--spacing-3xl) 0 var(--spacing-lg);
+    margin: 0 0 var(--spacing-md);
     font-weight: 700;
     border-left: 4px solid var(--accent-500);
     padding-left: var(--spacing-md);
 }
 
 .seoArticle p {
-    font-size: var(--text-lg);
-    line-height: 1.8;
+    font-size: 1rem;
+    line-height: 1.7;
     color: var(--text-secondary);
-    margin-bottom: var(--spacing-xl);
-    text-align: justify;
+    margin-bottom: 0;
+    text-align: left;
 }
 
 .seoCTA {

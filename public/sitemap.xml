@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://zincoroofing.com/</loc><priority>1.00</priority></url>
-  <url><loc>https://zincoroofing.com/projects</loc><priority>0.80</priority></url>
-  <url><loc>https://zincoroofing.com/services</loc><priority>0.80</priority></url>
-  <url><loc>https://zincoroofing.com/products</loc><priority>0.80</priority></url>
+  <url><loc>https://zincoroofing.com/industrial-roofing-projects-navi-mumbai</loc><priority>0.80</priority></url>
+  <url><loc>https://zincoroofing.com/industrial-roofing-services-navi-mumbai</loc><priority>0.80</priority></url>
+  <url><loc>https://zincoroofing.com/premium-roofing-sheets-navi-mumbai</loc><priority>0.80</priority></url>
   <url><loc>https://zincoroofing.com/gallery</loc><priority>0.70</priority></url>
   <url><loc>https://zincoroofing.com/contact</loc><priority>0.90</priority></url>
   <url><loc>https://zincoroofing.com/privacy-policy</loc><priority>0.50</priority></url>
@@ -30,11 +30,16 @@
   <url><loc>https://zincoroofing.com/products/upvc-high-rib-sheets</loc><priority>0.75</priority></url>
   <url><loc>https://zincoroofing.com/products/synthetic-roof</loc><priority>0.75</priority></url>
   <url><loc>https://zincoroofing.com/products/upvc-sheets</loc><priority>0.75</priority></url>
+  <url><loc>https://zincoroofing.com/products/structural-painting</loc><priority>0.75</priority></url>
+  <url><loc>https://zincoroofing.com/products/solar-installation</loc><priority>0.75</priority></url>
 
-  <!-- Location Pages -->
-  <url><loc>https://zincoroofing.com/roofing-contractors-navi-mumbai</loc><priority>0.70</priority></url>
-  <url><loc>https://zincoroofing.com/roofing-contractors-mumbai</loc><priority>0.70</priority></url>
-  <url><loc>https://zincoroofing.com/roofing-contractors-panvel</loc><priority>0.70</priority></url>
-  <url><loc>https://zincoroofing.com/roofing-contractors-thane</loc><priority>0.70</priority></url>
+  <!-- Location SEO Pages -->
+  <url><loc>https://zincoroofing.com/industrial-roofing-contractors-in-navi-mumbai</loc><priority>0.70</priority></url>
+  <url><loc>https://zincoroofing.com/industrial-roofing-contractors-in-mumbai</loc><priority>0.70</priority></url>
+  <url><loc>https://zincoroofing.com/industrial-roofing-contractors-in-panvel</loc><priority>0.70</priority></url>
+  <url><loc>https://zincoroofing.com/industrial-roofing-contractors-in-thane</loc><priority>0.70</priority></url>
+  <url><loc>https://zincoroofing.com/industrial-roofing-contractors-in-taloja</loc><priority>0.70</priority></url>
+  <url><loc>https://zincoroofing.com/industrial-roofing-contractors-in-ambarnath</loc><priority>0.70</priority></url>
+  <url><loc>https://zincoroofing.com/industrial-roofing-contractors-in-dombivli</loc><priority>0.70</priority></url>
   <url><loc>https://zincoroofing.com/puf-panel-manufacturer-navi-mumbai</loc><priority>0.70</priority></url>
 </urlset>

@@ -4,14 +4,14 @@ import { motion } from 'framer-motion';
 import styles from './AreaLinks.module.css';
 
 const locations = [
-    { name: 'Mumbai', path: '/roofing-contractors-mumbai' },
-    { name: 'Navi Mumbai', path: '/roofing-contractors-navi-mumbai' },
-    { name: 'Panvel', path: '/roofing-contractors-panvel' },
-    { name: 'Taloja', path: '/roofing-contractors-taloja' },
-    { name: 'Dombivli', path: '/roofing-contractors-dombivli' },
-    { name: 'Thane', path: '/roofing-contractors-thane' },
-    { name: 'Ambarnath', path: '/roofing-contractors-ambarnath' },
-    { name: 'PUF Panel Navi Mumbai', path: '/puf-panel-manufacturer-in-navi-mumbai' }
+    { name: 'Mumbai', path: '/industrial-roofing-contractors-in-mumbai' },
+    { name: 'Navi Mumbai', path: '/industrial-roofing-contractors-in-navi-mumbai' },
+    { name: 'Panvel', path: '/industrial-roofing-contractors-in-panvel' },
+    { name: 'Taloja', path: '/industrial-roofing-contractors-in-taloja' },
+    { name: 'Dombivli', path: '/industrial-roofing-contractors-in-dombivli' },
+    { name: 'Thane', path: '/industrial-roofing-contractors-in-thane' },
+    { name: 'Ambarnath', path: '/industrial-roofing-contractors-in-ambarnath' },
+    { name: 'PUF Panel Navi Mumbai', path: '/puf-panel-manufacturer-navi-mumbai' }
 ];
 
 const AreaLinks = ({ currentLocation }) => {

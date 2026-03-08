@@ -27,3 +27,9 @@
     font-size: var(--text-xl);
     color: var(--gray-400);
 }
+
+/* Below-fold sections: skip rendering until scrolled into view */
+.belowFold {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 600px;
+}

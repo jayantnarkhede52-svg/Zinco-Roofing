@@ -1,12 +1,12 @@
 .faqSection {
-    padding: var(--section-spacing) 0;
+    padding: var(--spacing-3xl) 0;
     background: var(--bg-primary);
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 var(--container-padding);
+    padding: 0 var(--spacing-lg);
 }
 
 .header {

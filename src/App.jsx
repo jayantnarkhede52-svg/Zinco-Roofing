@@ -1,9 +1,8 @@
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import ScrollToTop from './components/shared/ScrollToTop';
-import Chatbot from './components/shared/Chatbot';
 import './styles/animations.css';
 
 // Lazy load pages
@@ -16,7 +15,6 @@ const Gallery = lazy(() => import('./pages/Gallery'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
 const TermsOfService = lazy(() => import('./pages/TermsOfService'));
-import WhatsAppButton from './components/shared/WhatsAppButton';
 
 // Lazy load product categories
 const RoofingMetalSheets = lazy(() => import('./pages/products/RoofingMetalSheets'));
@@ -52,6 +50,10 @@ const DombivliRoofing = lazy(() => import('./pages/locations/DombivliRoofing'));
 const PUFPanelNaviMumbai = lazy(() => import('./pages/locations/PUFPanelNaviMumbai'));
 const Areas = lazy(() => import('./pages/Areas'));
 
+// Lazy-load Chatbot & WhatsApp (non-critical floating UI)
+const Chatbot = lazy(() => import('./components/shared/Chatbot'));
+const WhatsAppButton = lazy(() => import('./components/shared/WhatsAppButton'));
+
 // Loading component
 const PageLoader = () => (
   <div style={{
@@ -66,6 +68,24 @@ const PageLoader = () => (
     <div className="loading-spinner">Loading...</div>
   </div>
 );
+
+// Deferred floating UI — loads 3s after mount so it doesn't compete with FCP/LCP
+const DeferredFloatingUI = () => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    const timer = setTimeout(() => setShow(true), 3000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!show) return null;
+
+  return (
+    <Suspense fallback={null}>
+      <Chatbot />
+      <WhatsAppButton />
+    </Suspense>
+  );
+};
 
 function App() {
   return (
@@ -124,8 +144,7 @@ function App() {
           </Suspense>
         </main>
         <Footer />
-        <Chatbot />
-        <WhatsAppButton />
+        <DeferredFloatingUI />
       </div>
     </Router>
   );

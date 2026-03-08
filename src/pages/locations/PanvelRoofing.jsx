@@ -8,6 +8,7 @@ import panvelImg1 from '../../assets/Metal roofing images/Metal roofing images/1
 import panvelImg2 from '../../assets/Puf panel images/Puf panel images/1000014252.webp';
 import panvelImg3 from '../../assets/projects/Godreh-ambarnath.webp';
 import panvelImg4 from '../../assets/Upvc images/Upvc images/1000014135.webp';
+import panvelImg5 from '../../assets/MUMBAI/MUMBAI 3.webp';
 import styles from './LocationStyles.module.css';
 import LocationServiceCards from '../../components/shared/LocationServiceCards';
 import AreaLinks from '../../components/shared/AreaLinks';
@@ -19,6 +20,7 @@ const PanvelRoofing = () => {
                 title="Industrial Roofing Contractors in Panvel | Warehouse & Shed Specialist"
                 description="Expert Industrial Roofing Contractors in Panvel. Specializing in high-span warehouse roofing, factory sheds, and PUF panels for Panvel's logistics hubs."
                 keywords="industrial roofing contractors panvel, panvel warehouse roofing, puf panel manufacturer panvel, factory shed panvel, cold storage panvel, structural painting panvel"
+                canonicalUrl="https://zincoroofing.com/industrial-roofing-contractors-in-panvel"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} />
@@ -50,17 +52,23 @@ const PanvelRoofing = () => {
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
                         >
-                            Panvel’s Trusted Industrial Roofing Contractors for Logistics & Warehousing
+                            Specialized Industrial Roofing Contractors Panvel
                         </motion.h2>
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                         >
-                            Panvel has emerged as the logistics gateway to the Mumbai Metropolitan Region. As the most reliable <strong>Industrial Roofing Contractors in Panvel</strong>, Zinco Roofing Solution understands the unique demands of high-span warehousing. Large-scale logistics parks require <strong>Industrial Roofing Contractors in Panvel</strong> who can deliver rapid installation without compromising on long-term weatherproofing.
+                            Panvel has emerged as the logistics gateway to the region. As the most reliable <strong>Industrial Roofing Contractors Panvel</strong>, Zinco Roofing Solution understands high-span warehousing. Large-scale logistics parks require <strong>Industrial Roofing Contractors Panvel</strong> who can deliver rapid installation. Our team of <strong>Industrial Roofing Contractors Panvel</strong> provides technical excellence for heavy industry. We are the most trusted <strong>Industrial Roofing Contractors Panvel</strong> in the area.
                         </motion.p>
                         <p>
-                            From the massive industrial sheds in Taloja MIDC (Panvel side) to the new logistics clusters along the Mumbai-Pune Expressway, industrial experts look for <strong>Industrial Roofing Contractors in Panvel</strong> who prioritize structural speed. We are the <strong>Industrial Roofing Contractors in Panvel</strong> that use engineered fabrication to ensure that your warehouse is operational in record time, protected against the heavy winds and rain of the Panvel belt.
+                            Panvel is the logistics gateway to the MMR. As premier <strong>Industrial Roofing Contractors Panvel</strong>, Zinco Roofing Solution delivers structural excellence. The high-humidity environment requires <strong>Industrial Roofing Contractors Panvel</strong> who specialize in durable coatings. Choosing experienced <strong>Industrial Roofing Contractors Panvel</strong> is vital for factory safety. Reach out to the best <strong>Industrial Roofing Contractors Panvel</strong> today. We are the <strong>Industrial Roofing Contractors Panvel</strong> that you can trust.
+                        </p>
+                        <p>
+                            Industrial managers seek <strong>Industrial Roofing Contractors Panvel</strong> who prioritize long-term ROI. By hiring established <strong>Industrial Roofing Contractors Panvel</strong>, you invest in quality. We are the <strong>Industrial Roofing Contractors Panvel</strong> that use advanced steel. As <strong>Industrial Roofing Contractors Panvel</strong>, we ensure compliance. Every project by our <strong>Industrial Roofing Contractors Panvel</strong> is world-class.
+                        </p>
+                        <p>
+                            When searching for <strong>Industrial Roofing Contractors Panvel</strong>, quality is key. We are the <strong>Industrial Roofing Contractors Panvel</strong> that never compromise on strength. Our <strong>Industrial Roofing Contractors Panvel</strong> provide detailed structural audits. Reach out to the best <strong>Industrial Roofing Contractors Panvel</strong> today. We are the top <strong>Industrial Roofing Contractors Panvel</strong> in the logistics belt. Rely on <strong>Industrial Roofing Contractors Panvel</strong> for long-term health.
                         </p>
                     </section>
 
@@ -69,89 +77,96 @@ const PanvelRoofing = () => {
                     {/* Detailed Content Sections */}
                     <section className={styles.twoColumn}>
                         <div className={styles.textContent}>
-                            <h2>High-Span Metal Roofing: Specialized Work by Industrial Roofing Contractors in Panvel</h2>
+                            <h2>Superior Panvel Warehouse Roofing: Engineered for Speed</h2>
                             <p>
-                                Engineering warehouses with minimal internal columns is a specialty of top <strong>Industrial Roofing Contractors in Panvel</strong>. We utilize high-strength Galvalume and innovative truss designs to provide the maximum storage volume. When you hire experienced <strong>Industrial Roofing Contractors in Panvel</strong>, you ensure that every square foot of your logistics facility is usable and safe.
+                                <strong>Panvel warehouse roofing</strong> faces unique challenges like high wind speeds and expansive spans. As dedicated <strong>panvel warehouse roofing</strong> providers, we utilize hi-tensile steel. <strong>Panvel warehouse roofing</strong> standards require specialized fasteners. Hiring professional <strong>panvel warehouse roofing</strong> teams ensures a leak-proof facility. We lead in <strong>panvel warehouse roofing</strong> solutions. Trust our <strong>panvel warehouse roofing</strong> team.
                             </p>
                             <p>
-                                Our reputation as premier <strong>Industrial Roofing Contractors in Panvel</strong> comes from our focus on ROI. Choosing specialized <strong>Industrial Roofing Contractors in Panvel</strong> like Zinco provides:
+                                Our reputation for <strong>Panvel warehouse roofing</strong> is built on structural speed. When you collaborate for <strong>Panvel warehouse roofing</strong> with Zinco, you benefit from storage volume. We offer the most durable <strong>Panvel warehouse roofing</strong> in the logistics zone. Each <strong>Panvel warehouse roofing</strong> project is customized. Trust our <strong>Panvel warehouse roofing</strong> for safety.
                             </p>
-                            <ul>
-                                <li><strong>Maximum Structural Span</strong>: Essential for modern racking systems.</li>
-                                <li><strong>Engineered Drainage</strong>: Handling Panvel's heavy monsoon runoff.</li>
-                                <li><strong>Industrial Grade Fasteners</strong>: A standard practice for high-quality <strong>Industrial Roofing Contractors in Panvel</strong>.</li>
-                            </ul>
                             <p>
-                                For units near the Navi Mumbai International Airport zone, we are the <strong>Industrial Roofing Contractors in Panvel</strong> that deliver projects on time and within budget.
+                                We are the leaders in <strong>Panvel warehouse roofing</strong> for the airport zone. Our <strong>Panvel warehouse roofing</strong> provides the fastest installation rate. Choose <strong>Panvel warehouse roofing</strong> for lasting peace of mind. Our <strong>Panvel warehouse roofing</strong> is tested for extreme rainfall. Get a <strong>Panvel warehouse roofing</strong> quote today. We are your partner for <strong>Panvel warehouse roofing</strong>.
                             </p>
                         </div>
                         <div className={styles.imageBlock}>
-                            <img src={panvelImg1} alt="Metal Roofing by Industrial Roofing Contractors in Panvel" loading="lazy" />
+                            <img src={panvelImg1} alt="Panvel Warehouse Roofing Solutions" loading="lazy" />
                         </div>
                     </section>
 
                     <section className={styles.twoColumn}>
                         <div className={styles.imageBlock}>
-                            <img src={panvelImg2} alt="PUF Panels by Industrial Roofing Contractors in Panvel" loading="lazy" />
+                            <img src={panvelImg2} alt="PUF Panel Manufacturer Panvel" loading="lazy" />
                         </div>
                         <div className={styles.textContent}>
-                            <h2>Insulated PUF Panels: Expertise from Industrial Roofing Contractors in Panvel</h2>
+                            <h2>Leading PUF Panel Manufacturer Panvel</h2>
                             <p>
-                                Cold storage and climate-controlled warehousing are critical to Panvel's logistics sector. As specialized <strong>Industrial Roofing Contractors in Panvel</strong>, we provide high-performance PUF sandwich panels that offer the highest thermal efficiency. These panels are the industry standard for food and pharmaceutical warehouses, and we are the <strong>Industrial Roofing Contractors in Panvel</strong> that guarantee their quality.
+                                Temperature regulation is a must for a top <strong>PUF panel manufacturer Panvel</strong>. As an established <strong>PUF panel manufacturer Panvel</strong>, we deliver energy efficiency. Every modern warehouse needs a <strong>PUF panel manufacturer Panvel</strong> to reduce heat. When consulting with a <strong>PUF panel manufacturer Panvel</strong>, experts focus on R-value. We are the <strong>PUF panel manufacturer Panvel</strong> of choice. Trust the best <strong>PUF panel manufacturer Panvel</strong>. Rely on the finest <strong>PUF panel manufacturer Panvel</strong>. We are your partner as a <strong>PUF panel manufacturer Panvel</strong>.
                             </p>
                             <p>
-                                When technical consultants look for <strong>Industrial Roofing Contractors in Panvel</strong>, insulation R-values are a top priority. Our status as leading <strong>Industrial Roofing Contractors in Panvel</strong> means we only provide fire-rated, high-density insulation solutions.
+                                We are the <strong>PUF panel manufacturer Panvel</strong> that meets safety standards. Our solutions from a top <strong>PUF panel manufacturer Panvel</strong> are ideal for pharma. As a versatile <strong>PUF panel manufacturer Panvel</strong>, we handle custom specs. Trust a professional <strong>PUF panel manufacturer Panvel</strong> for insulation quality.
                             </p>
-                            <ul>
-                                <li><strong>Thermal Efficiency</strong>: Reducing cooling costs for Panvel cold storages.</li>
-                                <li><strong>Structural Strength</strong>: PUF panels provide load-bearing capacity as well as insulation, as recommended by <strong>Industrial Roofing Contractors in Panvel</strong>.</li>
-                                <li><strong>Hygienic Finish</strong>: Ideal for pharma units in the Panvel industrial cluster.</li>
-                            </ul>
+                            <p>
+                                We are the <strong>PUF panel manufacturer Panvel</strong> that offers modular construction. No other <strong>PUF panel manufacturer Panvel</strong> delivers this level of durability. Our <strong>PUF panel manufacturer Panvel</strong> services include site audits. Choose the best <strong>PUF panel manufacturer Panvel</strong> for your project. We are the <strong>PUF panel manufacturer Panvel</strong> you need.
+                            </p>
                         </div>
                     </section>
 
                     <section className={styles.twoColumn}>
                         <div className={styles.textContent}>
-                            <h2>Structural Painting: Protection by Industrial Roofing Contractors in Panvel</h2>
+                            <h2>Heavy-Duty Factory Shed Panvel Construction</h2>
                             <p>
-                                Rust is a constant threat in the humid, industry-heavy air of Panvel. At Zinco, we are <strong>Industrial Roofing Contractors in Panvel</strong> that focus on the complete lifespan of your building. Our structural painting and specialized coatings create an impermeable barrier against corrosion. Professional <strong>Industrial Roofing Contractors in Panvel</strong> know that a roof is only as good as the structure supporting it.
+                                From initial design to completion, we excel at <strong>factory shed Panvel</strong> fabrication. Our <strong>factory shed Panvel</strong> team ensures high-performance structures. We provide <strong>factory shed Panvel</strong> solutions for all sectors. Choosing expert <strong>factory shed Panvel</strong> fabrication ensures project speed. We lead in <strong>factory shed Panvel</strong> construction. Reliance on <strong>factory shed Panvel</strong> experts is key. Trust our <strong>factory shed Panvel</strong> builders.
                             </p>
                             <p>
-                                We are the <strong>Industrial Roofing Contractors in Panvel</strong> that project managers trust for structural audits and preventative maintenance. Our coatings are designed for the high-humidity environment of the Panvel-Navi Mumbai belt.
+                                Our techniques for <strong>factory shed Panvel</strong> utilize the latest technology. We are the experts in <strong>factory shed Panvel</strong> across the belt. For <strong>factory shed Panvel</strong> that meets safety codes, trust Zinco. We offer <strong>factory shed Panvel</strong> that is scalable. Get a <strong>factory shed Panvel</strong> estimate today.
                             </p>
-                            <ul>
-                                <li><strong>Epoxy Industrial Systems</strong>: Durable protection for Taloja-Panvel factory units.</li>
-                                <li><strong>UV Resistant Finishes</strong>: Provided by the most diligent <strong>Industrial Roofing Contractors in Panvel</strong>.</li>
-                                <li><strong>Professional Site Prep</strong>: A core service of expert <strong>Industrial Roofing Contractors in Panvel</strong>.</li>
-                            </ul>
+                            <p>
+                                Contact us for premium <strong>factory shed Panvel</strong> services today. Our <strong>factory shed Panvel</strong> results speak for themselves. We are your partner for <strong>factory shed Panvel</strong> and roofing. Experience the best <strong>factory shed Panvel</strong> with our team. Every <strong>factory shed Panvel</strong> is built for durability.
+                            </p>
                         </div>
                         <div className={styles.imageBlock}>
-                            <img src={panvelImg3} alt="Structural Coating by Industrial Roofing Contractors in Panvel" loading="lazy" />
+                            <img src={panvelImg3} alt="Factory Shed Panvel Solutions" loading="lazy" />
                         </div>
                     </section>
 
                     <section className={styles.twoColumn}>
                         <div className={styles.imageBlock}>
-                            <img src={panvelImg4} alt="uPVC Solutions for Panvel" loading="lazy" />
+                            <img src={panvelImg4} alt="Cold Storage Panvel Solutions" loading="lazy" />
                         </div>
                         <div className={styles.textContent}>
-                            <h2>uPVC Roofing: Rust-Proof Tech from Industrial Roofing Contractors in Panvel</h2>
+                            <h2>Professional Cold Storage Panvel Installation</h2>
                             <p>
-                                For Panvel industries handling chemicals or those near the creek, we often recommend uPVC as the ultimate rust-proof solution. As versatile <strong>Industrial Roofing Contractors in Panvel</strong>, we offer multi-layer uPVC sheets that are 100% immune to salt and acid. Why settle for traditional metal when specialized <strong>Industrial Roofing Contractors in Panvel</strong> can provide a more durable material?
+                                Temperature-controlled logistics require expert <strong>cold storage Panvel</strong> solutions. Our <strong>cold storage Panvel</strong> systems provide maximum thermal protection. We are specialists in <strong>cold storage Panvel</strong> projects for the pharma sector. Every <strong>cold storage Panvel</strong> unit we build is energy-efficient. Trust us for high-grade <strong>cold storage Panvel</strong>.
                             </p>
                             <p>
-                                Logistics managers in Panvel prefer uPVC for its noise insulation and heat reflection. As your leading <strong>Industrial Roofing Contractors in Panvel</strong>, we ensure these sheets are installed with structural precision.
+                                We offer <strong>cold storage Panvel</strong> fabrication using insulated panels. Our <strong>cold storage Panvel</strong> services focus on hygienic finishes. As a versatile <strong>cold storage Panvel</strong> provider, we handle custom sizes. Experience the most reliable <strong>cold storage Panvel</strong> with Zinco. Our <strong>cold storage Panvel</strong> results are unmatched.
                             </p>
-                            <ul>
-                                <li><strong>Chemical Resistance</strong>: Perfect for the aggressive industrial zones of Panvel.</li>
-                                <li><strong>Workplace Comfort</strong>: Naturally cooler interiors, a benefit highlighted by <strong>Industrial Roofing Contractors in Panvel</strong>.</li>
-                                <li><strong>Zero Maintenance</strong>: The ultimate ROI provided by top <strong>Industrial Roofing Contractors in Panvel</strong>.</li>
-                            </ul>
+                            <p>
+                                Modern logistics hubs depend on high-quality <strong>cold storage Panvel</strong> infrastructure. As specialized providers of <strong>cold storage Panvel</strong>, we deliver insulation safety. Our <strong>cold storage Panvel</strong> solutions utilize high-density PUF. Investing in <strong>cold storage Panvel</strong> ensures product integrity. We offer the best <strong>cold storage Panvel</strong> units. Choose <strong>cold storage Panvel</strong> excellence today. Our <strong>cold storage Panvel</strong> is top-tier.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section className={styles.twoColumn}>
+                        <div className={styles.textContent}>
+                            <h2>Expert Structural Painting Panvel Services</h2>
+                            <p>
+                                At Zinco, we provide high-end <strong>structural painting Panvel</strong> services. Our <strong>structural painting Panvel</strong> solutions utilize epoxy systems. Every professional knows that <strong>structural painting Panvel</strong> is vital. Our reputation for <strong>structural painting Panvel</strong> comes from prep. We lead in <strong>structural painting Panvel</strong>. Reach out for <strong>structural painting Panvel</strong>. Call our <strong>structural painting Panvel</strong> team now.
+                            </p>
+                            <p>
+                                We offer <strong>structural painting Panvel</strong> for all warehouses. Our <strong>structural painting Panvel</strong> services prevent corrosion. Rely on us for world-class <strong>structural painting Panvel</strong>. Choose <strong>structural painting Panvel</strong> for maintenance. We are the preferred <strong>structural painting Panvel</strong> partners.
+                            </p>
+                            <p>
+                                Our <strong>structural painting Panvel</strong> provides long-life protection. For superior <strong>structural painting Panvel</strong>, contact us. We use premium materials for <strong>structural painting Panvel</strong>. Our <strong>structural painting Panvel</strong> team is highly trained. Get a <strong>structural painting Panvel</strong> quote today.
+                            </p>
+                        </div>
+                        <div className={styles.imageBlock}>
+                            <img src={panvelImg5} alt="Structural Painting Panvel Services" loading="lazy" />
                         </div>
                     </section>
 
                     {/* Technical Specification Section */}
-                    <section className={styles.technicalSection}>
+                    <section className={`${styles.technicalSection} ${styles.darkMode}`}>
                         <h2>Technical Standards: Why Industrial Roofing Contractors in Panvel Choose Zinco</h2>
                         <div className={styles.tableWrapper}>
                             <table className={styles.techTable}>

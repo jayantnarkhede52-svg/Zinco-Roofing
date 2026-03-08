@@ -6,7 +6,7 @@ import styles from './TrustSection.module.css';
 
 const Counter = ({ value, duration = 2 }) => {
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: true, margin: "-100px" });
+    const isInView = useInView(ref, { once: true, margin: "-50px" });
 
     useEffect(() => {
         if (isInView && ref.current) {
@@ -20,7 +20,7 @@ const Counter = ({ value, duration = 2 }) => {
         }
     }, [isInView, value, duration]);
 
-    return <span ref={ref}>0</span>;
+    return <span ref={ref} aria-label={`${value}`}>0</span>;
 };
 
 const trustPillars = [
@@ -83,7 +83,7 @@ const TrustSection = () => {
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
                     >
-                        As a leading <Link to="/roofing-contractors-navi-mumbai" style={{ color: 'var(--accent-500)', fontWeight: '700' }}>Roofing Contractor in Navi Mumbai</Link>, we don't just provide roofing; we provide long-term protection for your industrial assets with precision engineering and high-quality materials.
+                        As a leading <Link to="/industrial-roofing-contractors-in-navi-mumbai" style={{ color: 'var(--accent-500)', fontWeight: '700' }}>Roofing Contractor in Navi Mumbai</Link>, we don't just provide roofing; we provide long-term protection for your industrial assets with precision engineering and high-quality materials.
                     </motion.p>
                 </div>
 

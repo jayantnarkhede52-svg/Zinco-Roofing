@@ -20,6 +20,7 @@ const PUFPanelNaviMumbai = () => {
                 title="PUF panel manufacturer in navi mumbai"
                 description="PUF panel manufacturer in Navi Mumbai delivering factory-direct insulated panels with free site visit, custom fabrication and quick installation."
                 keywords="PUF panel manufacturer in Navi Mumbai, insulated roofing sheets, industrial puf panels, navi mumbai puf panel suppliers"
+                canonicalUrl="https://zincoroofing.com/puf-panel-manufacturer-navi-mumbai"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} />
@@ -54,14 +55,14 @@ const PUFPanelNaviMumbai = () => {
                                     whileInView={{ opacity: 1 }}
                                     viewport={{ once: true }}
                                 >
-                                    Trusted Puf Panel Manufacturers in Navi Mumbai
+                                    Trusted PUF Panel Manufacturer in Navi Mumbai
                                 </motion.h2>
                                 <motion.p
                                     initial={{ opacity: 0, y: 20 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
                                 >
-                                    Navi Mumbai has evolved into a powerhouse of industrial activity, bridging the gap between global logistics hubs and high-tech manufacturing corridors. As one of the premier <strong>Puf panel manufacturers in Navi Mumbai</strong>, we provide specialized building envelope solutions for the region’s most demanding environments. Our operations are strategically centered to serve the TTC Industrial Area, the chemical and engineering clusters of Taloja MIDC, and the technology hubs in Rabale and Airoli.
+                                    Navi Mumbai has evolved into a powerhouse of industrial activity, encompassing chemical zones, pharmaceutical clusters, and massive logistics hubs. As the leading <strong>PUF panel manufacturer in Navi Mumbai</strong>, we provide specialized building solutions that are tailored to these specific sector needs. Our role as a <strong>PUF panel manufacturer in Navi Mumbai</strong> involves delivering quality products for every plant, ensuring that every facility is equipped with energy-efficient envelopes. We are the <strong>PUF panel manufacturer in Navi Mumbai</strong> that focuses on structural integrity and long-term sustainability. Every unit built by a <strong>PUF panel manufacturer in Navi Mumbai</strong> should be durable enough to withstand the local monsoon and extreme humidity. Choosing the right <strong>PUF panel manufacturer in Navi Mumbai</strong> is the most important decision for your shed. As a <strong>PUF panel manufacturer in Navi Mumbai</strong>, Zinco prioritizes engineering ethics and material science. We also provide additional support services for insulation maintenance and thermal auditing to ensure that your energy savings remain consistent over several decades of operation in this high-growth industrial corridor.
                                 </motion.p>
                                 <motion.p
                                     initial={{ opacity: 0, y: 20 }}
@@ -69,7 +70,7 @@ const PUFPanelNaviMumbai = () => {
                                     viewport={{ once: true }}
                                     transition={{ delay: 0.1 }}
                                 >
-                                    Building in the Mumbai Metropolitan Region (MMR) requires more than just standard materials; it demands structures that can withstand 3,000mm of annual rainfall and the corrosive salt air of the Konkan coast. We deliver high-performance insulated sandwich panels that ensure structural integrity and thermal comfort, helping local businesses reduce their operational costs and carbon footprints. Choosing the right <strong>Puf panel manufacturers in Navi Mumbai</strong> ensures you get distinct quality advantages.
+                                    When you work with a <strong>PUF panel manufacturer in Navi Mumbai</strong>, efficiency is guaranteed. As a top-tier <strong>PUF panel manufacturer in Navi Mumbai</strong>, we serve Taloja and Turbhe. Our reputation as a <strong>PUF panel manufacturer in Navi Mumbai</strong> is built on trust. No other <strong>PUF panel manufacturer in Navi Mumbai</strong> offers our expertise. Reach out to the best <strong>PUF panel manufacturer in Navi Mumbai</strong> today. We are the preferred <strong>PUF panel manufacturer in Navi Mumbai</strong> for all.
                                 </motion.p>
                             </div>
                             <motion.div
@@ -78,13 +79,12 @@ const PUFPanelNaviMumbai = () => {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                             >
-                                <img src={imgIntro} alt="Industrial Skyline of Navi Mumbai" loading="lazy" decoding="async" />
+                                <img src={imgIntro} alt="PUF Panel Manufacturer in Navi Mumbai" loading="lazy" decoding="async" />
                             </motion.div>
                         </div>
                     </section>
 
-                    {/* Section 2: What are PUF Panels? */}
-                    <section className={styles.technicalSection} style={{ background: 'var(--white)', color: 'var(--text-primary)', padding: 'var(--spacing-2xl) 0' }}>
+                    <section className={`${styles.technicalSection} ${styles.darkMode}`}>
                         <div className={styles.container}>
                             <div className={styles.twoColumn}>
                                 <motion.div
@@ -93,174 +93,36 @@ const PUFPanelNaviMumbai = () => {
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true }}
                                 >
-                                    <img src={imgWhatIs} alt="PUF Panel Structure" loading="lazy" decoding="async" />
+                                    <img src={imgWhatIs} alt="Insulated Roofing Sheets Structure" loading="lazy" decoding="async" />
                                 </motion.div>
                                 <div className={styles.textBlock}>
-                                    <h2 style={{ color: 'var(--gray-900)', textAlign: 'left', marginBottom: 'var(--spacing-xl)' }}>What Are PUF Panels?</h2>
-                                    <p style={{ marginBottom: 'var(--spacing-xl)', fontSize: 'var(--text-lg)' }}>
-                                        Polyurethane Foam (PUF) panels are advanced composite "sandwich" structures designed for superior insulation and structural strength. Unlike traditional single-skin metal sheets that trap heat and allow moisture seepage, these panels consist of three distinct layers. Leading <strong>Puf panel manufacturers in Navi Mumbai</strong> engineer these for maximum thermal efficiency:
+                                    <h2>Superior Insulated Roofing Sheets: Maximum Protection</h2>
+                                    <p>
+                                        Our <strong>insulated roofing sheets</strong> provide world-class thermal barriers. By using <strong>insulated roofing sheets</strong>, you can maintain stable temperatures. These <strong>insulated roofing sheets</strong> are designed for durability. We offer the best <strong>insulated roofing sheets</strong> in the region. Choosing <strong>insulated roofing sheets</strong> ensures energy efficiency.
+                                    </p>
+                                    <p>
+                                        Every project needs quality <strong>insulated roofing sheets</strong> for protection. Our <strong>insulated roofing sheets</strong> are tested for extreme heat. Invest in <strong>insulated roofing sheets</strong> for long-term ROI. We are your partner for <strong>insulated roofing sheets</strong> and installation. Get an <strong>insulated roofing sheets</strong> quote today. Rely on <strong>insulated roofing sheets</strong> for peace of mind.
+                                    </p>
+                                    <p>
+                                        We lead the way in <strong>insulated roofing sheets</strong> technology. Our <strong>insulated roofing sheets</strong> provide high R-values. Choose <strong>insulated roofing sheets</strong> for industrial plants. Our <strong>insulated roofing sheets</strong> are fire-rated. Experience the best <strong>insulated roofing sheets</strong> with Zinco.
                                     </p>
                                 </div>
                             </div>
-
-                            <div className={styles.benefitGrid}>
-                                <motion.div className={styles.benefitCard}
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
-                                >
-                                    <FaTemperatureLow size={32} color="#3b82f6" style={{ marginBottom: '1rem' }} />
-                                    <h3>The Core</h3>
-                                    <p>A high-density rigid Polyurethane Foam core that acts as a world-class thermal barrier, maintaining stable internal temperatures.</p>
-                                </motion.div>
-
-                                <motion.div className={styles.benefitCard}
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
-                                    transition={{ delay: 0.1 }}
-                                >
-                                    <FaLayerGroup size={32} color="#f59e0b" style={{ marginBottom: '1rem' }} />
-                                    <h3>The Skins</h3>
-                                    <p>Two outer layers typically made from Pre-Painted Galvanized Iron (PPGI), Galvalume (PPGL), or Stainless Steel (SS) for maximum durability.</p>
-                                </motion.div>
-
-                                <motion.div className={styles.benefitCard}
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
-                                    transition={{ delay: 0.2 }}
-                                >
-                                    <FaShieldAlt size={32} color="#10b981" style={{ marginBottom: '1rem' }} />
-                                    <h3>The Bond</h3>
-                                    <p>A high-pressure bonding process ensures the core and skins function as a single structural unit, offering a high strength-to-weight ratio.</p>
-                                </motion.div>
-                            </div>
-
-                            <p style={{ marginTop: 'var(--spacing-lg)', fontStyle: 'italic', color: 'var(--gray-600)' }}>
-                                These panels are the backbone of modern Pre-Engineered Buildings (PEB) because they provide insulation, weatherproofing, and structural support in one rapid-install package.
-                            </p>
                         </div>
                     </section>
 
-                    {/* Section 3: Types of PUF Panels */}
                     <section className={styles.introSection}>
                         <div className={styles.twoColumn}>
                             <div className={styles.textBlock}>
-                                <motion.h2
-                                    initial={{ opacity: 0 }}
-                                    whileInView={{ opacity: 1 }}
-                                    viewport={{ once: true }}
-                                >
-                                    Types of PUF Panels We Manufacture
-                                </motion.h2>
-                                <motion.p
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
-                                    style={{ marginBottom: 'var(--spacing-2xl)' }}
-                                >
-                                    As specialized <strong>Puf panel manufacturers in Navi Mumbai</strong>, we offer a diverse range of panels tailored to specific industrial requirements in the Navi Mumbai micro-markets:
-                                </motion.p>
-                                <div style={{ marginBottom: 'var(--spacing-xl)' }}>
-                                    <Button href="/premium-roofing-sheets-navi-mumbai" size="lg">View All Products</Button>
-                                </div>
-                            </div>
-                            <motion.div
-                                className={styles.imageBlock}
-                                initial={{ opacity: 0, x: 20 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
-                            >
-                                <img src={imgTypes} alt="Various Types of PUF Panels" loading="lazy" decoding="async" />
-                            </motion.div>
-                        </div>
-
-                        <div className={styles.techGrid} style={{ gridTemplateColumns: '1fr' }}>
-                            {[
-                                { title: 'Roof PUF Panels', desc: 'Designed with a corrugated profile to facilitate rapid water shedding during intense monsoons. Top Puf panel manufacturers in Navi Mumbai recommend these for heavy rainfall areas.' },
-                                { title: 'Wall PUF Panels', desc: 'Used for internal partitions and external cladding. Available in ribbed, micro-ribbed, or plain finishes, these panels provide excellent aesthetic appeal for commercial facades in areas like Vashi or CBD Belapur.' },
-                                { title: 'Cold Storage PUF Panels', desc: 'Specially engineered for the APMC market and food processing units. With thicknesses up to 150mm, these panels maintain temperatures from -60°C to +80°C, ensuring the integrity of perishable goods.' },
-                                { title: 'Insulated Sandwich Panels', desc: 'Versatile panels for modular construction, including site offices, security cabins, and worker housing. These are ideal for the rapid infrastructure expansion currently seen near the Navi Mumbai International Airport.' },
-                                { title: 'Industrial Shed PUF Panels', desc: 'Heavy-duty solutions for the large-scale warehouses in Panvel, Bhiwandi, and Uran. These are optimized for long spans (up to 12 meters) to reduce the need for secondary steel support.' }
-                            ].map((item, index) => (
-                                <motion.div
-                                    key={index}
-                                    initial={{ opacity: 0, x: -20 }}
-                                    whileInView={{ opacity: 1, x: 0 }}
-                                    viewport={{ once: true }}
-                                    transition={{ delay: index * 0.1 }}
-                                    style={{
-                                        padding: 'var(--spacing-lg) 0',
-                                        borderBottom: '1px solid var(--gray-200)',
-                                        display: 'flex',
-                                        flexDirection: 'column',
-                                        gap: 'var(--spacing-xs)'
-                                    }}
-                                >
-                                    <h3 style={{ color: 'var(--accent-600)', fontSize: '1.2rem', margin: 0 }}>
-                                        <FaIndustry style={{ marginRight: '0.5rem', verticalAlign: 'middle', fontSize: '1rem', color: 'var(--accent-400)' }} />
-                                        {item.title}
-                                    </h3>
-                                    <p style={{ margin: 0, color: 'var(--gray-700)', paddingLeft: '1.8rem' }}>{item.desc}</p>
-                                </motion.div>
-                            ))}
-                        </div>
-                    </section>
-
-                    {/* Section 4: Technical Specifications */}
-                    <section className={styles.technicalSection}>
-                        <div className={styles.container}>
-                            <h2>Technical Specifications - Puf panel manufacturers in Navi Mumbai</h2>
-                            <p style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto var(--spacing-2xl)', opacity: 0.9 }}>
-                                Google and structural engineers alike value precise technical data. Our panels are manufactured to meet International and Indian Standards (IS), setting us apart from other <strong>Puf panel manufacturers in Navi Mumbai</strong>:
-                            </p>
-
-                            <div style={{ overflowX: 'auto' }}>
-                                <table style={{ width: '100%', borderCollapse: 'collapse', color: 'var(--white)', fontSize: '0.95rem' }}>
-                                    <thead>
-                                        <tr style={{ borderBottom: '1px solid var(--gray-700)' }}>
-                                            <th style={{ padding: '1rem', textAlign: 'left', width: '30%' }}>Property</th>
-                                            <th style={{ padding: '1rem', textAlign: 'left' }}>Specification / Value</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        {[
-                                            { prop: 'Available Thickness', val: '30mm, 40mm, 50mm, 60mm, 80mm, 100mm, 150mm' },
-                                            { prop: 'Core Density', val: '40 (±2) kg/m³' },
-                                            { prop: 'Thermal Conductivity', val: '0.019 – 0.023 W/mK' },
-                                            { prop: 'Temperature Range', val: '-90°C to +110°C' },
-                                            { prop: 'Sound Insulation', val: '25 – 30 dB' },
-                                            { prop: 'Fire Resistance', val: 'B3 / Class 1 (Fire retardant variants available)' },
-                                            { prop: 'Water Absorption', val: 'Less than 1.0% by volume after 24 hours' },
-                                            { prop: 'Closed Cell Content', val: '> 93%' },
-                                        ].map((item, index) => (
-                                            <tr key={index} style={{ borderBottom: '1px solid var(--gray-800)', background: index % 2 === 0 ? 'rgba(255,255,255,0.02)' : 'transparent' }}>
-                                                <td style={{ padding: '1rem', fontWeight: '600', color: 'var(--accent-400)' }}>{item.prop}</td>
-                                                <td style={{ padding: '1rem' }}>{item.val}</td>
-                                            </tr>
-                                        ))}
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </section>
-
-                    <AreaLinks currentLocation="PUF Panel Navi Mumbai" />
-
-                    {/* Section 5: Applications */}
-                    <section className={styles.introSection}>
-                        <div className={styles.twoColumn}>
-                            <div className={styles.textBlock}>
-                                <motion.h2
-                                    initial={{ opacity: 0 }}
-                                    whileInView={{ opacity: 1 }}
-                                    viewport={{ once: true }}
-                                >
-                                    Applications by Puf panel manufacturers in Navi Mumbai
-                                </motion.h2>
-                                <p style={{ marginBottom: 'var(--spacing-xl)', fontSize: 'var(--text-lg)' }}>
-                                    Our roofing and wall solutions are optimized for the specific industrial nodes of the region, making us the preferred <strong>Puf panel manufacturers in Navi Mumbai</strong>:
+                                <h2>Heavy-Duty Industrial PUF Panels</h2>
+                                <p>
+                                    Temperature regulation is handled by high-quality <strong>industrial puf panels</strong>. As a provider of <strong>industrial puf panels</strong>, we deliver excellence. Every factory needs <strong>industrial puf panels</strong> to reduce energy costs. When installing <strong>industrial puf panels</strong>, experts focus on density. Our <strong>industrial puf panels</strong> meet all safety standards.
+                                </p>
+                                <p>
+                                    We offer the most versatile <strong>industrial puf panels</strong> for pharma. Our solutions involving <strong>industrial puf panels</strong> are ideal for clinics. Trust <strong>industrial puf panels</strong> for modular construction. We are the experts in <strong>industrial puf panels</strong> across the belt. Every <strong>industrial puf panels</strong> unit is built for safety.
+                                </p>
+                                <p>
+                                    Choose the best <strong>industrial puf panels</strong> for your next build. Our <strong>industrial puf panels</strong> provide acoustic insulation. Get an <strong>industrial puf panels</strong> estimate today. We are your one-stop shop for <strong>industrial puf panels</strong>. Rely on <strong>industrial puf panels</strong> for industrial safety.
                                 </p>
                             </div>
                             <motion.div
@@ -269,182 +131,22 @@ const PUFPanelNaviMumbai = () => {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                             >
-                                <img src={imgApplications} alt="Industrial Applications" loading="lazy" decoding="async" />
-                            </motion.div>
-                        </div>
-
-                        <div className={styles.techGrid} style={{ gridTemplateColumns: '1fr' }}>
-                            {[
-                                { title: 'Taloja MIDC & Turbhe', desc: 'Specialized coatings like PVDF/PVF2 are applied to panels to resist the industrial pollutants and chemical outgassing prevalent in these heavy engineering zones.' },
-                                { title: 'Rabale & Mahape', desc: 'Cleanroom-grade panels are provided for pharmaceutical and biotech firms, ensuring dust-free, hygienic environments that meet GMP standards.' },
-                                { title: 'Vashi APMC & JNPT', desc: 'High-thickness panels for cold storage and logistics hubs that require consistent temperature management for the food and export sectors.' },
-                                { title: 'Airoli & Ghansoli', desc: 'Sound-insulated panels for IT parks and commercial offices, reducing the acoustic impact of heavy rain and traffic.' }
-                            ].map((item, index) => (
-                                <motion.div
-                                    key={index}
-                                    initial={{ opacity: 0, x: -20 }}
-                                    whileInView={{ opacity: 1, x: 0 }}
-                                    viewport={{ once: true }}
-                                    transition={{ delay: index * 0.1 }}
-                                    style={{
-                                        padding: 'var(--spacing-lg) 0',
-                                        borderBottom: '1px solid var(--gray-200)',
-                                        display: 'flex',
-                                        flexDirection: 'column',
-                                        gap: 'var(--spacing-xs)'
-                                    }}
-                                >
-                                    <h3 style={{ color: 'var(--accent-600)', fontSize: '1.2rem', margin: 0 }}>
-                                        <FaIndustry style={{ marginRight: '0.5rem', verticalAlign: 'middle', fontSize: '1rem', color: 'var(--accent-400)' }} />
-                                        {item.title}
-                                    </h3>
-                                    <p style={{ margin: 0, color: 'var(--gray-700)', paddingLeft: '1.8rem' }}>{item.desc}</p>
-                                </motion.div>
-                            ))}
-                        </div>
-                    </section>
-
-                    {/* Section 6: Why Choose Us */}
-                    <section className={styles.technicalSection} style={{ background: 'var(--bg-secondary)', color: 'var(--text-primary)' }}>
-                        <div className={styles.container}>
-                            <h2 style={{ color: 'var(--gray-900)' }}>Why Choose Us as Your Puf panel manufacturers in Navi Mumbai?</h2>
-                            <p style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto var(--spacing-2xl)', color: 'var(--gray-700)' }}>
-                                Selecting the right partner is critical for the long-term performance of your structure. Among all <strong>Puf panel manufacturers in Navi Mumbai</strong>, we offer:
-                            </p>
-
-                            <div className={styles.benefitGrid}>
-                                <motion.div className={styles.benefitCard}
-                                    initial={{ opacity: 0, scale: 0.95 }}
-                                    whileInView={{ opacity: 1, scale: 1 }}
-                                    viewport={{ once: true }}
-                                    style={{ borderLeft: '4px solid var(--accent-500)' }}
-                                >
-                                    <h3>Coastal-Ready Engineering</h3>
-                                    <p>Our panels feature specialized corrosion-resistant coatings (like high-micron PPGL) specifically tested for the 80%+ humidity levels of the Konkan belt.</p>
-                                </motion.div>
-
-                                <motion.div className={styles.benefitCard}
-                                    initial={{ opacity: 0, scale: 0.95 }}
-                                    whileInView={{ opacity: 1, scale: 1 }}
-                                    viewport={{ once: true }}
-                                    transition={{ delay: 0.1 }}
-                                    style={{ borderLeft: '4px solid var(--accent-500)' }}
-                                >
-                                    <h3>Custom Fabrication</h3>
-                                    <p>We manufacture panels to exact lengths (up to 12m), which minimizes on-site cutting, reduces waste, and lowers overall project costs.</p>
-                                </motion.div>
-
-                                <motion.div className={styles.benefitCard}
-                                    initial={{ opacity: 0, scale: 0.95 }}
-                                    whileInView={{ opacity: 1, scale: 1 }}
-                                    viewport={{ once: true }}
-                                    transition={{ delay: 0.2 }}
-                                    style={{ borderLeft: '4px solid var(--accent-500)' }}
-                                >
-                                    <h3>Sustainable Performance</h3>
-                                    <p>Our panels align with the Maharashtra ECBC 2025 codes, helping buildings reduce HVAC energy loads by up to 60%.</p>
-                                </motion.div>
-
-                                <motion.div className={styles.benefitCard}
-                                    initial={{ opacity: 0, scale: 0.95 }}
-                                    whileInView={{ opacity: 1, scale: 1 }}
-                                    viewport={{ once: true }}
-                                    transition={{ delay: 0.3 }}
-                                    style={{ borderLeft: '4px solid var(--accent-500)' }}
-                                >
-                                    <h3>Regulatory Support</h3>
-                                    <p>We help developers qualify for green building incentives from the IGBC and PMC/PMRDA, including FSI incentives and tax concessions.</p>
-                                </motion.div>
-                            </div>
-
-                            <div style={{ textAlign: 'center', marginTop: 'var(--spacing-3xl)' }}>
-                                <Button href="#contact" size="lg">Get Your Custom Quote Now</Button>
-                            </div>
-                        </div>
-                    </section>
-
-                    {/* Section 7: Installation Services */}
-                    <section className={styles.introSection}>
-                        <div className={styles.twoColumn}>
-                            <div className={styles.textBlock}>
-                                <motion.h2
-                                    initial={{ opacity: 0 }}
-                                    whileInView={{ opacity: 1 }}
-                                    viewport={{ once: true }}
-                                >
-                                    Installation Services by Puf panel manufacturers in Navi Mumbai
-                                </motion.h2>
-                                <p style={{ marginBottom: 'var(--spacing-xl)', fontSize: 'var(--text-lg)' }}>
-                                    Effective roofing depends entirely on precision installation. As expert <strong>Puf panel manufacturers in Navi Mumbai</strong>, our team follows a rigorous 5-step process:
-                                </p>
-                                <div className={styles.faqGrid} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'var(--spacing-md)' }}>
-                                    {[
-                                        { title: 'Site Inspection', desc: 'We evaluate local wind loads and chemical exposure risks in areas like the Sion-Panvel corridor.' },
-                                        { title: 'Structural Readiness', desc: 'Ensuring the MS tubular or PEB frame is perfectly aligned to receive the panels.' },
-                                        { title: 'Sealed Jointing', desc: 'Utilizing specialized interlocking systems and moisture-lock vapor barriers to prevent the common Navi Mumbai pain point of joint leakage.' },
-                                        { title: 'Logistical Precision', desc: 'We manage the strict traffic restrictions for heavy vehicles in Mumbai, timing deliveries during the permitted "noon window" (11 AM to 3 PM) or night shifts (10 PM to 6 AM) to ensure your project stays on schedule.' },
-                                        { title: 'Quality Testing', desc: 'Final testing for water-tightness and thermal efficiency.' }
-                                    ].map((step, index) => (
-                                        <motion.div
-                                            className={styles.faqItem}
-                                            key={index}
-                                            initial={{ opacity: 0, x: -20 }}
-                                            whileInView={{ opacity: 1, x: 0 }}
-                                            viewport={{ once: true }}
-                                            transition={{ delay: index * 0.1 }}
-                                        >
-                                            <h4 style={{ color: 'var(--accent-600)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                                                <span style={{ background: 'var(--accent-100)', width: '24px', height: '24px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.8rem' }}>{index + 1}</span>
-                                                {step.title}
-                                            </h4>
-                                            <p style={{ margin: 0 }}>{step.desc}</p>
-                                        </motion.div>
-                                    ))}
-                                </div>
-                            </div>
-                            <motion.div
-                                className={styles.imageBlock}
-                                initial={{ opacity: 0, x: 20 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
-                                style={{ height: 'auto', minHeight: 'auto', maxHeight: '500px', alignSelf: 'center' }}
-                            >
-                                <img src={imgInstall} alt="Professional Installation Team" loading="lazy" decoding="async" />
+                                <img src={imgTypes} alt="Industrial PUF Panels Fabrication" loading="lazy" decoding="async" />
                             </motion.div>
                         </div>
                     </section>
 
-                    {/* Section 8: Cost of PUF Panels */}
-                    <section className={styles.technicalSection}>
+                    <section className={`${styles.technicalSection} ${styles.darkMode}`}>
                         <div className={styles.container}>
-                            <h2>Cost from Puf panel manufacturers in Navi Mumbai</h2>
-                            <p style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto var(--spacing-2xl)', opacity: 0.9 }}>
-                                Pricing is influenced by steel grades, insulation thickness, and scale. As transparent <strong>Puf panel manufacturers in Navi Mumbai</strong>, we offer competitive rates:
+                            <h2>Reliable Navi Mumbai PUF Panel Suppliers</h2>
+                            <p>
+                                Looking for trusted <strong>navi mumbai puf panel suppliers</strong>? We are the leading <strong>navi mumbai puf panel suppliers</strong> for the region. As premier <strong>navi mumbai puf panel suppliers</strong>, we offer fast delivery. Our role as <strong>navi mumbai puf panel suppliers</strong> involves high-level audits. We are the <strong>navi mumbai puf panel suppliers</strong> you can trust.
                             </p>
-
-                            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 'var(--spacing-lg)', marginBottom: 'var(--spacing-xl)' }}>
-                                <div style={{ background: 'rgba(255,255,255,0.05)', padding: 'var(--spacing-xl)', borderRadius: 'var(--radius-lg)', border: '1px solid rgba(255,255,255,0.1)' }}>
-                                    <h3 style={{ color: 'var(--accent-400)', fontSize: '1.2rem', marginBottom: '0.5rem' }}>Standard Roofing</h3>
-                                    <div style={{ fontSize: '0.9rem', opacity: 0.7, marginBottom: '1rem' }}>30mm - 40mm</div>
-                                    <div style={{ fontSize: '1.5rem', fontWeight: '700' }}>₹900 - ₹1,300</div>
-                                    <div style={{ fontSize: '0.8rem', opacity: 0.7 }}>per sq. meter</div>
-                                </div>
-                                <div style={{ background: 'rgba(255,255,255,0.05)', padding: 'var(--spacing-xl)', borderRadius: 'var(--radius-lg)', border: '1px solid rgba(255,255,255,0.1)' }}>
-                                    <h3 style={{ color: 'var(--accent-400)', fontSize: '1.2rem', marginBottom: '0.5rem' }}>Premium Wall Panels</h3>
-                                    <div style={{ fontSize: '0.9rem', opacity: 0.7, marginBottom: '1rem' }}>Insulated</div>
-                                    <div style={{ fontSize: '1.5rem', fontWeight: '700' }}>₹119 - ₹149</div>
-                                    <div style={{ fontSize: '0.8rem', opacity: 0.7 }}>per sq. foot</div>
-                                </div>
-                                <div style={{ background: 'rgba(255,255,255,0.05)', padding: 'var(--spacing-xl)', borderRadius: 'var(--radius-lg)', border: '1px solid rgba(255,255,255,0.1)' }}>
-                                    <h3 style={{ color: 'var(--accent-400)', fontSize: '1.2rem', marginBottom: '0.5rem' }}>Cold Storage Specs</h3>
-                                    <div style={{ fontSize: '0.9rem', opacity: 0.7, marginBottom: '1rem' }}>80mm - 100mm</div>
-                                    <div style={{ fontSize: '1.5rem', fontWeight: '700' }}>₹1,200 - ₹1,600</div>
-                                    <div style={{ fontSize: '0.8rem', opacity: 0.7 }}>per sq. meter</div>
-                                </div>
-                            </div>
-
-                            <p style={{ textAlign: 'center', fontSize: '0.9rem', opacity: 0.7, fontStyle: 'italic' }}>
-                                Note: Prices are subject to GST and raw material fluctuations. We offer competitive bulk pricing for large-scale warehouses and industrial sheds.
+                            <p>
+                                Every project manager seeks <strong>navi mumbai puf panel suppliers</strong> with experience. By hiring established <strong>navi mumbai puf panel suppliers</strong>, you get quality. We are the <strong>navi mumbai puf panel suppliers</strong> that provide warranties. As for <strong>navi mumbai puf panel suppliers</strong>, we are the most responsive. Choose the top <strong>navi mumbai puf panel suppliers</strong> for ROI.
+                            </p>
+                            <p>
+                                We lead the ranks of <strong>navi mumbai puf panel suppliers</strong> in India. Our support as <strong>navi mumbai puf panel suppliers</strong> is world-class. If you need <strong>navi mumbai puf panel suppliers</strong>, contact us. We are the specialized <strong>navi mumbai puf panel suppliers</strong> for cold rooms. Partner with the best <strong>navi mumbai puf panel suppliers</strong> today.
                             </p>
                         </div>
                     </section>
@@ -496,6 +198,45 @@ const PUFPanelNaviMumbai = () => {
                                     <p>{proj.desc}</p>
                                 </motion.div>
                             ))}
+                        </div>
+                    </section>
+
+                    {/* Section 8: Cost of PUF Panels */}
+                    <section className={`${styles.technicalSection} ${styles.darkMode}`}>
+                        <div className={styles.container}>
+                            <h2>Cost from Puf panel manufacturers in Navi Mumbai</h2>
+                            <p style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto var(--spacing-2xl)', opacity: 0.9 }}>
+                                Pricing is influenced by steel grades, insulation thickness, and scale. As transparent <strong>Puf panel manufacturers in Navi Mumbai</strong>, we offer competitive rates based on global market standards. Our pricing model accounts for the rising costs of raw materials while ensuring that local factories get the best possible value for their investment.
+                            </p>
+
+                            <p style={{ textAlign: 'center', maxWidth: '800px', margin: 'var(--spacing-lg) auto', color: 'var(--gray-300)' }}>
+                                It is important to consider the long-term operational savings when evaluating initial project costs. A higher-quality panel may have a greater upfront price but will reduce electricity bills for decades. We provide detailed cost-benefit analyses for all our industrial clients to help them make informed decisions about their building envelopes. Our team also assists with budget planning and project scheduling to ensure that financial targets are met without compromising on the quality of the final structure.
+                            </p>
+
+                            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 'var(--spacing-lg)', marginBottom: 'var(--spacing-xl)' }}>
+                                <div style={{ background: 'rgba(255,255,255,0.05)', padding: 'var(--spacing-xl)', borderRadius: 'var(--radius-lg)', border: '1px solid rgba(255,255,255,0.1)' }}>
+                                    <h3 style={{ color: 'var(--accent-400)', fontSize: '1.2rem', marginBottom: '0.5rem' }}>Standard Roofing</h3>
+                                    <div style={{ fontSize: '0.9rem', opacity: 0.7, marginBottom: '1rem' }}>30mm - 40mm</div>
+                                    <div style={{ fontSize: '1.5rem', fontWeight: '700' }}>₹900 - ₹1,300</div>
+                                    <div style={{ fontSize: '0.8rem', opacity: 0.7 }}>per sq. meter</div>
+                                </div>
+                                <div style={{ background: 'rgba(255,255,255,0.05)', padding: 'var(--spacing-xl)', borderRadius: 'var(--radius-lg)', border: '1px solid rgba(255,255,255,0.1)' }}>
+                                    <h3 style={{ color: 'var(--accent-400)', fontSize: '1.2rem', marginBottom: '0.5rem' }}>Premium Wall Panels</h3>
+                                    <div style={{ fontSize: '0.9rem', opacity: 0.7, marginBottom: '1rem' }}>Insulated</div>
+                                    <div style={{ fontSize: '1.5rem', fontWeight: '700' }}>₹119 - ₹149</div>
+                                    <div style={{ fontSize: '0.8rem', opacity: 0.7 }}>per sq. foot</div>
+                                </div>
+                                <div style={{ background: 'rgba(255,255,255,0.05)', padding: 'var(--spacing-xl)', borderRadius: 'var(--radius-lg)', border: '1px solid rgba(255,255,255,0.1)' }}>
+                                    <h3 style={{ color: 'var(--accent-400)', fontSize: '1.2rem', marginBottom: '0.5rem' }}>Cold Storage Specs</h3>
+                                    <div style={{ fontSize: '0.9rem', opacity: 0.7, marginBottom: '1rem' }}>80mm - 100mm</div>
+                                    <div style={{ fontSize: '1.5rem', fontWeight: '700' }}>₹1,200 - ₹1,600</div>
+                                    <div style={{ fontSize: '0.8rem', opacity: 0.7 }}>per sq. meter</div>
+                                </div>
+                            </div>
+
+                            <p style={{ textAlign: 'center', fontSize: '0.9rem', opacity: 0.7, fontStyle: 'italic' }}>
+                                Note: Prices are subject to GST and raw material fluctuations. We offer competitive bulk pricing for large-scale warehouses and industrial sheds. Our logistical network ensures that deliveries are made on time across all industrial zones.
+                            </p>
                         </div>
                     </section>
 

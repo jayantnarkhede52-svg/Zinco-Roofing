@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { CONTACT_INFO } from '../../utils/constants';
 import logo from '../../assets/logo.webp';
@@ -23,12 +23,7 @@ const Navbar = () => {
     const isActive = (path) => location.pathname === path;
 
     return (
-        <motion.nav
-            className={styles.navbar}
-            initial={{ y: -100 }}
-            animate={{ y: 0 }}
-            transition={{ type: 'spring', stiffness: 100 }}
-        >
+        <nav className={styles.navbar}>
             <div className={styles.container}>
                 <Link to="/" className={styles.logo}>
                     <div className={styles.logoWrapper}>
@@ -45,13 +40,6 @@ const Navbar = () => {
                                 className={`${styles.navLink} ${isActive(link.path) ? styles.active : ''}`}
                             >
                                 {link.label}
-                                {isActive(link.path) && (
-                                    <motion.div
-                                        className={styles.activeIndicator}
-                                        layoutId="activeIndicator"
-                                        transition={{ type: 'spring', stiffness: 380, damping: 30 }}
-                                    />
-                                )}
                             </Link>
                         </li>
                     ))}
@@ -115,7 +103,7 @@ const Navbar = () => {
                     </motion.div>
                 )}
             </AnimatePresence>
-        </motion.nav>
+        </nav>
     );
 };
 

@@ -1,16 +1,17 @@
-import { motion } from 'framer-motion';
 import { useRef, useState, useEffect } from 'react';
 import Button from '../shared/Button';
 import { SOCIAL_LINKS } from '../../utils/constants';
 import styles from './Hero.module.css';
 
-import heroVideo from '../../assets/videos/hero-video-compressed.mp4';
 import heroPoster from '../../assets/videos/hero-poster.webp';
 import mobileHero from '../../assets/projects-hero.webp';
 
 const Hero = () => {
     const heroRef = useRef(null);
-    const [isMobile, setIsMobile] = useState(false);
+    const [isMobile, setIsMobile] = useState(
+        typeof window !== 'undefined' ? window.innerWidth < 768 : false
+    );
+    const [videoSrc, setVideoSrc] = useState(null);
 
     useEffect(() => {
         const checkMobile = () => {
@@ -22,40 +23,14 @@ const Hero = () => {
         return () => window.removeEventListener('resize', checkMobile);
     }, []);
 
-    const containerVariants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.15,
-                delayChildren: 0.2,
-            },
-        },
-    };
-
-    const itemVariants = {
-        hidden: { opacity: 0, y: 20 },
-        visible: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 0.5,
-                ease: 'easeOut',
-            },
-        },
-    };
-
-    const titleVariants = {
-        hidden: { opacity: 0, y: 30 },
-        visible: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 0.6,
-                ease: 'easeOut',
-            },
-        },
-    };
+    // Dynamically import video only on desktop — avoids 1.6MB in mobile bundle
+    useEffect(() => {
+        if (!isMobile && !videoSrc) {
+            import('../../assets/videos/hero-video-compressed.mp4').then((mod) => {
+                setVideoSrc(mod.default);
+            });
+        }
+    }, [isMobile, videoSrc]);
 
     return (
         <section ref={heroRef} className={styles.hero}>
@@ -67,11 +42,13 @@ const Hero = () => {
                         fetchpriority="high"
                         loading="eager"
                         decoding="async"
+                        width="800"
+                        height="600"
                     />
                 ) : (
                     <video
                         className={styles.heroVideo}
-                        src={heroVideo}
+                        src={videoSrc || undefined}
                         poster={heroPoster}
                         autoPlay
                         loop
@@ -82,88 +59,43 @@ const Hero = () => {
                 )}
                 <div className={styles.overlay}></div>
                 <div className={styles.gradientMesh}></div>
-                <div className={styles.particles}>
-                    {[...Array(4)].map((_, i) => (
-                        <motion.div
-                            key={i}
-                            className={styles.particle}
-                            initial={{ opacity: 0 }}
-                            animate={{
-                                opacity: [0.1, 0.25, 0.1],
-                                y: [0, -30, 0],
-                            }}
-                            transition={{
-                                duration: 8 + Math.random() * 4,
-                                repeat: Infinity,
-                                delay: Math.random() * 2,
-                                ease: "easeInOut",
-                            }}
-                            style={{
-                                left: `${10 + Math.random() * 80}%`,
-                                top: `${10 + Math.random() * 80}%`,
-                            }}
-                        />
-                    ))}
-                </div>
             </div>
 
             {/* Content */}
-            <motion.div
-                className={styles.content}
-                variants={containerVariants}
-                initial="hidden"
-                animate="visible"
-            >
-                <motion.div className={styles.titleWrapper}>
-                    <motion.h1 className={styles.title} variants={titleVariants}>
+            <div className={styles.content}>
+                <div className={styles.titleWrapper}>
+                    <h1 className={styles.title}>
                         Roofing Contractor in Navi Mumbai
-                    </motion.h1>
-                    <motion.div className={styles.underline} variants={itemVariants} />
-                </motion.div>
+                    </h1>
+                    <div className={styles.underline} />
+                </div>
 
-                <motion.p className={styles.subtitle} variants={itemVariants}>
+                <p className={styles.subtitle}>
                     Professional Roofing Solutions for
                     <span className={styles.highlight}> Navi Mumbai & Beyond</span>
-                </motion.p>
+                </p>
 
-                <motion.p className={styles.description} variants={itemVariants}>
+                <p className={styles.description}>
                     Expert Roof installation, PUF panel installation & Structural Painting services with 8+ years experience
-                </motion.p>
+                </p>
 
-                <motion.div className={styles.buttonGroup} variants={itemVariants}>
+                <div className={styles.buttonGroup}>
                     <Button href={SOCIAL_LINKS.whatsapp} size="lg" target="_blank" rel="noopener noreferrer">
                         Get Free Quote
                     </Button>
                     <Button href="/premium-roofing-sheets-navi-mumbai" variant="outline" size="lg">
                         View Our Products
                     </Button>
-                </motion.div>
+                </div>
 
                 {/* Scroll Indicator */}
-                <motion.div
-                    className={styles.scrollIndicator}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 1.2 }}
-                >
+                <div className={styles.scrollIndicator}>
                     <a href="#services-showcase" className={styles.scrollLink}>
-                        <motion.div
-                            className={styles.scrollArrow}
-                            animate={{
-                                y: [0, 8, 0],
-                            }}
-                            transition={{
-                                duration: 1.5,
-                                repeat: Infinity,
-                                ease: 'easeInOut',
-                            }}
-                        >
-                            ↓
-                        </motion.div>
+                        <div className={styles.scrollArrow}>↓</div>
                         <span>Scroll to Explore</span>
                     </a>
-                </motion.div>
-            </motion.div>
+                </div>
+            </div>
 
             {/* Decorative Elements - Subtle */}
             <div className={styles.decorativeCircle1}></div>
