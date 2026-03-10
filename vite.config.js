@@ -23,7 +23,8 @@ export default defineConfig({
       rendererOptions: {
         maxConcurrentRoutes: 1,
         renderAfterTime: 7000,
-        headless: true
+        headless: true,
+        args: ['--no-sandbox', '--disable-setuid-sandbox']
       }
     })
   ],
