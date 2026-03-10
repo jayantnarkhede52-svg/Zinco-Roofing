@@ -99,45 +99,39 @@ const Ventilators = () => {
             <div className={styles.container}>
                 <div className={styles.content}>
                     <section className={styles.section}>
-                        <div className={styles.grid2Col}>
-                            <div className={styles.contentBlock}>
-                                <h2>Natural Ventilation Mastery</h2>
-                                <p>
-                                    In the high-density industrial hubs of Taloja MIDC, Panvel, and Rabale, indoor air temperature and quality are constant challenges. Heat buildup from machinery, coupled with the humid Mumbai climate, can create oppressive working conditions. Zinco Roofing Solution's **Turbo Ventilators** offer an elegant, aerodynamic **Industrial ventilation system** that requires zero electricity to exhaust hot air, smoke, and fumes from your facility 24 hours a day. We are the most trusted for **Roof Ventilator in Navi Mumbai**.
-                                </p>
-                                <p>
-                                    As a leading provider of **Roof Ventilator in Navi Mumbai**, we understand the local climate challenges. The principle behind our ventilators is a combination of natural convection and centrifugal force. This makes it an essential **Industrial ventilation system** for any factory. Our **roof ventilators in Navi Mumbai** are built to last.
-                                </p>
-                            </div>
-                            <div className={styles.highlightCardWrapper}>
-                                <Card variant="glass" className={styles.highlightCard}>
-                                    <FaWind className={styles.highlightIcon} />
-                                    <h3>Efficient Air Exchange</h3>
-                                    <p>The **turbo ventilators navi mumbai** businesses rely on rotate even in the absence of wind, pulling stagnant air and industrial fumes out of the building constantly through this **Industrial ventilation system**.</p>
-                                    <div className={styles.keywordBadge}>Industrial ventilation system</div>
-                                    <p style={{ fontSize: '0.8rem', marginTop: '5px' }}>The best **roof ventilators in Navi Mumbai**.</p>
-                                </Card>
-                            </div>
-                        </div>
-                    </section>
+                        <div className={styles.contentBlock}>
+                            <h2>Natural Ventilation Mastery</h2>
+                            <p className={styles.leadText}>
+                                Zinco's **Turbo Ventilators** offer an elegant, aerodynamic solution requiring zero electricity to exhaust heat and fumes 24/7.
+                            </p>
 
-                    <section className={styles.section}>
-                        <div className={styles.grid2Col}>
-                            <div className={styles.highlightCardWrapper}>
-                                <Card variant="solid" className={styles.highlightCard}>
-                                    <FaCheckCircle className={styles.highlightIcon} style={{ color: 'var(--accent-400)' }} />
-                                    <h3>Material Excellence</h3>
-                                    <p>We offer **roof ventilators in Navi Mumbai** forged from high-grade Aluminum and SS 304 (Stainless Steel), ensuring the most durable **Roof Ventilator in Navi Mumbai**. Check our **Roof Ventilator Price in Navi Mumbai** for the best deals.</p>
+                            <div className={styles.benefitsGrid}>
+                                <Card variant="glass" className={styles.benefitCard}>
+                                    <FaWind className={styles.benefitIcon} />
+                                    <h4>Efficient Exhaust</h4>
+                                    <p>Turbo-ventilators rotate even in minimal wind, pulling stagnant air and industrial fumes out of the building constantly.</p>
+                                </Card>
+                                <Card variant="glass" className={styles.benefitCard}>
+                                    <FaCheckCircle className={styles.benefitIcon} />
+                                    <h4>Material Resilience</h4>
+                                    <p>High-grade Aluminum or SS 304 construction to withstand corrosive coastal air in Navi Mumbai.</p>
+                                </Card>
+                                <Card variant="glass" className={styles.benefitCard}>
+                                    <FaMapMarkerAlt className={styles.benefitIcon} />
+                                    <h4>Zero Power Cost</h4>
+                                    <p>Harness wind energy to reduce energy bills while maintaining optimal workshop temperatures.</p>
                                 </Card>
                             </div>
-                            <div className={styles.contentBlock}>
-                                <h2>Aluminum vs. Stainless Steel</h2>
-                                <p>
-                                    To ensure long-term performance in the corrosive coastal air of Navi Mumbai, we offer high-grade units responsive to even the slightest breeze. Our units are equipped with **permanently lubricated, double-sealed ball bearings**, ensuring smooth, noise-free rotation for over a decade. This makes us the top **Roof Ventilator in Navi Mumbai** provider.
-                                </p>
-                                <p>
-                                    Whether you need Aluminum for responsiveness or SS 304 for chemical durability in Taloja, we provide the best **Roof Ventilator in Navi Mumbai** solutions. Our **turbo ventilators navi mumbai** are designed for performance.
-                                </p>
+
+                            <div className={styles.grid2Col}>
+                                <Card variant="solid" className={styles.highlightCard}>
+                                    <h3>Advanced Bearings</h3>
+                                    <p>Equipped with permanently lubricated, double-sealed ball bearings for smooth, noise-free rotation for 10+ years.</p>
+                                </Card>
+                                <Card variant="solid" className={styles.highlightCard}>
+                                    <h3>Aerodynamic Vanes</h3>
+                                    <p>Precision-angled vanes repel rainwater even during heavy Mumbai monsoons, keeping your facility dry.</p>
+                                </Card>
                             </div>
                         </div>
                     </section>

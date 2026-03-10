@@ -96,31 +96,39 @@ const RockwoolGlasswool = () => {
                 <div className={styles.content}>
                     <section className={styles.section}>
                         <div className={styles.contentBlock}>
-                            <h2>Specialized Industrial Insulation: High-Rib Rockwool & Glasswool Panels</h2>
-                            <p>
-                                In the high-intensity manufacturing environments of **Taloja MIDC, Rabale, and Mahape**, specialized insulation is not just a luxury—it's a critical safety and operational requirement. Zinco Roofing Solution's **Rockwool and Glasswool Roof Panels** are engineered for facilities where thermal management, fire resistance, and acoustic control are paramount. Our panels feature a **High Rib Profile with 5 main crests and 3 parallel mini ribs**, providing the structural rigidity needed for long-span industrial roofs while housing a core of world-class insulation material.
-                            </p>
-                            <p>
-                                The "High Rib" design is a game-changer for industrial sheds. By increasing the height and number of ribs, we've created a panel that can bridge larger gaps between purlins with minimal deflection. This is particularly important for the massive warehouses and processing plants in **Navi Mumbai**, where speed of construction and structural safety must go hand-in-hand. Inside these ribs sits high-density mineral wool or glass fibers, creating a thermal barrier that significantly reduces heat ingress and maintains a stable interior temperature.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Specialized Industrial Insulation: High-Rib Rockwool & Glasswool Panels</h2>
+                                <p>
+                                    In the high-intensity manufacturing environments of <strong>Taloja MIDC, Rabale, and Mahape</strong>, specialized insulation is not just a luxury—it's a critical safety and operational requirement. Zinco Roofing Solution's <strong>Rockwool and Glasswool Roof Panels</strong> are engineered for facilities where thermal management, fire resistance, and acoustic control are paramount. Our panels feature a <strong>High Rib Profile with 5 main crests and 3 parallel mini ribs</strong>, providing the structural rigidity needed for long-span industrial roofs while housing a core of world-class insulation material.
+                                </p>
+                                <p>
+                                    The "High Rib" design is a game-changer for industrial sheds. By increasing the height and number of ribs, we've created a panel that can bridge larger gaps between purlins with minimal deflection. This is particularly important for the massive warehouses and processing plants in <strong>Navi Mumbai</strong>, where speed of construction and structural safety must go hand-in-hand. Inside these ribs sits high-density mineral wool or glass fibers, creating a thermal barrier that significantly reduces heat ingress and maintains a stable interior temperature.
+                                </p>
+                            </Card>
 
-                            <h3>Rockwool: The Ultimate Fire Barrier</h3>
-                            <p>
-                                For chemical factories, textile mills, and data centers in **Mumbai and Taloja**, fire safety is the top priority. Our **Rockwool panels** are manufactured from volcanic rock (basalt), which is naturally non-combustible. With a melting point exceeding **1000°C**, Rockwool acts as a superior fire barrier, preventing the spread of flames and protecting the building's structural steel frame during an emergency. It is the gold standard for facilities handling flammable materials or high-value equipment.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Rockwool: The Ultimate Fire Barrier</h3>
+                                <p>
+                                    For chemical factories, textile mills, and data centers in <strong>Mumbai and Taloja</strong>, fire safety is the top priority. Our <strong>Rockwool panels</strong> are manufactured from volcanic rock (basalt), which is naturally non-combustible. With a melting point exceeding <strong>1000°C</strong>, Rockwool acts as a superior fire barrier, preventing the spread of flames and protecting the building's structural steel frame during an emergency. It is the gold standard for facilities handling flammable materials or high-value equipment.
+                                </p>
+                            </Card>
 
-                            <h3>Glasswool: Precision Acoustic Control</h3>
-                            <p>
-                                In commercial spaces like multiplexes, recording studios, and large office complexes in **Vashi and Mahape**, sound control is essential. **Glasswool** is a lightweight, flexible insulation made from recycled glass. Its unique porous structure is exceptionally good at trapping sound waves, boasting a high **Noise Reduction Coefficient (NRC)**. Whether you want to keep the heavy drumming of Mumbai rain out or contain the noise within an industrial workshop, Glasswool panels provide the acoustic serenity required for modern work environments.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Glasswool: Precision Acoustic Control</h3>
+                                <p>
+                                    In commercial spaces like multiplexes, recording studios, and large office complexes in <strong>Vashi and Mahape</strong>, sound control is essential. <strong>Glasswool</strong> is a lightweight, flexible insulation made from recycled glass. Its unique porous structure is exceptionally good at trapping sound waves, boasting a high <strong>Noise Reduction Coefficient (NRC)</strong>. Whether you want to keep the heavy drumming of Mumbai rain out or contain the noise within an industrial workshop, Glasswool panels provide the acoustic serenity required for modern work environments.
+                                </p>
+                            </Card>
 
-                            <h3>Why Industrialists Choose Zinco Insulation Panels</h3>
-                            <ul>
-                                <li><strong>Unmatched Fire Safety:</strong> Meet the most stringent industrial fire codes with panels that do not support combustion or emit toxic smoke during a fire.</li>
-                                <li><strong>Energy Efficiency:</strong> Dramatically reduce your HVAC (air conditioning) costs by creating a high-resistance (High R-value) thermal envelope around your facility.</li>
-                                <li><strong>Structural Integrity:</strong> The 5-crest high-rib profile ensures that your roof is as strong as it is insulated, capable of handling high wind and monsoon loads.</li>
-                                <li><strong>Longevity & Durability:</strong> Both Rockwool and Glasswool are inorganic materials, meaning they won't rot, support mold growth, or attract pests over their multi-decade lifespan.</li>
-                            </ul>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Why Industrialists Choose Zinco Insulation Panels</h3>
+                                <ul className={styles.styledList}>
+                                    <li><strong>Unmatched Fire Safety:</strong> Meet the most stringent industrial fire codes with panels that do not support combustion or emit toxic smoke during a fire.</li>
+                                    <li><strong>Energy Efficiency:</strong> Dramatically reduce your HVAC (air conditioning) costs by creating a high-resistance (High R-value) thermal envelope around your facility.</li>
+                                    <li><strong>Structural Integrity:</strong> The 5-crest high-rib profile ensures that your roof is as strong as it is insulated, capable of handling high wind and monsoon loads.</li>
+                                    <li><strong>Longevity & Durability:</strong> Both Rockwool and Glasswool are inorganic materials, meaning they won't rot, support mold growth, or attract pests over their multi-decade lifespan.</li>
+                                </ul>
+                            </Card>
                         </div>
                     </section>
 
@@ -202,11 +210,13 @@ const RockwoolGlasswool = () => {
                     </section>
 
                     <section className={styles.section}>
-                        <h2>Installation and Technical Reliability</h2>
                         <div className={styles.contentBlock}>
-                            <p>
-                                Proper joint sealing is the key to maximizing the performance of insulated panels. Our installation teams in **Panvel and Navi Mumbai** use specialized tongue-and-groove joints or overlapping techniques that eliminate thermal bridging. This ensures that every square meter of your roof contributes to the thermal and acoustic efficiency of the building.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Installation and Technical Reliability</h2>
+                                <p>
+                                    Proper joint sealing is the key to maximizing the performance of insulated panels. Our installation teams in <strong>Panvel and Navi Mumbai</strong> use specialized tongue-and-groove joints or overlapping techniques that eliminate thermal bridging. This ensures that every square meter of your roof contributes to the thermal and acoustic efficiency of the building.
+                                </p>
+                            </Card>
                         </div>
                     </section>
 

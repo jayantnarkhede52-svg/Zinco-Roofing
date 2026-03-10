@@ -87,13 +87,15 @@ const StructuralPainting = () => {
                 <div className={styles.content}>
                     <section className={styles.section}>
                         <div className={styles.contentBlock}>
-                            <h2>Long-Lasting Protection for Industrial Assets</h2>
-                            <p>
-                                Industrial structures are constantly exposed to harsh environmental factors, including extreme heat, coastal humidity, and chemical pollutants. At Zinco Roofing Solution, we provide specialized **Industrial and Structural Painting** services designed to extend the lifespan of your infrastructure. Our coatings are not just about aesthetics; they are a critical layer of defense against corrosion and structural decay.
-                            </p>
-                            <p>
-                                We utilize high-performance materials from leading manufacturers, ensuring that every square foot of your facility is protected. From high-bay steel structures in **Taloja MIDC** to coastal facilities in **Vashi**, our team delivers professional results that stand the test of time.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Long-Lasting Protection for Industrial Assets</h2>
+                                <p>
+                                    Industrial structures are constantly exposed to harsh environmental factors, including extreme heat, coastal humidity, and chemical pollutants. At Zinco Roofing Solution, we provide specialized <strong>Industrial and Structural Painting</strong> services designed to extend the lifespan of your infrastructure. Our coatings are not just about aesthetics; they are a critical layer of defense against corrosion and structural decay.
+                                </p>
+                                <p>
+                                    We utilize high-performance materials from leading manufacturers, ensuring that every square foot of your facility is protected. From high-bay steel structures in <strong>Taloja MIDC</strong> to coastal facilities in <strong>Vashi</strong>, our team delivers professional results that stand the test of time.
+                                </p>
+                            </Card>
                         </div>
                     </section>
 
@@ -130,10 +132,12 @@ const StructuralPainting = () => {
 
                     <section className={styles.section}>
                         <div className={styles.contentBlock}>
-                            <h3>The Zinco Advantage in Industrial Painting</h3>
-                            <p>
-                                Our process begins with thorough surface preparation, which is the most critical step for coating longevity. We employ various methods, including sandblasting and high-pressure washing, to ensure a perfect bond. Our experienced painters are trained in applying multi-coat systems, including primers, intermediate coats, and UV-resistant topcoats.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>The Zinco Advantage in Industrial Painting</h3>
+                                <p>
+                                    Our process begins with thorough surface preparation, which is the most critical step for coating longevity. We employ various methods, including sandblasting and high-pressure washing, to ensure a perfect bond. Our experienced painters are trained in applying multi-coat systems, including primers, intermediate coats, and UV-resistant topcoats.
+                                </p>
+                            </Card>
                         </div>
                     </section>
 

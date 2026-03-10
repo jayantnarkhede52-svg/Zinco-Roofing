@@ -96,26 +96,32 @@ const AerolamSheet = () => {
                 <div className={styles.content}>
                     <section className={styles.section}>
                         <div className={styles.contentBlock}>
-                            <h2>Cooling Your Industrial Environment: Advanced Radiant Barrier Insulation</h2>
-                            <p>
-                                In the intense summer heat of **Navi Mumbai, Panvel, and Taloja MIDC**, the temperature inside a metal building can often exceed the outside temperature by 10-15°C. This excessive heat not only affects worker productivity but also places an enormous load on cooling systems. Zinco Roofing Solution's **Aerolam and Bubble Foil Thermal Insulation Sheets** are designed to tackle this problem at its source: radiant heat. Unlike bulk insulation that only slows down heat transfer, our radiant barriers reflect it away from your building.
-                            </p>
-                            <p>
-                                At the heart of our **Aerolam sheets** is a multi-layered composite consisting of air-filled polyethylene bubbles or cross-linked foam sandwiched between high-purity aluminum foils. This combination creates a dual-action thermal barrier. The aluminum surfaces reflect up to **97% of radiant heat energy**, while the internal air pockets or foam cells provide a resistive (R-value) barrier against conductive and convective heat transfer. This results in a cooler, more comfortable interior environment for your **factory in Taloja** or **warehouse in Panvel**, even during the peak of the Mumbai summer.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Cooling Your Industrial Environment: Advanced Radiant Barrier Insulation</h2>
+                                <p>
+                                    In the intense summer heat of <strong>Navi Mumbai, Panvel, and Taloja MIDC</strong>, the temperature inside a metal building can often exceed the outside temperature by 10-15°C. This excessive heat not only affects worker productivity but also places an enormous load on cooling systems. Zinco Roofing Solution's <strong>Aerolam and Bubble Foil Thermal Insulation Sheets</strong> are designed to tackle this problem at its source: radiant heat. Unlike bulk insulation that only slows down heat transfer, our radiant barriers reflect it away from your building.
+                                </p>
+                                <p>
+                                    At the heart of our <strong>Aerolam sheets</strong> is a multi-layered composite consisting of air-filled polyethylene bubbles or cross-linked foam sandwiched between high-purity aluminum foils. This combination creates a dual-action thermal barrier. The aluminum surfaces reflect up to <strong>97% of radiant heat energy</strong>, while the internal air pockets or foam cells provide a resistive (R-value) barrier against conductive and convective heat transfer. This results in a cooler, more comfortable interior environment for your <strong>factory in Taloja</strong> or <strong>warehouse in Panvel</strong>, even during the peak of the Mumbai summer.
+                                </p>
+                            </Card>
 
-                            <h3>The Science of Emissivity and Reflection</h3>
-                            <p>
-                                Heat travels through the air primarily in the form of radiation. Standard roofing materials absorb this heat and then re-radiate it into the building. Our insulation sheets have an exceptionally low **"emissivity" (E-value)** rating, meaning they radiate very little of the heat they do absorb. By installing a radiant barrier under your roof, you effectively flip the thermodynamics of the building. In the winter or during cool Mumbai nights, the same barrier helps retain the internal heat, making it a year-round energy-saving solution.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>The Science of Emissivity and Reflection</h3>
+                                <p>
+                                    Heat travels through the air primarily in the form of radiation. Standard roofing materials absorb this heat and then re-radiate it into the building. Our insulation sheets have an exceptionally low <strong>"emissivity" (E-value)</strong> rating, meaning they radiate very little of the heat they do absorb. By installing a radiant barrier under your roof, you effectively flip the thermodynamics of the building. In the winter or during cool Mumbai nights, the same barrier helps retain the internal heat, making it a year-round energy-saving solution.
+                                </p>
+                            </Card>
 
-                            <h3>Why Industrial Shed Owners in Mumbai Trust Aerolam</h3>
-                            <ul>
-                                <li><strong>97% Heat Reflection:</strong> Dramatically reduce the temperature of the air immediately below the roof, leading to a 5-10°C drop in floor-level temperatures.</li>
-                                <li><strong>Effective Moisture & Vapor Barrier:</strong> One of the biggest challenges in Mumbai is condensation ("sweating") on the underside of metal roofs. Aerolam acts as a continuous vapor barrier, preventing moisture-laden air from reaching the cool metal and dripping onto your goods.</li>
-                                <li><strong>Non-Toxic and Fiber-Free:</strong> Unlike some traditional glasswool insulation, Aerolam is non-carcinogenic, fiber-free, and safe for use in **food processing plants and pharmaceutical warehouses** in Navi Mumbai.</li>
-                                <li><strong>Lightweight and Easy to Retrofit:</strong> Our sheets are incredibly thin and lightweight, making them easy to install on new structures or retrofit onto existing ones without adding significant weight to the roof.</li>
-                            </ul>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Why Industrial Shed Owners in Mumbai Trust Aerolam</h3>
+                                <ul className={styles.styledList}>
+                                    <li><strong>97% Heat Reflection:</strong> Dramatically reduce the temperature of the air immediately below the roof, leading to a 5-10°C drop in floor-level temperatures.</li>
+                                    <li><strong>Effective Moisture & Vapor Barrier:</strong> One of the biggest challenges in Mumbai is condensation ("sweating") on the underside of metal roofs. Aerolam acts as a continuous vapor barrier, preventing moisture-laden air from reaching the cool metal and dripping onto your goods.</li>
+                                    <li><strong>Non-Toxic and Fiber-Free:</strong> Unlike some traditional glasswool insulation, Aerolam is non-carcinogenic, fiber-free, and safe for use in <strong>food processing plants and pharmaceutical warehouses</strong> in Navi Mumbai.</li>
+                                    <li><strong>Lightweight and Easy to Retrofit:</strong> Our sheets are incredibly thin and lightweight, making them easy to install on new structures or retrofit onto existing ones without adding significant weight to the roof.</li>
+                                </ul>
+                            </Card>
                         </div>
                     </section>
 
@@ -165,11 +171,13 @@ const AerolamSheet = () => {
                     </section>
 
                     <section className={styles.section}>
-                        <h2>Installation Quality and Overlap Sealing</h2>
                         <div className={styles.contentBlock}>
-                            <p>
-                                For a radiant barrier to work effectively, it must be installed with an air space between the barrier and the roof sheet. Our installation teams in **Navi Mumbai** use specialized spacers and aluminum tape to ensure that the overlaps are perfectly sealed. This "envelope" approach maximizes the thermal resistance and prevents air leakage, ensuring that your investment in insulation pays for itself in energy savings within just a few seasons.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Installation Quality and Overlap Sealing</h2>
+                                <p>
+                                    For a radiant barrier to work effectively, it must be installed with an air space between the barrier and the roof sheet. Our installation teams in <strong>Navi Mumbai</strong> use specialized spacers and aluminum tape to ensure that the overlaps are perfectly sealed. This "envelope" approach maximizes the thermal resistance and prevents air leakage, ensuring that your investment in insulation pays for itself in energy savings within just a few seasons.
+                                </p>
+                            </Card>
                         </div>
                     </section>
 

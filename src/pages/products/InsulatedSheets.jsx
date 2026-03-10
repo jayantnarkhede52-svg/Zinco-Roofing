@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { FaArrowLeft, FaCheckCircle, FaThermometerHalf, FaBuilding, FaExpand } from 'react-icons/fa';
+import { FaArrowLeft, FaCheckCircle, FaThermometerHalf, FaBuilding, FaExpand, FaLayerGroup, FaShieldAlt } from 'react-icons/fa';
 import SEO from '../../components/shared/SEO';
 import Card from '../../components/shared/Card';
 import Button from '../../components/shared/Button';
@@ -122,26 +122,41 @@ const InsulatedSheets = () => {
                 <div className={styles.content}>
                     <section className={styles.section}>
                         <div className={styles.contentBlock}>
-                            <h2>Advanced High-Rib PUF Insulation Panels: The Gold Standard in Thermal Efficiency</h2>
-                            <p>
-                                In the demanding industrial landscape of the **Taloja MIDC, Mahape, and Navi Mumbai** regions, thermal management is not just a comfort—it's a critical operational requirement. Zinco Roofing Solution's **High-Rib PUF (Polyurethane Foam) Panels** provide a world-class solution for buildings that require strict temperature control, energy efficiency, and superior structural strength.
-                            </p>
-                            <p>
-                                Our panels are designed with a unique **5-crest high-rib profile**. Unlike standard 3-rib panels found in the market, our 5-rib design offers exceptional mechanical properties, significantly increasing the load-bearing capacity and allowing for wider purlin spacing. This translates directly into structural steel savings for your project without sacrificing safety or durability. The core of our panels consists of high-density **Rigid Polyurethane Foam (RPUF)**, CFC-free and moisture-resistant, ensuring a long-lasting thermal barrier that doesn't degrade over time.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Gold Standard in Thermal Efficiency</h2>
+                                <p className={styles.leadText}>
+                                    Zinco's <strong>High-Rib PUF Panels</strong> provide a world-class solution for buildings requiring strict temperature control and extreme structural strength.
+                                </p>
+                            </Card>
 
-                            <h3>Material Science: The PUF Advantage</h3>
-                            <p>
-                                The "sandwich" construction of our panels—featuring two high-strength steel skins bonded to a rigid foam core—creates a composite structure of remarkable strength. With a standard density of **40Kg/m³ (± 2 Kg/m³)**, our PUF panels provide the lowest thermal conductivity of any commercially available insulation material. This high-performance core is coupled with **Pre-Painted Galvanized (PPGI)** or **Galvalume (PPGL)** skins, offering superior protection against the high humidity and corrosive salt-air characteristic of the Mumbai coastline.
-                            </p>
+                            <div className={styles.benefitsGrid}>
+                                <Card variant="glass" className={styles.benefitCard}>
+                                    <FaThermometerHalf className={styles.benefitIcon} />
+                                    <h4>Thermal Barrier</h4>
+                                    <p>Low U-values (as low as 0.20 W/m²K) reduce HVAC energy consumption by up to 40% in Mumbai's heat.</p>
+                                </Card>
+                                <Card variant="glass" className={styles.benefitCard}>
+                                    <FaLayerGroup className={styles.benefitIcon} />
+                                    <h4>5-Crest High-Rib</h4>
+                                    <p>Superior mechanical strength allowing for wider purlin spacing and significant structural steel savings.</p>
+                                </Card>
+                                <Card variant="glass" className={styles.benefitCard}>
+                                    <FaShieldAlt className={styles.benefitIcon} />
+                                    <h4>High Density Core</h4>
+                                    <p>40Kg/m³ Rigid Polyurethane Foam (RPUF) core provides lifelong insulation that won't degrade.</p>
+                                </Card>
+                            </div>
 
-                            <h3>Why Invest in Insulated Roofing?</h3>
-                            <ul>
-                                <li><strong>Unmatched Energy Savings:</strong> Reduce your HVAC energy consumption by up to 40% through superior thermal resistance (U-values as low as 0.20 W/m²K depending on thickness).</li>
-                                <li><strong>Rapid Installation:</strong> The tongue-and-groove interlocking system allows for fast, precision installation, reducing on-site labor costs and getting your facility operational faster.</li>
-                                <li><strong>Acoustic Comfort:</strong> The dense foam core acts as an excellent sound dampener, significantly reducing noise from heavy rainfall and industrial machinery.</li>
-                                <li><strong>Fire Safety:</strong> Our PUF cores can be formulated with fire-retardant properties to meet stringent industrial safety standards.</li>
-                            </ul>
+                            <div className={styles.grid2Col}>
+                                <Card variant="solid" className={styles.highlightCard}>
+                                    <h3>Coastal Durability</h3>
+                                    <p>PPGI/PPGL skins offer superior protection against high humidity and corrosive salt-air on the Mumbai coastline.</p>
+                                </Card>
+                                <Card variant="solid" className={styles.highlightCard}>
+                                    <h3>Rapid Installation</h3>
+                                    <p>The tongue-and-groove interlocking system allows for fast, precision installation and airtight joints.</p>
+                                </Card>
+                            </div>
                         </div>
                     </section>
 
@@ -192,23 +207,27 @@ const InsulatedSheets = () => {
                     </section>
 
                     <section className={styles.section}>
-                        <h2>Versatile Industrial Applications</h2>
                         <div className={styles.contentBlock}>
-                            <p>
-                                From **Cold Storage facilities in Panvel** to **high-precision Pharmaceutical Clean Rooms in Mahape**, our PUF panels are the preferred choice for mission-critical infrastructure. The airtight joints and hygienic surfaces make them ideal for food processing units (HACCP compliant) and electronic manufacturing hubs where dust control and temperature stability are paramount.
-                            </p>
-                            <p>
-                                In warehouse hubs across **Bhiwandi and NH4**, our panels help maintain comfortable working conditions for employees, increasing productivity and protecting temperature-sensitive inventory from the intense Maharashtra summer heat.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Versatile Industrial Applications</h2>
+                                <p>
+                                    From <strong>Cold Storage facilities in Panvel</strong> to <strong>high-precision Pharmaceutical Clean Rooms in Mahape</strong>, our PUF panels are the preferred choice for mission-critical infrastructure. The airtight joints and hygienic surfaces make them ideal for food processing units (HACCP compliant) and electronic manufacturing hubs where dust control and temperature stability are paramount.
+                                </p>
+                                <p>
+                                    In warehouse hubs across <strong>Bhiwandi and NH4</strong>, our panels help maintain comfortable working conditions for employees, increasing productivity and protecting temperature-sensitive inventory from the intense Maharashtra summer heat.
+                                </p>
+                            </Card>
                         </div>
                     </section>
 
                     <section className={styles.section}>
-                        <h2>Maintenance and Durability</h2>
                         <div className={styles.contentBlock}>
-                            <p>
-                                Zinco PUF panels are designed for "Life of Building" performance. The closed-cell structure of the foam core means it will not absorb water, even if the exterior skin is damaged. However, we recommend regular cleaning of the panel surfaces to prevent industrial dust and chemical buildup, which can potentially affect the exterior coating over decades. The interlocking joints should be inspected briefly once a year to ensure the butyl sealants remain intact for maximum weather-proofing.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Maintenance and Durability</h2>
+                                <p>
+                                    Zinco PUF panels are designed for "Life of Building" performance. The closed-cell structure of the foam core means it will not absorb water, even if the exterior skin is damaged. However, we recommend regular cleaning of the panel surfaces to prevent industrial dust and chemical buildup, which can potentially affect the exterior coating over decades. The interlocking joints should be inspected briefly once a year to ensure the butyl sealants remain intact for maximum weather-proofing.
+                                </p>
+                            </Card>
                         </div>
                     </section>
 

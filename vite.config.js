@@ -1,9 +1,32 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import prerender from '@prerenderer/rollup-plugin'
+import { join } from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    prerender({
+      routes: [
+        '/',
+        '/industrial-roofing-projects-navi-mumbai',
+        '/industrial-roofing-services-navi-mumbai',
+        '/premium-roofing-sheets-navi-mumbai',
+        '/gallery',
+        '/contact',
+        '/privacy-policy',
+        '/terms-of-service',
+        '/areas'
+      ],
+      renderer: '@prerenderer/renderer-puppeteer',
+      rendererOptions: {
+        maxConcurrentRoutes: 1,
+        renderAfterTime: 7000,
+        headless: true
+      }
+    })
+  ],
   build: {
     // Target modern browsers for smaller output
     target: 'es2015',

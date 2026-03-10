@@ -108,26 +108,32 @@ const PolycarbonateSheets = () => {
                 <div className={styles.content}>
                     <section className={styles.section}>
                         <div className={styles.contentBlock}>
-                            <h2>Advanced High-Rib Polycarbonate: Revolutionizing Natural Lighting in Industrial Spaces</h2>
-                            <p>
-                                In the sprawling industrial sheds of **Taloja MIDC, Rabale, and Panvel**, energy costs for interior lighting can be a significant overhead. Zinco Roofing Solution's **High-Rib Polycarbonate Sheets** offer a sophisticated engineering solution that combines "unbreakable" structural strength with exceptional light transmission. Our sheets are designed to integrate seamlessly with standard metal roofing profiles, providing a durable skylight solution that transforms dark factory interiors into bright, productive work environments.
-                            </p>
-                            <p>
-                                What sets our polycarbonate apart is the **5-crest high-rib profile**. Standard translucent sheets often struggle with spanning capabilities, requiring frequent purlin support to prevent sagging or wind damage. By adding 3 parallel mini ribs between the main 5 crests, we've created a sheet with superior rigidity. This structural reinforcement allows for wider spans and better load distribution, making them ideal for the heavy wind pressures and monsoon loads experienced in the **Navi Mumbai** region.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Advanced High-Rib Polycarbonate: Revolutionizing Natural Lighting in Industrial Spaces</h2>
+                                <p>
+                                    In the sprawling industrial sheds of <strong>Taloja MIDC, Rabale, and Panvel</strong>, energy costs for interior lighting can be a significant overhead. Zinco Roofing Solution's <strong>High-Rib Polycarbonate Sheets</strong> offer a sophisticated engineering solution that combines "unbreakable" structural strength with exceptional light transmission. Our sheets are designed to integrate seamlessly with standard metal roofing profiles, providing a durable skylight solution that transforms dark factory interiors into bright, productive work environments.
+                                </p>
+                                <p>
+                                    What sets our polycarbonate apart is the <strong>5-crest high-rib profile</strong>. Standard translucent sheets often struggle with spanning capabilities, requiring frequent purlin support to prevent sagging or wind damage. By adding 3 parallel mini ribs between the main 5 crests, we've created a sheet with superior rigidity. This structural reinforcement allows for wider spans and better load distribution, making them ideal for the heavy wind pressures and monsoon loads experienced in the <strong>Navi Mumbai</strong> region.
+                                </p>
+                            </Card>
 
-                            <h3>Material Science: UV Protection and Impact Resistance</h3>
-                            <p>
-                                Not all polycarbonate is created equal. Our sheets are manufactured using 100% virgin-grade resins from global leaders like **Sabic (Lexan) and Bayer (Makrolon)**. Each sheet features a co-extruded **UV-protected coating (UV2)** on both sides. This is a critical feature for the Indian climate—standard sheets without proper UV protection can become yellow and brittle in just a few years. Our UV-stabilized sheets maintain their clarity and high-impact strength for well over a decade, withstanding everything from intense solar radiation to falling debris or hailstorms.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Material Science: UV Protection and Impact Resistance</h3>
+                                <p>
+                                    Not all polycarbonate is created equal. Our sheets are manufactured using 100% virgin-grade resins from global leaders like <strong>Sabic (Lexan) and Bayer (Makrolon)</strong>. Each sheet features a co-extruded <strong>UV-protected coating (UV2)</strong> on both sides. This is a critical feature for the Indian climate—standard sheets without proper UV protection can become yellow and brittle in just a few years. Our UV-stabilized sheets maintain their clarity and high-impact strength for well over a decade, withstanding everything from intense solar radiation to falling debris or hailstorms.
+                                </p>
+                            </Card>
 
-                            <h3>Why Industrial Facilities Switch to High-Rib Polycarbonate</h3>
-                            <ul>
-                                <li><strong>90% Light Transmission:</strong> Maximize natural daylight while filtering out harmful UV rays, significantly reducing your electricity bills for daytime operations.</li>
-                                <li><strong>Virtually Unbreakable:</strong> Polycarbonate is 250 times stronger than glass and 30 times stronger than acrylic, providing an "unbreakable" safety barrier for your facility.</li>
-                                <li><strong>Thermal Stability:</strong> Despite being translucent, our sheets offer better thermal insulation than glass, helping maintain internal temperatures in climate-controlled warehouses.</li>
-                                <li><strong>Weight Efficiency:</strong> Being lightweight despite its strength, polycarbonate is easy to install at height, reducing labor risks and structural load.</li>
-                            </ul>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Why Industrial Facilities Switch to High-Rib Polycarbonate</h3>
+                                <ul className={styles.styledList}>
+                                    <li><strong>90% Light Transmission:</strong> Maximize natural daylight while filtering out harmful UV rays, significantly reducing your electricity bills for daytime operations.</li>
+                                    <li><strong>Virtually Unbreakable:</strong> Polycarbonate is 250 times stronger than glass and 30 times stronger than acrylic, providing an "unbreakable" safety barrier for your facility.</li>
+                                    <li><strong>Thermal Stability:</strong> Despite being translucent, our sheets offer better thermal insulation than glass, helping maintain internal temperatures in climate-controlled warehouses.</li>
+                                    <li><strong>Weight Efficiency:</strong> Being lightweight despite its strength, polycarbonate is easy to install at height, reducing labor risks and structural load.</li>
+                                </ul>
+                            </Card>
                         </div>
                     </section>
 
@@ -198,11 +204,13 @@ const PolycarbonateSheets = () => {
                     </section>
 
                     <section className={styles.section}>
-                        <h2>Maintenance and Operational Clarity</h2>
                         <div className={styles.contentBlock}>
-                            <p>
-                                To maintain maximum light transmission, we recommend a simple annual cleaning with mild soapy water and a soft cloth. This removes the industrial soot and dust buildup common in areas like **Taloja MIDC**. The UV-protected surface is designed to be "slick," meaning dirt washes off easily during the monsoon, keeping your factory naturally bright with minimal effort.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Maintenance and Operational Clarity</h2>
+                                <p>
+                                    To maintain maximum light transmission, we recommend a simple annual cleaning with mild soapy water and a soft cloth. This removes the industrial soot and dust buildup common in areas like <strong>Taloja MIDC</strong>. The UV-protected surface is designed to be "slick," meaning dirt washes off easily during the monsoon, keeping your factory naturally bright with minimal effort.
+                                </p>
+                            </Card>
                         </div>
                     </section>
 

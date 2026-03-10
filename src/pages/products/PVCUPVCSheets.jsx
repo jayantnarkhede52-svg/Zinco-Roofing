@@ -96,26 +96,32 @@ const PVCUPVCSheets = () => {
                 <div className={styles.content}>
                     <section className={styles.section}>
                         <div className={styles.contentBlock}>
-                            <h2>Superior Anti-Corrosion Solutions: UPVC Roofing Sheets in Mumbai's Industrial Belt</h2>
-                            <p>
-                                In the intense industrial environments of **Taloja MIDC, Panvel, and Rasayani**, standard metal roofing often faces a short lifespan. The combination of industrial chemical fumes and the salt-laden air from the Arabian Sea creates a highly corrosive atmosphere that can eat through traditional steel sheets in just a few seasons. Zinco Roofing Solution's **PVC and UPVC Roofing Sheets** are the ultimate answer to these challenges, providing a 100% rust-proof alternative that delivers decades of service.
-                            </p>
-                            <p>
-                                UPVC (Unplasticized Polyvinyl Chloride) is not just "plastic." High-performance UPVC is a complex, multi-layered material engineered for structural integrity. Our **UPVC sheets in Mumbai** are manufactured using a co-extrusion process that bonds multiple layers together, with the top layer being treated with **ASA (Acrylonitrile Styrene Acrylate)**. This high-standard resin coating provides extreme UV resistance, ensuring the sheets don't become brittle or lose their color even under the relentless Mumbai sun.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Superior Anti-Corrosion Solutions: UPVC Roofing Sheets in Mumbai's Industrial Belt</h2>
+                                <p>
+                                    In the intense industrial environments of <strong>Taloja MIDC, Panvel, and Rasayani</strong>, standard metal roofing often faces a short lifespan. The combination of industrial chemical fumes and the salt-laden air from the Arabian Sea creates a highly corrosive atmosphere that can eat through traditional steel sheets in just a few seasons. Zinco Roofing Solution's <strong>PVC and UPVC Roofing Sheets</strong> are the ultimate answer to these challenges, providing a 100% rust-proof alternative that delivers decades of service.
+                                </p>
+                                <p>
+                                    UPVC (Unplasticized Polyvinyl Chloride) is not just "plastic." High-performance UPVC is a complex, multi-layered material engineered for structural integrity. Our <strong>UPVC sheets in Mumbai</strong> are manufactured using a co-extrusion process that bonds multiple layers together, with the top layer being treated with <strong>ASA (Acrylonitrile Styrene Acrylate)</strong>. This high-standard resin coating provides extreme UV resistance, ensuring the sheets don't become brittle or lose their color even under the relentless Mumbai sun.
+                                </p>
+                            </Card>
 
-                            <h3>The Science of ASA Coating and Heat Insulation</h3>
-                            <p>
-                                One of the primary advantages of UPVC over metal is its natural thermal insulation. Metal sheets act as conductors, radiating heat directly into the facility below. In contrast, our UPVC sheets have a low thermal conductivity, significantly reducing the temperature inside warehouses in **Panvel and JNPT** by up to 5-8°C during peak summer months. This thermal stability not only improves worker productivity but also protects temperature-sensitive chemicals and inventories.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>The Science of ASA Coating and Heat Insulation</h3>
+                                <p>
+                                    One of the primary advantages of UPVC over metal is its natural thermal insulation. Metal sheets act as conductors, radiating heat directly into the facility below. In contrast, our UPVC sheets have a low thermal conductivity, significantly reducing the temperature inside warehouses in <strong>Panvel and JNPT</strong> by up to 5-8°C during peak summer months. This thermal stability not only improves worker productivity but also protects temperature-sensitive chemicals and inventories.
+                                </p>
+                            </Card>
 
-                            <h3>Why Industrialists Prefer UPVC in Navi Mumbai</h3>
-                            <ul>
-                                <li><strong>100% Corrosion Proof:</strong> Unlike metal, UPVC is completely unaffected by acid rain, industrial vapors, and coastal salt air. It is the gold standard for chemical storage and fertilizer plants.</li>
-                                <li><strong>Superior Sound Insulation:</strong> UPVC has excellent acoustic dampening properties. During heavy Mumbai rain, the "drumming" sound typical of metal roofs is virtually eliminated, creating a quieter, more focused work environment.</li>
-                                <li><strong>Lightweight & Safety:</strong> Being significantly lighter than metal, these sheets place less stress on the structural frame. They are also non-conductive, providing an extra layer of electrical safety for industrial facilities.</li>
-                                <li><strong>Self-Cleaning Properties:</strong> The high-gloss ASA finish allows smooth water flow and prevents dust buildup, meaning a simple rain shower often performs most of the cleaning for you.</li>
-                            </ul>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Why Industrialists Prefer UPVC in Navi Mumbai</h3>
+                                <ul className={styles.styledList}>
+                                    <li><strong>100% Corrosion Proof:</strong> Unlike metal, UPVC is completely unaffected by acid rain, industrial vapors, and coastal salt air. It is the gold standard for chemical storage and fertilizer plants.</li>
+                                    <li><strong>Superior Sound Insulation:</strong> UPVC has excellent acoustic dampening properties. During heavy Mumbai rain, the "drumming" sound typical of metal roofs is virtually eliminated, creating a quieter, more focused work environment.</li>
+                                    <li><strong>Lightweight & Safety:</strong> Being significantly lighter than metal, these sheets place less stress on the structural frame. They are also non-conductive, providing an extra layer of electrical safety for industrial facilities.</li>
+                                    <li><strong>Self-Cleaning Properties:</strong> The high-gloss ASA finish allows smooth water flow and prevents dust buildup, meaning a simple rain shower often performs most of the cleaning for you.</li>
+                                </ul>
+                            </Card>
                         </div>
                     </section>
 
@@ -165,11 +171,13 @@ const PVCUPVCSheets = () => {
                     </section>
 
                     <section className={styles.section}>
-                        <h2>Installation and Long-Term Value</h2>
                         <div className={styles.contentBlock}>
-                            <p>
-                                While the initial cost of premium UPVC might be slightly higher than entry-level metal sheets, the long-term ROI is undeniable. In corrosive chemical zones, metal roofs may require replacement every 5-7 years, whereas our **UPVC sheets in Panvel** are designed for a 15-25 year lifespan. The elimination of maintenance painting and the reduction in cooling costs make UPVC the most cost-effective choice for long-term industrial assets.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Installation and Long-Term Value</h2>
+                                <p>
+                                    While the initial cost of premium UPVC might be slightly higher than entry-level metal sheets, the long-term ROI is undeniable. In corrosive chemical zones, metal roofs may require replacement every 5-7 years, whereas our <strong>UPVC sheets in Panvel</strong> are designed for a 15-25 year lifespan. The elimination of maintenance painting and the reduction in cooling costs make UPVC the most cost-effective choice for long-term industrial assets.
+                                </p>
+                            </Card>
                         </div>
                     </section>
 

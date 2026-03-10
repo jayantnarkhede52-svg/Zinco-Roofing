@@ -113,26 +113,32 @@ const UPVCSheets = () => {
                 <div className={styles.content}>
                     <section className={styles.section}>
                         <div className={styles.contentBlock}>
-                            <h2>Advanced Industrial Protection: Premium UPVC Roofing Technology</h2>
-                            <p>
-                                In the industrial heartlands of **Taloja MIDC, Rabale, and Mahape**, and along the high-corrosion coastal belts near **JNPT Uran**, selecting the right roofing material is a decision that impacts the long-term viability of your infrastructure. Zinco Roofing Solution's **UPVC (Unplasticized Polyvinyl Chloride) Roofing Sheets** are engineered to provide a superior alternative to traditional metal roofing. By utilizing high-performance resins and advanced multi-layer co-extrusion, we've created a roofing solution that is 100% immune to rust, rot, and chemical corrosion.
-                            </p>
-                            <p>
-                                UPVC is fundamentally different from standard PVC. The "unplasticized" nature of the resin makes it much more rigid and thermally stable. Our sheets feature a **3 or 4-layer co-extrusion structure**. The top layer is a high-grade **ASA (Acrylonitrile Styrene Acrylate)** coating that provides exceptional UV stability and color retention. Below this, core layers are infused with impact modifiers and thermal stabilizers, creating a product that can withstand the intense tropical sun of **Navi Mumbai** and the heavy impacts of monsoon debris without cracking or degrading.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Advanced Industrial Protection: Premium UPVC Roofing Technology</h2>
+                                <p>
+                                    In the industrial heartlands of <strong>Taloja MIDC, Rabale, and Mahape</strong>, and along the high-corrosion coastal belts near <strong>JNPT Uran</strong>, selecting the right roofing material is a decision that impacts the long-term viability of your infrastructure. Zinco Roofing Solution's <strong>UPVC (Unplasticized Polyvinyl Chloride) Roofing Sheets</strong> are engineered to provide a superior alternative to traditional metal roofing. By utilizing high-performance resins and advanced multi-layer co-extrusion, we've created a roofing solution that is 100% immune to rust, rot, and chemical corrosion.
+                                </p>
+                                <p>
+                                    UPVC is fundamentally different from standard PVC. The "unplasticized" nature of the resin makes it much more rigid and thermally stable. Our sheets feature a <strong>3 or 4-layer co-extrusion structure</strong>. The top layer is a high-grade <strong>ASA (Acrylonitrile Styrene Acrylate)</strong> coating that provides exceptional UV stability and color retention. Below this, core layers are infused with impact modifiers and thermal stabilizers, creating a product that can withstand the intense tropical sun of <strong>Navi Mumbai</strong> and the heavy impacts of monsoon debris without cracking or degrading.
+                                </p>
+                            </Card>
 
-                            <h3>The Science of Thermal Comfort and Energy Savings</h3>
-                            <p>
-                                Metal sheets are notorious for conducting heat, turning industrial sheds into "ovens" during the Mumbai summer. UPVC, however, is a natural insulator. It has a significantly lower thermal conductivity than steel or aluminum. When you choose Zinco UPVC sheets for your **factory in Taloja** or **warehouse in Panvel**, you are essentially adding a built-in thermal shield to your building. This results in indoor temperatures that are naturally 4-6°C lower than buildings with metal roofs, leading to massive savings on air conditioning and mechanical ventilation costs.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>The Science of Thermal Comfort and Energy Savings</h3>
+                                <p>
+                                    Metal sheets are notorious for conducting heat, turning industrial sheds into "ovens" during the Mumbai summer. UPVC, however, is a natural insulator. It has a significantly lower thermal conductivity than steel or aluminum. When you choose Zinco UPVC sheets for your <strong>factory in Taloja</strong> or <strong>warehouse in Panvel</strong>, you are essentially adding a built-in thermal shield to your building. This results in indoor temperatures that are naturally 4-6°C lower than buildings with metal roofs, leading to massive savings on air conditioning and mechanical ventilation costs.
+                                </p>
+                            </Card>
 
-                            <h3>Why Modern Industrialists Choose Zinco UPVC Sheets</h3>
-                            <ul>
-                                <li><strong>Ultimate Corrosion Resistance:</strong> UPVC is chemically inert, making it the perfect choice for **chemical factories, fertilizer plants, and electroplating units** where acidic or alkaline fumes would destroy metal sheets in a matter of years.</li>
-                                <li><strong>Exceptional Sound Insulation:</strong> The multi-layered structure and the inherent damping properties of UPVC dramatically reduce the noise of heavy rain, providing a quieter work environment during the Konkan monsoons.</li>
-                                <li><strong>Lightweight Structural Efficiency:</strong> UPVC sheets are lighter than traditional AC sheets or heavy-gauge metal, reducing the load on your building's primary steel frame and simplifying the installation process.</li>
-                                <li><strong>Environmentally Responsive:</strong> Our UPVC sheets are 100% lead-free and fully recyclable, aligning with modern green building standards for industrial parks in **Navi Mumbai**.</li>
-                            </ul>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Why Modern Industrialists Choose Zinco UPVC Sheets</h3>
+                                <ul className={styles.styledList}>
+                                    <li><strong>Ultimate Corrosion Resistance:</strong> UPVC is chemically inert, making it the perfect choice for <strong>chemical factories, fertilizer plants, and electroplating units</strong> where acidic or alkaline fumes would destroy metal sheets in a matter of years.</li>
+                                    <li><strong>Exceptional Sound Insulation:</strong> The multi-layered structure and the inherent damping properties of UPVC dramatically reduce the noise of heavy rain, providing a quieter work environment during the Konkan monsoons.</li>
+                                    <li><strong>Lightweight Structural Efficiency:</strong> UPVC sheets are lighter than traditional AC sheets or heavy-gauge metal, reducing the load on your building's primary steel frame and simplifying the installation process.</li>
+                                    <li><strong>Environmentally Responsive:</strong> Our UPVC sheets are 100% lead-free and fully recyclable, aligning with modern green building standards for industrial parks in <strong>Navi Mumbai</strong>.</li>
+                                </ul>
+                            </Card>
                         </div>
                     </section>
 
@@ -216,11 +222,13 @@ const UPVCSheets = () => {
                     </section>
 
                     <section className={styles.section}>
-                        <h2>Installation Precision and Long-Term Value</h2>
                         <div className={styles.contentBlock}>
-                            <p>
-                                To maximize the lifespan of a UPVC roof, precision installation is key. At Zinco, our teams in **Navi Mumbai** use specialized EPDM-backed fasteners and allow for appropriate thermal expansion gaps. This technical attention to detail ensures that your roof remains perfectly watertight and structurally sound for its entire **20 to 30-year service life**.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Installation Precision and Long-Term Value</h2>
+                                <p>
+                                    To maximize the lifespan of a UPVC roof, precision installation is key. At Zinco, our teams in <strong>Navi Mumbai</strong> use specialized EPDM-backed fasteners and allow for appropriate thermal expansion gaps. This technical attention to detail ensures that your roof remains perfectly watertight and structurally sound for its entire <strong>20 to 30-year service life</strong>.
+                                </p>
+                            </Card>
                         </div>
                     </section>
 

@@ -96,26 +96,32 @@ const SyntheticRoof = () => {
                 <div className={styles.content}>
                     <section className={styles.section}>
                         <div className={styles.contentBlock}>
-                            <h2>Tropical Opulence with Modern Durability: Synthetic Thatch & Shingles</h2>
-                            <p>
-                                In the picturesque holiday destinations of **Alibaug, Lonavala, Karjat, and the luxury farmhouse pockets of Panvel**, architectural aesthetics often lean towards the natural, tropical charm of traditional thatch and wooden shingles. However, natural organic roofing materials face significant challenges in the humid, monsoon-prone climate of the **Konkan region**, requiring frequent replacement and posing a serious fire risk. Zinco Roofing Solution's **Synthetic Roofing** offers a groundbreaking alternative: the breathtaking beauty of natural straw and wood with the lifetime durability of advanced synthetic polymers.
-                            </p>
-                            <p>
-                                Our synthetic thatch and shingle systems are engineered to mimic the exact texture, coloring, and "layered" look of natural materials like Bali-style thatch or Cape Reed. Manufactured from **100% recyclable synthetic resins**, these products are built to last. Unlike natural thatch that becomes a breeding ground for insects and mold in the damp Mumbai air, our synthetic fibers are completely inorganic. They do not rot, they do not attract pests, and they maintain their vibrant "golden-straw" or "aged-wood" appearance for more than **20 to 30 years**.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Tropical Opulence with Modern Durability: Synthetic Thatch & Shingles</h2>
+                                <p>
+                                    In the picturesque holiday destinations of <strong>Alibaug, Lonavala, Karjat, and the luxury farmhouse pockets of Panvel</strong>, architectural aesthetics often lean towards the natural, tropical charm of traditional thatch and wooden shingles. However, natural organic roofing materials face significant challenges in the humid, monsoon-prone climate of the <strong>Konkan region</strong>, requiring frequent replacement and posing a serious fire risk. Zinco Roofing Solution's <strong>Synthetic Roofing</strong> offers a groundbreaking alternative: the breathtaking beauty of natural straw and wood with the lifetime durability of advanced synthetic polymers.
+                                </p>
+                                <p>
+                                    Our synthetic thatch and shingle systems are engineered to mimic the exact texture, coloring, and "layered" look of natural materials like Bali-style thatch or Cape Reed. Manufactured from <strong>100% recyclable synthetic resins</strong>, these products are built to last. Unlike natural thatch that becomes a breeding ground for insects and mold in the damp Mumbai air, our synthetic fibers are completely inorganic. They do not rot, they do not attract pests, and they maintain their vibrant "golden-straw" or "aged-wood" appearance for more than <strong>20 to 30 years</strong>.
+                                </p>
+                            </Card>
 
-                            <h3>The Engineering of Fire Safety and UV Resistance</h3>
-                            <p>
-                                For resorts, theme parks, and poolside cabanas in **Mumbai and Navi Mumbai**, fire safety is a non-negotiable requirement. Natural thatch is highly flammable, making it a liability for public spaces. Zinco’s synthetic roofing is manufactured with built-in **Class-A fire-retardant additives**, ensuring that your tropical paradise remains safe for guests. Additionally, each strand is infused with high-density UV stabilizers that block the intense bleaching effects of the sun, preventing the material from becoming brittle or losing its aesthetic appeal even after decades of exposure.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>The Engineering of Fire Safety and UV Resistance</h3>
+                                <p>
+                                    For resorts, theme parks, and poolside cabanas in <strong>Mumbai and Navi Mumbai</strong>, fire safety is a non-negotiable requirement. Natural thatch is highly flammable, making it a liability for public spaces. Zinco’s synthetic roofing is manufactured with built-in <strong>Class-A fire-retardant additives</strong>, ensuring that your tropical paradise remains safe for guests. Additionally, each strand is infused with high-density UV stabilizers that block the intense bleaching effects of the sun, preventing the material from becoming brittle or losing its aesthetic appeal even after decades of exposure.
+                                </p>
+                            </Card>
 
-                            <h3>Why Resort Developers in the Mumbai Region Prefer Zinco</h3>
-                            <ul>
-                                <li><strong>Zero Maintenance Luxury:</strong> Forget about the annual "re-thatching" costs. Our synthetic roofs require no specialized cleaning or pesticide treatments, saving you significant operational costs over time.</li>
-                                <li><strong>100% Waterproof and Weather-Tight:</strong> When installed as part of a complete system, our synthetic roofs provide an effective barrier against the heaviest **Mumbai monsoon rain**, protecting your interior decor and furnishings.</li>
-                                <li><strong>Eco-Friendly & Sustainable:</strong> Made from high-quality polymers, our roofing is 100% recyclable at the end of its long service life, making it a responsible choice for eco-tourism projects in **Matheran and Karjat**.</li>
-                                <li><strong>Easy Installation on Any Structure:</strong> Whether you're building a simple garden gazebo or a complex resort roof, our lightweight synthetic panels can be easily fastened to various roof frames, including wood, steel, or concrete.</li>
-                            </ul>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Why Resort Developers in the Mumbai Region Prefer Zinco</h3>
+                                <ul className={styles.styledList}>
+                                    <li><strong>Zero Maintenance Luxury:</strong> Forget about the annual "re-thatching" costs. Our synthetic roofs require no specialized cleaning or pesticide treatments, saving you significant operational costs over time.</li>
+                                    <li><strong>100% Waterproof and Weather-Tight:</strong> When installed as part of a complete system, our synthetic roofs provide an effective barrier against the heaviest <strong>Mumbai monsoon rain</strong>, protecting your interior decor and furnishings.</li>
+                                    <li><strong>Eco-Friendly & Sustainable:</strong> Made from high-quality polymers, our roofing is 100% recyclable at the end of its long service life, making it a responsible choice for eco-tourism projects in <strong>Matheran and Karjat</strong>.</li>
+                                    <li><strong>Easy Installation on Any Structure:</strong> Whether you're building a simple garden gazebo or a complex resort roof, our lightweight synthetic panels can be easily fastened to various roof frames, including wood, steel, or concrete.</li>
+                                </ul>
+                            </Card>
                         </div>
                     </section>
 
@@ -165,11 +171,13 @@ const SyntheticRoof = () => {
                     </section>
 
                     <section className={styles.section}>
-                        <h2>Installation Excellence and Customization</h2>
                         <div className={styles.contentBlock}>
-                            <p>
-                                Creating an authentic natural look requires a specialized installation technique. Our teams in **Navi Mumbai** are trained in the art of layering synthetic thatch to create a thick, plush appearance that is indistinguishable from the real thing. We provide various colors and textures, from the wild, shaggy look of African thatch to the neat, uniform lines of Western cedar shingles, ensuring your roof perfectly complements your project's architectural theme.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Installation Excellence and Customization</h2>
+                                <p>
+                                    Creating an authentic natural look requires a specialized installation technique. Our teams in <strong>Navi Mumbai</strong> are trained in the art of layering synthetic thatch to create a thick, plush appearance that is indistinguishable from the real thing. We provide various colors and textures, from the wild, shaggy look of African thatch to the neat, uniform lines of Western cedar shingles, ensuring your roof perfectly complements your project's architectural theme.
+                                </p>
+                            </Card>
                         </div>
                     </section>
 

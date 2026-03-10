@@ -112,26 +112,32 @@ const PVCTileSheet = () => {
                 <div className={styles.content}>
                     <section className={styles.section}>
                         <div className={styles.contentBlock}>
-                            <h2>Spanish Elegance Meets Modern Thermoplastic Science</h2>
-                            <p>
-                                In the upscale residential developments and recreational resorts of **Navi Mumbai, Alibaug, and Panvel**, the roof is more than just a functional necessity—it is a vital part of the architectural identity. Zinco Roofing Solution's **PVC Tile Sheets** offer a sophisticated alternative to traditional clay tiles, combining the deep, undulating curves of Spanish or Mediterranean "S-tile" designs with the extreme durability of high-grade synthetic resins. These sheets are ideal for homeowners and developers who desire a classic, high-end look without the weight, fragility, and maintenance headaches of real terracotta.
-                            </p>
-                            <p>
-                                What sets our PVC tiles apart is the use of **ASA (Acrylonitrile Styrene Acrylate)** co-extrusion technology. The top layer of each sheet is a thick, weather-resistant ASA coating that acts as a powerful shield against UV radiation and chemical pollutants. This is particularly important in the salt-laden coastal air of **Mumbai and Alibaug**, where traditional clay can become porous and deteriorate. The ASA coating ensures that the deep brick reds, slate greys, and vibrant blues of your roof remain consistent and fade-resistant for more than **25 years**.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Spanish Elegance Meets Modern Thermoplastic Science</h2>
+                                <p>
+                                    In the upscale residential developments and recreational resorts of <strong>Navi Mumbai, Alibaug, and Panvel</strong>, the roof is more than just a functional necessity—it is a vital part of the architectural identity. Zinco Roofing Solution's <strong>PVC Tile Sheets</strong> offer a sophisticated alternative to traditional clay tiles, combining the deep, undulating curves of Spanish or Mediterranean "S-tile" designs with the extreme durability of high-grade synthetic resins. These sheets are ideal for homeowners and developers who desire a classic, high-end look without the weight, fragility, and maintenance headaches of real terracotta.
+                                </p>
+                                <p>
+                                    What sets our PVC tiles apart is the use of <strong>ASA (Acrylonitrile Styrene Acrylate)</strong> co-extrusion technology. The top layer of each sheet is a thick, weather-resistant ASA coating that acts as a powerful shield against UV radiation and chemical pollutants. This is particularly important in the salt-laden coastal air of <strong>Mumbai and Alibaug</strong>, where traditional clay can become porous and deteriorate. The ASA coating ensures that the deep brick reds, slate greys, and vibrant blues of your roof remain consistent and fade-resistant for more than <strong>25 years</strong>.
+                                </p>
+                            </Card>
 
-                            <h3>The Advantage of Multi-Layered Protection</h3>
-                            <p>
-                                Our PVC tile sheets are engineered with a multi-layered structure for maximum performance. While the top ASA layer handles UV protection, the core layers are designed for structural rigidity and thermal insulation. This "thermo-reflective" property is a major benefit in the hot climate of **Panvel and Navi Mumbai**. PVC is a natural insulator compared to metal; it does not conduct heat as rapidly, helping to keep your home's attic or upper floors significantly cooler during the intense Mumbai summer.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>The Advantage of Multi-Layered Protection</h3>
+                                <p>
+                                    Our PVC tile sheets are engineered with a multi-layered structure for maximum performance. While the top ASA layer handles UV protection, the core layers are designed for structural rigidity and thermal insulation. This "thermo-reflective" property is a major benefit in the hot climate of <strong>Panvel and Navi Mumbai</strong>. PVC is a natural insulator compared to metal; it does not conduct heat as rapidly, helping to keep your home's attic or upper floors significantly cooler during the intense Mumbai summer.
+                                </p>
+                            </Card>
 
-                            <h3>Why Bungalow Owners in Mumbai Prefer Zinco PVC Tiles</h3>
-                            <ul>
-                                <li><strong>Unmatched Corrosion Resistance:</strong> Being 100% thermoplastic, these tiles are completely immune to rust, rot, and marine corrosion. They are the ultimate solution for beachfront properties in **Alibaug**.</li>
-                                <li><strong>Lightweight Structural Savings:</strong> At only 5-6 kg per square meter, our PVC tiles are a fraction of the weight of clay tiles (45 kg/sqm). This allows for lighter roof framing, reducing construction costs for bungalows in **Kharghar and Nerul**.</li>
-                                <li><strong>Superior Sound Insulation:</strong> The "S" profile and the acoustic properties of PVC work together to dampen the sound of heavy monsoon rain, providing a peaceful environment for your family.</li>
-                                <li><strong>Impact and Hail Resistance:</strong> Unlike clay tiles that can crack under the weight of a person or the impact of falling debris, our PVC tiles are remarkably resilient and flexible, making them "walkable" for maintenance.</li>
-                            </ul>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Why Bungalow Owners in Mumbai Prefer Zinco PVC Tiles</h3>
+                                <ul className={styles.styledList}>
+                                    <li><strong>Unmatched Corrosion Resistance:</strong> Being 100% thermoplastic, these tiles are completely immune to rust, rot, and marine corrosion. They are the ultimate solution for beachfront properties in <strong>Alibaug</strong>.</li>
+                                    <li><strong>Lightweight Structural Savings:</strong> At only 5-6 kg per square meter, our PVC tiles are a fraction of the weight of clay tiles (45 kg/sqm). This allows for lighter roof framing, reducing construction costs for bungalows in <strong>Kharghar and Nerul</strong>.</li>
+                                    <li><strong>Superior Sound Insulation:</strong> The "S" profile and the acoustic properties of PVC work together to dampen the sound of heavy monsoon rain, providing a peaceful environment for your family.</li>
+                                    <li><strong>Impact and Hail Resistance:</strong> Unlike clay tiles that can crack under the weight of a person or the impact of falling debris, our PVC tiles are remarkably resilient and flexible, making them "walkable" for maintenance.</li>
+                                </ul>
+                            </Card>
                         </div>
                     </section>
 
@@ -181,11 +187,13 @@ const PVCTileSheet = () => {
                     </section>
 
                     <section className={styles.section}>
-                        <h2>Installation Integrity and Regional Reach</h2>
                         <div className={styles.contentBlock}>
-                            <p>
-                                Precision installation is key to the long-term performance of PVC tiles. Our teams in **Navi Mumbai** use specialized wide-diameter EPDM-backed fasteners that accommodate the thermal expansion of PVC. We ensure that every ridge cap and valley is perfectly sealed, making your roof 100% watertight even in the heaviest **Konkan monsoons**.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Installation Integrity and Regional Reach</h2>
+                                <p>
+                                    Precision installation is key to the long-term performance of PVC tiles. Our teams in <strong>Navi Mumbai</strong> use specialized wide-diameter EPDM-backed fasteners that accommodate the thermal expansion of PVC. We ensure that every ridge cap and valley is perfectly sealed, making your roof 100% watertight even in the heaviest <strong>Konkan monsoons</strong>.
+                                </p>
+                            </Card>
                         </div>
                     </section>
 

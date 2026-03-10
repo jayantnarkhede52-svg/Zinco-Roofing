@@ -96,26 +96,32 @@ const HighRoofSeam = () => {
                 <div className={styles.content}>
                     <section className={styles.section}>
                         <div className={styles.contentBlock}>
-                            <h2>Engineering Excellence: The High Roof Seam (Standing Seam) System</h2>
-                            <p>
-                                In the world of industrial roofing, the biggest challenge is not the material itself, but the joints. Traditional screw-down roofing depends thousands of fasteners penetrating the sheets, each a potential point of leakage. Zinco Roofing Solution's **High Roof Seam (Standing Seam)** system eliminates this vulnerability entirely. This advanced architectural solution is engineered for the high-performance requirements of **modern airports, massive logistics parks in Bhiwandi, and state-of-the-art factories in Taloja MIDC**.
-                            </p>
-                            <p>
-                                The "Standing Seam" gets its name from the prominent vertical ribs that join the panels together. Our system uses a **concealed clip fastening** mechanism. These clips are fixed to the structure, and the roof panels are then "zipped" or mechanically seamed over them. Because the fasteners are hidden beneath the panels and there are no holes drilled through the primary water-shedding surface, the system is 100% leak-proof. This makes it the preferred choice for facilities housing high-value machinery, sensitive electronics, or perishable goods that cannot tolerate even a single drop of Mumbai's torrential monsoon rain.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Engineering Excellence: The High Roof Seam (Standing Seam) System</h2>
+                                <p>
+                                    In the world of industrial roofing, the biggest challenge is not the material itself, but the joints. Traditional screw-down roofing depends thousands of fasteners penetrating the sheets, each a potential point of leakage. Zinco Roofing Solution's <strong>High Roof Seam (Standing Seam)</strong> system eliminates this vulnerability entirely. This advanced architectural solution is engineered for the high-performance requirements of <strong>modern airports, massive logistics parks in Bhiwandi, and state-of-the-art factories in Taloja MIDC</strong>.
+                                </p>
+                                <p>
+                                    The "Standing Seam" gets its name from the prominent vertical ribs that join the panels together. Our system uses a <strong>concealed clip fastening</strong> mechanism. These clips are fixed to the structure, and the roof panels are then "zipped" or mechanically seamed over them. Because the fasteners are hidden beneath the panels and there are no holes drilled through the primary water-shedding surface, the system is 100% leak-proof. This makes it the preferred choice for facilities housing high-value machinery, sensitive electronics, or perishable goods that cannot tolerate even a single drop of Mumbai's torrential monsoon rain.
+                                </p>
+                            </Card>
 
-                            <h3>The Science of Thermal Expansion & Contraction</h3>
-                            <p>
-                                Steel expands when hot and contracts when cold. In the intense sun of **Navi Mumbai and Panvel**, a long metal roof can move by several centimeters throughout the day. In a traditional screw-down roof, this constant movement causes the fastener holes to "elongate" over time, eventually leading to leaks and structural fatigue. Our High Roof Seam system solves this with its **"floating" design**. The concealed clips allow the panels to slide back and forth as they expand and contract, without placing any stress on the fasteners or the panels themselves. This flexibility ensures a lifespan that often exceeds **30 to 50 years** with minimal maintenance.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>The Science of Thermal Expansion & Contraction</h3>
+                                <p>
+                                    Steel expands when hot and contracts when cold. In the intense sun of <strong>Navi Mumbai and Panvel</strong>, a long metal roof can move by several centimeters throughout the day. In a traditional screw-down roof, this constant movement causes the fastener holes to "elongate" over time, eventually leading to leaks and structural fatigue. Our High Roof Seam system solves this with its <strong>"floating" design</strong>. The concealed clips allow the panels to slide back and forth as they expand and contract, without placing any stress on the fasteners or the panels themselves. This flexibility ensures a lifespan that often exceeds <strong>30 to 50 years</strong> with minimal maintenance.
+                                </p>
+                            </Card>
 
-                            <h3>Why Industrial Architects in Mumbai Specify Standing Seam</h3>
-                            <ul>
-                                <li><strong>Zero Penetration Leak Protection:</strong> By eliminating external fasteners, we remove the most common cause of roof failure. Your facility remains dry even in the most extreme 300mm+ daily rainfall events.</li>
-                                <li><strong>Extreme Wind Resistance:</strong> The mechanical seaming process binds the panels together and to the structure with incredible strength, comfortably handling the high-velocity winds common along the **Konkan coast**.</li>
-                                <li><strong>Long Continuous Spans:</strong> Our on-site roll-forming capability allows us to produce single panels from the eave to the ridge, eliminating the need for horizontal overlaps (end laps) on roofs of 50 meters or more.</li>
-                                <li><strong>Modern Architectural Aesthetic:</strong> The crisp, clean lines of the vertical seams provide a sophisticated, contemporary look that enhances the brand image of corporate and commercial headquarters.</li>
-                            </ul>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Why Industrial Architects in Mumbai Specify Standing Seam</h3>
+                                <ul className={styles.styledList}>
+                                    <li><strong>Zero Penetration Leak Protection:</strong> By eliminating external fasteners, we remove the most common cause of roof failure. Your facility remains dry even in the most extreme 300mm+ daily rainfall events.</li>
+                                    <li><strong>Extreme Wind Resistance:</strong> The mechanical seaming process binds the panels together and to the structure with incredible strength, comfortably handling the high-velocity winds common along the <strong>Konkan coast</strong>.</li>
+                                    <li><strong>Long Continuous Spans:</strong> Our on-site roll-forming capability allows us to produce single panels from the eave to the ridge, eliminating the need for horizontal overlaps (end laps) on roofs of 50 meters or more.</li>
+                                    <li><strong>Modern Architectural Aesthetic:</strong> The crisp, clean lines of the vertical seams provide a sophisticated, contemporary look that enhances the brand image of corporate and commercial headquarters.</li>
+                                </ul>
+                            </Card>
                         </div>
                     </section>
 
@@ -165,11 +171,13 @@ const HighRoofSeam = () => {
                     </section>
 
                     <section className={styles.section}>
-                        <h2>Installation Precision and Technical Integrity</h2>
                         <div className={styles.contentBlock}>
-                            <p>
-                                The success of a standing seam roof lies in the precision of the mechanical seamer and the spacing of the concealed clips. At Zinco, we use state-of-the-art automatic seaming machines that ensure a consistent, airtight seal along the entire length of the roof. Whether it's a **multi-thousand square meter warehouse in Panvel** or a high-end commercial building in **Vashi**, our engineering team provides full design and installation support.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Installation Precision and Technical Integrity</h2>
+                                <p>
+                                    The success of a standing seam roof lies in the precision of the mechanical seamer and the spacing of the concealed clips. At Zinco, we use state-of-the-art automatic seaming machines that ensure a consistent, airtight seal along the entire length of the roof. Whether it's a <strong>multi-thousand square meter warehouse in Panvel</strong> or a high-end commercial building in <strong>Vashi</strong>, our engineering team provides full design and installation support.
+                                </p>
+                            </Card>
                         </div>
                     </section>
 

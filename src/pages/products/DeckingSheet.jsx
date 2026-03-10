@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { FaArrowLeft, FaCheckCircle, FaLayerGroup, FaMapMarkerAlt, FaExpand } from 'react-icons/fa';
+import { FaArrowLeft, FaCheckCircle, FaLayerGroup, FaMapMarkerAlt, FaExpand, FaTools } from 'react-icons/fa';
 import SEO from '../../components/shared/SEO';
 import Card from '../../components/shared/Card';
 import Button from '../../components/shared/Button';
@@ -125,26 +125,41 @@ const DeckingSheet = () => {
                 <div className={styles.content}>
                     <section className={styles.section}>
                         <div className={styles.contentBlock}>
-                            <h2>Revolutionizing Slab Construction: The Super Deck Composite System</h2>
-                            <p>
-                                In the rapidly verticalizing landscape of **Navi Mumbai, Vashi, and Panvel**, the speed of floor construction is a critical factor in project success. Zinco Roofing Solution's **Super Deck Composite Metal Decking** is a high-performance structural solution that replaces traditional wooden shuttering with a permanent steel formwork. This system not only accelerates the construction timeline but also enhances the overall structural integrity of the floor slab.
-                            </p>
-                            <p>
-                                The "Super Deck" profile is specifically engineered for the Indian construction environment, featuring a trapezoidal rib design with embossed patterns that act as **mechanical shear connectors**. When concrete is poured over these sheets, the embossments ensure a multi-directional bond between the steel and the concrete. This creates a "composite" action where the steel decking acts as the positive tension reinforcement for the slab, significantly reducing or even eliminating the need for traditional rebar at the bottom of the slab.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Revolutionizing Slab Construction</h2>
+                                <p className={styles.leadText}>
+                                    Zinco's <strong>Super Deck Composite Metal Decking</strong> is a high-performance structural solution that replaces traditional wooden shuttering with permanent steel formwork.
+                                </p>
+                            </Card>
 
-                            <h3>The Structural Advantage: Beyond Permanent Shuttering</h3>
-                            <p>
-                                Traditional RC slabs require extensive timber or steel shuttering, which must remain in place for 14-21 days while the concrete cures. With our **decking sheets in Mumbai**, the steel deck itself provides the necessary support for the wet concrete and construction loads. This means you can cast multiple floors simultaneously and begin interior work on the lower floors almost immediately after the concrete has set. For industrial mezzaines in **Taloja MIDC** and multi-story IT parks in **Mahape**, this translates into massive savings in both time and skilled labor costs.
-                            </p>
+                            <div className={styles.benefitsGrid}>
+                                <Card variant="glass" className={styles.benefitCard}>
+                                    <FaLayerGroup className={styles.benefitIcon} />
+                                    <h4>Composite Action</h4>
+                                    <p>Embossed patterns act as mechanical shear connectors, creating a multi-directional bond between steel and concrete.</p>
+                                </Card>
+                                <Card variant="glass" className={styles.benefitCard}>
+                                    <FaTools className={styles.benefitIcon} />
+                                    <h4>Rapid ROI</h4>
+                                    <p>Cast multiple floors simultaneously and begin interior work immediately, saving massive time in Taloja MIDC projects.</p>
+                                </Card>
+                                <Card variant="glass" className={styles.benefitCard}>
+                                    <FaCheckCircle className={styles.benefitIcon} />
+                                    <h4>High Tensile</h4>
+                                    <p>Available in 345/550 MPa steel with Z275 GSM coatings for lifetime corrosion protection.</p>
+                                </Card>
+                            </div>
 
-                            <h3>Why Architects in Navi Mumbai Specify Super Deck</h3>
-                            <ul>
-                                <li><strong>Reduced Slab Thickness:</strong> The high strength-to-weight ratio of composite decking allows for thinner slabs without sacrificing load-bearing capacity, reducing the overall dead load on the building's foundation.</li>
-                                <li><strong>Enhanced Fire Safety:</strong> Steel decking provides an inherent fire resistance rating. When combined with standard concrete, it meets the stringent fire safety requirements for commercial buildings in Mumbai.</li>
-                                <li><strong>Cleaner Construction Sites:</strong> Elminate the clutter of props and shuttering materials. Our decking sheets arrive at the site in **Panvel** custom-cut to length, ready for immediate installation.</li>
-                                <li><strong>Galvanized Protection:</strong> Manufactured from high-tensile galvanized steel with coatings up to **Z275 GSM**, our sheets are protected against internal corrosion for the lifetime of the building.</li>
-                            </ul>
+                            <div className={styles.grid2Col}>
+                                <Card variant="solid" className={styles.highlightCard}>
+                                    <h3>Advanced Shuttering</h3>
+                                    <p>Eliminate the need for 21-day timber curing. Our decking provide immediate support for wet concrete and construction loads.</p>
+                                </Card>
+                                <Card variant="solid" className={styles.highlightCard}>
+                                    <h3>Reduced Slab Weight</h3>
+                                    <p>Achieve thinner slabs without sacrificing load capacity, reducing the overall dead load on foundations in Navi Mumbai.</p>
+                                </Card>
+                            </div>
                         </div>
                     </section>
 
@@ -233,11 +248,13 @@ const DeckingSheet = () => {
                     </section>
 
                     <section className={styles.section}>
-                        <h2>Installation Efficiency and Loading Data</h2>
                         <div className={styles.contentBlock}>
-                            <p>
-                                Successful decking installation requires precision in the placement of shear studs and edge trims. Our technical team provides detailed shop drawings for projects in **Bhiwandi and Navi Mumbai**, ensuring that the decking spans are optimized for the steel frame. The high section modulus of the **Super Deck** profile ensures minimal deflection during the concrete pour, resulting in a perfectly level and industrially sound floor.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Installation Efficiency and Loading Data</h2>
+                                <p>
+                                    Successful decking installation requires precision in the placement of shear studs and edge trims. Our technical team provides detailed shop drawings for projects in <strong>Bhiwandi and Navi Mumbai</strong>, ensuring that the decking spans are optimized for the steel frame. The high section modulus of the <strong>Super Deck</strong> profile ensures minimal deflection during the concrete pour, resulting in a perfectly level and industrially sound floor.
+                                </p>
+                            </Card>
                         </div>
                     </section>
 

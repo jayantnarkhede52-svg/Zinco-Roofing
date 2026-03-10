@@ -1,15 +1,17 @@
 import { lazy, Suspense, useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import ScrollToTop from './components/shared/ScrollToTop';
 import './styles/animations.css';
 
-// Lazy load pages
-const Home = lazy(() => import('./pages/Home'));
-const Projects = lazy(() => import('./pages/Projects'));
-const Services = lazy(() => import('./pages/Services'));
-const Products = lazy(() => import('./pages/Products'));
+// Eagerly load main pages for pre-rendering stability
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import Services from './pages/Services';
+import Products from './pages/Products';
+
+// Lazy load other pages
 const Contact = lazy(() => import('./pages/Contact'));
 const Gallery = lazy(() => import('./pages/Gallery'));
 const NotFound = lazy(() => import('./pages/NotFound'));
@@ -88,8 +90,18 @@ const DeferredFloatingUI = () => {
 };
 
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Dispatch event for pre-renderer after a delay to ensure lazy components are ready
+    const timer = setTimeout(() => {
+      document.dispatchEvent(new Event('render-event'));
+    }, 4000);
+    return () => clearTimeout(timer);
+  }, [location.pathname]);
+
   return (
-    <Router>
+    <>
       <ScrollToTop />
       <div className="App">
         <Navbar />
@@ -135,6 +147,11 @@ function App() {
               <Route path="/puf-panel-manufacturer-navi-mumbai" element={<PUFPanelNaviMumbai />} />
               <Route path="/areas" element={<Areas />} />
 
+              {/* SEO Redirects for shortened URLs */}
+              <Route path="/products" element={<Navigate to="/premium-roofing-sheets-navi-mumbai" replace />} />
+              <Route path="/services" element={<Navigate to="/industrial-roofing-services-navi-mumbai" replace />} />
+              <Route path="/projects" element={<Navigate to="/industrial-roofing-projects-navi-mumbai" replace />} />
+
               <Route path="/gallery" element={<Gallery />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
@@ -146,7 +163,7 @@ function App() {
         <Footer />
         <DeferredFloatingUI />
       </div>
-    </Router>
+    </>
   );
 }
 

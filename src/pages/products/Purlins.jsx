@@ -96,29 +96,35 @@ const Purlins = () => {
                 <div className={styles.content}>
                     <section className={styles.section}>
                         <div className={styles.contentBlock}>
-                            <h2>Precision-Engineered C & Z Purlins: The Backbone of Modern PEB Structures</h2>
-                            <p>
-                                In the rapidly expanding industrial corridors of **Navi Mumbai, Panvel, and Taloja MIDC**, the efficiency of warehouse and factory construction depends heavily on the quality of structural framing. Zinco Roofing Solution's **C and Z Purlins** are engineered to provide maximum structural support with minimum weight, making them the preferred choice for Pre-Engineered Buildings (PEB) and large-scale industrial sheds.
-                            </p>
-                            <p>
-                                Unlike traditional hot-rolled angles and channels, our cold-formed purlins offer a significantly higher strength-to-weight ratio. This allows for longer spans between rafters, reducing the overall steel requirement for your project by up to 25-30%. Manufactured from high-tensile galvanized steel (standard yield strengths of **345 MPa to 550 MPa**), these purlins provide the rigid framework necessary to support modern roofing and wall cladding systems against high wind pressures and seismic loads.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Precision-Engineered C & Z Purlins: The Backbone of Modern PEB Structures</h2>
+                                <p>
+                                    In the rapidly expanding industrial corridors of <strong>Navi Mumbai, Panvel, and Taloja MIDC</strong>, the efficiency of warehouse and factory construction depends heavily on the quality of structural framing. Zinco Roofing Solution's <strong>C and Z Purlins</strong> are engineered to provide maximum structural support with minimum weight, making them the preferred choice for Pre-Engineered Buildings (PEB) and large-scale industrial sheds.
+                                </p>
+                                <p>
+                                    Unlike traditional hot-rolled angles and channels, our cold-formed purlins offer a significantly higher strength-to-weight ratio. This allows for longer spans between rafters, reducing the overall steel requirement for your project by up to 25-30%. Manufactured from high-tensile galvanized steel (standard yield strengths of <strong>345 MPa to 550 MPa</strong>), these purlins provide the rigid framework necessary to support modern roofing and wall cladding systems against high wind pressures and seismic loads.
+                                </p>
+                            </Card>
 
-                            <h3>C-Purlins vs. Z-Purlins: When to Use Which?</h3>
-                            <p>
-                                Understanding the mechanical differences between C and Z profiles is crucial for structural integrity. Our **C-Purlins** are primarily used for simple span applications and are ideal for door frames, window trimmers, and smaller warehouse structures in **Panvel**. They are valued for their perpendicular stability and ease of bolting.
-                            </p>
-                            <p>
-                                For larger, multi-span industrial projects in **Taloja MIDC**, our **Z-Purlins** are the standard. Z-profiles feature one flange wider than the other, allowing them to be "lapped" or nested together at the support points. This nesting creates a continuous structural member across multiple spans, significantly increasing the load-bearing capacity and rigidity of the entire roof.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>C-Purlins vs. Z-Purlins: When to Use Which?</h3>
+                                <p>
+                                    Understanding the mechanical differences between C and Z profiles is crucial for structural integrity. Our <strong>C-Purlins</strong> are primarily used for simple span applications and are ideal for door frames, window trimmers, and smaller warehouse structures in <strong>Panvel</strong>. They are valued for their perpendicular stability and ease of bolting.
+                                </p>
+                                <p>
+                                    For larger, multi-span industrial projects in <strong>Taloja MIDC</strong>, our <strong>Z-Purlins</strong> are the standard. Z-profiles feature one flange wider than the other, allowing them to be "lapped" or nested together at the support points. This nesting creates a continuous structural member across multiple spans, significantly increasing the load-bearing capacity and rigidity of the entire roof.
+                                </p>
+                            </Card>
 
-                            <h3>Why Industrialists in Mumbai Choose Zinco Purlins</h3>
-                            <ul>
-                                <li><strong>Automated Precision:</strong> Our fully automated roll-forming lines ensure that every purlin is straight and dimensionally accurate to the millimeter.</li>
-                                <li><strong>Pre-Punched Efficiency:</strong> We provide purlins with pre-punched holes based on your structural drawings, eliminating on-site drilling, reducing labor time, and ensuring perfect alignment during assembly.</li>
-                                <li><strong>Superior Corrosion Protection:</strong> With galvanized coatings ranging from **120 GSM to 275 GSM**, our purlins are protected against the hidden corrosion that can weaken a building's frame from the inside out, especially in coastal zones like **Navi Mumbai**.</li>
-                                <li><strong>Zero Wastage:</strong> Every purlin is custom-cut to your specified length (up to 12 meters), ensuring you only pay for what you use and simplifying on-site logistics.</li>
-                            </ul>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Why Industrialists in Mumbai Choose Zinco Purlins</h3>
+                                <ul className={styles.styledList}>
+                                    <li><strong>Automated Precision:</strong> Our fully automated roll-forming lines ensure that every purlin is straight and dimensionally accurate to the millimeter.</li>
+                                    <li><strong>Pre-Punched Efficiency:</strong> We provide purlins with pre-punched holes based on your structural drawings, eliminating on-site drilling, reducing labor time, and ensuring perfect alignment during assembly.</li>
+                                    <li><strong>Superior Corrosion Protection:</strong> With galvanized coatings ranging from <strong>120 GSM to 275 GSM</strong>, our purlins are protected against the hidden corrosion that can weaken a building's frame from the inside out, especially in coastal zones like <strong>Navi Mumbai</strong>.</li>
+                                    <li><strong>Zero Wastage:</strong> Every purlin is custom-cut to your specified length (up to 12 meters), ensuring you only pay for what you use and simplifying on-site logistics.</li>
+                                </ul>
+                            </Card>
                         </div>
                     </section>
 
@@ -168,11 +174,13 @@ const Purlins = () => {
                     </section>
 
                     <section className={styles.section}>
-                        <h2>Installation and Structural Value</h2>
                         <div className={styles.contentBlock}>
-                            <p>
-                                Proper purlin installation is the key to a leak-proof roof. Our technical team ensures that purlin spacing and fastening methods are optimized for the specific roofing sheets you've chosen. For heavy-duty industrial applications in the **warehouse hubs of Bhiwandi and NH4**, we recommend Z-lapping to maximize the structural lifespan of the facility.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Installation and Structural Value</h2>
+                                <p>
+                                    Proper purlin installation is the key to a leak-proof roof. Our technical team ensures that purlin spacing and fastening methods are optimized for the specific roofing sheets you've chosen. For heavy-duty industrial applications in the <strong>warehouse hubs of Bhiwandi and NH4</strong>, we recommend Z-lapping to maximize the structural lifespan of the facility.
+                                </p>
+                            </Card>
                         </div>
                     </section>
 

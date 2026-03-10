@@ -118,26 +118,32 @@ const MultiwallSheets = () => {
                 <div className={styles.content}>
                     <section className={styles.section}>
                         <div className={styles.contentBlock}>
-                            <h2>Engineering Natural Light: The High-Rib Multiwall Advantage</h2>
-                            <p>
-                                In the massive industrial clusters of **Taloja MIDC, Bhiwandi, and Navi Mumbai**, creating a bright, energy-efficient workspace is a top priority for facility managers. Zinco Roofing Solution's **High-Rib Multiwall Polycarbonate Sheets** represent the pinnacle of daylighting technology. Unlike standard flat polycarbonate or multiwall sheets, our profile features a **5 main crest and 3 parallel mini rib design**. This trapezoidal engineering adds immense structural rigidity, allowing these sheets to be used across large roof spans without the risk of sagging or wind-uplift damage.
-                            </p>
-                            <p>
-                                The "Multiwall" designation refers to the internal honeycomb or hollow-chamber structure within the polycarbonate resin. These air-filled vertical walls provide a dual benefit: they act as a high-performance thermal insulator (significantly lowering the building's **U-value**) and they diffuse incoming sunlight. For factories and warehouses in **Panvel**, this means a reduction in heat ingress and the elimination of "hot spots" and harsh glares, creating a uniformly lit interior that reduces the need for artificial lighting during the day.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Engineering Natural Light: The High-Rib Multiwall Advantage</h2>
+                                <p>
+                                    In the massive industrial clusters of <strong>Taloja MIDC, Bhiwandi, and Navi Mumbai</strong>, creating a bright, energy-efficient workspace is a top priority for facility managers. Zinco Roofing Solution's <strong>High-Rib Multiwall Polycarbonate Sheets</strong> represent the pinnacle of daylighting technology. Unlike standard flat polycarbonate or multiwall sheets, our profile features a <strong>5 main crest and 3 parallel mini rib design</strong>. This trapezoidal engineering adds immense structural rigidity, allowing these sheets to be used across large roof spans without the risk of sagging or wind-uplift damage.
+                                </p>
+                                <p>
+                                    The "Multiwall" designation refers to the internal honeycomb or hollow-chamber structure within the polycarbonate resin. These air-filled vertical walls provide a dual benefit: they act as a high-performance thermal insulator (significantly lowering the building's <strong>U-value</strong>) and they diffuse incoming sunlight. For factories and warehouses in <strong>Panvel</strong>, this means a reduction in heat ingress and the elimination of "hot spots" and harsh glares, creating a uniformly lit interior that reduces the need for artificial lighting during the day.
+                                </p>
+                            </Card>
 
-                            <h3>The Science of UV Protection and Durability</h3>
-                            <p>
-                                Polycarbonate is naturally prone to yellowing and becoming brittle when exposed to the intense tropical sun of the **Mumbai Metropolitan Region**. To combat this, our High-Rib Multiwall sheets are co-extruded with a high-density UV protection layer on the outer surface. This barrier blocks harmful ultraviolet rays, ensuring that the sheet maintains its high light transmission and impact strength for over a decade. Whether it's the salt-laden air of **Vashi** or the industrial pollutants in **Taloja**, our sheets are built to withstand the harshest environmental conditions.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>The Science of UV Protection and Durability</h3>
+                                <p>
+                                    Polycarbonate is naturally prone to yellowing and becoming brittle when exposed to the intense tropical sun of the <strong>Mumbai Metropolitan Region</strong>. To combat this, our High-Rib Multiwall sheets are co-extruded with a high-density UV protection layer on the outer surface. This barrier blocks harmful ultraviolet rays, ensuring that the sheet maintains its high light transmission and impact strength for over a decade. Whether it's the salt-laden air of <strong>Vashi</strong> or the industrial pollutants in <strong>Taloja</strong>, our sheets are built to withstand the harshest environmental conditions.
+                                </p>
+                            </Card>
 
-                            <h3>Why Industrial Architects Specify Zinco Multiwall Profiles</h3>
-                            <ul>
-                                <li><strong>Superior Spanning Strength:</strong> The 5-crest high-rib design allows for wider purlin spacing compared to standard sheets, reducing the overall weight and cost of the primary steel structure.</li>
-                                <li><strong>Advanced Thermal Comfort:</strong> By trapping air within its hollow chambers, multiwall polycarbonate provides energy savings on HVAC (cooling) systems, keeping your **factory in Navi Mumbai** cooler than single-skin alternatives.</li>
-                                <li><strong>Shatterproof Security:</strong> Polycarbonate is virtually unbreakable, with 250 times the impact resistance of glass. This makes it an ideal safety choice for high-traffic infrastructure projects like metro stations and skywalks.</li>
-                                <li><strong>Soft, Diffused Lighting:</strong> Prevent worker eye strain and machinery glare with lighting that is distributed evenly across the floor.</li>
-                            </ul>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Why Industrial Architects Specify Zinco Multiwall Profiles</h3>
+                                <ul className={styles.styledList}>
+                                    <li><strong>Superior Spanning Strength:</strong> The 5-crest high-rib design allows for wider purlin spacing compared to standard sheets, reducing the overall weight and cost of the primary steel structure.</li>
+                                    <li><strong>Advanced Thermal Comfort:</strong> By trapping air within its hollow chambers, multiwall polycarbonate provides energy savings on HVAC (cooling) systems, keeping your <strong>factory in Navi Mumbai</strong> cooler than single-skin alternatives.</li>
+                                    <li><strong>Shatterproof Security:</strong> Polycarbonate is virtually unbreakable, with 250 times the impact resistance of glass. This makes it an ideal safety choice for high-traffic infrastructure projects like metro stations and skywalks.</li>
+                                    <li><strong>Soft, Diffused Lighting:</strong> Prevent worker eye strain and machinery glare with lighting that is distributed evenly across the floor.</li>
+                                </ul>
+                            </Card>
                         </div>
                     </section>
 
@@ -175,11 +181,13 @@ const MultiwallSheets = () => {
                     </section>
 
                     <section className={styles.section}>
-                        <h2>Installation Precision and Thermal Expansion</h2>
                         <div className={styles.contentBlock}>
-                            <p>
-                                Polycarbonate has a high coefficient of thermal expansion, meaning it moves significantly more than metal as it heats up. Our installation teams in **Panvel and Navi Mumbai** use specialized wide-diameter EPDM washers and oversized mounting holes to allow the sheet to "breathe" without cracking. This technical attention to detail ensures a leak-proof, long-lasting daylighting solution.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Installation Precision and Thermal Expansion</h2>
+                                <p>
+                                    Polycarbonate has a high coefficient of thermal expansion, meaning it moves significantly more than metal as it heats up. Our installation teams in <strong>Panvel and Navi Mumbai</strong> use specialized wide-diameter EPDM washers and oversized mounting holes to allow the sheet to "breathe" without cracking. This technical attention to detail ensures a leak-proof, long-lasting daylighting solution.
+                                </p>
+                            </Card>
                         </div>
                     </section>
 

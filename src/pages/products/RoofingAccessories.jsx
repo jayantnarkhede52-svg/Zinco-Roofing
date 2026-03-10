@@ -87,23 +87,29 @@ const RoofingAccessories = () => {
                 <div className={styles.content}>
                     <section className={styles.section}>
                         <div className={styles.contentBlock}>
-                            <h2>The Essential Backbone: Why Roofing Accessories Matter</h2>
-                            <p>
-                                A common misconception in the construction industry is that the durability of a roof depends solely on the quality of the sheets. However, at Zinco Roofing Solution, we know that a roof is only as strong as its weakest joint. Our **Roofing Accessories**, available across **Panvel, Taloja, and Navi Mumbai**, are designed to provide the critical sealing and structural support that transforms a simple metal shed into a high-performance industrial asset.
-                            </p>
-                            <p>
-                                Whether you're dealing with the heavy monsoons of the Mumbai coast or the intense heat of the Maharashtra interior, our accessories ensure that every ridge, valley, and edge is perfectly sealed. We manufacture our primary accessories from the same high-grade **PPGI (Pre-Painted Galvanized Iron)** and **PPGL (Pre-Painted Galvalume)** as our roofing sheets, ensuring a perfect color match and consistent thermal expansion properties throughout your building's envelope.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>The Essential Backbone: Why Roofing Accessories Matter</h2>
+                                <p>
+                                    A common misconception in the construction industry is that the durability of a roof depends solely on the quality of the sheets. However, at Zinco Roofing Solution, we know that a roof is only as strong as its weakest joint. Our <strong>Roofing Accessories</strong>, available across <strong>Panvel, Taloja, and Navi Mumbai</strong>, are designed to provide the critical sealing and structural support that transforms a simple metal shed into a high-performance industrial asset.
+                                </p>
+                                <p>
+                                    Whether you're dealing with the heavy monsoons of the Mumbai coast or the intense heat of the Maharashtra interior, our accessories ensure that every ridge, valley, and edge is perfectly sealed. We manufacture our primary accessories from the same high-grade <strong>PPGI (Pre-Painted Galvanized Iron)</strong> and <strong>PPGL (Pre-Painted Galvalume)</strong> as our roofing sheets, ensuring a perfect color match and consistent thermal expansion properties throughout your building's envelope.
+                                </p>
+                            </Card>
 
-                            <h3>Ridge Caps & Valleys: Sealing the Peaks</h3>
-                            <p>
-                                The ridge is the most vulnerable part of any roof. Our **Plain and Formed Ridges** are precision-bent to match the exact profile of your roofing sheets, preventing wind-driven rain from entering the apex of the structure. In areas like **Taloja MIDC**, where industrial buildings often have complex geometries, we provide custom-tailored flashing solutions that bridge the gaps between different roof levels and chimney penetrations.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Ridge Caps & Valleys: Sealing the Peaks</h3>
+                                <p>
+                                    The ridge is the most vulnerable part of any roof. Our <strong>Plain and Formed Ridges</strong> are precision-bent to match the exact profile of your roofing sheets, preventing wind-driven rain from entering the apex of the structure. In areas like <strong>Taloja MIDC</strong>, where industrial buildings often have complex geometries, we provide custom-tailored flashing solutions that bridge the gaps between different roof levels and chimney penetrations.
+                                </p>
+                            </Card>
 
-                            <h3>High-Capacity Rainwater Systems</h3>
-                            <p>
-                                Effective drainage is life or death for an industrial roof. Our **Rainwater Gutters** are designed with high-volume profiles to handle the sudden, intense downpours of the Western Ghats. We offer gutters in various materials, including color-coated metal and high-impact polymers, often accompanied by custom-fabricated downspouts and brackets designed to withstand high wind loads at height.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>High-Capacity Rainwater Systems</h3>
+                                <p>
+                                    Effective drainage is life or death for an industrial roof. Our <strong>Rainwater Gutters</strong> are designed with high-volume profiles to handle the sudden, intense downpours of the Western Ghats. We offer gutters in various materials, including color-coated metal and high-impact polymers, often accompanied by custom-fabricated downspouts and brackets designed to withstand high wind loads at height.
+                                </p>
+                            </Card>
                         </div>
                     </section>
 
@@ -139,14 +145,16 @@ const RoofingAccessories = () => {
                     </section>
 
                     <section className={styles.section}>
-                        <h2>Fastening Systems and Sealing</h2>
                         <div className={styles.contentBlock}>
-                            <p>
-                                We use and supply only the highest grade of **Self-Drilling Screws (SDS)**, featuring specialized anti-corrosion coatings (Class 3 or Class 4) that outlast standard zinc-plated fasteners by decades. These screws are paired with EPDM (Ethylene Propylene Diene Monomer) washers, which provide a permanent, flexible seal that expands and contracts with the metal, preventing the "vibration leaks" common in cheaper installations.
-                            </p>
-                            <p>
-                                For critical joints, we utilize high-performance **Neutral Cure Silicone Sealants**. Unlike standard acidic sealants, these do not cause corrosion in the metal sheets and maintain their bond even under the intense UV radiation experienced in open industrial hubs like **Panvel**.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Fastening Systems and Sealing</h2>
+                                <p>
+                                    We use and supply only the highest grade of <strong>Self-Drilling Screws (SDS)</strong>, featuring specialized anti-corrosion coatings (Class 3 or Class 4) that outlast standard zinc-plated fasteners by decades. These screws are paired with EPDM (Ethylene Propylene Diene Monomer) washers, which provide a permanent, flexible seal that expands and contracts with the metal, preventing the "vibration leaks" common in cheaper installations.
+                                </p>
+                                <p>
+                                    For critical joints, we utilize high-performance <strong>Neutral Cure Silicone Sealants</strong>. Unlike standard acidic sealants, these do not cause corrosion in the metal sheets and maintain their bond even under the intense UV radiation experienced in open industrial hubs like <strong>Panvel</strong>.
+                                </p>
+                            </Card>
                         </div>
                     </section>
 

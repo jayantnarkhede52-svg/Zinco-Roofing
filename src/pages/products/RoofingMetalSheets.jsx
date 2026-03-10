@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { FaArrowLeft, FaCheckCircle, FaStar, FaMapMarkerAlt, FaExpand } from 'react-icons/fa';
+import { FaArrowLeft, FaCheckCircle, FaStar, FaMapMarkerAlt, FaExpand, FaShieldAlt } from 'react-icons/fa';
 import SEO from '../../components/shared/SEO';
 import Card from '../../components/shared/Card';
 import Button from '../../components/shared/Button';
@@ -139,32 +139,72 @@ const RoofingMetalSheets = () => {
                         transition={{ duration: 0.6 }}
                     >
                         <div className={styles.contentBlock}>
-                            <h2>Expertly Engineered Metal Roofing Sheets for Industrial Excellence</h2>
-                            <p>
-                                At Zinco Roofing Solution, we understand that an industrial roof is more than just a cover—it is a critical asset that protects your machinery, inventory, and workforce. Our premium range of **Metal Roofing Sheets** is engineered to meet the rigorous demands of the modern industrial landscape, particularly in highly corrosive environments like the **Taloja MIDC, Rabale, and Panvel** regions.
-                            </p>
-                            <p>
-                                We specialize in high-tensile steel roofing solutions, offering a versatile selection of **Pre-Painted Galvanized (PPGI)**, **Pre-Painted Galvalume (PPGL)**, and **Bare Galvalume** sheets. These materials are chosen for their exceptional strength-to-weight ratio, allowing for larger spans and lighter structural support requirements without compromising on safety or durability. Our sheets typically range from **0.47mm to 0.80mm** in thickness, providing the structural integrity needed to withstand high wind loads and heavy monsoon cycles prevalent in the Mumbai metropolitan region.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Engineered for Industrial Excellence</h2>
+                                <p className={styles.leadText}>
+                                    Zinco Roofing Solution provides high-performance metal roofing tailored for the corrosive industrial landscapes of <strong>Taloja MIDC, Rabale, and Panvel</strong>.
+                                </p>
+                            </Card>
 
-                            <h3>The Science of Protection: Anti-Capillary Technology</h3>
-                            <p>
-                                One of the most significant challenges in metal roofing is water ingress at the side laps. Standard roofing sheets often suffer from siphoning effects where water is "pulled" between the overlapping sheets during heavy rain. Zinco's metal sheets feature a precision-engineered **Anti-Capillary Groove**. This unique channel acts as a break-point, disrupting the surface tension of water and ensuring a 100% watertight seal even under extreme weather conditions. Combined with our superior side-lap design, your industrial facility remains completely protected from leaks and moisture-related damage.
-                            </p>
+                            <div className={styles.benefitsGrid}>
+                                <Card variant="glass" className={styles.benefitCard}>
+                                    <FaShieldAlt className={styles.benefitIcon} />
+                                    <h4>High-Tensile Strength</h4>
+                                    <p>Available in PPGI and PPGL with high-tensile steel (245/345/550 Mpa) for maximum structural integrity.</p>
+                                </Card>
+                                <Card variant="glass" className={styles.benefitCard}>
+                                    <FaCheckCircle className={styles.benefitIcon} />
+                                    <h4>Coastal Resilience</h4>
+                                    <p>Premium Galvalume coatings (AZ70/AZ150) offering up to 4x better corrosion resistance than standard steel.</p>
+                                </Card>
+                                <Card variant="glass" className={styles.benefitCard}>
+                                    <FaExpand className={styles.benefitIcon} />
+                                    <h4>Precision Thickness</h4>
+                                    <p>Sheets ranging from 0.47mm to 0.80mm to withstand high wind loads and heavy monsoon cycles.</p>
+                                </Card>
+                            </div>
 
-                            <h3>Customizable Profiles for Architectural Versatility</h3>
-                            <p>
-                                Industrial architecture is evolving, and so are our products. Beyond the standard trapezoidal profiles, we offer **Factory Cranked and Curved Profiles**. Whether you require a bull-nosed finish for a sleek aesthetic or a large-radius curve for a specialized warehouse design, our on-site and factory fabrication capabilities ensure a perfect fit. Our sheets are known for their **remarkable recovery after deformation**, meaning they can handle the slight shifts and vibrations of industrial operations without losing their protective properties or structural shape.
-                            </p>
-
-                            <h3>Why Choose Zinco Metal Roofing?</h3>
-                            <ul>
-                                <li><strong>Superior Corrosion Resistance:</strong> Our Galvalume sheets (AZ70/AZ150) offer up to four times the atmospheric corrosion resistance than standard galvanized steel.</li>
-                                <li><strong>High Thermal Reflectivity:</strong> Bare Galvalume sheets reflect a high percentage of solar radiation, reducing the cooling load on your HVAC systems and saving energy costs.</li>
-                                <li><strong>Lightweight but Tough:</strong> Easy to handle and install, yet providing high load-bearing capacity (tested at 245/345/550 Mpa).</li>
-                                <li><strong>Eco-Friendly:</strong> Steel is 100% recyclable, making our roofing a sustainable choice for green building certifications.</li>
-                            </ul>
+                            <div className={styles.grid2Col}>
+                                <Card variant="solid" className={styles.highlightCard}>
+                                    <h3>Anti-Capillary Technology</h3>
+                                    <p>Our precision-engineered **Anti-Capillary Groove** disrupts surface tension, ensuring a 100% watertight seal even during heavy Mumbai rains.</p>
+                                </Card>
+                                <Card variant="solid" className={styles.highlightCard}>
+                                    <h3>Architectural Versatility</h3>
+                                    <p>Beyond trapezoidal profiles, we offer **Factory Cranked and Curved Profiles** for bull-nosed finishes and specialized warehouse designs.</p>
+                                </Card>
+                            </div>
                         </div>
+                    </motion.section>
+
+                    <motion.section
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <Card variant="solid" className={styles.contentCard}>
+                            <h2>The Zinco Advantage</h2>
+                            <ul className={styles.styledList}>
+                                <li>
+                                    <strong>Superior Corrosion Resistance</strong>
+                                    Galvalume sheets provide long-term protection in acidic industrial environments.
+                                </li>
+                                <li>
+                                    <strong>High Thermal Reflectivity</strong>
+                                    Reflects solar radiation to reduce cooling loads and HVAC energy costs.
+                                </li>
+                                <li>
+                                    <strong>Remarkable Recovery</strong>
+                                    Sheets handle industrial vibrations without losing protective properties or shape.
+                                </li>
+                                <li>
+                                    <strong>Sustainable Choice</strong>
+                                    100% recyclable steel, ideal for green-certified industrial buildings.
+                                </li>
+                            </ul>
+                        </Card>
                     </motion.section>
 
                     <motion.section
@@ -278,14 +318,20 @@ const RoofingMetalSheets = () => {
                         transition={{ duration: 0.6 }}
                     >
                         <h2>Maintenance and Longevity Tips</h2>
-                        <div className={styles.contentBlock}>
-                            <p>
-                                While our metal roofing sheets are designed for extreme durability, regular maintenance can further extend their lifespan beyond 30+ years. We recommend a bi-annual inspection to clear debris from gutters and valleys. This prevents moisture buildup and ensure the anti-capillary grooves remain unobstructed.
-                            </p>
-                            <p>
-                                In industrial zones like <strong>Kharghar or Navi Mumbai</strong>, salt and chemical deposits can settle on the surface. Rinsing your roof with clean water once a year will help preserve the vibrant finish of your PPGI/PPGL coatings. Our sheets are designed for "set and forget" peace of mind, but a little care ensures they look new for decades.
-                            </p>
-                        </div>
+                        <ul className={styles.styledList}>
+                            <li>
+                                <strong>Bi-Annual Inspections</strong>
+                                Clear debris from gutters and valleys to ensure unobstructed anti-capillary flow.
+                            </li>
+                            <li>
+                                <strong>Annual Rinsing</strong>
+                                In coastal zones like Kharghar or Vashi, rinse with clean water to remove salt and chemical deposits.
+                            </li>
+                            <li>
+                                <strong>Fastener Check</strong>
+                                Periodic audits of structural fasteners to maintain high-wind load security.
+                            </li>
+                        </ul>
                     </motion.section>
 
                     <motion.section

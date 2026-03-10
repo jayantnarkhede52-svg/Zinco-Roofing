@@ -1,5 +1,8 @@
 .productPage {
     min-height: 100vh;
+    background: #ffffff !important;
+    color: #0b1f3f !important;
+    text-align: center;
 }
 
 .hero {
@@ -31,6 +34,13 @@
     position: relative;
     z-index: 2;
     width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
 }
 
 .sublabel {
@@ -104,10 +114,12 @@
 }
 
 .section h2 {
-    font-size: var(--text-3xl);
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(var(--text-3xl), 4vw, var(--text-4xl));
     margin-bottom: var(--spacing-xl);
-    color: var(--text-primary);
-    font-weight: 700;
+    color: #0b1f3f !important;
+    font-weight: 800;
+    text-align: center;
 }
 
 /* Content Blocks */
@@ -118,12 +130,54 @@
 .contentBlock p {
     font-size: var(--text-base);
     line-height: 1.8;
-    color: var(--text-secondary);
+    color: #0b1f3f !important;
     margin-bottom: var(--spacing-md);
+    text-align: center;
 }
 
 .contentBlock p:last-child {
     margin-bottom: 0;
+}
+
+.contentBlock h3 {
+    font-size: var(--text-3xl);
+    color: #0b1f3f !important;
+    margin-top: var(--spacing-2xl);
+    margin-bottom: var(--spacing-sm);
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Content Cards (Text wrapped in Cards) */
+.contentCard {
+    background: var(--gray-900) !important;
+    border: 1px solid var(--gray-800) !important;
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-2xl);
+    margin-bottom: var(--spacing-xl);
+    text-align: left;
+}
+
+.contentCard h2,
+.contentCard h3,
+.contentCard h4 {
+    color: var(--white) !important;
+    text-align: left !important;
+    margin-top: 0 !important;
+    margin-bottom: var(--spacing-lg) !important;
+}
+
+.contentCard p,
+.contentCard li,
+.contentCard strong,
+.contentCard ul li,
+.contentCard ol li {
+    color: var(--gray-200) !important;
+    text-align: left !important;
+}
+
+.contentCard .styledList {
+    text-align: left !important;
 }
 
 /* Benefits Grid */
@@ -148,13 +202,15 @@
 .benefitCard h4 {
     font-size: var(--text-xl);
     margin-bottom: var(--spacing-sm);
-    color: var(--white);
+    color: var(--white) !important;
+    text-align: center;
 }
 
 .benefitCard p {
     font-size: var(--text-sm);
-    color: var(--gray-100);
+    color: var(--gray-300) !important;
     line-height: 1.6;
+    text-align: center;
 }
 
 
@@ -168,13 +224,15 @@
 .featureItem {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: var(--spacing-sm);
     padding: var(--spacing-md);
     background: var(--gray-900);
     border-radius: var(--radius-lg);
     border: 1px solid var(--gray-800);
     transition: all var(--transition-base);
-    color: var(--white);
+    color: var(--white) !important;
+    text-align: center;
 }
 
 .featureItem:hover {
@@ -231,7 +289,7 @@
 
 .accessoryCard h4 {
     font-size: var(--text-sm);
-    color: var(--white);
+    color: var(--white) !important;
     font-weight: 500;
     margin: 0;
 }
@@ -249,14 +307,16 @@
 
 .specLabel {
     font-weight: 600;
-    color: var(--white);
+    color: var(--white) !important;
+    text-align: center;
 }
 
 .specValue {
-    color: var(--gray-200);
-    text-align: right;
+    color: var(--gray-200) !important;
+    text-align: center;
     font-weight: 500;
 }
+
 
 /* Applications */
 .applicationsGrid {
@@ -272,9 +332,16 @@
 
 .appCard h4 {
     font-size: var(--text-lg);
-    color: var(--white);
+    color: var(--white) !important;
     font-weight: 600;
     margin: 0;
+    text-align: center;
+}
+
+.lightCard .specLabel,
+.lightCard .specValue,
+.appCard.lightCard h4 {
+    color: #0b1f3f !important;
 }
 
 /* CTA Section */
@@ -324,20 +391,22 @@
 }
 
 .customTable th {
-    background: rgba(255, 255, 255, 0.08);
-    color: var(--accent-400);
+    background: #f1f5f9;
+    color: #0b1f3f !important;
     font-weight: 700;
     padding: var(--spacing-md);
     border-bottom: 2px solid var(--accent-500);
     text-transform: uppercase;
     letter-spacing: 0.08em;
+    text-align: center;
 }
 
 .customTable td {
     padding: var(--spacing-md);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    color: var(--white);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--gray-300) !important;
     font-weight: 500;
+    text-align: center;
 }
 
 .customTable tr:hover {
@@ -351,16 +420,18 @@
 }
 
 .grid2Col h3 {
-    color: var(--white);
+    color: var(--white) !important;
     font-size: var(--text-xl);
     margin-bottom: var(--spacing-sm);
     font-weight: 600;
+    text-align: center;
 }
 
 .grid2Col p {
-    color: var(--gray-200);
+    color: var(--gray-300) !important;
     font-size: var(--text-base);
     margin-bottom: var(--spacing-xs);
+    text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -441,6 +512,7 @@
     border-radius: var(--radius-xl);
     border: 1px solid var(--gray-800);
     transition: all var(--transition-base);
+    text-align: center;
 }
 
 .faqItem:hover {
@@ -454,6 +526,7 @@
     font-size: var(--text-lg);
     margin-bottom: var(--spacing-sm);
     font-weight: 700;
+    text-align: center;
 }
 
 .faqItem p {
@@ -461,6 +534,7 @@
     line-height: 1.6;
     font-size: var(--text-base);
     margin: 0;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -543,6 +617,14 @@
     border-left: 4px solid var(--accent-500);
 }
 
+.highlightCard h3 {
+    color: var(--white) !important;
+}
+
+.highlightCard p {
+    color: var(--gray-300) !important;
+}
+
 .highlightIcon {
     font-size: 2.5rem;
     color: var(--accent-500);
@@ -570,22 +652,49 @@
 
 .styledList li {
     position: relative;
-    padding-left: var(--spacing-lg);
+    padding-left: 2rem;
     margin-bottom: var(--spacing-md);
-    color: var(--text-secondary);
+    color: #0b1f3f !important;
     line-height: 1.6;
+    font-size: var(--text-lg);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .styledList li::before {
     content: "✓";
-    position: absolute;
-    left: 0;
+    position: relative;
+    display: inline-block;
     color: var(--accent-500);
-    font-weight: bold;
+    font-weight: 900;
+    font-size: 1.2em;
+    margin-bottom: 0.25rem;
 }
 
 .styledList strong {
-    color: var(--text-primary);
+    color: #0b1f3f;
     display: block;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
+    font-size: 1.05em;
+    text-align: center;
+}
+
+/* Specific overrides for lists inside dark cards */
+.contentCard .styledList li {
+    color: var(--gray-200) !important;
+    text-align: left !important;
+    align-items: flex-start !important;
+}
+
+.contentCard .styledList li::before {
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.contentCard .styledList strong {
+    color: var(--white) !important;
+    text-align: left !important;
 }

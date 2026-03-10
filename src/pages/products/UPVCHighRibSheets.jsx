@@ -102,26 +102,32 @@ const UPVCHighRibSheets = () => {
                 <div className={styles.content}>
                     <section className={styles.section}>
                         <div className={styles.contentBlock}>
-                            <h2>Chemical-Proof Industrial Solutions: The UPVC High-Rib Advantage</h2>
-                            <p>
-                                In the specialized industrial zones of **Taloja MIDC and the coastal regions of Uran and Panvel**, standard metal roofing sheets often fall short. Excessive humidity, salt-laden air, and chemical fumes from factories can cause traditional Galvalume or GI sheets to corrode within just a few years. Zinco Roofing Solution's **3-Layer UPVC High-Rib Sheets** are engineered specifically to thrive where metal fails. Utilizing advanced European co-extrusion technology, these sheets provide a 100% rust-proof, acid-resistant, and alkali-resistant roofing solution.
-                            </p>
-                            <p>
-                                What makes our UPVC High-Rib sheets unique is their **trapezoidal 3-layer construction**. Unlike single-skin plastic sheets, our panels feature a middle layer with a specialized micro-foam structure. This core acts as a powerful thermal and acoustic insulator, significantly reducing the transmission of heat and the loud drumming sound of rain during the **Mumbai monsoon**. The high-rib profile adds the necessary structural strength to spanning industrial purlins, ensuring the roof remains rigid and safe even under high wind loads.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Chemical-Proof Industrial Solutions: The UPVC High-Rib Advantage</h2>
+                                <p>
+                                    In the specialized industrial zones of <strong>Taloja MIDC and the coastal regions of Uran and Panvel</strong>, standard metal roofing sheets often fall short. Excessive humidity, salt-laden air, and chemical fumes from factories can cause traditional Galvalume or GI sheets to corrode within just a few years. Zinco Roofing Solution's <strong>3-Layer UPVC High-Rib Sheets</strong> are engineered specifically to thrive where metal fails. Utilizing advanced European co-extrusion technology, these sheets provide a 100% rust-proof, acid-resistant, and alkali-resistant roofing solution.
+                                </p>
+                                <p>
+                                    What makes our UPVC High-Rib sheets unique is their <strong>trapezoidal 3-layer construction</strong>. Unlike single-skin plastic sheets, our panels feature a middle layer with a specialized micro-foam structure. This core acts as a powerful thermal and acoustic insulator, significantly reducing the transmission of heat and the loud drumming sound of rain during the <strong>Mumbai monsoon</strong>. The high-rib profile adds the necessary structural strength to spanning industrial purlins, ensuring the roof remains rigid and safe even under high wind loads.
+                                </p>
+                            </Card>
 
-                            <h3>The Science of ASA Co-Extrusion Technology</h3>
-                            <p>
-                                The top layer of each sheet is coated with **ASA (Acrylonitrile Styrene Acrylate)**, a high-performance weatherable resin. ASA is renowned for its exceptional UV resistance and color stability. In the intense sun of **Navi Mumbai**, traditional plastics can become brittle and fade; however, the ASA coating ensures that our UPVC sheets maintain their structural integrity and vibrant appearance for over **20-25 years**. This top layer also serves as a primary heat-reflective surface, keeping the interior of the factory or warehouse significantly cooler.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>The Science of ASA Co-Extrusion Technology</h3>
+                                <p>
+                                    The top layer of each sheet is coated with <strong>ASA (Acrylonitrile Styrene Acrylate)</strong>, a high-performance weatherable resin. ASA is renowned for its exceptional UV resistance and color stability. In the intense sun of <strong>Navi Mumbai</strong>, traditional plastics can become brittle and fade; however, the ASA coating ensures that our UPVC sheets maintain their structural integrity and vibrant appearance for over <strong>20-25 years</strong>. This top layer also serves as a primary heat-reflective surface, keeping the interior of the factory or warehouse significantly cooler.
+                                </p>
+                            </Card>
 
-                            <h3>Why Chemical & Coastal Industries Choose Zinco UPVC</h3>
-                            <ul>
-                                <li><strong>100% Corrosion Resistance:</strong> Ideally suited for chemical factories, electroplating units, and fertilizer plants in **Taloja** where acidic fumes are present.</li>
-                                <li><strong>Superior Heat Insulation:</strong> The multi-layer technology provides a thermal conductivity that is much lower than metal, reducing the temperature inside the shed by 3-5°C naturally.</li>
-                                <li><strong>Excellent Sound Absorption:</strong> The specialized foam core dampens noise by up to 30dB, creating a quieter and more productive work environment for your staff.</li>
-                                <li><strong>Eco-Friendly & Safe:</strong> Our UPVC sheets are asbestos-free and recyclable, making them a sustainable choice for modern industrial infrastructure across the Mumbai region.</li>
-                            </ul>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Why Chemical & Coastal Industries Choose Zinco UPVC</h3>
+                                <ul className={styles.styledList}>
+                                    <li><strong>100% Corrosion Resistance:</strong> Ideally suited for chemical factories, electroplating units, and fertilizer plants in <strong>Taloja</strong> where acidic fumes are present.</li>
+                                    <li><strong>Superior Heat Insulation:</strong> The multi-layer technology provides a thermal conductivity that is much lower than metal, reducing the temperature inside the shed by 3-5°C naturally.</li>
+                                    <li><strong>Excellent Sound Absorption:</strong> The specialized foam core dampens noise by up to 30dB, creating a quieter and more productive work environment for your staff.</li>
+                                    <li><strong>Eco-Friendly & Safe:</strong> Our UPVC sheets are asbestos-free and recyclable, making them a sustainable choice for modern industrial infrastructure across the Mumbai region.</li>
+                                </ul>
+                            </Card>
                         </div>
                     </section>
 
@@ -172,11 +178,13 @@ const UPVCHighRibSheets = () => {
                     </section>
 
                     <section className={styles.section}>
-                        <h2>Technical Integrity and Installation</h2>
                         <div className={styles.contentBlock}>
-                            <p>
-                                Because UPVC moves more than steel due to temperature changes, precision installation is critical. Our specialized teams in **Navi Mumbai** use EPDM-backed wide-diameter fixings to ensure that the roof remains watertight while allowing for the natural thermal expansion of the sheets. This engineering approach eliminates the risk of cracking or fastener failure over the decades.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Technical Integrity and Installation</h2>
+                                <p>
+                                    Because UPVC moves more than steel due to temperature changes, precision installation is critical. Our specialized teams in <strong>Navi Mumbai</strong> use EPDM-backed wide-diameter fixings to ensure that the roof remains watertight while allowing for the natural thermal expansion of the sheets. This engineering approach eliminates the risk of cracking or fastener failure over the decades.
+                                </p>
+                            </Card>
                         </div>
                     </section>
 

@@ -96,32 +96,59 @@ const Shingles = () => {
                 <div className={styles.content}>
                     <section className={styles.section}>
                         <div className={styles.contentBlock}>
-                            <h2>Timeless Elegance & Industrial Protection: Premium Roofing Shingles</h2>
-                            <p>
-                                In the picturesque locations of **Lonavala, Karjat, Alibaug, and the premium outskirts of Navi Mumbai**, the roof is the crowning glory of any villa or resort. Zinco Roofing Solution's **Premium Asphalt Shingles** offer a unique combination of aesthetic sophistication and multi-layered weather protection. Unlike traditional clay tiles that can be heavy and prone to breakage, shingles provide a lightweight, high-performance solution that mimics the texture and beauty of natural materials while providing modern durability.
-                            </p>
-                            <p>
-                                Our shingles are not just a single layer; they are a composite system designed for the extremes. At the core is a **high-strength fiberglass mat** that provides structural stability and fire resistance. This mat is saturated on both sides with **weathering-grade asphalt**, which acts as the primary waterproofing barrier. The final touch is a layer of **ceramic-coated mineral granules** that shield the asphalt from destructive UV radiation and provide the vibrant, fade-resistant colors that characterize a premium shingle roof.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Timeless Elegance & Industrial Protection</h2>
+                                <p>
+                                    The roof is the crowning glory of any villa or resort. Zinco Roofing Solution's Premium Asphalt Shingles offer a unique combination of beautiful looks and strong weather protection.
+                                </p>
+                                <p>
+                                    Unlike traditional clay tiles that can be heavy and prone to break, shingles are lightweight. They offer a high-performance solution that mimics the texture of natural materials while providing modern durability.
+                                </p>
+                                <p>
+                                    Our shingles are not just a single layer; they are a multi-layered system designed for extreme weather. At the core is a <strong>high-strength fiberglass mat</strong> that gives stability and fire resistance. 
+                                </p>
+                                <p>
+                                    This mat is coated on both sides with <strong>weather-grade asphalt</strong>, which acts as the main waterproofing barrier. The final touch is a layer of <strong>ceramic-coated mineral granules</strong> that shield the roof from UV rays and provide vibrant, fade-resistant colors.
+                                </p>
+                            </Card>
 
-                            <h3>The Science of Self-Sealing and Wind Resistance</h3>
-                            <p>
-                                One of the most technologically advanced features of our shingles is the **thermal-active self-sealing strip**. During installation in the sunny climate of **Maharashtra**, the heat of the sun activates a specialized adhesive on the underside of each shingle, bonding it permanently to the course below. This creates a continuous, unified waterproofing membrane that is virtually immune to wind uplift. Our architectural shingles are tested to withstand wind speeds of up to **130-150 kmph**, making them ideal for the gusty monsoon seasons in the Western Ghats.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Self-Sealing and Wind Resistance</h3>
+                                <p>
+                                    A key feature of our shingles is the <strong>thermal-active self-sealing strip</strong>. During installation in sunny climates, the heat of the sun activates a special adhesive on the underside of each shingle.
+                                </p>
+                                <p>
+                                    This bonds it permanently to the layer below, creating a continuous waterproof seal that resists wind uplift. Our architectural shingles are tested to withstand wind speeds of up to <strong>130-150 kmph</strong>, making them ideal for gusty monsoon seasons.
+                                </p>
+                            </Card>
 
-                            <h3>Why Architects in Mumbai Prefer Shingles for Luxury Projects</h3>
-                            <ul>
-                                <li><strong>Unmatched Aesthetic Depth:</strong> The multi-layered "laminate" design of our architectural shingles creates a 3D effect with deep shadow lines, adding character and value to bungalows in **Khandala and Alibaug**.</li>
-                                <li><strong>Superior Impact Resistance:</strong> Shingles are naturally resilient. Unlike rigid tiles, they can absorb the impact of falling branches or hailstones common in the Sahyadri ranges without cracking or shattering.</li>
-                                <li><strong>Excellent Sound Insulation:</strong> The multi-layered asphalt and mineral composition acts as a natural sound dampener. During heavy Mumbai rain, a shingle roof is significantly quieter than metal or clay, provided a peaceful interior for resorts.</li>
-                                <li><strong>Low Maintenance & Longevity:</strong> With warranties ranging from 20 to 50 years, shingles are truly a "fit and forget" solution. They are resistant to algae growth and do not require periodic painting or sealing.</li>
-                            </ul>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Why Architects Prefer Shingles</h3>
+                                <ul className={styles.styledList}>
+                                    <li>
+                                        <strong>Unmatched Aesthetic Depth</strong>
+                                        The multi-layered "laminate" design creates a 3D effect with deep shadow lines, adding character to luxury bungalows.
+                                    </li>
+                                    <li>
+                                        <strong>Superior Impact Resistance</strong>
+                                        Shingles are naturally resilient. Unlike rigid tiles, they can absorb the impact of falling branches or hailstones without cracking.
+                                    </li>
+                                    <li>
+                                        <strong>Excellent Sound Insulation</strong>
+                                        The asphalt and mineral composition acts as a natural sound dampener, keeping interiors quiet during heavy rain.
+                                    </li>
+                                    <li>
+                                        <strong>Low Maintenance & Longevity</strong>
+                                        With warranties ranging from 20 to 50 years, shingles are resistant to algae growth and do not require periodic painting.
+                                    </li>
+                                </ul>
+                            </Card>
                         </div>
                     </section>
 
                     <section className={styles.section}>
                         <h2>Technical Specifications</h2>
-                        <Card variant="glass">
+                        <Card variant="solid">
                             <div className={styles.specsTable}>
                                 {specifications.map((spec, index) => (
                                     <div key={index} className={styles.specRow}>
@@ -157,7 +184,7 @@ const Shingles = () => {
                         <div className={styles.applicationsGrid}>
                             {applications.map((app, index) => (
                                 <Card key={index} variant="solid" className={styles.appCard}>
-                                    <FaMapMarkerAlt style={{ color: 'var(--accent-500)', marginBottom: '0.5rem' }} />
+                                    <FaMapMarkerAlt style={{ color: 'var(--accent-500)', marginBottom: '0.5rem', fontSize: '1.5rem', display: 'block', margin: '0 auto' }} />
                                     <h4>{app}</h4>
                                 </Card>
                             ))}
@@ -168,7 +195,10 @@ const Shingles = () => {
                         <h2>Installation and Substrate Integrity</h2>
                         <div className={styles.contentBlock}>
                             <p>
-                                The performance of a shingle roof depends on the quality of the substrate. At Zinco, we recommend a solid deck of water-resistant plywood or cement board, covered by a high-quality **underlayment membrane**. This dual-layer system ensures that your villa in **Panvel or Navi Mumbai** remains 100% leak-proof even in the face of continuous torrential rainfall.
+                                The performance of a shingle roof depends on the quality of the base structure beneath it. 
+                            </p>
+                            <p>
+                                We recommend a solid deck of water-resistant plywood or cement board, covered by a high-quality <strong>underlayment membrane</strong>. This dual-layer system ensures that your home remains 100% leak-proof even in the face of continuous torrential rainfall.
                             </p>
                         </div>
                     </section>

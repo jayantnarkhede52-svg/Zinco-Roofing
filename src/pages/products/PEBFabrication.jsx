@@ -96,26 +96,32 @@ const PEBFabrication = () => {
                 <div className={styles.content}>
                     <section className={styles.section}>
                         <div className={styles.contentBlock}>
-                            <h2>Turnkey PEB Solutions: The Future of Industrial Construction in Navi Mumbai</h2>
-                            <p>
-                                In the fast-paced industrial landscape of **Navi Mumbai, Taloja MIDC, and Panvel**, the speed of infrastructure deployment can be the difference between meeting market demand and missing out. Pre-Engineered Buildings (PEB) have revolutionized the construction industry, offering a faster, more cost-effective, and highly flexible alternative to traditional civil construction. At Zinco Roofing Solution, we specialize in provide complete **Turnkey PEB Shed Solutions**, from the initial architectural design to the final on-site erection.
-                            </p>
-                            <p>
-                                A PEB is not just a steel shed; it is a meticulously engineered system of structural components that work in harmony. Our buildings are optimized using advanced design software like **MBS and STAAD Pro**, ensuring that every gram of steel is placed where it is needed most. This "intelligent design" approach allows us to create large, clear-span structures (up to 60 meters or more without internal columns) that are ideal for the modern logistics requirements of **Bhiwandi and Panvel**'s massive warehouses.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Turnkey PEB Solutions: The Future of Industrial Construction in Navi Mumbai</h2>
+                                <p>
+                                    In the fast-paced industrial landscape of <strong>Navi Mumbai, Taloja MIDC, and Panvel</strong>, the speed of infrastructure deployment can be the difference between meeting market demand and missing out. Pre-Engineered Buildings (PEB) have revolutionized the construction industry, offering a faster, more cost-effective, and highly flexible alternative to traditional civil construction. At Zinco Roofing Solution, we specialize in provide complete <strong>Turnkey PEB Shed Solutions</strong>, from the initial architectural design to the final on-site erection.
+                                </p>
+                                <p>
+                                    A PEB is not just a steel shed; it is a meticulously engineered system of structural components that work in harmony. Our buildings are optimized using advanced design software like <strong>MBS and STAAD Pro</strong>, ensuring that every gram of steel is placed where it is needed most. This "intelligent design" approach allows us to create large, clear-span structures (up to 60 meters or more without internal columns) that are ideal for the modern logistics requirements of <strong>Bhiwandi and Panvel</strong>'s massive warehouses.
+                                </p>
+                            </Card>
 
-                            <h3>PEB vs. Conventional Steel: Why the Shift?</h3>
-                            <p>
-                                The primary advantage of PEB over conventional steel-fabricated sheds lies in weight and precision. In a conventional structure, uniform hot-rolled sections are used throughout, leading to excess weight in areas with lower stress. Our PEB members are **"built-up" sections**—tapered I-beams where the depth of the section is increased in areas of higher bending moment. This can reduce the total weight of the structure by 20-30%, significantly lowering material costs while maintaining or even increasing overall structural integrity.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>PEB vs. Conventional Steel: Why the Shift?</h3>
+                                <p>
+                                    The primary advantage of PEB over conventional steel-fabricated sheds lies in weight and precision. In a conventional structure, uniform hot-rolled sections are used throughout, leading to excess weight in areas with lower stress. Our PEB members are <strong>"built-up" sections</strong>—tapered I-beams where the depth of the section is increased in areas of higher bending moment. This can reduce the total weight of the structure by 20-30%, significantly lowering material costs while maintaining or even increasing overall structural integrity.
+                                </p>
+                            </Card>
 
-                            <h3>Why Industrial Shed Owners in Mumbai Trust Zinco</h3>
-                            <ul>
-                                <li><strong>Rapid Project Delivery:</strong> Because 90% of the fabrication happens in a controlled factory environment in Navi Mumbai, on-site erection is extremely fast. A high-quality PEB warehouse can be ready for use in weeks, not months.</li>
-                                <li><strong>Seismic and Wind Resistance:</strong> Our structures are designed to comfortably exceed the **Zone III seismic requirements** and the high wind loads (up to 150 kmph) common in the Mumbai coastal region.</li>
-                                <li><strong>Aesthetic Flexibility:</strong> We offer a variety of wall and roof cladding options, including **PUF panels for cold storage** or high-rib color-coated sheets, allowing you to match the aesthetic and functional needs of your facility.</li>
-                                <li><strong>Low Maintenance:</strong> High-quality factory-applied coatings and precision-bolted joints mean that our buildings require minimal maintenance compared to conventional welded structures.</li>
-                            </ul>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Why Industrial Shed Owners in Mumbai Trust Zinco</h3>
+                                <ul className={styles.styledList}>
+                                    <li><strong>Rapid Project Delivery:</strong> Because 90% of the fabrication happens in a controlled factory environment in Navi Mumbai, on-site erection is extremely fast. A high-quality PEB warehouse can be ready for use in weeks, not months.</li>
+                                    <li><strong>Seismic and Wind Resistance:</strong> Our structures are designed to comfortably exceed the <strong>Zone III seismic requirements</strong> and the high wind loads (up to 150 kmph) common in the Mumbai coastal region.</li>
+                                    <li><strong>Aesthetic Flexibility:</strong> We offer a variety of wall and roof cladding options, including <strong>PUF panels for cold storage</strong> or high-rib color-coated sheets, allowing you to match the aesthetic and functional needs of your facility.</li>
+                                    <li><strong>Low Maintenance:</strong> High-quality factory-applied coatings and precision-bolted joints mean that our buildings require minimal maintenance compared to conventional welded structures.</li>
+                                </ul>
+                            </Card>
                         </div>
                     </section>
 
@@ -165,11 +171,13 @@ const PEBFabrication = () => {
                     </section>
 
                     <section className={styles.section}>
-                        <h2>Design Standards and Engineering Quality</h2>
                         <div className={styles.contentBlock}>
-                            <p>
-                                Every structure we build complies with the latest **IS 800 (Indian Standard code for general steel construction)** and **MBMA (Metal Building Manufacturers Association)** guidelines. Whether you are building a small manufacturing unit in **Rabale** or a multi-thousand-square-foot logistics park in **Bhiwandi**, our engineering team ensures that every bolted connection and structural member is optimized for safety and efficiency.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Design Standards and Engineering Quality</h2>
+                                <p>
+                                    Every structure we build complies with the latest <strong>IS 800 (Indian Standard code for general steel construction)</strong> and <strong>MBMA (Metal Building Manufacturers Association)</strong> guidelines. Whether you are building a small manufacturing unit in <strong>Rabale</strong> or a multi-thousand-square-foot logistics park in <strong>Bhiwandi</strong>, our engineering team ensures that every bolted connection and structural member is optimized for safety and efficiency.
+                                </p>
+                            </Card>
                         </div>
                     </section>
 

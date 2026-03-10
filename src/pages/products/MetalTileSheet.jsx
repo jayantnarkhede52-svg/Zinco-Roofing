@@ -96,29 +96,35 @@ const MetalTileSheet = () => {
                 <div className={styles.content}>
                     <section className={styles.section}>
                         <div className={styles.contentBlock}>
-                            <h2>Heritage Style Meets Modern Strength: The Metal Tile Revolution</h2>
-                            <p>
-                                In the coastal beauty of **Alibaug, the Konkan region, and the residential pockets of Panvel**, architectural heritage is often defined by the classic Mangalore tile roof. However, traditional clay tiles come with challenges—they are heavy, fragile, and often require expensive structural reinforcement. Zinco Roofing Solution's **Metal Tile Sheets** provide the perfect harmony between classic aesthetics and high-performance steel technology. Our sheets capture the undulating charm of traditional tiles while delivering the 100% leak-proof security of a modern metal roof.
-                            </p>
-                            <p>
-                                Manufactured from premium **Pre-painted Galvalume or Galvanized steel**, our metal tiles are engineered to survive the most punishing tropical weather. The multi-layered coating system, featuring an **Aluminum-Zinc alloy**, provides up to four times the corrosion resistance of standard galvanized steel. This is a critical advantage for resorts and bungalows located near the salt-laden air of the Arabian Sea. The high-quality top coat is UV-stabilized, ensuring that the vibrant reds, oranges, and earthy tones of your roof won't fade or peel under the intense Indian sun.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Heritage Style Meets Modern Strength: The Metal Tile Revolution</h2>
+                                <p>
+                                    In the coastal beauty of <strong>Alibaug, the Konkan region, and the residential pockets of Panvel</strong>, architectural heritage is often defined by the classic Mangalore tile roof. However, traditional clay tiles come with challenges—they are heavy, fragile, and often require expensive structural reinforcement. Zinco Roofing Solution's <strong>Metal Tile Sheets</strong> provide the perfect harmony between classic aesthetics and high-performance steel technology. Our sheets capture the undulating charm of traditional tiles while delivering the 100% leak-proof security of a modern metal roof.
+                                </p>
+                                <p>
+                                    Manufactured from premium <strong>Pre-painted Galvalume or Galvanized steel</strong>, our metal tiles are engineered to survive the most punishing tropical weather. The multi-layered coating system, featuring an <strong>Aluminum-Zinc alloy</strong>, provides up to four times the corrosion resistance of standard galvanized steel. This is a critical advantage for resorts and bungalows located near the salt-laden air of the Arabian Sea. The high-quality top coat is UV-stabilized, ensuring that the vibrant reds, oranges, and earthy tones of your roof won't fade or peel under the intense Indian sun.
+                                </p>
+                            </Card>
 
-                            <h3>Structural Efficiency and Rapid Installation</h3>
-                            <p>
-                                One of the most compelling reasons to switch to metal tiles is weight reduction. A traditional clay tile roof can weigh between 40-50 kg per square meter, placing immense stress on the supporting structure. In contrast, our **metal tile sheets in Navi Mumbai** weigh only about 5-7 kg per square meter. This staggering 85% reduction in weight allows architects to design lighter, more cost-effective wooden or steel frames for their projects.
-                            </p>
-                            <p>
-                                Every sheet is custom-pressed to create a series of "tile steps" that provide both aesthetic depth and structural rigidity. The large format of the sheets (1100mm width) means that a single panel covers the area of dozens of individual clay tiles, significantly reducing the number of joints and the time required for on-site installation.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Structural Efficiency and Rapid Installation</h3>
+                                <p>
+                                    One of the most compelling reasons to switch to metal tiles is weight reduction. A traditional clay tile roof can weigh between 40-50 kg per square meter, placing immense stress on the supporting structure. In contrast, our <strong>metal tile sheets in Navi Mumbai</strong> weigh only about 5-7 kg per square meter. This staggering 85% reduction in weight allows architects to design lighter, more cost-effective wooden or steel frames for their projects.
+                                </p>
+                                <p>
+                                    Every sheet is custom-pressed to create a series of "tile steps" that provide both aesthetic depth and structural rigidity. The large format of the sheets (1100mm width) means that a single panel covers the area of dozens of individual clay tiles, significantly reducing the number of joints and the time required for on-site installation.
+                                </p>
+                            </Card>
 
-                            <h3>Why Contemporary Resorts Choose Zinco Metal Tiles</h3>
-                            <ul>
-                                <li><strong>100% Leak Proof:</strong> Unlike individual tiles that can shift and leak during heavy Mumbai monsoons, our metal sheets provide a continuous, overlapping barrier that is virtually watertight.</li>
-                                <li><strong>Low Maintenance:</strong> No more broken tiles after a storm. Our metal tiles are impact-resistant and do not require the frequent repairs or replacements common with clay.</li>
-                                <li><strong>Environmentally Conscious:</strong> Steel is 100% recyclable. Choosing metal tiles reduces the demand for the topsoil excavation required for clay tile production.</li>
-                                <li><strong>Versatile Color Palette:</strong> Whether you want a traditional "terracotta" look for a villa in **Kharghar** or a sleek "matte black" for a modern farmhouse in **Panvel**, we offer a wide range of colors and finishes.</li>
-                            </ul>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Why Contemporary Resorts Choose Zinco Metal Tiles</h3>
+                                <ul className={styles.styledList}>
+                                    <li><strong>100% Leak Proof:</strong> Unlike individual tiles that can shift and leak during heavy Mumbai monsoons, our metal sheets provide a continuous, overlapping barrier that is virtually watertight.</li>
+                                    <li><strong>Low Maintenance:</strong> No more broken tiles after a storm. Our metal tiles are impact-resistant and do not require the frequent repairs or replacements common with clay.</li>
+                                    <li><strong>Environmentally Conscious:</strong> Steel is 100% recyclable. Choosing metal tiles reduces the demand for the topsoil excavation required for clay pitch production.</li>
+                                    <li><strong>Versatile Color Palette:</strong> Whether you want a traditional "terracotta" look for a villa in <strong>Kharghar</strong> or a sleek "matte black" for a modern farmhouse in <strong>Panvel</strong>, we offer a wide range of colors and finishes.</li>
+                                </ul>
+                            </Card>
                         </div>
                     </section>
 
@@ -168,11 +174,13 @@ const MetalTileSheet = () => {
                     </section>
 
                     <section className={styles.section}>
-                        <h2>Installation and Aesthetic Integrity</h2>
                         <div className={styles.contentBlock}>
-                            <p>
-                                Precision installation is the hallmark of a Zinco roof. We use high-quality EPDM-backed fasteners that are color-matched to your sheets, ensuring that the attachment points are invisible and watertight. For the sloped roofs of **resorts in the Konkan**, we recommend specific overlap patterns that maximize water shed and enhance the visual "step" effect of the tiles.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Installation and Aesthetic Integrity</h2>
+                                <p>
+                                    Precision installation is the hallmark of a Zinco roof. We use high-quality EPDM-backed fasteners that are color-matched to your sheets, ensuring that the attachment points are invisible and watertight. For the sloped roofs of <strong>resorts in the Konkan</strong>, we recommend specific overlap patterns that maximize water shed and enhance the visual "step" effect of the tiles.
+                                </p>
+                            </Card>
                         </div>
                     </section>
 

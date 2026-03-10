@@ -87,13 +87,15 @@ const SolarInstallation = () => {
                 <div className={styles.content}>
                     <section className={styles.section}>
                         <div className={styles.contentBlock}>
-                            <h2>Powering Industry with Sustainable Energy</h2>
-                            <p>
-                                With the rising costs of energy and the increasing focus on sustainability, transitioning to solar energy is a smart investment for any industrial facility. At Zinco Roofing Solution, we provide comprehensive **Solar Panel Installation** services, focusing on secure mounting and reliable performance on industrial and commercial roofs.
-                            </p>
-                            <p>
-                                Our team understands the unique challenges of mounting solar panels on different roofing profiles, from trapezoidal metal sheets to insulated PUF panels. We use specialized fixing systems that ensure a leak-proof and secure installation, even in high-wind areas like **Panvel** and **Vashi**.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Powering Industry with Sustainable Energy</h2>
+                                <p>
+                                    With the rising costs of energy and the increasing focus on sustainability, transitioning to solar energy is a smart investment for any industrial facility. At Zinco Roofing Solution, we provide comprehensive <strong>Solar Panel Installation</strong> services, focusing on secure mounting and reliable performance on industrial and commercial roofs.
+                                </p>
+                                <p>
+                                    Our team understands the unique challenges of mounting solar panels on different roofing profiles, from trapezoidal metal sheets to insulated PUF panels. We use specialized fixing systems that ensure a leak-proof and secure installation, even in high-wind areas like <strong>Panvel</strong> and <strong>Vashi</strong>.
+                                </p>
+                            </Card>
                         </div>
                     </section>
 
@@ -130,10 +132,12 @@ const SolarInstallation = () => {
 
                     <section className={styles.section}>
                         <div className={styles.contentBlock}>
-                            <h3>The Zinco Approach to Solar Mounting</h3>
-                            <p>
-                                We prioritize both energy efficiency and roof integrity. Our mounting systems are designed to distribute load evenly and avoid any damage to the underlying roofing material. We also provide professional maintenance and cleaning services to ensure your solar array continues to operate at peak performance for years to come.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>The Zinco Approach to Solar Mounting</h3>
+                                <p>
+                                    We prioritize both energy efficiency and roof integrity. Our mounting systems are designed to distribute load evenly and avoid any damage to the underlying roofing material. We also provide professional maintenance and cleaning services to ensure your solar array continues to operate at peak performance for years to come.
+                                </p>
+                            </Card>
                         </div>
                     </section>
 
