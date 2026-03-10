@@ -19,12 +19,10 @@ export default defineConfig({
         '/terms-of-service',
         '/areas'
       ],
-      renderer: '@prerenderer/renderer-puppeteer',
+      renderer: '@prerenderer/renderer-jsdom',
       rendererOptions: {
         maxConcurrentRoutes: 1,
-        renderAfterTime: 7000,
-        headless: true,
-        args: ['--no-sandbox', '--disable-setuid-sandbox']
+        renderAfterTime: 7000
       }
     })
   ],
