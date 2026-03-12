@@ -5,52 +5,50 @@ import Footer from './components/layout/Footer';
 import ScrollToTop from './components/shared/ScrollToTop';
 import './styles/animations.css';
 
-// Eagerly load main pages for pre-rendering stability
+// Eagerly load all pages for pre-rendering stability (Helmet needs eager imports to inject page-specific meta tags)
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Services from './pages/Services';
 import Products from './pages/Products';
+import Contact from './pages/Contact';
+import Gallery from './pages/Gallery';
+import NotFound from './pages/NotFound';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
 
-// Lazy load other pages
-const Contact = lazy(() => import('./pages/Contact'));
-const Gallery = lazy(() => import('./pages/Gallery'));
-const NotFound = lazy(() => import('./pages/NotFound'));
-const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
-const TermsOfService = lazy(() => import('./pages/TermsOfService'));
-
-// Lazy load product categories
-const RoofingMetalSheets = lazy(() => import('./pages/products/RoofingMetalSheets'));
-const InsulatedSheets = lazy(() => import('./pages/products/InsulatedSheets'));
-const RoofingAccessories = lazy(() => import('./pages/products/RoofingAccessories'));
-const PVCUPVCSheets = lazy(() => import('./pages/products/PVCUPVCSheets'));
-const Purlins = lazy(() => import('./pages/products/Purlins'));
-const PolycarbonateSheets = lazy(() => import('./pages/products/PolycarbonateSheets'));
-const Ventilators = lazy(() => import('./pages/products/Ventilators'));
-const PEBFabrication = lazy(() => import('./pages/products/PEBFabrication'));
-const DeckingSheet = lazy(() => import('./pages/products/DeckingSheet'));
-const Shingles = lazy(() => import('./pages/products/Shingles'));
-const MetalTileSheet = lazy(() => import('./pages/products/MetalTileSheet'));
-const RockwoolGlasswool = lazy(() => import('./pages/products/RockwoolGlasswool'));
-const HighRoofSeam = lazy(() => import('./pages/products/HighRoofSeam'));
-const AerolamSheet = lazy(() => import('./pages/products/AerolamSheet'));
-const PVCTileSheet = lazy(() => import('./pages/products/PVCTileSheet'));
-const MultiwallSheets = lazy(() => import('./pages/products/MultiwallSheets'));
-const UPVCHighRibSheets = lazy(() => import('./pages/products/UPVCHighRibSheets'));
-const SyntheticRoof = lazy(() => import('./pages/products/SyntheticRoof'));
-const UPVCSheets = lazy(() => import('./pages/products/UPVCSheets'));
-const StructuralPainting = lazy(() => import('./pages/products/StructuralPainting'));
-const SolarInstallation = lazy(() => import('./pages/products/SolarInstallation'));
+// Product categories
+import RoofingMetalSheets from './pages/products/RoofingMetalSheets';
+import InsulatedSheets from './pages/products/InsulatedSheets';
+import RoofingAccessories from './pages/products/RoofingAccessories';
+import PVCUPVCSheets from './pages/products/PVCUPVCSheets';
+import Purlins from './pages/products/Purlins';
+import PolycarbonateSheets from './pages/products/PolycarbonateSheets';
+import Ventilators from './pages/products/Ventilators';
+import PEBFabrication from './pages/products/PEBFabrication';
+import DeckingSheet from './pages/products/DeckingSheet';
+import Shingles from './pages/products/Shingles';
+import MetalTileSheet from './pages/products/MetalTileSheet';
+import RockwoolGlasswool from './pages/products/RockwoolGlasswool';
+import HighRoofSeam from './pages/products/HighRoofSeam';
+import AerolamSheet from './pages/products/AerolamSheet';
+import PVCTileSheet from './pages/products/PVCTileSheet';
+import MultiwallSheets from './pages/products/MultiwallSheets';
+import UPVCHighRibSheets from './pages/products/UPVCHighRibSheets';
+import SyntheticRoof from './pages/products/SyntheticRoof';
+import UPVCSheets from './pages/products/UPVCSheets';
+import StructuralPainting from './pages/products/StructuralPainting';
+import SolarInstallation from './pages/products/SolarInstallation';
 
 // Location SEO Pages
-const MumbaiRoofing = lazy(() => import('./pages/locations/MumbaiRoofing'));
-const PanvelRoofing = lazy(() => import('./pages/locations/PanvelRoofing'));
-const ThaneRoofing = lazy(() => import('./pages/locations/ThaneRoofing'));
-const TalojaRoofing = lazy(() => import('./pages/locations/TalojaRoofing'));
-const AmbarnathRoofing = lazy(() => import('./pages/locations/AmbarnathRoofing'));
-const NaviMumbaiRoofing = lazy(() => import('./pages/locations/NaviMumbaiRoofing'));
-const DombivliRoofing = lazy(() => import('./pages/locations/DombivliRoofing'));
-const PUFPanelNaviMumbai = lazy(() => import('./pages/locations/PUFPanelNaviMumbai'));
-const Areas = lazy(() => import('./pages/Areas'));
+import MumbaiRoofing from './pages/locations/MumbaiRoofing';
+import PanvelRoofing from './pages/locations/PanvelRoofing';
+import ThaneRoofing from './pages/locations/ThaneRoofing';
+import TalojaRoofing from './pages/locations/TalojaRoofing';
+import AmbarnathRoofing from './pages/locations/AmbarnathRoofing';
+import NaviMumbaiRoofing from './pages/locations/NaviMumbaiRoofing';
+import DombivliRoofing from './pages/locations/DombivliRoofing';
+import PUFPanelNaviMumbai from './pages/locations/PUFPanelNaviMumbai';
+import Areas from './pages/Areas';
 
 // Lazy-load Chatbot & WhatsApp (non-critical floating UI)
 const Chatbot = lazy(() => import('./components/shared/Chatbot'));

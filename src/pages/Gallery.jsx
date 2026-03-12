@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaExpandAlt, FaTimes } from 'react-icons/fa';
+import SEO from '../components/shared/SEO';
 import styles from './Gallery.module.css';
 
 // Import project images
@@ -177,6 +178,12 @@ const Gallery = () => {
 
     return (
         <div className={styles.galleryPage}>
+            <SEO
+                title="Roofing Project Gallery | Zinco Roofing Solutions"
+                description="Explore our portfolio of industrial and commercial roofing projects across Navi Mumbai, Mumbai, Thane and Maharashtra. See our PUF panels, metal roofing, UPVC sheets and more."
+                keywords="roofing project gallery, industrial roofing photos, roofing portfolio navi mumbai, metal roofing projects, puf panel installation gallery"
+                canonicalUrl="https://zincoroofing.com/gallery"
+            />
             {/* Hero Section */}
             <section className={styles.hero} style={{ '--hero-image': `url(${heroImg})` }}>
                 <div className={styles.heroOverlay} />

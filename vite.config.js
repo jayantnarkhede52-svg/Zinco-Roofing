@@ -9,6 +9,7 @@ export default defineConfig({
     react(),
     prerender({
       routes: [
+        // Main pages
         '/',
         '/industrial-roofing-projects-navi-mumbai',
         '/industrial-roofing-services-navi-mumbai',
@@ -17,7 +18,40 @@ export default defineConfig({
         '/contact',
         '/privacy-policy',
         '/terms-of-service',
-        '/areas'
+        '/areas',
+
+        // Product pages
+        '/products/roofing-metal-sheets',
+        '/products/insulated-sheets',
+        '/products/roofing-accessories',
+        '/products/pvc-upvc-sheets',
+        '/products/purlins',
+        '/products/polycarbonate-sheets',
+        '/products/ventilators',
+        '/products/peb-fabrication',
+        '/products/decking-sheet',
+        '/products/shingles',
+        '/products/metal-tile-sheet',
+        '/products/rockwool-glasswool',
+        '/products/high-roof-seam',
+        '/products/aerolam-sheet',
+        '/products/pvc-tile-sheet',
+        '/products/multiwall-sheets',
+        '/products/upvc-high-rib-sheets',
+        '/products/synthetic-roof',
+        '/products/upvc-sheets',
+        '/products/structural-painting',
+        '/products/solar-installation',
+
+        // Location SEO pages
+        '/industrial-roofing-contractors-in-mumbai',
+        '/industrial-roofing-contractors-in-panvel',
+        '/industrial-roofing-contractors-in-thane',
+        '/industrial-roofing-contractors-in-taloja',
+        '/industrial-roofing-contractors-in-ambarnath',
+        '/industrial-roofing-contractors-in-navi-mumbai',
+        '/industrial-roofing-contractors-in-dombivli',
+        '/puf-panel-manufacturer-navi-mumbai'
       ],
       renderer: '@prerenderer/renderer-jsdom',
       rendererOptions: {
