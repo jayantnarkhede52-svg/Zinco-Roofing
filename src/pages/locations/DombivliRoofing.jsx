@@ -19,7 +19,7 @@ const DombivliRoofing = () => {
                 title="Roofing Sheets Dombivli | Industrial Roofing Dombivli Specialist"
                 description="Expert Roofing Sheets Dombivli and Industrial Roofing Dombivli. High-performance metal roofing, PUF panels, and structural fabrication specialists for Dombivli MIDC."
                 keywords="Roofing Sheets Dombivli, Industrial Roofing Dombivli"
-                canonicalUrl="https://zincoroofing.com/roofing-sheets-dombivli"
+                canonicalUrl="https://zincoroof.com/roofing-sheets-dombivli"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} />

@@ -19,7 +19,7 @@ const NaviMumbaiRoofing = () => {
                 title="Roofing Sheets Navi Mumbai | Industrial Roofing Navi Mumbai Specialist"
                 description="Expert Roofing Sheets Navi Mumbai and Industrial Roofing Navi Mumbai. Factory shed fabrication, PUF panels, and metal roofing for Taloja & Rabale MIDC."
                 keywords="Roofing Sheets Navi Mumbai, Industrial Roofing Navi Mumbai"
-                canonicalUrl="https://zincoroofing.com/roofing-sheets-navi-mumbai"
+                canonicalUrl="https://zincoroof.com/roofing-sheets-navi-mumbai"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} />

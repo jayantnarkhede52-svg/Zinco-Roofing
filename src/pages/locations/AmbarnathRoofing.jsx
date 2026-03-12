@@ -19,7 +19,7 @@ const AmbarnathRoofing = () => {
                 title="Industrial Roofing Contractors in Ambarnath | Factory Shed Specialists"
                 description="The most reliable Industrial Roofing Contractors in Ambarnath. We provide high-performance metal roofing, PUF panels, and structural fabrication for Ambarnath MIDC."
                 keywords="industrial roofing contractors ambarnath, ambarnath midc roofing"
-                canonicalUrl="https://zincoroofing.com/industrial-roofing-contractors-in-ambarnath"
+                canonicalUrl="https://zincoroof.com/industrial-roofing-contractors-in-ambarnath"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} />

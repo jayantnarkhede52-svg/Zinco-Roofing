@@ -19,7 +19,7 @@ const ThaneRoofing = () => {
                 title="Industrial Roofing Contractors in Thane | Expert Wagle Estate Solutions"
                 description="Top-tier Industrial Roofing Contractors in Thane. Specializing in factory sheds, commercial roofing, and premium structural painting for Wagle Estate & MIDC."
                 keywords="industrial roofing contractors thane, thane midc roofing"
-                canonicalUrl="https://zincoroofing.com/industrial-roofing-contractors-in-thane"
+                canonicalUrl="https://zincoroof.com/industrial-roofing-contractors-in-thane"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} />

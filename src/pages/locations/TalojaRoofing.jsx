@@ -19,7 +19,7 @@ const TalojaRoofing = () => {
                 title="Industrial Roofing Contractors in Taloja | Taloja MIDC Specialist"
                 description="Expert Industrial Roofing Contractors in Taloja. Specializing in chemical-resistant roofing, PUF panels, and metal roofing for Taloja MIDC factory sheds."
                 keywords="industrial roofing contractors taloja, taloja midc roofing"
-                canonicalUrl="https://zincoroofing.com/industrial-roofing-contractors-in-taloja"
+                canonicalUrl="https://zincoroof.com/industrial-roofing-contractors-in-taloja"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} />

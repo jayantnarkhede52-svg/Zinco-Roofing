@@ -19,7 +19,7 @@ const Home = () => {
                 title="Roofing Contractor in Navi Mumbai | Zinco Roofing Solutions"
                 description="Looking for a trusted roofing contractor in Navi Mumbai? Zinco Roofing Solutions provides industrial roofing, roof ventilators, sheet installation & repair services with free site visit."
                 keywords="roofing contractor in navi mumbai, industrial roofing navi mumbai, roofing sheets suppliers mumbai, puf panel manufacturer near me"
-                canonicalUrl="https://zincoroofing.com/"
+                canonicalUrl="https://zincoroof.com/"
             />
             <Hero />
             <Suspense fallback={null}>

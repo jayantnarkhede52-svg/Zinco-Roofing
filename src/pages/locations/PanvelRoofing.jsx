@@ -20,7 +20,7 @@ const PanvelRoofing = () => {
                 title="Roofing Sheets Panvel | Industrial Roofing Panvel Specialist"
                 description="Expert Roofing Sheets Panvel and Industrial Roofing Panvel. Specializing in high-span warehouse roofing, factory sheds, and PUF panels for Panvel's logistics hubs."
                 keywords="Roofing Sheets Panvel, Industrial Roofing Panvel"
-                canonicalUrl="https://zincoroofing.com/roofing-sheets-panvel"
+                canonicalUrl="https://zincoroof.com/roofing-sheets-panvel"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} />

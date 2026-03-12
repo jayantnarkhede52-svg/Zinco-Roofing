@@ -19,7 +19,7 @@ const MumbaiRoofing = () => {
                 title="Roofing Sheets Mumbai | Industrial Roofing Mumbai Specialist"
                 description="Expert Roofing Sheets Mumbai and Industrial Roofing Mumbai. High-performance metal roofing, PUF panels, and structural fabrication for Mumbai's industrial hubs."
                 keywords="Roofing Sheets Mumbai, Industrial Roofing Mumbai"
-                canonicalUrl="https://zincoroofing.com/roofing-sheets-mumbai"
+                canonicalUrl="https://zincoroof.com/roofing-sheets-mumbai"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} />
