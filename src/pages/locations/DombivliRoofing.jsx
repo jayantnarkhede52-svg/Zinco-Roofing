@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import { FaCity, FaShieldAlt, FaTools, FaCheckCircle } from 'react-icons/fa';
 import SEO from '../../components/shared/SEO';
-import heroImage from '../../assets/img2.webp';
+import heroImage from '../../assets/locations/dombivli_hero.png';
 import domImg1 from '../../assets/Metal roofing images/Metal roofing images/1000014465.webp';
 import domImg2 from '../../assets/Puf panel images/Puf panel images/1000014168.webp';
 import domImg3 from '../../assets/projects/Regency.webp';

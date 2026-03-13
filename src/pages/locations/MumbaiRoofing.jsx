@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import { FaCity, FaShieldAlt, FaTools, FaCheckCircle } from 'react-icons/fa';
 import SEO from '../../components/shared/SEO';
-import heroImage from '../../assets/img1.webp';
+import heroImage from '../../assets/locations/mumbai_hero.png';
 import mumbaiImg1 from '../../assets/MUMBAI/MUMBAI 1.webp';
 import mumbaiImg2 from '../../assets/MUMBAI/MUMBAI 2.webp';
 import mumbaiImg3 from '../../assets/MUMBAI/MUMBAI 3.webp';

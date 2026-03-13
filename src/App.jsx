@@ -48,6 +48,9 @@ import AmbarnathRoofing from './pages/locations/AmbarnathRoofing';
 import NaviMumbaiRoofing from './pages/locations/NaviMumbaiRoofing';
 import DombivliRoofing from './pages/locations/DombivliRoofing';
 import PUFPanelNaviMumbai from './pages/locations/PUFPanelNaviMumbai';
+import LonavlaRoofing from './pages/locations/LonavlaRoofing';
+import ChakanRoofing from './pages/locations/ChakanRoofing';
+import ChakanPainting from './pages/locations/ChakanPainting';
 import Areas from './pages/Areas';
 
 // Lazy-load Chatbot & WhatsApp (non-critical floating UI)
@@ -143,6 +146,9 @@ function App() {
               <Route path="/industrial-roofing-contractors-in-navi-mumbai" element={<NaviMumbaiRoofing />} />
               <Route path="/industrial-roofing-contractors-in-dombivli" element={<DombivliRoofing />} />
               <Route path="/puf-panel-manufacturer-navi-mumbai" element={<PUFPanelNaviMumbai />} />
+              <Route path="/industrial-roofing-contractors-in-lonavla" element={<LonavlaRoofing />} />
+              <Route path="/industrial-roofing-contractors-in-chakan-pune" element={<ChakanRoofing />} />
+              <Route path="/industrial-painting-in-chakan" element={<ChakanPainting />} />
               <Route path="/areas" element={<Areas />} />
 
               {/* SEO Redirects for shortened URLs */}

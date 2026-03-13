@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import { FaIndustry, FaShieldAlt, FaTools, FaCheckCircle } from 'react-icons/fa';
 import SEO from '../../components/shared/SEO';
-import heroImage from '../../assets/img1.webp';
+import heroImage from '../../assets/locations/ambarnath_hero.png';
 import ambImg1 from '../../assets/Metal roofing images/Metal roofing images/1000014335.webp';
 import ambImg2 from '../../assets/Puf panel images/Puf panel images/1001155532.webp';
 import ambImg3 from '../../assets/projects/Valvoline-ambarnath.webp';

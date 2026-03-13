@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import { FaIndustry, FaShieldAlt, FaTools, FaCheckCircle, FaFlask } from 'react-icons/fa';
 import SEO from '../../components/shared/SEO';
-import heroImage from '../../assets/services-hero.webp';
+import heroImage from '../../assets/locations/taloja_hero.png';
 import talojaImg1 from '../../assets/Metal roofing images/Metal roofing images/1000014152.webp';
 import talojaImg2 from '../../assets/Puf panel images/Puf panel images/1001155530.webp';
 import talojaImg3 from '../../assets/projects/amar studio.webp';

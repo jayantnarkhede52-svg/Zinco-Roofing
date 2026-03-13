@@ -243,6 +243,24 @@ const pages = [
     keywords: 'Roofing Sheets Dombivli, Industrial Roofing Dombivli'
   },
   {
+    route: '/industrial-roofing-contractors-in-lonavla',
+    title: 'Industrial Roofing Contractors in Lonavla | Zinco Roofing',
+    description: 'Expert industrial roofing contractors in Lonavla. Specializing in leak-proof, weather-resistant roofing and industrial sheds for heavy rainfall areas.',
+    keywords: 'industrial roofing contractors lonavla, lonavla roofing contractors, factory shed roofing lonavla'
+  },
+  {
+    route: '/industrial-roofing-contractors-in-chakan-pune',
+    title: 'Industrial Roofing Contractors in Chakan Pune | Zinco Roofing',
+    description: 'Best industrial roofing contractors in Chakan Pune. Specializing in heavy-duty factory sheds, PEB solutions, and industrial fabrication in Chakan MIDC.',
+    keywords: 'industrial roofing contractors chakan pune, chakan midc roofing, factory shed contractors chakan'
+  },
+  {
+    route: '/industrial-painting-in-chakan',
+    title: 'Industrial Painting in Chakan | Epoxy & Structural Coating',
+    description: 'Expert industrial painting in Chakan. Specializing in structural painting, epoxy coatings, and anti-corrosion treatments for Chakan MIDC manufacturing plants.',
+    keywords: 'industrial painting in chakan, structural painting chakan, epoxy coating chakan midc'
+  },
+  {
     route: '/puf-panel-manufacturer-navi-mumbai',
     title: 'PUF Panel Manufacturer in Navi Mumbai | Zinco Roofing',
     description: 'Leading PUF panel manufacturer in Navi Mumbai. Buy insulated roofing sheets and PUF panels for cold storage and industrial use.',

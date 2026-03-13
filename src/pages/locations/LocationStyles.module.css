@@ -425,3 +425,95 @@
     font-size: var(--text-sm);
     margin-bottom: 0;
 }
+
+/* Areas Page Gallery Styles */
+.areasGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: var(--spacing-2xl);
+    padding: var(--spacing-xl) 0;
+}
+
+.areaCard {
+    background: var(--white);
+    border-radius: var(--radius-2xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--gray-100);
+}
+
+.areaThumbnail {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+}
+
+.areaThumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.areaCard:hover .areaThumbnail img {
+    transform: scale(1.1);
+}
+
+.areaIconBadge {
+    position: absolute;
+    bottom: var(--spacing-md);
+    right: var(--spacing-md);
+    width: 50px;
+    height: 50px;
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    box-shadow: var(--shadow-md);
+    z-index: 2;
+}
+
+.areaInfo {
+    padding: var(--spacing-xl);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.areaInfo h3 {
+    font-size: var(--text-xl);
+    color: var(--gray-900);
+    margin-bottom: var(--spacing-sm);
+    font-weight: 700;
+}
+
+.areaInfo p {
+    font-size: var(--text-md);
+    color: var(--gray-600) !important;
+    line-height: 1.6;
+    margin-bottom: var(--spacing-lg);
+    flex-grow: 1;
+}
+
+.areaLink {
+    color: var(--accent-600);
+    font-weight: 700;
+    font-size: var(--text-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+@media (max-width: 640px) {
+    .areasGrid {
+        grid-template-columns: 1fr;
+    }
+}
