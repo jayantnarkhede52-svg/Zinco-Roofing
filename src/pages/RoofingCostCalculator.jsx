@@ -30,6 +30,35 @@ const RoofingCostCalculator = () => {
         }).format(val);
     };
 
+    const [formData, setFormData] = useState({ name: '', phone: '', email: '' });
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [isSubmitted, setIsSubmitted] = useState(false);
+
+    const handleQuoteRequest = async (e) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+        try {
+            const res = await fetch('http://localhost:5000/api/leads', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    ...formData,
+                    area,
+                    material: materials[material].name,
+                    estimatedPrice: `${formatCurrency(estimate.min)} - ${formatCurrency(estimate.max)}`,
+                    source: 'Cost Calculator'
+                })
+            });
+
+            if (res.ok) {
+                setIsSubmitted(true);
+            }
+        } catch (err) {
+            console.error('Submission failed');
+        }
+        setIsSubmitting(false);
+    };
+
     return (
         <div className={styles.page}>
             <SEO 
@@ -83,10 +112,40 @@ const RoofingCostCalculator = () => {
                             <div className={styles.results}>
                                 <div className={styles.estimateLabel}>Estimated Project Cost</div>
                                 <div className={styles.price}>{formatCurrency(estimate.min)} - {formatCurrency(estimate.max)}</div>
-                                <p className={styles.disclaimer}>*This is a rough estimate including standard installation and basic structural work. Actual prices may vary based on site complexity, location, and height.</p>
-                                <button className="btn-primary" style={{ width: '100%', marginTop: '1.5rem' }}>
-                                    Get Exact Quote for My Project
-                                </button>
+                                
+                                {isSubmitted ? (
+                                    <div className={styles.successMessage}>
+                                        ✅ Quote request sent! We will contact you shortly.
+                                    </div>
+                                ) : (
+                                    <form onSubmit={handleQuoteRequest} className={styles.quoteForm}>
+                                        <input 
+                                            type="text" 
+                                            placeholder="Your Name" 
+                                            required 
+                                            value={formData.name}
+                                            onChange={(e) => setFormData({...formData, name: e.target.value})}
+                                            className={styles.miniInput}
+                                        />
+                                        <input 
+                                            type="tel" 
+                                            placeholder="Phone Number" 
+                                            required 
+                                            value={formData.phone}
+                                            onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                                            className={styles.miniInput}
+                                        />
+                                        <button 
+                                            type="submit" 
+                                            className="btn-primary" 
+                                            style={{ width: '100%', marginTop: '0.5rem' }}
+                                            disabled={isSubmitting}
+                                        >
+                                            {isSubmitting ? 'Sending...' : 'Get Exact Quote'}
+                                        </button>
+                                    </form>
+                                )}
+                                <p className={styles.disclaimer}>*This is a rough estimate including standard installation and basic structural work. Actual prices vary based on site complexity.</p>
                             </div>
                         </div>
                     </div>

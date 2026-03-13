@@ -53,6 +53,8 @@ import ChakanRoofing from './pages/locations/ChakanRoofing';
 import ChakanPainting from './pages/locations/ChakanPainting';
 import Areas from './pages/Areas';
 import RoofingCostCalculator from './pages/RoofingCostCalculator';
+import AdminDashboard from './pages/AdminDashboard';
+import AdminLogin from './pages/AdminLogin';
 
 // Lazy-load Chatbot & WhatsApp (non-critical floating UI)
 const Chatbot = lazy(() => import('./components/shared/Chatbot'));
@@ -162,6 +164,11 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/terms-of-service" element={<TermsOfService />} />
+              
+              {/* Admin Routes */}
+              <Route path="/admin/login" element={<AdminLogin />} />
+              <Route path="/admin/dashboard" element={<AdminDashboard />} />
+
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
