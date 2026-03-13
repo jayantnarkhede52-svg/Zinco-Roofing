@@ -52,6 +52,7 @@ import LonavlaRoofing from './pages/locations/LonavlaRoofing';
 import ChakanRoofing from './pages/locations/ChakanRoofing';
 import ChakanPainting from './pages/locations/ChakanPainting';
 import Areas from './pages/Areas';
+import RoofingCostCalculator from './pages/RoofingCostCalculator';
 
 // Lazy-load Chatbot & WhatsApp (non-critical floating UI)
 const Chatbot = lazy(() => import('./components/shared/Chatbot'));
@@ -149,6 +150,7 @@ function App() {
               <Route path="/industrial-roofing-contractors-in-lonavla" element={<LonavlaRoofing />} />
               <Route path="/industrial-roofing-contractors-in-chakan-pune" element={<ChakanRoofing />} />
               <Route path="/industrial-painting-in-chakan" element={<ChakanPainting />} />
+              <Route path="/industrial-roofing-cost-calculator" element={<RoofingCostCalculator />} />
               <Route path="/areas" element={<Areas />} />
 
               {/* SEO Redirects for shortened URLs */}

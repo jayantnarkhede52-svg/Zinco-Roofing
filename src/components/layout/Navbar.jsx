@@ -16,6 +16,7 @@ const Navbar = () => {
         { path: '/areas', label: 'Areas' },
         { path: '/industrial-roofing-services-navi-mumbai', label: 'Services' },
         { path: '/premium-roofing-sheets-navi-mumbai', label: 'Products' },
+        { path: '/industrial-roofing-cost-calculator', label: 'Cost Estimator' },
         { path: '/gallery', label: 'Gallery' },
         { path: '/contact', label: 'Contact' },
     ];
