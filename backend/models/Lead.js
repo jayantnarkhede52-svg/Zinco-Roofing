@@ -12,6 +12,7 @@ const LeadSchema = new mongoose.Schema({
         enum: ['New', 'Contacted', 'Quoted', 'Completed', 'Rejected'],
         default: 'New'
     },
+    source: { type: String, default: 'Website' },
     message: { type: String },
     notes: { type: String },
     createdAt: { type: Date, default: Date.now }

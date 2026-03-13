@@ -1,29 +1,32 @@
 {
-    "headers": [
+    "version": 2,
+    "builds": [
         {
-            "source": "/(.*).(webp|js|css|woff2)",
-            "headers": [
-                {
-                    "key": "Cache-Control",
-                    "value": "public, max-age=31536000, immutable"
-                }
-            ]
+            "src": "package.json",
+            "use": "@vercel/static-build",
+            "config": { "distDir": "dist" }
         },
         {
-            "source": "/(fonts|assets)/(.*)",
-            "headers": [
-                {
-                    "key": "Cache-Control",
-                    "value": "public, max-age=31536000, immutable"
-                }
-            ]
+            "src": "backend/server.js",
+            "use": "@vercel/node"
         }
     ],
-    "cleanUrls": true,
-    "rewrites": [
+    "routes": [
         {
-            "source": "/(.*)",
-            "destination": "/index.html"
+            "src": "/api/(.*)",
+            "dest": "/backend/server.js"
+        },
+        {
+            "src": "/(.*).(webp|js|css|woff2)",
+            "headers": {
+                "Cache-Control": "public, max-age=31536000, immutable"
+            },
+            "continue": true
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/index.html"
         }
-    ]
+    ],
+    "cleanUrls": true
 }

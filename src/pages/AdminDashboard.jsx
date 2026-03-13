@@ -18,7 +18,7 @@ const AdminDashboard = () => {
             }
 
             try {
-                const res = await fetch('http://localhost:5000/api/leads', {
+                const res = await fetch('/api/leads', {
                     headers: { 'x-auth-token': token }
                 });
                 
@@ -43,7 +43,7 @@ const AdminDashboard = () => {
     const updateStatus = async (id, newStatus) => {
         const token = localStorage.getItem('adminToken');
         try {
-            const res = await fetch(`http://localhost:5000/api/leads/${id}`, {
+            const res = await fetch(`/api/leads/${id}`, {
                 method: 'PATCH',
                 headers: { 
                     'Content-Type': 'application/json',
