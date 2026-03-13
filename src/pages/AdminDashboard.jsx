@@ -116,6 +116,8 @@ const AdminDashboard = () => {
                                     <td>
                                         {lead.area && <div>{lead.area} sq.ft</div>}
                                         {lead.material && <div className={styles.badge}>{lead.material}</div>}
+                                        {lead.source && <div className={styles.sourceBadge}>{lead.source}</div>}
+                                        {lead.message && <div className={styles.messagePreview}>{lead.message}</div>}
                                     </td>
                                     <td>
                                         <select 

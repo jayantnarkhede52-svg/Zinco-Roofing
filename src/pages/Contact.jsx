@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { CONTACT_INFO } from '../utils/constants';
@@ -7,6 +8,34 @@ import Card from '../components/shared/Card';
 import styles from './Contact.module.css';
 
 const Contact = () => {
+    const [formData, setFormData] = useState({ name: '', phone: '', email: '', message: '' });
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState(null); // 'success' | 'error'
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+        try {
+            const res = await fetch('http://localhost:5000/api/leads', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    ...formData,
+                    source: 'Contact Page'
+                })
+            });
+
+            if (res.ok) {
+                setSubmitStatus('success');
+                setFormData({ name: '', phone: '', email: '', message: '' });
+            } else {
+                setSubmitStatus('error');
+            }
+        } catch (err) {
+            setSubmitStatus('error');
+        }
+        setIsSubmitting(false);
+    };
 
     return (
         <div className={styles.contactPage}>
@@ -101,19 +130,76 @@ const Contact = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.5 }}
+                            className={styles.formCard}
                         >
                             <div className={styles.formHeader}>
                                 <h2>Send us a Message</h2>
                                 <p>Fill out the form below and our team will get back to you within 24 hours.</p>
                             </div>
-                            <div className={styles.formWrapper}>
-                                <iframe
-                                    src="https://app.formbricks.com/s/cmlwc1cpkstiwu401uisuaoys"
-                                    frameBorder="0"
-                                    className={styles.fbIframe}
-                                    title="Formbricks Contact Form"
-                                ></iframe>
-                            </div>
+                            
+                            {submitStatus === 'success' ? (
+                                <div className={styles.successMessage}>
+                                    <h3>Message Sent Successfully!</h3>
+                                    <p>Thank you for reaching out. Our team will contact you shortly.</p>
+                                    <button onClick={() => setSubmitStatus(null)} className="btn-primary">Send Another Message</button>
+                                </div>
+                            ) : (
+                                <form onSubmit={handleSubmit} className={styles.contactForm}>
+                                    <div className={styles.formGrid}>
+                                        <div className={styles.inputGroup}>
+                                            <label>Full Name</label>
+                                            <input 
+                                                type="text" 
+                                                placeholder="Your Name" 
+                                                required 
+                                                value={formData.name}
+                                                onChange={(e) => setFormData({...formData, name: e.target.value})}
+                                            />
+                                        </div>
+                                        <div className={styles.inputGroup}>
+                                            <label>Phone Number</label>
+                                            <input 
+                                                type="tel" 
+                                                placeholder="Your Phone" 
+                                                required 
+                                                value={formData.phone}
+                                                onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                                            />
+                                        </div>
+                                        <div className={styles.inputGroup}>
+                                            <label>Email Address (Optional)</label>
+                                            <input 
+                                                type="email" 
+                                                placeholder="Your Email" 
+                                                value={formData.email}
+                                                onChange={(e) => setFormData({...formData, email: e.target.value})}
+                                            />
+                                        </div>
+                                        <div className={styles.inputGroupFull}>
+                                            <label>How can we help you?</label>
+                                            <textarea 
+                                                rows="4" 
+                                                placeholder="Enter your project details or requirements..." 
+                                                required
+                                                value={formData.message}
+                                                onChange={(e) => setFormData({...formData, message: e.target.value})}
+                                            ></textarea>
+                                        </div>
+                                    </div>
+                                    
+                                    {submitStatus === 'error' && (
+                                        <p className={styles.errorMessage}>Oops! Something went wrong. Please try again or call us directly.</p>
+                                    )}
+
+                                    <button 
+                                        type="submit" 
+                                        className="btn-primary" 
+                                        disabled={isSubmitting}
+                                    >
+                                        {isSubmitting ? 'Sending Message...' : 'Send Message'}
+                                    </button>
+                                </form>
+                            )}
                         </motion.div>
                     </div>
 
