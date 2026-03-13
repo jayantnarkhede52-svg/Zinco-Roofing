@@ -52,3 +52,9 @@
 .card:hover::before {
     opacity: 0.5;
 }
+
+@media (max-width: 768px) {
+    .card {
+        padding: var(--spacing-md);
+    }
+}

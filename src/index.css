@@ -109,6 +109,19 @@
   --z-modal: 1050;
   --z-popover: 1060;
   --z-tooltip: 1070;
+
+  /* Mobile Adjustments */
+  @media (max-width: 768px) {
+    --spacing-md: 1rem;
+    --spacing-lg: 1.25rem;
+    --spacing-xl: 1.5rem;
+    --spacing-2xl: 2rem;
+    --spacing-3xl: 2.5rem;
+    --spacing-4xl: 3.5rem;
+    
+    --radius-xl: 0.75rem;
+    --radius-2xl: 1rem;
+  }
 }
 
 * {
@@ -258,6 +271,30 @@ a:hover {
   backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: var(--shadow-xl);
+}
+
+@media (max-width: 768px) {
+  body {
+    font-weight: 500; /* Bolder text for mobile */
+  }
+
+  h1, h2, h3, h4 {
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    font-size: 0.9375rem;
+    line-height: 1.5;
+  }
+
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+
+  .section {
+    padding: var(--spacing-2xl) 0;
+  }
 }
 
 

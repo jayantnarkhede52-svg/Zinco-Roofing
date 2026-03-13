@@ -142,19 +142,45 @@
 }
 
 @media (max-width: 640px) {
+    .servicesSection {
+        padding: var(--spacing-xl) 0;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
     .serviceCard {
         flex-direction: column;
     }
 
     .imageBox {
         width: 100%;
-        height: 180px;
+        height: 120px;
+        min-height: 120px;
         border-right: none;
         border-bottom: 2px solid var(--accent-500);
     }
 
     .cardContent {
         width: 100%;
-        padding: var(--spacing-md);
+        padding: var(--spacing-sm);
+    }
+
+    .serviceCard h3 {
+        font-size: 0.95rem;
+        font-weight: 800;
+    }
+
+    .serviceCard p {
+        font-size: 0.75rem;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .learnMore {
+        font-size: 0.65rem;
     }
 }
