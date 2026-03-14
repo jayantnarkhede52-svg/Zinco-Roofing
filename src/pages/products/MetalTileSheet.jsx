@@ -198,7 +198,7 @@ const MetalTileSheet = () => {
                                 <h4>Are <strong>metal tile sheets in navi mumbai</strong> noisy?</h4>
                                 <p>No, the stepped profile and insulation of <strong>metal tile sheets in navi mumbai</strong> break rain impact noise.</p>
                             </div>
-                            <div className={div style={styles.faqItem}}>
+                            <div className={styles.faqItem}>
                                 <h4>Can I walk on <strong>metal tile sheets in navi mumbai</strong>?</h4>
                                 <p>Yes, <strong>metal tile sheets in navi mumbai</strong> can support weight if you walk on the purlin supports.</p>
                             </div>
