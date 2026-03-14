@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import { FaIndustry, FaLayerGroup, FaShieldAlt, FaTemperatureLow, FaWater } from 'react-icons/fa';
 import Button from '../../components/shared/Button';
-import heroImage from '../../assets/locations/navi_mumbai_hero.webp';
+import heroImage from '../../assets/locations/navi_mumbai_thumb.webp';
 import imgIntro from '../../assets/projects/L&T construction.webp';
 import imgWhatIs from '../../assets/projects/Cyberteck.webp';
 import imgTypes from '../../assets/productshero/types-puf.webp';
