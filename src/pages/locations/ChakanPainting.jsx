@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { FaPaintRoller, FaIndustry, FaShieldAlt, FaCheckCircle, FaFlask } from 'react-icons/fa';
 import SEO from '../../components/shared/SEO';
 import heroImage from '../../assets/locations/chakan_hero.webp';
-import cpImg1 from '../../assets/projects/Mercedes.webp';
+import cpImg1 from '../../assets/projects/Bajaj electrical.webp';
 import cpImg2 from '../../assets/projects/Cyberteck.webp';
 import cpImg3 from '../../assets/Metal roofing images/Metal roofing images/1000014465.webp';
 import cpImg4 from '../../assets/Puf panel images/Puf panel images/1000014168.webp';
