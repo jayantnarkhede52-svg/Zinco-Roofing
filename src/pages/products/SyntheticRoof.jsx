@@ -11,12 +11,12 @@ import styles from './ProductCategory.module.css';
 const SyntheticRoof = () => {
     const navigate = useNavigate();
     const features = [
-        'Natural Thatch/Shingle Aesthetic',
-        'Fire Retardant & Safe Material',
-        '100% Recyclable Synthetic Resins',
-        'Zero Maintenance & Long Life',
-        'Resistant to Rot, Mold, & Pests',
-        'Easy to Install on Sloped Roofs'
+        'Advanced synthetic roofing in navi mumbai',
+        'Top synthetic roofing in navi mumbai',
+        'Balanced synthetic roofing in navi mumbai',
+        'Expert synthetic roofing in navi mumbai',
+        'Quality synthetic roofing in navi mumbai',
+        'Best synthetic roofing in navi mumbai'
     ];
 
     const specifications = [
@@ -26,15 +26,6 @@ const SyntheticRoof = () => {
         { label: 'Maintenance', value: 'Zero (No replacement needed)' },
         { label: 'Weight', value: 'Lightweight & Flexible' },
         { label: 'Region', value: 'Resorts & Farmhouses' }
-    ];
-
-    const applications = [
-        'Luxury Resorts in Alibaug',
-        'Gazebos in Lonavala & Karjat',
-        'Theme Parks & Water Parks',
-        'Poolside Cabanas in Mumbai',
-        'Eco-Tourism Cottages',
-        'Farmhouse Porches in Panvel'
     ];
 
     const containerVariants = {
@@ -64,11 +55,12 @@ const SyntheticRoof = () => {
                 title="Synthetic Thatch & Shingle Roofing in Mumbai | Zinco"
                 description="Premium synthetic thatch and shingle roofing for resorts and farmhouses in Alibaug, Lonavala, and Karjat. Fire-retardant and zero maintenance."
                 keywords="synthetic thatch roofing, synthetic shingles, resort roofing mumbai, artificial thatch, eco friendly roofing"
+                canonicalUrl="https://zincoroof.com/products/synthetic-roof"
             />
             <Helmet>
-                <link rel="preload" as="image" href={heroImage} />
+                <link rel="preload" as="image" href={heroImage} fetchpriority="high" />
             </Helmet>
-            <div className={styles.hero} style={{ '--hero-image': `url(${heroImage})` }} fetchpriority="high">
+            <div className={styles.hero} style={{ '--hero-image': `url(${heroImage})` }}>
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>
                     <motion.div
@@ -83,10 +75,10 @@ const SyntheticRoof = () => {
                             PRECISION & DURABILITY
                         </motion.span>
                         <motion.h1 variants={itemVariants}>
-                            Synthetic Thatch & Shingle Roofing in Mumbai
+                            synthetic roofing in navi mumbai
                         </motion.h1>
                         <motion.p className={styles.heroDesc} variants={itemVariants}>
-                            The exotic charm of natural thatch with the ultimate durability of modern synthetic materials.
+                            Elevate your tropical projects with reliable <strong>synthetic roofing in navi mumbai</strong> solutions.
                         </motion.p>
                     </motion.div>
                 </div>
@@ -94,39 +86,51 @@ const SyntheticRoof = () => {
 
             <div className={styles.container}>
                 <div className={styles.content}>
-                    <section className={styles.section}>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.contentBlock}>
                             <Card variant="solid" className={styles.contentCard}>
-                                <h2>Tropical Opulence with Modern Durability: Synthetic Thatch & Shingles</h2>
+                                <h2>Complete synthetic roofing in navi mumbai solutions</h2>
                                 <p>
-                                    In the picturesque holiday destinations of <strong>Alibaug, Lonavala, Karjat, and the luxury farmhouse pockets of Panvel</strong>, architectural aesthetics often lean towards the natural, tropical charm of traditional thatch and wooden shingles. However, natural organic roofing materials face significant challenges in the humid, monsoon-prone climate of the <strong>Konkan region</strong>, requiring frequent replacement and posing a serious fire risk. Zinco Roofing Solution's <strong>Synthetic Roofing</strong> offers a groundbreaking alternative: the breathtaking beauty of natural straw and wood with the lifetime durability of advanced synthetic polymers.
+                                    At Zinco Roofing Solution, we provide the best <strong>synthetic roofing in navi mumbai</strong>. Our <strong>synthetic roofing in navi mumbai</strong> are designed for massive resort projects.
                                 </p>
                                 <p>
-                                    Our synthetic thatch and shingle systems are engineered to mimic the exact texture, coloring, and "layered" look of natural materials like Bali-style thatch or Cape Reed. Manufactured from <strong>100% recyclable synthetic resins</strong>, these products are built to last. Unlike natural thatch that becomes a breeding ground for insects and mold in the damp Mumbai air, our synthetic fibers are completely inorganic. They do not rot, they do not attract pests, and they maintain their vibrant "golden-straw" or "aged-wood" appearance for more than <strong>20 to 30 years</strong>.
-                                </p>
-                            </Card>
-
-                            <Card variant="solid" className={styles.contentCard}>
-                                <h3>The Engineering of Fire Safety and UV Resistance</h3>
-                                <p>
-                                    For resorts, theme parks, and poolside cabanas in <strong>Mumbai and Navi Mumbai</strong>, fire safety is a non-negotiable requirement. Natural thatch is highly flammable, making it a liability for public spaces. Zinco’s synthetic roofing is manufactured with built-in <strong>Class-A fire-retardant additives</strong>, ensuring that your tropical paradise remains safe for guests. Additionally, each strand is infused with high-density UV stabilizers that block the intense bleaching effects of the sun, preventing the material from becoming brittle or losing its aesthetic appeal even after decades of exposure.
+                                    Using <strong>synthetic roofing in navi mumbai</strong> ensures a beautiful look for decades. Our <strong>synthetic roofing in navi mumbai</strong> are built for the heavy Mumbai monsoons.
                                 </p>
                             </Card>
 
                             <Card variant="solid" className={styles.contentCard}>
-                                <h3>Why Resort Developers in the Mumbai Region Prefer Zinco</h3>
+                                <h3>Efficiency of synthetic roofing in navi mumbai</h3>
+                                <p>
+                                    A high-quality <strong>synthetic roofing in navi mumbai</strong> improves aesthetic value. Our <strong>synthetic roofing in navi mumbai</strong> are balanced for low maintenance.
+                                </p>
+                            </Card>
+
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Why Zinco for synthetic roofing in navi mumbai?</h3>
                                 <ul className={styles.styledList}>
-                                    <li><strong>Zero Maintenance Luxury:</strong> Forget about the annual "re-thatching" costs. Our synthetic roofs require no specialized cleaning or pesticide treatments, saving you significant operational costs over time.</li>
-                                    <li><strong>100% Waterproof and Weather-Tight:</strong> When installed as part of a complete system, our synthetic roofs provide an effective barrier against the heaviest <strong>Mumbai monsoon rain</strong>, protecting your interior decor and furnishings.</li>
-                                    <li><strong>Eco-Friendly & Sustainable:</strong> Made from high-quality polymers, our roofing is 100% recyclable at the end of its long service life, making it a responsible choice for eco-tourism projects in <strong>Matheran and Karjat</strong>.</li>
-                                    <li><strong>Easy Installation on Any Structure:</strong> Whether you're building a simple garden gazebo or a complex resort roof, our lightweight synthetic panels can be easily fastened to various roof frames, including wood, steel, or concrete.</li>
+                                    <li><strong>Tropical look:</strong> Every <strong>synthetic roofing in navi mumbai</strong> mimics natural straw.</li>
+                                    <li><strong>Safe:</strong> Our <strong>synthetic roofing in navi mumbai</strong> is fire retardant.</li>
+                                    <li><strong>Quality:</strong> We ensure perfect installation of <strong>synthetic roofing in navi mumbai</strong>.</li>
+                                    <li><strong>Value:</strong> Our <strong>synthetic roofing in navi mumbai</strong> is a long-lasting industrial choice.</li>
                                 </ul>
                             </Card>
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Technical Specifications</h2>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>Specifications of synthetic roofing in navi mumbai</h2>
                         <Card variant="glass">
                             <div className={styles.specsTable}>
                                 {specifications.map((spec, index) => (
@@ -137,10 +141,16 @@ const SyntheticRoof = () => {
                                 ))}
                             </div>
                         </Card>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Why Synthetic?</h2>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>Features of synthetic roofing in navi mumbai</h2>
                         <div className={styles.featuresGrid}>
                             {features.map((feature, index) => (
                                 <motion.div
@@ -156,30 +166,24 @@ const SyntheticRoof = () => {
                                 </motion.div>
                             ))}
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Common Applications</h2>
-                        <div className={styles.applicationsGrid}>
-                            {applications.map((app, index) => (
-                                <Card key={index} variant="solid" className={styles.appCard}>
-                                    <FaLeaf style={{ color: 'var(--accent-500)', marginBottom: '0.5rem' }} />
-                                    <h4>{app}</h4>
-                                </Card>
-                            ))}
-                        </div>
-                    </section>
-
-                    <section className={styles.section}>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.contentBlock}>
                             <Card variant="solid" className={styles.contentCard}>
-                                <h2>Installation Excellence and Customization</h2>
+                                <h2>Modern synthetic roofing in navi mumbai</h2>
                                 <p>
-                                    Creating an authentic natural look requires a specialized installation technique. Our teams in <strong>Navi Mumbai</strong> are trained in the art of layering synthetic thatch to create a thick, plush appearance that is indistinguishable from the real thing. We provide various colors and textures, from the wild, shaggy look of African thatch to the neat, uniform lines of Western cedar shingles, ensuring your roof perfectly complements your project's architectural theme.
+                                    Our <strong>synthetic roofing in navi mumbai</strong> is ideal for theme parks. Once installed, the <strong>synthetic roofing in navi mumbai</strong> prevents rot and mold.
                                 </p>
                             </Card>
                         </div>
-                    </section>
+                    </motion.section>
 
                     <motion.section
                         className={styles.section}
@@ -188,34 +192,30 @@ const SyntheticRoof = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h2>Frequently Asked Questions</h2>
+                        <h2>FAQs on synthetic roofing in navi mumbai</h2>
                         <div className={styles.faqGrid}>
                             <div className={styles.faqItem}>
-                                <h4>Does synthetic thatch really look like natural straw?</h4>
-                                <p>Yes! Our premium synthetic thatch is molded from real natural fibers to capture the exact organic texture, and we use multi-tonal coloring to mimic the natural variations found in real thatch.</p>
+                                <h4>Is <strong>synthetic roofing in navi mumbai</strong> fire safe?</h4>
+                                <p>Yes, <strong>synthetic roofing in navi mumbai</strong> has built-in retardants.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h4>Is it safe to use around swimming pools?</h4>
-                                <p>Absolutely. Our materials are highly resistant to chlorine and saltwater spray, making them the perfect choice for poolside cabanas and beachfront bars in **Alibaug**.</p>
+                                <h4>Does <strong>synthetic roofing in navi mumbai</strong> rot?</h4>
+                                <p>No, <strong>synthetic roofing in navi mumbai</strong> is inorganic and rot-free.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h4>Will the wind blow away the individual "leaves" or "shingles"?</h4>
-                                <p>Our products are tested for high wind uplift. The individual strands are securely bound into panels that are mechanically fastened to the roof structure, capable of withstanding the gusty winds of **Lonavala**.</p>
-                            </div>
-                            <div className={styles.faqItem}>
-                                <h4>How does it compare in cost to natural thatch?</h4>
-                                <p>While the initial cost of synthetic is higher, you save the cost of replacement every 2-3 years (which natural thatch requires). Within 5-6 years, synthetic roofing becomes significantly more economical.</p>
+                                <h4>Is <strong>synthetic roofing in navi mumbai</strong> recyclable?</h4>
+                                <p>Yes, <strong>synthetic roofing in navi mumbai</strong> is eco-friendly.</p>
                             </div>
                         </div>
                     </motion.section>
 
                     <section className={styles.ctaSection}>
                         <Card variant="gradient" className={styles.ctaCard}>
-                            <h3>Create Your Tropical Oasis</h3>
-                            <p>Contact us for expert synthetic thatch roofing installation in the Mumbai region.</p>
+                            <h3>Get Best Quote for synthetic roofing in navi mumbai</h3>
+                            <p>Contact the leading manufacturer for <strong>synthetic roofing in navi mumbai</strong> today.</p>
                             <div className={styles.ctaButtons}>
-                                <Button size="lg" href="/contact">Get Quote</Button>
-                                <Button size="lg" variant="outline" href="tel:+919967203090">Call Now</Button>
+                                <Button size="lg" href="/contact">Get Estimate</Button>
+                                <Button size="lg" variant="outline" href="tel:+919967203090">Call Expert</Button>
                             </div>
                         </Card>
                     </section>
@@ -226,3 +226,4 @@ const SyntheticRoof = () => {
 };
 
 export default SyntheticRoof;
+

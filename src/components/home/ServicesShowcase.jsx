@@ -11,28 +11,28 @@ import styles from './ServicesShowcase.module.css';
 const services = [
     {
         id: 'metal-roofing',
-        title: 'Roofing Metal Sheets',
+        title: 'Roofing Metal Sheets Navi Mumbai',
         desc: 'Premium colour coated, decking, and metal roofing profiles for durable industrial sheds.',
         image: img1,
         path: '/products/roofing-metal-sheets'
     },
     {
         id: 'puf-panels',
-        title: 'PUF Sandwich Panels',
+        title: 'PUF Panel Manufacturer Navi Mumbai',
         desc: 'Advanced thermal insulation panels for cold storage and energy-efficient industrial buildings.',
         image: img2,
         path: '/products/insulated-sheets'
     },
     {
         id: 'polycarbonate',
-        title: 'Polycarbonate Sheets',
+        title: 'Polycarbonate Sheets Navi Mumbai',
         desc: 'High-impact transparent roofing solutions for natural lighting and skylights.',
         image: img3,
         path: '/products/polycarbonate-sheets'
     },
     {
         id: 'decking-sheets',
-        title: 'Decking Sheets',
+        title: 'Decking Sheets Mumbai',
         desc: 'High-strength structural floor decking sheets for modern infrastructure projects.',
         image: img4,
         path: '/products/decking-sheet'
@@ -58,7 +58,7 @@ const ServicesShowcase = () => {
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
                     >
-                        Precision Roofing & Building Solutions
+                        Best <strong>Roofing Contractor in Navi Mumbai</strong> Services
                     </motion.h2>
                 </div>
 

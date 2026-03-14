@@ -19,43 +19,43 @@ const pages = [
   {
     route: '/',
     title: 'Roofing Contractor in Navi Mumbai | Zinco Roofing Solutions',
-    description: 'Looking for a trusted roofing contractor in Navi Mumbai? Zinco Roofing Solutions provides industrial roofing, roof ventilators, sheet installation & repair services with free site visit.',
+    description: 'Trusted roofing contractor in Navi Mumbai. Zinco Roofing provides industrial roofing, ventilators, and repair services with free site visits.',
     keywords: 'roofing contractor in navi mumbai, industrial roofing navi mumbai, roofing sheets suppliers mumbai, puf panel manufacturer near me'
   },
   {
     route: '/industrial-roofing-projects-navi-mumbai',
     title: 'Industrial Roofing Projects in Navi Mumbai | Zinco Roofing',
-    description: 'View our completed industrial roofing projects across Navi Mumbai. Zinco Roofing delivers premium warehouse, factory & commercial roofing solutions.',
+    description: 'Completed industrial roofing projects in Navi Mumbai. Zinco Roofing delivers premium warehouse, factory, and commercial roofing solutions.',
     keywords: 'Industrial Roofing Projects in Navi Mumbai, industrial roofing portfolio, warehouse roofing projects, metal roofing gallery'
   },
   {
     route: '/industrial-roofing-services-navi-mumbai',
     title: 'Industrial Roofing Services in Navi Mumbai | Zinco Roofing',
-    description: 'Professional industrial roofing services in Navi Mumbai. Zinco Roofing offers installation, waterproofing, repair & structural roofing solutions.',
+    description: 'Professional industrial roofing services. Zinco Roofing offers installation, waterproofing, repair, and structural roofing in Navi Mumbai.',
     keywords: 'Industrial Roofing Services in Navi Mumbai, industrial roofing installation, roof waterproofing, structural roofing solutions, Navi Mumbai roofing'
   },
   {
     route: '/premium-roofing-sheets-navi-mumbai',
     title: 'Premium Roofing Sheets in Navi Mumbai | Zinco Roofing',
-    description: 'Buy premium roofing sheets in Navi Mumbai. Zinco Roofing supplies metal, UPVC, polycarbonate sheets & more for industrial and commercial use.',
+    description: 'Buy premium roofing sheets in Navi Mumbai. Zinco Roofing supplies metal, UPVC, and polycarbonate sheets for industrial and commercial use.',
     keywords: 'Premium Roofing Sheets in Navi Mumbai, metal roofing sheets, UPVC roofing, polycarbonate sheets, industrial roofing solutions'
   },
   {
     route: '/gallery',
     title: 'Roofing Project Gallery | Zinco Roofing Solutions',
-    description: 'Explore our portfolio of industrial and commercial roofing projects across Navi Mumbai, Mumbai, Thane and Maharashtra. See our PUF panels, metal roofing, UPVC sheets and more.',
+    description: 'Explore our portfolio of industrial and commercial roofing projects in Navi Mumbai, Mumbai, and Thane. See our metal roofing and PUF panels.',
     keywords: 'roofing project gallery, industrial roofing photos, roofing portfolio navi mumbai, metal roofing projects, puf panel installation gallery'
   },
   {
     route: '/contact',
     title: 'Contact Us | Zinco Roofing Solutions',
-    description: 'Contact Zinco Roofing for a free roofing quote and consultation. We serve Navi Mumbai, Mumbai, Thane and surrounding areas.',
+    description: 'Contact Zinco Roofing for a free roofing quote and consultation. We serve Navi Mumbai, Mumbai, Thane, and surrounding industrial areas.',
     keywords: 'contact roofing contractors, get roofing quote, roofing consultants navi mumbai'
   },
   {
     route: '/areas',
     title: 'Service Areas | Zinco Roofing Solutions',
-    description: 'Zinco Roofing serves Navi Mumbai, Mumbai, Thane, Panvel, Taloja, Ambarnath, Dombivli and surrounding industrial areas.',
+    description: 'Zinco Roofing serves Navi Mumbai, Mumbai, Thane, Panvel, Taloja, Ambarnath, and Dombivli industrial areas.',
     keywords: 'industrial roofing contractors, factory shed contractors navi mumbai, mumbai industrial roofing, taloja midc roofing, puf panel manufacturer'
   },
   {
@@ -129,7 +129,7 @@ const pages = [
   {
     route: '/products/shingles',
     title: 'Roofing Shingles in Mumbai | Zinco Roofing',
-    description: 'Buy asphalt roofing shingles in Mumbai. Ideal for villas, resorts in Lonavala & bungalows. Shingle roof contractors - Zinco Roofing.',
+    description: 'Buy asphalt roofing shingles in Mumbai. Ideal for villas, resorts, and bungalows. Expert shingle roof contractors - Zinco Roofing.',
     keywords: 'roofing shingles mumbai, asphalt shingles, villa roofing, resort roofing lonavala, shingle roof contractors'
   },
   {
@@ -141,7 +141,7 @@ const pages = [
   {
     route: '/products/rockwool-glasswool',
     title: 'Rockwool & Glasswool Panels | Zinco Roofing',
-    description: 'Buy fire resistant rockwool and glasswool insulation panels in Mumbai. Acoustic and thermal insulation from Zinco Roofing.',
+    description: 'Buy fire-resistant rockwool and glasswool insulation panels in Mumbai. Acoustic and thermal insulation from Zinco Roofing.',
     keywords: 'rockwool panels, glasswool insulation, fire resistant roofing, acoustic roof panels mumbai, industrial insulation'
   },
   {
@@ -159,7 +159,7 @@ const pages = [
   {
     route: '/products/pvc-tile-sheet',
     title: 'PVC Tile Sheets - Spanish Tile | Zinco Roofing',
-    description: 'Buy PVC tile sheets with Spanish tile profile. Plastic roof tiles for resorts, bungalows in Alibaug and Mumbai from Zinco Roofing.',
+    description: 'Buy PVC Spanish tile sheets. Plastic roof tiles for resorts and bungalows in Alibaug and Mumbai from Zinco Roofing.',
     keywords: 'pvc tile sheets, spanish tile roofing, plastic roof tiles, resort roofing alibaug, bungalow roofing mumbai'
   },
   {
@@ -245,19 +245,19 @@ const pages = [
   {
     route: '/industrial-roofing-contractors-in-lonavla',
     title: 'Industrial Roofing Contractors in Lonavla | Zinco Roofing',
-    description: 'Expert industrial roofing contractors in Lonavla. Specializing in leak-proof, weather-resistant roofing and industrial sheds for heavy rainfall areas.',
+    description: 'Expert industrial roofing contractors in Lonavala. Specializing in leak-proof, weather-resistant roofing and industrial sheds.',
     keywords: 'industrial roofing contractors lonavla, lonavla roofing contractors, factory shed roofing lonavla'
   },
   {
     route: '/industrial-roofing-contractors-in-chakan-pune',
     title: 'Industrial Roofing Contractors in Chakan Pune | Zinco Roofing',
-    description: 'Best industrial roofing contractors in Chakan Pune. Specializing in heavy-duty factory sheds, PEB solutions, and industrial fabrication in Chakan MIDC.',
+    description: 'Best industrial roofing contractors in Chakan Pune. Specializing in factory sheds, PEB solutions, and industrial fabrication.',
     keywords: 'industrial roofing contractors chakan pune, chakan midc roofing, factory shed contractors chakan'
   },
   {
     route: '/industrial-painting-in-chakan',
     title: 'Industrial Painting in Chakan | Epoxy & Structural Coating',
-    description: 'Expert industrial painting in Chakan. Specializing in structural painting, epoxy coatings, and anti-corrosion treatments for Chakan MIDC manufacturing plants.',
+    description: 'Expert industrial painting in Chakan. Specializing in structural painting, epoxy coatings, and anti-corrosion treatments.',
     keywords: 'industrial painting in chakan, structural painting chakan, epoxy coating chakan midc'
   },
   {

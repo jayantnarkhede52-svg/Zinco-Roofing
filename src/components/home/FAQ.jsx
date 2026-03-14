@@ -57,7 +57,7 @@ const FAQ = () => {
             <div className={styles.container}>
                 <div className={styles.header}>
                     <span className={styles.sublabel}>ANSWERS TO COMMON QUESTIONS</span>
-                    <h2>Frequently Asked Questions</h2>
+                    <h2><strong>Roofing Contractor in Navi Mumbai</strong> FAQs</h2>
                 </div>
                 <div className={styles.faqList}>
                     {faqs.map((faq, index) => (

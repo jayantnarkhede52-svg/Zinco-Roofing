@@ -11,9 +11,9 @@ import styles from './ProductCategory.module.css';
 const PVCUPVCSheets = () => {
     const navigate = useNavigate();
     const features = [
-        'Chemical Resistant Roofing Mumbai',
-        'Anti-Corrosion Sheets Panvel',
-        'Heat Insulation UPVC Sheets',
+        'Chemical Resistant upvc roofing sheets',
+        'Anti-Corrosion upvc roofing sheets',
+        'Heat Insulation upvc roofing sheets',
         'Long-Lasting in Coastal Air',
         'Sound Proofing for Factories',
         'Available in Taloja MIDC'
@@ -26,15 +26,6 @@ const PVCUPVCSheets = () => {
         { label: 'Width', value: '1130mm (Effective 1050mm)' },
         { label: 'Color', value: 'White / Blue / Terracotta' },
         { label: 'Warranty', value: '10-20 Years' }
-    ];
-
-    const applications = [
-        'Chemical Factories in Taloja',
-        'Fertilizer Plants in Rasayani',
-        'Coastal Warehouses inside JNPT',
-        'Electroplating Units Mumbai',
-        'Ceramic Industries',
-        'Animal Farms in Panvel'
     ];
 
     const containerVariants = {
@@ -64,11 +55,12 @@ const PVCUPVCSheets = () => {
                 title="PVC & UPVC Roofing Sheets in Mumbai & Panvel"
                 description="Corrosion-proof UPVC roofing sheets for chemical industries in Taloja, Rasayani, and coastal areas. Heat-resistant and durable."
                 keywords="upvc roofing sheets, pvc roofing, chemical resistant roofing, plastic roofing sheets mumbai"
+                canonicalUrl="https://zincoroof.com/products/pvc-upvc-sheets"
             />
             <Helmet>
-                <link rel="preload" as="image" href={heroImage} />
+                <link rel="preload" as="image" href={heroImage} fetchpriority="high" />
             </Helmet>
-            <div className={styles.hero} style={{ '--hero-image': `url(${heroImage})` }} fetchpriority="high">
+            <div className={styles.hero} style={{ '--hero-image': `url(${heroImage})` }}>
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>
                     <motion.div
@@ -83,10 +75,10 @@ const PVCUPVCSheets = () => {
                             PRECISION & DURABILITY
                         </motion.span>
                         <motion.h1 variants={itemVariants}>
-                            PVC & UPVC Roofing Sheets in Mumbai & Panvel
+                            upvc roofing sheets
                         </motion.h1>
                         <motion.p className={styles.heroDesc} variants={itemVariants}>
-                            Specialized corrosion-free plastic roofing sheets for chemical industries and coastal areas in Navi Mumbai.
+                            Specialized corrosion-free <strong>upvc roofing sheets</strong> for chemical industries and coastal areas.
                         </motion.p>
                     </motion.div>
                 </div>
@@ -94,39 +86,51 @@ const PVCUPVCSheets = () => {
 
             <div className={styles.container}>
                 <div className={styles.content}>
-                    <section className={styles.section}>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.contentBlock}>
                             <Card variant="solid" className={styles.contentCard}>
-                                <h2>Superior Anti-Corrosion Solutions: UPVC Roofing Sheets in Mumbai's Industrial Belt</h2>
+                                <h2>Superior Anti-Corrosion Solutions: upvc roofing sheets for Industry</h2>
                                 <p>
-                                    In the intense industrial environments of <strong>Taloja MIDC, Panvel, and Rasayani</strong>, standard metal roofing often faces a short lifespan. The combination of industrial chemical fumes and the salt-laden air from the Arabian Sea creates a highly corrosive atmosphere that can eat through traditional steel sheets in just a few seasons. Zinco Roofing Solution's <strong>PVC and UPVC Roofing Sheets</strong> are the ultimate answer to these challenges, providing a 100% rust-proof alternative that delivers decades of service.
+                                    In intense industrial environments, Zinco's <strong>upvc roofing sheets</strong> are the ultimate choice for durability. Our <strong>upvc roofing sheets</strong> provide a 100% rust-proof alternative to metal.
                                 </p>
                                 <p>
-                                    UPVC (Unplasticized Polyvinyl Chloride) is not just "plastic." High-performance UPVC is a complex, multi-layered material engineered for structural integrity. Our <strong>UPVC sheets in Mumbai</strong> are manufactured using a co-extrusion process that bonds multiple layers together, with the top layer being treated with <strong>ASA (Acrylonitrile Styrene Acrylate)</strong>. This high-standard resin coating provides extreme UV resistance, ensuring the sheets don't become brittle or lose their color even under the relentless Mumbai sun.
-                                </p>
-                            </Card>
-
-                            <Card variant="solid" className={styles.contentCard}>
-                                <h3>The Science of ASA Coating and Heat Insulation</h3>
-                                <p>
-                                    One of the primary advantages of UPVC over metal is its natural thermal insulation. Metal sheets act as conductors, radiating heat directly into the facility below. In contrast, our UPVC sheets have a low thermal conductivity, significantly reducing the temperature inside warehouses in <strong>Panvel and JNPT</strong> by up to 5-8°C during peak summer months. This thermal stability not only improves worker productivity but also protects temperature-sensitive chemicals and inventories.
+                                    High-performance <strong>upvc roofing sheets</strong> are engineered for structural integrity. These <strong>upvc roofing sheets</strong> feature an ASA coating for extreme UV resistance.
                                 </p>
                             </Card>
 
                             <Card variant="solid" className={styles.contentCard}>
-                                <h3>Why Industrialists Prefer UPVC in Navi Mumbai</h3>
+                                <h3>Heat Insulation Properties of upvc roofing sheets</h3>
+                                <p>
+                                    Our <strong>upvc roofing sheets</strong> offer natural thermal insulation. Using <strong>upvc roofing sheets</strong> can significantly reduce indoor temperatures during peak summer months.
+                                </p>
+                            </Card>
+
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Why Choose upvc roofing sheets in Maharashtra</h3>
                                 <ul className={styles.styledList}>
-                                    <li><strong>100% Corrosion Proof:</strong> Unlike metal, UPVC is completely unaffected by acid rain, industrial vapors, and coastal salt air. It is the gold standard for chemical storage and fertilizer plants.</li>
-                                    <li><strong>Superior Sound Insulation:</strong> UPVC has excellent acoustic dampening properties. During heavy Mumbai rain, the "drumming" sound typical of metal roofs is virtually eliminated, creating a quieter, more focused work environment.</li>
-                                    <li><strong>Lightweight & Safety:</strong> Being significantly lighter than metal, these sheets place less stress on the structural frame. They are also non-conductive, providing an extra layer of electrical safety for industrial facilities.</li>
-                                    <li><strong>Self-Cleaning Properties:</strong> The high-gloss ASA finish allows smooth water flow and prevents dust buildup, meaning a simple rain shower often performs most of the cleaning for you.</li>
+                                    <li><strong>Corrosion Proof:</strong> These <strong>upvc roofing sheets</strong> are unaffected by acid rain or salt air.</li>
+                                    <li><strong>Sound Dampening:</strong> Heavy rain noise is virtually eliminated with our <strong>upvc roofing sheets</strong>.</li>
+                                    <li><strong>Safety First:</strong> Lightweight and non-conductive <strong>upvc roofing sheets</strong> offer extra protection.</li>
+                                    <li><strong>Self-Cleaning:</strong> The ASA finish on <strong>upvc roofing sheets</strong> prevents dust buildup easily.</li>
                                 </ul>
                             </Card>
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Technical Specifications</h2>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>Standard upvc roofing sheets Specifications</h2>
                         <Card variant="glass">
                             <div className={styles.specsTable}>
                                 {specifications.map((spec, index) => (
@@ -137,10 +141,16 @@ const PVCUPVCSheets = () => {
                                 ))}
                             </div>
                         </Card>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Why Use UPVC in Mumbai's Coastal Climate?</h2>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>Benefits of upvc roofing sheets</h2>
                         <div className={styles.featuresGrid}>
                             {features.map((feature, index) => (
                                 <motion.div
@@ -156,30 +166,40 @@ const PVCUPVCSheets = () => {
                                 </motion.div>
                             ))}
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Ideal Applications</h2>
-                        <div className={styles.applicationsGrid}>
-                            {applications.map((app, index) => (
-                                <Card key={index} variant="solid" className={styles.appCard}>
-                                    <FaIndustry style={{ color: 'var(--accent-500)', marginBottom: '0.5rem' }} />
-                                    <h4>{app}</h4>
-                                </Card>
-                            ))}
-                        </div>
-                    </section>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>Applications for upvc roofing sheets</h2>
+                        <ul className={styles.styledList}>
+                            <li>Chemical Factories needing <strong>upvc roofing sheets</strong></li>
+                            <li>Fertilizer plants using <strong>upvc roofing sheets</strong></li>
+                            <li>Coastal warehouses choosing <strong>upvc roofing sheets</strong></li>
+                            <li>Electroplating units installing <strong>upvc roofing sheets</strong></li>
+                        </ul>
+                    </motion.section>
 
-                    <section className={styles.section}>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.contentBlock}>
                             <Card variant="solid" className={styles.contentCard}>
-                                <h2>Installation and Long-Term Value</h2>
+                                <h2>Long-Term Value of upvc roofing sheets</h2>
                                 <p>
-                                    While the initial cost of premium UPVC might be slightly higher than entry-level metal sheets, the long-term ROI is undeniable. In corrosive chemical zones, metal roofs may require replacement every 5-7 years, whereas our <strong>UPVC sheets in Panvel</strong> are designed for a 15-25 year lifespan. The elimination of maintenance painting and the reduction in cooling costs make UPVC the most cost-effective choice for long-term industrial assets.
+                                    Our premium <strong>upvc roofing sheets</strong> provide undeniable ROI. These <strong>upvc roofing sheets</strong> are designed for a 15-25 year lifespan in corrosive zones.
                                 </p>
                             </Card>
                         </div>
-                    </section>
+                    </motion.section>
 
                     <motion.section
                         className={styles.section}
@@ -188,34 +208,30 @@ const PVCUPVCSheets = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h2>Frequently Asked Questions</h2>
+                        <h2>FAQs on upvc roofing sheets</h2>
                         <div className={styles.faqGrid}>
                             <div className={styles.faqItem}>
-                                <h4>Are UPVC sheets strong enough for industrial spans?</h4>
-                                <p>Yes! Our UPVC sheets are designed with specialized rib heights and material density to provide high structural strength. While purlin spacing requirements differ slightly from metal, they are fully capable of handling standard wind loads in the Mumbai metropolitan region.</p>
+                                <h4>Are <strong>upvc roofing sheets</strong> strong?</h4>
+                                <p>Yes, our <strong>upvc roofing sheets</strong> provide high structural strength for industrial use.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h4>Do the sheets change color or fade over time?</h4>
-                                <p>Thanks to the high-grade ASA top layer, our sheets are color-stable. While any material exposed to extreme sun for 20 years may see very slight tonal shifts, there is no significant fading, "chalking," or loss of aesthetic appeal.</p>
+                                <h4>Do <strong>upvc roofing sheets</strong> fade?</h4>
+                                <p>The ASA layer ensures our <strong>upvc roofing sheets</strong> remain color-stable for years.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h4>Can UPVC be used for animal farms or hatcheries?</h4>
-                                <p>Absolutely. UPVC is widely used in Panvel and rural outskirts for livestock farming because it doesn't corrode from ammonia vapors (common in animal waste) and keeps the animals cooler and more comfortable.</p>
-                            </div>
-                            <div className={styles.faqItem}>
-                                <h4>What is the fire rating of your UPVC sheets?</h4>
-                                <p>Our UPVC sheets are formulated with fire-retardant additives. They are self-extinguishing and do not support combustion, meeting the standard B1 fire safety requirements for many industrial facilities.</p>
+                                <h4>Are <strong>upvc roofing sheets</strong> fire-safe?</h4>
+                                <p>Our <strong>upvc roofing sheets</strong> are self-extinguishing and meet B1 safety standards.</p>
                             </div>
                         </div>
                     </motion.section>
 
                     <section className={styles.ctaSection}>
                         <Card variant="gradient" className={styles.ctaCard}>
-                            <h3>Corrosion Problems? Switch to UPVC.</h3>
-                            <p>Get expert advice for your factory roofing in Mumbai.</p>
+                            <h3>Get Best Quote for upvc roofing sheets</h3>
+                            <p>Contact the experts for high-quality <strong>upvc roofing sheets</strong> solutions today.</p>
                             <div className={styles.ctaButtons}>
-                                <Button size="lg" href="/contact">Get Quote</Button>
-                                <Button size="lg" variant="outline" href="tel:+919967203090">Call Now</Button>
+                                <Button size="lg" href="/contact">Get Estimate</Button>
+                                <Button size="lg" variant="outline" href="tel:+919967203090">Call Expert</Button>
                             </div>
                         </Card>
                     </section>

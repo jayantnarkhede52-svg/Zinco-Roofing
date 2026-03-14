@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { FaArrowLeft, FaSun, FaLightbulb, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaArrowLeft, FaSun, FaLightbulb, FaMapMarkerAlt, FaCheckCircle } from 'react-icons/fa';
 import SEO from '../../components/shared/SEO';
 import Card from '../../components/shared/Card';
 import Button from '../../components/shared/Button';
@@ -11,12 +11,12 @@ import styles from './ProductCategory.module.css';
 const SolarInstallation = () => {
     const navigate = useNavigate();
     const features = [
-        'Commercial Solar Mounting',
-        'Industrial Roof Solar Panels',
-        'Smart Energy Solutions',
-        'Professional Fixing Systems',
-        'Maintenance Services',
-        'Energy Efficiency'
+        'Advanced solar panel installation in navi mumbai',
+        'Top solar panel installation in navi mumbai',
+        'Balanced solar panel installation in navi mumbai',
+        'Expert solar panel installation in navi mumbai',
+        'Quality solar panel installation in navi mumbai',
+        'Best solar panel installation in navi mumbai'
     ];
 
     const products = [
@@ -55,11 +55,12 @@ const SolarInstallation = () => {
                 title="Solar Panel Installation Services Navi Mumbai"
                 description="Expert solar panel installation and mounting services for industrial and commercial roofs in Navi Mumbai, Panvel, and Taloja."
                 keywords="solar panel installation, commercial solar, industrial solar, energy efficiency, solar mounting"
+                canonicalUrl="https://zincoroof.com/products/solar-panel-installation"
             />
             <Helmet>
-                <link rel="preload" as="image" href={heroImage} />
+                <link rel="preload" as="image" href={heroImage} fetchpriority="high" />
             </Helmet>
-            <div className={styles.hero} style={{ '--hero-image': `url(${heroImage})` }} fetchpriority="high">
+            <div className={styles.hero} style={{ '--hero-image': `url(${heroImage})` }}>
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>
                     <motion.div
@@ -74,10 +75,10 @@ const SolarInstallation = () => {
                             CLEAN ENERGY SOLUTIONS
                         </motion.span>
                         <motion.h1 variants={itemVariants}>
-                            Solar Panel Installation
+                            solar panel installation in navi mumbai
                         </motion.h1>
                         <motion.p className={styles.heroDesc} variants={itemVariants}>
-                            Expert solar solutions for industrial and commercial roofs in Navi Mumbai.
+                            Elevate your facility with efficient <strong>solar panel installation in navi mumbai</strong> solutions.
                         </motion.p>
                     </motion.div>
                 </div>
@@ -85,22 +86,51 @@ const SolarInstallation = () => {
 
             <div className={styles.container}>
                 <div className={styles.content}>
-                    <section className={styles.section}>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.contentBlock}>
                             <Card variant="solid" className={styles.contentCard}>
-                                <h2>Powering Industry with Sustainable Energy</h2>
+                                <h2>Complete solar panel installation in navi mumbai solutions</h2>
                                 <p>
-                                    With the rising costs of energy and the increasing focus on sustainability, transitioning to solar energy is a smart investment for any industrial facility. At Zinco Roofing Solution, we provide comprehensive <strong>Solar Panel Installation</strong> services, focusing on secure mounting and reliable performance on industrial and commercial roofs.
+                                    At Zinco Roofing Solution, we provide the best <strong>solar panel installation in navi mumbai</strong>. Our <strong>solar panel installation in navi mumbai</strong> are designed for massive industrial roofs.
                                 </p>
                                 <p>
-                                    Our team understands the unique challenges of mounting solar panels on different roofing profiles, from trapezoidal metal sheets to insulated PUF panels. We use specialized fixing systems that ensure a leak-proof and secure installation, even in high-wind areas like <strong>Panvel</strong> and <strong>Vashi</strong>.
+                                    Using <strong>solar panel installation in navi mumbai</strong> ensures a green energy source for decades. Our <strong>solar panel installation in navi mumbai</strong> are built for the heavy Mumbai monsoons.
                                 </p>
                             </Card>
-                        </div>
-                    </section>
 
-                    <section className={styles.section}>
-                        <h2>Our Solar Solutions</h2>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Efficiency of solar panel installation in navi mumbai</h3>
+                                <p>
+                                    A high-quality <strong>solar panel installation in navi mumbai</strong> reduces industrial costs. Our <strong>solar panel installation in navi mumbai</strong> are balanced for maximum output.
+                                </p>
+                            </Card>
+
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Why Zinco for solar panel installation in navi mumbai?</h3>
+                                <ul className={styles.styledList}>
+                                    <li><strong>Sustainable:</strong> Every <strong>solar panel installation in navi mumbai</strong> offers clean power.</li>
+                                    <li><strong>Reliable:</strong> Our <strong>solar panel installation in navi mumbai</strong> is securely mounted.</li>
+                                    <li><strong>Quality:</strong> We ensure perfect installation of <strong>solar panel installation in navi mumbai</strong>.</li>
+                                    <li><strong>Value:</strong> Our <strong>solar panel installation in navi mumbai</strong> is a smart industrial asset.</li>
+                                </ul>
+                            </Card>
+                        </div>
+                    </motion.section>
+
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>Types of solar panel installation in navi mumbai</h2>
                         <div className={styles.applicationsGrid}>
                             {products.map((prod, index) => (
                                 <Card key={index} variant="solid" className={styles.appCard}>
@@ -109,12 +139,18 @@ const SolarInstallation = () => {
                                 </Card>
                             ))}
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Available Locations</h2>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>Features of solar panel installation in navi mumbai</h2>
                         <div className={styles.featuresGrid}>
-                            {['Navi Mumbai', 'Panvel', 'Taloja MIDC', 'Vashi', 'Thane', 'Mumbai'].map((loc, index) => (
+                            {features.map((feature, index) => (
                                 <motion.div
                                     key={index}
                                     className={styles.featureItem}
@@ -123,30 +159,36 @@ const SolarInstallation = () => {
                                     viewport={{ once: true }}
                                     transition={{ delay: index * 0.1 }}
                                 >
-                                    <FaMapMarkerAlt className={styles.checkIcon} />
-                                    <span>{loc}</span>
+                                    <FaCheckCircle className={styles.checkIcon} />
+                                    <span>{feature}</span>
                                 </motion.div>
                             ))}
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.contentBlock}>
                             <Card variant="solid" className={styles.contentCard}>
-                                <h3>The Zinco Approach to Solar Mounting</h3>
+                                <h2>Modern solar panel installation in navi mumbai</h2>
                                 <p>
-                                    We prioritize both energy efficiency and roof integrity. Our mounting systems are designed to distribute load evenly and avoid any damage to the underlying roofing material. We also provide professional maintenance and cleaning services to ensure your solar array continues to operate at peak performance for years to come.
+                                    Our <strong>solar panel installation in navi mumbai</strong> is ideal for large warehouses. Once installed, the <strong>solar panel installation in navi mumbai</strong> provides a maintenance-free energy flow.
                                 </p>
                             </Card>
                         </div>
-                    </section>
+                    </motion.section>
 
                     <section className={styles.ctaSection}>
                         <Card variant="gradient" className={styles.ctaCard}>
-                            <h3>Switch to Solar with Confidence</h3>
-                            <p>Contact us for a professional solar feasibility assessment of your industrial roof.</p>
+                            <h3>Get Best Quote for solar panel installation in navi mumbai</h3>
+                            <p>Contact the leading expert for <strong>solar panel installation in navi mumbai</strong> today.</p>
                             <div className={styles.ctaButtons}>
-                                <Button size="lg" href="/contact">Get Free Quote</Button>
+                                <Button size="lg" href="/contact">Get Estimate</Button>
                                 <Button size="lg" variant="outline" href="tel:+919967203090">Call Expert</Button>
                             </div>
                         </Card>

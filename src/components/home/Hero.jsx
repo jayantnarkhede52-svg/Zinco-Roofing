@@ -37,7 +37,7 @@ const Hero = () => {
             <div className={styles.background}>
                 {isMobile ? (
                     <img src={mobileHero}
-                        alt="Zinco Roofing Solutions"
+                        alt="Roofing Contractor in Navi Mumbai"
                         className={styles.mobileHeroImage}
                         fetchpriority="high"
                         loading="eager"
@@ -71,12 +71,12 @@ const Hero = () => {
                 </div>
 
                 <p className={styles.subtitle}>
-                    Professional Roofing Solutions for
-                    <span className={styles.highlight}> Navi Mumbai & Beyond</span>
+                    Professional <strong>Roofing Contractor in Navi Mumbai</strong> for
+                    <span className={styles.highlight}> Industrial Excellence</span>
                 </p>
 
                 <p className={styles.description}>
-                    Expert Roof installation, PUF panel installation & Structural Painting services with 8+ years experience
+                    Zinco Roofing is the leading <strong>Roofing Contractor in Navi Mumbai</strong> with 8+ years of experience in expert roof installation, PUF panel solutions, and structural shed construction.
                 </p>
 
                 <div className={styles.buttonGroup}>

@@ -11,12 +11,12 @@ import styles from './ProductCategory.module.css';
 const PEBFabrication = () => {
     const navigate = useNavigate();
     const features = [
-        'PEB Fabricators in Navi Mumbai',
-        'Industrial Shed Contractors Panvel',
-        'Steel Building Construction Taloja',
-        'Pre-Engineered Godowns Bhiwandi',
-        'Turnkey Shed Solutions Mumbai',
-        'Fastest PEB Erection'
+        'PEB structure fabrication Experts',
+        'Top PEB structure fabrication',
+        'Turnkey PEB structure fabrication',
+        'Durable PEB structure fabrication',
+        'Modern PEB structure fabrication',
+        'Swift PEB structure fabrication'
     ];
 
     const specifications = [
@@ -26,15 +26,6 @@ const PEBFabrication = () => {
         { label: 'Design Standards', value: 'IS 800 / MBMA' },
         { label: 'Location', value: 'Serving Panvel, Taloja, Mumbai' },
         { label: 'Warranty', value: 'Structure & Sheeting Warranty' }
-    ];
-
-    const applications = [
-        'Warehouses on Old Mumbai-Pune Highway',
-        'Factories in Taloja MIDC',
-        'Logistics Parks in Bhiwandi',
-        'Cold Storage in Panvel',
-        'Showrooms in Navi Mumbai',
-        'Industrial Parks in Khopoli'
     ];
 
     const containerVariants = {
@@ -64,11 +55,12 @@ const PEBFabrication = () => {
                 title="PEB Structure Fabrication in Navi Mumbai & Panvel"
                 description="Turnkey Pre-Engineered Building (PEB) solutions, industrial sheds, and warehouse construction in Taloja, Bhiwandi, and Mumbai. Fast erection and cost-effective."
                 keywords="peb structure fabrication, industrial shed contractor, pre engineered builders, warehouse construction mumbai"
+                canonicalUrl="https://zincoroof.com/products/peb-fabrication"
             />
             <Helmet>
-                <link rel="preload" as="image" href={heroImage} />
+                <link rel="preload" as="image" href={heroImage} fetchpriority="high" />
             </Helmet>
-            <div className={styles.hero} style={{ '--hero-image': `url(${heroImage})` }} fetchpriority="high">
+            <div className={styles.hero} style={{ '--hero-image': `url(${heroImage})` }}>
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>
                     <motion.div
@@ -83,10 +75,10 @@ const PEBFabrication = () => {
                             PRECISION & DURABILITY
                         </motion.span>
                         <motion.h1 variants={itemVariants}>
-                            PEB Structure Fabrication in Navi Mumbai & Panvel
+                            peb structure fabrication
                         </motion.h1>
                         <motion.p className={styles.heroDesc} variants={itemVariants}>
-                            Leading Pre-Engineered Building (PEB) contractors and industrial shed fabricators in Taloja, Panvel, and Mumbai.
+                            Leading <strong>peb structure fabrication</strong> contractors and industrial shed fabricators in Taloja, Panvel, and Mumbai.
                         </motion.p>
                     </motion.div>
                 </div>
@@ -94,39 +86,51 @@ const PEBFabrication = () => {
 
             <div className={styles.container}>
                 <div className={styles.content}>
-                    <section className={styles.section}>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.contentBlock}>
                             <Card variant="solid" className={styles.contentCard}>
-                                <h2>Turnkey PEB Solutions: The Future of Industrial Construction in Navi Mumbai</h2>
+                                <h2>Complete peb structure fabrication solutions</h2>
                                 <p>
-                                    In the fast-paced industrial landscape of <strong>Navi Mumbai, Taloja MIDC, and Panvel</strong>, the speed of infrastructure deployment can be the difference between meeting market demand and missing out. Pre-Engineered Buildings (PEB) have revolutionized the construction industry, offering a faster, more cost-effective, and highly flexible alternative to traditional civil construction. At Zinco Roofing Solution, we specialize in provide complete <strong>Turnkey PEB Shed Solutions</strong>, from the initial architectural design to the final on-site erection.
+                                    At Zinco Roofing Solution, we excel in <strong>peb structure fabrication</strong>. Our <strong>peb structure fabrication</strong> services are designed for rapid deployment in Navi Mumbai's industrial hubs.
                                 </p>
                                 <p>
-                                    A PEB is not just a steel shed; it is a meticulously engineered system of structural components that work in harmony. Our buildings are optimized using advanced design software like <strong>MBS and STAAD Pro</strong>, ensuring that every gram of steel is placed where it is needed most. This "intelligent design" approach allows us to create large, clear-span structures (up to 60 meters or more without internal columns) that are ideal for the modern logistics requirements of <strong>Bhiwandi and Panvel</strong>'s massive warehouses.
-                                </p>
-                            </Card>
-
-                            <Card variant="solid" className={styles.contentCard}>
-                                <h3>PEB vs. Conventional Steel: Why the Shift?</h3>
-                                <p>
-                                    The primary advantage of PEB over conventional steel-fabricated sheds lies in weight and precision. In a conventional structure, uniform hot-rolled sections are used throughout, leading to excess weight in areas with lower stress. Our PEB members are <strong>"built-up" sections</strong>—tapered I-beams where the depth of the section is increased in areas of higher bending moment. This can reduce the total weight of the structure by 20-30%, significantly lowering material costs while maintaining or even increasing overall structural integrity.
+                                    Choosing <strong>peb structure fabrication</strong> ensures a cost-effective and flexible alternative to civil building. Our <strong>peb structure fabrication</strong> expertise covers design and erection.
                                 </p>
                             </Card>
 
                             <Card variant="solid" className={styles.contentCard}>
-                                <h3>Why Industrial Shed Owners in Mumbai Trust Zinco</h3>
+                                <h3>Efficiency of peb structure fabrication</h3>
+                                <p>
+                                    The precision of <strong>peb structure fabrication</strong> lies in built-up sections. Our <strong>peb structure fabrication</strong> methods reduce weight while increasing structural integrity.
+                                </p>
+                            </Card>
+
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Why choose our peb structure fabrication?</h3>
                                 <ul className={styles.styledList}>
-                                    <li><strong>Rapid Project Delivery:</strong> Because 90% of the fabrication happens in a controlled factory environment in Navi Mumbai, on-site erection is extremely fast. A high-quality PEB warehouse can be ready for use in weeks, not months.</li>
-                                    <li><strong>Seismic and Wind Resistance:</strong> Our structures are designed to comfortably exceed the <strong>Zone III seismic requirements</strong> and the high wind loads (up to 150 kmph) common in the Mumbai coastal region.</li>
-                                    <li><strong>Aesthetic Flexibility:</strong> We offer a variety of wall and roof cladding options, including <strong>PUF panels for cold storage</strong> or high-rib color-coated sheets, allowing you to match the aesthetic and functional needs of your facility.</li>
-                                    <li><strong>Low Maintenance:</strong> High-quality factory-applied coatings and precision-bolted joints mean that our buildings require minimal maintenance compared to conventional welded structures.</li>
+                                    <li><strong>Fast Delivery:</strong> Our <strong>peb structure fabrication</strong> process is highly streamlined.</li>
+                                    <li><strong>Wind Resistance:</strong> Every <strong>peb structure fabrication</strong> project meets high wind loads.</li>
+                                    <li><strong>Aesthetic Choice:</strong> <strong>peb structure fabrication</strong> offers various wall and roof options.</li>
+                                    <li><strong>Low Maintenance:</strong> Bolted joints in <strong>peb structure fabrication</strong> ensure longevity.</li>
                                 </ul>
                             </Card>
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Technical Specifications</h2>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>PEB structure fabrication Specifications</h2>
                         <Card variant="glass">
                             <div className={styles.specsTable}>
                                 {specifications.map((spec, index) => (
@@ -137,10 +141,16 @@ const PEBFabrication = () => {
                                 ))}
                             </div>
                         </Card>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Why Choose us for PEB in Mumbai?</h2>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>Benefits of peb structure fabrication</h2>
                         <div className={styles.featuresGrid}>
                             {features.map((feature, index) => (
                                 <motion.div
@@ -156,30 +166,24 @@ const PEBFabrication = () => {
                                 </motion.div>
                             ))}
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Key Projects Locations</h2>
-                        <div className={styles.applicationsGrid}>
-                            {applications.map((app, index) => (
-                                <Card key={index} variant="solid" className={styles.appCard}>
-                                    <FaIndustry style={{ color: 'var(--accent-500)', marginBottom: '0.5rem' }} />
-                                    <h4>{app}</h4>
-                                </Card>
-                            ))}
-                        </div>
-                    </section>
-
-                    <section className={styles.section}>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.contentBlock}>
                             <Card variant="solid" className={styles.contentCard}>
-                                <h2>Design Standards and Engineering Quality</h2>
+                                <h2>Safety in peb structure fabrication</h2>
                                 <p>
-                                    Every structure we build complies with the latest <strong>IS 800 (Indian Standard code for general steel construction)</strong> and <strong>MBMA (Metal Building Manufacturers Association)</strong> guidelines. Whether you are building a small manufacturing unit in <strong>Rabale</strong> or a multi-thousand-square-foot logistics park in <strong>Bhiwandi</strong>, our engineering team ensures that every bolted connection and structural member is optimized for safety and efficiency.
+                                    Every <strong>peb structure fabrication</strong> project follows strict Indian Standard codes. We ensure <strong>peb structure fabrication</strong> optimizes safety for every manufacturing unit.
                                 </p>
                             </Card>
                         </div>
-                    </section>
+                    </motion.section>
 
                     <motion.section
                         className={styles.section}
@@ -188,34 +192,30 @@ const PEBFabrication = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h2>Frequently Asked Questions</h2>
+                        <h2>FAQs on peb structure fabrication</h2>
                         <div className={styles.faqGrid}>
                             <div className={styles.faqItem}>
-                                <h4>How long does it take to erect a 10,000 sq ft PEB shed?</h4>
-                                <p>Once the foundation is ready and the fabrication is complete, the on-site erection for a standard 10,000 sq ft shed in areas like **Panvel** usually takes between 3 to 5 weeks, depending on the complexity and weather conditions.</p>
+                                <h4>How fast is <strong>peb structure fabrication</strong>?</h4>
+                                <p>Standard <strong>peb structure fabrication</strong> erection takes 3 to 5 weeks once foundations are ready.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h4>Can a PEB structure be expanded in the future?</h4>
-                                <p>Yes, one of the greatest advantages of PEB is that it is designed with future expansion in mind. We can easily add additional bays or even increase the height of the building with minimal disruption to your ongoing operations.</p>
+                                <h4>Can <strong>peb structure fabrication</strong> be expanded?</h4>
+                                <p>Yes, <strong>peb structure fabrication</strong> is designed for future bays and height increases.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h4>Is it possible to dismantle and move a PEB building?</h4>
-                                <p>Absolutely. Because our PEBs are primarily bolted structures, they can be dismantled and re-erected at a different location with nearly 90% material recovery. This makes them a highly versatile asset for expanding businesses.</p>
-                            </div>
-                            <div className={styles.faqItem}>
-                                <h4>What kind of lifespan can I expect from a PEB structure?</h4>
-                                <p>With proper design and high-quality coatings, a PEB structure is designed for a service life of 30 to 50 years. Regular inspections and minor maintenance of the roofing sheets can further extend this lifespan.</p>
+                                <h4>Is <strong>peb structure fabrication</strong> portable?</h4>
+                                <p>Yes, the bolted members of <strong>peb structure fabrication</strong> allow for relocation if needed.</p>
                             </div>
                         </div>
                     </motion.section>
 
                     <section className={styles.ctaSection}>
                         <Card variant="gradient" className={styles.ctaCard}>
-                            <h3>Planning a Warehouse in Panvel?</h3>
-                            <p>Get the best PEB structural quote today!</p>
+                            <h3>Get Quote for peb structure fabrication</h3>
+                            <p>Contact the leading <strong>peb structure fabrication</strong> experts in Navi Mumbai today.</p>
                             <div className={styles.ctaButtons}>
-                                <Button size="lg" href="/contact">Get Quote</Button>
-                                <Button size="lg" variant="outline" href="tel:+919967203090">Call Now</Button>
+                                <Button size="lg" href="/contact">Get Estimate</Button>
+                                <Button size="lg" variant="outline" href="tel:+919967203090">Call Expert</Button>
                             </div>
                         </Card>
                     </section>

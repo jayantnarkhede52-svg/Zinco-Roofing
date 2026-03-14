@@ -17,7 +17,7 @@ const locations = [
     {
         id: 'mumbai',
         title: 'Mumbai',
-        desc: <>Premium <strong>Roofing Sheets Mumbai</strong> and <strong>Industrial Roofing Mumbai</strong> for towers and plants.</>,
+        desc: <>Leading <strong>Industrial Roofing Contractors Mumbai</strong> providing <strong>Roofing Sheets Mumbai</strong> for towers and plants.</>,
         icon: <FaCity size={24} />,
         color: '#f59e0b',
         path: '/industrial-roofing-contractors-in-mumbai',
@@ -26,7 +26,7 @@ const locations = [
     {
         id: 'navi-mumbai',
         title: 'Navi Mumbai',
-        desc: <>Specialized <strong>Roofing Sheets Navi Mumbai</strong> and <strong>Industrial Roofing Navi Mumbai</strong> for MIDC zones.</>,
+        desc: <>Premier <strong>Industrial Roofing Contractors Navi Mumbai</strong> for <strong>Roofing Sheets Navi Mumbai</strong> in MIDC zones.</>,
         icon: <FaIndustry size={24} />,
         color: '#3b82f6',
         path: '/industrial-roofing-contractors-in-navi-mumbai',
@@ -35,7 +35,7 @@ const locations = [
     {
         id: 'panvel',
         title: 'Panvel',
-        desc: <>Expert <strong>Roofing Sheets Panvel</strong> and <strong>Industrial Roofing Panvel</strong> for logistics parks.</>,
+        desc: <>Professional <strong>Industrial Roofing Contractors Panvel</strong> for <strong>Roofing Sheets Panvel</strong> and logistics parks.</>,
         icon: <FaWarehouse size={24} />,
         color: '#10b981',
         path: '/industrial-roofing-contractors-in-panvel',
@@ -44,7 +44,7 @@ const locations = [
     {
         id: 'thane',
         title: 'Thane',
-        desc: <>Advanced <strong>Roofing Sheets Thane</strong> and <strong>Industrial Roofing Thane</strong> against heavy rainfall.</>,
+        desc: <>Trusted <strong>Industrial Roofing Contractors Thane</strong> offering <strong>Roofing Sheets Thane</strong> against heavy rainfall.</>,
         icon: <FaUmbrella size={24} />,
         color: '#6366f1',
         path: '/industrial-roofing-contractors-in-thane',
@@ -53,7 +53,7 @@ const locations = [
     {
         id: 'taloja',
         title: 'Taloja',
-        desc: <>Heavy-duty <strong>Roofing Sheets Taloja</strong> and <strong>Industrial Roofing Taloja</strong> for the MIDC belt.</>,
+        desc: <>Massive scale <strong>Industrial Roofing Contractors Taloja</strong> for <strong>Roofing Sheets Taloja</strong> in the MIDC belt.</>,
         icon: <FaIndustry size={24} />,
         color: '#8b5cf6',
         path: '/industrial-roofing-contractors-in-taloja',
@@ -62,7 +62,7 @@ const locations = [
     {
         id: 'ambarnath',
         title: 'Ambarnath',
-        desc: <>Robust <strong>Roofing Sheets Ambarnath</strong> and <strong>Industrial Roofing Ambarnath</strong> for demanding environments.</>,
+        desc: <>Heavy-duty <strong>Industrial Roofing Contractors Ambarnath</strong> for <strong>Roofing Sheets Ambarnath</strong> in demanding zones.</>,
         icon: <FaIndustry size={24} />,
         color: '#ec4899',
         path: '/industrial-roofing-contractors-in-ambarnath',
@@ -71,7 +71,7 @@ const locations = [
     {
         id: 'dombivli',
         title: 'Dombivli',
-        desc: <>Expert <strong>Roofing Sheets Dombivli</strong> and <strong>Industrial Roofing Dombivli</strong> across MIDC areas.</>,
+        desc: <>Experienced <strong>Industrial Roofing Contractors Dombivli</strong> for <strong>Roofing Sheets Dombivli</strong> across MIDC areas.</>,
         icon: <FaCity size={24} />,
         color: '#06b6d4',
         path: '/industrial-roofing-contractors-in-dombivli',
@@ -80,7 +80,7 @@ const locations = [
     {
         id: 'puf-navi-mumbai',
         title: 'PUF Panels (Navi Mumbai)',
-        desc: <>Premier <strong>PUF Panel Manufacturer Navi Mumbai</strong> for <strong>Insulated Roofing Sheets Navi Mumbai</strong>.</>,
+        desc: <>Top <strong>PUF Panel Manufacturer Navi Mumbai</strong> and <strong>Industrial Roofing Contractors</strong> for insulated solutions.</>,
         icon: <FaLayerGroup size={24} />,
         color: '#ef4444',
         path: '/puf-panel-manufacturer-navi-mumbai',
@@ -89,7 +89,7 @@ const locations = [
     {
         id: 'lonavla',
         title: 'Lonavla',
-        desc: <>Weather-resistant <strong>Roofing Sheets Lonavla</strong> and <strong>Industrial Roofing Lonavla</strong> for heavy rainfall zones.</>,
+        desc: <>Specialized <strong>Industrial Roofing Contractors Lonavla</strong> for <strong>Roofing Sheets Lonavla</strong> in heavy rainfall zones.</>,
         icon: <FaUmbrella size={24} />,
         color: '#14b8a6',
         path: '/industrial-roofing-contractors-in-lonavla',
@@ -98,7 +98,7 @@ const locations = [
     {
         id: 'chakan-pune',
         title: 'Chakan Pune',
-        desc: <>Heavy-duty PEB <strong>Roofing Sheets Chakan Pune</strong> and <strong>Industrial Roofing Chakan Pune</strong>.</>,
+        desc: <>Large-scale <strong>Industrial Roofing Contractors Chakan Pune</strong> for heavy-duty PEB <strong>Roofing Sheets Chakan Pune</strong>.</>,
         icon: <FaIndustry size={24} />,
         color: '#f97316',
         path: '/industrial-roofing-contractors-in-chakan-pune',
@@ -107,7 +107,7 @@ const locations = [
     {
         id: 'chakan-painting',
         title: 'Chakan Painting',
-        desc: <>Specialized <strong>Industrial Painting in Chakan</strong> and <strong>Structural Painting Chakan</strong>.</>,
+        desc: <>Expert <strong>Industrial Painting in Chakan</strong> and <strong>Structural Painting Chakan</strong> services.</>,
         icon: <FaLayerGroup size={24} />,
         color: '#8b5cf6',
         path: '/industrial-painting-in-chakan',
@@ -122,6 +122,7 @@ const Areas = () => {
                 title="Industrial Roofing Contractors in Mumbai, Navi Mumbai & Thane"
                 description="Expert Industrial Roofing Contractors serving Mumbai, Navi Mumbai, Taloja MIDC, and Thane. Heavy-duty factory sheds, PUF panels, and structural fabrication."
                 keywords="industrial roofing contractors, factory shed contractors navi mumbai, mumbai industrial roofing, taloja midc roofing, puf panel manufacturer"
+                canonicalUrl="https://zincoroof.com/areas"
             />
             <section className={styles.hero} style={{ backgroundImage: `url(${heroImage})`, height: '50vh' }}>
                 <div className={styles.heroOverlay} />
@@ -132,8 +133,8 @@ const Areas = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h1>Our Service Areas</h1>
-                        <p>Expert Roofing Solutions Across the Mumbai Metropolitan Region.</p>
+                        <h1>Industrial Roofing Contractors in MMR Region</h1>
+                        <p>Providing Premier Industrial Roofing Contractors services across Maharashtra's industrial belts.</p>
                     </motion.div>
                 </div>
             </section>
@@ -146,7 +147,7 @@ const Areas = () => {
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
                         >
-                            Where We Work
+                            Specialized Infrastructure Solutions
                         </motion.h2>
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
@@ -154,7 +155,7 @@ const Areas = () => {
                             viewport={{ once: true }}
                             style={{ margin: '0 auto', maxWidth: '800px' }}
                         >
-                            Zinco Roofing Solution provides specialized services tailored to the unique industrial, commercial, and residential needs of each city in the MMR region. Select your location to learn more about our specific offerings.
+                            Zinco Roofing Solution is recognized as the leading <strong>Industrial Roofing Contractors</strong> provider in the Mumbai Metropolitan Region. We deliver specialized engineering tailored to the unique industrial, commercial, and residential needs of each city. Our team of <strong>Industrial Roofing Contractors</strong> experts ensures that every project meets high structural standards.
                         </motion.p>
                     </section>
 
@@ -177,15 +178,19 @@ const Areas = () => {
                                     </div>
                                     <div className={styles.areaInfo}>
                                         <h3>{loc.title}</h3>
-                                        <p>{loc.desc}</p>
+                                        <div style={{ fontSize: '0.9rem', color: 'var(--text-600)', marginBottom: '1rem' }}>{loc.desc}</div>
                                         <div className={styles.areaLink}>
-                                            Explore Location ➔
+                                            Explore Solutions ➔
                                         </div>
                                     </div>
                                 </motion.div>
                             </Link>
                         ))}
                     </div>
+                    
+                    <section style={{ marginTop: '4rem', textAlign: 'center' }}>
+                        <p>Looking for reliable <strong>Industrial Roofing Contractors</strong>? We provide end-to-end fabrication and installation services across all major industrial locations.</p>
+                    </section>
                 </main>
             </div>
         </div>

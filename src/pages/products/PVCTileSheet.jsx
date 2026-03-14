@@ -18,21 +18,21 @@ import tileImg6 from '../../assets/Upvc images/Upvc images/1000014616.webp';
 const PVCTileSheet = () => {
     const navigate = useNavigate();
     const galleryImages = [
-        { src: tileImg1, title: 'Spanish Tile Profile' },
-        { src: tileImg2, title: 'Bungalow Installation' },
-        { src: tileImg3, title: 'Aesthetic Ridge View' },
-        { src: tileImg4, title: 'Corner Detail' },
-        { src: tileImg5, title: 'Standard Profile' },
-        { src: tileImg6, title: 'Red Tile Selection' }
+        { src: tileImg1, title: 'PVC tile sheets in navi mumbai Profile' },
+        { src: tileImg2, title: 'Bungalow PVC tile sheets in navi mumbai' },
+        { src: tileImg3, title: 'Top PVC tile sheets in navi mumbai' },
+        { src: tileImg4, title: 'Quality PVC tile sheets in navi mumbai' },
+        { src: tileImg5, title: 'Best PVC tile sheets in navi mumbai' },
+        { src: tileImg6, title: 'PVC tile sheets in navi mumbai Selection' }
     ];
 
     const features = [
-        'Classic Spanish Tile Aesthetic',
-        'Lightweight & Easy to Handle',
-        'Corrosion & UV Resistant',
-        'Excellent Thermal Insulation',
-        'Sound Dampening Properties',
-        'Fire Retardant Material'
+        'Premium PVC tile sheets in navi mumbai',
+        'Lightweight PVC tile sheets in navi mumbai',
+        'Durable PVC tile sheets in navi mumbai',
+        'Insulated PVC tile sheets in navi mumbai',
+        'Balanced PVC tile sheets in navi mumbai',
+        'Secure PVC tile sheets in navi mumbai'
     ];
 
     const specifications = [
@@ -42,15 +42,6 @@ const PVCTileSheet = () => {
         { label: 'Tile Length', value: '250mm - 300mm' },
         { label: 'Color', value: 'Brick Red / Grey / Blue' },
         { label: 'Service Life', value: '25+ Years' }
-    ];
-
-    const applications = [
-        'Residential Bungalows in Navi Mumbai',
-        'Holiday Homes in Alibaug',
-        'Garden Gazebos & Porches',
-        'School Buildings in Panvel',
-        'Clubhouse & Resort Roofing',
-        'Residential Extensions'
     ];
 
     const containerVariants = {
@@ -80,11 +71,12 @@ const PVCTileSheet = () => {
                 title="PVC Tile Sheets in Navi Mumbai | Spanish Tile Roof"
                 description="Traditional Spanish-style PVC roofing tiles for bungalows and resorts in Alibaug, Panvel, and Navi Mumbai. Lightweight, durable, and leak-proof."
                 keywords="pvc tile sheets, spanish tile roofing, plastic roof tiles, resort roofing alibaug, bungalow roofing mumbai"
+                canonicalUrl="https://zincoroof.com/products/pvc-tile-sheet"
             />
             <Helmet>
-                <link rel="preload" as="image" href={tileImg1} />
+                <link rel="preload" as="image" href={tileImg1} fetchpriority="high" />
             </Helmet>
-            <div className={styles.hero} style={{ '--hero-image': `url(${tileImg1})` }} fetchpriority="high">
+            <div className={styles.hero} style={{ '--hero-image': `url(${tileImg1})` }}>
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>
                     <motion.div
@@ -99,10 +91,10 @@ const PVCTileSheet = () => {
                             PRECISION & DURABILITY
                         </motion.span>
                         <motion.h1 variants={itemVariants}>
-                            PVC Tile Sheets in Navi Mumbai
+                            pvc tile sheets in navi mumbai
                         </motion.h1>
                         <motion.p className={styles.heroDesc} variants={itemVariants}>
-                            Achieve a traditional Mediterranean look with modern, lightweight PVC technology.
+                            Achieve a traditional Mediterranean look with modern, lightweight <strong>pvc tile sheets in navi mumbai</strong> technology.
                         </motion.p>
                     </motion.div>
                 </div>
@@ -110,39 +102,51 @@ const PVCTileSheet = () => {
 
             <div className={styles.container}>
                 <div className={styles.content}>
-                    <section className={styles.section}>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.contentBlock}>
                             <Card variant="solid" className={styles.contentCard}>
-                                <h2>Spanish Elegance Meets Modern Thermoplastic Science</h2>
+                                <h2>Complete pvc tile sheets in navi mumbai solutions</h2>
                                 <p>
-                                    In the upscale residential developments and recreational resorts of <strong>Navi Mumbai, Alibaug, and Panvel</strong>, the roof is more than just a functional necessity—it is a vital part of the architectural identity. Zinco Roofing Solution's <strong>PVC Tile Sheets</strong> offer a sophisticated alternative to traditional clay tiles, combining the deep, undulating curves of Spanish or Mediterranean "S-tile" designs with the extreme durability of high-grade synthetic resins. These sheets are ideal for homeowners and developers who desire a classic, high-end look without the weight, fragility, and maintenance headaches of real terracotta.
+                                    At Zinco Roofing Solution, we provide the best <strong>pvc tile sheets in navi mumbai</strong>. Our <strong>pvc tile sheets in navi mumbai</strong> are perfect for residential bungalows and coastal resorts.
                                 </p>
                                 <p>
-                                    What sets our PVC tiles apart is the use of <strong>ASA (Acrylonitrile Styrene Acrylate)</strong> co-extrusion technology. The top layer of each sheet is a thick, weather-resistant ASA coating that acts as a powerful shield against UV radiation and chemical pollutants. This is particularly important in the salt-laden coastal air of <strong>Mumbai and Alibaug</strong>, where traditional clay can become porous and deteriorate. The ASA coating ensures that the deep brick reds, slate greys, and vibrant blues of your roof remain consistent and fade-resistant for more than <strong>25 years</strong>.
-                                </p>
-                            </Card>
-
-                            <Card variant="solid" className={styles.contentCard}>
-                                <h3>The Advantage of Multi-Layered Protection</h3>
-                                <p>
-                                    Our PVC tile sheets are engineered with a multi-layered structure for maximum performance. While the top ASA layer handles UV protection, the core layers are designed for structural rigidity and thermal insulation. This "thermo-reflective" property is a major benefit in the hot climate of <strong>Panvel and Navi Mumbai</strong>. PVC is a natural insulator compared to metal; it does not conduct heat as rapidly, helping to keep your home's attic or upper floors significantly cooler during the intense Mumbai summer.
+                                    Installing <strong>pvc tile sheets in navi mumbai</strong> ensures a maintenance-free Spanish look. Our <strong>pvc tile sheets in navi mumbai</strong> are balanced for long life in Mumbai.
                                 </p>
                             </Card>
 
                             <Card variant="solid" className={styles.contentCard}>
-                                <h3>Why Bungalow Owners in Mumbai Prefer Zinco PVC Tiles</h3>
+                                <h3>Efficiency of pvc tile sheets in navi mumbai</h3>
+                                <p>
+                                    A high-quality <strong>pvc tile sheets in navi mumbai</strong> improves thermal insulation. Our <strong>pvc tile sheets in navi mumbai</strong> are balanced for UV resistance and sound dampening.
+                                </p>
+                            </Card>
+
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Why Zinco for pvc tile sheets in navi mumbai?</h3>
                                 <ul className={styles.styledList}>
-                                    <li><strong>Unmatched Corrosion Resistance:</strong> Being 100% thermoplastic, these tiles are completely immune to rust, rot, and marine corrosion. They are the ultimate solution for beachfront properties in <strong>Alibaug</strong>.</li>
-                                    <li><strong>Lightweight Structural Savings:</strong> At only 5-6 kg per square meter, our PVC tiles are a fraction of the weight of clay tiles (45 kg/sqm). This allows for lighter roof framing, reducing construction costs for bungalows in <strong>Kharghar and Nerul</strong>.</li>
-                                    <li><strong>Superior Sound Insulation:</strong> The "S" profile and the acoustic properties of PVC work together to dampen the sound of heavy monsoon rain, providing a peaceful environment for your family.</li>
-                                    <li><strong>Impact and Hail Resistance:</strong> Unlike clay tiles that can crack under the weight of a person or the impact of falling debris, our PVC tiles are remarkably resilient and flexible, making them "walkable" for maintenance.</li>
+                                    <li><strong>Rust Proof:</strong> Our <strong>pvc tile sheets in navi mumbai</strong> is completely immune to marine corrosion.</li>
+                                    <li><strong>Lightweight:</strong> Every <strong>pvc tile sheets in navi mumbai</strong> reduces structural load significantly.</li>
+                                    <li><strong>Fast Setup:</strong> We ensure perfect installation of <strong>pvc tile sheets in navi mumbai</strong>.</li>
+                                    <li><strong>Premium ASA:</strong> Our <strong>pvc tile sheets in navi mumbai</strong> features thick ASA coating.</li>
                                 </ul>
                             </Card>
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Technical Specifications</h2>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>Specifications of pvc tile sheets in navi mumbai</h2>
                         <Card variant="glass">
                             <div className={styles.specsTable}>
                                 {specifications.map((spec, index) => (
@@ -153,10 +157,16 @@ const PVCTileSheet = () => {
                                 ))}
                             </div>
                         </Card>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Features & Benefits</h2>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>Features of Zinco pvc tile sheets in navi mumbai</h2>
                         <div className={styles.featuresGrid}>
                             {features.map((feature, index) => (
                                 <motion.div
@@ -172,30 +182,24 @@ const PVCTileSheet = () => {
                                 </motion.div>
                             ))}
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Key Service Areas</h2>
-                        <div className={styles.applicationsGrid}>
-                            {applications.map((app, index) => (
-                                <Card key={index} variant="solid" className={styles.appCard}>
-                                    <FaMapMarkerAlt style={{ color: 'var(--accent-500)', marginBottom: '0.5rem' }} />
-                                    <h4>{app}</h4>
-                                </Card>
-                            ))}
-                        </div>
-                    </section>
-
-                    <section className={styles.section}>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.contentBlock}>
                             <Card variant="solid" className={styles.contentCard}>
-                                <h2>Installation Integrity and Regional Reach</h2>
+                                <h2>Modern pvc tile sheets in navi mumbai</h2>
                                 <p>
-                                    Precision installation is key to the long-term performance of PVC tiles. Our teams in <strong>Navi Mumbai</strong> use specialized wide-diameter EPDM-backed fasteners that accommodate the thermal expansion of PVC. We ensure that every ridge cap and valley is perfectly sealed, making your roof 100% watertight even in the heaviest <strong>Konkan monsoons</strong>.
+                                    Our <strong>pvc tile sheets in navi mumbai</strong> is ideal for bungalows. Once installed, the <strong>pvc tile sheets in navi mumbai</strong> protects your home for decades.
                                 </p>
                             </Card>
                         </div>
-                    </section>
+                    </motion.section>
 
                     <motion.section
                         className={styles.section}
@@ -204,29 +208,25 @@ const PVCTileSheet = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h2>Frequently Asked Questions</h2>
+                        <h2>FAQs on pvc tile sheets in navi mumbai</h2>
                         <div className={styles.faqGrid}>
                             <div className={styles.faqItem}>
-                                <h4>Do PVC tiles fade in the intense Mumbai sun?</h4>
-                                <p>Our tiles are co-extruded with a thick layer of ASA resin, which is specifically designed for high UV resistance. This technology ensures that the color remains vibrant and does not peel or fade for over 20-25 years.</p>
+                                <h4>Do <strong>pvc tile sheets in navi mumbai</strong> fade?</h4>
+                                <p>No, our <strong>pvc tile sheets in navi mumbai</strong> use ASA coating to prevent fading.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h4>Are PVC tiles fire-safe?</h4>
-                                <p>Yes, the material used in our tiles is inherently fire-retardant and has a high ignition temperature. It does not support combustion and is self-extinguishing once the flame source is removed.</p>
+                                <h4>Is <strong>pvc tile sheets in navi mumbai</strong> fire safe?</h4>
+                                <p>Yes, <strong>pvc tile sheets in navi mumbai</strong> is fire retardant and self-extinguishing.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h4>Can they handle the heavy winds of Alibaug?</h4>
-                                <p>Absolutely. When installed with the correct fastener spacing and wind-resistant ridge caps, our PVC tile sheets can withstand wind speeds exceeding 150 kmph, common for coastal Mumbai region.</p>
-                            </div>
-                            <div className={styles.faqItem}>
-                                <h4>How long do these tiles typically last?</h4>
-                                <p>With the ASA top-layer and high-grade PVC core, these tiles have a service life of 25 to 35 years with virtually zero maintenance required.</p>
+                                <h4>How long does <strong>pvc tile sheets in navi mumbai</strong> last?</h4>
+                                <p>Our <strong>pvc tile sheets in navi mumbai</strong> has a service life of 25+ years.</p>
                             </div>
                         </div>
                     </motion.section>
 
                     <section className={styles.section}>
-                        <h2>Product Gallery</h2>
+                        <h2>Gallery of pvc tile sheets in navi mumbai</h2>
                         <div className={styles.galleryGrid}>
                             {galleryImages.map((img, idx) => (
                                 <motion.div
@@ -237,7 +237,7 @@ const PVCTileSheet = () => {
                                     viewport={{ once: true }}
                                     transition={{ duration: 0.4, delay: idx * 0.05 }}
                                 >
-                                    <img src={img.src} alt={img.title} className={styles.galleryImage} loading="lazy" decoding="async" />
+                                    <img src={img.src} alt="pvc tile sheets in navi mumbai" className={styles.galleryImage} loading="lazy" decoding="async" />
                                     <div className={styles.galleryOverlay}>
                                         <span>{img.title}</span>
                                     </div>
@@ -248,11 +248,11 @@ const PVCTileSheet = () => {
 
                     <section className={styles.ctaSection}>
                         <Card variant="gradient" className={styles.ctaCard}>
-                            <h3>Ready to Upgrade Your Roof?</h3>
-                            <p>Get a customized quote for PVC Tile Sheet installation today.</p>
+                            <h3>Get Best Quote for pvc tile sheets in navi mumbai</h3>
+                            <p>Contact the leading manufacturer for <strong>pvc tile sheets in navi mumbai</strong> today.</p>
                             <div className={styles.ctaButtons}>
-                                <Button size="lg" href="/contact">Get Quote</Button>
-                                <Button size="lg" variant="outline" href="tel:+919967203090">Call Now</Button>
+                                <Button size="lg" href="/contact">Get Estimate</Button>
+                                <Button size="lg" variant="outline" href="tel:+919967203090">Call Expert</Button>
                             </div>
                         </Card>
                     </section>

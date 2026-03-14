@@ -40,7 +40,6 @@ const RoofingMetalSheets = () => {
     ];
 
     const features = [
-        // ... rest of the component
         'Anti-Capillary Groove for Weather Proofing',
         'Side Lap Design for Water Tightness',
         'Available in Factory Cranked & Curved Profiles',
@@ -63,15 +62,6 @@ const RoofingMetalSheets = () => {
         { pitch: '250', thickness: '0.50', height: '35', area: '642.88', ixx: '80683.70', zxx: '3183.54' },
         { pitch: '250', thickness: '0.60', height: '35', area: '767.31', ixx: '103402', zxx: '4077.37' },
         { pitch: '250', thickness: '0.80', height: '35', area: '887.24', ixx: '135238', zxx: '5299.29' }
-    ];
-
-    const applications = [
-        'Industrial Sheds in Taloja MIDC',
-        'Warehouses in NH4 Panvel',
-        'Bull Nosed Architectural Roofs',
-        'Residential Roofing in Kharghar',
-        'Factory Sheds in Rabale MIDC',
-        'Curved Roofing Projects'
     ];
 
     const containerVariants = {
@@ -101,11 +91,12 @@ const RoofingMetalSheets = () => {
                 title="Colour Coated Roofing Sheets Manufacturer in Navi Mumbai"
                 description="High-quality color coated roofing sheets (PPGI/PPGL) for industrial sheds in Taloja, Panvel, and Mumbai. Anti-corrosion and durable."
                 keywords="colour coated roofing sheets, ppgi sheets manufacturer, metal roofing sheets navi mumbai, industrial roofing sheets"
+                canonicalUrl="https://zincoroof.com/products/roofing-metal-sheets"
             />
             <Helmet>
-                <link rel="preload" as="image" href={heroImg} />
+                <link rel="preload" as="image" href={heroImg} fetchpriority="high" />
             </Helmet>
-            <div className={styles.hero} style={{ '--hero-image': `url(${heroImg})` }} fetchpriority="high">
+            <div className={styles.hero} style={{ '--hero-image': `url(${heroImg})` }}>
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>
                     <motion.div
@@ -120,10 +111,10 @@ const RoofingMetalSheets = () => {
                             PRECISION & DURABILITY
                         </motion.span>
                         <motion.h1 variants={itemVariants}>
-                            Metal roofing Sheets
+                            colour coated roofing sheets
                         </motion.h1>
                         <motion.p className={styles.heroDesc} variants={itemVariants}>
-                            Leading manufacturer and supplier of high-strength trapezoidal roofing sheets for Taloja, Panvel, and Mumbai regions.
+                            Leading manufacturer and supplier of high-strength trapezoidal <strong>colour coated roofing sheets</strong> for industrial projects.
                         </motion.p>
                     </motion.div>
                 </div>
@@ -140,9 +131,9 @@ const RoofingMetalSheets = () => {
                     >
                         <div className={styles.contentBlock}>
                             <Card variant="solid" className={styles.contentCard}>
-                                <h2>Engineered for Industrial Excellence</h2>
+                                <h2>Premium Colour Coated Roofing Sheets for Industry</h2>
                                 <p className={styles.leadText}>
-                                    Zinco Roofing Solution provides high-performance metal roofing tailored for the corrosive industrial landscapes of <strong>Taloja MIDC, Rabale, and Panvel</strong>.
+                                    Zinco Roofing Solution provides high-performance <strong>colour coated roofing sheets</strong> tailored for the corrosive landscapes of Maharashtra. Our <strong>colour coated roofing sheets</strong> are designed for maximum longevity.
                                 </p>
                             </Card>
 
@@ -150,28 +141,28 @@ const RoofingMetalSheets = () => {
                                 <Card variant="glass" className={styles.benefitCard}>
                                     <FaShieldAlt className={styles.benefitIcon} />
                                     <h4>High-Tensile Strength</h4>
-                                    <p>Available in PPGI and PPGL with high-tensile steel (245/345/550 Mpa) for maximum structural integrity.</p>
+                                    <p>Our <strong>colour coated roofing sheets</strong> are available in PPGI and PPGL variants for superior structural integrity.</p>
                                 </Card>
                                 <Card variant="glass" className={styles.benefitCard}>
                                     <FaCheckCircle className={styles.benefitIcon} />
-                                    <h4>Coastal Resilience</h4>
-                                    <p>Premium Galvalume coatings (AZ70/AZ150) offering up to 4x better corrosion resistance than standard steel.</p>
+                                    <h4>Weather Resilience</h4>
+                                    <p>Premium coatings on <strong>colour coated roofing sheets</strong> offer 4x better resistance than standard materials.</p>
                                 </Card>
                                 <Card variant="glass" className={styles.benefitCard}>
                                     <FaExpand className={styles.benefitIcon} />
-                                    <h4>Precision Thickness</h4>
-                                    <p>Sheets ranging from 0.47mm to 0.80mm to withstand high wind loads and heavy monsoon cycles.</p>
+                                    <h4>Custom Thickness</h4>
+                                    <p>Choose <strong>colour coated roofing sheets</strong> from 0.47mm to 0.80mm to match your specific wind load requirements.</p>
                                 </Card>
                             </div>
 
                             <div className={styles.grid2Col}>
                                 <Card variant="solid" className={styles.highlightCard}>
-                                    <h3>Anti-Capillary Technology</h3>
-                                    <p>Our precision-engineered **Anti-Capillary Groove** disrupts surface tension, ensuring a 100% watertight seal even during heavy Mumbai rains.</p>
+                                    <h3>Watertight Engineering</h3>
+                                    <p>The anti-capillary technology in our <strong>colour coated roofing sheets</strong> ensures a perfect seal during monsoon cycles.</p>
                                 </Card>
                                 <Card variant="solid" className={styles.highlightCard}>
-                                    <h3>Architectural Versatility</h3>
-                                    <p>Beyond trapezoidal profiles, we offer **Factory Cranked and Curved Profiles** for bull-nosed finishes and specialized warehouse designs.</p>
+                                    <h3>Architectural Finish</h3>
+                                    <p>Our <strong>colour coated roofing sheets</strong> come in diverse factory-cranked profiles for modern building designs.</p>
                                 </Card>
                             </div>
                         </div>
@@ -185,23 +176,20 @@ const RoofingMetalSheets = () => {
                         transition={{ duration: 0.6 }}
                     >
                         <Card variant="solid" className={styles.contentCard}>
-                            <h2>The Zinco Advantage</h2>
+                            <h2>The Advantage of Colour Coated Roofing Sheets</h2>
+                            <p>Investors choose our <strong>colour coated roofing sheets</strong> for several key reasons:</p>
                             <ul className={styles.styledList}>
                                 <li>
-                                    <strong>Superior Corrosion Resistance</strong>
-                                    Galvalume sheets provide long-term protection in acidic industrial environments.
+                                    <strong>Corrosion Resistance:</strong> Long-term protection for your <strong>colour coated roofing sheets</strong> in acidic zones.
                                 </li>
                                 <li>
-                                    <strong>High Thermal Reflectivity</strong>
-                                    Reflects solar radiation to reduce cooling loads and HVAC energy costs.
+                                    <strong>Thermal Efficiency:</strong> These <strong>colour coated roofing sheets</strong> reflect solar radiation effectively.
                                 </li>
                                 <li>
-                                    <strong>Remarkable Recovery</strong>
-                                    Sheets handle industrial vibrations without losing protective properties or shape.
+                                    <strong>Structural Recovery:</strong> Our <strong>colour coated roofing sheets</strong> maintain shape under heavy vibrations.
                                 </li>
                                 <li>
-                                    <strong>Sustainable Choice</strong>
-                                    100% recyclable steel, ideal for green-certified industrial buildings.
+                                    <strong>Sustainable Selection:</strong> Green-certified 100% recyclable <strong>colour coated roofing sheets</strong>.
                                 </li>
                             </ul>
                         </Card>
@@ -214,7 +202,7 @@ const RoofingMetalSheets = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
-                        <h2>Product Dimensions</h2>
+                        <h2>Standard colour coated roofing sheets Dimensions</h2>
                         <Card variant="glass">
                             <div className={styles.specsTable}>
                                 {specifications.map((spec, index) => (
@@ -234,7 +222,7 @@ const RoofingMetalSheets = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h2>Technical Specifications (Load Tables)</h2>
+                        <h2>Technical Standards for colour coated roofing sheets</h2>
                         <Card variant="solid">
                             <div className={styles.tableWrapper}>
                                 <table className={styles.customTable}>
@@ -265,32 +253,8 @@ const RoofingMetalSheets = () => {
                         </Card>
                     </motion.section>
 
-                    <motion.section
-                        className={styles.section}
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6 }}
-                    >
-                        <h2>Material Grades & Availability</h2>
-                        <div className={styles.grid2Col}>
-                            <Card variant="glass">
-                                <h3>Galvanized / PPGI</h3>
-                                <p>Z 120 (245/345 Mpa)</p>
-                                <p>Z 180 (245/345 Mpa)</p>
-                                <p><strong>Thickness:</strong> 0.47 to 0.80 mm</p>
-                            </Card>
-                            <Card variant="glass">
-                                <h3>Galvalume / PPGL</h3>
-                                <p>AZ 70 (300/550 Mpa)</p>
-                                <p>AZ 150 (300/550 Mpa)</p>
-                                <p><strong>Thickness:</strong> 0.47 to 0.80 mm</p>
-                            </Card>
-                        </div>
-                    </motion.section>
-
                     <section className={styles.section}>
-                        <h2>Product Gallery</h2>
+                        <h2>Gallery of colour coated roofing sheets Installations</h2>
                         <div className={styles.galleryGrid}>
                             {galleryImages.map((img, idx) => (
                                 <motion.div
@@ -301,7 +265,7 @@ const RoofingMetalSheets = () => {
                                     viewport={{ once: true }}
                                     transition={{ duration: 0.4, delay: idx * 0.05 }}
                                 >
-                                    <img src={img.src} alt={img.title} className={styles.galleryImage} loading="lazy" decoding="async" />
+                                    <img src={img.src} alt="installation of colour coated roofing sheets" className={styles.galleryImage} loading="lazy" decoding="async" />
                                     <div className={styles.galleryOverlay}>
                                         <span>{img.title}</span>
                                     </div>
@@ -317,19 +281,16 @@ const RoofingMetalSheets = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h2>Maintenance and Longevity Tips</h2>
+                        <h2>Longevity of colour coated roofing sheets</h2>
                         <ul className={styles.styledList}>
                             <li>
-                                <strong>Bi-Annual Inspections</strong>
-                                Clear debris from gutters and valleys to ensure unobstructed anti-capillary flow.
+                                <strong>Regular Cleaning:</strong> Essential for maintaining <strong>colour coated roofing sheets</strong> performance.
                             </li>
                             <li>
-                                <strong>Annual Rinsing</strong>
-                                In coastal zones like Kharghar or Vashi, rinse with clean water to remove salt and chemical deposits.
+                                <strong>Fastener Inspections:</strong> Ensure your <strong>colour coated roofing sheets</strong> stay secure during storms.
                             </li>
                             <li>
-                                <strong>Fastener Check</strong>
-                                Periodic audits of structural fasteners to maintain high-wind load security.
+                                <strong>Surface Checks:</strong> Monitor <strong>colour coated roofing sheets</strong> for any deep scratches or debris.
                             </li>
                         </ul>
                     </motion.section>
@@ -341,34 +302,30 @@ const RoofingMetalSheets = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h2>Frequently Asked Questions</h2>
+                        <h2>FAQs about colour coated roofing sheets</h2>
                         <div className={styles.faqGrid}>
                             <div className={styles.faqItem}>
-                                <h4>Are metal roofing sheets noisy during heavy rain?</h4>
-                                <p>Modern installation techniques, including the use of high-quality insulation and proper fastening, significantly reduce noise. In most industrial applications with higher ceilings, the sound of rain is barely noticeable. For residential use, we recommend our insulated or puf panel solutions for maximum sound dampening.</p>
+                                <h4>Are <strong>colour coated roofing sheets</strong> noisy?</h4>
+                                <p>Modern <strong>colour coated roofing sheets</strong> combined with insulation are very quiet.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h4>How do Galvalume sheets compare to Galvanized sheets?</h4>
-                                <p>Galvanized sheets are coated with pure Zinc, while Galvalume is a patented alloy of Aluminum (55%) and Zinc (43.4%). Galvalume typically provides superior corrosion resistance in acidic or industrial environments, whereas Galvanized is excellent for alkaline environments (near concrete).</p>
+                                <h4>How long do <strong>colour coated roofing sheets</strong> last?</h4>
+                                <p>With proper care, premium <strong>colour coated roofing sheets</strong> can last over 25 years.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h4>Can these sheets be used for wall cladding?</h4>
-                                <p>Absolutely! Many of our clients in the **Panvel warehouse hub** use our trapezoidal profile sheets for both roofing and wall cladding. It provides a cohesive, professional look while offering the same level of durability and weather-proofing for the entire structure.</p>
-                            </div>
-                            <div className={styles.faqItem}>
-                                <h4>Do you provide on-site fabrication for large projects?</h4>
-                                <p>Yes, for large-scale projects in industrial zones, we can deploy on-site forming machines to create long-length sheets that eliminate the need for end laps, providing a virtually seamless roof and superior structural integrity.</p>
+                                <h4>Can I customize <strong>colour coated roofing sheets</strong>?</h4>
+                                <p>Yes, we provide <strong>colour coated roofing sheets</strong> in various colors and profile thicknesses.</p>
                             </div>
                         </div>
                     </motion.section>
 
                     <section className={styles.ctaSection}>
                         <Card variant="gradient" className={styles.ctaCard}>
-                            <h3>Custom Profiles for your Project?</h3>
-                            <p>We provide factory-curved and cranked sheets for unique designs in Mumbai.</p>
+                            <h3>Get Quote for colour coated roofing sheets</h3>
+                            <p>Contact the leading manufacturer for custom <strong>colour coated roofing sheets</strong> solutions.</p>
                             <div className={styles.ctaButtons}>
-                                <Button size="lg" href="/contact">Get Quote</Button>
-                                <Button size="lg" variant="outline" href="tel:+919967203090">Call Now</Button>
+                                <Button size="lg" href="/contact">Get Estimate</Button>
+                                <Button size="lg" variant="outline" href="tel:+919967203090">Call Expert</Button>
                             </div>
                         </Card>
                     </section>

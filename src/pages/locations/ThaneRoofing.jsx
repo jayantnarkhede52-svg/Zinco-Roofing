@@ -16,13 +16,13 @@ const ThaneRoofing = () => {
     return (
         <div className={styles.locationPage}>
             <SEO
-                title="Industrial Roofing Contractors in Thane | Expert Wagle Estate Solutions"
-                description="Top-tier Industrial Roofing Contractors in Thane. Specializing in factory sheds, commercial roofing, and premium structural painting for Wagle Estate & MIDC."
-                keywords="industrial roofing contractors thane, thane midc roofing"
-                canonicalUrl="https://zincoroof.com/industrial-roofing-contractors-in-thane"
+                title="Roofing Contractor in Thane | Industrial Roofing Thane Specialist"
+                description="Top roofing contractor in thane. Specializing in factory sheds, commercial roofing, and premium structural painting for Thane and Wagle Estate."
+                keywords="roofing contractor in thane, industrial roofing thane, thane midc roofing"
+                canonicalUrl="https://zincoroof.com/roofing-contractor-in-thane"
             />
             <Helmet>
-                <link rel="preload" as="image" href={heroImage} />
+                <link rel="preload" as="image" href={heroImage} fetchpriority="high" />
             </Helmet>
 
             <section className={styles.hero} style={{ backgroundImage: `url(${heroImage})` }}>
@@ -34,161 +34,195 @@ const ThaneRoofing = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h1>Industrial Roofing Contractors in Thane</h1>
-                        <p>Providing specialized structural and roofing engineering for Thane's diverse commercial and industrial hubs.</p>
-                        <div className={styles.heroButtons}>
+                        <h1>roofing contractor in thane</h1>
+                        <p>Providing specialized structural and roofing engineering as a premier <strong>roofing contractor in thane</strong> for diverse hubs.</p>
                             <Link to="/products" className={styles.heroBtn}>View Our Products</Link>
-                        </div>
                     </motion.div>
                 </div>
             </section>
 
             <div className={styles.container}>
                 <main className={styles.mainContent}>
-                    <section className={styles.introSection}>
+                    <motion.section 
+                        className={styles.introSection}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <motion.h2
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
                         >
-                            Specialized Industrial Roofing Contractors Thane
+                            Specialized roofing contractor in thane Support
                         </motion.h2>
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                         >
-                            Thane's industrial belt is evolving from traditional manufacturing to high-tech logistics and corporate infrastructure. As premier <strong>Industrial Roofing Contractors Thane</strong>, Zinco Roofing Solution provides the structural foundation for this growth. The diverse local climate requires engineered solutions that can design for both heavy rain and intense heat. Choosing experienced professionals is vital for long-term ROI and facility safety. We are the most trusted partners in the city, delivering quality results for every industrial client.
+                            Thane's industrial belt is evolving, and as the top <strong>roofing contractor in thane</strong>, Zinco Roofing Solution provides the structural foundation. A reliable <strong>roofing contractor in thane</strong> understands local climate challenges. Choosing an experienced <strong>roofing contractor in thane</strong> is vital for long-term safety.
                         </motion.p>
                         <p>
-                            Corporate facility heads look for reliable partners who can deliver durability and structural integrity. By hiring established <strong>Industrial Roofing Contractors Thane</strong>, you are investing in safety and long-term peace of mind. We prioritize premium materials and high-performance engineering in every project. Our team ensures your facility stands the test of time, meeting all modern industrial standards.
+                            Corporate facility heads look for a <strong>roofing contractor in thane</strong> who delivers integrity. By hiring an established <strong>roofing contractor in thane</strong>, you investment in safety. As a leading <strong>roofing contractor in thane</strong>, we prioritize performance.
                         </p>
                         <p>
-                            When searching for excellence in structural fabrication, quality and commitment are the cornerstones of success. We are dedicated to providing superior results that never compromise on safety or compliance. Our team provides detailed structural audits and responsive consulting for factory owners across the industrial belt. Reach out to the best in the business today for a comprehensive technical audit.
+                            When searching for excellence, every <strong>roofing contractor in thane</strong> knows that commitment is the cornerstone of success. We are dedicated as the best <strong>roofing contractor in thane</strong>. Reach out to a professional <strong>roofing contractor in thane</strong> today for a technical audit.
                         </p>
-                    </section>
+                    </motion.section>
 
                     <LocationServiceCards location="Thane" />
 
                     {/* Detailed Content Sections */}
-                    <section className={styles.twoColumn}>
+                    <motion.section 
+                        className={styles.twoColumn}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.textContent}>
-                            <h2>Superior Thane MIDC Roofing: Engineered for Durability</h2>
+                            <h2>Strategic roofing contractor in thane Excellence</h2>
                             <p>
-                                <strong>Thane MIDC roofing</strong> in dense industrial zones requires specialized knowledge and high-micron Galvalume sheets. High-span architectures often demand precise engineering to ensure structural stability and monsoon resilience. Hiring professional teams ensures precision and long-term infrastructure health for your factory or warehouse.
+                                Infrastructure requires a <strong>roofing contractor in thane</strong> with specialized knowledge of Galvalume. Hiring a <strong>roofing contractor in thane</strong> ensures precision and building health.
                             </p>
                             <p>
-                                Our reputation for <strong>Thane MIDC roofing</strong> is built on attention to detail and a commitment to ROI. When you collaborate with Zinco, you benefit from customized solutions that prioritizing safety. Each project is tested for extreme weather, ensuring lasting peace of mind for business owners in the MIDC belt.
+                                Our reputation as a <strong>roofing contractor in thane</strong> is built on attention to detail. When you collaborate with a <strong>roofing contractor in thane</strong> like Zinco, you benefit from safety.
                             </p>
                             <p>
-                                We are the leaders in providing the fastest installation without sacrificing quality. Choose our expert services for your next factory unit or commercial shed. Get a quote today and experience the best structural solutions in Thane.
+                                We are the leaders as a <strong>roofing contractor in thane</strong> providing fast installations. Choose our expert <strong>roofing contractor in thane</strong> services for your next factory unit. Get a quote from a top <strong>roofing contractor in thane</strong>.
                             </p>
                         </div>
                         <div className={styles.imageBlock}>
-                            <img src={thaneImg1} alt="Thane MIDC Roofing Solutions" loading="lazy" />
+                            <img src={thaneImg1} alt="roofing contractor in thane industrial building" loading="lazy" />
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.twoColumn}>
+                    <motion.section 
+                        className={styles.twoColumn}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.imageBlock}>
-                            <img src={thaneImg2} alt="Wagle Estate Roofing Specialist" loading="lazy" />
+                            <img src={thaneImg2} alt="roofing contractor in thane hub" loading="lazy" />
                         </div>
                         <div className={styles.textContent}>
-                            <h2>High-Performance Structural Solutions in Wagle Estate</h2>
+                            <h2>Reliable roofing contractor in thane Hub</h2>
                             <p>
-                                For projects in the commercial heart of Thane, structural solutions demand both high aesthetics and engineering excellence. We offer modern profiles that balance style and safety for corporate offices and commercial hubs. Our designs are tailored to urban environments where space and durability are both critical factors.
+                                Commercial projects demand a <strong>roofing contractor in thane</strong> with engineering excellence. We offer profiles that balance style as a <strong>roofing contractor in thane</strong> partner.
                             </p>
                             <p>
-                                <strong>Thane MIDC roofing</strong> and commercial infrastructure in Wagle Estate require specialized engineering for high-span units. Our projects prioritize structural safety and energy efficiency, ensuring that your commercial asset remains protected from the elements while looking premium.
+                                Commercial infrastructure requires specialized <strong>roofing contractor in thane</strong> engineering. Our <strong>roofing contractor in thane</strong> projects prioritize structural safety.
                             </p>
                             <p>
-                                Our systems are designed for long-term performance in dense urban settings. We are the leading contractors in Thane for high-end fabrication, delivering results that are both aesthetically pleasing and structurally sound.
+                                We are the leading <strong>roofing contractor in thane</strong> providers, delivering results that are aesthetically sound for any business.
                             </p>
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.twoColumn}>
+                    <motion.section 
+                        className={styles.twoColumn}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.textContent}>
-                            <h2>Energy-Efficient PUF Panels and Insulation</h2>
+                            <h2>Energy efficiency from a roofing contractor in thane</h2>
                             <p>
-                                Temperature regulation is essential for modern industrial processes. We deliver energy-efficient PUF panels that reduce heat and operational costs for factories and cold storage units. When consulting with our experts, we focus on R-value and thermal stability to ensure your facility remains cooled and insulated.
+                                Temperature regulation is essential. We deliver panels as a <strong>roofing contractor in thane</strong> that reduce operational costs. When consulting with a <strong>roofing contractor in thane</strong>, we focus on thermal stability.
                             </p>
                             <p>
-                                Our insulation solutions meet the highest safety standards and are ideal for pharmaceutical and food processing plants. As a versatile partner, we handle custom specifications to provide modular construction that is both safe and durable.
+                                Our insulation as a <strong>roofing contractor in thane</strong> meets the highest safety standards. As a versatile <strong>roofing contractor in thane</strong>, we handle custom specifications.
                             </p>
                             <p>
-                                Trust our professional site audits to determine the best insulation strategy for your project. We offer modular solutions that prioritize insulation quality, providing you with a reliable environmental control system.
+                                Trust our professional <strong>roofing contractor in thane</strong> site audits for the best strategy for your industrial facility.
                             </p>
                         </div>
                         <div className={styles.imageBlock}>
-                            <img src={thaneImg3} alt="PUF Panel Manufacturer Thane" loading="lazy" />
+                            <img src={thaneImg3} alt="roofing contractor in thane puf panel" loading="lazy" />
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.twoColumn}>
+                    <motion.section 
+                        className={styles.twoColumn}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.imageBlock}>
-                            <img src={thaneImg4} alt="Factory Shed Thane Fabrication" loading="lazy" />
+                            <img src={thaneImg4} alt="roofing contractor in thane shed construction" loading="lazy" />
                         </div>
                         <div className={styles.textContent}>
-                            <h2>Heavy-Duty Factory Shed Fabrication and Design</h2>
+                            <h2>Factory solutions by roofing contractor in thane</h2>
                             <p>
-                                From initial design to completion, we excel at industrial shed fabrication. Our team ensures high-performance structures that are scalable and meet all local safety codes. Choosing expert fabrication ensures project speed and structural integrity for all manufacturing sectors.
+                                We excel as a <strong>roofing contractor in thane</strong> for industrial shed fabrication. Choosing a <strong>roofing contractor in thane</strong> ensuring project speed and structural integrity.
                             </p>
                             <p>
-                                Our techniques utilize advanced steel to create factory units that are built for longevity and operational efficiency. Whether you need a small workshop or a large logistics park, we provide designs that prioritize your specific needs.
+                                Whether you need a workshop or a logistics park, as a <strong>roofing contractor in thane</strong> partner, we provide tailored designs.
                             </p>
                             <p>
-                                Contact us for premium services that speak for themselves. We are your partner for structural excellence in Thane, offering safety-first construction that delivers results for every industrial client.
+                                Contact us for premium <strong>roofing contractor in thane</strong> services. We are your partner for excellence in <strong>roofing contractor in thane</strong>.
                             </p>
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.twoColumn}>
+                    <motion.section 
+                        className={styles.twoColumn}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.textContent}>
-                            <h2>Professional Industrial Protective Coatings</h2>
+                            <h2>Protective coating by roofing contractor in thane</h2>
                             <p>
-                                Zinco provides specialized coating services that utilize high-end epoxy and PU systems. Protecting your structural assets from corrosion is vital for maintaining value and ensuring long-term safety. Our reputation comes from thorough surface preparation and the use of premium industrial-grade materials.
+                                Zinco provides specialized services as a <strong>roofing contractor in thane</strong>. Protecting property is vital as a <strong>roofing contractor in thane</strong> specialist.
                             </p>
                             <p>
-                                We offer protective finishes for all types of industrial plants, preventing rust and chemical degradation. Rely on us for maintenance solutions that are cost-effective and long-lasting, helping you avoid expensive structural repairs in the future.
+                                Rely on us for <strong>roofing contractor in thane</strong> maintenance solutions that are long-lasting. Our reputation as a <strong>roofing contractor in thane</strong> comes from thorough preparation.
                             </p>
                             <p>
-                                Our highly trained team uses high-performance materials to ensure that your facility remains in top condition for years to come. Get a quote for your maintenance and painting needs today.
+                                Get a professional quote today from a leading <strong>roofing contractor in thane</strong> and protect your assets from corrosion.
                             </p>
                         </div>
-                    </section>
+                    </motion.section>
 
                     {/* Technical Specification Section */}
                     <section className={`${styles.technicalSection} ${styles.darkMode}`}>
-                        <h2>Technical Standards for Industrial Roofing Thane</h2>
+                        <h2>Technical Standards for roofing contractor in thane</h2>
                         <div className={styles.tableWrapper}>
                             <table className={styles.techTable}>
                                 <thead>
                                     <tr>
                                         <th>Metric Category</th>
                                         <th>Zinco Specification</th>
-                                        <th>Benefit for Industrial Roofing Thane</th>
+                                        <th>Industrial Benefit</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>Product Range</td>
-                                        <td><strong>Roofing Sheets Thane</strong></td>
-                                        <td>Local Supply & Expert Support</td>
+                                        <td>Premium Grade Sheets</td>
+                                        <td>Local Supply & Support</td>
                                     </tr>
                                     <tr>
                                         <td>Wind Speed Load</td>
                                         <td>Up to 150 km/h Rated</td>
-                                        <td>Maximum <strong>Industrial Roofing Thane</strong> Safety</td>
+                                        <td>Maximum Structural Safety</td>
                                     </tr>
                                     <tr>
                                         <td>Thermal R-Value</td>
-                                        <td>Maximized for <strong>Roofing Sheets Thane</strong></td>
+                                        <td>High Performance</td>
                                         <td>Superior Energy Savings</td>
                                     </tr>
                                     <tr>
                                         <td>Safety Compliance</td>
-                                        <td>Full <strong>Industrial Roofing Thane</strong> Standards</td>
+                                        <td>Full Industrial Standards</td>
                                         <td>Zero-Harm Work Protocols</td>
                                     </tr>
                                 </tbody>
@@ -199,22 +233,22 @@ const ThaneRoofing = () => {
                     {/* Maintenance Section */}
                     <section className={styles.maintenanceSection}>
                         <div className={styles.infoCard}>
-                            <h3>Expert Advice for Industrial Roofing Thane</h3>
+                            <h3>Advice from a roofing contractor in thane</h3>
                             <p>
-                                To maintain your <strong>Roofing Sheets Thane</strong>, we offer audit programs to catch issues early. The <strong>Industrial Roofing Thane</strong> monsoon prep is critical.
+                                To maintain assets, we offer audit programs as a <strong>roofing contractor in thane</strong> to catch issues early and prevent leaks.
                             </p>
                             <div className={styles.maintenanceGrid}>
                                 <div className={styles.mItem}>
                                     <FaCheckCircle className={styles.icon} />
-                                    <span><strong>Waterproofing Audits</strong>: Essential for <strong>Roofing Sheets Thane</strong>.</span>
+                                    <span><strong>Waterproofing Audits</strong>: Essential for surface longevity.</span>
                                 </div>
                                 <div className={styles.mItem}>
                                     <FaCheckCircle className={styles.icon} />
-                                    <span><strong>Sealant Checks</strong>: Key for stable <strong>Industrial Roofing Thane</strong>.</span>
+                                    <span><strong>Sealant Checks</strong>: Key for stable industrial settings.</span>
                                 </div>
                                 <div className={styles.mItem}>
                                     <FaCheckCircle className={styles.icon} />
-                                    <span><strong>Structure Painting</strong>: Best for <strong>Roofing Sheets Thane</strong>.</span>
+                                    <span><strong>Structure Painting</strong>: Best for anti-corrosive protection.</span>
                                 </div>
                             </div>
                         </div>
@@ -222,23 +256,23 @@ const ThaneRoofing = () => {
 
                     {/* FAQ Section */}
                     <section className={styles.faqSection}>
-                        <h2>FAQs about Roofing Sheets Thane & Industrial Roofing Thane</h2>
+                        <h2>FAQs for roofing contractor in thane</h2>
                         <div className={styles.faqGrid}>
                             <div className={styles.faqItem}>
-                                <h3>Why choose Zinco for Roofing Sheets Thane?</h3>
-                                <p>Our specialized <strong>Roofing Sheets Thane</strong> and reliable <strong>Industrial Roofing Thane</strong> teams deliver unmatched ROI.</p>
+                                <h3>Why choose Zinco as your roofing contractor in thane?</h3>
+                                <p>Our specialized materials and reliable engineering teams deliver unmatched ROI for every client.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h3>Do you provide Industrial Roofing Thane for old sheds?</h3>
-                                <p>Yes, we specialze in replacing old <strong>Roofing Sheets Thane</strong> and structural restoration of <strong>Industrial Roofing Thane</strong> projects.</p>
+                                <h3>Does a roofing contractor in thane handle old sheds?</h3>
+                                <p>Yes, we specialize in replacing old roofing components and structural restoration of factory projects.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h3>Can you handle PEB Industrial Roofing Thane?</h3>
-                                <p>Absolutely. We provide full Pre-Engineered Building design and <strong>Roofing Sheets Thane</strong> execution.</p>
+                                <h3>Can a roofing contractor in thane handle PEB sheds?</h3>
+                                <p>Absolutely. We provide full Pre-Engineered Building design and execution across the city.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h3>What is the benefit of premium Roofing Sheets Thane?</h3>
-                                <p>Investing in authorized <strong>Roofing Sheets Thane</strong> ensures safety and longevity for your <strong>Industrial Roofing Thane</strong> projects.</p>
+                                <h3>Benefit of a top roofing contractor in thane?</h3>
+                                <p>Investing in authorized materials ensures safety and longevity for your industrial projects.</p>
                             </div>
                         </div>
                     </section>
@@ -248,11 +282,11 @@ const ThaneRoofing = () => {
                     {/* Final CTA */}
                     <section className={styles.ctaSection}>
                         <div className={styles.ctaContent}>
-                            <h2>Partner with the Best in Industrial Roofing Thane</h2>
-                            <p>Protect your asset with expert <strong>Roofing Sheets Thane</strong>. Our <strong>Industrial Roofing Thane</strong> team is ready for your estimate.</p>
+                            <h2>Partner with the Best roofing contractor in thane</h2>
+                            <p>Protect your asset with expert <strong>roofing contractor in thane</strong> technical support. Our team is ready for your estimate.</p>
                             <div className={styles.ctaButtons}>
                                 <Link to="/contact#contact-form" className={styles.primaryBtn}>Request a Technical Audit</Link>
-                                <button className={styles.secondaryBtn}>View Thane Projects</button>
+                                <button className={styles.secondaryBtn}>View Case Studies</button>
                             </div>
                         </div>
                     </section>

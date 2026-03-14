@@ -21,24 +21,24 @@ import mwImg9 from '../../assets/Multiwall polycarbonate images/Multiwall polyca
 const MultiwallSheets = () => {
     const navigate = useNavigate();
     const galleryImages = [
-        { src: mwImg1, title: 'Panel Detail' },
-        { src: mwImg2, title: 'Multi-Colour Selection' },
-        { src: mwImg3, title: 'High-Rib Profile' },
-        { src: mwImg4, title: 'Stacked Sheets' },
-        { src: mwImg5, title: 'Thickness Layers' },
-        { src: mwImg6, title: 'Colour Samples' },
-        { src: mwImg7, title: 'Technical Spec' },
-        { src: mwImg8, title: 'Rib Structure' },
-        { src: mwImg9, title: 'Site Installation' }
+        { src: mwImg1, title: 'Multiwall polycarbonate sheets in navi mumbai Detail' },
+        { src: mwImg2, title: 'Best Multiwall polycarbonate sheets in navi mumbai' },
+        { src: mwImg3, title: 'Top Multiwall polycarbonate sheets in navi mumbai' },
+        { src: mwImg4, title: 'Quality Multiwall polycarbonate sheets in navi mumbai' },
+        { src: mwImg5, title: 'Expert Multiwall polycarbonate sheets in navi mumbai' },
+        { src: mwImg6, title: 'Modern Multiwall polycarbonate sheets in navi mumbai' },
+        { src: mwImg7, title: 'Multiwall polycarbonate sheets in navi mumbai Spec' },
+        { src: mwImg8, title: 'Durable Multiwall polycarbonate sheets in navi mumbai' },
+        { src: mwImg9, title: 'Multiwall polycarbonate sheets in navi mumbai Site' }
     ];
 
     const features = [
-        'Advanced High Rib Profile (5 Crests & 3 Mini Ribs)',
-        'Superior Spanning Strength for Large Areas',
-        'Multi-Layered Thermal Insulation Core',
-        'Impact Resistant & UV Protected Surfaces',
-        'Suitable for both Roofing & Walling',
-        'Diffused Soft Natural Lighting'
+        'Advanced Multiwall polycarbonate sheets in navi mumbai',
+        'Top Multiwall polycarbonate sheets in navi mumbai',
+        'Balanced Multiwall polycarbonate sheets in navi mumbai',
+        'Impact Multiwall polycarbonate sheets in navi mumbai',
+        'Quality Multiwall polycarbonate sheets in navi mumbai',
+        'Light Multiwall polycarbonate sheets in navi mumbai'
     ];
 
     const specifications = [
@@ -48,15 +48,6 @@ const MultiwallSheets = () => {
         { label: 'Standard Width', value: '1000mm - 1130mm' },
         { label: 'Thermal U-Value', value: 'Optimized for energy saving' },
         { label: 'Surface Coating', value: 'ASA Weather Protection available' }
-    ];
-
-    const applications = [
-        'Industrial Skylights in Taloja',
-        'Walling for Large Warehouses',
-        'Infrastructure & Public Projects',
-        'Agricultural & Greenhouses',
-        'Railway Platforms & Terminals',
-        'Factories across Navi Mumbai'
     ];
 
     const containerVariants = {
@@ -86,11 +77,12 @@ const MultiwallSheets = () => {
                 title="High-Rib Multiwall Sheets in Navi Mumbai | Zinco"
                 description="High-rib multiwall polycarbonate sheets for industrial skylights and daylighting in Taloja, Bhiwandi, and Navi Mumbai. UV protected and energy efficient."
                 keywords="multiwall polycarbonate sheets, high rib polycarbonate, industrial daylighting, skylight sheets mumbai, polycarbonate roofing"
+                canonicalUrl="https://zincoroof.com/products/multiwall-sheets"
             />
             <Helmet>
-                <link rel="preload" as="image" href={mwImg1} />
+                <link rel="preload" as="image" href={mwImg1} fetchpriority="high" />
             </Helmet>
-            <div className={styles.hero} style={{ '--hero-image': `url(${mwImg1})` }} fetchpriority="high">
+            <div className={styles.hero} style={{ '--hero-image': `url(${mwImg1})` }}>
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>
                     <motion.div
@@ -105,10 +97,10 @@ const MultiwallSheets = () => {
                             PRECISION & DURABILITY
                         </motion.span>
                         <motion.h1 variants={itemVariants}>
-                            High-Rib Multiwall Sheets in Navi Mumbai
+                            multiwall polycarbonate sheets in navi mumbai
                         </motion.h1>
                         <motion.p className={styles.heroDesc} variants={itemVariants}>
-                            High-strength multi-layered polycarbonate profiles with a reinforced high-rib design for superior industrial performance.
+                            High-strength multi-layered <strong>multiwall polycarbonate sheets in navi mumbai</strong> with a reinforced high-rib design for superior industrial performance.
                         </motion.p>
                     </motion.div>
                 </div>
@@ -116,39 +108,51 @@ const MultiwallSheets = () => {
 
             <div className={styles.container}>
                 <div className={styles.content}>
-                    <section className={styles.section}>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.contentBlock}>
                             <Card variant="solid" className={styles.contentCard}>
-                                <h2>Engineering Natural Light: The High-Rib Multiwall Advantage</h2>
+                                <h2>Complete multiwall polycarbonate sheets in navi mumbai solutions</h2>
                                 <p>
-                                    In the massive industrial clusters of <strong>Taloja MIDC, Bhiwandi, and Navi Mumbai</strong>, creating a bright, energy-efficient workspace is a top priority for facility managers. Zinco Roofing Solution's <strong>High-Rib Multiwall Polycarbonate Sheets</strong> represent the pinnacle of daylighting technology. Unlike standard flat polycarbonate or multiwall sheets, our profile features a <strong>5 main crest and 3 parallel mini rib design</strong>. This trapezoidal engineering adds immense structural rigidity, allowing these sheets to be used across large roof spans without the risk of sagging or wind-uplift damage.
+                                    At Zinco Roofing Solution, we provide the best <strong>multiwall polycarbonate sheets in navi mumbai</strong>. Our <strong>multiwall polycarbonate sheets in navi mumbai</strong> are designed for massive industrial daylighting.
                                 </p>
                                 <p>
-                                    The "Multiwall" designation refers to the internal honeycomb or hollow-chamber structure within the polycarbonate resin. These air-filled vertical walls provide a dual benefit: they act as a high-performance thermal insulator (significantly lowering the building's <strong>U-value</strong>) and they diffuse incoming sunlight. For factories and warehouses in <strong>Panvel</strong>, this means a reduction in heat ingress and the elimination of "hot spots" and harsh glares, creating a uniformly lit interior that reduces the need for artificial lighting during the day.
-                                </p>
-                            </Card>
-
-                            <Card variant="solid" className={styles.contentCard}>
-                                <h3>The Science of UV Protection and Durability</h3>
-                                <p>
-                                    Polycarbonate is naturally prone to yellowing and becoming brittle when exposed to the intense tropical sun of the <strong>Mumbai Metropolitan Region</strong>. To combat this, our High-Rib Multiwall sheets are co-extruded with a high-density UV protection layer on the outer surface. This barrier blocks harmful ultraviolet rays, ensuring that the sheet maintains its high light transmission and impact strength for over a decade. Whether it's the salt-laden air of <strong>Vashi</strong> or the industrial pollutants in <strong>Taloja</strong>, our sheets are built to withstand the harshest environmental conditions.
+                                    Using <strong>multiwall polycarbonate sheets in navi mumbai</strong> ensures a brighter factory floor. Our <strong>multiwall polycarbonate sheets in navi mumbai</strong> are built for the Mumbai climate.
                                 </p>
                             </Card>
 
                             <Card variant="solid" className={styles.contentCard}>
-                                <h3>Why Industrial Architects Specify Zinco Multiwall Profiles</h3>
+                                <h3>Efficiency of multiwall polycarbonate sheets in navi mumbai</h3>
+                                <p>
+                                    A high-quality <strong>multiwall polycarbonate sheets in navi mumbai</strong> improves energy savings. Our <strong>multiwall polycarbonate sheets in navi mumbai</strong> are balanced for UV protection.
+                                </p>
+                            </Card>
+
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Why Zinco for multiwall polycarbonate sheets in navi mumbai?</h3>
                                 <ul className={styles.styledList}>
-                                    <li><strong>Superior Spanning Strength:</strong> The 5-crest high-rib design allows for wider purlin spacing compared to standard sheets, reducing the overall weight and cost of the primary steel structure.</li>
-                                    <li><strong>Advanced Thermal Comfort:</strong> By trapping air within its hollow chambers, multiwall polycarbonate provides energy savings on HVAC (cooling) systems, keeping your <strong>factory in Navi Mumbai</strong> cooler than single-skin alternatives.</li>
-                                    <li><strong>Shatterproof Security:</strong> Polycarbonate is virtually unbreakable, with 250 times the impact resistance of glass. This makes it an ideal safety choice for high-traffic infrastructure projects like metro stations and skywalks.</li>
-                                    <li><strong>Soft, Diffused Lighting:</strong> Prevent worker eye strain and machinery glare with lighting that is distributed evenly across the floor.</li>
+                                    <li><strong>Durable:</strong> Every <strong>multiwall polycarbonate sheets in navi mumbai</strong> is high-impact resistant.</li>
+                                    <li><strong>Clarity:</strong> Our <strong>multiwall polycarbonate sheets in navi mumbai</strong> offers superior light.</li>
+                                    <li><strong>Support:</strong> We ensure perfect installation of <strong>multiwall polycarbonate sheets in navi mumbai</strong>.</li>
+                                    <li><strong>Value:</strong> Our <strong>multiwall polycarbonate sheets in navi mumbai</strong> is cost-effective.</li>
                                 </ul>
                             </Card>
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Technical Profile Specifications</h2>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>Specifications of multiwall polycarbonate sheets in navi mumbai</h2>
                         <Card variant="glass">
                             <div className={styles.specsTable}>
                                 {specifications.map((spec, index) => (
@@ -159,10 +163,16 @@ const MultiwallSheets = () => {
                                 ))}
                             </div>
                         </Card>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Industrial Advantages</h2>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>Features of multiwall polycarbonate sheets in navi mumbai</h2>
                         <div className={styles.featuresGrid}>
                             {features.map((feature, index) => (
                                 <motion.div
@@ -178,18 +188,24 @@ const MultiwallSheets = () => {
                                 </motion.div>
                             ))}
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.contentBlock}>
                             <Card variant="solid" className={styles.contentCard}>
-                                <h2>Installation Precision and Thermal Expansion</h2>
+                                <h2>Modern multiwall polycarbonate sheets in navi mumbai</h2>
                                 <p>
-                                    Polycarbonate has a high coefficient of thermal expansion, meaning it moves significantly more than metal as it heats up. Our installation teams in <strong>Panvel and Navi Mumbai</strong> use specialized wide-diameter EPDM washers and oversized mounting holes to allow the sheet to "breathe" without cracking. This technical attention to detail ensures a leak-proof, long-lasting daylighting solution.
+                                    Our <strong>multiwall polycarbonate sheets in navi mumbai</strong> is ideal for skylights. Once installed, the <strong>multiwall polycarbonate sheets in navi mumbai</strong> provides natural light.
                                 </p>
                             </Card>
                         </div>
-                    </section>
+                    </motion.section>
 
                     <motion.section
                         className={styles.section}
@@ -198,41 +214,25 @@ const MultiwallSheets = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h2>Frequently Asked Questions</h2>
+                        <h2>FAQs on multiwall polycarbonate sheets in navi mumbai</h2>
                         <div className={styles.faqGrid}>
                             <div className={styles.faqItem}>
-                                <h4>Can these sheets be used for both roofs and walls?</h4>
-                                <p>Yes! The high-rib profile is exceptionally rigid, making it ideal for vertical wall cladding (facades) as well as primary skylighting on roofs in industrial sheds.</p>
+                                <h4>Are <strong>multiwall polycarbonate sheets in navi mumbai</strong> durable?</h4>
+                                <p>Yes, <strong>multiwall polycarbonate sheets in navi mumbai</strong> are 250 times stronger than glass.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h4>Do these sheets turn yellow over time?</h4>
-                                <p>No. Our premium multiwall sheets are co-extruded with a specialized UV-resistant layer that protects the polycarbonate core from yellowing and degradation for over 10-15 years.</p>
+                                <h4>Do <strong>multiwall polycarbonate sheets in navi mumbai</strong> block heat?</h4>
+                                <p>Yes, <strong>multiwall polycarbonate sheets in navi mumbai</strong> have excellent thermal insulation.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h4>How do they handle heavy Mumbai rain?</h4>
-                                <p>The high-rib trapezoidal profile is designed for rapid water shedding. When installed with the correct pitch and laps, they are 100% leak-proof even in torrential Konkan monsoons.</p>
-                            </div>
-                            <div className={styles.faqItem}>
-                                <h4>Are multiwall sheets fire-rated?</h4>
-                                <p>Zinco's polycarbonate sheets are classified as self-extinguishing and do not support the spread of flames, making them safe for large-scale public and industrial applications.</p>
+                                <h4>Will the <strong>multiwall polycarbonate sheets in navi mumbai</strong> turn yellow?</h4>
+                                <p>No, our <strong>multiwall polycarbonate sheets in navi mumbai</strong> feature high-density UV layers.</p>
                             </div>
                         </div>
                     </motion.section>
 
                     <section className={styles.section}>
-                        <h2>Infrastructure Applications</h2>
-                        <div className={styles.applicationsGrid}>
-                            {applications.map((app, index) => (
-                                <Card key={index} variant="solid" className={styles.appCard}>
-                                    <FaLightbulb style={{ color: 'var(--accent-500)', marginBottom: '0.5rem' }} />
-                                    <h4>{app}</h4>
-                                </Card>
-                            ))}
-                        </div>
-                    </section>
-
-                    <section className={styles.section}>
-                        <h2>Product Gallery</h2>
+                        <h2>Gallery of multiwall polycarbonate sheets in navi mumbai</h2>
                         <div className={styles.galleryGrid}>
                             {galleryImages.map((img, idx) => (
                                 <motion.div
@@ -244,7 +244,7 @@ const MultiwallSheets = () => {
                                     transition={{ duration: 0.4, delay: idx * 0.05 }}
                                 >
                                     <img src={img.src}
-                                        alt={img.title}
+                                        alt="multiwall polycarbonate sheets in navi mumbai"
                                         className={styles.galleryImage}
                                         loading="lazy"
                                         decoding="async"
@@ -259,11 +259,11 @@ const MultiwallSheets = () => {
 
                     <section className={styles.ctaSection}>
                         <Card variant="gradient" className={styles.ctaCard}>
-                            <h3>Optimize Your Project Lighting</h3>
-                            <p>Get a competitive quote for High-Rib Multiwall installation across Mumbai.</p>
+                            <h3>Get Best Quote for multiwall polycarbonate sheets in navi mumbai</h3>
+                            <p>Contact the leading manufacturer for <strong>multiwall polycarbonate sheets in navi mumbai</strong> today.</p>
                             <div className={styles.ctaButtons}>
-                                <Button size="lg" href="/contact">Get Quote</Button>
-                                <Button size="lg" variant="outline" href="tel:+919967203090">Call Now</Button>
+                                <Button size="lg" href="/contact">Get Estimate</Button>
+                                <Button size="lg" variant="outline" href="tel:+919967203090">Call Expert</Button>
                             </div>
                         </Card>
                     </section>

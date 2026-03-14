@@ -11,12 +11,12 @@ import styles from './ProductCategory.module.css';
 const RockwoolGlasswool = () => {
     const navigate = useNavigate();
     const features = [
-        'High Rib Profile (5 Crests & 3 Mini-Ribs)',
-        'Superior Fire Resistance (Up to 850°C)',
-        'Excellent Sound Absorption Properties',
-        'Customizable Thickness & Density',
-        'Energy Efficient Thermal Insulation',
-        'Long Span Capability for Industrial Roofs'
+        'Advanced rockwool glasswool insulation in navi mumbai',
+        'Top rockwool glasswool insulation in navi mumbai',
+        'Balanced rockwool glasswool insulation in navi mumbai',
+        'Expert rockwool glasswool insulation in navi mumbai',
+        'Quality rockwool glasswool insulation in navi mumbai',
+        'Best rockwool glasswool insulation in navi mumbai'
     ];
 
     const specifications = [
@@ -26,15 +26,6 @@ const RockwoolGlasswool = () => {
         { label: 'Glasswool Thickness', value: '20mm - 200mm' },
         { label: 'Rockwool Thickness', value: '30mm - 100mm' },
         { label: 'Temperature Range', value: 'Glasswool: 230-260°C | Rockwool: 700-850°C' }
-    ];
-
-    const applications = [
-        'Data Centers in Navi Mumbai',
-        'Sound Studios in Mumbai',
-        'Industrial Plants in Taloja',
-        'Commercial Multiplexes',
-        'Cold Storages in Panvel',
-        'Boiler Room Enclosures'
     ];
 
     const containerVariants = {
@@ -64,11 +55,12 @@ const RockwoolGlasswool = () => {
                 title="Rockwool & Glasswool Roof Panels in Navi Mumbai | Zinco"
                 description="Fire-resistant Rockwool and Glasswool insulated roof panels for industrial sheds and sound studios in Taloja, Rabale, and Mumbai. High acoustic control."
                 keywords="rockwool panels, glasswool insulation, fire resistant roofing, acoustic roof panels mumbai, industrial insulation"
+                canonicalUrl="https://zincoroof.com/products/rockwool-glasswool"
             />
             <Helmet>
-                <link rel="preload" as="image" href={heroImg} />
+                <link rel="preload" as="image" href={heroImg} fetchpriority="high" />
             </Helmet>
-            <div className={styles.hero} style={{ '--hero-image': `url(${heroImg})` }} fetchpriority="high">
+            <div className={styles.hero} style={{ '--hero-image': `url(${heroImg})` }}>
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>
                     <motion.div
@@ -83,10 +75,10 @@ const RockwoolGlasswool = () => {
                             PRECISION & DURABILITY
                         </motion.span>
                         <motion.h1 variants={itemVariants}>
-                            Rockwool & Glasswool Roof Panels
+                            rockwool glasswool insulation in navi mumbai
                         </motion.h1>
                         <motion.p className={styles.heroDesc} variants={itemVariants}>
-                            High-performance insulated panels with superior fire safety and acoustic control.
+                            High-performance panels with superior <strong>rockwool glasswool insulation in navi mumbai</strong> safety and control.
                         </motion.p>
                     </motion.div>
                 </div>
@@ -94,78 +86,51 @@ const RockwoolGlasswool = () => {
 
             <div className={styles.container}>
                 <div className={styles.content}>
-                    <section className={styles.section}>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.contentBlock}>
                             <Card variant="solid" className={styles.contentCard}>
-                                <h2>Specialized Industrial Insulation: High-Rib Rockwool & Glasswool Panels</h2>
+                                <h2>Complete rockwool glasswool insulation in navi mumbai solutions</h2>
                                 <p>
-                                    In the high-intensity manufacturing environments of <strong>Taloja MIDC, Rabale, and Mahape</strong>, specialized insulation is not just a luxury—it's a critical safety and operational requirement. Zinco Roofing Solution's <strong>Rockwool and Glasswool Roof Panels</strong> are engineered for facilities where thermal management, fire resistance, and acoustic control are paramount. Our panels feature a <strong>High Rib Profile with 5 main crests and 3 parallel mini ribs</strong>, providing the structural rigidity needed for long-span industrial roofs while housing a core of world-class insulation material.
+                                    At Zinco Roofing Solution, we provide the best <strong>rockwool glasswool insulation in navi mumbai</strong>. Our <strong>rockwool glasswool insulation in navi mumbai</strong> are designed for massive industrial sheds.
                                 </p>
                                 <p>
-                                    The "High Rib" design is a game-changer for industrial sheds. By increasing the height and number of ribs, we've created a panel that can bridge larger gaps between purlins with minimal deflection. This is particularly important for the massive warehouses and processing plants in <strong>Navi Mumbai</strong>, where speed of construction and structural safety must go hand-in-hand. Inside these ribs sits high-density mineral wool or glass fibers, creating a thermal barrier that significantly reduces heat ingress and maintains a stable interior temperature.
-                                </p>
-                            </Card>
-
-                            <Card variant="solid" className={styles.contentCard}>
-                                <h3>Rockwool: The Ultimate Fire Barrier</h3>
-                                <p>
-                                    For chemical factories, textile mills, and data centers in <strong>Mumbai and Taloja</strong>, fire safety is the top priority. Our <strong>Rockwool panels</strong> are manufactured from volcanic rock (basalt), which is naturally non-combustible. With a melting point exceeding <strong>1000°C</strong>, Rockwool acts as a superior fire barrier, preventing the spread of flames and protecting the building's structural steel frame during an emergency. It is the gold standard for facilities handling flammable materials or high-value equipment.
+                                    Using <strong>rockwool glasswool insulation in navi mumbai</strong> ensures fire safety for decades. Our <strong>rockwool glasswool insulation in navi mumbai</strong> are built for the heavy Mumbai monsoons.
                                 </p>
                             </Card>
 
                             <Card variant="solid" className={styles.contentCard}>
-                                <h3>Glasswool: Precision Acoustic Control</h3>
+                                <h3>Efficiency of rockwool glasswool insulation in navi mumbai</h3>
                                 <p>
-                                    In commercial spaces like multiplexes, recording studios, and large office complexes in <strong>Vashi and Mahape</strong>, sound control is essential. <strong>Glasswool</strong> is a lightweight, flexible insulation made from recycled glass. Its unique porous structure is exceptionally good at trapping sound waves, boasting a high <strong>Noise Reduction Coefficient (NRC)</strong>. Whether you want to keep the heavy drumming of Mumbai rain out or contain the noise within an industrial workshop, Glasswool panels provide the acoustic serenity required for modern work environments.
+                                    A high-quality <strong>rockwool glasswool insulation in navi mumbai</strong> improves acoustic control. Our <strong>rockwool glasswool insulation in navi mumbai</strong> are balanced for thermal efficiency.
                                 </p>
                             </Card>
 
                             <Card variant="solid" className={styles.contentCard}>
-                                <h3>Why Industrialists Choose Zinco Insulation Panels</h3>
+                                <h3>Why Zinco for rockwool glasswool insulation in navi mumbai?</h3>
                                 <ul className={styles.styledList}>
-                                    <li><strong>Unmatched Fire Safety:</strong> Meet the most stringent industrial fire codes with panels that do not support combustion or emit toxic smoke during a fire.</li>
-                                    <li><strong>Energy Efficiency:</strong> Dramatically reduce your HVAC (air conditioning) costs by creating a high-resistance (High R-value) thermal envelope around your facility.</li>
-                                    <li><strong>Structural Integrity:</strong> The 5-crest high-rib profile ensures that your roof is as strong as it is insulated, capable of handling high wind and monsoon loads.</li>
-                                    <li><strong>Longevity & Durability:</strong> Both Rockwool and Glasswool are inorganic materials, meaning they won't rot, support mold growth, or attract pests over their multi-decade lifespan.</li>
+                                    <li><strong>Fire Safe:</strong> Every <strong>rockwool glasswool insulation in navi mumbai</strong> resists high heat.</li>
+                                    <li><strong>Acoustic:</strong> Our <strong>rockwool glasswool insulation in navi mumbai</strong> provides sound damping.</li>
+                                    <li><strong>Quality:</strong> We ensure perfect installation of <strong>rockwool glasswool insulation in navi mumbai</strong>.</li>
+                                    <li><strong>Value:</strong> Our <strong>rockwool glasswool insulation in navi mumbai</strong> is a smart industrial investment.</li>
                                 </ul>
                             </Card>
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Comparison & Specifications</h2>
-                        <div className={styles.tableWrapper}>
-                            <table className={styles.customTable}>
-                                <thead>
-                                    <tr>
-                                        <th>Item</th>
-                                        <th>Glasswool</th>
-                                        <th>Rockwool</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><strong>Density (kg/m³)</strong></td>
-                                        <td>10 - 50</td>
-                                        <td>50 - 200</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Thickness (mm)</strong></td>
-                                        <td>20 - 200</td>
-                                        <td>30 - 100</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Temperature (°C)</strong></td>
-                                        <td>230 - 260</td>
-                                        <td>700 - 850</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </section>
-
-                    <section className={styles.section}>
-                        <h2>Technical Profile Details</h2>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>Specifications of rockwool glasswool insulation in navi mumbai</h2>
                         <Card variant="glass">
                             <div className={styles.specsTable}>
                                 {specifications.map((spec, index) => (
@@ -176,10 +141,16 @@ const RockwoolGlasswool = () => {
                                 ))}
                             </div>
                         </Card>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Performance Comparison</h2>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>Features of rockwool glasswool insulation in navi mumbai</h2>
                         <div className={styles.featuresGrid}>
                             {features.map((feature, index) => (
                                 <motion.div
@@ -195,30 +166,24 @@ const RockwoolGlasswool = () => {
                                 </motion.div>
                             ))}
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Major Installations</h2>
-                        <div className={styles.applicationsGrid}>
-                            {applications.map((app, index) => (
-                                <Card key={index} variant="solid" className={styles.appCard}>
-                                    <FaMapMarkerAlt style={{ color: 'var(--accent-500)', marginBottom: '0.5rem' }} />
-                                    <h4>{app}</h4>
-                                </Card>
-                            ))}
-                        </div>
-                    </section>
-
-                    <section className={styles.section}>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.contentBlock}>
                             <Card variant="solid" className={styles.contentCard}>
-                                <h2>Installation and Technical Reliability</h2>
+                                <h2>Modern rockwool glasswool insulation in navi mumbai</h2>
                                 <p>
-                                    Proper joint sealing is the key to maximizing the performance of insulated panels. Our installation teams in <strong>Panvel and Navi Mumbai</strong> use specialized tongue-and-groove joints or overlapping techniques that eliminate thermal bridging. This ensures that every square meter of your roof contributes to the thermal and acoustic efficiency of the building.
+                                    Our <strong>rockwool glasswool insulation in navi mumbai</strong> is ideal for sound studios. Once installed, the <strong>rockwool glasswool insulation in navi mumbai</strong> protects high-value equipment.
                                 </p>
                             </Card>
                         </div>
-                    </section>
+                    </motion.section>
 
                     <motion.section
                         className={styles.section}
@@ -227,34 +192,30 @@ const RockwoolGlasswool = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h2>Frequently Asked Questions</h2>
+                        <h2>FAQs on rockwool glasswool insulation in navi mumbai</h2>
                         <div className={styles.faqGrid}>
                             <div className={styles.faqItem}>
-                                <h4>Which is better for soundproofing: Rockwool or Glasswool?</h4>
-                                <p>While both are excellent, Rockwool's higher density makes it slightly better at blocking low-frequency noise (like heavy machinery), whereas Glasswool is highly effective for general mid-to-high frequency sound absorption.</p>
+                                <h4>Is <strong>rockwool glasswool insulation in navi mumbai</strong> fire safe?</h4>
+                                <p>Yes, <strong>rockwool glasswool insulation in navi mumbai</strong> supports up to 850°C.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h4>Are these panels moisture-resistant?</h4>
-                                <p>Our insulation materials are treated with water-repellent additives. However, the outer metal skin provides the primary protection against the heavy **Mumbai monsoons**, keeping the core dry and effective.</p>
+                                <h4>Does <strong>rockwool glasswool insulation in navi mumbai</strong> stop noise?</h4>
+                                <p>Yes, <strong>rockwool glasswool insulation in navi mumbai</strong> has excellent sound absorption.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h4>Can I install solar panels on top of these roofs?</h4>
-                                <p>Yes! The 5-crest high-rib profile provides excellent structural strength for solar mounting brackets. We recommend consulting our technical team in **Taloja** for specific load-bearing calculations for your project.</p>
-                            </div>
-                            <div className={styles.faqItem}>
-                                <h4>What is the expected lifespan of these insulated panels?</h4>
-                                <p>Our panels are designed for a 20-30 year service life. Because the core materials are inorganic and the skins are pre-painted Galvalume, they require very little maintenance over their lifespan.</p>
+                                <h4>Is <strong>rockwool glasswool insulation in navi mumbai</strong> durable?</h4>
+                                <p>Yes, <strong>rockwool glasswool insulation in navi mumbai</strong> is inorganic and lasts decades.</p>
                             </div>
                         </div>
                     </motion.section>
 
                     <section className={styles.ctaSection}>
                         <Card variant="gradient" className={styles.ctaCard}>
-                            <h3>Prioritize Safety & Sound Control</h3>
-                            <p>Get a customized quote for Rockwool/Glasswool panels today.</p>
+                            <h3>Get Best Quote for rockwool glasswool insulation in navi mumbai</h3>
+                            <p>Contact the leading manufacturer for <strong>rockwool glasswool insulation in navi mumbai</strong> today.</p>
                             <div className={styles.ctaButtons}>
-                                <Button size="lg" href="/contact">Get Quote</Button>
-                                <Button size="lg" variant="outline" href="tel:+919967203090">Call Now</Button>
+                                <Button size="lg" href="/contact">Get Estimate</Button>
+                                <Button size="lg" variant="outline" href="tel:+919967203090">Call Expert</Button>
                             </div>
                         </Card>
                     </section>

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { FaArrowLeft, FaPaintRoller, FaShieldAlt, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaArrowLeft, FaPaintRoller, FaShieldAlt, FaMapMarkerAlt, FaCheckCircle } from 'react-icons/fa';
 import SEO from '../../components/shared/SEO';
 import Card from '../../components/shared/Card';
 import Button from '../../components/shared/Button';
@@ -11,12 +11,12 @@ import styles from './ProductCategory.module.css';
 const StructuralPainting = () => {
     const navigate = useNavigate();
     const features = [
-        'Industrial Grade Epoxies',
-        'Anti-Corrosive Coatings',
-        'Structural Steel Painting',
-        'Roof Maintenance Coatings',
-        'Weather Resistant Finishes',
-        'Durable Protection'
+        'Advanced structural painting in navi mumbai',
+        'Top structural painting in navi mumbai',
+        'Balanced structural painting in navi mumbai',
+        'Expert structural painting in navi mumbai',
+        'Quality structural painting in navi mumbai',
+        'Best structural painting in navi mumbai'
     ];
 
     const services = [
@@ -55,11 +55,12 @@ const StructuralPainting = () => {
                 title="Industrial & Structural Painting Services Navi Mumbai"
                 description="Professional industrial and structural painting services in Navi Mumbai, Panvel, and Taloja. High-quality anti-corrosive and epoxy coatings."
                 keywords="industrial painting, structural painting, epoxy coating, anti-corrosive paint, roof painting"
+                canonicalUrl="https://zincoroof.com/products/structural-painting"
             />
             <Helmet>
-                <link rel="preload" as="image" href={heroImage} />
+                <link rel="preload" as="image" href={heroImage} fetchpriority="high" />
             </Helmet>
-            <div className={styles.hero} style={{ '--hero-image': `url(${heroImage})` }} fetchpriority="high">
+            <div className={styles.hero} style={{ '--hero-image': `url(${heroImage})` }}>
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>
                     <motion.div
@@ -74,10 +75,10 @@ const StructuralPainting = () => {
                             PROTECTION & AESTHETICS
                         </motion.span>
                         <motion.h1 variants={itemVariants}>
-                            Industrial & Structural Painting
+                            structural painting in navi mumbai
                         </motion.h1>
                         <motion.p className={styles.heroDesc} variants={itemVariants}>
-                            Premium protective coatings for industrial environments in Navi Mumbai and beyond.
+                            Premium protective coatings through professional <strong>structural painting in navi mumbai</strong> solutions.
                         </motion.p>
                     </motion.div>
                 </div>
@@ -85,22 +86,51 @@ const StructuralPainting = () => {
 
             <div className={styles.container}>
                 <div className={styles.content}>
-                    <section className={styles.section}>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.contentBlock}>
                             <Card variant="solid" className={styles.contentCard}>
-                                <h2>Long-Lasting Protection for Industrial Assets</h2>
+                                <h2>Complete structural painting in navi mumbai solutions</h2>
                                 <p>
-                                    Industrial structures are constantly exposed to harsh environmental factors, including extreme heat, coastal humidity, and chemical pollutants. At Zinco Roofing Solution, we provide specialized <strong>Industrial and Structural Painting</strong> services designed to extend the lifespan of your infrastructure. Our coatings are not just about aesthetics; they are a critical layer of defense against corrosion and structural decay.
+                                    At Zinco Roofing Solution, we provide the best <strong>structural painting in navi mumbai</strong>. Our <strong>structural painting in navi mumbai</strong> are designed for massive industrial assets.
                                 </p>
                                 <p>
-                                    We utilize high-performance materials from leading manufacturers, ensuring that every square foot of your facility is protected. From high-bay steel structures in <strong>Taloja MIDC</strong> to coastal facilities in <strong>Vashi</strong>, our team delivers professional results that stand the test of time.
+                                    Using <strong>structural painting in navi mumbai</strong> ensures a protective layer for decades. Our <strong>structural painting in navi mumbai</strong> are built for the heavy Mumbai monsoons.
                                 </p>
                             </Card>
-                        </div>
-                    </section>
 
-                    <section className={styles.section}>
-                        <h2>Our Coating Solutions</h2>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Efficiency of structural painting in navi mumbai</h3>
+                                <p>
+                                    A high-quality <strong>structural painting in navi mumbai</strong> improves structural integrity. Our <strong>structural painting in navi mumbai</strong> are balanced for chemical resistance.
+                                </p>
+                            </Card>
+
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Why Zinco for structural painting in navi mumbai?</h3>
+                                <ul className={styles.styledList}>
+                                    <li><strong>Protective:</strong> Every <strong>structural painting in navi mumbai</strong> offers anti-rust defense.</li>
+                                    <li><strong>Durable:</strong> Our <strong>structural painting in navi mumbai</strong> is epoxy-grade.</li>
+                                    <li><strong>Quality:</strong> We ensure perfect installation of <strong>structural painting in navi mumbai</strong>.</li>
+                                    <li><strong>Value:</strong> Our <strong>structural painting in navi mumbai</strong> is a vital industrial service.</li>
+                                </ul>
+                            </Card>
+                        </div>
+                    </motion.section>
+
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>Coating types for structural painting in navi mumbai</h2>
                         <div className={styles.applicationsGrid}>
                             {services.map((service, index) => (
                                 <Card key={index} variant="solid" className={styles.appCard}>
@@ -109,12 +139,18 @@ const StructuralPainting = () => {
                                 </Card>
                             ))}
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Service Locations</h2>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>Features of structural painting in navi mumbai</h2>
                         <div className={styles.featuresGrid}>
-                            {['Navi Mumbai', 'Panvel', 'Taloja MIDC', 'Vashi', 'Thane', 'Mumbai'].map((loc, index) => (
+                            {features.map((feature, index) => (
                                 <motion.div
                                     key={index}
                                     className={styles.featureItem}
@@ -123,30 +159,36 @@ const StructuralPainting = () => {
                                     viewport={{ once: true }}
                                     transition={{ delay: index * 0.1 }}
                                 >
-                                    <FaMapMarkerAlt className={styles.checkIcon} />
-                                    <span>{loc}</span>
+                                    <FaCheckCircle className={styles.checkIcon} />
+                                    <span>{feature}</span>
                                 </motion.div>
                             ))}
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.contentBlock}>
                             <Card variant="solid" className={styles.contentCard}>
-                                <h3>The Zinco Advantage in Industrial Painting</h3>
+                                <h2>Modern structural painting in navi mumbai</h2>
                                 <p>
-                                    Our process begins with thorough surface preparation, which is the most critical step for coating longevity. We employ various methods, including sandblasting and high-pressure washing, to ensure a perfect bond. Our experienced painters are trained in applying multi-coat systems, including primers, intermediate coats, and UV-resistant topcoats.
+                                    Our <strong>structural painting in navi mumbai</strong> is ideal for large factories. Once installed, the <strong>structural painting in navi mumbai</strong> provides a maintenance-free finish.
                                 </p>
                             </Card>
                         </div>
-                    </section>
+                    </motion.section>
 
                     <section className={styles.ctaSection}>
                         <Card variant="gradient" className={styles.ctaCard}>
-                            <h3>Get a Professional Painting Estimate</h3>
-                            <p>Protect your investment with our industrial-grade coating solutions.</p>
+                            <h3>Get Best Quote for structural painting in navi mumbai</h3>
+                            <p>Contact the leading expert for <strong>structural painting in navi mumbai</strong> today.</p>
                             <div className={styles.ctaButtons}>
-                                <Button size="lg" href="/contact">Get Free Quote</Button>
+                                <Button size="lg" href="/contact">Get Estimate</Button>
                                 <Button size="lg" variant="outline" href="tel:+919967203090">Call Expert</Button>
                             </div>
                         </Card>

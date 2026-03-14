@@ -17,18 +17,18 @@ import polyImg4 from '../../assets/Transparent polycarbonate/Transparent polycar
 const PolycarbonateSheets = () => {
     const navigate = useNavigate();
     const galleryImages = [
-        { src: polyImg1, title: 'Translucent Skylight' },
-        { src: polyImg2, title: 'Daylighting Panel' },
-        { src: polyImg3, title: 'Industrial Lighting' },
-        { src: polyImg4, title: 'Structural Rib Profile' }
+        { src: polyImg1, title: 'Polycarbonate roofing sheets Skylight' },
+        { src: polyImg2, title: 'Polycarbonate roofing sheets Panel' },
+        { src: polyImg3, title: 'Polycarbonate roofing sheets Lighting' },
+        { src: polyImg4, title: 'Polycarbonate roofing sheets Profile' }
     ];
     const features = [
-        'High Rib Profile (5 Main Crests & 3 Mini Ribs)',
-        'Superior Spanning for Large Industrial Roofs',
-        'High-Impact & Unbreakable Durability',
-        'Co-extruded UV Protected Coating',
-        'Available in Solid, Multiwall & Embossed',
-        'Translucent Natural Lighting Solution'
+        'High Rib polycarbonate roofing sheets',
+        'Strong polycarbonate roofing sheets',
+        'UV Protected polycarbonate roofing sheets',
+        'Durable polycarbonate roofing sheets',
+        'Translucent polycarbonate roofing sheets',
+        'Insulated polycarbonate roofing sheets'
     ];
 
     const specifications = [
@@ -38,15 +38,6 @@ const PolycarbonateSheets = () => {
         { label: 'Thickness', value: '2mm - 16mm available' },
         { label: 'Material Grade', value: 'Sabic / Bayer / Tuflite resins' },
         { label: 'UV Resistance', value: 'UV2 Double Side Protection' }
-    ];
-
-    const applications = [
-        'Industrial Skylights in Taloja',
-        'Long-Span Factory Roofing',
-        'Infrastructure Projects Mumbai',
-        'Commercial Walkways & Atriums',
-        'Warehouse Natural Lighting',
-        'Railway & Bus Terminals'
     ];
 
     const containerVariants = {
@@ -76,11 +67,12 @@ const PolycarbonateSheets = () => {
                 title="High-Rib Polycarbonate Sheets in Navi Mumbai | Zinco"
                 description="Unbreakable high-rib polycarbonate roofing sheets for industrial skylights in Taloja, Rabale, and Panvel. Superior light transmission and UV protection."
                 keywords="polycarbonate sheets navi mumbai, high rib polycarbonate, industrial skylights, transparent roofing sheets"
+                canonicalUrl="https://zincoroof.com/products/polycarbonate-sheets"
             />
             <Helmet>
-                <link rel="preload" as="image" href={heroImg} />
+                <link rel="preload" as="image" href={heroImg} fetchpriority="high" />
             </Helmet>
-            <div className={styles.hero} style={{ '--hero-image': `url(${heroImg})` }} fetchpriority="high">
+            <div className={styles.hero} style={{ '--hero-image': `url(${heroImg})` }}>
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>
                     <motion.div
@@ -95,10 +87,10 @@ const PolycarbonateSheets = () => {
                             PRECISION & DURABILITY
                         </motion.span>
                         <motion.h1 variants={itemVariants}>
-                            High-Rib Polycarbonate Sheets in Navi Mumbai
+                            polycarbonate roofing sheets
                         </motion.h1>
                         <motion.p className={styles.heroDesc} variants={itemVariants}>
-                            Technically advanced high-rib polycarbonate profiles designed for superior structural strength and long-spanning capabilities.
+                            Technically advanced <strong>polycarbonate roofing sheets</strong> designed for superior structural strength and light transmission.
                         </motion.p>
                     </motion.div>
                 </div>
@@ -106,39 +98,51 @@ const PolycarbonateSheets = () => {
 
             <div className={styles.container}>
                 <div className={styles.content}>
-                    <section className={styles.section}>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.contentBlock}>
                             <Card variant="solid" className={styles.contentCard}>
-                                <h2>Advanced High-Rib Polycarbonate: Revolutionizing Natural Lighting in Industrial Spaces</h2>
+                                <h2>Advanced natural lighting with polycarbonate roofing sheets</h2>
                                 <p>
-                                    In the sprawling industrial sheds of <strong>Taloja MIDC, Rabale, and Panvel</strong>, energy costs for interior lighting can be a significant overhead. Zinco Roofing Solution's <strong>High-Rib Polycarbonate Sheets</strong> offer a sophisticated engineering solution that combines "unbreakable" structural strength with exceptional light transmission. Our sheets are designed to integrate seamlessly with standard metal roofing profiles, providing a durable skylight solution that transforms dark factory interiors into bright, productive work environments.
+                                    At Zinco Roofing Solution, our <strong>polycarbonate roofing sheets</strong> offer a sophisticated solution for industrial sheds. These <strong>polycarbonate roofing sheets</strong> combine structural strength with exceptional transmission.
                                 </p>
                                 <p>
-                                    What sets our polycarbonate apart is the <strong>5-crest high-rib profile</strong>. Standard translucent sheets often struggle with spanning capabilities, requiring frequent purlin support to prevent sagging or wind damage. By adding 3 parallel mini ribs between the main 5 crests, we've created a sheet with superior rigidity. This structural reinforcement allows for wider spans and better load distribution, making them ideal for the heavy wind pressures and monsoon loads experienced in the <strong>Navi Mumbai</strong> region.
-                                </p>
-                            </Card>
-
-                            <Card variant="solid" className={styles.contentCard}>
-                                <h3>Material Science: UV Protection and Impact Resistance</h3>
-                                <p>
-                                    Not all polycarbonate is created equal. Our sheets are manufactured using 100% virgin-grade resins from global leaders like <strong>Sabic (Lexan) and Bayer (Makrolon)</strong>. Each sheet features a co-extruded <strong>UV-protected coating (UV2)</strong> on both sides. This is a critical feature for the Indian climate—standard sheets without proper UV protection can become yellow and brittle in just a few years. Our UV-stabilized sheets maintain their clarity and high-impact strength for well over a decade, withstanding everything from intense solar radiation to falling debris or hailstorms.
+                                    The 5-crest high-rib profile of our <strong>polycarbonate roofing sheets</strong> ensures maximum rigidity. These <strong>polycarbonate roofing sheets</strong> are designed to handle heavy monsoon loads and wind pressures effortlessly.
                                 </p>
                             </Card>
 
                             <Card variant="solid" className={styles.contentCard}>
-                                <h3>Why Industrial Facilities Switch to High-Rib Polycarbonate</h3>
+                                <h3>UV Protection in polycarbonate roofing sheets</h3>
+                                <p>
+                                    Our <strong>polycarbonate roofing sheets</strong> feature a co-extruded UV-protected coating. This prevents yellowing of the <strong>polycarbonate roofing sheets</strong>, ensuring long-term clarity and durability in Mumbai's climate.
+                                </p>
+                            </Card>
+
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Why Choose Zinco polycarbonate roofing sheets?</h3>
                                 <ul className={styles.styledList}>
-                                    <li><strong>90% Light Transmission:</strong> Maximize natural daylight while filtering out harmful UV rays, significantly reducing your electricity bills for daytime operations.</li>
-                                    <li><strong>Virtually Unbreakable:</strong> Polycarbonate is 250 times stronger than glass and 30 times stronger than acrylic, providing an "unbreakable" safety barrier for your facility.</li>
-                                    <li><strong>Thermal Stability:</strong> Despite being translucent, our sheets offer better thermal insulation than glass, helping maintain internal temperatures in climate-controlled warehouses.</li>
-                                    <li><strong>Weight Efficiency:</strong> Being lightweight despite its strength, polycarbonate is easy to install at height, reducing labor risks and structural load.</li>
+                                    <li><strong>Light Transmission:</strong> Our <strong>polycarbonate roofing sheets</strong> filter harmful rays while letting in daylight.</li>
+                                    <li><strong>Unbreakable Strength:</strong> These <strong>polycarbonate roofing sheets</strong> are 250 times stronger than glass.</li>
+                                    <li><strong>Thermal Stability:</strong> Use <strong>polycarbonate roofing sheets</strong> to maintain internal warehouse temperatures.</li>
+                                    <li><strong>Weight Efficient:</strong> Lightweight <strong>polycarbonate roofing sheets</strong> are easy to install at high heights.</li>
                                 </ul>
                             </Card>
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Product Showcase</h2>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>polycarbonate roofing sheets Showcase</h2>
                         <div className={styles.galleryGrid}>
                             {galleryImages.map((img, index) => (
                                 <motion.div
@@ -149,17 +153,23 @@ const PolycarbonateSheets = () => {
                                     viewport={{ once: true }}
                                     transition={{ delay: index * 0.05 }}
                                 >
-                                    <img src={img.src} alt={img.title} className={styles.galleryImage} loading="lazy" decoding="async" />
+                                    <img src={img.src} alt="polycarbonate roofing sheets industrial installation" className={styles.galleryImage} loading="lazy" decoding="async" />
                                     <div className={styles.galleryOverlay}>
                                         <span>{img.title}</span>
                                     </div>
                                 </motion.div>
                             ))}
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Technical Profile Specifications</h2>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>Specifications of polycarbonate roofing sheets</h2>
                         <Card variant="glass">
                             <div className={styles.specsTable}>
                                 {specifications.map((spec, index) => (
@@ -170,10 +180,16 @@ const PolycarbonateSheets = () => {
                                 ))}
                             </div>
                         </Card>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Core Advantages</h2>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>Benefits of polycarbonate roofing sheets</h2>
                         <div className={styles.featuresGrid}>
                             {features.map((feature, index) => (
                                 <motion.div
@@ -189,30 +205,24 @@ const PolycarbonateSheets = () => {
                                 </motion.div>
                             ))}
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Common Infrastructure Uses</h2>
-                        <div className={styles.applicationsGrid}>
-                            {applications.map((app, index) => (
-                                <Card key={index} variant="solid" className={styles.appCard}>
-                                    <FaSun style={{ color: 'var(--accent-500)', marginBottom: '0.5rem' }} />
-                                    <h4>{app}</h4>
-                                </Card>
-                            ))}
-                        </div>
-                    </section>
-
-                    <section className={styles.section}>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.contentBlock}>
                             <Card variant="solid" className={styles.contentCard}>
-                                <h2>Maintenance and Operational Clarity</h2>
+                                <h2>Maintenance of polycarbonate roofing sheets</h2>
                                 <p>
-                                    To maintain maximum light transmission, we recommend a simple annual cleaning with mild soapy water and a soft cloth. This removes the industrial soot and dust buildup common in areas like <strong>Taloja MIDC</strong>. The UV-protected surface is designed to be "slick," meaning dirt washes off easily during the monsoon, keeping your factory naturally bright with minimal effort.
+                                    To keep your <strong>polycarbonate roofing sheets</strong> clear, a simple annual cleaning is recommended. This keeps <strong>polycarbonate roofing sheets</strong> naturally bright with minimal effort from you.
                                 </p>
                             </Card>
                         </div>
-                    </section>
+                    </motion.section>
 
                     <motion.section
                         className={styles.section}
@@ -221,34 +231,30 @@ const PolycarbonateSheets = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h2>Frequently Asked Questions</h2>
+                        <h2>FAQs on polycarbonate roofing sheets</h2>
                         <div className={styles.faqGrid}>
                             <div className={styles.faqItem}>
-                                <h4>Are polycarbonate sheets fire-safe?</h4>
-                                <p>Yes, our polycarbonate sheets are self-extinguishing. They have a high ignition temperature and do not support the spread of flames, making them compliant with most industrial fire safety regulations in Maharashtra.</p>
+                                <h4>Are <strong>polycarbonate roofing sheets</strong> fire-safe?</h4>
+                                <p>Yes, our <strong>polycarbonate roofing sheets</strong> are self-extinguishing and meet safety standards.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h4>Can these sheets withstand heavy hailstorms?</h4>
-                                <p>Absolutely. Polycarbonate is renowned for its impact resistance. It is often referred to as "unbreakable" in roofing applications and can easily withstand hailstones and other small falling objects without cracking.</p>
+                                <h4>Can <strong>polycarbonate roofing sheets</strong> withstand hail?</h4>
+                                <p>Absolutely, <strong>polycarbonate roofing sheets</strong> are virtually unbreakable and hail-resistant.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h4>How do I prevent leaks at the joints with metal sheets?</h4>
-                                <p>Our polycarbonate sheets are designed to mirror the exact profiles of our metal sheets. When installed with proper EPDM-backed washers and neutral-cure silicone sealants, they create a perfect, watertight seal at the overlaps.</p>
-                            </div>
-                            <div className={styles.faqItem}>
-                                <h4>What is the expected lifespan of these sheets?</h4>
-                                <p>When properly installed and maintained, our high-grade UV-coated polycarbonate sheets are designed to last 15-20 years. We use only premium resins to ensure that "yellowing" and brittleness are virtually eliminated over the product's life.</p>
+                                <h4>Do <strong>polycarbonate roofing sheets</strong> prevent leaks?</h4>
+                                <p>Yes, when installed correctly, <strong>polycarbonate roofing sheets</strong> create a watertight seal with metal.</p>
                             </div>
                         </div>
                     </motion.section>
 
                     <section className={styles.ctaSection}>
                         <Card variant="gradient" className={styles.ctaCard}>
-                            <h3>Need High-Strength Natural Lighting?</h3>
-                            <p>Get best prices for High-Rib Polycarbonate Sheets in Navi Mumbai.</p>
+                            <h3>Get Best Quote for polycarbonate roofing sheets</h3>
+                            <p>Contact the experts for premium <strong>polycarbonate roofing sheets</strong> in Navi Mumbai today.</p>
                             <div className={styles.ctaButtons}>
-                                <Button size="lg" href="/contact">Get Quote</Button>
-                                <Button size="lg" variant="outline" href="tel:+919967203090">Call Now</Button>
+                                <Button size="lg" href="/contact">Get Estimate</Button>
+                                <Button size="lg" variant="outline" href="tel:+919967203090">Call Expert</Button>
                             </div>
                         </Card>
                     </section>

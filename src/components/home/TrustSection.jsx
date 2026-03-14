@@ -75,7 +75,7 @@ const TrustSection = () => {
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
                     >
-                        <Link to="/premium-roofing-sheets-navi-mumbai" style={{ color: 'inherit', textDecoration: 'none' }}>PUF Panel & Metal Roofing Experts</Link> in Navi Mumbai
+                        The Premier <Link to="/industrial-roofing-contractors-in-navi-mumbai" style={{ color: 'inherit', textDecoration: 'none' }}>Roofing Contractor in Navi Mumbai</Link>
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
@@ -83,7 +83,7 @@ const TrustSection = () => {
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
                     >
-                        As a leading <Link to="/industrial-roofing-contractors-in-navi-mumbai" style={{ color: 'var(--accent-500)', fontWeight: '700' }}>Roofing Contractor in Navi Mumbai</Link>, we don't just provide roofing; we provide long-term protection for your industrial assets with precision engineering and high-quality materials.
+                        As a leading <strong>Roofing Contractor in Navi Mumbai</strong>, Zinco Roofing provides long-term protection for your industrial assets. Every project we handle as a <strong>Roofing Contractor in Navi Mumbai</strong> focuses on precision engineering, high-quality materials, and structural collects designed for durability.
                     </motion.p>
                 </div>
 

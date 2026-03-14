@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate, Link, useSearchParams } from 'react-router-dom';
 import { FaArrowLeft, FaIndustry, FaTemperatureHigh, FaLayerGroup, FaTools, FaSolarPanel, FaPaintRoller, FaShieldAlt } from 'react-icons/fa';
+import { Helmet } from 'react-helmet-async';
 import SEO from '../components/shared/SEO';
 import heroImage from '../assets/products-hero.webp';
 import Card from '../components/shared/Card';
@@ -32,14 +33,12 @@ const Products = () => {
     };
 
     const productGroups = [
-        // ...
         {
             title: 'Metal Sheet Solutions',
             icon: <FaIndustry />,
             image: metalFeatured,
             description: 'Premium colour coated, decking, and metal roofing profiles.',
             items: [
-                // ...
                 {
                     id: 'colour-coated-sheet',
                     title: 'Colour Coated Sheet',
@@ -233,13 +232,17 @@ const Products = () => {
     return (
         <div className={styles.productsPage}>
             <SEO
-                title="Premium Roofing Sheets in Navi Mumbai | Zinco Roofing"
-                description="Discover high-quality Premium Roofing Sheets in Navi Mumbai. Zinco Roofing Solutions offers durable, weather-resistant metal, UPVC, and polycarbonate sheets."
-                keywords="Premium Roofing Sheets in Navi Mumbai, metal roofing sheets, UPVC roofing, polycarbonate sheets, industrial roofing solutions"
+                title="Premium Roofing Sheets in Navi Mumbai | Zinco Roofing Specialist"
+                description="Explore top-quality Premium Roofing Sheets in Navi Mumbai. Zinco Roofing offers durable, weather-resistant Premium Roofing Sheets in Navi Mumbai for industries."
+                keywords="Premium Roofing Sheets in Navi Mumbai, metal roofing sheets navi mumbai, premium roofing sheets in navi mumbai, roofing solutions navi mumbai"
+                canonicalUrl="https://zincoroof.com/premium-roofing-sheets-navi-mumbai"
             />
+            <Helmet>
+                <link rel="preload" as="image" href={heroImage} fetchpriority="high" />
+            </Helmet>
 
             {/* Hero Section */}
-            <section className={styles.hero} style={{ '--hero-image': `url(${heroImage})` }} fetchpriority="high">
+            <section className={styles.hero} style={{ backgroundImage: `url(${heroImage})` }}>
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>
                     <motion.div
@@ -254,8 +257,8 @@ const Products = () => {
                             Premium Roofing Sheets in Navi Mumbai
                         </motion.h1>
                         <motion.p className={styles.heroDesc} variants={itemVariants}>
-                            Explore our comprehensive range of roofing and building solutions,
-                            engineered for the most demanding industrial environments.
+                            Explore our comprehensive range of <strong>Premium Roofing Sheets in Navi Mumbai</strong>,
+                            engineered for the most demanding industrial environments in the region.
                         </motion.p>
                     </motion.div>
                 </div>
@@ -283,7 +286,7 @@ const Products = () => {
                                             {group.image && (
                                                 <div className={styles.cardImageContainer}>
                                                     <img src={group.image}
-                                                        alt={group.title}
+                                                        alt={`${group.title} - ${group.description}`}
                                                         className={styles.cardImage}
                                                         loading="lazy"
                                                         decoding="async"
@@ -307,7 +310,7 @@ const Products = () => {
                                 key="products"
                                 initial={{ opacity: 0, x: 20 }}
                                 animate={{ opacity: 1, x: 0 }}
-                                exit={{ opacity: 0, x: 20 }} // Changed exit to slide out same way
+                                exit={{ opacity: 0, x: 20 }}
                                 transition={{ duration: 0.3 }}
                             >
                                 <div className={styles.activeHeader}>
@@ -345,9 +348,9 @@ const Products = () => {
                     </AnimatePresence>
                     <section className={styles.seoSection}>
                         <div className={styles.seoHeader}>
-                            <h2>The Zinco Advantage in Navi Mumbai</h2>
+                            <h2>Superior Premium Roofing Sheets in Navi Mumbai</h2>
                             <p className={styles.leadText}>
-                                Engineering high-performance roofing solutions tailored for Mumbai's demanding industrial corridors.
+                                We specialize in <strong>Premium Roofing Sheets in Navi Mumbai</strong>, providing industrial solutions that last for decades.
                             </p>
                         </div>
 
@@ -360,30 +363,36 @@ const Products = () => {
                             <Card variant="glass" className={styles.seoCard}>
                                 <FaTemperatureHigh className={styles.benefitIcon} />
                                 <h3>Thermal Efficiency</h3>
-                                <p>Advanced PUF and insulated solutions designed to reduce energy costs by up to 40% in extreme Maharashtra summers.</p>
+                                <p>Advanced <strong>Premium Roofing Sheets in Navi Mumbai</strong> and insulated solutions designed to reduce energy costs by up to 40% in Navi Mumbai.</p>
                             </Card>
                             <Card variant="glass" className={styles.seoCard}>
                                 <FaTools className={styles.benefitIcon} />
                                 <h3>Custom Engineering</h3>
-                                <p>From factory-cranked profiles to on-site fabrication for large-scale warehouses in Taloja and Panvel.</p>
+                                <p>We offer <strong>Premium Roofing Sheets in Navi Mumbai</strong> with factory-cranked profiles for large-scale warehouses in Taloja and Panvel.</p>
                             </Card>
                         </div>
 
                         <div className={styles.seoArticle}>
                             <div className={styles.highlightCardWrapper}>
                                 <Card variant="solid" className={styles.highlightCard}>
-                                    <h3>Regional Expertise</h3>
+                                    <h3>Regional Expertise in Premium Roofing Sheets in Navi Mumbai</h3>
                                     <p>
-                                        Zinco Roofing has built a reputation for excellence by delivering <strong>Premium Roofing Sheets in Navi Mumbai</strong> for diverse projects, from large-scale industrial warehouses to modern commercial complexes.
+                                        Zinco Roofing has built a reputation for excellence by delivering <strong>Premium Roofing Sheets in Navi Mumbai</strong> for diverse projects, from large-scale industrial warehouses to modern commercial complexes. Our <strong>Premium Roofing Sheets in Navi Mumbai</strong> ensure structural integrity.
                                     </p>
-                                    <div className={styles.keywordBadge}>Trusted in Taloja, Panvel & Rabale</div>
+                                    <div className={styles.keywordBadge}>Premium Roofing Sheets in Navi Mumbai - Trusted in Taloja, Panvel & Rabale</div>
                                 </Card>
                             </div>
+                            <p>
+                                For those seeking the highest quality <strong>Premium Roofing Sheets in Navi Mumbai</strong>, our selection includes everything from metal to polycarbonate. Every <strong>Premium Roofing Sheets in Navi Mumbai</strong> we provide is tested for durability. Choosing the right <strong>Premium Roofing Sheets in Navi Mumbai</strong> is crucial for facility longevity.
+                            </p>
+                            <p>
+                                Our team ensures that your <strong>Premium Roofing Sheets in Navi Mumbai</strong> are installed with precision. We are the leading <strong>Premium Roofing Sheets in Navi Mumbai</strong> experts, serving all major industrial zones. If you need <strong>Premium Roofing Sheets in Navi Mumbai</strong> for your next project, look no further than Zinco.
+                            </p>
                         </div>
                     </section>
                 </div>
             </div>
-        </div >
+        </div>
     );
 };
 

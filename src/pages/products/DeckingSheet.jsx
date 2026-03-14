@@ -21,22 +21,22 @@ import deckImg8 from '../../assets/Dect sheet/Dect sheet/1000014745.webp';
 const DeckingSheet = () => {
     const navigate = useNavigate();
     const galleryImages = [
-        { src: deckImg1, title: 'Commercial Site Slab' },
-        { src: deckImg2, title: 'Steel Deck Flooring' },
-        { src: deckImg3, title: 'Structural Ribs' },
-        { src: deckImg4, title: 'Decking Profile' },
-        { src: deckImg5, title: 'Large Span Decking' },
-        { src: deckImg6, title: 'Industrial Installation' },
-        { src: deckImg7, title: 'Steel Reinforcement' },
-        { src: deckImg8, title: 'Composite Slab Foundation' }
+        { src: deckImg1, title: 'Composite flooring sheets in mumbai Site' },
+        { src: deckImg2, title: 'Top Composite flooring sheets in mumbai' },
+        { src: deckImg3, title: 'Durable Composite flooring sheets in mumbai' },
+        { src: deckImg4, title: 'Quality Composite flooring sheets in mumbai' },
+        { src: deckImg5, title: 'Expert Composite flooring sheets in mumbai' },
+        { src: deckImg6, title: 'Modern Composite flooring sheets in mumbai' },
+        { src: deckImg7, title: 'Best Composite flooring sheets in mumbai' },
+        { src: deckImg8, title: 'Composite flooring sheets in mumbai Supply' }
     ];
     const features = [
-        'Composite Metal Deck Flooring System',
-        'Special Built-in Shear Connectors',
-        'Enhanced Bonding with Concrete',
-        'High Strength Profiles (Super Deck)',
-        'Faster Slab Casting & Reduced Shuttering',
-        'High Tensile Structural Stability'
+        'Premium Composite flooring sheets in mumbai',
+        'Special Composite flooring sheets in mumbai',
+        'Balanced Composite flooring sheets in mumbai',
+        'High-strength Composite flooring sheets in mumbai',
+        'Swift Composite flooring sheets in mumbai',
+        'Structural Composite flooring sheets in mumbai'
     ];
 
     const specifications = [
@@ -55,15 +55,6 @@ const DeckingSheet = () => {
         { sn: '4', thickness: '1.2', weight: '11.78', inertia: '124.91', modulus: '42.05' },
         { sn: '5', thickness: '1.35', weight: '13.25', inertia: '140.23', modulus: '47.23' },
         { sn: '6', thickness: '1.5', weight: '14.72', inertia: '155.46', modulus: '52.39' }
-    ];
-
-    const applications = [
-        'IT Parks in Navi Mumbai',
-        'Industrial Mezzanines Taloja',
-        'Multi-story Commercial Buildings',
-        'Multi-story Car Parks Mumbai',
-        'Office Complexes Vashi',
-        'Data Centers Rabale MIDC'
     ];
 
     const containerVariants = {
@@ -93,11 +84,12 @@ const DeckingSheet = () => {
                 title="Super Deck - Composite Flooring Sheets in Mumbai"
                 description="High-strength composite metal deck flooring sheets for multi-story buildings and industrial mezzanines in Navi Mumbai and Panvel. Faster slab casting."
                 keywords="metal decking sheets, composite flooring sheets, decking profile, floor decking mumbai"
+                canonicalUrl="https://zincoroof.com/products/decking-sheet"
             />
             <Helmet>
-                <link rel="preload" as="image" href={heroImg} />
+                <link rel="preload" as="image" href={heroImg} fetchpriority="high" />
             </Helmet>
-            <div className={styles.hero} style={{ '--hero-image': `url(${heroImg})` }} fetchpriority="high">
+            <div className={styles.hero} style={{ '--hero-image': `url(${heroImg})` }}>
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>
                     <motion.div
@@ -112,10 +104,10 @@ const DeckingSheet = () => {
                             PRECISION & DURABILITY
                         </motion.span>
                         <motion.h1 variants={itemVariants}>
-                            Super Deck - Composite Flooring Sheets in Mumbai
+                            composite flooring sheets in mumbai
                         </motion.h1>
                         <motion.p className={styles.heroDesc} variants={itemVariants}>
-                            High-strength composite metal deck flooring system with special built-in shear connectors for superior bonding.
+                            High-strength <strong>composite flooring sheets in mumbai</strong> with special built-in shear connectors for superior bonding.
                         </motion.p>
                     </motion.div>
                 </div>
@@ -123,48 +115,45 @@ const DeckingSheet = () => {
 
             <div className={styles.container}>
                 <div className={styles.content}>
-                    <section className={styles.section}>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.contentBlock}>
                             <Card variant="solid" className={styles.contentCard}>
-                                <h2>Revolutionizing Slab Construction</h2>
-                                <p className={styles.leadText}>
-                                    Zinco's <strong>Super Deck Composite Metal Decking</strong> is a high-performance structural solution that replaces traditional wooden shuttering with permanent steel formwork.
+                                <h2>Complete composite flooring sheets in mumbai solutions</h2>
+                                <p>
+                                    At Zinco Roofing Solution, we provide the best <strong>composite flooring sheets in mumbai</strong>. Our <strong>composite flooring sheets in mumbai</strong> systems are designed for modern sky-scrapers.
+                                </p>
+                                <p>
+                                    This <strong>composite flooring sheets in mumbai</strong> replaces conventional shuttering. Installing <strong>composite flooring sheets in mumbai</strong> ensures rapid project completion.
                                 </p>
                             </Card>
 
-                            <div className={styles.benefitsGrid}>
-                                <Card variant="glass" className={styles.benefitCard}>
-                                    <FaLayerGroup className={styles.benefitIcon} />
-                                    <h4>Composite Action</h4>
-                                    <p>Embossed patterns act as mechanical shear connectors, creating a multi-directional bond between steel and concrete.</p>
-                                </Card>
-                                <Card variant="glass" className={styles.benefitCard}>
-                                    <FaTools className={styles.benefitIcon} />
-                                    <h4>Rapid ROI</h4>
-                                    <p>Cast multiple floors simultaneously and begin interior work immediately, saving massive time in Taloja MIDC projects.</p>
-                                </Card>
-                                <Card variant="glass" className={styles.benefitCard}>
-                                    <FaCheckCircle className={styles.benefitIcon} />
-                                    <h4>High Tensile</h4>
-                                    <p>Available in 345/550 MPa steel with Z275 GSM coatings for lifetime corrosion protection.</p>
-                                </Card>
-                            </div>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Efficiency of composite flooring sheets in mumbai</h3>
+                                <p>
+                                    A high-quality <strong>composite flooring sheets in mumbai</strong> improves structural stability. Our <strong>composite flooring sheets in mumbai</strong> are balanced for heavy concrete loads in Mumbai.
+                                </p>
+                            </Card>
 
-                            <div className={styles.grid2Col}>
-                                <Card variant="solid" className={styles.highlightCard}>
-                                    <h3>Advanced Shuttering</h3>
-                                    <p>Eliminate the need for 21-day timber curing. Our decking provide immediate support for wet concrete and construction loads.</p>
-                                </Card>
-                                <Card variant="solid" className={styles.highlightCard}>
-                                    <h3>Reduced Slab Weight</h3>
-                                    <p>Achieve thinner slabs without sacrificing load capacity, reducing the overall dead load on foundations in Navi Mumbai.</p>
-                                </Card>
-                            </div>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Why Zinco for composite flooring sheets in mumbai?</h3>
+                                <ul className={styles.styledList}>
+                                    <li><strong>Cost Effective:</strong> Our <strong>composite flooring sheets in mumbai</strong> reduces overall material cost.</li>
+                                    <li><strong>Durable:</strong> Every <strong>composite flooring sheets in mumbai</strong> is highly galvanized.</li>
+                                    <li><strong>Precision:</strong> We ensure perfect fit for every <strong>composite flooring sheets in mumbai</strong>.</li>
+                                    <li><strong>Value:</strong> Our <strong>composite flooring sheets in mumbai</strong> offers superior bonding.</li>
+                                </ul>
+                            </Card>
                         </div>
-                    </section>
+                    </motion.section>
 
                     <section className={styles.section}>
-                        <h2>Product Showcase</h2>
+                        <h2>Gallery of composite flooring sheets in mumbai</h2>
                         <div className={styles.galleryGrid}>
                             {galleryImages.map((img, index) => (
                                 <motion.div
@@ -175,7 +164,7 @@ const DeckingSheet = () => {
                                     viewport={{ once: true }}
                                     transition={{ delay: index * 0.05 }}
                                 >
-                                    <img src={img.src} alt={img.title} className={styles.galleryImage} loading="lazy" decoding="async" />
+                                    <img src={img.src} alt="composite flooring sheets in mumbai" className={styles.galleryImage} loading="lazy" decoding="async" />
                                     <div className={styles.galleryOverlay}>
                                         <span>{img.title}</span>
                                     </div>
@@ -184,8 +173,14 @@ const DeckingSheet = () => {
                         </div>
                     </section>
 
-                    <section className={styles.section}>
-                        <h2>Technical Specifications</h2>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>Specifications of our composite flooring sheets in mumbai</h2>
                         <Card variant="glass">
                             <div className={styles.specsTable}>
                                 {specifications.map((spec, index) => (
@@ -196,10 +191,10 @@ const DeckingSheet = () => {
                                 ))}
                             </div>
                         </Card>
-                    </section>
+                    </motion.section>
 
                     <section className={styles.section}>
-                        <h2>Design Data & Load Table</h2>
+                        <h2>Data for composite flooring sheets in mumbai</h2>
                         <Card variant="solid">
                             <div className={styles.tableWrapper}>
                                 <table className={styles.customTable}>
@@ -228,8 +223,14 @@ const DeckingSheet = () => {
                         </Card>
                     </section>
 
-                    <section className={styles.section}>
-                        <h2>Core Advantages</h2>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>Features of Zinco composite flooring sheets in mumbai</h2>
                         <div className={styles.featuresGrid}>
                             {features.map((feature, index) => (
                                 <motion.div
@@ -245,18 +246,24 @@ const DeckingSheet = () => {
                                 </motion.div>
                             ))}
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.contentBlock}>
                             <Card variant="solid" className={styles.contentCard}>
-                                <h2>Installation Efficiency and Loading Data</h2>
+                                <h2>High-strength composite flooring sheets in mumbai</h2>
                                 <p>
-                                    Successful decking installation requires precision in the placement of shear studs and edge trims. Our technical team provides detailed shop drawings for projects in <strong>Bhiwandi and Navi Mumbai</strong>, ensuring that the decking spans are optimized for the steel frame. The high section modulus of the <strong>Super Deck</strong> profile ensures minimal deflection during the concrete pour, resulting in a perfectly level and industrially sound floor.
+                                    Our <strong>composite flooring sheets in mumbai</strong> is built for endurance. Once installed, the <strong>composite flooring sheets in mumbai</strong> provides a permanent formwork for slabs.
                                 </p>
                             </Card>
                         </div>
-                    </section>
+                    </motion.section>
 
                     <motion.section
                         className={styles.section}
@@ -265,34 +272,30 @@ const DeckingSheet = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h2>Frequently Asked Questions</h2>
+                        <h2>FAQs on composite flooring sheets in mumbai</h2>
                         <div className={styles.faqGrid}>
                             <div className={styles.faqItem}>
-                                <h4>Does composite decking require bottom rebar?</h4>
-                                <p>In most residential and commercial applications, the decking sheet itself replaces the bottom tension reinforcement. However, temperature and shrinkage reinforcement (top mesh) is still required as per structural design codes.</p>
+                                <h4>Does <strong>composite flooring sheets in mumbai</strong> need rebar?</h4>
+                                <p>In most cases, <strong>composite flooring sheets in mumbai</strong> replaces bottom tension reinforcement.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h4>Can decking be used with both steel and RC frames?</h4>
-                                <p>Yes! While it is most efficiently used with steel-framed buildings (bolted or welded to beams), it can also be used in RC (Reinforced Concrete) frames by using specialized connectors or fasteners.</p>
+                                <h4>Can <strong>composite flooring sheets in mumbai</strong> be used in car parks?</h4>
+                                <p>Yes, <strong>composite flooring sheets in mumbai</strong> is ideal for car parks and multi-story zones.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h4>How do I handle openings for pipes and ducts?</h4>
-                                <p>Openings for MEP (Mechanical, Electrical, and Plumbing) services can be easily cut into the decking. Large openings should be reinforced with additional headers or edges as per the structural engineer's advice.</p>
-                            </div>
-                            <div className={styles.faqItem}>
-                                <h4>What is the maximum span between supports?</h4>
-                                <p>This depends on the thickness of the sheet and the depth of the concrete. Typically, spans of 2.5m to 4.5m are possible without temporary propping during the pour, significantly freeing up space on the floor below.</p>
+                                <h4>What is the span of <strong>composite flooring sheets in mumbai</strong>?</h4>
+                                <p>Our <strong>composite flooring sheets in mumbai</strong> can span up to 4.5m between supports.</p>
                             </div>
                         </div>
                     </motion.section>
 
                     <section className={styles.ctaSection}>
                         <Card variant="gradient" className={styles.ctaCard}>
-                            <h3>Optimize Your Slab Construction</h3>
-                            <p>Get technical support and best rates for Super Deck sheets in Mumbai region.</p>
+                            <h3>Get Best Quote for composite flooring sheets in mumbai</h3>
+                            <p>Contact the leading manufacturer for <strong>composite flooring sheets in mumbai</strong> today.</p>
                             <div className={styles.ctaButtons}>
-                                <Button size="lg" href="/contact">Get Quote</Button>
-                                <Button size="lg" variant="outline" href="tel:+919967203090">Call Now</Button>
+                                <Button size="lg" href="/contact">Get Estimate</Button>
+                                <Button size="lg" variant="outline" href="tel:+919967203090">Call Expert</Button>
                             </div>
                         </Card>
                     </section>

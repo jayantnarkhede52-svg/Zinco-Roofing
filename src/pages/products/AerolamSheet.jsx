@@ -11,12 +11,12 @@ import styles from './ProductCategory.module.css';
 const AerolamSheet = () => {
     const navigate = useNavigate();
     const features = [
-        '97% Radiant Heat Reflection',
-        'Effective Moisture & Vapor Barrier',
-        'Lightweight & Easy to Install',
-        'Non-Toxic & Fiber-Free Material',
-        'Prevents Condensation & Drip',
-        'Cost-Effective Thermal Insulation'
+        'Advanced aerolam insulation in navi mumbai',
+        'Top aerolam insulation in navi mumbai',
+        'Balanced aerolam insulation in navi mumbai',
+        'Expert aerolam insulation in navi mumbai',
+        'Quality aerolam insulation in navi mumbai',
+        'Best aerolam insulation in navi mumbai'
     ];
 
     const specifications = [
@@ -26,15 +26,6 @@ const AerolamSheet = () => {
         { label: 'Reflectivity', value: '96% - 97%' },
         { label: 'Roll Width', value: '1.2m / 1.35m' },
         { label: 'Application', value: 'Under-deck / Over-deck' }
-    ];
-
-    const applications = [
-        'Industrial Sheds in Navi Mumbai',
-        'Poultry & Dairy Farms',
-        'Commercial Building Roofs',
-        'Warehouse Cooling in Panvel',
-        'Residential Attic Insulation',
-        'Temporary Structures'
     ];
 
     const containerVariants = {
@@ -64,11 +55,12 @@ const AerolamSheet = () => {
                 title="Aerolam Thermal Insulation Sheets in Navi Mumbai | Zinco"
                 description="Reflective radiant barrier insulation (Aerolam) for industrial sheds in Taloja, Panvel, and Mumbai. Reduces heat by up to 10°C. Energy efficient."
                 keywords="aerolam insulation, bubble foil insulation, radiant barrier, thermal insulation sheet, roof insulation mumbai"
+                canonicalUrl="https://zincoroof.com/products/aerolam-sheet"
             />
             <Helmet>
-                <link rel="preload" as="image" href={heroImg} />
+                <link rel="preload" as="image" href={heroImg} fetchpriority="high" />
             </Helmet>
-            <div className={styles.hero} style={{ '--hero-image': `url(${heroImg})` }} fetchpriority="high">
+            <div className={styles.hero} style={{ '--hero-image': `url(${heroImg})` }}>
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>
                     <motion.div
@@ -83,10 +75,10 @@ const AerolamSheet = () => {
                             PRECISION & DURABILITY
                         </motion.span>
                         <motion.h1 variants={itemVariants}>
-                            Aerolam Thermal Insulation Sheets
+                            aerolam insulation in navi mumbai
                         </motion.h1>
                         <motion.p className={styles.heroDesc} variants={itemVariants}>
-                            Keep your buildings cool and energy-efficient with advanced radiant barrier insulation.
+                            Keep your buildings cool and energy-efficient with advanced <strong>aerolam insulation in navi mumbai</strong> radiant barrier.
                         </motion.p>
                     </motion.div>
                 </div>
@@ -94,39 +86,51 @@ const AerolamSheet = () => {
 
             <div className={styles.container}>
                 <div className={styles.content}>
-                    <section className={styles.section}>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.contentBlock}>
                             <Card variant="solid" className={styles.contentCard}>
-                                <h2>Cooling Your Industrial Environment: Advanced Radiant Barrier Insulation</h2>
+                                <h2>Complete aerolam insulation in navi mumbai solutions</h2>
                                 <p>
-                                    In the intense summer heat of <strong>Navi Mumbai, Panvel, and Taloja MIDC</strong>, the temperature inside a metal building can often exceed the outside temperature by 10-15°C. This excessive heat not only affects worker productivity but also places an enormous load on cooling systems. Zinco Roofing Solution's <strong>Aerolam and Bubble Foil Thermal Insulation Sheets</strong> are designed to tackle this problem at its source: radiant heat. Unlike bulk insulation that only slows down heat transfer, our radiant barriers reflect it away from your building.
+                                    At Zinco Roofing Solution, we provide the best <strong>aerolam insulation in navi mumbai</strong>. Our <strong>aerolam insulation in navi mumbai</strong> are designed for massive industrial cooling.
                                 </p>
                                 <p>
-                                    At the heart of our <strong>Aerolam sheets</strong> is a multi-layered composite consisting of air-filled polyethylene bubbles or cross-linked foam sandwiched between high-purity aluminum foils. This combination creates a dual-action thermal barrier. The aluminum surfaces reflect up to <strong>97% of radiant heat energy</strong>, while the internal air pockets or foam cells provide a resistive (R-value) barrier against conductive and convective heat transfer. This results in a cooler, more comfortable interior environment for your <strong>factory in Taloja</strong> or <strong>warehouse in Panvel</strong>, even during the peak of the Mumbai summer.
-                                </p>
-                            </Card>
-
-                            <Card variant="solid" className={styles.contentCard}>
-                                <h3>The Science of Emissivity and Reflection</h3>
-                                <p>
-                                    Heat travels through the air primarily in the form of radiation. Standard roofing materials absorb this heat and then re-radiate it into the building. Our insulation sheets have an exceptionally low <strong>"emissivity" (E-value)</strong> rating, meaning they radiate very little of the heat they do absorb. By installing a radiant barrier under your roof, you effectively flip the thermodynamics of the building. In the winter or during cool Mumbai nights, the same barrier helps retain the internal heat, making it a year-round energy-saving solution.
+                                    Using <strong>aerolam insulation in navi mumbai</strong> ensures a cooler factory floor. Our <strong>aerolam insulation in navi mumbai</strong> are built for the Mumbai climate.
                                 </p>
                             </Card>
 
                             <Card variant="solid" className={styles.contentCard}>
-                                <h3>Why Industrial Shed Owners in Mumbai Trust Aerolam</h3>
+                                <h3>Efficiency of aerolam insulation in navi mumbai</h3>
+                                <p>
+                                    A high-quality <strong>aerolam insulation in navi mumbai</strong> improves energy savings. Our <strong>aerolam insulation in navi mumbai</strong> are balanced for 97% heat reflection.
+                                </p>
+                            </Card>
+
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Why Zinco for aerolam insulation in navi mumbai?</h3>
                                 <ul className={styles.styledList}>
-                                    <li><strong>97% Heat Reflection:</strong> Dramatically reduce the temperature of the air immediately below the roof, leading to a 5-10°C drop in floor-level temperatures.</li>
-                                    <li><strong>Effective Moisture & Vapor Barrier:</strong> One of the biggest challenges in Mumbai is condensation ("sweating") on the underside of metal roofs. Aerolam acts as a continuous vapor barrier, preventing moisture-laden air from reaching the cool metal and dripping onto your goods.</li>
-                                    <li><strong>Non-Toxic and Fiber-Free:</strong> Unlike some traditional glasswool insulation, Aerolam is non-carcinogenic, fiber-free, and safe for use in <strong>food processing plants and pharmaceutical warehouses</strong> in Navi Mumbai.</li>
-                                    <li><strong>Lightweight and Easy to Retrofit:</strong> Our sheets are incredibly thin and lightweight, making them easy to install on new structures or retrofit onto existing ones without adding significant weight to the roof.</li>
+                                    <li><strong>Effective:</strong> Every <strong>aerolam insulation in navi mumbai</strong> reflects radiant heat.</li>
+                                    <li><strong>Safe:</strong> Our <strong>aerolam insulation in navi mumbai</strong> is fiber-free and non-toxic.</li>
+                                    <li><strong>Quality:</strong> We ensure perfect installation of <strong>aerolam insulation in navi mumbai</strong>.</li>
+                                    <li><strong>Value:</strong> Our <strong>aerolam insulation in navi mumbai</strong> is cost-effective.</li>
                                 </ul>
                             </Card>
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Technical Specifications</h2>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>Specifications of aerolam insulation in navi mumbai</h2>
                         <Card variant="glass">
                             <div className={styles.specsTable}>
                                 {specifications.map((spec, index) => (
@@ -137,10 +141,16 @@ const AerolamSheet = () => {
                                 ))}
                             </div>
                         </Card>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Key Benefits</h2>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>Features of aerolam insulation in navi mumbai</h2>
                         <div className={styles.featuresGrid}>
                             {features.map((feature, index) => (
                                 <motion.div
@@ -156,30 +166,24 @@ const AerolamSheet = () => {
                                 </motion.div>
                             ))}
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Application Areas</h2>
-                        <div className={styles.applicationsGrid}>
-                            {applications.map((app, index) => (
-                                <Card key={index} variant="solid" className={styles.appCard}>
-                                    <FaMapMarkerAlt style={{ color: 'var(--accent-500)', marginBottom: '0.5rem' }} />
-                                    <h4>{app}</h4>
-                                </Card>
-                            ))}
-                        </div>
-                    </section>
-
-                    <section className={styles.section}>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.contentBlock}>
                             <Card variant="solid" className={styles.contentCard}>
-                                <h2>Installation Quality and Overlap Sealing</h2>
+                                <h2>Modern aerolam insulation in navi mumbai</h2>
                                 <p>
-                                    For a radiant barrier to work effectively, it must be installed with an air space between the barrier and the roof sheet. Our installation teams in <strong>Navi Mumbai</strong> use specialized spacers and aluminum tape to ensure that the overlaps are perfectly sealed. This "envelope" approach maximizes the thermal resistance and prevents air leakage, ensuring that your investment in insulation pays for itself in energy savings within just a few seasons.
+                                    Our <strong>aerolam insulation in navi mumbai</strong> is ideal for sheds. Once installed, the <strong>aerolam insulation in navi mumbai</strong> provides a vapor barrier.
                                 </p>
                             </Card>
                         </div>
-                    </section>
+                    </motion.section>
 
                     <motion.section
                         className={styles.section}
@@ -188,34 +192,30 @@ const AerolamSheet = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h2>Frequently Asked Questions</h2>
+                        <h2>FAQs on aerolam insulation in navi mumbai</h2>
                         <div className={styles.faqGrid}>
                             <div className={styles.faqItem}>
-                                <h4>How does Aerolam differ from standard glasswool?</h4>
-                                <p>Glasswool is a "bulk" insulation that slows down heat transfer. Aerolam is a "radiant barrier" that reflects heat. In the hot Mumbai sun, reflecting heat is often more effective than simply slowing it down.</p>
+                                <h4>Is <strong>aerolam insulation in navi mumbai</strong> effective?</h4>
+                                <p>Yes, <strong>aerolam insulation in navi mumbai</strong> reflects 97% of radiant heat.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h4>Can this insulation help with noise reduction?</h4>
-                                <p>Yes! The multi-layered bubble or foam structure acts as a sound dampener, reducing the sound of heavy rain on a metal roof, making it quieter than an uninsulated shed.</p>
+                                <h4>Does <strong>aerolam insulation in navi mumbai</strong> stop condensation?</h4>
+                                <p>Yes, <strong>aerolam insulation in navi mumbai</strong> acts as a continuous vapor barrier.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h4>Is Aerolam fire resistant?</h4>
-                                <p>Our insulation sheets are manufactured from fire-retardant (FR grade) materials. They are designed not to support combustion and are safe for use in industrial settings across the Mumbai region.</p>
-                            </div>
-                            <div className={styles.faqItem}>
-                                <h4>What is the lifespan of bubble foil insulation?</h4>
-                                <p>Because the foil is reinforced and the polyethylene is chemically stable, Aerolam insulation can last for 15-20 years without any significant degradation in its thermal properties.</p>
+                                <h4>Is <strong>aerolam insulation in navi mumbai</strong> fire safe?</h4>
+                                <p>Yes, our <strong>aerolam insulation in navi mumbai</strong> is FR grade.</p>
                             </div>
                         </div>
                     </motion.section>
 
                     <section className={styles.ctaSection}>
                         <Card variant="gradient" className={styles.ctaCard}>
-                            <h3>Cool Your Building, Save Energy</h3>
-                            <p>Request a quote for Aerolam insulation installation in Navi Mumbai.</p>
+                            <h3>Get Best Quote for aerolam insulation in navi mumbai</h3>
+                            <p>Contact the leading manufacturer for <strong>aerolam insulation in navi mumbai</strong> today.</p>
                             <div className={styles.ctaButtons}>
-                                <Button size="lg" href="/contact">Get Quote</Button>
-                                <Button size="lg" variant="outline" href="tel:+919967203090">Call Now</Button>
+                                <Button size="lg" href="/contact">Get Estimate</Button>
+                                <Button size="lg" variant="outline" href="tel:+919967203090">Call Expert</Button>
                             </div>
                         </Card>
                     </section>

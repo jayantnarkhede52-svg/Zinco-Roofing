@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import { FaCity, FaShieldAlt, FaTools, FaCheckCircle } from 'react-icons/fa';
 import SEO from '../../components/shared/SEO';
-import heroImage from '../../assets/locations/dombivli_hero.png';
+import heroImage from '../../assets/locations/dombivli_hero.webp';
 import domImg1 from '../../assets/Metal roofing images/Metal roofing images/1000014465.webp';
 import domImg2 from '../../assets/Puf panel images/Puf panel images/1000014168.webp';
 import domImg3 from '../../assets/projects/Regency.webp';
@@ -16,13 +16,13 @@ const DombivliRoofing = () => {
     return (
         <div className={styles.locationPage}>
             <SEO
-                title="Roofing Sheets Dombivli | Industrial Roofing Dombivli Specialist"
-                description="Expert Roofing Sheets Dombivli and Industrial Roofing Dombivli. High-performance metal roofing, PUF panels, and structural fabrication specialists for Dombivli MIDC."
-                keywords="Roofing Sheets Dombivli, Industrial Roofing Dombivli"
-                canonicalUrl="https://zincoroof.com/roofing-sheets-dombivli"
+                title="Roofing Contractor in Dombivli | Industrial Roofing Specialist"
+                description="Expert roofing contractor in dombivli. High-performance metal roofing, PUF panels, and structural fabrication specialists for Dombivli MIDC."
+                keywords="roofing contractor in dombivli, Roofing Sheets Dombivli, Industrial Roofing Dombivli"
+                canonicalUrl="https://zincoroof.com/roofing-contractor-in-dombivli"
             />
             <Helmet>
-                <link rel="preload" as="image" href={heroImage} />
+                <link rel="preload" as="image" href={heroImage} fetchpriority="high" />
             </Helmet>
 
             <section className={styles.hero} style={{ backgroundImage: `url(${heroImage})` }}>
@@ -34,10 +34,10 @@ const DombivliRoofing = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h1>Roofing Sheets Dombivli & Industrial Roofing</h1>
-                        <p>Providing <strong>Roofing Sheets Dombivli</strong> and <strong>Industrial Roofing Dombivli</strong> for the region's industrial landscape.</p>
+                        <h1>roofing contractor in dombivli</h1>
+                        <p>Providing specialized structural solutions as the most trusted <strong>roofing contractor in dombivli</strong> for regional industrial landscapes.</p>
                         <div className={styles.heroButtons}>
-                            <Link to="/products" className={styles.heroBtn}>Explore Roofing Sheets Dombivli</Link>
+                            <Link to="/products" className={styles.heroBtn}>Explore Our Products</Link>
                         </div>
                     </motion.div>
                 </div>
@@ -45,114 +45,144 @@ const DombivliRoofing = () => {
 
             <div className={styles.container}>
                 <main className={styles.mainContent}>
-                    <section className={styles.introSection}>
+                    <motion.section 
+                        className={styles.introSection}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <motion.h2
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
                         >
-                            High-Quality Roofing Sheets Dombivli
+                            Expert roofing contractor in dombivli building envelopes
                         </motion.h2>
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                         >
-                            Dombivli MIDC is one of Asia's largest industrial estates, requiring specialized <strong>Roofing Sheets Dombivli</strong> for complex plants. As premier <strong>Industrial Roofing Dombivli</strong> providers, Zinco Roofing Solution understands technical requirements in aggressive environments. We provide specialized <strong>Roofing Sheets Dombivli</strong> that are engineered to withstand chemical exposure. Our team delivers <strong>Industrial Roofing Dombivli</strong> safety that your facility deserves. We are the most trusted partners for <strong>Roofing Sheets Dombivli</strong>, ensuring quality <strong>Industrial Roofing Dombivli</strong> results.
+                            Dombivli MIDC is one of Asia's largest industrial estates. As a premier <strong>roofing contractor in dombivli</strong>, Zinco Roofing Solution understands technical requirements for heavy-duty construction.
                         </motion.p>
                         <p>
-                            Corporate plant managers look for reliable <strong>Roofing Sheets Dombivli</strong> partners. By hiring established <strong>Industrial Roofing Dombivli</strong> experts, you invest in high-micron <strong>Roofing Sheets Dombivli</strong> that provide superior durability. We ensure that every <strong>Industrial Roofing Dombivli</strong> project meets modern standards, delivering <strong>Roofing Sheets Dombivli</strong> that are protected against rainfall.
+                            Corporate plant managers look for a reliable <strong>roofing contractor in dombivli</strong> partner. By hiring an established <strong>roofing contractor in dombivli</strong>, you invest in high-micron materials. As a <strong>roofing contractor in dombivli</strong>, we ensure every project meets modern safety standards.
                         </p>
                         <p>
-                            When searching for <strong>Roofing Sheets Dombivli</strong>, quality is the cornerstone. We are dedicated to providing superior <strong>Industrial Roofing Dombivli</strong> results that never compromise on safety. Our team provides <strong>Roofing Sheets Dombivli</strong> audits and responsive <strong>Industrial Roofing Dombivli</strong> consulting, helping you build a secure foundation for growth.
+                            When searching for a quality <strong>roofing contractor in dombivli</strong>, durability is the cornerstone. We are dedicated to providing superior results as your <strong>roofing contractor in dombivli</strong>. Reach out to the top <strong>roofing contractor in dombivli</strong> today.
                         </p>
-                    </section>
+                    </motion.section>
 
                     <LocationServiceCards location="Dombivli" />
 
                     {/* Detailed Content Sections */}
-                    <section className={styles.twoColumn}>
+                    <motion.section 
+                        className={styles.twoColumn}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.textContent}>
-                            <h2>Superior Roofing Sheets Dombivli: Engineered for Resilience</h2>
+                            <h2>Resilient services from a roofing contractor in dombivli</h2>
                             <p>
-                                <strong>Roofing Sheets Dombivli</strong> in chemical zones requires specialized knowledge. As dedicated <strong>Industrial Roofing Dombivli</strong> providers, we utilize high-micron <strong>Roofing Sheets Dombivli</strong> Galvalume sheets to ensure a durable facility. Our <strong>Industrial Roofing Dombivli</strong> standards require high-speed installation of <strong>Roofing Sheets Dombivli</strong> without sacrificing precision.
+                                Working in chemical zones requires <strong>roofing contractor in dombivli</strong> expertise. As a dedicated <strong>roofing contractor in dombivli</strong>, we utilize Galvalume sheets. Every <strong>roofing contractor in dombivli</strong> knows the importance of precision.
                             </p>
                             <p>
-                                Our reputation for <strong>Roofing Sheets Dombivli</strong> is built on attention to detail. When you collaborate for <strong>Industrial Roofing Dombivli</strong>, you benefit from customized <strong>Roofing Sheets Dombivli</strong> designs. Each <strong>Industrial Roofing Dombivli</strong> project is engineered for maximum safety, ensuring lasting <strong>Roofing Sheets Dombivli</strong> peace of mind.
+                                Our reputation as a <strong>roofing contractor in dombivli</strong> is built on attention to detail. When you collaborate with a <strong>roofing contractor in dombivli</strong>, you benefit from customized designs.
                             </p>
                             <p>
-                                We are the leaders in providing the fastest <strong>Roofing Sheets Dombivli</strong> installation rate. Choose our expert <strong>Industrial Roofing Dombivli</strong> services for your next unit and experience the best <strong>Roofing Sheets Dombivli</strong> protection.
+                                We are the leaders in providing installations as a <strong>roofing contractor in dombivli</strong>. Choose our expert <strong>roofing contractor in dombivli</strong> services for your next unit.
                             </p>
                         </div>
                         <div className={styles.imageBlock}>
-                            <img src={domImg1} alt="Roofing Sheets Dombivli Solutions" loading="lazy" />
+                            <img src={domImg1} alt="roofing contractor in dombivli construction" loading="lazy" />
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.twoColumn}>
+                    <motion.section 
+                        className={styles.twoColumn}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.imageBlock}>
-                            <img src={domImg2} alt="Industrial Roofing Dombivli Insulation" loading="lazy" />
+                            <img src={domImg2} alt="roofing contractor in dombivli insulation" loading="lazy" />
                         </div>
                         <div className={styles.textContent}>
-                            <h2>Energy-Efficient Roofing Sheets Dombivli Insulation</h2>
+                            <h2>Energy efficiency with roofing contractor in dombivli</h2>
                             <p>
-                                Temperature regulation is essential for <strong>Industrial Roofing Dombivli</strong>. We deliver energy-efficient <strong>Roofing Sheets Dombivli</strong> and insulated panels that reduce costs. When consulting for <strong>Industrial Roofing Dombivli</strong>, we focus on <strong>Roofing Sheets Dombivli</strong> thermal performance to ensure your facility remains cooled.
+                                Temperature regulation is essential. As a <strong>roofing contractor in dombivli</strong>, we deliver energy-efficient panels. When consulting with a <strong>roofing contractor in dombivli</strong>, we focus on thermal performance.
                             </p>
                             <p>
-                                Our <strong>Industrial Roofing Dombivli</strong> insulation solutions meet the highest safety standards. As a versatile <strong>Roofing Sheets Dombivli</strong> partner, we handle custom specifications to provide <strong>Industrial Roofing Dombivli</strong> construction that is both safe and durable.
+                                As a versatile <strong>roofing contractor in dombivli</strong> partner, we handle custom specifications for safe construction.
                             </p>
                             <p>
-                                Trust our professional <strong>Roofing Sheets Dombivli</strong> site audits. We offer <strong>Industrial Roofing Dombivli</strong> modular solutions that prioritize <strong>Roofing Sheets Dombivli</strong> durability and energy savings.
+                                Trust our professional <strong>roofing contractor in dombivli</strong> site audits. We offer modular solutions as a reliable <strong>roofing contractor in dombivli</strong>.
                             </p>
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.twoColumn}>
+                    <motion.section 
+                        className={styles.twoColumn}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.textContent}>
-                            <h2>Heavy-Duty Industrial Roofing Dombivli Fabrication</h2>
+                            <h2>Fabrication by roofing contractor in dombivli</h2>
                             <p>
-                                From design to completion, we excel at <strong>Industrial Roofing Dombivli</strong> and <strong>Roofing Sheets Dombivli</strong> shed fabrication. Choosing expert <strong>Industrial Roofing Dombivli</strong> ensures project speed and integrity, meeting all local safety codes for <strong>Roofing Sheets Dombivli</strong> assembly units.
+                                From design to completion, we excel as a <strong>roofing contractor in dombivli</strong> specialist. Choosing an expert <strong>roofing contractor in dombivli</strong> ensures project speed and integrity.
                             </p>
                             <p>
-                                Our <strong>Industrial Roofing Dombivli</strong> techniques utilize the latest technology for <strong>Roofing Sheets Dombivli</strong> units that are scalable. Whether you need <strong>Industrial Roofing Dombivli</strong> for a workshop or plant, we prioritization <strong>Roofing Sheets Dombivli</strong> longevity.
+                                Whether you need a workshop or plant, as a <strong>roofing contractor in dombivli</strong> partner, we prioritize longevity.
                             </p>
                             <p>
-                                Contact us for premium <strong>Roofing Sheets Dombivli</strong> fabrication services. We are your partner for <strong>Industrial Roofing Dombivli</strong> excellence, offering safety-first <strong>Roofing Sheets Dombivli</strong> construction.
+                                Contact us for premium <strong>roofing contractor in dombivli</strong> services. We are your partner for excellence in <strong>roofing contractor in dombivli</strong>.
                             </p>
                         </div>
                         <div className={styles.imageBlock}>
-                            <img src={domImg3} alt="Industrial Roofing Dombivli Sheds" loading="lazy" />
+                            <img src={domImg3} alt="roofing contractor in dombivli fabrication" loading="lazy" />
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.twoColumn}>
+                    <motion.section 
+                        className={styles.twoColumn}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.imageBlock}>
-                            <img src={domImg4} alt="Roofing Sheets Dombivli Coatings" loading="lazy" />
+                            <img src={domImg4} alt="roofing contractor in dombivli coating" loading="lazy" />
                         </div>
                         <div className={styles.textContent}>
-                            <h2>Expert Industrial Roofing Dombivli Coatings</h2>
+                            <h2>Protective coatings from roofing contractor in dombivli</h2>
                             <p>
-                                Zinco provides specialized <strong>Roofing Sheets Dombivli</strong> coating services. Protecting your <strong>Industrial Roofing Dombivli</strong> assets from corrosion is vital for maintaining <strong>Roofing Sheets Dombivli</strong> value. Our <strong>Industrial Roofing Dombivli</strong> reputation comes from thorough surface preparation and the use of premium <strong>Roofing Sheets Dombivli</strong> materials.
+                                Zinco provides specialized coating services as a <strong>roofing contractor in dombivli</strong>. Protecting assets from corrosion is vital for any <strong>roofing contractor in dombivli</strong>.
                             </p>
                             <p>
-                                We offer protective finishes for all types of <strong>Industrial Roofing Dombivli</strong>, preventing <strong>Roofing Sheets Dombivli</strong> rust. Rely on us for <strong>Industrial Roofing Dombivli</strong> maintenance solutions that are long-lasting, helping you avoid expensive <strong>Roofing Sheets Dombivli</strong> repairs.
+                                We offer finishes as a <strong>roofing contractor in dombivli</strong>, preventing rust. Rely on us for <strong>roofing contractor in dombivli</strong> maintenance solutions.
                             </p>
                             <p>
-                                Our highly trained <strong>Industrial Roofing Dombivli</strong> team uses high-performance materials to ensure your <strong>Roofing Sheets Dombivli</strong> facility remains in top condition. Get a <strong>Roofing Sheets Dombivli</strong> quote today and protect your <strong>Industrial Roofing Dombivli</strong> investment.
+                                Our team ensures your facility remains in top condition. Get a quote today from a leading <strong>roofing contractor in dombivli</strong>.
                             </p>
                         </div>
-                    </section>
+                    </motion.section>
 
                     {/* Technical Specification Section */}
                     <section className={`${styles.technicalSection} ${styles.darkMode}`}>
-                        <h2>Technical Standards for Industrial Roofing Dombivli</h2>
+                        <h2>Technical Standards for roofing contractor in dombivli</h2>
                         <div className={styles.tableWrapper}>
                             <table className={styles.techTable}>
                                 <thead>
                                     <tr>
                                         <th>Metric Category</th>
-                                        <th><strong>Roofing Sheets Dombivli</strong></th>
-                                        <th><strong>Industrial Roofing Dombivli</strong></th>
+                                        <th>Standard Panels</th>
+                                        <th>Industrial Grade</th>
                                         <th>MIDC Benefit</th>
                                     </tr>
                                 </thead>
@@ -161,7 +191,7 @@ const DombivliRoofing = () => {
                                         <td>Application</td>
                                         <td>Chemical Resistance</td>
                                         <td>Pharma / Engineering</td>
-                                        <td>Maximum SEO Authority</td>
+                                        <td>Robust Design</td>
                                     </tr>
                                     <tr>
                                         <td>Corrosion Protection</td>
@@ -189,22 +219,22 @@ const DombivliRoofing = () => {
                     {/* Maintenance Section */}
                     <section className={styles.maintenanceSection}>
                         <div className={styles.infoCard}>
-                            <h3>Expert Tips for Industrial Roofing Dombivli</h3>
+                            <h3>Advice from a roofing contractor in dombivli</h3>
                             <p>
-                                As proactive <strong>Industrial Roofing Dombivli</strong> providers, we recommend regular <strong>Roofing Sheets Dombivli</strong> audits. The industrial humidity in Dombivli requires vigilance for <strong>Industrial Roofing Dombivli</strong> assets.
+                                As a proactive <strong>roofing contractor in dombivli</strong>, we recommend regular site audits for your industrial assets.
                             </p>
                             <div className={styles.maintenanceGrid}>
                                 <div className={styles.mItem}>
                                     <FaCheckCircle className={styles.icon} />
-                                    <span><strong>Drainage Audits</strong>: Essential for <strong>Roofing Sheets Dombivli</strong> rainfall.</span>
+                                    <span><strong>Drainage Audits</strong>: Essential for high rainfall.</span>
                                 </div>
                                 <div className={styles.mItem}>
                                     <FaCheckCircle className={styles.icon} />
-                                    <span><strong>Sealant Checks</strong>: Handled by professional <strong>Industrial Roofing Dombivli</strong> teams.</span>
+                                    <span><strong>Sealant Checks</strong>: Handled by professional teams.</span>
                                 </div>
                                 <div className={styles.mItem}>
                                     <FaCheckCircle className={styles.icon} />
-                                    <span><strong>Rust Inspections</strong>: Vital for <strong>Roofing Sheets Dombivli</strong> in MIDC.</span>
+                                    <span><strong>Rust Inspections</strong>: Vital for structures in MIDC.</span>
                                 </div>
                             </div>
                         </div>
@@ -212,23 +242,23 @@ const DombivliRoofing = () => {
 
                     {/* FAQ Section */}
                     <section className={styles.faqSection}>
-                        <h2>FAQs about Roofing Sheets Dombivli & Industrial Roofing Dombivli</h2>
+                        <h2>FAQs for roofing contractor in dombivli</h2>
                         <div className={styles.faqGrid}>
                             <div className={styles.faqItem}>
-                                <h3>Why choose Zinco for Roofing Sheets Dombivli?</h3>
-                                <p>Our specialization in <strong>Roofing Sheets Dombivli</strong> and chemical-resistant <strong>Industrial Roofing Dombivli</strong> makes us the leading regional partner.</p>
+                                <h3>Why choose Zinco as your roofing contractor in dombivli?</h3>
+                                <p>Our specialization in chemical-resistant building solutions makes us the leading regional partner.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h3>Do you handle Industrial Roofing Dombivli for PEB?</h3>
-                                <p>Yes, we are the trusted <strong>Industrial Roofing Dombivli</strong> experts for PEB <strong>Roofing Sheets Dombivli</strong> design and fabrication.</p>
+                                <h3>Does a roofing contractor in dombivli handle PEB?</h3>
+                                <p>Yes, we are the trusted experts for Pre-Engineered Building design and fabrication.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h3>Can you assist with Roofing Sheets Dombivli restoration?</h3>
-                                <p>Absolutely. As expert <strong>Industrial Roofing Dombivli</strong> specialists, we handle <strong>Roofing Sheets Dombivli</strong> structural restoration.</p>
+                                <h3>Can a roofing contractor in dombivli assist with restoration?</h3>
+                                <p>Absolutely. As expert specialists, we handle major structural restoration for old plants.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h3>Why hire authorized Industrial Roofing Dombivli providers?</h3>
-                                <p>Hiring authorized <strong>Industrial Roofing Dombivli</strong> providers like Zinco ensures <strong>Roofing Sheets Dombivli</strong> safety and warranty.</p>
+                                <h3>Why hire an authorized roofing contractor in dombivli?</h3>
+                                <p>Hiring authorized contractors like Zinco ensures quality safety and warranty.</p>
                             </div>
                         </div>
                     </section>
@@ -238,11 +268,11 @@ const DombivliRoofing = () => {
                     {/* Final CTA */}
                     <section className={styles.ctaSection}>
                         <div className={styles.ctaContent}>
-                            <h2>Partner with the Top Industrial Roofing Dombivli Experts</h2>
-                            <p>Protect your industrial investment with expert <strong>Roofing Sheets Dombivli</strong>. Our <strong>Industrial Roofing Dombivli</strong> team is ready for your site audit.</p>
+                            <h2>Partner with the Best roofing contractor in dombivli</h2>
+                            <p>Protect your investment with expert <strong>roofing contractor in dombivli</strong> engineering. Our team is ready for your site audit.</p>
                             <div className={styles.ctaButtons}>
                                 <Link to="/contact#contact-form" className={styles.primaryBtn}>Request a Technical Audit</Link>
-                                <button className={styles.secondaryBtn}>View Dombivli Projects</button>
+                                <button className={styles.secondaryBtn}>View Our Projects</button>
                             </div>
                         </div>
                     </section>

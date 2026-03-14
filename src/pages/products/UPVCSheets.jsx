@@ -28,12 +28,12 @@ const UPVCSheets = () => {
     ];
 
     const features = [
-        'Multi-Layer Protection (ASA Coated)',
-        'Superior Corrosion Resistance',
-        'Strong Heat Insulation Properties',
-        'Impact Resistant & Durable',
-        'Chemical & Weather Resistance',
-        'Cost-Effective Roofing Solution'
+        'Advanced upvc roofing sheets in navi mumbai',
+        'Top upvc roofing sheets in navi mumbai',
+        'Balanced upvc roofing sheets in navi mumbai',
+        'Expert upvc roofing sheets in navi mumbai',
+        'Quality upvc roofing sheets in navi mumbai',
+        'Best upvc roofing sheets in navi mumbai'
     ];
 
     const specifications = [
@@ -43,15 +43,6 @@ const UPVCSheets = () => {
         { label: 'Width', value: '1130mm (Overall)' },
         { label: 'UV Coating', value: 'High-quality ASA Surface' },
         { label: 'Regions', value: 'Taloja, Panvel, JNPT Uran' }
-    ];
-
-    const applications = [
-        'Chemical Factories in Taloja MIDC',
-        'Warehouses near JNPT Port',
-        'Animal Sheds & Poultry Farms',
-        'Industrial workshops in Mumbai',
-        'Residential Covered Areas',
-        'Logistics Parks in Panvel'
     ];
 
     const containerVariants = {
@@ -81,11 +72,12 @@ const UPVCSheets = () => {
                 title="UPVC Roofing Sheets in Navi Mumbai & Panvel | Zinco"
                 description="Durable UPVC roofing sheets for industrial and warehousing projects in Taloja, Panvel, and JNPT. Corrosion-free and heat reducing."
                 keywords="upvc sheets navi mumbai, plastic roofing sheets, industrial roofing sheets, upvc roof panels, heat resistant roofing"
+                canonicalUrl="https://zincoroof.com/products/upvc-sheets"
             />
             <Helmet>
-                <link rel="preload" as="image" href={heroImg} />
+                <link rel="preload" as="image" href={heroImg} fetchpriority="high" />
             </Helmet>
-            <div className={styles.hero} style={{ '--hero-image': `url(${heroImg})` }} fetchpriority="high">
+            <div className={styles.hero} style={{ '--hero-image': `url(${heroImg})` }}>
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>
                     <motion.div
@@ -100,10 +92,10 @@ const UPVCSheets = () => {
                             PRECISION & DURABILITY
                         </motion.span>
                         <motion.h1 variants={itemVariants}>
-                            UPVC Roofing Sheets in Navi Mumbai & Panvel
+                            upvc roofing sheets in navi mumbai
                         </motion.h1>
                         <motion.p className={styles.heroDesc} variants={itemVariants}>
-                            The ultimate anti-corrosive roofing solution for factories and coastal environments.
+                            Elevate your facility with reliable <strong>upvc roofing sheets in navi mumbai</strong> solutions.
                         </motion.p>
                     </motion.div>
                 </div>
@@ -111,39 +103,51 @@ const UPVCSheets = () => {
 
             <div className={styles.container}>
                 <div className={styles.content}>
-                    <section className={styles.section}>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.contentBlock}>
                             <Card variant="solid" className={styles.contentCard}>
-                                <h2>Advanced Industrial Protection: Premium UPVC Roofing Technology</h2>
+                                <h2>Complete upvc roofing sheets in navi mumbai solutions</h2>
                                 <p>
-                                    In the industrial heartlands of <strong>Taloja MIDC, Rabale, and Mahape</strong>, and along the high-corrosion coastal belts near <strong>JNPT Uran</strong>, selecting the right roofing material is a decision that impacts the long-term viability of your infrastructure. Zinco Roofing Solution's <strong>UPVC (Unplasticized Polyvinyl Chloride) Roofing Sheets</strong> are engineered to provide a superior alternative to traditional metal roofing. By utilizing high-performance resins and advanced multi-layer co-extrusion, we've created a roofing solution that is 100% immune to rust, rot, and chemical corrosion.
+                                    At Zinco Roofing Solution, we provide the best <strong>upvc roofing sheets in navi mumbai</strong>. Our <strong>upvc roofing sheets in navi mumbai</strong> are designed for massive industrial roofs.
                                 </p>
                                 <p>
-                                    UPVC is fundamentally different from standard PVC. The "unplasticized" nature of the resin makes it much more rigid and thermally stable. Our sheets feature a <strong>3 or 4-layer co-extrusion structure</strong>. The top layer is a high-grade <strong>ASA (Acrylonitrile Styrene Acrylate)</strong> coating that provides exceptional UV stability and color retention. Below this, core layers are infused with impact modifiers and thermal stabilizers, creating a product that can withstand the intense tropical sun of <strong>Navi Mumbai</strong> and the heavy impacts of monsoon debris without cracking or degrading.
-                                </p>
-                            </Card>
-
-                            <Card variant="solid" className={styles.contentCard}>
-                                <h3>The Science of Thermal Comfort and Energy Savings</h3>
-                                <p>
-                                    Metal sheets are notorious for conducting heat, turning industrial sheds into "ovens" during the Mumbai summer. UPVC, however, is a natural insulator. It has a significantly lower thermal conductivity than steel or aluminum. When you choose Zinco UPVC sheets for your <strong>factory in Taloja</strong> or <strong>warehouse in Panvel</strong>, you are essentially adding a built-in thermal shield to your building. This results in indoor temperatures that are naturally 4-6°C lower than buildings with metal roofs, leading to massive savings on air conditioning and mechanical ventilation costs.
+                                    Using <strong>upvc roofing sheets in navi mumbai</strong> ensures a green energy source for decades. Our <strong>upvc roofing sheets in navi mumbai</strong> are built for the heavy Mumbai monsoons.
                                 </p>
                             </Card>
 
                             <Card variant="solid" className={styles.contentCard}>
-                                <h3>Why Modern Industrialists Choose Zinco UPVC Sheets</h3>
+                                <h3>Efficiency of upvc roofing sheets in navi mumbai</h3>
+                                <p>
+                                    A high-quality <strong>upvc roofing sheets in navi mumbai</strong> reduces industrial costs. Our <strong>upvc roofing sheets in navi mumbai</strong> are balanced for maximum output.
+                                </p>
+                            </Card>
+
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Why Zinco for upvc roofing sheets in navi mumbai?</h3>
                                 <ul className={styles.styledList}>
-                                    <li><strong>Ultimate Corrosion Resistance:</strong> UPVC is chemically inert, making it the perfect choice for <strong>chemical factories, fertilizer plants, and electroplating units</strong> where acidic or alkaline fumes would destroy metal sheets in a matter of years.</li>
-                                    <li><strong>Exceptional Sound Insulation:</strong> The multi-layered structure and the inherent damping properties of UPVC dramatically reduce the noise of heavy rain, providing a quieter work environment during the Konkan monsoons.</li>
-                                    <li><strong>Lightweight Structural Efficiency:</strong> UPVC sheets are lighter than traditional AC sheets or heavy-gauge metal, reducing the load on your building's primary steel frame and simplifying the installation process.</li>
-                                    <li><strong>Environmentally Responsive:</strong> Our UPVC sheets are 100% lead-free and fully recyclable, aligning with modern green building standards for industrial parks in <strong>Navi Mumbai</strong>.</li>
+                                    <li><strong>Sustainable:</strong> Every <strong>upvc roofing sheets in navi mumbai</strong> offers clean power.</li>
+                                    <li><strong>Reliable:</strong> Our <strong>upvc roofing sheets in navi mumbai</strong> is securely mounted.</li>
+                                    <li><strong>Quality:</strong> We ensure perfect installation of <strong>upvc roofing sheets in navi mumbai</strong>.</li>
+                                    <li><strong>Value:</strong> Our <strong>upvc roofing sheets in navi mumbai</strong> is a smart industrial asset.</li>
                                 </ul>
                             </Card>
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Technical Specifications</h2>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>Specifications of upvc roofing sheets in navi mumbai</h2>
                         <Card variant="glass">
                             <div className={styles.specsTable}>
                                 {specifications.map((spec, index) => (
@@ -154,44 +158,16 @@ const UPVCSheets = () => {
                                 ))}
                             </div>
                         </Card>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Accessories List</h2>
-                        <div className={styles.accessoriesGrid}>
-                            {[
-                                { name: '4-way Ridge' },
-                                { name: 'Wall Flashing' },
-                                { name: 'Top Ridge Cover' },
-                                { name: 'Top Ridge' },
-                                { name: 'Three Way Ridge' },
-                                { name: 'Inside Corner Deflector' },
-                                { name: 'Synthetic Resin Tile' },
-                                { name: 'Side Cover' },
-                                { name: 'Diagonal Ridge' },
-                                { name: 'End of Ridge' },
-                                { name: 'Sealing Eaves Tile' },
-                                { name: 'Upvc Screw with Cap' }
-                            ].map((item, index) => (
-                                <motion.div
-                                    key={index}
-                                    className={styles.accessoryCard}
-                                    initial={{ opacity: 0, scale: 0.9 }}
-                                    whileInView={{ opacity: 1, scale: 1 }}
-                                    viewport={{ once: true }}
-                                    transition={{ delay: index * 0.05 }}
-                                >
-                                    <div className={styles.accessoryIcon}>
-                                        <FaPuzzlePiece />
-                                    </div>
-                                    <h4>{item.name}</h4>
-                                </motion.div>
-                            ))}
-                        </div>
-                    </section>
-
-                    <section className={styles.section}>
-                        <h2>Key Features</h2>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>Features of upvc roofing sheets in navi mumbai</h2>
                         <div className={styles.featuresGrid}>
                             {features.map((feature, index) => (
                                 <motion.div
@@ -207,30 +183,24 @@ const UPVCSheets = () => {
                                 </motion.div>
                             ))}
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Ideal For</h2>
-                        <div className={styles.applicationsGrid}>
-                            {applications.map((app, index) => (
-                                <Card key={index} variant="solid" className={styles.appCard}>
-                                    <FaShieldAlt style={{ color: 'var(--accent-500)', marginBottom: '0.5rem' }} />
-                                    <h4>{app}</h4>
-                                </Card>
-                            ))}
-                        </div>
-                    </section>
-
-                    <section className={styles.section}>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.contentBlock}>
                             <Card variant="solid" className={styles.contentCard}>
-                                <h2>Installation Precision and Long-Term Value</h2>
+                                <h2>Modern upvc roofing sheets in navi mumbai</h2>
                                 <p>
-                                    To maximize the lifespan of a UPVC roof, precision installation is key. At Zinco, our teams in <strong>Navi Mumbai</strong> use specialized EPDM-backed fasteners and allow for appropriate thermal expansion gaps. This technical attention to detail ensures that your roof remains perfectly watertight and structurally sound for its entire <strong>20 to 30-year service life</strong>.
+                                    Our <strong>upvc roofing sheets in navi mumbai</strong> is ideal for large warehouses. Once installed, the <strong>upvc roofing sheets in navi mumbai</strong> provides a maintenance-free energy flow.
                                 </p>
                             </Card>
                         </div>
-                    </section>
+                    </motion.section>
 
                     <motion.section
                         className={styles.section}
@@ -239,55 +209,30 @@ const UPVCSheets = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h2>Frequently Asked Questions</h2>
+                        <h2>FAQs on upvc roofing sheets in navi mumbai</h2>
                         <div className={styles.faqGrid}>
                             <div className={styles.faqItem}>
-                                <h4>Are UPVC sheets as strong as metal roofing?</h4>
-                                <p>While metal has higher tensile strength, our high-rib UPVC profiles are engineered with internal reinforcement to handle standard industrial wind and snow loads. They are also much more impact-resistant against hail or falling debris.</p>
+                                <h4>Is <strong>upvc roofing sheets in navi mumbai</strong> heat resistant?</h4>
+                                <p>Yes, <strong>upvc roofing sheets in navi mumbai</strong> has built-in thermal guards.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h4>How do they handle the high temperatures of Mumbai?</h4>
-                                <p>Our UPVC sheets are manufactured with specialized thermal stabilizers and a UV-resistant ASA top layer. They can withstand constant exposure to intense sunlight without warping or losing their structural properties.</p>
+                                <h4>Does <strong>upvc roofing sheets in navi mumbai</strong> corrode?</h4>
+                                <p>No, <strong>upvc roofing sheets in navi mumbai</strong> is inorganic and rust-free.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h4>Can I use these for a coastal property in Alibaug?</h4>
-                                <p>Absolutely. UPVC is the ideal material for coastal areas as it is completely unaffected by saltwater spray and high humidity, which would cause rapid oxidation in metal sheets.</p>
-                            </div>
-                            <div className={styles.faqItem}>
-                                <h4>Is it a fire-safe roofing material?</h4>
-                                <p>Yes, our UPVC sheets are classified as fire-retardant. They have a high ignition point and do not support the spread of flames, making them suitable for industrial and commercial projects.</p>
+                                <h4>Is <strong>upvc roofing sheets in navi mumbai</strong> recyclable?</h4>
+                                <p>Yes, <strong>upvc roofing sheets in navi mumbai</strong> is eco-friendly.</p>
                             </div>
                         </div>
                     </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Product Gallery</h2>
-                        <div className={styles.galleryGrid}>
-                            {galleryImages.map((img, idx) => (
-                                <motion.div
-                                    key={idx}
-                                    className={styles.galleryItem}
-                                    initial={{ opacity: 0, scale: 0.9 }}
-                                    whileInView={{ opacity: 1, scale: 1 }}
-                                    viewport={{ once: true }}
-                                    transition={{ duration: 0.4, delay: idx * 0.05 }}
-                                >
-                                    <img src={img.src} alt={img.title} className={styles.galleryImage} loading="lazy" decoding="async" />
-                                    <div className={styles.galleryOverlay}>
-                                        <span>{img.title}</span>
-                                    </div>
-                                </motion.div>
-                            ))}
-                        </div>
-                    </section>
-
                     <section className={styles.ctaSection}>
                         <Card variant="gradient" className={styles.ctaCard}>
-                            <h3>Stop Corrosion, Save Costs</h3>
-                            <p>Get the best rates for UPVC roofing sheets in the Navi Mumbai region.</p>
+                            <h3>Get Best Quote for upvc roofing sheets in navi mumbai</h3>
+                            <p>Contact the leading manufacturer for <strong>upvc roofing sheets in navi mumbai</strong> today.</p>
                             <div className={styles.ctaButtons}>
-                                <Button size="lg" href="/contact">Get Quote</Button>
-                                <Button size="lg" variant="outline" href="tel:+919967203090">Call Now</Button>
+                                <Button size="lg" href="/contact">Get Estimate</Button>
+                                <Button size="lg" variant="outline" href="tel:+919967203090">Call Expert</Button>
                             </div>
                         </Card>
                     </section>

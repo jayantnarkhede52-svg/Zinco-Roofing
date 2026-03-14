@@ -55,8 +55,9 @@ export default defineConfig({
       ],
       renderer: '@prerenderer/renderer-jsdom',
       rendererOptions: {
-        maxConcurrentRoutes: 4,
-        renderAfterTime: 1000
+        maxConcurrentRoutes: 1,
+        renderAfterDocumentEvent: 'render-event',
+        renderAfterTime: 5000 
       }
     })
   ],

@@ -11,12 +11,12 @@ import styles from './ProductCategory.module.css';
 const Shingles = () => {
     const navigate = useNavigate();
     const features = [
-        'Premium Aesthetic Look for Villas',
-        'Excellent Weather Resistance',
-        'Impact & Fire Resistant',
-        'Long Service Life (20+ Years)',
-        'Low Maintenance Roofing Solution',
-        'Versatile Design & Color Options'
+        'Advanced roofing shingles in mumbai',
+        'Top roofing shingles in mumbai',
+        'Balanced roofing shingles in mumbai',
+        'Expert roofing shingles in mumbai',
+        'Quality roofing shingles in mumbai',
+        'Best roofing shingles in mumbai'
     ];
 
     const specifications = [
@@ -26,15 +26,6 @@ const Shingles = () => {
         { label: 'Warranty', value: '20 - 50 Years' },
         { label: 'Installation', value: 'Self-Adhesive with Nails' },
         { label: 'Regions', value: 'Mumbai, Lonavala, Karjat' }
-    ];
-
-    const applications = [
-        'Villas in Lonavala & Khandala',
-        'Bungalows in Karjat & Alibaug',
-        'Resorts in Navi Mumbai',
-        'Sloped Roof Houses in Mumbai',
-        'Farmhouses in Panvel',
-        'Institutional Buildings'
     ];
 
     const containerVariants = {
@@ -64,11 +55,12 @@ const Shingles = () => {
                 title="Premium Roofing Shingles in Mumbai | Zinco"
                 description="Luxury asphalt roofing shingles for villas and resorts in Lonavala, Alibaug, and Karjat. Durable, weather-resistant, and aesthetically superior."
                 keywords="roofing shingles mumbai, asphalt shingles, villa roofing, resort roofing lonavala, shingle roof contractors"
+                canonicalUrl="https://zincoroof.com/products/shingles"
             />
             <Helmet>
-                <link rel="preload" as="image" href={heroImg} />
+                <link rel="preload" as="image" href={heroImg} fetchpriority="high" />
             </Helmet>
-            <div className={styles.hero} style={{ '--hero-image': `url(${heroImg})` }} fetchpriority="high">
+            <div className={styles.hero} style={{ '--hero-image': `url(${heroImg})` }}>
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>
                     <motion.div
@@ -83,10 +75,10 @@ const Shingles = () => {
                             PRECISION & DURABILITY
                         </motion.span>
                         <motion.h1 variants={itemVariants}>
-                            Premium Roofing Shingles in Mumbai
+                            roofing shingles in mumbai
                         </motion.h1>
                         <motion.p className={styles.heroDesc} variants={itemVariants}>
-                            Elevate your property aesthetics with durable and climate-ready asphalt shingles.
+                            Elevate your property aesthetics with durable and climate-ready <strong>roofing shingles in mumbai</strong> solutions.
                         </motion.p>
                     </motion.div>
                 </div>
@@ -94,61 +86,52 @@ const Shingles = () => {
 
             <div className={styles.container}>
                 <div className={styles.content}>
-                    <section className={styles.section}>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.contentBlock}>
                             <Card variant="solid" className={styles.contentCard}>
-                                <h2>Timeless Elegance & Industrial Protection</h2>
+                                <h2>Complete roofing shingles in mumbai solutions</h2>
                                 <p>
-                                    The roof is the crowning glory of any villa or resort. Zinco Roofing Solution's Premium Asphalt Shingles offer a unique combination of beautiful looks and strong weather protection.
+                                    At Zinco Roofing Solution, we provide the best <strong>roofing shingles in mumbai</strong>. Our <strong>roofing shingles in mumbai</strong> are perfect for villas and luxury bungalows.
                                 </p>
                                 <p>
-                                    Unlike traditional clay tiles that can be heavy and prone to break, shingles are lightweight. They offer a high-performance solution that mimics the texture of natural materials while providing modern durability.
-                                </p>
-                                <p>
-                                    Our shingles are not just a single layer; they are a multi-layered system designed for extreme weather. At the core is a <strong>high-strength fiberglass mat</strong> that gives stability and fire resistance. 
-                                </p>
-                                <p>
-                                    This mat is coated on both sides with <strong>weather-grade asphalt</strong>, which acts as the main waterproofing barrier. The final touch is a layer of <strong>ceramic-coated mineral granules</strong> that shield the roof from UV rays and provide vibrant, fade-resistant colors.
+                                    Using <strong>roofing shingles in mumbai</strong> ensures an elegant roof for decades. Our <strong>roofing shingles in mumbai</strong> are built for the intense Mumbai weather.
                                 </p>
                             </Card>
 
                             <Card variant="solid" className={styles.contentCard}>
-                                <h3>Self-Sealing and Wind Resistance</h3>
+                                <h3>Efficiency of roofing shingles in mumbai</h3>
                                 <p>
-                                    A key feature of our shingles is the <strong>thermal-active self-sealing strip</strong>. During installation in sunny climates, the heat of the sun activates a special adhesive on the underside of each shingle.
-                                </p>
-                                <p>
-                                    This bonds it permanently to the layer below, creating a continuous waterproof seal that resists wind uplift. Our architectural shingles are tested to withstand wind speeds of up to <strong>130-150 kmph</strong>, making them ideal for gusty monsoon seasons.
+                                    A high-quality <strong>roofing shingles in mumbai</strong> improves property value. Our <strong>roofing shingles in mumbai</strong> are balanced for weather resistance.
                                 </p>
                             </Card>
 
                             <Card variant="solid" className={styles.contentCard}>
-                                <h3>Why Architects Prefer Shingles</h3>
+                                <h3>Why Zinco for roofing shingles in mumbai?</h3>
                                 <ul className={styles.styledList}>
-                                    <li>
-                                        <strong>Unmatched Aesthetic Depth</strong>
-                                        The multi-layered "laminate" design creates a 3D effect with deep shadow lines, adding character to luxury bungalows.
-                                    </li>
-                                    <li>
-                                        <strong>Superior Impact Resistance</strong>
-                                        Shingles are naturally resilient. Unlike rigid tiles, they can absorb the impact of falling branches or hailstones without cracking.
-                                    </li>
-                                    <li>
-                                        <strong>Excellent Sound Insulation</strong>
-                                        The asphalt and mineral composition acts as a natural sound dampener, keeping interiors quiet during heavy rain.
-                                    </li>
-                                    <li>
-                                        <strong>Low Maintenance & Longevity</strong>
-                                        With warranties ranging from 20 to 50 years, shingles are resistant to algae growth and do not require periodic painting.
-                                    </li>
+                                    <li><strong>Aesthetics:</strong> Every <strong>roofing shingles in mumbai</strong> offers a premium look.</li>
+                                    <li><strong>Resilience:</strong> Our <strong>roofing shingles in mumbai</strong> is impact and fire resistant.</li>
+                                    <li><strong>Quality:</strong> We ensure perfect installation of <strong>roofing shingles in mumbai</strong>.</li>
+                                    <li><strong>Value:</strong> Our <strong>roofing shingles in mumbai</strong> is a long-term roofing solution.</li>
                                 </ul>
                             </Card>
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Technical Specifications</h2>
-                        <Card variant="solid">
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>Specifications of roofing shingles in mumbai</h2>
+                        <Card variant="glass">
                             <div className={styles.specsTable}>
                                 {specifications.map((spec, index) => (
                                     <div key={index} className={styles.specRow}>
@@ -158,10 +141,16 @@ const Shingles = () => {
                                 ))}
                             </div>
                         </Card>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Why Choose Zinco Shingles?</h2>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>Features of roofing shingles in mumbai</h2>
                         <div className={styles.featuresGrid}>
                             {features.map((feature, index) => (
                                 <motion.div
@@ -177,31 +166,24 @@ const Shingles = () => {
                                 </motion.div>
                             ))}
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Key Service Areas</h2>
-                        <div className={styles.applicationsGrid}>
-                            {applications.map((app, index) => (
-                                <Card key={index} variant="solid" className={styles.appCard}>
-                                    <FaMapMarkerAlt style={{ color: 'var(--accent-500)', marginBottom: '0.5rem', fontSize: '1.5rem', display: 'block', margin: '0 auto' }} />
-                                    <h4>{app}</h4>
-                                </Card>
-                            ))}
-                        </div>
-                    </section>
-
-                    <section className={styles.section}>
-                        <h2>Installation and Substrate Integrity</h2>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.contentBlock}>
-                            <p>
-                                The performance of a shingle roof depends on the quality of the base structure beneath it. 
-                            </p>
-                            <p>
-                                We recommend a solid deck of water-resistant plywood or cement board, covered by a high-quality <strong>underlayment membrane</strong>. This dual-layer system ensures that your home remains 100% leak-proof even in the face of continuous torrential rainfall.
-                            </p>
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h2>Modern roofing shingles in mumbai</h2>
+                                <p>
+                                    Our <strong>roofing shingles in mumbai</strong> is ideal for resorts. Once installed, the <strong>roofing shingles in mumbai</strong> provides a self-sealing bond.
+                                </p>
+                            </Card>
                         </div>
-                    </section>
+                    </motion.section>
 
                     <motion.section
                         className={styles.section}
@@ -210,34 +192,30 @@ const Shingles = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h2>Frequently Asked Questions</h2>
+                        <h2>FAQs on roofing shingles in mumbai</h2>
                         <div className={styles.faqGrid}>
                             <div className={styles.faqItem}>
-                                <h4>Can shingles be installed over an existing roof?</h4>
-                                <p>While possible (roof-over), we generally recommend a complete tear-off of the old material to inspect the underlying deck. This ensures a perfectly flat and secure base for your new shingles.</p>
+                                <h4>Is <strong>roofing shingles in mumbai</strong> weather safe?</h4>
+                                <p>Yes, <strong>roofing shingles in mumbai</strong> is engineered for high heat.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h4>Are shingles suitable for the high heat of Mumbai?</h4>
-                                <p>Absolutely. Modern asphalt shingles are engineered to handle thermal expansion and contraction. The mineral granules reflect a significant portion of UV energy, preventing the asphalt from degrading even in intense summer heat.</p>
+                                <h4>Does <strong>roofing shingles in mumbai</strong> stop leaks?</h4>
+                                <p>Yes, <strong>roofing shingles in mumbai</strong> creates a waterproof seal.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h4>Do shingles encourage the growth of moss or algae?</h4>
-                                <p>Our premium shingles are treated with copper-infused granules during manufacturing. This creates an environment that inhibits the growth of "blue-green" algae, keeping your roof looking clean for years.</p>
-                            </div>
-                            <div className={styles.faqItem}>
-                                <h4>What's the difference between 3-Tab and Architectural shingles?</h4>
-                                <p>3-Tab shingles are flat and single-layered, offering a clean, traditional look. Architectural (or Laminate) shingles are thicker, multi-layered, and provide a more textured, premium 3D appearance with higher wind ratings.</p>
+                                <h4>What is the life of <strong>roofing shingles in mumbai</strong>?</h4>
+                                <p>A <strong>roofing shingles in mumbai</strong> can last over 20-50 years.</p>
                             </div>
                         </div>
                     </motion.section>
 
                     <section className={styles.ctaSection}>
                         <Card variant="gradient" className={styles.ctaCard}>
-                            <h3>Ready to Transform Your Roof?</h3>
-                            <p>Get expert consultation and a free quote for shingle installation.</p>
+                            <h3>Get Best Quote for roofing shingles in mumbai</h3>
+                            <p>Contact the leading manufacturer for <strong>roofing shingles in mumbai</strong> today.</p>
                             <div className={styles.ctaButtons}>
-                                <Button size="lg" href="/contact">Get Quote</Button>
-                                <Button size="lg" variant="outline" href="tel:+919967203090">Call Now</Button>
+                                <Button size="lg" href="/contact">Get Estimate</Button>
+                                <Button size="lg" variant="outline" href="tel:+919967203090">Call Expert</Button>
                             </div>
                         </Card>
                     </section>

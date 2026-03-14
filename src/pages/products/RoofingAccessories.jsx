@@ -20,12 +20,12 @@ const RoofingAccessories = () => {
     ];
 
     const products = [
-        { label: 'Ridge Caps', desc: 'Roof apex sealing for heavy Mumbai rains' },
-        { label: 'Rainwater Gutters', desc: 'High capacity drainage for monsoons' },
-        { label: 'Flashings', desc: 'Leak-proof joints for coastal winds' },
-        { label: 'SD Screws', desc: 'Rust-proof fasteners for humid areas' },
-        { label: 'Turbo Vents', desc: 'Industrial ventilation solutions' },
-        { label: 'Sealants', desc: 'Silicone sealants for waterproofing' }
+        { label: 'Ridge Caps', desc: 'Apex sealing for roof accessories' },
+        { label: 'Rainwater Gutters', desc: 'Drainage systems for roofing accessories' },
+        { label: 'Flashings', desc: 'Joint protection in roofing accessories' },
+        { label: 'SD Screws', desc: 'Fasteners for roofing accessories' },
+        { label: 'Turbo Vents', desc: 'Ventilation in roofing accessories' },
+        { label: 'Sealants', desc: 'Silicone for roofing accessories' }
     ];
 
     const containerVariants = {
@@ -55,11 +55,12 @@ const RoofingAccessories = () => {
                 title="Roofing Accessories Supplier in Navi Mumbai & Panvel"
                 description="Complete range of roofing accessories: ridges, gutters, turbo ventilators, and fasteners available in Panvel, Taloja, and Vashi."
                 keywords="roofing accessories, turbo ventilators, gutters, roofing screws, ridges"
+                canonicalUrl="https://zincoroof.com/products/roofing-accessories"
             />
             <Helmet>
-                <link rel="preload" as="image" href={heroImage} />
+                <link rel="preload" as="image" href={heroImage} fetchpriority="high" />
             </Helmet>
-            <div className={styles.hero} style={{ '--hero-image': `url(${heroImage})` }} fetchpriority="high">
+            <div className={styles.hero} style={{ '--hero-image': `url(${heroImage})` }}>
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>
                     <motion.div
@@ -74,10 +75,10 @@ const RoofingAccessories = () => {
                             PRECISION & DURABILITY
                         </motion.span>
                         <motion.h1 variants={itemVariants}>
-                            Roofing Accessories Supplier Navi Mumbai
+                            roofing accessories
                         </motion.h1>
                         <motion.p className={styles.heroDesc} variants={itemVariants}>
-                            Complete range of high-quality roofing components available in Panvel, Taloja, and Vashi.
+                            Complete range of high-quality <strong>roofing accessories</strong> available for industrial and residential projects.
                         </motion.p>
                     </motion.div>
                 </div>
@@ -85,36 +86,48 @@ const RoofingAccessories = () => {
 
             <div className={styles.container}>
                 <div className={styles.content}>
-                    <section className={styles.section}>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.contentBlock}>
                             <Card variant="solid" className={styles.contentCard}>
-                                <h2>The Essential Backbone: Why Roofing Accessories Matter</h2>
+                                <h2>The Essential Backbone: Why roofing accessories Matter</h2>
                                 <p>
-                                    A common misconception in the construction industry is that the durability of a roof depends solely on the quality of the sheets. However, at Zinco Roofing Solution, we know that a roof is only as strong as its weakest joint. Our <strong>Roofing Accessories</strong>, available across <strong>Panvel, Taloja, and Navi Mumbai</strong>, are designed to provide the critical sealing and structural support that transforms a simple metal shed into a high-performance industrial asset.
+                                    At Zinco Roofing Solution, we believe that a roof is only as strong as its weakest joint. Our <strong>roofing accessories</strong> provide the critical sealing and structural support needed for a durable structure.
                                 </p>
                                 <p>
-                                    Whether you're dealing with the heavy monsoons of the Mumbai coast or the intense heat of the Maharashtra interior, our accessories ensure that every ridge, valley, and edge is perfectly sealed. We manufacture our primary accessories from the same high-grade <strong>PPGI (Pre-Painted Galvanized Iron)</strong> and <strong>PPGL (Pre-Painted Galvalume)</strong> as our roofing sheets, ensuring a perfect color match and consistent thermal expansion properties throughout your building's envelope.
-                                </p>
-                            </Card>
-
-                            <Card variant="solid" className={styles.contentCard}>
-                                <h3>Ridge Caps & Valleys: Sealing the Peaks</h3>
-                                <p>
-                                    The ridge is the most vulnerable part of any roof. Our <strong>Plain and Formed Ridges</strong> are precision-bent to match the exact profile of your roofing sheets, preventing wind-driven rain from entering the apex of the structure. In areas like <strong>Taloja MIDC</strong>, where industrial buildings often have complex geometries, we provide custom-tailored flashing solutions that bridge the gaps between different roof levels and chimney penetrations.
+                                    Whether you need ridges or gutters, our <strong>roofing accessories</strong> ensure that every edge is perfectly sealed. We manufacture our <strong>roofing accessories</strong> from high-grade materials for maximum longevity.
                                 </p>
                             </Card>
 
                             <Card variant="solid" className={styles.contentCard}>
-                                <h3>High-Capacity Rainwater Systems</h3>
+                                <h3>Sealing the Peaks with roofing accessories</h3>
                                 <p>
-                                    Effective drainage is life or death for an industrial roof. Our <strong>Rainwater Gutters</strong> are designed with high-volume profiles to handle the sudden, intense downpours of the Western Ghats. We offer gutters in various materials, including color-coated metal and high-impact polymers, often accompanied by custom-fabricated downspouts and brackets designed to withstand high wind loads at height.
+                                    The ridge is the most vulnerable part of any roof, making <strong>roofing accessories</strong> like ridge caps essential. Our <strong>roofing accessories</strong> are precision-bent to match your exact profile.
+                                </p>
+                            </Card>
+
+                            <Card variant="solid" className={styles.contentCard}>
+                                <h3>Drainage Solutions in roofing accessories</h3>
+                                <p>
+                                    Effective drainage is critical, and our <strong>roofing accessories</strong> collection includes high-volume gutters. These <strong>roofing accessories</strong> are designed to handle intense Mumbai monsoons effortlessly.
                                 </p>
                             </Card>
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Our Product Range</h2>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>Our roofing accessories Range</h2>
                         <div className={styles.applicationsGrid}>
                             {products.map((prod, index) => (
                                 <Card key={index} variant="solid" className={styles.appCard}>
@@ -123,10 +136,16 @@ const RoofingAccessories = () => {
                                 </Card>
                             ))}
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
-                        <h2>Available Locations</h2>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2>Locations for roofing accessories</h2>
                         <div className={styles.featuresGrid}>
                             {['Panvel', 'Taloja MIDC', 'Navi Mumbai', 'Vashi', 'Belapur', 'Thane'].map((loc, index) => (
                                 <motion.div
@@ -142,21 +161,27 @@ const RoofingAccessories = () => {
                                 </motion.div>
                             ))}
                         </div>
-                    </section>
+                    </motion.section>
 
-                    <section className={styles.section}>
+                    <motion.section 
+                        className={styles.section}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className={styles.contentBlock}>
                             <Card variant="solid" className={styles.contentCard}>
-                                <h2>Fastening Systems and Sealing</h2>
+                                <h2>Fastening Systems in roofing accessories</h2>
                                 <p>
-                                    We use and supply only the highest grade of <strong>Self-Drilling Screws (SDS)</strong>, featuring specialized anti-corrosion coatings (Class 3 or Class 4) that outlast standard zinc-plated fasteners by decades. These screws are paired with EPDM (Ethylene Propylene Diene Monomer) washers, which provide a permanent, flexible seal that expands and contracts with the metal, preventing the "vibration leaks" common in cheaper installations.
+                                    We supply only the highest grade of screws as part of our <strong>roofing accessories</strong> lineup. These <strong>roofing accessories</strong> feature anti-corrosion coatings that last for decades.
                                 </p>
                                 <p>
-                                    For critical joints, we utilize high-performance <strong>Neutral Cure Silicone Sealants</strong>. Unlike standard acidic sealants, these do not cause corrosion in the metal sheets and maintain their bond even under the intense UV radiation experienced in open industrial hubs like <strong>Panvel</strong>.
+                                    For critical joints, our <strong>roofing accessories</strong> use high-performance silicone sealants. These <strong>roofing accessories</strong> maintain their bond even under intense UV radiation.
                                 </p>
                             </Card>
                         </div>
-                    </section>
+                    </motion.section>
 
                     <motion.section
                         className={styles.section}
@@ -165,34 +190,30 @@ const RoofingAccessories = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h2>Frequently Asked Questions</h2>
+                        <h2>FAQs about roofing accessories</h2>
                         <div className={styles.faqGrid}>
                             <div className={styles.faqItem}>
-                                <h4>Can I order custom-bent flashings for my project?</h4>
-                                <p>Yes! We have advanced bending and folding machinery on-site and at our factory. We can create custom flashings, gutters, and trims based on your dimensions, ensuring a perfect fit for even the most unique architectural designs.</p>
+                                <h4>Can I order custom <strong>roofing accessories</strong>?</h4>
+                                <p>Yes! We can create custom components as part of our <strong>roofing accessories</strong> service.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h4>How do I know which fasteners are right for my location?</h4>
-                                <p>In coastal areas like **Navi Mumbai or Vashi**, we strictly recommend Class 3 or Class 4 galvanized fasteners with a minimum coating thickness of 25 microns to prevent premature rust. Our technical team can advise on the exact fastener density (screws per square meter) based on your local wind-speed profile.</p>
+                                <h4>Are <strong>roofing accessories</strong> essential for sheds?</h4>
+                                <p>Absolutely, high-quality <strong>roofing accessories</strong> ensure your shed is leak-proof and durable.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h4>Do your gutters come with a warranty?</h4>
-                                <p>Our metal gutters carry the same coating warranty as our roofing sheets. When installed as a complete system by Zinco-approved professionals, we stand of the durability and leak-proof performance of our entire accessory range.</p>
-                            </div>
-                            <div className={styles.faqItem}>
-                                <h4>Are Turbo Ventilators compatible with all roof types?</h4>
-                                <p>Yes, we provide specialized adaptor plates (base plates) that allow our high-performance industrial ventilators to be installed on any profile, including trapezoidal steel, UPVC, or even asbestos-replacement sheets.</p>
+                                <h4>Do you provide <strong>roofing accessories</strong> in Panvel?</h4>
+                                <p>Yes, we are the leading supplier of <strong>roofing accessories</strong> in the Panvel and Taloja regions.</p>
                             </div>
                         </div>
                     </motion.section>
 
                     <section className={styles.ctaSection}>
                         <Card variant="gradient" className={styles.ctaCard}>
-                            <h3>Order Your Roofing Kit Today</h3>
-                            <p>Complete range of Ridges, Gutters, and Screws available in Mumbai.</p>
+                            <h3>Get Best Quote for roofing accessories</h3>
+                            <p>Complete range of <strong>roofing accessories</strong> available for your next project.</p>
                             <div className={styles.ctaButtons}>
-                                <Button size="lg" href="/contact">Order Now</Button>
-                                <Button size="lg" variant="outline" href="tel:+919967203090">Call Now</Button>
+                                <Button size="lg" href="/contact">Get Estimate</Button>
+                                <Button size="lg" variant="outline" href="tel:+919967203090">Call Expert</Button>
                             </div>
                         </Card>
                     </section>

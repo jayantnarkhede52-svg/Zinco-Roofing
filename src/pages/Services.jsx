@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { FaDraftingCompass, FaHandshake, FaPaintBrush, FaHardHat, FaCheckCircle, FaIndustry, FaTemperatureHigh, FaLayerGroup, FaTools, FaPaintRoller, FaSolarPanel, FaShieldAlt } from 'react-icons/fa';
+import { Helmet } from 'react-helmet-async';
 import SEO from '../components/shared/SEO';
 import heroImage from '../assets/services-hero.webp';
 import planningImg from '../assets/img 5.webp';
@@ -61,7 +62,7 @@ const Services = () => {
             id: 'planning',
             title: 'Planning & Preconstruction Excellence',
             icon: <FaDraftingCompass />,
-            content: `At Zinco Roofing Solution, we believe that a successful project is won in the planning phase. Our preconstruction service is not just about logistics; it's a collaborative journey where we align our technical expertise with your vision. We work persistently with customers and planning groups to investigate every nuance of your industrial project. This deep-dive analysis allows us to identify potential challenges before they arise, ensuring a workflow that provides immense value and significantly lowers overall costs. We pride ourselves on optimizing efficiency without ever compromising on the structural integrity or the aesthetic requirements of your design. Our goal is to provide a roadmap that is as precise as our engineering.`,
+            content: `At Zinco Roofing Solution, we believe that a successful project for industrial roofing services in navi mumbai is won in the planning phase. Our preconstruction service for industrial roofing services in navi mumbai is not just about logistics; it's a collaborative journey. We work with groups to investigate every nuance of industrial roofing services in navi mumbai projects. This deep-dive analysis of industrial roofing services in navi mumbai allow us to identify challenges, ensuring industrial roofing services in navi mumbai provide immense value. We pride ourselves on optimizing industrial roofing services in navi mumbai efficiency without ever compromising on integrity. Our industrial roofing services in navi mumbai roadmap is precise.`,
             features: ['In-depth Site Analysis', 'Cost Optimization Strategies', 'Technical Feasibility Studies', 'Timeline Forecasting'],
             image: planningImg,
             color: '#3b82f6'
@@ -70,7 +71,7 @@ const Services = () => {
             id: 'consultation',
             title: 'Professional Technical Consultation',
             icon: <FaHandshake />,
-            content: `Navigating the complexities of industrial roofing requires more than just materials; it requires honest, expert guidance. Our consultation service is built on a foundation of transparency and technical mastery. Whether you are in the early stages of a new build or looking to retrofit an existing structure, our consultants provide flawless guidance on the 'What, How, When, and Which'. We help you select the exact sort of material that ought to be utilized for your specific environmental conditions—whether it's high-salinity coastal areas or heat-intensive industrial zones. Zinco has built its reputation by supplying only the best and most honest material recommendations, ensuring that our customers make informed decisions that stand the test of time.`,
+            content: `Navigating the complexities of industrial roofing services in navi mumbai requires more than just materials. Our consultation for industrial roofing services in navi mumbai is built on a foundation of transparency. Whether you are looking for industrial roofing services in navi mumbai build or retrofitting, our consultants provide flawless guidance. We help you select the exact material for industrial roofing services in navi mumbai specific environmental conditions. Zinco has built its reputation by supplying the best industrial roofing services in navi mumbai material recommendations, ensuring that industrial roofing services in navi mumbai stand the test of time.`,
             features: ['Material Compatibility Advice', 'Installation Methodology', 'Longevity Assessment', 'Safety Compliance Audit'],
             image: consultationImg,
             color: '#f59e0b'
@@ -79,7 +80,7 @@ const Services = () => {
             id: 'design',
             title: 'Creative & Structural Design',
             icon: <FaPaintBrush />,
-            content: `Zinco Roofing Solution is a pioneer in integrating creative architectural vision with rigid structural requirements. We provide a composed basic arrangement that encompasses outlining, technical sketching, and structural collecting. In our ordinary activities, we utilize the latest advancements in CAD and structural modeling to ensure that every roof we design is a masterpiece of modern engineering. By contracting both design and construction aspects with a single firm like Zinco, you eliminate the friction between the drawing board and the job site. Our unique approach ensures that the creative aspects of your building's crown are perfectly balanced with the heavy-duty performance required of an industrial facility.`,
+            content: `Zinco Roofing Solution is a pioneer in industrial roofing services in navi mumbai, integrating creative architectural vision with requirements. We provide a composed arrangement for industrial roofing services in navi mumbai outlining and structural collecting. In our ordinary activity for industrial roofing services in navi mumbai, we utilize the latest advancements to ensure that every roof we design for industrial roofing services in navi mumbai is a masterpiece. By contracting industrial roofing services in navi mumbai with a single firm like Zinco, you eliminate friction. Our unique approach to industrial roofing services in navi mumbai ensures that creative aspects are perfectly balanced with performance.`,
             features: ['Advanced 3D Modeling', 'Structural Integrity Design', 'Aesthetic Customization', 'Integrated Workflow'],
             image: designImg,
             color: '#ef4444'
@@ -88,7 +89,7 @@ const Services = () => {
             id: 'site-visit',
             title: 'On-Site Execution & Quality Control',
             icon: <FaHardHat />,
-            content: `The true measure of a roofing solution is its performance on-site. Our execution team brings decades of collective experience to every installation, ensuring that the theoretical excellence of our planning is matched by practical mastery on the ground. We persistently coordinate with on-site teams and plan groups to investigate real-time variables that might affect the project's outcome. Our site visits are not mere check-ins; they are rigorous quality control sessions where we investigate every seam, every bolt, and every coat. This relentless attention to detail is why a Zinco roof is synonymous with reliability. We ensure that the project delivers maximum esteem to the owner, providing a lower lifetime cost through superior workmanship.`,
+            content: `The true measure of industrial roofing services in navi mumbai is its performance on-site. Our execution team for industrial roofing services in navi mumbai brings decades of experience to every installation. We persistently coordinate to investigate variables that might affect industrial roofing services in navi mumbai outcomes. Our site visits for industrial roofing services in navi mumbai are rigorous quality control sessions where we investigate every seam for industrial roofing services in navi mumbai. This relentless attention to industrial roofing services in navi mumbai detail is why Zinco is synonymous with reliability. We ensure that industrial roofing services in navi mumbai delivers maximum esteem.`,
             features: ['Expert Installation Teams', 'Rigorous Quality Checks', 'On-Site Fabrication', 'Safety-First Protocols'],
             image: executionImg,
             color: '#10b981'
@@ -98,25 +99,29 @@ const Services = () => {
     return (
         <div className={styles.services}>
             <SEO
-                title="Industrial Roofing Services in Navi Mumbai | Zinco Roofing"
-                description="Expert Industrial Roofing Services in Navi Mumbai. Zinco Roofing provides high-quality installation, waterproofing, and retrofitting for factories and warehouses."
-                keywords="Industrial Roofing Services in Navi Mumbai, industrial roofing installation, roof waterproofing, structural roofing solutions, Navi Mumbai roofing"
+                title="Industrial Roofing Services in Navi Mumbai | Zinco Roofing Specialist"
+                description="Expert Industrial Roofing Services in Navi Mumbai. Zinco Roofing provides high-quality industrial roofing services in navi mumbai for factories and warehouses."
+                keywords="Industrial Roofing Services in Navi Mumbai, industrial roofing installation, roof waterproofing, structural roofing solutions, industrial roofing services in navi mumbai"
+                canonicalUrl="https://zincoroof.com/industrial-roofing-services-navi-mumbai"
             />
-            <section className={styles.hero} style={{ backgroundImage: `url(${heroImage})` }} fetchpriority="high">
+            <Helmet>
+                <link rel="preload" as="image" href={heroImage} fetchpriority="high" />
+            </Helmet>
+            <section className={styles.hero} style={{ backgroundImage: `url(${heroImage})` }}>
                 <div className={styles.heroOverlay} />
                 <div className={styles.container}>
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                     >
-                        Industrial Roofing Services <br />In Navi Mumbai
+                        Industrial Roofing Services In Navi Mumbai
                     </motion.h1>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
                     >
-                        From rapid consultation to precise execution, we provide end-to-end industrial roofing solutions across the Mumbai Metropolitan Region.
+                        From rapid consultation to precise execution, we provide end-to-end <strong>industrial roofing services in navi mumbai</strong> across the region.
                     </motion.p>
                 </div>
             </section>
@@ -140,7 +145,7 @@ const Services = () => {
                                 >
                                     <div className={styles.abstractVisual} style={{ borderLeft: `4px solid ${section.color}` }}>
                                         <img src={section.image}
-                                            alt={section.title}
+                                            alt={`${section.title} - Industrial Roofing Services in Navi Mumbai`}
                                             className={styles.sectionImage}
                                             loading="lazy"
                                             decoding="async"
@@ -186,7 +191,7 @@ const Services = () => {
                 <div className={styles.container}>
                     <div className={styles.categoryHeader}>
                         <span>OUR PRODUCT RANGE</span>
-                        <h2>Explore Our Solutions</h2>
+                        <h2>Explore Our Industrial Solutions</h2>
                         <div className={styles.headerUnderline} />
                     </div>
 
@@ -222,8 +227,8 @@ const Services = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                     >
-                        <h2>Ready to start your project?</h2>
-                        <p>Let's build a foundation of trust together. Our experts are ready to consult on your next industrial masterpiece.</p>
+                        <h2>Ready to start your industrial project?</h2>
+                        <p>Let's build a foundation of trust together with our expert <strong>industrial roofing services in navi mumbai</strong>.</p>
                         <button className={styles.ctaButton}>Get Expert Consultation</button>
                     </motion.div>
                 </div>
@@ -232,13 +237,13 @@ const Services = () => {
             <section className={styles.seoSection}>
                 <div className={styles.container}>
                     <div className={styles.seoHeader}>
-                        <h2>Industrial Roofing Services in Navi Mumbai: The Zinco Excellence</h2>
+                        <h2>Industrial Roofing Services in Navi Mumbai Excellence</h2>
                         <div className={styles.headerLine} />
                     </div>
 
                     <div className={styles.seoContent}>
                         <p className={styles.leadPara}>
-                            Protecting your industrial assets from the harsh coastal climate of <strong>Navi Mumbai</strong> requires precision, durability, and technical mastery. Zinco Roofing Solutions delivers comprehensive engineering excellence for every factory and warehouse.
+                            Protecting your industrial assets with professional <strong>industrial roofing services in navi mumbai</strong> requires precision and technical mastery. Zinco Roofing Solution delivers <strong>industrial roofing services in navi mumbai</strong> for every project.
                         </p>
 
                         <div className={styles.seoBenefitsGrid}>
@@ -248,10 +253,10 @@ const Services = () => {
                                     <h3>Navi Mumbai Resilience</h3>
                                 </div>
                                 <ul className={styles.benefitPoints}>
-                                    <li>Coastal-grade anti-corrosive materials</li>
-                                    <li>Specialized coatings for high humidity</li>
-                                    <li>High-performance weather shield</li>
-                                    <li>Minimal operational downtime</li>
+                                    <li>Coastal industrial roofing services in navi mumbai</li>
+                                    <li>humidity-resistant industrial roofing services in navi mumbai</li>
+                                    <li>High-performance industrial roofing services in navi mumbai</li>
+                                    <li>Minimal downtime industrial roofing services in navi mumbai</li>
                                 </ul>
                             </Card>
 
@@ -261,10 +266,10 @@ const Services = () => {
                                     <h3>Engineering Mastery</h3>
                                 </div>
                                 <ul className={styles.benefitPoints}>
-                                    <li>Advanced CAD modeling & structural analysis</li>
-                                    <li>Custom fabrication for industrial sheds</li>
-                                    <li>Topography-optimized roof designs</li>
-                                    <li>International engineering standards</li>
+                                    <li>industrial roofing services in navi mumbai CAD modeling</li>
+                                    <li>industrial roofing services in navi mumbai fabrication</li>
+                                    <li>industrial roofing services in navi mumbai roof designs</li>
+                                    <li>industrial roofing services in navi mumbai standards</li>
                                 </ul>
                             </Card>
 
@@ -274,10 +279,10 @@ const Services = () => {
                                     <h3>Full Lifecycle Support</h3>
                                 </div>
                                 <ul className={styles.benefitPoints}>
-                                    <li>Expert technical consultation & planning</li>
-                                    <li>Precise on-site execution & quality control</li>
-                                    <li>Insulated panel & metal sheet expertise</li>
-                                    <li>Scalable solutions for all sectors</li>
+                                    <li>industrial roofing services in navi mumbai planning</li>
+                                    <li>industrial roofing services in navi mumbai execution</li>
+                                    <li>industrial roofing services in navi mumbai expertise</li>
+                                    <li>industrial roofing services in navi mumbai solutions</li>
                                 </ul>
                             </Card>
 
@@ -287,19 +292,19 @@ const Services = () => {
                                     <h3>Restoration & Efficiency</h3>
                                 </div>
                                 <ul className={styles.benefitPoints}>
-                                    <li>Professional retrofitting & waterproofing</li>
-                                    <li>Cost-effective restoration roadmaps</li>
-                                    <li>Enhanced thermal & energy performance</li>
-                                    <li>Sustainable building practices</li>
+                                    <li>industrial roofing services in navi mumbai retrofitting</li>
+                                    <li>industrial roofing services in navi mumbai roadmaps</li>
+                                    <li>industrial roofing services in navi mumbai performance</li>
+                                    <li>industrial roofing services in navi mumbai practices</li>
                                 </ul>
                             </Card>
                         </div>
 
                         <div className={styles.seoSummaryCard}>
                             <Card variant="gradient">
-                                <h3>Partner with the Leaders in Industrial Roofing</h3>
+                                <h3>Partner with the Leaders in industrial roofing services in navi mumbai</h3>
                                 <p>
-                                    Zinco Roofing Solution is dedicated to providing technically sound material recommendations and flawless execution. Join the numerous satisfied industrial owners across Navi Mumbai who trust Zinco for their structural integrity.
+                                    Zinco is dedicated to providing industrial roofing services in navi mumbai. Join the numerous satisfied owners who trust our <strong>industrial roofing services in navi mumbai</strong>.
                                 </p>
                             </Card>
                         </div>
