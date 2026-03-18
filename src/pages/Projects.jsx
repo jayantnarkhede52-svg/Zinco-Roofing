@@ -137,24 +137,58 @@ const Projects = () => {
                     </div>
                 </div>
 
-                {/* Extensive Remaining Content - Humanized & Plagiarism Free */}
-                <div className={styles.narrativeSection}>
+                {/* Interactive Highlights - Visible only on Mobile */}
+                <section className={styles.mobileOnly}>
+                    <div className={styles.mobileHighlightsGrid}>
+                        <motion.div 
+                            className={styles.mobileHighlightCard}
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            viewport={{ once: true }}
+                        >
+                            <h3>🏗️ Industrial Excellence</h3>
+                            <p>Specializing in factory sheds, warehouses, and heavy industrial roofing since 2016.</p>
+                        </motion.div>
+                        <motion.div 
+                            className={styles.mobileHighlightCard}
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.1 }}
+                        >
+                            <h3>💎 Premium Quality</h3>
+                            <p>Using only certified metal sheets, PUF panels, and high-durability accessories.</p>
+                        </motion.div>
+                        <motion.div 
+                            className={styles.mobileHighlightCard}
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.2 }}
+                        >
+                            <h3>⏱️ Fast Execution</h3>
+                            <p>Optimized supply chain to ensure your project stays on schedule and on budget.</p>
+                        </motion.div>
+                    </div>
+                </section>
+
+                {/* Extensive Content - Hidden on Mobile, Optimized for Desktop SEO */}
+                <div className={`${styles.narrativeSection} ${styles.desktopOnly}`}>
                     <motion.div
                         className={styles.narrativeBlock}
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                     >
-                        <h2>Success in Industrial Roofing Projects in Navi Mumbai</h2>
+                        <h2>Excellence in Structural Implementations</h2>
                         <p>
-                            At Zinco, our <strong>Industrial Roofing Projects in Navi Mumbai</strong> focus on delivering superior overhead systems. Every <strong>Industrial Roofing Projects in Navi Mumbai</strong> execution follow strict standards. Our <strong>Industrial Roofing Projects in Navi Mumbai</strong> portfolio highlights our role as a strategic implementation partner for all major industries.
+                            At Zinco, our <strong>Industrial Roofing Projects in Navi Mumbai</strong> focus on delivering superior overhead systems. Every site execution follows strict international standards. Our structural portfolio highlights our role as a strategic implementation partner for all major industries across Maharashtra.
                         </p>
                         <p>
-                            The <strong>Industrial Roofing Projects in Navi Mumbai</strong> we manage span across Pune, Thane, and Navi Mumbai. Whether we are installing panels for <strong>Industrial Roofing Projects in Navi Mumbai</strong> or roofing sheets, our approach remains rooted in project excellence. Every site for <strong>Industrial Roofing Projects in Navi Mumbai</strong> presents unique challenges.
+                            The projects we manage span across Pune, Thane, and the surrounding regions. Whether we are installing insulated panels or high-grade roofing sheets, our approach remains rooted in project excellence. Every industrial site presents unique architectural challenges.
                         </p>
                     </motion.div>
 
-                    {/* Product Showcase Section */}
                     <div className={styles.productShowcase}>
                         <motion.div
                             className={styles.showcaseGrid}
@@ -163,25 +197,25 @@ const Projects = () => {
                             viewport={{ once: true }}
                         >
                             <div className={styles.showcaseItem}>
-                                <img src={metalFeatured} alt="Metal Roofing" loading="lazy" decoding="async" />
+                                <img src={metalFeatured} alt="Industrial Metal Roofing Project by Zinco" loading="lazy" decoding="async" />
                                 <div className={styles.showcaseOverlay}>
                                     <span>Metal Sheet Solutions</span>
                                 </div>
                             </div>
                             <div className={styles.showcaseItem}>
-                                <img src={pufFeatured} alt="PUF Panels" loading="lazy" decoding="async" />
+                                <img src={pufFeatured} alt="PUF Panel Roof Installation Navi Mumbai" loading="lazy" decoding="async" />
                                 <div className={styles.showcaseOverlay}>
                                     <span>PUF Insulated Panels</span>
                                 </div>
                             </div>
                             <div className={styles.showcaseItem}>
-                                <img src={polyFeatured} alt="Polycarbonate" loading="lazy" decoding="async" />
+                                <img src={polyFeatured} alt="Polycarbonate Sheet Daylighting System" loading="lazy" decoding="async" />
                                 <div className={styles.showcaseOverlay}>
                                     <span>Polycarbonate Lighting</span>
                                 </div>
                             </div>
                             <div className={styles.showcaseItem}>
-                                <img src={deckFeatured} alt="Decking Sheets" loading="lazy" decoding="async" />
+                                <img src={deckFeatured} alt="Steel Decking Sheet for Composite Flooring" loading="lazy" decoding="async" />
                                 <div className={styles.showcaseOverlay}>
                                     <span>Structural Decking</span>
                                 </div>
@@ -196,15 +230,15 @@ const Projects = () => {
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                         >
-                            <h3>Precision in Industrial Roofing Projects in Navi Mumbai</h3>
+                            <h3>Precision Engineering & Design</h3>
                             <p>
-                                Every <strong>Industrial Roofing Projects in Navi Mumbai</strong> involves rigorous Value Engineering. We interrogate every blueprint for <strong>Industrial Roofing Projects in Navi Mumbai</strong>. Can a different profile improve <strong>Industrial Roofing Projects in Navi Mumbai</strong> performance? We ensure your <strong>Industrial Roofing Projects in Navi Mumbai</strong> are leak-proof.
+                                Every technical venture involves rigorous Value Engineering to ensure cost-effectiveness. We interrogate every blueprint to improve structural performance and ensure your factory remains leak-proof for decades.
                             </p>
                             <p>
-                                Performance-driven <strong>Industrial Roofing Projects in Navi Mumbai</strong> are our specialty. Our fabrication ensures your <strong>Industrial Roofing Projects in Navi Mumbai</strong> used material is perfectly fit. This attention to detail is why <strong>Industrial Roofing Projects in Navi Mumbai</strong> are trusted by top companies.
+                                Performance-driven solutions are our specialty. Our fabrication expertise ensure the used material is perfectly fit for your specific shed requirements. This attention to detail is why we are trusted by top companies.
                             </p>
                             <div className={styles.inlineImageWrapper}>
-                                <img src={industrialShot} alt="Industrial Roofing Projects in Navi Mumbai Installation" className={styles.inlineImage} loading="lazy" decoding="async" />
+                                <img src={industrialShot} alt="Industrial Installation" className={styles.inlineImage} loading="lazy" decoding="async" />
                             </div>
                         </motion.div>
 
@@ -214,15 +248,15 @@ const Projects = () => {
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                         >
-                            <h3>Expert Industrial Roofing Projects in Navi Mumbai</h3>
+                            <h3>Expert Operational Logistics</h3>
                             <p>
-                                Our presence in <strong>Industrial Roofing Projects in Navi Mumbai</strong> zones like Taloja is extensive. We know that in <strong>Industrial Roofing Projects in Navi Mumbai</strong>, delays cost money. That is why our <strong>Industrial Roofing Projects in Navi Mumbai</strong> teams operate with extreme efficiency to minimize disruption.
+                                Our presence in industrial zones like Taloja is extensive. We know that in <strong>Industrial Roofing Projects in Navi Mumbai</strong>, delays cost money. That is why our technical teams operate with extreme efficiency to minimize disruption.
                             </p>
                             <p>
-                                We prioritize supply chain for all <strong>Industrial Roofing Projects in Navi Mumbai</strong>. Direct relationships ensure our <strong>Industrial Roofing Projects in Navi Mumbai</strong> are delivered on time. This operational resilience defines every <strong>Industrial Roofing Projects in Navi Mumbai</strong> we complete. We meet every deadline for <strong>Industrial Roofing Projects in Navi Mumbai</strong>.
+                                We prioritize supply chain for all structural ventures. Direct relationships ensure our components are delivered on time. This operational resilience defines every infrastructure project we complete.
                             </p>
                             <div className={styles.inlineImageWrapper}>
-                                <img src={warehouseShot} alt="Warehouse for Industrial Roofing Projects in Navi Mumbai" className={styles.inlineImage} loading="lazy" decoding="async" />
+                                <img src={warehouseShot} alt="Warehouse Roofing" className={styles.inlineImage} loading="lazy" decoding="async" />
                             </div>
                         </motion.div>
                     </div>
@@ -233,66 +267,42 @@ const Projects = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                     >
-                        <h3>Sustainability in Industrial Roofing Projects in Navi Mumbai</h3>
+                        <h3>Sustainability & Modern Infrastructure</h3>
                         <p>
-                            Zinco focuses on sustainability in all <strong>Industrial Roofing Projects in Navi Mumbai</strong>. Modern <strong>Industrial Roofing Projects in Navi Mumbai</strong> are about energy efficiency. Our <strong>Industrial Roofing Projects in Navi Mumbai</strong> involve systems that reduce carbon footprints. We maximize illumination in <strong>Industrial Roofing Projects in Navi Mumbai</strong>.
+                            Zinco focuses on sustainability in all major implementations. Modern roofing is about energy efficiency. Our systems involve profiles that reduce carbon footprints by maximizing natural illumination inside the working area.
                         </p>
                         <p>
-                            The human element of <strong>Industrial Roofing Projects in Navi Mumbai</strong> is vital. Every one of our <strong>Industrial Roofing Projects in Navi Mumbai</strong> supports skilled technicians. We invest in safety for all <strong>Industrial Roofing Projects in Navi Mumbai</strong>. Their pride ensures quality in our <strong>Industrial Roofing Projects in Navi Mumbai</strong>.
+                            The human element of these projects is vital. Every implementation supports skilled technicians. We invest in safety for all on-site activities. Their pride ensures quality in our world-class protection systems.
                         </p>
                         <p>
-                            In conclusion, our <strong>Industrial Roofing Projects in Navi Mumbai</strong> gallery showcases hard work. Our <strong>Industrial Roofing Projects in Navi Mumbai</strong> roadmap represents engineered excellence. If you are starting <strong>Industrial Roofing Projects in Navi Mumbai</strong>, Zinco Roofing is your best partner for world-class protection.
+                            In conclusion, our industrial gallery showcases hard work and engineered excellence. If you are starting a new infrastructure project, Zinco Roofing is your best partner for professional and reliable structural solutions.
                         </p>
                     </motion.div>
                 </div>
 
-                <section className={styles.seoArticleSection}>
+                <section className={`${styles.seoArticleSection} ${styles.desktopOnly}`}>
                     <div className={styles.container}>
                         <div className={styles.seoArticleHeader}>
-                            <h2>Showcasing Excellence: Industrial Roofing Projects in Navi Mumbai</h2>
+                            <h2>Showcasing Engineering Mastery</h2>
                             <div className={styles.articleDivider} />
                         </div>
 
                         <div className={styles.seoArticleBody}>
                             <p className={styles.articleLead}>
-                                Each of our <strong>Industrial Roofing Projects in Navi Mumbai</strong> represents a milestone. Navi Mumbai requires <strong>Industrial Roofing Projects in Navi Mumbai</strong> that are resilient. We deliver <strong>Industrial Roofing Projects in Navi Mumbai</strong> that integrate technical superiority. Every <strong>Industrial Roofing Projects in Navi Mumbai</strong> stands as a symbol of engineering.
+                                Each of our <strong>Industrial Roofing Projects in Navi Mumbai</strong> represents a milestone in technical mastery. Industrial zones require resilient solutions that integrate technical superiority with aesthetic appeal.
                             </p>
 
                             <div className={styles.articleGrid}>
                                 <div className={styles.articleCard}>
-                                    <h3>Resilience in Industrial Roofing Projects in Navi Mumbai</h3>
+                                    <h3>Durability & Resilience</h3>
                                     <p>
-                                        Executing <strong>Industrial Roofing Projects in Navi Mumbai</strong> requires understanding environmental stressors. Our <strong>Industrial Roofing Projects in Navi Mumbai</strong> utilize premium materials. By focusing on durability, our <strong>Industrial Roofing Projects in Navi Mumbai</strong> provide peace of mind. Every <strong>Industrial Roofing Projects in Navi Mumbai</strong> is built to last.
+                                        Executing large-scale works requires understanding environmental stressors. Our implementations utilize premium materials to provide peace of mind and long-term durability.
                                     </p>
                                 </div>
                                 <div className={styles.articleCard}>
-                                    <h3>Precision in Industrial Roofing Projects in Navi Mumbai</h3>
+                                    <h3>Technical Precision</h3>
                                     <p>
-                                        The scale of <strong>Industrial Roofing Projects in Navi Mumbai</strong> demands expertise. Whether it is a hub for <strong>Industrial Roofing Projects in Navi Mumbai</strong> or retrofitting, we manage it. Our <strong>Industrial Roofing Projects in Navi Mumbai</strong> are known for integrity. We ensure <strong>Industrial Roofing Projects in Navi Mumbai</strong> are safe and efficient.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className={styles.articleDetailedText}>
-                                <h3>Portfolio of Industrial Roofing Projects in Navi Mumbai</h3>
-                                <p>
-                                    Our track record in <strong>Industrial Roofing Projects in Navi Mumbai</strong> includes pharma and chemical plants. Each <strong>Industrial Roofing Projects in Navi Mumbai</strong> starts with site analysis. These <strong>Industrial Roofing Projects in Navi Mumbai</strong> highlight our expertise. Choosing us for <strong>Industrial Roofing Projects in Navi Mumbai</strong> means partnering with experts.
-                                </p>
-
-                                <h3>Skyline of Industrial Roofing Projects in Navi Mumbai</h3>
-                                <p>
-                                    Every one of our <strong>Industrial Roofing Projects in Navi Mumbai</strong> contributes to modernization. We offered consultation for <strong>Industrial Roofing Projects in Navi Mumbai</strong> that adds value. Our <strong>Industrial Roofing Projects in Navi Mumbai</strong> are optimized for efficiency. This focus is why our <strong>Industrial Roofing Projects in Navi Mumbai</strong> are highly regarded.
-                                </p>
-
-                                <h3>Quality in Industrial Roofing Projects in Navi Mumbai</h3>
-                                <p>
-                                    Success in <strong>Industrial Roofing Projects in Navi Mumbai</strong> is rooted in quality. We investigate every nuance of <strong>Industrial Roofing Projects in Navi Mumbai</strong> construction. Our teams ensure all <strong>Industrial Roofing Projects in Navi Mumbai</strong> are on time. Our gallery shows the standard of <strong>Industrial Roofing Projects in Navi Mumbai</strong> excellence.
-                                </p>
-
-                                <div className={styles.articleFooter}>
-                                    <h3>Start Your Industrial Roofing Projects in Navi Mumbai</h3>
-                                    <p>
-                                        Planning <strong>Industrial Roofing Projects in Navi Mumbai</strong>? Our documented <strong>Industrial Roofing Projects in Navi Mumbai</strong> serve as a benchmark. Let our expertise in <strong>Industrial Roofing Projects in Navi Mumbai</strong> guide you. Contact Zinco for your next <strong>Industrial Roofing Projects in Navi Mumbai</strong> masterpiece.
+                                        The scale of industrial shed construction demands expertise. Whether it is a new hub or retrofitting, we manage it with integrity and a focus on efficiency.
                                     </p>
                                 </div>
                             </div>

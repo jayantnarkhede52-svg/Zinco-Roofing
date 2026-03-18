@@ -1,5 +1,5 @@
 export const CONTACT_INFO = {
-    address: "Shop Number 22, Elite Complex Lodha Heaven, Kalyan - Shilphata Rd, Dombivli, Maharashtra 421204",
+    address: "Zinco Roofing Solution, Shop Number 22, Elite Complex Lodha Heaven, Kalyan - Shilphata Rd, Dombivli, Maharashtra 421204",
     phones: ["9967203090", "7208519692"],
     email: "info.zincoroof@gmail.com",
     gstin: "27EUQPS0801H1ZD",

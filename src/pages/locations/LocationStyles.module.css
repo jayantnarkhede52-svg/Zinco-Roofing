@@ -152,40 +152,52 @@
     transform: translateY(-2px);
 }
 
-@media (max-width: 768px) {
-    .container {
-        padding: 0 var(--spacing-lg);
-    }
+.desktopOnly {
+    display: block;
+}
 
-    .hero {
-        height: auto;
-        padding: var(--spacing-4xl) 0;
-        background-attachment: scroll;
-    }
+.mobileOnly {
+    display: none;
+}
 
-    .technicalSection {
-        padding: var(--spacing-2xl) var(--spacing-lg);
-    }
+/* Mobile Highlights Styles for Location Pages */
+.mobileHighlightsGrid {
+    display: grid;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg) 0;
+    margin-bottom: var(--spacing-2xl);
+}
 
-    .ctaButtons {
-        flex-direction: column;
-        padding: 0 var(--spacing-xl);
-        align-items: center;
-    }
+.mobileHighlightCard {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-2xl);
+    border: 1px solid var(--gray-200);
+    box-shadow: var(--shadow-md);
+    text-align: left;
+}
 
-    .twoColumn {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-xl);
-    }
+.mobileHighlightCard h3 {
+    font-size: var(--text-lg);
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-xs);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
 
-    .imageBlock {
-        order: -1;
-    }
+.mobileHighlightCard p {
+    font-size: var(--text-md);
+    color: var(--text-secondary);
+    line-height: 1.5;
 }
 
 .locationPage {
     background: var(--bg-primary);
     min-height: 100vh;
+    padding-top: 80px; /* Offset for fixed navbar */
 }
 
 .hero {
@@ -510,6 +522,63 @@
     display: flex;
     align-items: center;
     gap: var(--spacing-xs);
+}
+
+/* Responsive Styles - Media Queries ALWAYS at the bottom */
+@media (max-width: 768px) {
+    .desktopOnly {
+        display: none !important;
+    }
+
+    .mobileOnly {
+        display: block !important;
+    }
+
+    .locationPage {
+        padding-top: 70px;
+    }
+
+    .container {
+        padding: 0 var(--spacing-lg);
+    }
+
+    .hero {
+        height: auto;
+        min-height: 400px;
+        padding: var(--spacing-4xl) 0;
+        background-attachment: scroll;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .mainContent {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .twoColumn {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .imageBlock {
+        order: -1;
+    }
+
+    .technicalSection {
+        padding: var(--spacing-2xl) var(--spacing-lg);
+    }
+
+    .ctaButtons {
+        flex-direction: column;
+        padding: 0 var(--spacing-xl);
+        align-items: center;
+    }
+
+    .ctaContent h2 {
+        font-size: 1.8rem;
+    }
 }
 
 @media (max-width: 640px) {

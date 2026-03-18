@@ -2,7 +2,81 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import PropTypes from 'prop-types';
 
-const SEO = ({ title, description, keywords, canonicalUrl }) => {
+const SEO = ({ title, description, keywords, canonicalUrl, schema }) => {
+    const address = {
+        "@type": "PostalAddress",
+        "streetAddress": "Shop Number 22, Elite Complex Lodha Heaven, Kalyan - Shilphata Rd",
+        "addressLocality": "Dombivli",
+        "addressRegion": "Maharashtra",
+        "postalCode": "421204",
+        "addressCountry": "IN"
+    };
+
+    const defaultSchema = {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Zinco Roofing Solution",
+        "image": "https://zincoroof.com/logo.webp",
+        "@id": "https://zincoroof.com",
+        "url": "https://zincoroof.com",
+        "telephone": "+919967203090",
+        "priceRange": "₹₹₹",
+        "address": address,
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 19.166111,
+            "longitude": 73.073611
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+            ],
+            "opens": "09:00",
+            "closes": "19:00"
+        }
+    };
+
+    // Generate BreadcrumbList Schema if we are not on the home page
+    const getBreadcrumbSchema = () => {
+        if (typeof window === 'undefined') return null;
+        
+        const pathnames = window.location.pathname.split('/').filter(x => x);
+        if (pathnames.length === 0) return null;
+
+        const items = [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://zincoroof.com"
+            }
+        ];
+
+        pathnames.forEach((path, index) => {
+            const url = `https://zincoroof.com/${pathnames.slice(0, index + 1).join('/')}`;
+            items.push({
+                "@type": "ListItem",
+                "position": index + 2,
+                "name": path.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
+                "item": url
+            });
+        });
+
+        return {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": items
+        };
+    };
+
+    const breadcrumbSchema = getBreadcrumbSchema();
+
     return (
         <Helmet>
             {/* Standard Metadata */}
@@ -24,42 +98,13 @@ const SEO = ({ title, description, keywords, canonicalUrl }) => {
 
             {/* Schema Markup */}
             <script type="application/ld+json">
-                {JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "LocalBusiness",
-                    "name": "Zinco Roofing Solution",
-                    "image": "https://zincoroof.com/logo.webp",
-                    "@id": "https://zincoroof.com",
-                    "url": "https://zincoroof.com",
-                    "telephone": "+919967203090",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "Industrial Hub",
-                        "addressLocality": "Navi Mumbai",
-                        "addressRegion": "Maharashtra",
-                        "postalCode": "410208",
-                        "addressCountry": "IN"
-                    },
-                    "geo": {
-                        "@type": "GeoCoordinates",
-                        "latitude": 19.166111,
-                        "longitude": 73.073611
-                    },
-                    "openingHoursSpecification": {
-                        "@type": "OpeningHoursSpecification",
-                        "dayOfWeek": [
-                            "Monday",
-                            "Tuesday",
-                            "Wednesday",
-                            "Thursday",
-                            "Friday",
-                            "Saturday"
-                        ],
-                        "opens": "09:00",
-                        "closes": "19:00"
-                    }
-                })}
+                {JSON.stringify(schema || defaultSchema)}
             </script>
+            {breadcrumbSchema && (
+                <script type="application/ld+json">
+                    {JSON.stringify(breadcrumbSchema)}
+                </script>
+            )}
         </Helmet>
     );
 };
@@ -68,7 +113,8 @@ SEO.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     keywords: PropTypes.string,
-    canonicalUrl: PropTypes.string
+    canonicalUrl: PropTypes.string,
+    schema: PropTypes.object
 };
 
 export default SEO;

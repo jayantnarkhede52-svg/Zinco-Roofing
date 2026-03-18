@@ -28,6 +28,97 @@
     color: var(--gray-400);
 }
 
+.urgentServicesSection {
+    padding: var(--spacing-4xl) 0;
+    background: var(--bg-primary);
+}
+
+.urgentHeader {
+    text-align: center;
+    margin-bottom: var(--spacing-3xl);
+}
+
+.urgentHeader span {
+    color: var(--accent-500);
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    font-size: var(--text-sm);
+}
+
+.urgentHeader h2 {
+    font-size: var(--text-3xl);
+    color: var(--text-primary);
+    font-weight: 800;
+    margin-top: var(--spacing-xs);
+}
+
+.urgentGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+.urgentCard {
+    background: var(--surface);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--gray-200);
+    text-decoration: none;
+    transition: all 0.3s var(--transition-base);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.urgentCard:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-500);
+    box-shadow: var(--shadow-xl);
+}
+
+.urgentCard h3 {
+    color: var(--text-primary);
+    font-size: var(--text-xl);
+    font-weight: 800;
+    margin: 0;
+}
+
+.urgentCard p {
+    color: var(--text-secondary);
+    font-size: var(--text-base);
+    margin: 0;
+}
+
+.more {
+    color: var(--accent-600);
+    font-weight: 700;
+    font-size: var(--text-sm);
+    margin-top: var(--spacing-sm);
+}
+
+.seoContentSection {
+    padding: var(--spacing-5xl) 0;
+    background: var(--bg-secondary);
+}
+
+.seoContentSection h2 {
+    font-size: var(--text-3xl);
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-primary);
+    font-weight: 800;
+    text-align: center;
+}
+
+.seoContentSection p {
+    font-size: var(--text-lg);
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-lg);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Below-fold sections: skip rendering until scrolled into view */
 .belowFold {
     content-visibility: auto;

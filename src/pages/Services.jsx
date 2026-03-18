@@ -50,6 +50,33 @@ const Services = () => {
         }
     ];
 
+    const specializedServices = [
+        {
+            title: 'Roof Leak Repair',
+            desc: 'Immediate crack sealing and leak prevention for industrial sheds.',
+            path: '/services/industrial-roof-leak-repair',
+            icon: <FaShieldAlt />
+        },
+        {
+            title: 'PEB Fabrication',
+            desc: 'Precision engineering for pre-engineered industrial buildings.',
+            path: '/services/peb-structure-fabrication',
+            icon: <FaIndustry />
+        },
+        {
+            title: 'Warehouse Roofing',
+            desc: 'Large-scale roofing solutions for logistics and storage hubs.',
+            path: '/services/warehouse-roofing-solutions',
+            icon: <FaLayerGroup />
+        },
+        {
+            title: 'Metal Installation',
+            desc: 'Expert sheet fixing and structural roof erection services.',
+            path: '/services/metal-roof-installation',
+            icon: <FaTools />
+        }
+    ];
+
     const handleCategoryClick = (category) => {
         if (category.directPath) {
             navigate(category.directPath);
@@ -186,6 +213,37 @@ const Services = () => {
                     </section>
                 ))}
             </div>
+
+            <section className={styles.specializedGridSection}>
+                <div className={styles.container}>
+                    <div className={styles.categoryHeader}>
+                        <span>HIGH-INTENT SOLUTIONS</span>
+                        <h2>Specialized Industrial Roofing Services</h2>
+                        <div className={styles.headerUnderline} />
+                    </div>
+                    <div className={styles.categoryGrid}>
+                        {specializedServices.map((service, index) => (
+                            <div
+                                key={service.title}
+                                className={styles.cardWrapper}
+                                onClick={() => navigate(service.path)}
+                            >
+                                <Card variant="glass" className={styles.categoryCard}>
+                                    <div className={styles.cardIcon}>{service.icon}</div>
+                                    <div className={styles.cardContent}>
+                                        <h3>{service.title}</h3>
+                                        <p>{service.desc}</p>
+                                    </div>
+                                    <div className={styles.cardFooter}>
+                                        <span>View Case Studies</span>
+                                        <span className={styles.arrow}>→</span>
+                                    </div>
+                                </Card>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
 
             <section className={styles.categorySection}>
                 <div className={styles.container}>

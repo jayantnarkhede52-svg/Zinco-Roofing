@@ -431,11 +431,80 @@
     transform: scale(1.02);
 }
 
+.desktopOnly {
+    display: block;
+}
+
+.mobileOnly {
+    display: none;
+}
+
+/* Mobile Highlights Styles */
+.mobileHighlightsGrid {
+    display: grid;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg) var(--spacing-md);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.mobileHighlightCard {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-2xl);
+    border: 1px solid var(--gray-200);
+    box-shadow: var(--shadow-md);
+    text-align: left;
+}
+
+.mobileHighlightCard h3 {
+    font-size: var(--text-lg);
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-xs);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.mobileHighlightCard p {
+    font-size: var(--text-md);
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
 @media (max-width: 768px) {
+    .desktopOnly {
+        display: none;
+    }
+
+    .mobileOnly {
+        display: block;
+    }
+
+    .projectsGrid {
+        grid-template-columns: 1fr;
+        padding: var(--spacing-md) var(--spacing-xs);
+        gap: var(--spacing-lg);
+    }
+
+    .projectCard {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .projectTitle {
+        font-size: var(--text-lg);
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .infoFooter {
+        padding-top: var(--spacing-sm);
+    }
+
     .introText {
         font-size: var(--text-lg);
         padding: 0 var(--spacing-xs);
-        /* Reduced from var(--spacing-md) */
         width: 100%;
     }
 
@@ -451,10 +520,19 @@
         right: -10px;
     }
 
+    .hero h1 {
+        font-size: var(--text-2xl);
+        padding: 0 var(--spacing-sm);
+    }
+
+    .hero p {
+        font-size: var(--text-md);
+        padding: 0 var(--spacing-md);
+    }
+
     .narrativeSection,
     .introSection {
         padding: var(--spacing-xl) 0;
-        /* Removed horizontal padding to rely on parent container */
         max-width: 100%;
         margin-left: 0;
         margin-right: 0;
@@ -479,13 +557,5 @@
     .productShowcase {
         padding: var(--spacing-md);
         margin: var(--spacing-2xl) 0;
-    }
-
-    .hero h1 {
-        font-size: var(--text-3xl);
-    }
-
-    .hero p {
-        font-size: var(--text-lg);
     }
 }

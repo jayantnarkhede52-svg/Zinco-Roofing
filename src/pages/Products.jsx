@@ -38,11 +38,12 @@ const Products = () => {
             icon: <FaIndustry />,
             image: metalFeatured,
             description: 'Premium colour coated, decking, and metal roofing profiles.',
+            relatedService: { label: 'Fixed Price Metal Installation', path: '/services/metal-roof-installation' },
             items: [
                 {
                     id: 'colour-coated-sheet',
                     title: 'Colour Coated Sheet',
-                    description: 'Premium trapezoidal and corrugated profiles for aesthetic and durable roofing.',
+                    description: 'Premium trapezoidal and corrugated profiles for aesthetic metal roofing installation and durability.',
                     icon: '🏠',
                     path: '/products/roofing-metal-sheets'
                 },
@@ -57,7 +58,7 @@ const Products = () => {
                 {
                     id: 'shingles',
                     title: 'Shingles',
-                    description: 'High-end architectural shingles for superior aesthetics and weather protection.',
+                    description: 'High-end architectural shingles for superior aesthetics, weather protection, and shingle roof repair solutions.',
                     icon: '🧱',
                     path: '/products/shingles'
                 },
@@ -82,6 +83,7 @@ const Products = () => {
             icon: <FaTemperatureHigh />,
             image: pufFeatured,
             description: 'Advanced thermal and acoustic insulation panels for efficiency.',
+            relatedService: { label: 'Expert PEB & Panel Fabrication', path: '/services/peb-structure-fabrication' },
             items: [
                 {
                     id: 'puf-roof-panel',
@@ -100,7 +102,7 @@ const Products = () => {
                 {
                     id: 'aerolam-sheet',
                     title: 'Aerolam Sheet',
-                    description: 'Innovative thermal insulation sheets for moisture and heat control.',
+                    description: 'Innovative thermal insulation and waterproofing roof service sheets for moisture and heat control.',
                     icon: '✨',
                     path: '/products/aerolam-sheet'
                 }
@@ -160,7 +162,7 @@ const Products = () => {
         {
             title: 'Industrial / Structural Painting',
             icon: <FaPaintRoller />,
-            description: 'Professional industrial and structural painting services for protection.',
+            description: 'Professional industrial and structural painting services including terrace waterproofing for long-term protection.',
             directPath: '/products/structural-painting'
         },
         {
@@ -198,11 +200,12 @@ const Products = () => {
                 {
                     id: 'peb-fabrication',
                     title: 'PEB Solutions',
-                    description: 'Complete pre-engineered building structures and designs.',
-                    icon: '🏭',
+                    description: 'Complete pre-engineered building structures and designs by professional commercial roofing contractors.',
+                    image: polyFeatured,
                     path: '/products/peb-fabrication'
                 }
-            ]
+            ],
+            relatedService: { label: 'Industrial Shed Solutions', path: '/services/warehouse-roofing-solutions' }
         }
     ];
 
@@ -229,6 +232,31 @@ const Products = () => {
         }
     };
 
+    const productSchema = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Metal Roofing Sheets",
+                "url": "https://zincoroof.com/products/roofing-metal-sheets"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "PUF Insulated Panels",
+                "url": "https://zincoroof.com/products/insulated-sheets"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Polycarbonate Sheets",
+                "url": "https://zincoroof.com/products/polycarbonate-sheets"
+            }
+        ]
+    };
+
     return (
         <div className={styles.productsPage}>
             <SEO
@@ -236,6 +264,7 @@ const Products = () => {
                 description="Explore top-quality Premium Roofing Sheets in Navi Mumbai. Zinco Roofing offers durable, weather-resistant Premium Roofing Sheets in Navi Mumbai for industries."
                 keywords="Premium Roofing Sheets in Navi Mumbai, metal roofing sheets navi mumbai, premium roofing sheets in navi mumbai, roofing solutions navi mumbai"
                 canonicalUrl="https://zincoroof.com/premium-roofing-sheets-navi-mumbai"
+                schema={productSchema}
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} fetchpriority="high" />
@@ -321,6 +350,11 @@ const Products = () => {
                                         <FaArrowLeft /> Back to Categories
                                     </button>
                                     <h2>{currentGroup.title}</h2>
+                                    {currentGroup.relatedService && (
+                                        <Link to={currentGroup.relatedService.path} className={styles.relatedServiceBadge}>
+                                            <FaShieldAlt /> {currentGroup.relatedService.label} Available →
+                                        </Link>
+                                    )}
                                 </div>
                                 <div className={styles.categoriesGrid}>
                                     {currentGroup.items.map((item, index) => (

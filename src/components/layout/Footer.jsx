@@ -116,6 +116,10 @@ const Footer = () => {
                                 <FaEnvelope />
                                 <span>{CONTACT_INFO.email}</span>
                             </a>
+                            <div className={styles.contactItem}>
+                                <FaMapMarkerAlt />
+                                <span>{CONTACT_INFO.address}</span>
+                            </div>
                         </div>
 
                         <div className={styles.serviceAreas}>

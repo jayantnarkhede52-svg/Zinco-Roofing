@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import { FaWarehouse, FaShieldAlt, FaTools, FaCheckCircle } from 'react-icons/fa';
 import SEO from '../../components/shared/SEO';
+import LocationMap from '../../components/shared/LocationMap';
 import heroImage from '../../assets/img3.webp';
 import panvelImg1 from '../../assets/Metal roofing images/Metal roofing images/1000014010.webp';
 import panvelImg2 from '../../assets/Puf panel images/Puf panel images/1000014252.webp';
@@ -14,12 +15,30 @@ import LocationServiceCards from '../../components/shared/LocationServiceCards';
 import AreaLinks from '../../components/shared/AreaLinks';
 
 const PanvelRoofing = () => {
+    const mobileHighlights = [
+        {
+            title: "Logistics Specialist",
+            desc: "Expert structural solutions for Panvel's massive warehousing hubs.",
+            icon: <FaWarehouse />
+        },
+        {
+            title: "Industrial Panels",
+            desc: "High-span metal roofing and PUF panels for logistics parks.",
+            icon: <FaShieldAlt />
+        },
+        {
+            title: "Expert Assembly",
+            desc: "Rapid on-site installation with precision engineering and safety.",
+            icon: <FaTools />
+        }
+    ];
+
     return (
         <div className={styles.locationPage}>
             <SEO
-                title="Roofing Contractor in Panvel | Industrial Roofing Panvel Specialist"
-                description="Expert roofing contractor in panvel solutions. Specializing in high-span warehouse roofing, factory sheds, and PUF panels for Panvel's logistics hubs."
-                keywords="roofing contractor in panvel, industrial roofing panvel, roofing sheets panvel"
+                title="Industrial Roofing Specialist in Panvel | Logistics Infrastructure"
+                description="Expert structural fabrication and industrial roofing service in Panvel. Specializing in high-span warehouse roofing, factory sheds, and PUF panels."
+                keywords="industrial roofing specialist panvel, logistics infrastructure mumbai, roofing sheets panvel, factory shed contractors"
                 canonicalUrl="https://zincoroof.com/roofing-contractor-in-panvel"
             />
             <Helmet>
@@ -35,8 +54,8 @@ const PanvelRoofing = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h1>roofing contractor in panvel</h1>
-                        <p>Providing specialized structural solutions and high-performance metal panels as the premier <strong>roofing contractor in panvel</strong> for massive infrastructure.</p>
+                        <h1>Industrial Roofing Specialist in Panvel</h1>
+                        <p>Providing specialized structural solutions and high-performance metal panels as the premier <strong>Industrial Roofing Specialist in Panvel</strong> for massive projects.</p>
                         <div className={styles.heroButtons}>
                             <Link to="/products" className={styles.heroBtn}>Explore Our Products</Link>
                         </div>
@@ -46,8 +65,27 @@ const PanvelRoofing = () => {
 
             <div className={styles.container}>
                 <main className={styles.mainContent}>
+                    {/* Mobile Only Highlights */}
+                    <section className={styles.mobileOnly}>
+                        <div className={styles.mobileHighlightsGrid}>
+                            {mobileHighlights.map((item, idx) => (
+                                <motion.div 
+                                    key={idx}
+                                    className={styles.mobileHighlightCard}
+                                    initial={{ opacity: 0, x: -20 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ delay: idx * 0.1 }}
+                                    viewport={{ once: true }}
+                                >
+                                    <h3>{item.icon} {item.title}</h3>
+                                    <p>{item.desc}</p>
+                                </motion.div>
+                            ))}
+                        </div>
+                    </section>
+
                     <motion.section 
-                        className={styles.introSection}
+                        className={`${styles.introSection} ${styles.desktopOnly}`}
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
@@ -58,20 +96,20 @@ const PanvelRoofing = () => {
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
                         >
-                            Professional roofing contractor in panvel
+                            Professional Structural Engineering in Panvel
                         </motion.h2>
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                         >
-                            Panvel requires a specialized <strong>roofing contractor in panvel</strong> for its massive warehousing and industrial hubs. As a reliable <strong>roofing contractor in panvel</strong>, Zinco Roofing Solution understands high-span structures.
+                            Panvel requires a specialized <strong>Industrial Roofing Specialist in Panvel</strong> for its massive warehousing and industrial hubs. As a reliable engineering team, Zinco Roofing Solution understands high-span structures.
                         </motion.p>
                         <p>
-                            Logistics facility managers look for a reliable <strong>roofing contractor in panvel</strong>. By hiring an established <strong>roofing contractor in panvel</strong>, you invest in quality. As a <strong>roofing contractor in panvel</strong>, we deliver engineering excellence across the city.
+                            Logistics facility managers look for reliable partners. By hiring an established <strong>Industrial Roofing Specialist in Panvel</strong>, you invest in quality. As a dedicated provider, we deliver engineering excellence across the city.
                         </p>
                         <p>
-                            When searching for quality, every <strong>roofing contractor in panvel</strong> knows that strength is the cornerstone. We are dedicated to providing superior results as the top <strong>roofing contractor in panvel</strong>. Reach out for site audits as a leading <strong>roofing contractor in panvel</strong>.
+                            When searching for quality, every expert knows that strength is the cornerstone. We are dedicated to providing superior results as the top <strong>Industrial Roofing Specialist in Panvel</strong>. Reach out for site audits today.
                         </p>
                     </motion.section>
 
@@ -86,19 +124,19 @@ const PanvelRoofing = () => {
                         transition={{ duration: 0.6 }}
                     >
                         <div className={styles.textContent}>
-                            <h2>Strategic roofing contractor in panvel Excellence</h2>
+                            <h2>Strategic Industrial Roofing Specialist in Panvel</h2>
                             <p>
-                                <strong>Roofing contractor in panvel</strong> services face unique challenges like high wind speeds. As dedicated providers from a <strong>roofing contractor in panvel</strong> perspective, we utilize specialized fasteners.
+                                <strong>Industrial Roofing Specialist in Panvel</strong> services face unique challenges like high wind speeds. As dedicated providers, we utilize specialized fasteners for better stability.
                             </p>
                             <p>
-                                Our reputation for quality <strong>roofing contractor in panvel</strong> is built on structural speed. When you collaborate with a <strong>roofing contractor in panvel</strong>, you benefit from designs tested for extreme rainfall.
+                                Our reputation for quality is built on structural speed. When you collaborate with <strong>our team</strong>, you benefit from designs tested for extreme rainfall.
                             </p>
                             <p>
-                                We are the leaders in providing installations as a <strong>roofing contractor in panvel</strong> without sacrificing quality. Choose our expert <strong>roofing contractor in panvel</strong> services for your next unit.
+                                We are the leaders in providing installations without sacrificing quality. Choose our expert <strong>Industrial Roofing Specialist in Panvel</strong> for your next unit.
                             </p>
                         </div>
                         <div className={styles.imageBlock}>
-                            <img src={panvelImg1} alt="roofing contractor in panvel warehouse construction" loading="lazy" />
+                            <img src={panvelImg1} alt="Industrial Warehouse Construction Panvel" loading="lazy" />
                         </div>
                     </motion.section>
 
@@ -110,66 +148,18 @@ const PanvelRoofing = () => {
                         transition={{ duration: 0.6 }}
                     >
                         <div className={styles.imageBlock}>
-                            <img src={panvelImg2} alt="roofing contractor in panvel insulation" loading="lazy" />
+                            <img src={panvelImg2} alt="Thermal Insulation Solutions" loading="lazy" />
                         </div>
                         <div className={styles.textContent}>
-                            <h2>Energy efficiency from roofing contractor in panvel</h2>
+                            <h2>Energy efficiency from an Industrial Roofing Specialist in Panvel</h2>
                             <p>
-                                Temperature regulation is essential. We deliver energy-efficient panels from a <strong>roofing contractor in panvel</strong> that reduce operational costs. When consulting with a <strong>roofing contractor in panvel</strong>, we focus on insulation quality.
+                                Temperature regulation is essential. We deliver energy-efficient panels that reduce operational costs. When consulting with an <strong>Industrial Roofing Specialist in Panvel</strong>, we focus on insulation quality.
                             </p>
                             <p>
-                                As a versatile <strong>roofing contractor in panvel</strong> partner, we handle custom specifications for safer long-term use.
+                                As a versatile structural partner, we handle custom specifications for safer long-term use.
                             </p>
                             <p>
-                                Trust our professional <strong>roofing contractor in panvel</strong> site audits. We offer modular solutions that prioritize durability as a reliable <strong>roofing contractor in panvel</strong>.
-                            </p>
-                        </div>
-                    </motion.section>
-
-                    <motion.section 
-                        className={styles.twoColumn}
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6 }}
-                    >
-                        <div className={styles.textContent}>
-                            <h2>Reliable roofing contractor in panvel</h2>
-                            <p>
-                                From design to completion, we excel as a <strong>roofing contractor in panvel</strong> specialist. Choosing an expert <strong>roofing contractor in panvel</strong> ensures project speed and integrity.
-                            </p>
-                            <p>
-                                Whether you need a workshop or a plant, as a <strong>roofing contractor in panvel</strong> partner, we prioritize longevity.
-                            </p>
-                            <p>
-                                Contact us for premium <strong>roofing contractor in panvel</strong> services. We are your partner for structural excellence in <strong>roofing contractor in panvel</strong>.
-                            </p>
-                        </div>
-                        <div className={styles.imageBlock}>
-                            <img src={panvelImg3} alt="roofing contractor in panvel fabrication" loading="lazy" />
-                        </div>
-                    </motion.section>
-
-                    <motion.section 
-                        className={styles.twoColumn}
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6 }}
-                    >
-                        <div className={styles.imageBlock}>
-                            <img src={panvelImg4} alt="roofing contractor in panvel logistics" loading="lazy" />
-                        </div>
-                        <div className={styles.textContent}>
-                            <h2>Logistics solutions by roofing contractor in panvel</h2>
-                            <p>
-                                Temperature-controlled logistics require <strong>roofing contractor in panvel</strong> expertise. Our systems provide maximum protection as a <strong>roofing contractor in panvel</strong> specialist.
-                            </p>
-                            <p>
-                                We offer structural fabrication using insulated panels as a <strong>roofing contractor in panvel</strong>. Experience the most reliable results with a top <strong>roofing contractor in panvel</strong>.
-                            </p>
-                            <p>
-                                Logistics hubs depend on a specialized <strong>roofing contractor in panvel</strong>. As a provider from a <strong>roofing contractor in panvel</strong> background, we deliver safety. Choose our expert <strong>roofing contractor in panvel</strong> services today.
+                                Trust our professional site audits. We offer modular solutions that prioritize durability as a reliable <strong>Industrial Roofing Specialist in Panvel</strong>.
                             </p>
                         </div>
                     </motion.section>
@@ -182,25 +172,22 @@ const PanvelRoofing = () => {
                         transition={{ duration: 0.6 }}
                     >
                         <div className={styles.textContent}>
-                            <h2>Maintenance by roofing contractor in panvel</h2>
+                            <h2>Reliable Shed Engineering</h2>
                             <p>
-                                Zinco provides specialized services as a <strong>roofing contractor in panvel</strong>. Protecting property is vital as a <strong>roofing contractor in panvel</strong> specialist for maintaining value.
+                                From design to completion, we excel as a <strong>Structural Specialist</strong>. Choosing an <strong>Industrial Roofing Specialist in Panvel</strong> ensures project speed and integrity.
                             </p>
                             <p>
-                                We offer protective finishes as a <strong>roofing contractor in panvel</strong>, preventing corrosion. Rely on us for <strong>roofing contractor in panvel</strong> maintenance solutions that are long-lasting.
-                            </p>
-                            <p>
-                                Get a professional quote today and protect your investment with a leading <strong>roofing contractor in panvel</strong>.
+                                Whether you need a workshop or a plant, as a <strong>dedicated partner</strong>, we prioritize longevity in all our developments.
                             </p>
                         </div>
                         <div className={styles.imageBlock}>
-                            <img src={panvelImg5} alt="roofing contractor in panvel facility maintenance" loading="lazy" />
+                            <img src={panvelImg3} alt="Industrial Shed Fabrication" loading="lazy" />
                         </div>
                     </motion.section>
 
                     {/* Technical Specification Section */}
-                    <section className={`${styles.technicalSection} ${styles.darkMode}`}>
-                        <h2>Technical Standards for roofing contractor in panvel</h2>
+                    <section className={`${styles.technicalSection} ${styles.darkMode} ${styles.desktopOnly}`}>
+                        <h2>Technical Standards for Logistics Mastery</h2>
                         <div className={styles.tableWrapper}>
                             <table className={styles.techTable}>
                                 <thead>
@@ -244,9 +231,9 @@ const PanvelRoofing = () => {
                     {/* Maintenance Section */}
                     <section className={styles.maintenanceSection}>
                         <div className={styles.infoCard}>
-                            <h3>Advice from a roofing contractor in panvel</h3>
+                            <h3>Advice from an Industrial Roofing Specialist in Panvel</h3>
                             <p>
-                                As a proactive <strong>roofing contractor in panvel</strong>, we recommend regular site audits to prevent water damage to your industrial assets.
+                                As a proactive <strong>Industrial Roofing Specialist in Panvel</strong>, we recommend regular site audits to prevent water damage to your industrial assets.
                             </p>
                             <div className={styles.maintenanceGrid}>
                                 <div className={styles.mItem}>
@@ -267,23 +254,19 @@ const PanvelRoofing = () => {
 
                     {/* FAQ Section */}
                     <section className={styles.faqSection}>
-                        <h2>FAQs for roofing contractor in panvel</h2>
+                        <h2>FAQs for an Industrial Roofing Specialist in Panvel</h2>
                         <div className={styles.faqGrid}>
                             <div className={styles.faqItem}>
-                                <h3>Why choose Zinco as your roofing contractor in panvel?</h3>
+                                <h3>Why choose Zinco for Panvel projects?</h3>
                                 <p>Our specialization in high-span warehousing and industrial sheds makes us the preferred regional partner.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h3>Does a roofing contractor in panvel handle logistics parks?</h3>
-                                <p>Yes, we are the trusted experts for massive warehousing projects in the area.</p>
+                                <h3>Do you handle logistics parks?</h3>
+                                <p>Yes, we are the trusted experts for massive warehousing projects in the Panvel area.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h3>Can a roofing contractor in panvel assist with retrofitting?</h3>
-                                <p>Absolutely. As experts specialists, we handle structural replacement for old sheds.</p>
-                            </div>
-                            <div className={styles.faqItem}>
-                                <h3>Benefit of a premium roofing contractor in panvel?</h3>
-                                <p>Hiring authorized contractors like Zinco ensures structural safety and insurance.</p>
+                                <h3>Can you assist with retrofitting?</h3>
+                                <p>Absolutely. As experts specialists, we handle structural replacement and modernization for old sheds.</p>
                             </div>
                         </div>
                     </section>
@@ -293,8 +276,8 @@ const PanvelRoofing = () => {
                     {/* Final CTA */}
                     <section className={styles.ctaSection}>
                         <div className={styles.ctaContent}>
-                            <h2>Partner with the Best roofing contractor in panvel</h2>
-                            <p>Secure your logistics asset with expert <strong>roofing contractor in panvel</strong> engineering. Our team is ready for your site audit.</p>
+                            <h2>Partner with the Best Industrial Roofing Specialist in Panvel</h2>
+                            <p>Secure your logistics asset with expert engineering. Our team is ready for your site audit.</p>
                             <div className={styles.ctaButtons}>
                                 <Link to="/contact#contact-form" className={styles.primaryBtn}>Request a Technical Audit</Link>
                                 <button className={styles.secondaryBtn}>View Our Projects</button>
@@ -303,6 +286,7 @@ const PanvelRoofing = () => {
                     </section>
                 </main>
             </div>
+            <LocationMap title="Panvel" query="Panvel, Navi Mumbai" />
         </div>
     );
 };

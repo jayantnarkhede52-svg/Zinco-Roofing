@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://zincoroofing.com/sitemap.xml
+Sitemap: https://zincoroof.com/sitemap.xml

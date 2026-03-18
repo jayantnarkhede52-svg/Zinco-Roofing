@@ -40,6 +40,7 @@ import StructuralPainting from './pages/products/StructuralPainting';
 import SolarInstallation from './pages/products/SolarInstallation';
 
 // Location SEO Pages
+import WaterproofingNaviMumbai from './pages/locations/WaterproofingNaviMumbai';
 import MumbaiRoofing from './pages/locations/MumbaiRoofing';
 import PanvelRoofing from './pages/locations/PanvelRoofing';
 import ThaneRoofing from './pages/locations/ThaneRoofing';
@@ -56,9 +57,17 @@ import RoofingCostCalculator from './pages/RoofingCostCalculator';
 import AdminDashboard from './pages/AdminDashboard';
 import AdminLogin from './pages/AdminLogin';
 
+// New Service Landing Pages
+import RoofLeakRepairService from './pages/services/RoofLeakRepair';
+import PEBFabricationService from './pages/services/PEBFabrication';
+import WarehouseRoofingService from './pages/services/WarehouseRoofing';
+import MetalRoofInstallationService from './pages/services/MetalRoofInstallation';
+
 // Lazy-load Chatbot & WhatsApp (non-critical floating UI)
 const Chatbot = lazy(() => import('./components/shared/Chatbot'));
 const WhatsAppButton = lazy(() => import('./components/shared/WhatsAppButton'));
+const BackButton = lazy(() => import('./components/shared/BackButton'));
+const Breadcrumbs = lazy(() => import('./components/shared/Breadcrumbs'));
 
 // Loading component
 const PageLoader = () => (
@@ -109,7 +118,13 @@ function App() {
       <ScrollToTop />
       <div className="App">
         <Navbar />
+        <Suspense fallback={null}>
+          <BackButton />
+        </Suspense>
         <main style={{ marginTop: '80px' }}>
+          <Suspense fallback={null}>
+            <Breadcrumbs />
+          </Suspense>
           <Suspense fallback={<PageLoader />}>
             <Routes>
               <Route path="/" element={<Home />} />
@@ -141,6 +156,7 @@ function App() {
               <Route path="/products/solar-installation" element={<SolarInstallation />} />
 
               {/* Location SEO Routes */}
+              <Route path="/waterproofing-in-navi-mumbai" element={<WaterproofingNaviMumbai />} />
               <Route path="/industrial-roofing-contractors-in-mumbai" element={<MumbaiRoofing />} />
               <Route path="/industrial-roofing-contractors-in-panvel" element={<PanvelRoofing />} />
               <Route path="/industrial-roofing-contractors-in-thane" element={<ThaneRoofing />} />
@@ -154,6 +170,12 @@ function App() {
               <Route path="/industrial-painting-in-chakan" element={<ChakanPainting />} />
               <Route path="/industrial-roofing-cost-calculator" element={<RoofingCostCalculator />} />
               <Route path="/areas" element={<Areas />} />
+
+              {/* New Service Landing Pages */}
+              <Route path="/services/industrial-roof-leak-repair" element={<RoofLeakRepairService />} />
+              <Route path="/services/peb-structure-fabrication" element={<PEBFabricationService />} />
+              <Route path="/services/warehouse-roofing-solutions" element={<WarehouseRoofingService />} />
+              <Route path="/services/metal-roof-installation" element={<MetalRoofInstallationService />} />
 
               {/* SEO Redirects for shortened URLs */}
               <Route path="/products" element={<Navigate to="/premium-roofing-sheets-navi-mumbai" replace />} />

@@ -190,6 +190,28 @@
     text-align: center;
 }
 
+.relatedServiceBadge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(37, 99, 235, 0.1);
+    color: var(--accent-600);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(37, 99, 235, 0.2);
+    margin: 0.5rem auto 0;
+}
+
+.relatedServiceBadge:hover {
+    background: var(--accent-500);
+    color: white;
+    transform: translateY(-2px);
+}
+
 .backButton {
     background: var(--white);
     border: 1px solid var(--gray-300);

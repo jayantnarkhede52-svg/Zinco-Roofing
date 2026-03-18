@@ -12,12 +12,14 @@ import chakanRoofingThumb from '../assets/locations/chakan_roofing_thumb.png';
 import chakanPaintingThumb from '../assets/locations/chakan_painting_thumb.png';
 import lonavlaThumb from '../assets/locations/lonavla_hero.png';
 import genericIndustrialThumb from '../assets/img1.webp';
+import waterproofingThumb from '../assets/locations/waterproofing_thumb.png';
+import dombivliThumb from '../assets/locations/dombivli_hero.webp';
 
 const locations = [
     {
         id: 'mumbai',
         title: 'Mumbai',
-        desc: <>Leading <strong>Industrial Roofing Contractors Mumbai</strong> providing <strong>Roofing Sheets Mumbai</strong> for towers and plants.</>,
+        desc: <>Premier <strong>Structural Engineering</strong> and metal roofing solutions for Mumbai's dense industrial skyline.</>,
         icon: <FaCity size={24} />,
         color: '#f59e0b',
         path: '/industrial-roofing-contractors-in-mumbai',
@@ -75,7 +77,7 @@ const locations = [
         icon: <FaCity size={24} />,
         color: '#06b6d4',
         path: '/industrial-roofing-contractors-in-dombivli',
-        image: genericIndustrialThumb
+        image: dombivliThumb
     },
     {
         id: 'puf-navi-mumbai',
@@ -112,6 +114,15 @@ const locations = [
         color: '#8b5cf6',
         path: '/industrial-painting-in-chakan',
         image: chakanPaintingThumb
+    },
+    {
+        id: 'waterproofing',
+        title: 'Waterproofing',
+        desc: <>Expert solutions for <strong>waterproofing in navi mumbai</strong>, ensuring leak-free facilities.</>,
+        icon: <FaUmbrella size={24} />,
+        color: '#0ea5e9',
+        path: '/waterproofing-in-navi-mumbai',
+        image: waterproofingThumb
     }
 ];
 

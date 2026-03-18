@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import { FaCity, FaShieldAlt, FaTools, FaCheckCircle } from 'react-icons/fa';
 import SEO from '../../components/shared/SEO';
+import LocationMap from '../../components/shared/LocationMap';
 import heroImage from '../../assets/img2.webp';
 import nmImg1 from '../../assets/Navi mumbai/navimumbai1.webp';
 import nmImg2 from '../../assets/Navi mumbai/navimumbai2.webp';
@@ -14,12 +15,30 @@ import AreaLinks from '../../components/shared/AreaLinks';
 import RoofingCalculator from '../../components/shared/RoofingCalculator';
 
 const NaviMumbaiRoofing = () => {
+    const mobileHighlights = [
+        {
+            title: "MIDC Specialists",
+            desc: "Dedicated structural engineering for hubs like Taloja and Rabale.",
+            icon: <FaCity />
+        },
+        {
+            title: "Industrial Panels",
+            desc: "High-grade metal sheets and PUF insulation for factory roofs.",
+            icon: <FaShieldAlt />
+        },
+        {
+            title: "Rapid Assembly",
+            desc: "Safety-compliant installation with expert local knowledge.",
+            icon: <FaTools />
+        }
+    ];
+
     return (
         <div className={styles.locationPage}>
             <SEO
-                title="Roofing Cost Navi Mumbai | Industrial Roofing Estimator"
-                description="Check the roofing cost navi mumbai for your industrial project. Get instant estimates for metal sheets, UPVC, and PUF panels in Taloja & Rabale MIDC."
-                keywords="roofing cost navi mumbai, roofing contractor in navi mumbai, roofing sheets navi mumbai, industrial roofing navi mumbai"
+                title="Industrial Roofing Specialist in Navi Mumbai | Premium Solutions"
+                description="Expert structural fabrication and industrial roofing service in Navi Mumbai. High-performance metal roofing, PUF panels, and durable shed construction."
+                keywords="industrial roofing specialist navi mumbai, structural fabrication navi mumbai, roofing sheets navi mumbai, factory shed contractors"
                 canonicalUrl="https://zincoroof.com/industrial-roofing-contractors-in-navi-mumbai"
             />
             <Helmet>
@@ -35,8 +54,8 @@ const NaviMumbaiRoofing = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h1>roofing contractor in navi mumbai</h1>
-                        <p>Delivering high-performance structural systems as the leading <strong>roofing contractor in navi mumbai</strong> for core industrial hubs.</p>
+                        <h1>Industrial Roofing Specialist in Navi Mumbai</h1>
+                        <p>Delivering high-performance structural systems as the leading <strong>Industrial Fabricator</strong> for core hubs like Taloja.</p>
                             <Link to="/products" className={styles.heroBtn}>Explore Our Products</Link>
                     </motion.div>
                 </div>
@@ -44,8 +63,27 @@ const NaviMumbaiRoofing = () => {
 
             <div className={styles.container}>
                 <main className={styles.mainContent}>
+                    {/* Mobile Only Highlights */}
+                    <section className={styles.mobileOnly}>
+                        <div className={styles.mobileHighlightsGrid}>
+                            {mobileHighlights.map((item, idx) => (
+                                <motion.div 
+                                    key={idx}
+                                    className={styles.mobileHighlightCard}
+                                    initial={{ opacity: 0, x: -20 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ delay: idx * 0.1 }}
+                                    viewport={{ once: true }}
+                                >
+                                    <h3>{item.icon} {item.title}</h3>
+                                    <p>{item.desc}</p>
+                                </motion.div>
+                            ))}
+                        </div>
+                    </section>
+
                     <motion.section 
-                        className={styles.introSection}
+                        className={`${styles.introSection} ${styles.desktopOnly}`}
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
@@ -56,30 +94,30 @@ const NaviMumbaiRoofing = () => {
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
                         >
-                            Complete roofing contractor in navi mumbai solutions
+                            Complete Structural Engineering Solutions
                         </motion.h2>
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                         >
-                            Navi Mumbai is the logistical heart of the MMR. As a premier <strong>roofing contractor in navi mumbai</strong>, Zinco Roofing Solution provides the technical foundation for the city's growth. Our engineering structures are designed for high-wind resistance.
+                            Navi Mumbai is the logistical heart of the MMR. As a premier <strong>Industrial Roofing Specialist</strong>, Zinco Roofing Solution provides the technical foundation for the city's growth. Our engineering structures are designed for high-wind resistance.
                         </motion.p>
                         <p>
-                            Every <strong>roofing contractor in navi mumbai</strong> knows that industrial plant owners look for reliable partners. By hiring an expert <strong>roofing contractor in navi mumbai</strong>, you invest in high-tensile steel and advanced finishes.
+                            Every plant owner looks for reliable partners. By hiring an expert <strong>Structural Vendor</strong>, you invest in high-tensile steel and advanced finishes for your facility.
                         </p>
                         <p>
-                            When searching for a <strong>roofing contractor in navi mumbai</strong>, durability is the cornerstone. We provide superior results as your local <strong>roofing contractor in navi mumbai</strong>. Our team offers expert consulting as a top-tier <strong>roofing contractor in navi mumbai</strong>.
+                            When searching for local experts, durability is the cornerstone. We provide superior results as your <strong>Navi Mumbai Roofing Partner</strong>. Our team offers expert consulting as a top-tier structural engineer.
                         </p>
                     </motion.section>
 
                     <RoofingCalculator 
                         title="Roofing Cost Navi Mumbai Estimator" 
-                        subtitle="Calculate the estimated roofing cost navi mumbai for your industrial shed. Choose your material and area for an instant budget baseline."
+                        subtitle="Calculate the estimated cost for your industrial shed. Choose material and area for an instant budget baseline."
                     />
 
                     <motion.section 
-                        className={styles.introSection}
+                        className={`${styles.introSection} ${styles.desktopOnly}`}
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
@@ -87,16 +125,10 @@ const NaviMumbaiRoofing = () => {
                     >
                         <h2>Accurate industrial roofing quotes in Navi Mumbai</h2>
                         <p>
-                            Navigating the <strong>roofing cost navi mumbai</strong> market requires a deep understanding of local industrial demands and material specifications. For businesses in Taloja MIDC or Rabale, the total price is often influenced by the choice between standard PPGL sheets and high-performance PUF insulated panels. While the initial investment might vary, calculating a comprehensive budget helps facility managers plan for long-term operational efficiency and superior thermal performance across the facility.
+                            Navigating the industrial market requires a deep understanding of local demands and material specifications. For businesses in Taloja MIDC or Rabale, the total price is often influenced by the choice between standard PPGL sheets and high-performance PUF insulated panels.
                         </p>
                         <p>
-                            Several factors dictate the final <strong>roofing cost navi mumbai</strong>, including the shed's total square footage, the structural height, and the complexity of the fabrication components involved. At Zinco Roofing Solution, we believe in complete transparency, providing detailed line-item breakdowns so you can optimize your expenses without compromising on structural integrity or safety. Our engineering team analyzes specific wind load requirements and local environmental factors to ensure that every rupee spent translates into decades of reliability for your factory, workshop, or warehouse unit.
-                        </p>
-                        <p>
-                            Beyond materials, labor expertise and on-site logistics significantly impact the <strong>roofing cost navi mumbai</strong>. Hiring specialized contractors ensures that every installation follows IS standards, preventing future leaks and costly maintenance expenses that could disrupt your daily production schedules. When you evaluate the quotes, always consider the added value of safety certifications and genuine factory warranties that come with professional execution.
-                        </p>
-                        <p>
-                            Ultimately, a well-planned <strong>roofing cost navi mumbai</strong> strategy incorporates both upfront fabrication and periodic maintenance audits to preserve the asset's value. By choosing the right engineering partners, you can manage your project effectively while securing a high-quality industrial asset that supports your core business growth for years to come. Our interactive calculator above provides a baseline, but a technical site audit is always recommended for precise engineering estimates.
+                            Several factors dictate the final budget, including the shed's total square footage, the structural height, and the complexity of the fabrication components involved. At Zinco Roofing Solution, we believe in complete transparency, providing detailed line-item breakdowns.
                         </p>
                     </motion.section>
 
@@ -111,19 +143,16 @@ const NaviMumbaiRoofing = () => {
                         transition={{ duration: 0.6 }}
                     >
                         <div className={styles.textContent}>
-                            <h2>Strategic roofing contractor in navi mumbai Services</h2>
+                            <h2>Strategic Industrial Fabrication Services</h2>
                             <p>
-                                Engineering large-span sheds requires <strong>roofing contractor in navi mumbai</strong> knowledge. As a dedicated <strong>roofing contractor in navi mumbai</strong>, we utilize high-tensile Galvalume.
+                                Engineering large-span sheds requires specialized <strong>Technical Knowledge</strong>. As a dedicated provider, we utilize high-tensile Galvalume for maximum load stability.
                             </p>
                             <p>
-                                When you collaborate with a professional <strong>roofing contractor in navi mumbai</strong> like Zinco, you benefit from designs tested for extreme weather. Every <strong>roofing contractor in navi mumbai</strong> project is engineered for maximum ROI.
-                            </p>
-                            <p>
-                                We are the leading <strong>roofing contractor in navi mumbai</strong> for massive logistics platforms. Choose our expert <strong>roofing contractor in navi mumbai</strong> services today.
+                                When you collaborate with a professional team like Zinco, you benefit from designs tested for extreme weather. Every structural project is engineered for maximum ROI.
                             </p>
                         </div>
                         <div className={styles.imageBlock}>
-                            <img src={nmImg1} alt="roofing contractor in navi mumbai" />
+                            <img src={nmImg1} alt="Industrial Fabrication Navi Mumbai" />
                         </div>
                     </motion.section>
 
@@ -135,18 +164,15 @@ const NaviMumbaiRoofing = () => {
                         transition={{ duration: 0.6 }}
                     >
                         <div className={styles.imageBlock}>
-                            <img src={nmImg2} alt="roofing contractor in navi mumbai thermal" />
+                            <img src={nmImg2} alt="Thermal Insulation Solutions" />
                         </div>
                         <div className={styles.textContent}>
-                            <h2>Energy savings with roofing contractor in navi mumbai</h2>
+                            <h2>Energy savings with Advanced Insulation</h2>
                             <p>
-                                Temperature regulation is essential. We deliver panels as a <strong>roofing contractor in navi mumbai</strong> that reduce costs. When consulting with a <strong>roofing contractor in navi mumbai</strong>, we focus on thermal quality.
+                                Temperature regulation is essential. We deliver panels that reduce cooling costs. When consulting with our engineers, we focus on thermal quality.
                             </p>
                             <p>
-                                As a versatile <strong>roofing contractor in navi mumbai</strong>, we handle custom specifications for fire-rated construction.
-                            </p>
-                            <p>
-                                Trust our professional <strong>roofing contractor in navi mumbai</strong> site audits. We offer solutions that prioritize energy savings as a reliable <strong>roofing contractor in navi mumbai</strong>.
+                                Trust our professional site audits. We offer solutions that prioritize energy savings as a reliable <strong>Industrial Fabricator</strong>.
                             </p>
                         </div>
                     </motion.section>
@@ -159,49 +185,22 @@ const NaviMumbaiRoofing = () => {
                         transition={{ duration: 0.6 }}
                     >
                         <div className={styles.textContent}>
-                            <h2>Reliable roofing contractor in navi mumbai</h2>
+                            <h2>Reliable Shed Fabrication</h2>
                             <p>
-                                We excel at shed fabrication as a <strong>roofing contractor in navi mumbai</strong>. Choosing an expert <strong>roofing contractor in navi mumbai</strong> ensures project speed.
+                                We excel at structural shed fabrication. Choosing an expert <strong>Engineering Team</strong> ensures project speed and safety compliance across MIDC zones.
                             </p>
                             <p>
-                                Whether you need a workshop or a park, as a <strong>roofing contractor in navi mumbai</strong>, we prioritize longevity.
-                            </p>
-                            <p>
-                                Contact us for premium <strong>roofing contractor in navi mumbai</strong> services. We are your partner as a safety-first <strong>roofing contractor in navi mumbai</strong>.
+                                Whether you need a workshop or a logistics park, we prioritize longevity and corrosion resistance in every build.
                             </p>
                         </div>
                         <div className={styles.imageBlock}>
-                            <img src={nmImg3} alt="roofing contractor in navi mumbai fabrication" loading="lazy" />
-                        </div>
-                    </motion.section>
-
-                    <motion.section 
-                        className={styles.twoColumn}
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6 }}
-                    >
-                        <div className={styles.imageBlock}>
-                            <img src={nmImg4} alt="roofing contractor in navi mumbai coating" loading="lazy" />
-                        </div>
-                        <div className={styles.textContent}>
-                            <h2>Maintenance by roofing contractor in navi mumbai</h2>
-                            <p>
-                                Zinco provides specialized services as a <strong>roofing contractor in navi mumbai</strong>. professional rust prevention is vital as a <strong>roofing contractor in navi mumbai</strong> for maintaining integrity.
-                            </p>
-                            <p>
-                                We offer protective finishes as a <strong>roofing contractor in navi mumbai</strong> for all industrial plants. Rely on us as a <strong>roofing contractor in navi mumbai</strong> for maintenance solutions.
-                            </p>
-                            <p>
-                                Our team as a <strong>roofing contractor in navi mumbai</strong> ensures that your facility remains in top condition. Get a quote from a <strong>roofing contractor in navi mumbai</strong> today.
-                            </p>
+                            <img src={nmImg3} alt="Industrial Shed Construction" loading="lazy" />
                         </div>
                     </motion.section>
 
                     {/* Technical Specification Section */}
-                    <section className={`${styles.technicalSection} ${styles.darkMode}`}>
-                        <h2>Technical Standards for roofing contractor in navi mumbai</h2>
+                    <section className={`${styles.technicalSection} ${styles.darkMode} ${styles.desktopOnly}`}>
+                        <h2>Technical Standards for Industrial Mastery</h2>
                         <div className={styles.tableWrapper}>
                             <table className={styles.techTable}>
                                 <thead>
@@ -240,9 +239,9 @@ const NaviMumbaiRoofing = () => {
                     {/* Maintenance Section */}
                     <section className={styles.maintenanceSection}>
                         <div className={styles.infoCard}>
-                            <h3>Advice from a roofing contractor in navi mumbai</h3>
+                            <h3>Advice from a Roofing Specialist</h3>
                             <p>
-                                To maintain your asset, as a <strong>roofing contractor in navi mumbai</strong>, we provide annual maintenance contracts.
+                                To maintain your asset, we provide comprehensive annual maintenance contracts for all industrial clients.
                             </p>
                             <div className={styles.maintenanceGrid}>
                                 <div className={styles.mItem}>
@@ -263,23 +262,19 @@ const NaviMumbaiRoofing = () => {
 
                     {/* FAQ Section */}
                     <section className={styles.faqSection}>
-                        <h2>FAQs for roofing contractor in navi mumbai</h2>
+                        <h2>Common Industry Questions</h2>
                         <div className={styles.faqGrid}>
                             <div className={styles.faqItem}>
-                                <h3>Why choose Zinco as your roofing contractor in navi mumbai?</h3>
-                                <p>Our specialized teams and reliable execution deliver unmatched ROI for your project.</p>
+                                <h3>Why choose Zinco for Navi Mumbai projects?</h3>
+                                <p>Our specialized teams and reliable execution deliver unmatched ROI for factory and warehouse builds.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h3>Is there a roofing contractor in navi mumbai for Taloja?</h3>
-                                <p>Yes, we specialize in industrial solutions for businesses across Taloja and Rabale.</p>
+                                <h3>Do you cover Taloja and Rabale?</h3>
+                                <p>Yes, we specialize in industrial solutions for businesses across Taloja, Rabale, and Mahape MIDC.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h3>Can a roofing contractor in navi mumbai assist with PEB?</h3>
-                                <p>Absolutely. We handle Pre-Engineered Building (PEB) design and execution.</p>
-                            </div>
-                            <div className={styles.faqItem}>
-                                <h3>Why invest in a professional roofing contractor in navi mumbai?</h3>
-                                <p>Investing in authorized providers like Zinco ensures factory warranties and operational safety.</p>
+                                <h3>Can you assist with PEB design?</h3>
+                                <p>Absolutely. We handle Pre-Engineered Building (PEB) design and rapid execution.</p>
                             </div>
                         </div>
                     </section>
@@ -289,16 +284,17 @@ const NaviMumbaiRoofing = () => {
                     {/* Final CTA */}
                     <section className={styles.ctaSection}>
                         <div className={styles.ctaContent}>
-                            <h2>Partner with the Best roofing contractor in navi mumbai</h2>
-                            <p>Protect your investment with top-tier <strong>roofing contractor in navi mumbai</strong> services. Our team is ready for your estimate.</p>
+                            <h2>Partner with the Best Industrial Fabricators</h2>
+                            <p>Protect your investment with top-tier engineering services. Our team is ready for your estimate.</p>
                             <div className={styles.ctaButtons}>
                                 <Link to="/contact#contact-form" className={styles.primaryBtn}>Request a Technical Audit</Link>
-                                <button className={styles.secondaryBtn}>View Our Projects</button>
+                                <Link to="/industrial-roofing-projects-navi-mumbai" className={styles.secondaryBtn}>View Our Projects</Link>
                             </div>
                         </div>
                     </section>
                 </main>
             </div>
+            <LocationMap title="Navi Mumbai" query="Navi Mumbai, Maharashtra" />
         </div>
     );
 };

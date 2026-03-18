@@ -1,0 +1,77 @@
+.marqueeSection {
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 10;
+}
+
+.marqueeContainer {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.marqueeContent {
+    display: flex;
+    width: max-content;
+    animation: marquee 35s linear infinite;
+}
+
+.marqueeContent:hover {
+    animation-play-state: paused;
+}
+
+.marqueeItem {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0 2rem;
+    color: var(--light-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+}
+
+.marqueeItem:hover {
+    color: var(--accent-light);
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    color: var(--accent-color);
+}
+
+.text {
+    letter-spacing: 0.5px;
+}
+
+/* Pause on hover effect for desktop, but smooth on mobile */
+@media (max-width: 768px) {
+    .marqueeContent {
+        animation: marquee 25s linear infinite;
+    }
+    .marqueeSection {
+        padding: 0.75rem 0;
+    }
+    .marqueeItem {
+        font-size: 1rem;
+        padding: 0 1.5rem;
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        /* Translating by approx 1/3 of the width since we triplicated the array */
+        transform: translateX(calc(-33.33%));
+    }
+}

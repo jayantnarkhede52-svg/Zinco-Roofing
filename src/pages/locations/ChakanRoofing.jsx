@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import { FaIndustry, FaShieldAlt, FaTools, FaCheckCircle, FaFlask } from 'react-icons/fa';
 import SEO from '../../components/shared/SEO';
+import LocationMap from '../../components/shared/LocationMap';
 import heroImage from '../../assets/locations/chakan_hero.webp';
 import chakanImg1 from '../../assets/Metal roofing images/Metal roofing images/1000014152.webp';
 import chakanImg2 from '../../assets/Puf panel images/Puf panel images/1001155530.webp';
@@ -57,20 +58,20 @@ const ChakanRoofing = () => {
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
                         >
-                            Professional roofing contractor in chakan infrastructure
+                            Professional structural engineering in chakan infrastructure
                         </motion.h2>
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                         >
-                            Chakan MIDC is a global automobile and manufacturing hub. As a premier <strong>roofing contractor in chakan</strong>, Zinco Roofing Solution provides advanced structural fabrication and PEB installations.
+                            Chakan MIDC is a global automobile and manufacturing hub. As a premier <strong>structural specialist</strong>, Zinco Roofing Solution provides advanced structural fabrication and PEB installations.
                         </motion.p>
                         <p>
-                            Plant managers and project consultants look for a reliable <strong>roofing contractor in chakan</strong> who prioritizes precision. By hiring an established <strong>roofing contractor in chakan</strong>, you ensure your massive facility is built with exact tolerances.
+                            Plant managers and project consultants look for a reliable <strong>industrial partner</strong> who prioritizes precision. By hiring an established <strong>fabrication specialist</strong>, you ensure your massive facility is built with exact tolerances.
                         </p>
                         <p>
-                            When expanding in the industrial belt, every <strong>roofing contractor in chakan</strong> knows that speed and quality are non-negotiable. We are dedicated to providing excellence as your trusted <strong>roofing contractor in chakan</strong>. Reach out to the leading <strong>roofing contractor in chakan</strong> today.
+                            When expanding in the industrial belt, every <strong>building expert</strong> knows that speed and quality are non-negotiable. We are dedicated to providing excellence as your trusted <strong>structural team</strong>. Reach out to the leading <strong>industrial specialists</strong> today.
                         </p>
                     </motion.section>
 
@@ -85,15 +86,15 @@ const ChakanRoofing = () => {
                         transition={{ duration: 0.6 }}
                     >
                         <div className={styles.textContent}>
-                            <h2>Strategic roofing contractor in chakan Services</h2>
+                            <h2>Strategic Industrial Shed Services</h2>
                             <p>
-                                Infrastructure in the MIDC belt requires <strong>roofing contractor in chakan</strong> knowledge. As dedicated large-scale specialists for <strong>roofing contractor in chakan</strong>, we utilize advanced equipment.
+                                Infrastructure in the MIDC belt requires <strong>local technical</strong> knowledge. As dedicated large-scale specialists for <strong>high-span sheds</strong>, we utilize advanced equipment.
                             </p>
                             <p>
-                                Our reputation for quality <strong>roofing contractor in chakan</strong> is built on technical scale. When you collaborate with a <strong>roofing contractor in chakan</strong>, you benefit from PEB solutions.
+                                Our reputation for quality <strong>building solutions</strong> is built on technical scale. When you collaborate with a <strong>structural specialist</strong>, you benefit from PEB solutions.
                             </p>
                             <p>
-                                We are the leaders in providing installations as a <strong>roofing contractor in chakan</strong> without sacrificing safety. Choose our expert <strong>roofing contractor in chakan</strong> services for your next facility.
+                                We are the leaders in providing installations as a <strong>factory contractor</strong> without sacrificing safety. Choose our expert <strong>roofing services</strong> for your next facility.
                             </p>
                         </div>
                         <div className={styles.imageBlock}>
@@ -112,15 +113,15 @@ const ChakanRoofing = () => {
                             <img src={chakanImg2} alt="roofing contractor in chakan insulation" loading="lazy" />
                         </div>
                         <div className={styles.textContent}>
-                            <h2>Energy efficiency with roofing contractor in chakan</h2>
+                            <h2>Energy efficiency with insulated systems</h2>
                             <p>
-                                Maintaining ambient temperatures is critical. High-quality systems from a <strong>roofing contractor in chakan</strong> deliver superior energy efficiency. When consulting with a <strong>roofing contractor in chakan</strong>, we focus on optimal R-values.
+                                Maintaining ambient temperatures is critical. High-quality systems from a <strong>specialized provider</strong> deliver superior energy efficiency. When consulting with a <strong>technical team</strong>, we focus on optimal R-values.
                             </p>
                             <p>
-                                As a versatile <strong>roofing contractor in chakan</strong>, we handle custom specifications for industrial modules.
+                                As a versatile <strong>fabricator</strong>, we handle custom specifications for industrial modules.
                             </p>
                             <p>
-                                Trust our professional <strong>roofing contractor in chakan</strong> structural audits. We offer modular solutions that prioritize massive energy cost reductions as a reliable <strong>roofing contractor in chakan</strong>.
+                                Trust our professional <strong>structural</strong> audits. We offer modular solutions that prioritize massive energy cost reductions as a reliable <strong>roofing team</strong>.
                             </p>
                         </div>
                     </motion.section>
@@ -133,15 +134,15 @@ const ChakanRoofing = () => {
                         transition={{ duration: 0.6 }}
                     >
                         <div className={styles.textContent}>
-                            <h2>Reliable roofing contractor in chakan</h2>
+                            <h2>Reliable Industrial Fabrication</h2>
                             <p>
-                                From CAD design to structural handover, we excel as a <strong>roofing contractor in chakan</strong> specialist. Choosing an expert <strong>roofing contractor in chakan</strong> ensures immense project speed.
+                                From CAD design to structural handover, we excel as a <strong>large-scale</strong> specialist. Choosing an expert <strong>building partner</strong> ensures immense project speed.
                             </p>
                             <p>
-                                Whether you need a workshop or a plant, as a <strong>roofing contractor in chakan</strong> partner, we prioritize operational workflow on the floor.
+                                Whether you need a workshop or a plant, as a <strong>project management</strong> partner, we prioritize operational workflow on the floor.
                             </p>
                             <p>
-                                Contact us for premium <strong>roofing contractor in chakan</strong> services. We are your partner for structural excellence in <strong>roofing contractor in chakan</strong>.
+                                Contact us for premium <strong>structural</strong> services. We are your partner for structural excellence in <strong>shed construction</strong>.
                             </p>
                         </div>
                         <div className={styles.imageBlock}>
@@ -160,22 +161,22 @@ const ChakanRoofing = () => {
                             <img src={chakanImg4} alt="roofing contractor in chakan materials" loading="lazy" />
                         </div>
                         <div className={styles.textContent}>
-                            <h2>Maintenance by roofing contractor in chakan</h2>
+                            <h2>Maintenance by industrial experts</h2>
                             <p>
-                                Zinco provides specialized services as a <strong>roofing contractor in chakan</strong>. Protecting structures is vital as a <strong>roofing contractor in chakan</strong> specialist for maintaining integrity.
+                                Zinco provides specialized services as a <strong>structural partner</strong>. Protecting structures is vital as a <strong>technical</strong> specialist for maintaining integrity.
                             </p>
                             <p>
-                                We offer galvalume solutions as a <strong>roofing contractor in chakan</strong>, preventing degradation. Rely on us for <strong>roofing contractor in chakan</strong> maintenance options that span decades.
+                                We offer galvalume solutions as a <strong>protective</strong> provider, preventing degradation. Rely on us for <strong>long-term</strong> maintenance options that span decades.
                             </p>
                             <p>
-                                Get a massive estimate today and cover your industrial expanse with the help of a professional <strong>roofing contractor in chakan</strong>.
+                                Get a massive estimate today and cover your industrial expanse with the help of a professional <strong>expert team</strong>.
                             </p>
                         </div>
                     </motion.section>
 
                     {/* Technical Specification Table */}
                     <section className={`${styles.technicalSection} ${styles.darkMode}`}>
-                        <h2>Technical Standards for roofing contractor in chakan</h2>
+                        <h2>Technical Standards for Industrial Infrastructure</h2>
                         <div className={styles.tableWrapper}>
                             <table className={styles.techTable}>
                                 <thead>
@@ -219,9 +220,9 @@ const ChakanRoofing = () => {
                     {/* Maintenance Section */}
                     <section className={styles.maintenanceSection}>
                         <div className={styles.infoCard}>
-                            <h3>Advice from a roofing contractor in chakan</h3>
+                            <h3>Advice from industrial specialists</h3>
                             <p>
-                                As a large-scale <strong>roofing contractor in chakan</strong>, we manage annual maintenance contracts for major plants.
+                                As a large-scale <strong>professional provider</strong>, we manage annual maintenance contracts for major plants.
                             </p>
                             <div className={styles.maintenanceGrid}>
                                 <div className={styles.mItem}>
@@ -242,22 +243,22 @@ const ChakanRoofing = () => {
 
                     {/* FAQ Section */}
                     <section className={styles.faqSection}>
-                        <h2>FAQs for roofing contractor in chakan</h2>
+                        <h2>FAQs for Factory Shed Solutions</h2>
                         <div className={styles.faqGrid}>
                             <div className={styles.faqItem}>
-                                <h3>Why choose Zinco as your roofing contractor in chakan?</h3>
+                                <h3>Why choose Zinco for your chakan project?</h3>
                                 <p>Our massive execution capability in PEB and heavy-duty materials makes us the top choice for OEMs.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h3>Do you offer roofing contractor in chakan services for clear-span?</h3>
+                                <h3>Do you offer fabrication for clear-span?</h3>
                                 <p>Yes, we specialize in wide-span PEB structures offering total coverage without middle pillars.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h3>Can a roofing contractor in chakan assist with reroofing?</h3>
+                                <h3>Can you assist with reroofing?</h3>
                                 <p>Absolutely. As experts, we handle phased component replacements with zero plant downtime.</p>
                             </div>
                             <div className={styles.faqItem}>
-                                <h3>Why is a PEB roofing contractor in chakan preferred?</h3>
+                                <h3>Why is a PEB solution preferred?</h3>
                                 <p>Speed and accuracy. PEB structures allow faster building setup than conventional fabrication methods.</p>
                             </div>
                         </div>
@@ -268,8 +269,8 @@ const ChakanRoofing = () => {
                     {/* Final CTA */}
                     <section className={styles.ctaSection}>
                         <div className={styles.ctaContent}>
-                            <h2>Partner with the Best roofing contractor in chakan</h2>
-                            <p>Build your factory with expert <strong>roofing contractor in chakan</strong> support. Our team is ready to review your blueprints.</p>
+                            <h2>Partner with the Best Regional Experts</h2>
+                            <p>Build your factory with expert <strong>structural</strong> support. Our team is ready to review your blueprints.</p>
                             <div className={styles.ctaButtons}>
                                 <Link to="/contact#contact-form" className={styles.primaryBtn}>Request a PEB Consultation</Link>
                                 <button className={styles.secondaryBtn}>View Case Studies</button>
@@ -278,6 +279,7 @@ const ChakanRoofing = () => {
                     </section>
                 </main>
             </div>
+            <LocationMap title="Chakan" query="Chakan MIDC, Pune" />
         </div>
     );
 };

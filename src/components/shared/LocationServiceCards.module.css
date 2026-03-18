@@ -124,7 +124,7 @@
 
     .keywordGrid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        gap: 12px;
     }
 
     .keywordCard {
@@ -159,5 +159,11 @@
     .actionButton {
         font-size: 0.8rem;
         margin-top: var(--spacing-xs);
+    }
+}
+
+@media (max-width: 480px) {
+    .keywordGrid {
+        grid-template-columns: 1fr;
     }
 }

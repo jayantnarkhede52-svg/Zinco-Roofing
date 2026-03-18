@@ -314,7 +314,8 @@
     }
 }
 
-.categorySection {
+.categorySection,
+.specializedGridSection {
     padding: var(--spacing-5xl) 0;
     background: linear-gradient(180deg, transparent 0%, rgba(37, 99, 235, 0.03) 100%);
 }

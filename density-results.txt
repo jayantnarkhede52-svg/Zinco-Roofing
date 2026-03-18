@@ -1,33 +1,12 @@
-Path                                          | Keyword                             | Density
------------------------------------------------------------------------------------------------
-src/pages/Home.jsx                            | roofing contractor in navi mumbai   | 8.93% (1 hits) (TOO HIGH)
-src/pages/locations/MumbaiRoofing.jsx         | Roofing Sheets Mumbai               | 1.86% (4 hits) (TOO HIGH)
-src/pages/locations/PanvelRoofing.jsx         | Roofing Sheets Panvel               | 18.71% (56 hits) (TOO HIGH)
-src/pages/locations/NaviMumbaiRoofing.jsx     | Roofing Sheets Navi Mumbai          | 13.98% (26 hits) (TOO HIGH)
-src/pages/locations/ThaneRoofing.jsx          | industrial roofing contractors thane | 1.84% (4 hits) (TOO HIGH)
-src/pages/locations/TalojaRoofing.jsx         | industrial roofing contractors taloja | 1.93% (4 hits) (TOO HIGH)
-src/pages/locations/AmbarnathRoofing.jsx      | industrial roofing contractors ambarnath | 2.21% (4 hits) (TOO HIGH)
-src/pages/locations/DombivliRoofing.jsx       | Roofing Sheets Dombivli             | 17.65% (43 hits) (TOO HIGH)
-src/pages/locations/LonavlaRoofing.jsx        | industrial roofing contractors lonavla | 2.14% (4 hits) (TOO HIGH)
-src/pages/locations/ChakanRoofing.jsx         | industrial roofing contractors chakan pune | 2.46% (4 hits) (TOO HIGH)
-src/pages/locations/ChakanPainting.jsx        | industrial painting in chakan       | 14.91% (30 hits) (TOO HIGH)
-src/pages/locations/PUFPanelNaviMumbai.jsx    | PUF Panel Manufacturer Navi Mumbai  | 38.46% (9 hits) (TOO HIGH)
-src/pages/products/RoofingMetalSheets.jsx     | colour coated roofing sheets        | 1.84% (3 hits) (TOO HIGH)
-src/pages/products/InsulatedSheets.jsx        | puf insulated sheets                | 1.31% (2 hits) (OK)
-src/pages/products/UPVCSheets.jsx             | upvc sheets navi mumbai             | 0.50% (1 hits) (TOO LOW)
-src/pages/products/PolycarbonateSheets.jsx    | polycarbonate sheets navi mumbai    | 0.54% (1 hits) (TOO LOW)
-src/pages/products/PEBFabrication.jsx         | peb structure fabrication           | 0.79% (2 hits) (TOO LOW)
-src/pages/products/Purlins.jsx                | c purlins                           | 0.56% (2 hits) (TOO LOW)
-src/pages/products/Ventilators.jsx            | Roof Ventilator in Navi Mumbai      | 4.16% (8 hits) (TOO HIGH)
-src/pages/products/DeckingSheet.jsx           | decking sheets navi mumbai          | 0.72% (1 hits) (TOO LOW)
-src/pages/products/Shingles.jsx               | roofing shingles mumbai             | 0.00% (0 hits) (TOO LOW)
-src/pages/products/MetalTileSheet.jsx         | metal tile sheets                   | 1.37% (3 hits) (OK)
-src/pages/products/RockwoolGlasswool.jsx      | rockwool panels                     | 0.00% (0 hits) (TOO LOW)
-src/pages/products/HighRoofSeam.jsx           | standing seam roofing               | 0.38% (1 hits) (TOO LOW)
-src/pages/products/AerolamSheet.jsx           | aerolam insulation                  | 0.82% (3 hits) (TOO LOW)
-src/pages/products/PVCTileSheet.jsx           | pvc tile sheets                     | 1.79% (4 hits) (OK)
-src/pages/products/MultiwallSheets.jsx        | multiwall polycarbonate sheets      | 0.80% (2 hits) (TOO LOW)
-src/pages/products/UPVCHighRibSheets.jsx      | upvc roofing sheets                 | 0.00% (0 hits) (TOO LOW)
-src/pages/products/SyntheticRoof.jsx          | synthetic thatch roofing            | 0.79% (2 hits) (TOO LOW)
-src/pages/products/StructuralPainting.jsx     | industrial painting                 | 1.67% (2 hits) (OK)
-src/pages/products/SolarInstallation.jsx      | solar panel installation            | 3.78% (3 hits) (TOO HIGH)
+File: DombivliRoofing.jsx
+Total words: 1171
+Keyword: "roofing contractor in dombivli"
+Current Count: 15
+Current Density: 1.28%
+---
+File: PUFPanelNaviMumbai.jsx
+Total words: 1595
+Keyword: "puf panel in navi mumbai"
+Current Count: 25
+Current Density: 1.57%
+---

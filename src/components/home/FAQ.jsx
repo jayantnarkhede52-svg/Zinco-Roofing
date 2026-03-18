@@ -20,6 +20,10 @@ const faqs = [
     {
         question: "Are your roofing solutions 100% leak-proof?",
         answer: () => <>We use professional-grade sealants and expert fabrication techniques on-site to ensure every joint and fixing point is perfectly waterproofed, backed by our <Link to="/contact">leakage-free commitment</Link>.</>
+    },
+    {
+        question: "Do you offer roof leak repair and crack sealing services?",
+        answer: () => <>Yes, we specialize in <strong>roof leak repair</strong> and can effectively <strong>repair roof cracks</strong> using advanced industrial sealants. Our <strong>roof crack repair</strong> services ensure your shed remains dry and structurally sound for years to come.</>
     }
 ];
 

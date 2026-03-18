@@ -1,0 +1,49 @@
+.backButton {
+    position: fixed;
+    top: 95px; /* Just below the navbar (80px) */
+    left: var(--spacing-lg);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-full);
+    color: var(--gray-800);
+    font-weight: 700;
+    font-size: var(--text-sm);
+    cursor: pointer;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.backButton:hover {
+    transform: translateX(-3px);
+    background: var(--white);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent-400);
+    color: var(--accent-600);
+}
+
+.icon {
+    font-size: 0.9rem;
+}
+
+/* Hide on desktop, show on mobile */
+@media (min-width: 769px) {
+    .backButton {
+        display: none;
+    }
+}
+
+/* Adjust for very small screens */
+@media (max-width: 480px) {
+    .backButton {
+        top: 85px;
+        left: var(--spacing-md);
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+}
