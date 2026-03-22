@@ -1,26 +1,25 @@
 const mongoose = require('mongoose');
 
-const seoMetadataSchema = new mongoose.Schema({
+const SeoMetadataSchema = new mongoose.Schema({
     route: {
         type: String,
         required: true,
-        unique: true,
-        trim: true
+        unique: true
     },
     title: {
         type: String,
-        required: true,
-        trim: true
+        required: true
     },
     description: {
         type: String,
-        required: true,
-        trim: true
+        required: true
     },
     keywords: {
-        type: String,
-        trim: true
+        type: String
+    },
+    focusKeyword: {
+        type: String
     }
 }, { timestamps: true });
 
-module.exports = mongoose.model('SeoMetadata', seoMetadataSchema);
+module.exports = mongoose.model('SeoMetadata', SeoMetadataSchema);

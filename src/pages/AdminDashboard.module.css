@@ -566,5 +566,137 @@
     .analyticsGrid {
         grid-template-columns: 1fr;
     }
+    .advancedSeoGrid {
+        grid-template-columns: 1fr;
+    }
 }
 
+/* Advanced SEO Styles */
+.advancedSeoGrid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: var(--spacing-xl);
+    align-items: start;
+}
+
+.seoInputs {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.inputWithCounter {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.charCount {
+    position: absolute;
+    top: -22px;
+    right: 0;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.seoAnalysisPanel {
+    background: var(--gray-50);
+    border: 1px solid var(--gray-200);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.seoAnalysisPanel h4 {
+    margin: 0;
+    font-size: 18px;
+    color: var(--gray-900);
+    border-bottom: 2px solid var(--gray-200);
+    padding-bottom: 10px;
+}
+
+.trafficLights {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.trafficLights li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.red { color: #dc2626; }
+.red .dot { background-color: #dc2626; box-shadow: 0 0 5px rgba(220, 38, 38, 0.5); }
+.charCount.red { color: #dc2626; }
+
+.yellow { color: #d97706; }
+.yellow .dot { background-color: #f59e0b; box-shadow: 0 0 5px rgba(245, 158, 11, 0.5); }
+.charCount.yellow { color: #d97706; }
+
+.green { color: #16a34a; }
+.green .dot { background-color: #10b981; box-shadow: 0 0 5px rgba(16, 185, 129, 0.5); }
+.charCount.green { color: #16a34a; }
+
+.scanBtn {
+    background: var(--accent-600);
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: var(--radius-md);
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.2s;
+}
+
+.scanBtn:disabled {
+    background: var(--gray-400);
+    cursor: not-allowed;
+}
+
+.scanBtn:hover:not(:disabled) {
+    background: var(--accent-700);
+    transform: translateY(-2px);
+}
+
+.scanHelper {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-style: italic;
+    margin: 0;
+}
+
+.focusBadge {
+    display: inline-block;
+    padding: 4px 8px;
+    background: var(--blue-50);
+    color: var(--blue-700);
+    border-radius: var(--radius-sm);
+    font-size: 11px;
+    font-weight: 800;
+    border: 1px solid var(--blue-200);
+}
+
+.readOnlyInput {
+    background: var(--gray-100);
+    cursor: not-allowed;
+    color: var(--gray-600);
+    border: 1px dashed var(--gray-300);
+}

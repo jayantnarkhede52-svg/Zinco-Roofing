@@ -39,7 +39,7 @@ router.get('/*route', async (req, res) => {
 // @desc    Create or update SEO metadata for a route
 // @access  Private
 router.post('/', auth, async (req, res) => {
-    const { route, title, description, keywords } = req.body;
+    const { route, title, description, keywords, focusKeyword } = req.body;
 
     try {
         let seoData = await SeoMetadata.findOne({ route });
@@ -49,6 +49,7 @@ router.post('/', auth, async (req, res) => {
             seoData.title = title;
             seoData.description = description;
             seoData.keywords = keywords;
+            seoData.focusKeyword = focusKeyword;
             
             await seoData.save();
             return res.json(seoData);
@@ -59,7 +60,8 @@ router.post('/', auth, async (req, res) => {
             route,
             title,
             description,
-            keywords
+            keywords,
+            focusKeyword
         });
 
         await seoData.save();
