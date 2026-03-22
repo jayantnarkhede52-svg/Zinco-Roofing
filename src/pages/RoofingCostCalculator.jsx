@@ -1,5 +1,6 @@
 import RoofingCalculator from '../components/shared/RoofingCalculator';
-
+import SEO from '../components/shared/SEO';
+import styles from './RoofingCostCalculator.module.css';
 const RoofingCostCalculator = () => {
     return (
         <div className={styles.page}>
