@@ -4,6 +4,7 @@ import { FaCity, FaIndustry, FaWarehouse, FaUmbrella, FaLayerGroup } from 'react
 import SEO from '../components/shared/SEO';
 import heroImage from '../assets/img4.webp'; // Using a generic image
 import styles from './locations/LocationStyles.module.css';
+import QuoteForm from '../components/home/QuoteForm';
 import mumbaiThumb from '../assets/locations/mumbai_thumb.png';
 import naviMumbaiThumb from '../assets/locations/navi_mumbai_thumb.png';
 import panvelThumb from '../assets/locations/panvel_thumb.png';
@@ -204,6 +205,7 @@ const Areas = () => {
                     </section>
                 </main>
             </div>
+            <QuoteForm />
         </div>
     );
 };

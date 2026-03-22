@@ -11,6 +11,7 @@ import executionImg from '../assets/img 7.webp';
 import styles from './Services.module.css';
 
 import Card from '../components/shared/Card';
+import QuoteForm from '../components/home/QuoteForm';
 
 const Services = () => {
     const navigate = useNavigate();
@@ -277,6 +278,7 @@ const Services = () => {
                 </div>
             </section>
 
+            <QuoteForm />
             <div className={styles.ctaSection}>
                 <div className={styles.container}>
                     <motion.div

@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FaExpandAlt, FaTimes } from 'react-icons/fa';
 import SEO from '../components/shared/SEO';
 import styles from './Gallery.module.css';
+import QuoteForm from '../components/home/QuoteForm';
 
 // Import project images
 import heroImg from '../assets/projects-hero.webp';
@@ -273,6 +274,7 @@ const Gallery = () => {
                     </motion.div>
                 )}
             </AnimatePresence>
+            <QuoteForm />
         </div>
     );
 };

@@ -7,6 +7,7 @@ import SEO from '../components/shared/SEO';
 import heroImage from '../assets/products-hero.webp';
 import Card from '../components/shared/Card';
 import styles from './Products.module.css';
+import QuoteForm from '../components/home/QuoteForm';
 
 // Import featured images for category cards
 import metalFeatured from '../assets/Metal roofing images/Metal roofing images/coloured-roofing-sheet-500x500-1.webp';
@@ -426,6 +427,7 @@ const Products = () => {
                     </section>
                 </div>
             </div>
+            <QuoteForm />
         </div>
     );
 };

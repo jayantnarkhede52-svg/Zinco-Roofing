@@ -3,6 +3,7 @@ import { FaMapMarkerAlt, FaBuilding, FaIndustry, FaPlaceOfWorship } from 'react-
 import { Helmet } from 'react-helmet-async';
 import SEO from '../components/shared/SEO';
 import heroImage from '../assets/projects-hero.webp';
+import QuoteForm from '../components/home/QuoteForm';
 import metalFeatured from '../assets/Metal roofing images/Metal roofing images/coloured-roofing-sheet-500x500-1.webp';
 import pufFeatured from '../assets/Puf panel images/Puf panel images/1001155532.webp';
 import polyFeatured from '../assets/Transparent polycarbonate/Transparent polycarbonate/1000014018.webp';
@@ -310,6 +311,7 @@ const Projects = () => {
                     </div>
                 </section>
             </div>
+            <QuoteForm />
         </div>
     );
 };

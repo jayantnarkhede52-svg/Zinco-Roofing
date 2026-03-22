@@ -1,8 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import PropTypes from 'prop-types';
+import { useLocation } from 'react-router-dom';
 
-const SEO = ({ title, description, keywords, canonicalUrl, schema }) => {
+const SEO = ({ title: propTitle, description: propDesc, keywords: propKeywords, canonicalUrl, schema }) => {
+    const [dynamicSeo, setDynamicSeo] = useState(null);
+    const location = useLocation();
+
+    useEffect(() => {
+        const fetchSeo = async () => {
+            try {
+                // Fetch SEO for the current route path
+                const res = await fetch(`/api/seo${location.pathname}`);
+                if (res.ok) {
+                    const data = await res.json();
+                    setDynamicSeo(data);
+                }
+            } catch (err) {
+                // Silently fallback to props if fetching fails
+            }
+        };
+        fetchSeo();
+    }, [location.pathname]);
+
+    const title = dynamicSeo?.title ? dynamicSeo.title : propTitle;
+    const description = dynamicSeo?.description ? dynamicSeo.description : propDesc;
+    const keywords = dynamicSeo?.keywords ? dynamicSeo.keywords : propKeywords;
+
     const address = {
         "@type": "PostalAddress",
         "streetAddress": "Shop Number 22, Elite Complex Lodha Heaven, Kalyan - Shilphata Rd",

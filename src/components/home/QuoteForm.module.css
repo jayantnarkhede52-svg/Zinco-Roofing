@@ -1,5 +1,5 @@
 .quoteSection {
-    padding: var(--spacing-3xl) 0;
+    padding: var(--spacing-4xl) 0;
     background: var(--bg-secondary);
     position: relative;
     overflow: hidden;
@@ -48,22 +48,81 @@
 }
 
 .formCard {
-    padding: 0;
-    overflow: hidden;
+    background: var(--bg-card);
+    padding: var(--spacing-3xl);
+    border-radius: var(--radius-2xl);
     border: 1px solid var(--gray-200);
     box-shadow: var(--shadow-2xl);
 }
 
-.iframeContainer {
+.quoteForm {
     width: 100%;
-    min-height: 600px;
-    background: var(--surface);
 }
 
-.fbIframe {
+.formGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.inputGroupFull {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.inputGroup label, .inputGroupFull label {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-left: var(--spacing-xs);
+}
+
+.inputGroup input, .inputGroupFull textarea, .inputGroup select {
+    padding: var(--spacing-md) var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--gray-200);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: var(--text-md);
+    transition: all var(--transition-base);
+    font-family: inherit;
+}
+
+.inputGroup input:focus, .inputGroupFull textarea:focus, .inputGroup select:focus {
+    outline: none;
+    border-color: var(--accent-500);
+    box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2);
+}
+
+.successMessage {
+    text-align: center;
+    padding: var(--spacing-2xl) 0;
+}
+
+.successMessage h3 {
+    color: #10b981;
+    font-size: var(--text-2xl);
+    margin-bottom: var(--spacing-md);
+}
+
+.errorMessage {
+    color: #ef4444;
+    font-size: var(--text-sm);
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+}
+
+.submitBtn {
     width: 100%;
-    height: 700px;
-    border: none;
 }
 
 @media (max-width: 768px) {
@@ -71,11 +130,15 @@
         padding: var(--spacing-2xl) 0;
     }
 
-    .iframeContainer {
-        min-height: 800px;
+    .formGrid {
+        grid-template-columns: 1fr;
     }
 
-    .fbIframe {
-        height: 850px;
+    .inputGroupFull {
+        grid-column: span 1;
+    }
+
+    .formCard {
+        padding: var(--spacing-xl);
     }
 }

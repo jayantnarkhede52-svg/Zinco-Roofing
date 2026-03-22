@@ -5,12 +5,19 @@ import styles from './AdminDashboard.module.css';
 
 const AdminDashboard = () => {
     const [leads, setLeads] = useState([]);
+    const [seoData, setSeoData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
+    const [activeTab, setActiveTab] = useState('leads');
     const navigate = useNavigate();
 
+    // SEO Form State
+    const [seoForm, setSeoForm] = useState({ route: '', title: '', description: '', keywords: '' });
+    const [isEditingSeo, setIsEditingSeo] = useState(false);
+    const [seoMessage, setSeoMessage] = useState({ type: '', text: '' });
+
     useEffect(() => {
-        const fetchLeads = async () => {
+        const fetchInitialData = async () => {
             const token = localStorage.getItem('adminToken');
             if (!token) {
                 navigate('/admin/login');
@@ -18,28 +25,37 @@ const AdminDashboard = () => {
             }
 
             try {
-                const res = await fetch('/api/leads', {
+                // Fetch Leads
+                const leadsRes = await fetch('/api/leads', {
                     headers: { 'x-auth-token': token }
                 });
                 
-                if (res.status === 401) {
+                if (leadsRes.status === 401) {
                     localStorage.removeItem('adminToken');
                     navigate('/admin/login');
                     return;
                 }
+                const leadsData = await leadsRes.json();
+                setLeads(leadsData);
 
-                const data = await res.json();
-                setLeads(data);
+                // Fetch SEO
+                const seoRes = await fetch('/api/seo');
+                if (seoRes.ok) {
+                    const seoItems = await seoRes.json();
+                    setSeoData(seoItems);
+                }
+
                 setLoading(false);
             } catch (err) {
-                setError('Failed to fetch leads');
+                setError('Failed to fetch data');
                 setLoading(false);
             }
         };
 
-        fetchLeads();
+        fetchInitialData();
     }, [navigate]);
 
+    // Leads logic
     const updateStatus = async (id, newStatus) => {
         const token = localStorage.getItem('adminToken');
         try {
@@ -60,6 +76,86 @@ const AdminDashboard = () => {
         }
     };
 
+    // SEO Logic
+    const handleSeoSubmit = async (e) => {
+        e.preventDefault();
+        const token = localStorage.getItem('adminToken');
+        try {
+            const formRoute = seoForm.route.startsWith('/') ? seoForm.route : `/${seoForm.route}`;
+            const res = await fetch('/api/seo', {
+                method: 'POST',
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'x-auth-token': token
+                },
+                body: JSON.stringify({ ...seoForm, route: formRoute })
+            });
+
+            if (res.ok) {
+                const savedSeo = await res.json();
+                // Update local list
+                if (isEditingSeo) {
+                    setSeoData(seoData.map(item => item.route === savedSeo.route ? savedSeo : item));
+                } else {
+                    setSeoData([...seoData.filter(i => i.route !== savedSeo.route), savedSeo]);
+                }
+                
+                setSeoMessage({ type: 'success', text: 'SEO Data Saved Successfully!' });
+                setSeoForm({ route: '', title: '', description: '', keywords: '' });
+                setIsEditingSeo(false);
+                setTimeout(() => setSeoMessage({ type: '', text: '' }), 3000);
+            } else {
+                setSeoMessage({ type: 'error', text: 'Failed to save SEO data.' });
+            }
+        } catch (err) {
+            setSeoMessage({ type: 'error', text: 'Server error saving SEO.' });
+        }
+    };
+
+    const handleEditSeo = (item) => {
+        setSeoForm(item);
+        setIsEditingSeo(true);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    const handleDeleteSeo = async (id) => {
+        if (!window.confirm('Are you sure you want to delete this SEO entry?')) return;
+        
+        const token = localStorage.getItem('adminToken');
+        try {
+            const res = await fetch(`/api/seo/${id}`, {
+                method: 'DELETE',
+                headers: { 'x-auth-token': token }
+            });
+
+            if (res.ok) {
+                setSeoData(seoData.filter(item => item._id !== id));
+            }
+        } catch (err) {
+            console.error('Delete failed');
+        }
+    };
+
+    const handlePublishSeo = async () => {
+        const token = localStorage.getItem('adminToken');
+        try {
+            const res = await fetch('/api/seo/publish', {
+                method: 'POST',
+                headers: { 'x-auth-token': token }
+            });
+            const data = await res.json();
+            
+            if (res.ok) {
+                setSeoMessage({ type: 'success', text: 'Deployment triggered! Changes will be live in 1-2 minutes.' });
+            } else {
+                setSeoMessage({ type: 'error', text: data.msg || 'Deployment Trigger Failed.' });
+            }
+            setTimeout(() => setSeoMessage({ type: '', text: '' }), 6000);
+        } catch (err) {
+            setSeoMessage({ type: 'error', text: 'Server error triggering deployment.' });
+        }
+    };
+
     const handleLogout = () => {
         localStorage.removeItem('adminToken');
         navigate('/admin/login');
@@ -72,71 +168,192 @@ const AdminDashboard = () => {
             <div className={styles.container}>
                 <header className={styles.dashHeader}>
                     <div>
-                        <h1>Lead Management</h1>
-                        <p>Track and manage your industrial roofing inquiries</p>
+                        <h1>Zinco Admin Panel</h1>
+                        <p>Manage leads and global website metadata</p>
                     </div>
                     <button onClick={handleLogout} className={styles.logoutBtn}>Logout</button>
                 </header>
 
-                <div className={styles.statsGrid}>
-                    <div className={styles.statCard}>
-                        <h3>Total Leads</h3>
-                        <div className={styles.statValue}>{leads.length}</div>
-                    </div>
-                    <div className={styles.statCard}>
-                        <h3>New Leads</h3>
-                        <div className={styles.statValue}>{leads.filter(l => l.status === 'New').length}</div>
-                    </div>
+                <div className={styles.tabsContainer}>
+                    <button 
+                        className={`${styles.tabBtn} ${activeTab === 'leads' ? styles.activeTab : ''}`}
+                        onClick={() => setActiveTab('leads')}
+                    >
+                        Lead Management
+                    </button>
+                    <button 
+                        className={`${styles.tabBtn} ${activeTab === 'seo' ? styles.activeTab : ''}`}
+                        onClick={() => setActiveTab('seo')}
+                    >
+                        Dynamic SEO Manager
+                    </button>
                 </div>
 
-                <div className={styles.tableWrapper}>
-                    <table className={styles.leadsTable}>
-                        <thead>
-                            <tr>
-                                <th>Date</th>
-                                <th>Customer</th>
-                                <th>Contact</th>
-                                <th>Details</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {leads.map(lead => (
-                                <motion.tr 
-                                    key={lead._id}
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                >
-                                    <td>{new Date(lead.createdAt).toLocaleDateString()}</td>
-                                    <td>
-                                        <strong>{lead.name}</strong>
-                                        <div className={styles.subtext}>{lead.email}</div>
-                                    </td>
-                                    <td>{lead.phone}</td>
-                                    <td>
-                                        {lead.area && <div>{lead.area} sq.ft</div>}
-                                        {lead.material && <div className={styles.badge}>{lead.material}</div>}
-                                        {lead.source && <div className={styles.sourceBadge}>{lead.source}</div>}
-                                        {lead.message && <div className={styles.messagePreview}>{lead.message}</div>}
-                                    </td>
-                                    <td>
-                                        <select 
-                                            value={lead.status}
-                                            onChange={(e) => updateStatus(lead._id, e.target.value)}
-                                            className={`${styles.statusSelect} ${styles[lead.status.toLowerCase()]}`}
-                                        >
-                                            <option value="New">New</option>
-                                            <option value="Contacted">Contacted</option>
-                                            <option value="Quoted">Quoted</option>
-                                            <option value="Completed">Completed</option>
-                                            <option value="Rejected">Rejected</option>
-                                        </select>
-                                    </td>
-                                </motion.tr>
-                            ))}
-                        </tbody>
-                    </table>
-                </div>
+                {activeTab === 'leads' && (
+                    <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
+                        <div className={styles.statsGrid}>
+                            <div className={styles.statCard}>
+                                <h3>Total Leads</h3>
+                                <div className={styles.statValue}>{leads.length}</div>
+                            </div>
+                            <div className={styles.statCard}>
+                                <h3>New Leads</h3>
+                                <div className={styles.statValue}>{leads.filter(l => l.status === 'New').length}</div>
+                            </div>
+                        </div>
+
+                        <div className={styles.tableWrapper}>
+                            <table className={styles.leadsTable}>
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Customer</th>
+                                        <th>Contact</th>
+                                        <th>Details</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {leads.map(lead => (
+                                        <tr key={lead._id}>
+                                            <td>{new Date(lead.createdAt).toLocaleDateString()}</td>
+                                            <td>
+                                                <strong>{lead.name}</strong>
+                                                <div className={styles.subtext}>{lead.email}</div>
+                                            </td>
+                                            <td>{lead.phone}</td>
+                                            <td>
+                                                {lead.area && <div>{lead.area}</div>}
+                                                {lead.serviceType && <div className={styles.badge}>{lead.serviceType}</div>}
+                                                {lead.source && <div className={styles.sourceBadge}>{lead.source}</div>}
+                                                {lead.message && <div className={styles.messagePreview}>{lead.message}</div>}
+                                            </td>
+                                            <td>
+                                                <select 
+                                                    value={lead.status}
+                                                    onChange={(e) => updateStatus(lead._id, e.target.value)}
+                                                    className={`${styles.statusSelect} ${styles[lead.status.toLowerCase()]}`}
+                                                >
+                                                    <option value="New">New</option>
+                                                    <option value="Contacted">Contacted</option>
+                                                    <option value="Quoted">Quoted</option>
+                                                    <option value="Completed">Completed</option>
+                                                    <option value="Rejected">Rejected</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+                    </motion.div>
+                )}
+
+                {activeTab === 'seo' && (
+                    <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className={styles.seoContainer}>
+                        <div className={styles.seoHeader}>
+                            <h2>Manage Page SEO</h2>
+                            <button onClick={handlePublishSeo} className={styles.publishBtn}>
+                                🚀 Publish SEO Changes
+                            </button>
+                        </div>
+                        <p className={styles.seoHelper}>
+                            Update Title, Description, and Keywords for any route. Note: Clicking "Publish" rebuilds the website so changes are visible to Google.
+                        </p>
+
+                        <div className={styles.seoFormCard}>
+                            <h3>{isEditingSeo ? 'Edit SEO Entry' : 'Add New SEO Entry'}</h3>
+                            {seoMessage.text && (
+                                <div className={`${styles.seoMessage} ${styles[seoMessage.type]}`}>
+                                    {seoMessage.text}
+                                </div>
+                            )}
+                            <form onSubmit={handleSeoSubmit} className={styles.seoForm}>
+                                <div className={styles.formGroup}>
+                                    <label>Route Path (e.g. /, /services, /products/decking-sheet)</label>
+                                    <input 
+                                        type="text" 
+                                        required 
+                                        value={seoForm.route} 
+                                        onChange={e => setSeoForm({...seoForm, route: e.target.value})} 
+                                        placeholder="/"
+                                        disabled={isEditingSeo}
+                                    />
+                                </div>
+                                <div className={styles.formGroup}>
+                                    <label>Meta Title</label>
+                                    <input 
+                                        type="text" 
+                                        required 
+                                        value={seoForm.title} 
+                                        onChange={e => setSeoForm({...seoForm, title: e.target.value})} 
+                                        placeholder="Best Industrial Roofing Services..."
+                                    />
+                                </div>
+                                <div className={styles.formGroup}>
+                                    <label>Meta Description</label>
+                                    <textarea 
+                                        required 
+                                        rows="3"
+                                        value={seoForm.description} 
+                                        onChange={e => setSeoForm({...seoForm, description: e.target.value})} 
+                                        placeholder="Zinco Roofing provides..."
+                                    ></textarea>
+                                </div>
+                                <div className={styles.formGroup}>
+                                    <label>Meta Keywords (Comma separated)</label>
+                                    <input 
+                                        type="text" 
+                                        value={seoForm.keywords} 
+                                        onChange={e => setSeoForm({...seoForm, keywords: e.target.value})} 
+                                        placeholder="roofing, metal sheets, navi mumbai"
+                                    />
+                                </div>
+                                <div className={styles.formActions}>
+                                    <button type="submit" className={styles.saveBtn}>
+                                        {isEditingSeo ? 'Update SEO' : 'Save SEO'}
+                                    </button>
+                                    {isEditingSeo && (
+                                        <button type="button" onClick={() => { setIsEditingSeo(false); setSeoForm({ route: '', title: '', description: '', keywords: '' }); }} className={styles.cancelBtn}>
+                                            Cancel
+                                        </button>
+                                    )}
+                                </div>
+                            </form>
+                        </div>
+
+                        <div className={styles.tableWrapper}>
+                            <table className={styles.seoTable}>
+                                <thead>
+                                    <tr>
+                                        <th>Route</th>
+                                        <th>Title</th>
+                                        <th>Description</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {seoData.map(item => (
+                                        <tr key={item._id}>
+                                            <td className={styles.routeCol}><strong>{item.route}</strong></td>
+                                            <td><div className={styles.truncate}>{item.title}</div></td>
+                                            <td><div className={styles.truncate}>{item.description}</div></td>
+                                            <td className={styles.actionCol}>
+                                                <button onClick={() => handleEditSeo(item)} className={styles.editBtn}>Edit</button>
+                                                <button onClick={() => handleDeleteSeo(item._id)} className={styles.deleteBtn}>Del</button>
+                                            </td>
+                                        </tr>
+                                    ))}
+                                    {seoData.length === 0 && (
+                                        <tr>
+                                            <td colSpan="4" style={{ textAlign: 'center', padding: '2rem' }}>No SEO data found. Add one above.</td>
+                                        </tr>
+                                    )}
+                                </tbody>
+                            </table>
+                        </div>
+                    </motion.div>
+                )}
             </div>
         </div>
     );
