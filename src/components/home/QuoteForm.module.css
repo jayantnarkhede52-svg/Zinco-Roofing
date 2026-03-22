@@ -86,7 +86,7 @@
     margin-left: var(--spacing-xs);
 }
 
-.inputGroup input, .inputGroupFull textarea, .inputGroup select {
+.inputGroup input, .inputGroupFull input, .inputGroupFull textarea, .inputGroup select, .inputGroupFull select {
     padding: var(--spacing-md) var(--spacing-xl);
     border-radius: var(--radius-lg);
     border: 1px solid var(--gray-200);
@@ -97,7 +97,7 @@
     font-family: inherit;
 }
 
-.inputGroup input:focus, .inputGroupFull textarea:focus, .inputGroup select:focus {
+.inputGroup input:focus, .inputGroupFull input:focus, .inputGroupFull textarea:focus, .inputGroup select:focus, .inputGroupFull select:focus {
     outline: none;
     border-color: var(--accent-500);
     box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2);

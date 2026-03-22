@@ -118,10 +118,20 @@ const QuoteForm = () => {
                                             onChange={(e) => setFormData({...formData, serviceType: e.target.value})}
                                             required
                                         >
-                                            <option value="Industrial Roofing">Industrial Roofing</option>
-                                            <option value="PEB Fabrication">PEB Structure Fabrication</option>
-                                            <option value="Roof Leak Repair">Roof Leak Repair</option>
-                                            <option value="Polycarbonate Roofing">Polycarbonate Roofing</option>
+                                            <optgroup label="Services">
+                                                <option value="Industrial Roofing">Industrial Roofing</option>
+                                                <option value="Metal Roofing">Metal Roofing</option>
+                                                <option value="PUF Panel Roofing">PUF Panel Roofing</option>
+                                                <option value="Polycarbonate Roofing">Polycarbonate Roofing</option>
+                                                <option value="Industrial Painting">Industrial Painting</option>
+                                                <option value="PEB Fabrication">PEB Structure Fabrication</option>
+                                                <option value="Roof Leak Repair">Roof Leak Repair</option>
+                                            </optgroup>
+                                            <optgroup label="Products / Materials">
+                                                <option value="Decking Sheet">Decking Sheet</option>
+                                                <option value="Color Coated Roofing Sheet">Color Coated Roofing Sheet</option>
+                                                <option value="Polycarbonate Sheet">Polycarbonate Sheet</option>
+                                            </optgroup>
                                             <option value="Other">Other</option>
                                         </select>
                                     </div>
