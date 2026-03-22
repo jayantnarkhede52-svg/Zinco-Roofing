@@ -136,6 +136,27 @@ const AdminDashboard = () => {
         }
     };
 
+    const handleExportCsv = async () => {
+        const token = localStorage.getItem('adminToken');
+        try {
+            const res = await fetch('/api/leads/export', {
+                headers: { 'x-auth-token': token }
+            });
+            if (res.ok) {
+                const blob = await res.blob();
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `leads_export_${new Date().toISOString().split('T')[0]}.csv`;
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+            }
+        } catch (err) {
+            console.error('Export failed');
+        }
+    };
+
     const handlePublishSeo = async () => {
         const token = localStorage.getItem('adminToken');
         try {
@@ -199,6 +220,71 @@ const AdminDashboard = () => {
                             <div className={styles.statCard}>
                                 <h3>New Leads</h3>
                                 <div className={styles.statValue}>{leads.filter(l => l.status === 'New').length}</div>
+                            </div>
+                            <div className={styles.statCard}>
+                                <h3>Actions</h3>
+                                <button onClick={handleExportCsv} className={styles.exportBtn}>
+                                    📥 Export Leads to CSV
+                                </button>
+                            </div>
+                        </div>
+
+                        {/* Analytics Section */}
+                        <div className={styles.analyticsGrid}>
+                            <div className={styles.chartCard}>
+                                <h3>Leads by Service Type</h3>
+                                <div className={styles.chartArea}>
+                                    {Object.entries(
+                                        leads.reduce((acc, lead) => {
+                                            const type = lead.serviceType || lead.material || 'General';
+                                            acc[type] = (acc[type] || 0) + 1;
+                                            return acc;
+                                        }, {})
+                                    ).map(([type, count]) => (
+                                        <div key={type} className={styles.barRow}>
+                                            <span className={styles.barLabel}>{type}</span>
+                                            <div className={styles.barWrapper}>
+                                                <motion.div 
+                                                    initial={{ width: 0 }}
+                                                    animate={{ width: `${(count / leads.length) * 100}%` }}
+                                                    className={styles.bar}
+                                                />
+                                            </div>
+                                            <span className={styles.barCount}>{count}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
+                            <div className={styles.chartCard}>
+                                <h3>Leads Trend (Last 7 Days)</h3>
+                                <div className={styles.chartArea}>
+                                    {[...Array(7)].map((_, i) => {
+                                        const d = new Date();
+                                        d.setDate(d.getDate() - (6 - i));
+                                        const dateStr = d.toLocaleDateString('en-GB', { day: '2-digit', month: 'short' });
+                                        const count = leads.filter(l => new Date(l.createdAt).toDateString() === d.toDateString()).length;
+                                        const maxLeads = Math.max(...[0, ...[...Array(7)].map((_, j) => {
+                                            const dj = new Date(); dj.setDate(dj.getDate() - j);
+                                            return leads.filter(l => new Date(l.createdAt).toDateString() === dj.toDateString()).length;
+                                        })]);
+                                        
+                                        return (
+                                            <div key={i} className={styles.trendCol}>
+                                                <div className={styles.trendBarWrapper}>
+                                                    <motion.div 
+                                                        initial={{ height: 0 }}
+                                                        animate={{ height: `${maxLeads > 0 ? (count / maxLeads) * 100 : 0}%` }}
+                                                        className={styles.trendBar}
+                                                    >
+                                                        {count > 0 && <span className={styles.trendCount}>{count}</span>}
+                                                    </motion.div>
+                                                </div>
+                                                <span className={styles.trendLabel}>{dateStr}</span>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
                             </div>
                         </div>
 

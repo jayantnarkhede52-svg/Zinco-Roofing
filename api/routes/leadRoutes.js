@@ -44,4 +44,42 @@ router.patch('/:id', auth, async (req, res) => {
     }
 });
 
+// @route   GET api/leads/export
+// @desc    Export leads to CSV (Protected)
+router.get('/export', auth, async (req, res) => {
+    try {
+        const leads = await Lead.find().sort({ createdAt: -1 });
+        
+        // Define CSV headers
+        let csv = 'Date,Name,Email,Phone,Service,Area,Source,Status,Message\n';
+        
+        // Add data rows
+        leads.forEach(lead => {
+            const date = new Date(lead.createdAt).toLocaleDateString();
+            const name = `"${itemEscape(lead.name)}"`;
+            const email = `"${itemEscape(lead.email)}"`;
+            const phone = `"${itemEscape(lead.phone)}"`;
+            const service = `"${itemEscape(lead.serviceType || lead.material || '')}"`;
+            const area = `"${itemEscape(lead.area || '')}"`;
+            const source = `"${itemEscape(lead.source || '')}"`;
+            const status = `"${itemEscape(lead.status)}"`;
+            const message = `"${itemEscape(lead.message || '')}"`;
+            
+            csv += `${date},${name},${email},${phone},${service},${area},${source},${status},${message}\n`;
+        });
+
+        res.setHeader('Content-Type', 'text/csv');
+        res.setHeader('Content-Disposition', `attachment; filename=leads_${new Date().toISOString().split('T')[0]}.csv`);
+        res.send(csv);
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).json({ msg: 'Server Error', error: err.message });
+    }
+});
+
+function itemEscape(text) {
+    if (!text) return '';
+    return text.toString().replace(/"/g, '""');
+}
+
 module.exports = router;
