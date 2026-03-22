@@ -12,7 +12,7 @@ router.post('/', async (req, res) => {
         res.json(lead);
     } catch (err) {
         console.error(err.message);
-        res.status(500).send('Server Error');
+        res.status(500).json({ msg: 'Server Error', error: err.message });
     }
 });
 
@@ -24,7 +24,7 @@ router.get('/', auth, async (req, res) => {
         res.json(leads);
     } catch (err) {
         console.error(err.message);
-        res.status(500).send('Server Error');
+        res.status(500).json({ msg: 'Server Error', error: err.message });
     }
 });
 
@@ -40,7 +40,7 @@ router.patch('/:id', auth, async (req, res) => {
         res.json(lead);
     } catch (err) {
         console.error(err.message);
-        res.status(500).send('Server Error');
+        res.status(500).json({ msg: 'Server Error', error: err.message });
     }
 });
 

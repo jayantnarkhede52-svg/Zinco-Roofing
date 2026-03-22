@@ -18,16 +18,23 @@ const AdminLogin = () => {
                 body: JSON.stringify(formData)
             });
 
+            const contentType = res.headers.get("content-type");
+            if (!contentType || !contentType.includes("application/json")) {
+                const text = await res.text();
+                console.error("Non-JSON API response:", text);
+                throw new Error("Server Error: Database connection might be missing.");
+            }
+
             const data = await res.json();
             
             if (res.ok) {
                 localStorage.setItem('adminToken', data.token);
                 navigate('/admin/dashboard');
             } else {
-                setError(data.msg || 'Login failed');
+                setError(data.msg || data.error || 'Login failed');
             }
         } catch (err) {
-            setError('Server connection failed');
+            setError(err.message || 'Server connection failed');
         }
     };
 
