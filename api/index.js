@@ -17,8 +17,10 @@ app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/leads', require('./routes/leadRoutes'));
 app.use('/api/seo', require('./routes/seoRoutes'));
 
-// Database Connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/zincoroofing')
+// Database Connection (trimming to avoid accidental newline errors from env vars)
+const mongoURI = (process.env.MONGODB_URI || 'mongodb://localhost:27017/zincoroofing').trim();
+
+mongoose.connect(mongoURI)
     .then(() => console.log('✅ Connected to MongoDB'))
     .catch((err) => console.error('❌ MongoDB Connection Error:', err));
 
