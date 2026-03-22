@@ -19,10 +19,10 @@ router.get('/', async (req, res) => {
 // @route   GET /api/seo/:route
 // @desc    Get SEO metadata for a specific route
 // @access  Public
-router.get('/:route(*)', async (req, res) => {
+router.get('/*route', async (req, res) => {
     try {
-        const routePath = req.params.route;
-        const seoData = await SeoMetadata.findOne({ route: `/${routePath}` });
+        const routePath = '/' + req.params.route;
+        const seoData = await SeoMetadata.findOne({ route: routePath });
         
         if (!seoData) {
             return res.status(404).json({ msg: 'SEO data not found for this route' });

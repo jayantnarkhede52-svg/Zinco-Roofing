@@ -30,7 +30,6 @@ router.get('/', auth, async (req, res) => {
 
 // @route   GET api/leads/export
 // @desc    Export leads to CSV (Protected)
-// NOTE: This must come BEFORE /:id to avoid matching "export" as an id
 router.get('/export', auth, async (req, res) => {
     try {
         const leads = await Lead.find().sort({ createdAt: -1 });
@@ -39,16 +38,8 @@ router.get('/export', auth, async (req, res) => {
         
         leads.forEach(lead => {
             const date = new Date(lead.createdAt).toLocaleDateString();
-            const name = `"${itemEscape(lead.name)}"`;
-            const email = `"${itemEscape(lead.email)}"`;
-            const phone = `"${itemEscape(lead.phone)}"`;
-            const service = `"${itemEscape(lead.serviceType || lead.material || '')}"`;
-            const area = `"${itemEscape(lead.area || '')}"`;
-            const source = `"${itemEscape(lead.source || '')}"`;
-            const status = `"${itemEscape(lead.status)}"`;
-            const message = `"${itemEscape(lead.message || '')}"`;
-            
-            csv += `${date},${name},${email},${phone},${service},${area},${source},${status},${message}\n`;
+            const esc = (t) => t ? '"' + String(t).replace(/"/g, '""') + '"' : '""';
+            csv += `${date},${esc(lead.name)},${esc(lead.email)},${esc(lead.phone)},${esc(lead.serviceType || lead.material || '')},${esc(lead.area || '')},${esc(lead.source || '')},${esc(lead.status)},${esc(lead.message || '')}\n`;
         });
 
         res.setHeader('Content-Type', 'text/csv');
@@ -75,10 +66,5 @@ router.patch('/:id', auth, async (req, res) => {
         res.status(500).json({ msg: 'Server Error', error: err.message });
     }
 });
-
-function itemEscape(text) {
-    if (!text) return '';
-    return text.toString().replace(/"/g, '""');
-}
 
 module.exports = router;
