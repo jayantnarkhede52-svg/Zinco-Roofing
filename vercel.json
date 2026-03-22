@@ -1,5 +1,18 @@
 {
   "version": 2,
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "zincoroof.com"
+        }
+      ],
+      "destination": "https://www.zincoroof.com/$1",
+      "statusCode": 308
+    }
+  ],
   "rewrites": [
     {
       "source": "/api/(.*)",

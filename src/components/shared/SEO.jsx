@@ -27,6 +27,19 @@ const SEO = ({ title: propTitle, description: propDesc, keywords: propKeywords, 
     const description = dynamicSeo?.description ? dynamicSeo.description : propDesc;
     const keywords = dynamicSeo?.keywords ? dynamicSeo.keywords : propKeywords;
 
+    const resolveCanonical = () => {
+        if (canonicalUrl) return canonicalUrl;
+        if (typeof window !== 'undefined') {
+            // Force www for canonical to match Vercel redirect rules
+            const hostname = window.location.hostname;
+            const domain = hostname === 'localhost' ? 'http://localhost:5173' : 'https://www.zincoroof.com';
+            return `${domain}${window.location.pathname}`;
+        }
+        return `https://www.zincoroof.com${location.pathname}`;
+    };
+
+    const finalCanonical = resolveCanonical();
+
     const address = {
         "@type": "PostalAddress",
         "streetAddress": "Shop Number 22, Elite Complex Lodha Heaven, Kalyan - Shilphata Rd",
@@ -107,7 +120,7 @@ const SEO = ({ title: propTitle, description: propDesc, keywords: propKeywords, 
             <title>{title} | Zinco Roofing</title>
             <meta name="description" content={description} />
             {keywords && <meta name="keywords" content={keywords} />}
-            {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+            {finalCanonical && <link rel="canonical" href={finalCanonical} />}
 
             {/* Open Graph / Facebook */}
             <meta property="og:type" content="website" />
