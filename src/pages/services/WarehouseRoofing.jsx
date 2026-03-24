@@ -15,7 +15,7 @@ const WarehouseRoofing = () => {
                 title="Warehouse Roofing Solutions & Industrial Sheds | Zinco Roofing"
                 description="Comprehensive warehouse roofing solutions in Navi Mumbai. Specialized in large-span sheds, insulation, and leak-proof roofing for logistics hubs."
                 keywords="warehouse roofing solutions, industrial shed roofing, logistics park roofing, warehouse insulation, large span roofing"
-                canonicalUrl="https://zincoroof.com/services/warehouse-roofing-solutions"
+                canonicalUrl="https://www.zincoroof.com/services/warehouse-roofing-solutions"
             />
 
             <section className={styles.hero} style={{ backgroundImage: `url(${heroImage})` }}>

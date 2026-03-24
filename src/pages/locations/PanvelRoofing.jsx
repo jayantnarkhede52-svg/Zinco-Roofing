@@ -39,7 +39,7 @@ const PanvelRoofing = () => {
                 title="Industrial Roofing Specialist in Panvel | Logistics Infrastructure"
                 description="Expert structural fabrication and industrial roofing service in Panvel. Specializing in high-span warehouse roofing, factory sheds, and PUF panels."
                 keywords="industrial roofing specialist panvel, logistics infrastructure mumbai, roofing sheets panvel, factory shed contractors"
-                canonicalUrl="https://zincoroof.com/roofing-contractor-in-panvel"
+                canonicalUrl="https://www.zincoroof.com/roofing-contractor-in-panvel"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} fetchpriority="high" />

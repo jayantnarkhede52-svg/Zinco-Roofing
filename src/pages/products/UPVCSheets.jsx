@@ -72,7 +72,7 @@ const UPVCSheets = () => {
                 title="UPVC Roofing Sheets in Navi Mumbai & Panvel | Zinco"
                 description="Durable UPVC roofing sheets for industrial and warehousing projects in Taloja, Panvel, and JNPT. Corrosion-free and heat reducing."
                 keywords="upvc sheets navi mumbai, plastic roofing sheets, industrial roofing sheets, upvc roof panels, heat resistant roofing"
-                canonicalUrl="https://zincoroof.com/products/upvc-sheets"
+                canonicalUrl="https://www.zincoroof.com/products/upvc-sheets"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImg} fetchpriority="high" />

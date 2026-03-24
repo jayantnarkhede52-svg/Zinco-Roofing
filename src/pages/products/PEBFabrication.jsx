@@ -55,7 +55,7 @@ const PEBFabrication = () => {
                 title="PEB Structure Fabrication in Navi Mumbai & Panvel"
                 description="Turnkey Pre-Engineered Building (PEB) solutions, industrial sheds, and warehouse construction in Taloja, Bhiwandi, and Mumbai. Fast erection and cost-effective."
                 keywords="peb structure fabrication, industrial shed contractor, pre engineered builders, warehouse construction mumbai"
-                canonicalUrl="https://zincoroof.com/products/peb-fabrication"
+                canonicalUrl="https://www.zincoroof.com/products/peb-fabrication"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} fetchpriority="high" />

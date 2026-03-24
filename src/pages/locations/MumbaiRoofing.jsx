@@ -38,7 +38,7 @@ const MumbaiRoofing = () => {
                 title="Industrial Roofing Specialist in Mumbai | Premium Structural Solutions"
                 description="Expert structural fabrication and industrial roofing service in Mumbai. High-performance metal roofing, PUF panels, and durable shed construction."
                 keywords="industrial roofing specialist mumbai, structural fabrication mumbai, roofing sheets mumbai, factory shed contractors"
-                canonicalUrl="https://zincoroof.com/roofing-contractor-in-mumbai"
+                canonicalUrl="https://www.zincoroof.com/roofing-contractor-in-mumbai"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} fetchpriority="high" />

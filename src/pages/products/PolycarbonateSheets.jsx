@@ -67,7 +67,7 @@ const PolycarbonateSheets = () => {
                 title="High-Rib Polycarbonate Sheets in Navi Mumbai | Zinco"
                 description="Unbreakable high-rib polycarbonate roofing sheets for industrial skylights in Taloja, Rabale, and Panvel. Superior light transmission and UV protection."
                 keywords="polycarbonate sheets navi mumbai, high rib polycarbonate, industrial skylights, transparent roofing sheets"
-                canonicalUrl="https://zincoroof.com/products/polycarbonate-sheets"
+                canonicalUrl="https://www.zincoroof.com/products/polycarbonate-sheets"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImg} fetchpriority="high" />

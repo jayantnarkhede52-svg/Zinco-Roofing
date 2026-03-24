@@ -39,7 +39,7 @@ const NaviMumbaiRoofing = () => {
                 title="Industrial Roofing Specialist in Navi Mumbai | Premium Solutions"
                 description="Expert structural fabrication and industrial roofing service in Navi Mumbai. High-performance metal roofing, PUF panels, and durable shed construction."
                 keywords="industrial roofing specialist navi mumbai, structural fabrication navi mumbai, roofing sheets navi mumbai, factory shed contractors"
-                canonicalUrl="https://zincoroof.com/industrial-roofing-contractors-in-navi-mumbai"
+                canonicalUrl="https://www.zincoroof.com/industrial-roofing-contractors-in-navi-mumbai"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} fetchpriority="high" />

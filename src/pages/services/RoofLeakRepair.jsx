@@ -15,7 +15,7 @@ const RoofLeakRepair = () => {
                 title="Industrial Roof Leak Repair & Crack Sealing | Zinco Roofing"
                 description="Professional industrial roof leak repair and roof crack repair services in Navi Mumbai. 24/7 emergency support for factory and warehouse roofs."
                 keywords="roof leak repair, repair roof cracks, roof crack repair, industrial roof maintenance, warehouse leak sealing"
-                canonicalUrl="https://zincoroof.com/services/industrial-roof-leak-repair"
+                canonicalUrl="https://www.zincoroof.com/services/industrial-roof-leak-repair"
             />
 
             <section className={styles.hero} style={{ backgroundImage: `url(${heroImage})` }}>

@@ -21,7 +21,7 @@ const PUFPanelNaviMumbai = () => {
                 title="PUF Panel in Navi Mumbai | Insulated Roofing Sheets Specialist"
                 description="Expert puf panel in navi mumbai solutions. Delivering high-quality Insulated Roofing Sheets and cold storage panels for Navi Mumbai's industrial hubs."
                 keywords="puf panel in navi mumbai, puf panel manufacturer navi mumbai, insulated roofing sheets navi mumbai"
-                canonicalUrl="https://zincoroof.com/puf-panel-in-navi-mumbai"
+                canonicalUrl="https://www.zincoroof.com/puf-panel-in-navi-mumbai"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} fetchpriority="high" />

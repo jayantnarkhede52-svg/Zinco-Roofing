@@ -56,7 +56,7 @@ const Ventilators = () => {
                 title="Roof Ventilator Manufacturer in Navi Mumbai | Free Site Visit"
                 description="Get high-quality roof ventilator in Navi Mumbai from an experienced manufacturer. Free site visit, fast delivery and expert installation available."
                 keywords="Roof Ventilator in Navi Mumbai, turbo ventilators navi mumbai, roof ventilators in Navi Mumbai, Industrial ventilation system, Roof Ventilator Price in Navi Mumbai"
-                canonicalUrl="https://zincoroof.com/products/ventilators"
+                canonicalUrl="https://www.zincoroof.com/products/ventilators"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImg} fetchpriority="high" />

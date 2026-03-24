@@ -55,7 +55,7 @@ const RockwoolGlasswool = () => {
                 title="Rockwool & Glasswool Roof Panels in Navi Mumbai | Zinco"
                 description="Fire-resistant Rockwool and Glasswool insulated roof panels for industrial sheds and sound studios in Taloja, Rabale, and Mumbai. High acoustic control."
                 keywords="rockwool panels, glasswool insulation, fire resistant roofing, acoustic roof panels mumbai, industrial insulation"
-                canonicalUrl="https://zincoroof.com/products/rockwool-glasswool"
+                canonicalUrl="https://www.zincoroof.com/products/rockwool-glasswool"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImg} fetchpriority="high" />

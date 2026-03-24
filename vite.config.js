@@ -51,9 +51,21 @@ export default defineConfig({
         '/industrial-roofing-contractors-in-ambarnath',
         '/industrial-roofing-contractors-in-navi-mumbai',
         '/industrial-roofing-contractors-in-dombivli',
-        '/puf-panel-manufacturer-navi-mumbai'
+        '/puf-panel-manufacturer-navi-mumbai',
+        '/industrial-roofing-contractors-in-lonavla',
+        '/industrial-roofing-contractors-in-chakan-pune',
+        '/industrial-painting-in-chakan',
+        
+        // Service Pages
+        '/services/industrial-roof-leak-repair',
+        '/services/peb-structure-fabrication',
+        '/services/warehouse-roofing-solutions',
+        '/services/metal-roof-installation',
+        
+        // Other pages
+        '/industrial-roofing-cost-calculator'
       ],
-      renderer: '@prerenderer/renderer-jsdom',
+      renderer: '@prerenderer/renderer-puppeteer',
       rendererOptions: {
         maxConcurrentRoutes: 1,
         renderAfterDocumentEvent: 'render-event',

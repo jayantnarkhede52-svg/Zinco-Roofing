@@ -38,7 +38,7 @@ const DombivliRoofing = () => {
                 title="Industrial Roofing Specialist in Dombivli | MIDC Partner"
                 description="Expert structural fabrication and industrial roofing service in Dombivli. Specializing in high-span factory sheds, PUF panels, and chemical-resistant roofing."
                 keywords="industrial roofing specialist dombivli, dombivli midc roofing, factory shed contractors"
-                canonicalUrl="https://zincoroof.com/roofing-contractor-in-dombivli"
+                canonicalUrl="https://www.zincoroof.com/roofing-contractor-in-dombivli"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} fetchpriority="high" />

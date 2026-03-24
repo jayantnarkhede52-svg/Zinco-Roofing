@@ -20,7 +20,7 @@ const LonavlaRoofing = () => {
                 title="Roofing Contractor in Lonavla | Heavy Rainfall Roofing Solutions"
                 description="Expert roofing contractor in lonavla. Specializing in leak-proof, weather-resistant roofing and PUF panels for Lonavla industrial sheds."
                 keywords="roofing contractor in lonavla, lonavla roofing contractors, factory shed roofing lonavla"
-                canonicalUrl="https://zincoroof.com/roofing-contractor-in-lonavla"
+                canonicalUrl="https://www.zincoroof.com/roofing-contractor-in-lonavla"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} fetchpriority="high" />

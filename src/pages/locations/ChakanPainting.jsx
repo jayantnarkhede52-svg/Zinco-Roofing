@@ -19,7 +19,7 @@ const ChakanPainting = () => {
                 title="Industrial Painting Services in Chakan | Epoxy Coatings Chakan"
                 description="Expert industrial painting services in chakan. Specialized epoxy floor coating, structural protection, and anti-corrosive painting for Chakan & Talegaon MIDC."
                 keywords="industrial painting services in chakan, Epoxy Coating Chakan, Structural Painting"
-                canonicalUrl="https://zincoroof.com/industrial-painting-services-in-chakan"
+                canonicalUrl="https://www.zincoroof.com/industrial-painting-services-in-chakan"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} fetchpriority="high" />

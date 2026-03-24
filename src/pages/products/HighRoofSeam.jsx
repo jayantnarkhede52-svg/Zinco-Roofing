@@ -55,7 +55,7 @@ const HighRoofSeam = () => {
                 title="High Roof Seam Systems in Navi Mumbai | Standing Seam"
                 description="Leak-proof standing seam roofing systems (High Roof Seam) for airports, warehouses, and industrial sheds in Taloja and Panvel. Concealed fastener technology."
                 keywords="standing seam roofing, high roof seam, leak proof roofing, concealed fastener roofing, industrial roofing mumbai"
-                canonicalUrl="https://zincoroof.com/products/high-roof-seam"
+                canonicalUrl="https://www.zincoroof.com/products/high-roof-seam"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImg} fetchpriority="high" />

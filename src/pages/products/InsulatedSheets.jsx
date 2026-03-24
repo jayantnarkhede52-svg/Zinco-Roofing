@@ -81,7 +81,7 @@ const InsulatedSheets = () => {
                 title="PUF Insulated Roofing Sheets Manufacturer in Navi Mumbai"
                 description="Premium PUF insulated roofing panels for cold storage and industrial sheds in Taloja, Mahape, and Navi Mumbai. Energy-efficient roofing solutions."
                 keywords="puf insulated sheets, puf panels navi mumbai, cold storage panels, insulated roofing sheets"
-                canonicalUrl="https://zincoroof.com/products/insulated-sheets"
+                canonicalUrl="https://www.zincoroof.com/products/insulated-sheets"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImg} fetchpriority="high" />

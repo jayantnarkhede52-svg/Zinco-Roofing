@@ -55,7 +55,7 @@ const Shingles = () => {
                 title="Premium Roofing Shingles in Mumbai | Zinco"
                 description="Luxury asphalt roofing shingles for villas and resorts in Lonavala, Alibaug, and Karjat. Durable, weather-resistant, and aesthetically superior."
                 keywords="roofing shingles mumbai, asphalt shingles, villa roofing, resort roofing lonavala, shingle roof contractors"
-                canonicalUrl="https://zincoroof.com/products/shingles"
+                canonicalUrl="https://www.zincoroof.com/products/shingles"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImg} fetchpriority="high" />

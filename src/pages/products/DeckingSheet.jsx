@@ -84,7 +84,7 @@ const DeckingSheet = () => {
                 title="Super Deck - Composite Flooring Sheets in Mumbai"
                 description="High-strength composite metal deck flooring sheets for multi-story buildings and industrial mezzanines in Navi Mumbai and Panvel. Faster slab casting."
                 keywords="metal decking sheets, composite flooring sheets, decking profile, floor decking mumbai"
-                canonicalUrl="https://zincoroof.com/products/decking-sheet"
+                canonicalUrl="https://www.zincoroof.com/products/decking-sheet"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImg} fetchpriority="high" />

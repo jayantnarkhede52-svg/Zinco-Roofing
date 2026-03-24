@@ -64,7 +64,7 @@ const Projects = () => {
                 title="Industrial Roofing Projects in Navi Mumbai | Zinco Portfolio"
                 description="Explore our Industrial Roofing Projects in Navi Mumbai portfolio. Zinco Roofing showcases Industrial Roofing Projects in Navi Mumbai for factories."
                 keywords="Industrial Roofing Projects in Navi Mumbai, industrial roofing projects in navi mumbai, warehouse roofing gallery, industrial roofing projects in navi mumbai projects"
-                canonicalUrl="https://zincoroof.com/industrial-roofing-projects-navi-mumbai"
+                canonicalUrl="https://www.zincoroof.com/industrial-roofing-projects-navi-mumbai"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} fetchpriority="high" />

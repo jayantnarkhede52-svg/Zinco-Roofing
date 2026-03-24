@@ -53,9 +53,9 @@ const SEO = ({ title: propTitle, description: propDesc, keywords: propKeywords, 
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Zinco Roofing Solution",
-        "image": "https://zincoroof.com/logo.webp",
-        "@id": "https://zincoroof.com",
-        "url": "https://zincoroof.com",
+        "image": "https://www.zincoroof.com/logo.webp",
+        "@id": "https://www.zincoroof.com",
+        "url": "https://www.zincoroof.com",
         "telephone": "+919967203090",
         "priceRange": "₹₹₹",
         "address": address,
@@ -91,12 +91,12 @@ const SEO = ({ title: propTitle, description: propDesc, keywords: propKeywords, 
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://zincoroof.com"
+                "item": "https://www.zincoroof.com"
             }
         ];
 
         pathnames.forEach((path, index) => {
-            const url = `https://zincoroof.com/${pathnames.slice(0, index + 1).join('/')}`;
+            const url = `https://www.zincoroof.com/${pathnames.slice(0, index + 1).join('/')}`;
             items.push({
                 "@type": "ListItem",
                 "position": index + 2,

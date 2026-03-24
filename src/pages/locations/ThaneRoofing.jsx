@@ -20,7 +20,7 @@ const ThaneRoofing = () => {
                 title="Industrial Roofing Contractor in Navi Mumbai | Thane Specialist"
                 description="Top industrial roofing contractor in navi mumbai experts serving Thane and Wagle Estate. Specializing in factory sheds, commercial roofing, and premium structural painting."
                 keywords="industrial roofing contractor in navi mumbai, roofing contractor in thane, industrial roofing thane, thane midc roofing"
-                canonicalUrl="https://zincoroof.com/roofing-contractor-in-thane"
+                canonicalUrl="https://www.zincoroof.com/roofing-contractor-in-thane"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} fetchpriority="high" />

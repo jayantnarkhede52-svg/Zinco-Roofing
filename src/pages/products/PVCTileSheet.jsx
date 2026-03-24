@@ -71,7 +71,7 @@ const PVCTileSheet = () => {
                 title="PVC Tile Sheets in Navi Mumbai | Spanish Tile Roof"
                 description="Traditional Spanish-style PVC roofing tiles for bungalows and resorts in Alibaug, Panvel, and Navi Mumbai. Lightweight, durable, and leak-proof."
                 keywords="pvc tile sheets, spanish tile roofing, plastic roof tiles, resort roofing alibaug, bungalow roofing mumbai"
-                canonicalUrl="https://zincoroof.com/products/pvc-tile-sheet"
+                canonicalUrl="https://www.zincoroof.com/products/pvc-tile-sheet"
             />
             <Helmet>
                 <link rel="preload" as="image" href={tileImg1} fetchpriority="high" />

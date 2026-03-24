@@ -55,7 +55,7 @@ const MetalTileSheet = () => {
                 title="Metal Tile Sheets in Navi Mumbai | Zinco"
                 description="Aesthetic metal tile roofing sheets for resorts and bungalows in Alibaug, Panvel, and Konkan. Lightweight, leak-proof, and durable tile profile."
                 keywords="metal tile sheets, mangalore tile profile, metal roofing tiles, resort roofing alibaug"
-                canonicalUrl="https://zincoroof.com/products/metal-tile-sheet"
+                canonicalUrl="https://www.zincoroof.com/products/metal-tile-sheet"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} fetchpriority="high" />

@@ -65,7 +65,7 @@ const Purlins = () => {
                 title="C & Z Purlins Manufacturer in Navi Mumbai"
                 description="High-strength Galvanized C & Z Purlins for PEB structures in Panvel, Taloja, and Bhiwandi. Custom sizes and quick delivery."
                 keywords="c purlins, z purlins, galvanized purlins, structural steel navi mumbai, peb structural members"
-                canonicalUrl="https://zincoroof.com/products/purlins"
+                canonicalUrl="https://www.zincoroof.com/products/purlins"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} fetchpriority="high" />

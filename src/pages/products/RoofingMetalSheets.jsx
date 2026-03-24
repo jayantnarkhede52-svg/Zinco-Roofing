@@ -91,7 +91,7 @@ const RoofingMetalSheets = () => {
                 title="Colour Coated Roofing Sheets Manufacturer in Navi Mumbai"
                 description="High-quality color coated roofing sheets (PPGI/PPGL) for industrial sheds in Taloja, Panvel, and Mumbai. Anti-corrosion and durable."
                 keywords="colour coated roofing sheets, ppgi sheets manufacturer, metal roofing sheets navi mumbai, industrial roofing sheets"
-                canonicalUrl="https://zincoroof.com/products/roofing-metal-sheets"
+                canonicalUrl="https://www.zincoroof.com/products/roofing-metal-sheets"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImg} fetchpriority="high" />

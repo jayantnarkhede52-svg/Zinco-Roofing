@@ -55,7 +55,7 @@ const PVCUPVCSheets = () => {
                 title="PVC & UPVC Roofing Sheets in Mumbai & Panvel"
                 description="Corrosion-proof UPVC roofing sheets for chemical industries in Taloja, Rasayani, and coastal areas. Heat-resistant and durable."
                 keywords="upvc roofing sheets, pvc roofing, chemical resistant roofing, plastic roofing sheets mumbai"
-                canonicalUrl="https://zincoroof.com/products/pvc-upvc-sheets"
+                canonicalUrl="https://www.zincoroof.com/products/pvc-upvc-sheets"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} fetchpriority="high" />

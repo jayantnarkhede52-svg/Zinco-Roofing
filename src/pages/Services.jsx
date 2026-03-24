@@ -130,7 +130,7 @@ const Services = () => {
                 title="Industrial Roofing Services in Navi Mumbai | Zinco Roofing Specialist"
                 description="Expert Industrial Roofing Services in Navi Mumbai. Zinco Roofing provides high-quality industrial roofing services in navi mumbai for factories and warehouses."
                 keywords="Industrial Roofing Services in Navi Mumbai, industrial roofing installation, roof waterproofing, structural roofing solutions, industrial roofing services in navi mumbai"
-                canonicalUrl="https://zincoroof.com/industrial-roofing-services-navi-mumbai"
+                canonicalUrl="https://www.zincoroof.com/industrial-roofing-services-navi-mumbai"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} fetchpriority="high" />

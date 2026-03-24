@@ -241,19 +241,19 @@ const Products = () => {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Metal Roofing Sheets",
-                "url": "https://zincoroof.com/products/roofing-metal-sheets"
+                "url": "https://www.zincoroof.com/products/roofing-metal-sheets"
             },
             {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "PUF Insulated Panels",
-                "url": "https://zincoroof.com/products/insulated-sheets"
+                "url": "https://www.zincoroof.com/products/insulated-sheets"
             },
             {
                 "@type": "ListItem",
                 "position": 3,
                 "name": "Polycarbonate Sheets",
-                "url": "https://zincoroof.com/products/polycarbonate-sheets"
+                "url": "https://www.zincoroof.com/products/polycarbonate-sheets"
             }
         ]
     };
@@ -264,7 +264,7 @@ const Products = () => {
                 title="Premium Roofing Sheets in Navi Mumbai | Zinco Roofing Specialist"
                 description="Explore top-quality Premium Roofing Sheets in Navi Mumbai. Zinco Roofing offers durable, weather-resistant Premium Roofing Sheets in Navi Mumbai for industries."
                 keywords="Premium Roofing Sheets in Navi Mumbai, metal roofing sheets navi mumbai, premium roofing sheets in navi mumbai, roofing solutions navi mumbai"
-                canonicalUrl="https://zincoroof.com/premium-roofing-sheets-navi-mumbai"
+                canonicalUrl="https://www.zincoroof.com/premium-roofing-sheets-navi-mumbai"
                 schema={productSchema}
             />
             <Helmet>

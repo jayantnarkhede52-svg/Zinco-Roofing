@@ -1,72 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Core Pages -->
-  <url><loc>https://zincoroof.com/</loc><priority>1.00</priority></url>
-  <url><loc>https://zincoroof.com/industrial-roofing-projects-navi-mumbai</loc><priority>0.80</priority></url>
-  <url><loc>https://zincoroof.com/industrial-roofing-services-navi-mumbai</loc><priority>0.80</priority></url>
-  <url><loc>https://zincoroof.com/premium-roofing-sheets-navi-mumbai</loc><priority>0.80</priority></url>
-  <url><loc>https://zincoroof.com/gallery</loc><priority>0.70</priority></url>
-  <url><loc>https://zincoroof.com/contact</loc><priority>0.90</priority></url>
-  <url><loc>https://zincoroof.com/areas</loc><priority>0.60</priority></url>
-  <url><loc>https://zincoroof.com/industrial-roofing-cost-calculator</loc><priority>0.60</priority></url>
+  <url><loc>https://www.zincoroof.com/</loc><priority>1.00</priority></url>
+  <url><loc>https://www.zincoroof.com/industrial-roofing-projects-navi-mumbai</loc><priority>0.80</priority></url>
+  <url><loc>https://www.zincoroof.com/industrial-roofing-services-navi-mumbai</loc><priority>0.80</priority></url>
+  <url><loc>https://www.zincoroof.com/premium-roofing-sheets-navi-mumbai</loc><priority>0.80</priority></url>
+  <url><loc>https://www.zincoroof.com/gallery</loc><priority>0.70</priority></url>
+  <url><loc>https://www.zincoroof.com/contact</loc><priority>0.90</priority></url>
+  <url><loc>https://www.zincoroof.com/areas</loc><priority>0.60</priority></url>
+  <url><loc>https://www.zincoroof.com/industrial-roofing-cost-calculator</loc><priority>0.60</priority></url>
   
   <!-- Product Pages -->
-  <url><loc>https://zincoroof.com/products/roofing-metal-sheets</loc><priority>0.75</priority></url>
-  <url><loc>https://zincoroof.com/products/insulated-sheets</loc><priority>0.75</priority></url>
-  <url><loc>https://zincoroof.com/products/roofing-accessories</loc><priority>0.75</priority></url>
-  <url><loc>https://zincoroof.com/products/pvc-upvc-sheets</loc><priority>0.75</priority></url>
-  <url><loc>https://zincoroof.com/products/purlins</loc><priority>0.75</priority></url>
-  <url><loc>https://zincoroof.com/products/polycarbonate-sheets</loc><priority>0.75</priority></url>
-  <url><loc>https://zincoroof.com/products/ventilators</loc><priority>0.75</priority></url>
-  <url><loc>https://zincoroof.com/products/peb-fabrication</loc><priority>0.75</priority></url>
-  <url><loc>https://zincoroof.com/products/decking-sheet</loc><priority>0.75</priority></url>
-  <url><loc>https://zincoroof.com/products/shingles</loc><priority>0.75</priority></url>
-  <url><loc>https://zincoroof.com/products/metal-tile-sheet</loc><priority>0.75</priority></url>
-  <url><loc>https://zincoroof.com/products/rockwool-glasswool</loc><priority>0.75</priority></url>
-  <url><loc>https://zincoroof.com/products/high-roof-seam</loc><priority>0.75</priority></url>
-  <url><loc>https://zincoroof.com/products/aerolam-sheet</loc><priority>0.75</priority></url>
-  <url><loc>https://zincoroof.com/products/pvc-tile-sheet</loc><priority>0.75</priority></url>
-  <url><loc>https://zincoroof.com/products/multiwall-sheets</loc><priority>0.75</priority></url>
-  <url><loc>https://zincoroof.com/products/upvc-high-rib-sheets</loc><priority>0.75</priority></url>
-  <url><loc>https://zincoroof.com/products/synthetic-roof</loc><priority>0.75</priority></url>
-  <url><loc>https://zincoroof.com/products/upvc-sheets</loc><priority>0.75</priority></url>
-  <url><loc>https://zincoroof.com/products/structural-painting</loc><priority>0.75</priority></url>
-  <url><loc>https://zincoroof.com/products/solar-installation</loc><priority>0.75</priority></url>
+  <url><loc>https://www.zincoroof.com/products/roofing-metal-sheets</loc><priority>0.75</priority></url>
+  <url><loc>https://www.zincoroof.com/products/insulated-sheets</loc><priority>0.75</priority></url>
+  <url><loc>https://www.zincoroof.com/products/roofing-accessories</loc><priority>0.75</priority></url>
+  <url><loc>https://www.zincoroof.com/products/pvc-upvc-sheets</loc><priority>0.75</priority></url>
+  <url><loc>https://www.zincoroof.com/products/purlins</loc><priority>0.75</priority></url>
+  <url><loc>https://www.zincoroof.com/products/polycarbonate-sheets</loc><priority>0.75</priority></url>
+  <url><loc>https://www.zincoroof.com/products/ventilators</loc><priority>0.75</priority></url>
+  <url><loc>https://www.zincoroof.com/products/peb-fabrication</loc><priority>0.75</priority></url>
+  <url><loc>https://www.zincoroof.com/products/decking-sheet</loc><priority>0.75</priority></url>
+  <url><loc>https://www.zincoroof.com/products/shingles</loc><priority>0.75</priority></url>
+  <url><loc>https://www.zincoroof.com/products/metal-tile-sheet</loc><priority>0.75</priority></url>
+  <url><loc>https://www.zincoroof.com/products/rockwool-glasswool</loc><priority>0.75</priority></url>
+  <url><loc>https://www.zincoroof.com/products/high-roof-seam</loc><priority>0.75</priority></url>
+  <url><loc>https://www.zincoroof.com/products/aerolam-sheet</loc><priority>0.75</priority></url>
+  <url><loc>https://www.zincoroof.com/products/pvc-tile-sheet</loc><priority>0.75</priority></url>
+  <url><loc>https://www.zincoroof.com/products/multiwall-sheets</loc><priority>0.75</priority></url>
+  <url><loc>https://www.zincoroof.com/products/upvc-high-rib-sheets</loc><priority>0.75</priority></url>
+  <url><loc>https://www.zincoroof.com/products/synthetic-roof</loc><priority>0.75</priority></url>
+  <url><loc>https://www.zincoroof.com/products/upvc-sheets</loc><priority>0.75</priority></url>
+  <url><loc>https://www.zincoroof.com/products/structural-painting</loc><priority>0.75</priority></url>
+  <url><loc>https://www.zincoroof.com/products/solar-installation</loc><priority>0.75</priority></url>
 
   <!-- Location SEO Pages -->
-  <url><loc>https://zincoroof.com/waterproofing-in-navi-mumbai</loc><priority>0.70</priority></url>
-  <url><loc>https://zincoroof.com/industrial-roofing-contractors-in-mumbai</loc><priority>0.70</priority></url>
-  <url><loc>https://zincoroof.com/industrial-roofing-contractors-in-panvel</loc><priority>0.70</priority></url>
-  <url><loc>https://zincoroof.com/industrial-roofing-contractors-in-thane</loc><priority>0.70</priority></url>
-  <url><loc>https://zincoroof.com/industrial-roofing-contractors-in-taloja</loc><priority>0.70</priority></url>
-  <url><loc>https://zincoroof.com/industrial-roofing-contractors-in-ambarnath</loc><priority>0.70</priority></url>
-  <url><loc>https://zincoroof.com/industrial-roofing-contractors-in-navi-mumbai</loc><priority>0.70</priority></url>
-  <url><loc>https://zincoroof.com/industrial-roofing-contractors-in-dombivli</loc><priority>0.70</priority></url>
-  <url><loc>https://zincoroof.com/puf-panel-manufacturer-navi-mumbai</loc><priority>0.70</priority></url>
-  <url><loc>https://zincoroof.com/industrial-roofing-contractors-in-lonavla</loc><priority>0.70</priority></url>
-  <url><loc>https://zincoroof.com/industrial-roofing-contractors-in-chakan-pune</loc><priority>0.70</priority></url>
-  <url><loc>https://zincoroof.com/industrial-painting-in-chakan</loc><priority>0.70</priority></url>
+  <url><loc>https://www.zincoroof.com/waterproofing-in-navi-mumbai</loc><priority>0.70</priority></url>
+  <url><loc>https://www.zincoroof.com/industrial-roofing-contractors-in-mumbai</loc><priority>0.70</priority></url>
+  <url><loc>https://www.zincoroof.com/industrial-roofing-contractors-in-panvel</loc><priority>0.70</priority></url>
+  <url><loc>https://www.zincoroof.com/industrial-roofing-contractors-in-thane</loc><priority>0.70</priority></url>
+  <url><loc>https://www.zincoroof.com/industrial-roofing-contractors-in-taloja</loc><priority>0.70</priority></url>
+  <url><loc>https://www.zincoroof.com/industrial-roofing-contractors-in-ambarnath</loc><priority>0.70</priority></url>
+  <url><loc>https://www.zincoroof.com/industrial-roofing-contractors-in-navi-mumbai</loc><priority>0.70</priority></url>
+  <url><loc>https://www.zincoroof.com/industrial-roofing-contractors-in-dombivli</loc><priority>0.70</priority></url>
+  <url><loc>https://www.zincoroof.com/puf-panel-manufacturer-navi-mumbai</loc><priority>0.70</priority></url>
+  <url><loc>https://www.zincoroof.com/industrial-roofing-contractors-in-lonavla</loc><priority>0.70</priority></url>
+  <url><loc>https://www.zincoroof.com/industrial-roofing-contractors-in-chakan-pune</loc><priority>0.70</priority></url>
+  <url><loc>https://www.zincoroof.com/industrial-painting-in-chakan</loc><priority>0.70</priority></url>
 
   <!-- Legal -->
-  <url><loc>https://zincoroof.com/privacy-policy</loc><priority>0.30</priority></url>
-  <url><loc>https://zincoroof.com/terms-of-service</loc><priority>0.30</priority></url>
+  <url><loc>https://www.zincoroof.com/privacy-policy</loc><priority>0.30</priority></url>
+  <url><loc>https://www.zincoroof.com/terms-of-service</loc><priority>0.30</priority></url>
   <url>
-    <loc>https://zincoroof.com/services/industrial-roof-leak-repair</loc>
+    <loc>https://www.zincoroof.com/services/industrial-roof-leak-repair</loc>
     <lastmod>2024-03-20</lastmod>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://zincoroof.com/services/peb-structure-fabrication</loc>
+    <loc>https://www.zincoroof.com/services/peb-structure-fabrication</loc>
     <lastmod>2024-03-20</lastmod>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://zincoroof.com/services/warehouse-roofing-solutions</loc>
+    <loc>https://www.zincoroof.com/services/warehouse-roofing-solutions</loc>
     <lastmod>2024-03-20</lastmod>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://zincoroof.com/services/metal-roof-installation</loc>
+    <loc>https://www.zincoroof.com/services/metal-roof-installation</loc>
     <lastmod>2024-03-20</lastmod>
     <priority>0.90</priority>
   </url>

@@ -55,7 +55,7 @@ const RoofingAccessories = () => {
                 title="Roofing Accessories Supplier in Navi Mumbai & Panvel"
                 description="Complete range of roofing accessories: ridges, gutters, turbo ventilators, and fasteners available in Panvel, Taloja, and Vashi."
                 keywords="roofing accessories, turbo ventilators, gutters, roofing screws, ridges"
-                canonicalUrl="https://zincoroof.com/products/roofing-accessories"
+                canonicalUrl="https://www.zincoroof.com/products/roofing-accessories"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} fetchpriority="high" />

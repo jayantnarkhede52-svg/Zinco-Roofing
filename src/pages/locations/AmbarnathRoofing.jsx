@@ -38,7 +38,7 @@ const AmbarnathRoofing = () => {
                 title="Roofing Contractor in Ambarnath | Industrial Roofing Specialists"
                 description="Expert roofing contractor in ambarnath. We provide expert metal roofing, PUF panels, and structural fabrication for Ambarnath MIDC factory sheds."
                 keywords="roofing contractor in ambarnath, ambarnath midc roofing, industrial roofing ambarnath"
-                canonicalUrl="https://zincoroof.com/roofing-contractor-in-ambarnath"
+                canonicalUrl="https://www.zincoroof.com/roofing-contractor-in-ambarnath"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} fetchpriority="high" />

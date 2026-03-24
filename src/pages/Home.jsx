@@ -21,9 +21,9 @@ const Home = () => {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Zinco Roofing Solution",
-        "image": "https://zincoroof.com/logo.webp",
+        "image": "https://www.zincoroof.com/logo.webp",
         "telePhone": "+919967203090",
-        "url": "https://zincoroof.com",
+        "url": "https://www.zincoroof.com",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Shop Number 22, Elite Complex Lodha Heaven, Kalyan - Shilphata Rd",
@@ -103,7 +103,7 @@ const Home = () => {
                 title="Roofing Contractor in Navi Mumbai | Zinco Roofing Solutions"
                 description="Trusted roofing contractor in Navi Mumbai. Zinco Roofing provides industrial roofing, roof leak repair, and structural services with free site visits."
                 keywords="roofing contractor in navi mumbai, roof leak repair, repair roof cracks, roof crack repair, industrial roofing navi mumbai, roofing sheets suppliers mumbai"
-                canonicalUrl="https://zincoroof.com/"
+                canonicalUrl="https://www.zincoroof.com/"
                 schema={combinedSchema}
             />
             <Hero />

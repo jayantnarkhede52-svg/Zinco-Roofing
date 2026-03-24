@@ -38,7 +38,7 @@ const WaterproofingNaviMumbai = () => {
                 title="Industrial roof waterproofing in navi mumbai | Zinco Roofing"
                 description="Expert roof waterproofing in navi mumbai. We provide advanced liquid membranes and leak prevention for factory sheds and commercial roofs."
                 keywords="roof waterproofing in navi mumbai, industrial waterproofing, leak prevention navi mumbai, roof coating experts"
-                canonicalUrl="https://zincoroof.com/waterproofing-in-navi-mumbai"
+                canonicalUrl="https://www.zincoroof.com/waterproofing-in-navi-mumbai"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} fetchpriority="high" />

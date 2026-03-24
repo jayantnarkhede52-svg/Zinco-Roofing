@@ -55,7 +55,7 @@ const AerolamSheet = () => {
                 title="Aerolam Thermal Insulation Sheets in Navi Mumbai | Zinco"
                 description="Reflective radiant barrier insulation (Aerolam) for industrial sheds in Taloja, Panvel, and Mumbai. Reduces heat by up to 10°C. Energy efficient."
                 keywords="aerolam insulation, bubble foil insulation, radiant barrier, thermal insulation sheet, roof insulation mumbai"
-                canonicalUrl="https://zincoroof.com/products/aerolam-sheet"
+                canonicalUrl="https://www.zincoroof.com/products/aerolam-sheet"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImg} fetchpriority="high" />

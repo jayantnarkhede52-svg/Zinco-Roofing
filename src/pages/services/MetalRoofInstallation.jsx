@@ -15,7 +15,7 @@ const MetalRoofInstallation = () => {
                 title="Metal Roof Installation & Sheet Fixing Services | Zinco Roofing"
                 description="Expert metal roof installation services in Navi Mumbai. Top-quality sheet fixing, deck installation, and galvalume roofing for factories."
                 keywords="metal roof installation, roofing sheet fixing, galvalume sheet installation, industrial roof installation, metal roofing contractor"
-                canonicalUrl="https://zincoroof.com/services/metal-roof-installation"
+                canonicalUrl="https://www.zincoroof.com/services/metal-roof-installation"
             />
 
             <section className={styles.hero} style={{ backgroundImage: `url(${heroImage})` }}>

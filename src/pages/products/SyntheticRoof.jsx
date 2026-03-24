@@ -55,7 +55,7 @@ const SyntheticRoof = () => {
                 title="Synthetic Thatch & Shingle Roofing in Mumbai | Zinco"
                 description="Premium synthetic thatch and shingle roofing for resorts and farmhouses in Alibaug, Lonavala, and Karjat. Fire-retardant and zero maintenance."
                 keywords="synthetic thatch roofing, synthetic shingles, resort roofing mumbai, artificial thatch, eco friendly roofing"
-                canonicalUrl="https://zincoroof.com/products/synthetic-roof"
+                canonicalUrl="https://www.zincoroof.com/products/synthetic-roof"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} fetchpriority="high" />

@@ -134,7 +134,7 @@ const Areas = () => {
                 title="Industrial Roofing Contractors in Mumbai, Navi Mumbai & Thane"
                 description="Expert Industrial Roofing Contractors serving Mumbai, Navi Mumbai, Taloja MIDC, and Thane. Heavy-duty factory sheds, PUF panels, and structural fabrication."
                 keywords="industrial roofing contractors, factory shed contractors navi mumbai, mumbai industrial roofing, taloja midc roofing, puf panel manufacturer"
-                canonicalUrl="https://zincoroof.com/areas"
+                canonicalUrl="https://www.zincoroof.com/areas"
             />
             <section className={styles.hero} style={{ backgroundImage: `url(${heroImage})`, height: '50vh' }}>
                 <div className={styles.heroOverlay} />

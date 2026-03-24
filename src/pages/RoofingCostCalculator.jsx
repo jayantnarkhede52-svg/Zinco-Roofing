@@ -7,7 +7,7 @@ const RoofingCostCalculator = () => {
             <SEO 
                 title="Industrial Roofing Cost Calculator | Price Estimator Pune & Mumbai"
                 description="Use our interactive roofing cost calculator to get an instant estimate for your industrial shed. Compare Metal, UPVC, and PUF panel prices in Maharashtra."
-                canonicalUrl="https://zincoroof.com/industrial-roofing-cost-calculator"
+                canonicalUrl="https://www.zincoroof.com/industrial-roofing-cost-calculator"
             />
             
             <div className={styles.container}>

@@ -12,7 +12,7 @@ import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
 
 const DIST = join(import.meta.dirname, '..', 'dist');
-const SITE_URL = 'https://zincoroof.com';
+const SITE_URL = 'https://www.zincoroof.com';
 
 // All routes with their SEO data (matching the keywords from each page's <SEO> component)
 const pages = [

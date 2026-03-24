@@ -15,7 +15,7 @@ const PEBFabrication = () => {
                 title="PEB Structure Fabrication & Industrial Sheds | Zinco Roofing"
                 description="Top-tier PEB structure fabrication in Navi Mumbai. Specialized in pre-engineered buildings, industrial sheds, and heavy structural steel work."
                 keywords="peb structure fabrication, pre-engineered buildings, industrial shed design, structural steel contractors, peb building manufacturer"
-                canonicalUrl="https://zincoroof.com/services/peb-structure-fabrication"
+                canonicalUrl="https://www.zincoroof.com/services/peb-structure-fabrication"
             />
 
             <section className={styles.hero} style={{ backgroundImage: `url(${heroImage})` }}>

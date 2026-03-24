@@ -38,7 +38,7 @@ const TalojaRoofing = () => {
                 title="Industrial Roofing Specialist in Taloja | Structural Engineering"
                 description="Expert structural engineering and industrial roofing service in Taloja. Specializing in high-span factory sheds, PUF panels, and chemical-resistant roofing."
                 keywords="industrial roofing specialist taloja, taloja midc vendors, factory shed contractors"
-                canonicalUrl="https://zincoroof.com/roofing-contractor-in-taloja"
+                canonicalUrl="https://www.zincoroof.com/roofing-contractor-in-taloja"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} fetchpriority="high" />

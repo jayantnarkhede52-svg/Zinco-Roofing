@@ -77,7 +77,7 @@ const MultiwallSheets = () => {
                 title="High-Rib Multiwall Sheets in Navi Mumbai | Zinco"
                 description="High-rib multiwall polycarbonate sheets for industrial skylights and daylighting in Taloja, Bhiwandi, and Navi Mumbai. UV protected and energy efficient."
                 keywords="multiwall polycarbonate sheets, high rib polycarbonate, industrial daylighting, skylight sheets mumbai, polycarbonate roofing"
-                canonicalUrl="https://zincoroof.com/products/multiwall-sheets"
+                canonicalUrl="https://www.zincoroof.com/products/multiwall-sheets"
             />
             <Helmet>
                 <link rel="preload" as="image" href={mwImg1} fetchpriority="high" />

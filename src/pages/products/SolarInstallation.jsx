@@ -55,7 +55,7 @@ const SolarInstallation = () => {
                 title="Solar Panel Installation Services Navi Mumbai"
                 description="Expert solar panel installation and mounting services for industrial and commercial roofs in Navi Mumbai, Panvel, and Taloja."
                 keywords="solar panel installation, commercial solar, industrial solar, energy efficiency, solar mounting"
-                canonicalUrl="https://zincoroof.com/products/solar-panel-installation"
+                canonicalUrl="https://www.zincoroof.com/products/solar-panel-installation"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} fetchpriority="high" />

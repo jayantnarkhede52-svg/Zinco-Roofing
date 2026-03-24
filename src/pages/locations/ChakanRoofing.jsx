@@ -20,7 +20,7 @@ const ChakanRoofing = () => {
                 title="Roofing Contractor in Chakan | Industrial Roofing Specialists"
                 description="Expert roofing contractor in chakan. Specializing in heavy-duty factory sheds, PEB, and PUF panels for Chakan automobile hubs."
                 keywords="roofing contractor in chakan, chakan midc roofing, factory shed contractors chakan"
-                canonicalUrl="https://zincoroof.com/roofing-contractor-in-chakan"
+                canonicalUrl="https://www.zincoroof.com/roofing-contractor-in-chakan"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} fetchpriority="high" />

@@ -55,7 +55,7 @@ const StructuralPainting = () => {
                 title="Industrial & Structural Painting Services Navi Mumbai"
                 description="Professional industrial and structural painting services in Navi Mumbai, Panvel, and Taloja. High-quality anti-corrosive and epoxy coatings."
                 keywords="industrial painting, structural painting, epoxy coating, anti-corrosive paint, roof painting"
-                canonicalUrl="https://zincoroof.com/products/structural-painting"
+                canonicalUrl="https://www.zincoroof.com/products/structural-painting"
             />
             <Helmet>
                 <link rel="preload" as="image" href={heroImage} fetchpriority="high" />
