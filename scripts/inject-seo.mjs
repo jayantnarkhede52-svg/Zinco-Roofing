@@ -265,6 +265,42 @@ const pages = [
     title: 'PUF Panel Manufacturer in Navi Mumbai | Zinco Roofing',
     description: 'Leading PUF panel manufacturer in Navi Mumbai. Buy insulated roofing sheets and PUF panels for cold storage and industrial use.',
     keywords: 'PUF Panel Manufacturer Navi Mumbai, Insulated Roofing Sheets Navi Mumbai'
+  },
+  {
+    route: '/waterproofing-in-navi-mumbai',
+    title: 'Waterproofing Services in Navi Mumbai | Zinco Roofing',
+    description: 'Expert roof waterproofing and terrace leakage solutions in Navi Mumbai. Stop leaks permanently with Zinco Roofing specialized coatings.',
+    keywords: 'waterproofing navi mumbai, roof waterproofing, terrace leakage repair, industrial waterproofing'
+  },
+  {
+    route: '/services/industrial-roof-leak-repair',
+    title: 'Industrial Roof Leak Repair Services | Zinco Roofing',
+    description: 'Specialized industrial roof leak repair and crack sealing. Stop factory roof leakage instantly with our expert solutions.',
+    keywords: 'industrial roof leak repair, repair roof cracks, factory roof leakage, roof crack repair navi mumbai'
+  },
+  {
+    route: '/services/peb-structure-fabrication',
+    title: 'PEB Structure Fabrication & Industrial Sheds | Zinco Roofing',
+    description: 'Pre-engineered building (PEB) design and fabrication. High-quality industrial shed construction and steel structures.',
+    keywords: 'peb structure fabrication, industrial shed construction, pre engineered buildings, steel structure contractors'
+  },
+  {
+    route: '/services/warehouse-roofing-solutions',
+    title: 'Warehouse Roofing Solutions | Zinco Roofing',
+    description: 'Professional warehouse roofing installation and maintenance. Durable, leak-proof roofing for large logistics and storage facilities.',
+    keywords: 'warehouse roofing solutions, logistics center roofing, factory roofing, industrial roof installation'
+  },
+  {
+    route: '/services/metal-roof-installation',
+    title: 'Metal Roof Installation & Replacement | Zinco Roofing',
+    description: 'Expert metal roof installation for industrial and commercial buildings. High-quality roofing sheets and precision fitting.',
+    keywords: 'metal roof installation, roofing sheet replacement, industrial roofing contractors, metal roof fitting'
+  },
+  {
+    route: '/industrial-roofing-cost-calculator',
+    title: 'Roofing Cost Calculator | Get Instant Estimate | Zinco Roofing',
+    description: 'Estimate your industrial roofing costs instantly with our online calculator. Calculate sq ft rates for metal and UPVC sheets.',
+    keywords: 'roofing cost calculator, industrial roofing price, roofing sq ft rate, cost of roofing sheets'
   }
 ];
 

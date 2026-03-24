@@ -65,11 +65,14 @@ export default defineConfig({
         // Other pages
         '/industrial-roofing-cost-calculator'
       ],
-      renderer: '@prerenderer/renderer-puppeteer',
+      renderer: '@prerenderer/renderer-jsdom',
       rendererOptions: {
         maxConcurrentRoutes: 1,
         renderAfterDocumentEvent: 'render-event',
-        renderAfterTime: 5000 
+        renderAfterTime: 5000,
+        consoleHandler: function(route, msg) {
+          console.log(`[JSDOM] ${route} log:`, msg);
+        }
       }
     })
   ],
