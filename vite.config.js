@@ -63,7 +63,11 @@ export default defineConfig({
         '/services/metal-roof-installation',
         
         // Other pages
-        '/industrial-roofing-cost-calculator'
+        '/industrial-roofing-cost-calculator',
+        
+        // Admin Routes (ensure these exist as physical files to prevent 404 on refresh)
+        '/admin/login',
+        '/admin/dashboard'
       ],
       renderer: '@prerenderer/renderer-jsdom',
       rendererOptions: {

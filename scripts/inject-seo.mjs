@@ -301,6 +301,18 @@ const pages = [
     title: 'Roofing Cost Calculator | Get Instant Estimate | Zinco Roofing',
     description: 'Estimate your industrial roofing costs instantly with our online calculator. Calculate sq ft rates for metal and UPVC sheets.',
     keywords: 'roofing cost calculator, industrial roofing price, roofing sq ft rate, cost of roofing sheets'
+  },
+  {
+    route: '/admin/login',
+    title: 'Admin Login | Zinco Roofing Solutions',
+    description: 'Secure admin login for Zinco Roofing Solutions management dashboard.',
+    keywords: 'admin login'
+  },
+  {
+    route: '/admin/dashboard',
+    title: 'Admin Dashboard | Zinco Roofing Solutions',
+    description: 'Zinco Roofing Solutions administration and management dashboard.',
+    keywords: 'admin dashboard'
   }
 ];
 
