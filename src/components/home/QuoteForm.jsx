@@ -14,10 +14,12 @@ const QuoteForm = () => {
         e.preventDefault();
         setIsSubmitting(true);
         try {
+            const { serviceType, ...rest } = formData;
             const { error: insertError } = await supabase
                 .from('leads')
                 .insert([{
-                    ...formData,
+                    ...rest,
+                    service_type: serviceType,
                     source: 'Quote Form',
                     created_at: new Date().toISOString()
                 }]);
