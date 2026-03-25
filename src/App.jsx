@@ -52,6 +52,10 @@ import PUFPanelNaviMumbai from './pages/locations/PUFPanelNaviMumbai';
 import LonavlaRoofing from './pages/locations/LonavlaRoofing';
 import ChakanRoofing from './pages/locations/ChakanRoofing';
 import ChakanPainting from './pages/locations/ChakanPainting';
+import NaviMumbaiIndustrial from './pages/locations/NaviMumbaiIndustrial';
+import NaviMumbaiGeneral from './pages/locations/NaviMumbaiGeneral';
+import MumbaiIndustrial from './pages/locations/MumbaiIndustrial';
+import MumbaiGeneral from './pages/locations/MumbaiGeneral';
 import Areas from './pages/Areas';
 import RoofingCostCalculator from './pages/RoofingCostCalculator';
 import AdminDashboard from './pages/AdminDashboard';
@@ -168,6 +172,10 @@ function App() {
               <Route path="/industrial-roofing-contractors-in-lonavla" element={<LonavlaRoofing />} />
               <Route path="/industrial-roofing-contractors-in-chakan-pune" element={<ChakanRoofing />} />
               <Route path="/industrial-painting-in-chakan" element={<ChakanPainting />} />
+              <Route path="/services/industrial-roofing-navi-mumbai" element={<NaviMumbaiIndustrial />} />
+              <Route path="/services/roofing-contractors-navi-mumbai" element={<NaviMumbaiGeneral />} />
+              <Route path="/services/industrial-sheds-mumbai" element={<MumbaiIndustrial />} />
+              <Route path="/services/roofing-solutions-mumbai" element={<MumbaiGeneral />} />
               <Route path="/industrial-roofing-cost-calculator" element={<RoofingCostCalculator />} />
               <Route path="/areas" element={<Areas />} />
 

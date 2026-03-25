@@ -11,7 +11,11 @@ const locations = [
     { name: 'Dombivli', path: '/industrial-roofing-contractors-in-dombivli' },
     { name: 'Thane', path: '/industrial-roofing-contractors-in-thane' },
     { name: 'Ambarnath', path: '/industrial-roofing-contractors-in-ambarnath' },
-    { name: 'PUF Panel Navi Mumbai', path: '/puf-panel-manufacturer-navi-mumbai' }
+    { name: 'PUF Panel Navi Mumbai', path: '/puf-panel-manufacturer-navi-mumbai' },
+    { name: 'Navi Mumbai Industrial', path: '/services/industrial-roofing-navi-mumbai' },
+    { name: 'Roofing Navi Mumbai', path: '/services/roofing-contractors-navi-mumbai' },
+    { name: 'Mumbai Industrial', path: '/services/industrial-sheds-mumbai' },
+    { name: 'Roofing Mumbai', path: '/services/roofing-solutions-mumbai' }
 ];
 
 const AreaLinks = ({ currentLocation }) => {
