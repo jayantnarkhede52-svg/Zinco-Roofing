@@ -6,32 +6,11 @@ import { useLocation } from 'react-router-dom';
 import { supabase } from '../../lib/supabase';
 
 const SEO = ({ title: propTitle, description: propDesc, keywords: propKeywords, canonicalUrl, schema }) => {
-    const [dynamicSeo, setDynamicSeo] = useState(null);
     const location = useLocation();
 
-    useEffect(() => {
-        const fetchSeo = async () => {
-            try {
-                // Fetch SEO for the current route path from Supabase
-                const { data, error } = await supabase
-                    .from('seo_metadata')
-                    .select('*')
-                    .eq('route', location.pathname)
-                    .single();
-
-                if (data && !error) {
-                    setDynamicSeo(data);
-                }
-            } catch (err) {
-                // Silently fallback to props if fetching fails
-            }
-        };
-        fetchSeo();
-    }, [location.pathname]);
-
-    const title = dynamicSeo?.title ? dynamicSeo.title : propTitle;
-    const description = dynamicSeo?.description ? dynamicSeo.description : propDesc;
-    const keywords = dynamicSeo?.keywords ? dynamicSeo.keywords : propKeywords;
+    const title = propTitle;
+    const description = propDesc;
+    const keywords = propKeywords;
 
     const resolveCanonical = () => {
         if (canonicalUrl) return canonicalUrl;
