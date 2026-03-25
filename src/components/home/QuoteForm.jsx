@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import Card from '../shared/Card';
 import styles from './QuoteForm.module.css';
 
+import { supabase } from '../../lib/supabase';
+
 const QuoteForm = () => {
     const [formData, setFormData] = useState({ name: '', phone: '', email: '', message: '', serviceType: 'Industrial Roofing' });
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -12,22 +14,20 @@ const QuoteForm = () => {
         e.preventDefault();
         setIsSubmitting(true);
         try {
-            const res = await fetch('/api/leads', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
+            const { error: insertError } = await supabase
+                .from('leads')
+                .insert([{
                     ...formData,
-                    source: 'Quote Form'
-                })
-            });
+                    source: 'Quote Form',
+                    created_at: new Date().toISOString()
+                }]);
 
-            if (res.ok) {
-                setSubmitStatus('success');
-                setFormData({ name: '', phone: '', email: '', message: '', serviceType: 'Industrial Roofing' });
-            } else {
-                setSubmitStatus('error');
-            }
+            if (insertError) throw insertError;
+
+            setSubmitStatus('success');
+            setFormData({ name: '', phone: '', email: '', message: '', serviceType: 'Industrial Roofing' });
         } catch (err) {
+            console.error('Submission error:', err);
             setSubmitStatus('error');
         }
         setIsSubmitting(false);

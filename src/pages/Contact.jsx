@@ -7,6 +7,8 @@ import heroImage from '../assets/productshero/Contact-hero.webp';
 import Card from '../components/shared/Card';
 import styles from './Contact.module.css';
 
+import { supabase } from '../lib/supabase';
+
 const Contact = () => {
     const [formData, setFormData] = useState({ name: '', phone: '', email: '', message: '' });
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -16,22 +18,20 @@ const Contact = () => {
         e.preventDefault();
         setIsSubmitting(true);
         try {
-            const res = await fetch('/api/leads', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
+            const { error: insertError } = await supabase
+                .from('leads')
+                .insert([{
                     ...formData,
-                    source: 'Contact Page'
-                })
-            });
+                    source: 'Contact Page',
+                    created_at: new Date().toISOString()
+                }]);
 
-            if (res.ok) {
-                setSubmitStatus('success');
-                setFormData({ name: '', phone: '', email: '', message: '' });
-            } else {
-                setSubmitStatus('error');
-            }
+            if (insertError) throw insertError;
+
+            setSubmitStatus('success');
+            setFormData({ name: '', phone: '', email: '', message: '' });
         } catch (err) {
+            console.error('Submission error:', err);
             setSubmitStatus('error');
         }
         setIsSubmitting(false);

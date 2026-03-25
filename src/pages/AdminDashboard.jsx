@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { supabase } from '../lib/supabase';
 import styles from './AdminDashboard.module.css';
 
 const AdminDashboard = () => {
@@ -12,7 +13,7 @@ const AdminDashboard = () => {
     const navigate = useNavigate();
 
     // SEO Form State
-    const [seoForm, setSeoForm] = useState({ route: '/', title: '', description: '', keywords: '', focusKeyword: '' });
+    const [seoForm, setSeoForm] = useState({ route: '/', title: '', description: '', keywords: '', focus_keyword: '' });
     const [isEditingSeo, setIsEditingSeo] = useState(false);
     const [seoMessage, setSeoMessage] = useState({ type: '', text: '' });
     
@@ -24,92 +25,95 @@ const AdminDashboard = () => {
 
     const PREDEFINED_ROUTES = [
         '/', '/about', '/services', '/projects', '/areas', '/gallery', '/contact', '/cost-estimator',
-        '/services/metal-roofing', '/services/puf-panel-roofing', '/services/polycarbonate-roofing', '/services/industrial-painting',
-        '/products/decking-sheet', '/products/color-coated-roofing-sheet', '/products/polycarbonate-sheet'
+        '/services/industrial-roof-leak-repair', '/services/peb-structure-fabrication', '/services/warehouse-roofing-solutions', '/services/metal-roof-installation',
+        '/products/roofing-metal-sheets', '/products/insulated-sheets', '/products/pvc-upvc-sheets', '/products/polycarbonate-sheets'
     ];
 
     useEffect(() => {
-        const fetchInitialData = async () => {
-            const token = localStorage.getItem('adminToken');
-            if (!token) {
+        const checkAuthAndFetch = async () => {
+            const { data: { session } } = await supabase.auth.getSession();
+            
+            if (!session) {
                 navigate('/admin/login');
                 return;
             }
 
             try {
                 // Fetch Leads
-                const leadsRes = await fetch('/api/leads', {
-                    headers: { 'x-auth-token': token }
-                });
+                const { data: leadsData, error: leadsError } = await supabase
+                    .from('leads')
+                    .select('*')
+                    .order('created_at', { ascending: false });
                 
-                if (leadsRes.status === 401) {
-                    localStorage.removeItem('adminToken');
-                    navigate('/admin/login');
-                    return;
-                }
-                const leadsData = await leadsRes.json();
-                setLeads(leadsData);
+                if (leadsError) throw leadsError;
+                setLeads(leadsData || []);
 
                 // Fetch SEO
-                const seoRes = await fetch('/api/seo');
-                if (seoRes.ok) {
-                    const seoItems = await seoRes.json();
-                    setSeoData(seoItems);
-                }
+                const { data: seoItems, error: seoError } = await supabase
+                    .from('seo_metadata')
+                    .select('*')
+                    .order('route', { ascending: true });
+                
+                if (seoError) throw seoError;
+                setSeoData(seoItems || []);
 
                 setLoading(false);
             } catch (err) {
+                console.error(err);
                 setError('Failed to fetch data');
                 setLoading(false);
             }
         };
 
-        fetchInitialData();
+        checkAuthAndFetch();
+
+        const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+            if (event === 'SIGNED_OUT') {
+                navigate('/admin/login');
+            }
+        });
+
+        return () => subscription.unsubscribe();
     }, [navigate]);
 
     // Leads logic
     const updateStatus = async (id, newStatus) => {
-        const token = localStorage.getItem('adminToken');
         try {
-            const res = await fetch(`/api/leads/${id}`, {
-                method: 'PATCH',
-                headers: { 
-                    'Content-Type': 'application/json',
-                    'x-auth-token': token 
-                },
-                body: JSON.stringify({ status: newStatus })
-            });
+            const { error: updateError } = await supabase
+                .from('leads')
+                .update({ status: newStatus })
+                .eq('id', id);
 
-            if (res.ok) {
-                setLeads(leads.map(lead => lead._id === id ? { ...lead, status: newStatus } : lead));
-            }
+            if (updateError) throw updateError;
+            
+            setLeads(leads.map(lead => lead.id === id ? { ...lead, status: newStatus } : lead));
         } catch (err) {
-            console.error('Update failed');
+            console.error('Update failed:', err);
         }
     };
 
     // Advanced SEO Analysis Logic
     useEffect(() => {
-        if (!seoForm.focusKeyword) {
+        if (!seoForm.focus_keyword) {
             setSeoAnalysis(prev => ({ ...prev, titleLen: 'red', descLen: 'red', kwInTitle: 'red', kwInDesc: 'red' }));
             return;
         }
 
-        const kw = seoForm.focusKeyword.toLowerCase().trim();
-        const tLen = seoForm.title.length;
-        const dLen = seoForm.description.length;
+        const kw = seoForm.focus_keyword.toLowerCase().trim();
+        const tLen = seoForm.title?.length || 0;
+        const dLen = seoForm.description?.length || 0;
         
         setSeoAnalysis(prev => ({
             ...prev,
             titleLen: tLen >= 40 && tLen <= 60 ? 'green' : (tLen > 0 ? 'yellow' : 'red'),
             descLen: dLen >= 120 && dLen <= 160 ? 'green' : (dLen > 0 ? 'yellow' : 'red'),
-            kwInTitle: seoForm.title.toLowerCase().includes(kw) ? 'green' : 'red',
-            kwInDesc: seoForm.description.toLowerCase().includes(kw) ? 'green' : 'red'
+            kwInTitle: seoForm.title?.toLowerCase().includes(kw) ? 'green' : 'red',
+            kwInDesc: seoForm.description?.toLowerCase().includes(kw) ? 'green' : 'red'
         }));
-    }, [seoForm.title, seoForm.description, seoForm.focusKeyword]);
+    }, [seoForm.title, seoForm.description, seoForm.focus_keyword]);
 
     const analyzeKeywordDensity = async () => {
-        if (!seoForm.route || !seoForm.focusKeyword) return;
+        if (!seoForm.route || !seoForm.focus_keyword) return;
         setIsAnalyzing(true);
         try {
             const url = seoForm.route === '/' ? window.location.origin : `${window.location.origin}${seoForm.route.startsWith('/') ? '' : '/'}${seoForm.route}`;
@@ -125,7 +129,7 @@ const AdminDashboard = () => {
             const totalWords = words.length;
             if (totalWords === 0) throw new Error('No text');
             
-            const kw = seoForm.focusKeyword.toLowerCase().trim();
+            const kw = seoForm.focus_keyword.toLowerCase().trim();
             const kwWords = kw.split(/\s+/).length;
             const kwRegex = new RegExp(kw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g');
             const occurrences = (textContent.match(kwRegex) || []).length;
@@ -146,20 +150,22 @@ const AdminDashboard = () => {
     // SEO Logic
     const handleSeoSubmit = async (e) => {
         e.preventDefault();
-        const token = localStorage.getItem('adminToken');
         try {
             const formRoute = seoForm.route.startsWith('/') ? seoForm.route : `/${seoForm.route}`;
-            const res = await fetch('/api/seo', {
-                method: 'POST',
-                headers: { 
-                    'Content-Type': 'application/json',
-                    'x-auth-token': token
-                },
-                body: JSON.stringify({ ...seoForm, route: formRoute })
-            });
+            
+            const { data: savedSeo, error: saveError } = await supabase
+                .from('seo_metadata')
+                .upsert({ 
+                    ...seoForm, 
+                    route: formRoute,
+                    updated_at: new Date().toISOString()
+                }, { onConflict: 'route' })
+                .select()
+                .single();
 
-            if (res.ok) {
-                const savedSeo = await res.json();
+            if (saveError) throw saveError;
+
+            if (savedSeo) {
                 // Update local list
                 if (isEditingSeo) {
                     setSeoData(seoData.map(item => item.route === savedSeo.route ? savedSeo : item));
@@ -168,19 +174,18 @@ const AdminDashboard = () => {
                 }
                 
                 setSeoMessage({ type: 'success', text: 'SEO Data Saved Successfully!' });
-                setSeoForm({ route: '/', title: '', description: '', keywords: '', focusKeyword: '' });
+                setSeoForm({ route: '/', title: '', description: '', keywords: '', focus_keyword: '' });
                 setIsEditingSeo(false);
                 setTimeout(() => setSeoMessage({ type: '', text: '' }), 3000);
-            } else {
-                setSeoMessage({ type: 'error', text: 'Failed to save SEO data.' });
             }
         } catch (err) {
-            setSeoMessage({ type: 'error', text: 'Server error saving SEO.' });
+            console.error(err);
+            setSeoMessage({ type: 'error', text: err.message || 'Failed to save SEO data.' });
         }
     };
 
     const handleEditSeo = (item) => {
-        setSeoForm({ focusKeyword: '', ...item });
+        setSeoForm({ focus_keyword: '', ...item });
         setIsEditingSeo(true);
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
@@ -188,64 +193,66 @@ const AdminDashboard = () => {
     const handleDeleteSeo = async (id) => {
         if (!window.confirm('Are you sure you want to delete this SEO entry?')) return;
         
-        const token = localStorage.getItem('adminToken');
         try {
-            const res = await fetch(`/api/seo/${id}`, {
-                method: 'DELETE',
-                headers: { 'x-auth-token': token }
-            });
+            const { error: deleteError } = await supabase
+                .from('seo_metadata')
+                .delete()
+                .eq('id', id);
 
-            if (res.ok) {
-                setSeoData(seoData.filter(item => item._id !== id));
-            }
+            if (deleteError) throw deleteError;
+            setSeoData(seoData.filter(item => item.id !== id));
         } catch (err) {
-            console.error('Delete failed');
+            console.error('Delete failed:', err);
         }
     };
 
-    const handleExportCsv = async () => {
-        const token = localStorage.getItem('adminToken');
+    const handleExportCsv = () => {
         try {
-            const res = await fetch('/api/leads/export', {
-                headers: { 'x-auth-token': token }
+            let csv = 'Date,Name,Email,Phone,Area,Material,Status,Source,Message\n';
+            
+            leads.forEach(lead => {
+                const date = new Date(lead.created_at).toLocaleDateString();
+                const esc = (t) => t ? '"' + String(t).replace(/"/g, '""') + '"' : '""';
+                csv += `${date},${esc(lead.name)},${esc(lead.email)},${esc(lead.phone)},${esc(lead.area)},${esc(lead.material)},${esc(lead.status)},${esc(lead.source)},${esc(lead.message)}\n`;
             });
-            if (res.ok) {
-                const blob = await res.blob();
-                const url = window.URL.createObjectURL(blob);
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = `leads_export_${new Date().toISOString().split('T')[0]}.csv`;
-                document.body.appendChild(a);
-                a.click();
-                a.remove();
-            }
+
+            const blob = new Blob([csv], { type: 'text/csv' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `leads_export_${new Date().toISOString().split('T')[0]}.csv`;
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            window.URL.revokeObjectURL(url);
         } catch (err) {
-            console.error('Export failed');
+            console.error('Export failed:', err);
         }
     };
 
     const handlePublishSeo = async () => {
-        const token = localStorage.getItem('adminToken');
+        const deployHookUrl = import.meta.env.VITE_VERCEL_DEPLOY_HOOK;
+
+        if (!deployHookUrl) {
+            setSeoMessage({ type: 'error', text: 'Deploy hook not configured. Please add VITE_VERCEL_DEPLOY_HOOK to your environment variables.' });
+            return;
+        }
+
         try {
-            const res = await fetch('/api/seo/publish', {
-                method: 'POST',
-                headers: { 'x-auth-token': token }
-            });
-            const data = await res.json();
-            
+            const res = await fetch(deployHookUrl, { method: 'POST' });
             if (res.ok) {
                 setSeoMessage({ type: 'success', text: 'Deployment triggered! Changes will be live in 1-2 minutes.' });
             } else {
-                setSeoMessage({ type: 'error', text: data.msg || 'Deployment Trigger Failed.' });
+                setSeoMessage({ type: 'error', text: 'Failed to trigger Vercel deployment.' });
             }
             setTimeout(() => setSeoMessage({ type: '', text: '' }), 6000);
         } catch (err) {
-            setSeoMessage({ type: 'error', text: 'Server error triggering deployment.' });
+            setSeoMessage({ type: 'error', text: 'Error triggering deployment.' });
         }
     };
 
-    const handleLogout = () => {
-        localStorage.removeItem('adminToken');
+    const handleLogout = async () => {
+        await supabase.auth.signOut();
         navigate('/admin/login');
     };
 
@@ -303,7 +310,7 @@ const AdminDashboard = () => {
                                 <div className={styles.chartArea}>
                                     {Object.entries(
                                         leads.reduce((acc, lead) => {
-                                            const type = lead.serviceType || lead.material || 'General';
+                                            const type = lead.material || 'General';
                                             acc[type] = (acc[type] || 0) + 1;
                                             return acc;
                                         }, {})
@@ -313,7 +320,7 @@ const AdminDashboard = () => {
                                             <div className={styles.barWrapper}>
                                                 <motion.div 
                                                     initial={{ width: 0 }}
-                                                    animate={{ width: `${(count / leads.length) * 100}%` }}
+                                                    animate={{ width: `${(count / (leads.length || 1)) * 100}%` }}
                                                     className={styles.bar}
                                                 />
                                             </div>
@@ -330,10 +337,10 @@ const AdminDashboard = () => {
                                         const d = new Date();
                                         d.setDate(d.getDate() - (6 - i));
                                         const dateStr = d.toLocaleDateString('en-GB', { day: '2-digit', month: 'short' });
-                                        const count = leads.filter(l => new Date(l.createdAt).toDateString() === d.toDateString()).length;
+                                        const count = leads.filter(l => new Date(l.created_at).toDateString() === d.toDateString()).length;
                                         const maxLeads = Math.max(...[0, ...[...Array(7)].map((_, j) => {
                                             const dj = new Date(); dj.setDate(dj.getDate() - j);
-                                            return leads.filter(l => new Date(l.createdAt).toDateString() === dj.toDateString()).length;
+                                            return leads.filter(l => new Date(l.created_at).toDateString() === dj.toDateString()).length;
                                         })]);
                                         
                                         return (
@@ -368,23 +375,23 @@ const AdminDashboard = () => {
                                 </thead>
                                 <tbody>
                                     {leads.map(lead => (
-                                        <tr key={lead._id}>
-                                            <td>{new Date(lead.createdAt).toLocaleDateString()}</td>
+                                        <tr key={lead.id}>
+                                            <td>{new Date(lead.created_at).toLocaleDateString()}</td>
                                             <td>
                                                 <strong>{lead.name}</strong>
                                                 <div className={styles.subtext}>{lead.email}</div>
                                             </td>
                                             <td>{lead.phone}</td>
                                             <td>
-                                                {lead.area && <div>{lead.area}</div>}
-                                                {lead.serviceType && <div className={styles.badge}>{lead.serviceType}</div>}
+                                                {lead.area && <div>{lead.area} sq ft</div>}
+                                                {lead.material && <div className={styles.badge}>{lead.material}</div>}
                                                 {lead.source && <div className={styles.sourceBadge}>{lead.source}</div>}
                                                 {lead.message && <div className={styles.messagePreview}>{lead.message}</div>}
                                             </td>
                                             <td>
                                                 <select 
                                                     value={lead.status}
-                                                    onChange={(e) => updateStatus(lead._id, e.target.value)}
+                                                    onChange={(e) => updateStatus(lead.id, e.target.value)}
                                                     className={`${styles.statusSelect} ${styles[lead.status.toLowerCase()]}`}
                                                 >
                                                     <option value="New">New</option>
@@ -455,8 +462,8 @@ const AdminDashboard = () => {
                                             <input 
                                                 type="text" 
                                                 required 
-                                                value={seoForm.focusKeyword || ''} 
-                                                onChange={e => setSeoForm({...seoForm, focusKeyword: e.target.value})} 
+                                                value={seoForm.focus_keyword || ''} 
+                                                onChange={e => setSeoForm({...seoForm, focus_keyword: e.target.value})} 
                                                 placeholder="e.g. industrial roofing contractor"
                                             />
                                         </div>
@@ -521,7 +528,7 @@ const AdminDashboard = () => {
                                             type="button" 
                                             onClick={analyzeKeywordDensity} 
                                             className={styles.scanBtn}
-                                            disabled={isAnalyzing || !seoForm.focusKeyword || !seoForm.route || seoForm.route === 'custom'}
+                                            disabled={isAnalyzing || !seoForm.focus_keyword || !seoForm.route || seoForm.route === 'custom'}
                                         >
                                             {isAnalyzing ? 'Scanning Live Page...' : 'Scan Content for Density'}
                                         </button>
@@ -533,7 +540,7 @@ const AdminDashboard = () => {
                                         {isEditingSeo ? 'Update SEO' : 'Save SEO'}
                                     </button>
                                     {isEditingSeo && (
-                                        <button type="button" onClick={() => { setIsEditingSeo(false); setSeoForm({ route: '', title: '', description: '', keywords: '' }); }} className={styles.cancelBtn}>
+                                        <button type="button" onClick={() => { setIsEditingSeo(false); setSeoForm({ route: '', title: '', description: '', keywords: '', focus_keyword: '' }); }} className={styles.cancelBtn}>
                                             Cancel
                                         </button>
                                     )}
@@ -554,14 +561,14 @@ const AdminDashboard = () => {
                                 </thead>
                                 <tbody>
                                     {seoData.map(item => (
-                                        <tr key={item._id}>
+                                        <tr key={item.id}>
                                             <td className={styles.routeCol}><strong>{item.route}</strong></td>
-                                            <td><span className={styles.focusBadge}>{item.focusKeyword || '-'}</span></td>
+                                            <td><span className={styles.focusBadge}>{item.focus_keyword || '-'}</span></td>
                                             <td><div className={styles.truncate}>{item.title}</div></td>
                                             <td><div className={styles.truncate}>{item.description}</div></td>
                                             <td className={styles.actionCol}>
                                                 <button onClick={() => handleEditSeo(item)} className={styles.editBtn}>Edit</button>
-                                                <button onClick={() => handleDeleteSeo(item._id)} className={styles.deleteBtn}>Del</button>
+                                                <button onClick={() => handleDeleteSeo(item.id)} className={styles.deleteBtn}>Del</button>
                                             </td>
                                         </tr>
                                     ))}

@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import PropTypes from 'prop-types';
 import { useLocation } from 'react-router-dom';
 
+import { supabase } from '../../lib/supabase';
+
 const SEO = ({ title: propTitle, description: propDesc, keywords: propKeywords, canonicalUrl, schema }) => {
     const [dynamicSeo, setDynamicSeo] = useState(null);
     const location = useLocation();
@@ -10,10 +12,14 @@ const SEO = ({ title: propTitle, description: propDesc, keywords: propKeywords, 
     useEffect(() => {
         const fetchSeo = async () => {
             try {
-                // Fetch SEO for the current route path
-                const res = await fetch(`/api/seo${location.pathname}`);
-                if (res.ok) {
-                    const data = await res.json();
+                // Fetch SEO for the current route path from Supabase
+                const { data, error } = await supabase
+                    .from('seo_metadata')
+                    .select('*')
+                    .eq('route', location.pathname)
+                    .single();
+
+                if (data && !error) {
                     setDynamicSeo(data);
                 }
             } catch (err) {

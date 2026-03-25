@@ -1,40 +1,34 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { supabase } from '../lib/supabase';
 import styles from './AdminDashboard.module.css';
 
 const AdminLogin = () => {
-    const [formData, setFormData] = useState({ username: '', password: '' });
+    const [formData, setFormData] = useState({ email: '', password: '' });
     const [error, setError] = useState('');
+    const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         setError('');
+        setLoading(true);
         
         try {
-            const res = await fetch('/api/auth/login', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(formData)
+            const { data, error: authError } = await supabase.auth.signInWithPassword({
+                email: formData.email,
+                password: formData.password,
             });
 
-            const contentType = res.headers.get("content-type");
-            if (!contentType || !contentType.includes("application/json")) {
-                const text = await res.text();
-                console.error("Non-JSON API response:", text);
-                throw new Error("Server Error: Database connection might be missing.");
-            }
-
-            const data = await res.json();
+            if (authError) throw authError;
             
-            if (res.ok) {
-                localStorage.setItem('adminToken', data.token);
+            if (data?.user) {
                 navigate('/admin/dashboard');
-            } else {
-                setError(data.msg || data.error || 'Login failed');
             }
         } catch (err) {
-            setError(err.message || 'Server connection failed');
+            setError(err.message || 'Login failed');
+        } finally {
+            setLoading(false);
         }
     };
 
@@ -45,12 +39,14 @@ const AdminLogin = () => {
                 {error && <div className={styles.error}>{error}</div>}
                 <form onSubmit={handleSubmit}>
                     <div className={styles.inputGroup}>
-                        <label>Username</label>
+                        <label>Email Address</label>
                         <input 
-                            type="text" 
+                            type="email" 
                             required 
-                            value={formData.username}
-                            onChange={(e) => setFormData({...formData, username: e.target.value})}
+                            name="email"
+                            placeholder="admin@example.com"
+                            value={formData.email}
+                            onChange={(e) => setFormData({...formData, email: e.target.value})}
                         />
                     </div>
                     <div className={styles.inputGroup}>
@@ -58,12 +54,13 @@ const AdminLogin = () => {
                         <input 
                             type="password" 
                             required 
+                            name="password"
                             value={formData.password}
                             onChange={(e) => setFormData({...formData, password: e.target.value})}
                         />
                     </div>
-                    <button type="submit" className="btn-primary" style={{ width: '100%' }}>
-                        Login to Dashboard
+                    <button type="submit" className="btn-primary" style={{ width: '100%' }} disabled={loading}>
+                        {loading ? 'Logging in...' : 'Login to Dashboard'}
                     </button>
                 </form>
             </div>

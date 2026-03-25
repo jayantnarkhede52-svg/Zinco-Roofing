@@ -2,6 +2,8 @@ import { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import styles from './RoofingCalculator.module.css';
 
+import { supabase } from '../../lib/supabase';
+
 const RoofingCalculator = ({ title = "Industrial Roofing Cost Calculator", subtitle = "Get a rough estimate for your industrial roofing project in seconds. Simply enter your shed area and choose a material." }) => {
     const [area, setArea] = useState(500);
     const [material, setMaterial] = useState('metal');
@@ -37,23 +39,21 @@ const RoofingCalculator = ({ title = "Industrial Roofing Cost Calculator", subti
         e.preventDefault();
         setIsSubmitting(true);
         try {
-            const res = await fetch('/api/leads', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
+            const { error: insertError } = await supabase
+                .from('leads')
+                .insert([{
                     ...formData,
                     area,
                     material: materials[material].name,
-                    estimatedPrice: `${formatCurrency(estimate.min)} - ${formatCurrency(estimate.max)}`,
-                    source: 'Cost Calculator'
-                })
-            });
+                    estimated_price: `${formatCurrency(estimate.min)} - ${formatCurrency(estimate.max)}`,
+                    source: 'Cost Calculator',
+                    created_at: new Date().toISOString()
+                }]);
 
-            if (res.ok) {
-                setIsSubmitted(true);
-            }
+            if (insertError) throw insertError;
+            setIsSubmitted(true);
         } catch (err) {
-            console.error('Submission failed');
+            console.error('Submission failed:', err);
         }
         setIsSubmitting(false);
     };
