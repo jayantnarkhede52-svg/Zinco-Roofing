@@ -1,0 +1,48 @@
+<section id="quote" class="quote-section">
+    <div class="container">
+        <div class="form-header">
+            <h2>Request a Site Visit</h2>
+            <p>Fill out the details below for a professional inspection and fixed-price quote.</p>
+        </div>
+        <div class="form-card">
+            <form id="quoteForm" class="form-grid">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your phone (10 digits)" required>
+                </div>
+                <div class="form-group-full">
+                    <label for="email">Email Address (Optional)</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address">
+                </div>
+                <div class="form-group-full">
+                    <label for="serviceType">How can we help you?</label>
+                    <select id="serviceType" name="serviceType" required>
+                        <option value="" disabled selected>Select a service</option>
+                        <option value="Industrial Roofing">Industrial Roofing</option>
+                        <option value="Metal Roofing">Metal Roofing</option>
+                        <option value="PUF Panel Roofing">PUF Panel Roofing</option>
+                        <option value="Polycarbonate Roofing">Polycarbonate Roofing</option>
+                        <option value="Industrial Painting">Industrial Painting</option>
+                        <option value="PEB Fabrication">PEB Structure Fabrication</option>
+                        <option value="Roof Leak Repair">Roof Leak Repair</option>
+                        <option value="Other">Other Requirements</option>
+                    </select>
+                </div>
+                <div class="form-group-full">
+                    <label for="message">Project Details</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Enter your project details or requirements..." required></textarea>
+                </div>
+                <div class="form-group-full">
+                    <button type="submit" class="btn-form-submit" id="submitBtn">
+                        Get My Free Quote <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div id="formStatus" style="margin-top:20px; text-align:center; display:none; grid-column: span 2;"></div>
+            </form>
+        </div>
+    </div>
+</section>

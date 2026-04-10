@@ -58,11 +58,11 @@
         animation: marquee 25s linear infinite;
     }
     .marqueeSection {
-        padding: 0.75rem 0;
+        padding: 0.5rem 0;
     }
     .marqueeItem {
-        font-size: 1rem;
-        padding: 0 1.5rem;
+        font-size: 0.9rem;
+        padding: 0 1rem;
     }
 }
 

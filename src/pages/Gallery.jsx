@@ -179,12 +179,7 @@ const Gallery = () => {
 
     return (
         <div className={styles.galleryPage}>
-            <SEO
-                title="Roofing Project Gallery | Zinco Roofing Solutions"
-                description="Explore our portfolio of industrial and commercial roofing projects across Navi Mumbai, Mumbai, Thane and Maharashtra. See our PUF panels, metal roofing, UPVC sheets and more."
-                keywords="roofing project gallery, industrial roofing photos, roofing portfolio navi mumbai, metal roofing projects, puf panel installation gallery"
-                canonicalUrl="https://www.zincoroof.com/gallery"
-            />
+            <SEO />
             {/* Hero Section */}
             <section className={styles.hero} style={{ '--hero-image': `url(${heroImg})` }}>
                 <div className={styles.heroOverlay} />
@@ -195,11 +190,10 @@ const Gallery = () => {
                         transition={{ duration: 0.8 }}
                         className={styles.heroContent}
                     >
-                        <span className={styles.sublabel}>OUR PORTFOLIO</span>
-                        <h1>Project Gallery</h1>
+                        <span className={styles.sublabel}>EXPERIENCE EXCELLENCE</span>
+                        <h1>Our Project Gallery</h1>
                         <p className={styles.heroDesc}>
-                            Explore our extensive portfolio of industrial and commercial projects across India.
-                            From premium PUF panels to durable metal roofing.
+                            Witness the precision and scale of our industrial and commercial roofing solutions across India.
                         </p>
                     </motion.div>
                 </div>
@@ -226,18 +220,20 @@ const Gallery = () => {
                             <motion.div
                                 key={image.id}
                                 layout
-                                initial={{ opacity: 0, scale: 0.8 }}
+                                initial={{ opacity: 0, scale: 0.9 }}
                                 animate={{ opacity: 1, scale: 1 }}
-                                exit={{ opacity: 0, scale: 0.8 }}
-                                transition={{ duration: 0.4 }}
+                                exit={{ opacity: 0, scale: 0.9 }}
+                                transition={{ duration: 0.3 }}
                                 className={styles.galleryItem}
                                 onClick={() => setSelectedImage(image)}
                             >
                                 <img src={image.src} alt={image.title} loading="lazy" />
                                 <div className={styles.overlay}>
                                     <FaExpandAlt className={styles.expandIcon} />
-                                    <h3>{image.title}</h3>
-                                    <span>{image.category}</span>
+                                    <div className={styles.overlayText}>
+                                        <h3>{image.title}</h3>
+                                        <span>{image.category}</span>
+                                    </div>
                                 </div>
                             </motion.div>
                         ))}
@@ -256,16 +252,18 @@ const Gallery = () => {
                         onClick={() => setSelectedImage(null)}
                     >
                         <motion.div
-                            initial={{ scale: 0.8 }}
-                            animate={{ scale: 1 }}
-                            exit={{ scale: 0.8 }}
+                            initial={{ scale: 0.9, y: 20 }}
+                            animate={{ scale: 1, y: 0 }}
+                            exit={{ scale: 0.9, y: 20 }}
                             className={styles.modalContent}
                             onClick={e => e.stopPropagation()}
                         >
                             <button className={styles.closeBtn} onClick={() => setSelectedImage(null)}>
                                 <FaTimes />
                             </button>
-                            <img src={selectedImage.src} alt={selectedImage.title} />
+                            <div className={styles.modalImageWrapper}>
+                                <img src={selectedImage.src} alt={selectedImage.title} />
+                            </div>
                             <div className={styles.modalMeta}>
                                 <h2>{selectedImage.title}</h2>
                                 <p>{selectedImage.category}</p>

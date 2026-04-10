@@ -32,4 +32,4 @@ const ProductsMarquee = () => {
     );
 };
 
-export default ProductsMarquee;
+export default React.memo(ProductsMarquee);

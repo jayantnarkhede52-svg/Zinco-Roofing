@@ -3,90 +3,76 @@ import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'r
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import ScrollToTop from './components/shared/ScrollToTop';
+import { HeroSkeleton } from './components/shared/Skeleton';
 import './styles/animations.css';
 
-// Eagerly load all pages for pre-rendering stability (Helmet needs eager imports to inject page-specific meta tags)
-import Home from './pages/Home';
-import Projects from './pages/Projects';
-import Services from './pages/Services';
-import Products from './pages/Products';
-import Contact from './pages/Contact';
-import Gallery from './pages/Gallery';
-import NotFound from './pages/NotFound';
-import PrivacyPolicy from './pages/PrivacyPolicy';
-import TermsOfService from './pages/TermsOfService';
+// Eagerly load all pages for pre-rendering stability
+const Home = lazy(() => import('./pages/Home'));
+const Projects = lazy(() => import('./pages/Projects'));
+const Services = lazy(() => import('./pages/Services'));
+const Products = lazy(() => import('./pages/Products'));
+const Contact = lazy(() => import('./pages/Contact'));
+const Gallery = lazy(() => import('./pages/Gallery'));
+const NotFound = lazy(() => import('./pages/NotFound'));
+const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
+const TermsOfService = lazy(() => import('./pages/TermsOfService'));
 
 // Product categories
-import RoofingMetalSheets from './pages/products/RoofingMetalSheets';
-import InsulatedSheets from './pages/products/InsulatedSheets';
-import RoofingAccessories from './pages/products/RoofingAccessories';
-import PVCUPVCSheets from './pages/products/PVCUPVCSheets';
-import Purlins from './pages/products/Purlins';
-import PolycarbonateSheets from './pages/products/PolycarbonateSheets';
-import Ventilators from './pages/products/Ventilators';
-import PEBFabrication from './pages/products/PEBFabrication';
-import DeckingSheet from './pages/products/DeckingSheet';
-import Shingles from './pages/products/Shingles';
-import MetalTileSheet from './pages/products/MetalTileSheet';
-import RockwoolGlasswool from './pages/products/RockwoolGlasswool';
-import HighRoofSeam from './pages/products/HighRoofSeam';
-import AerolamSheet from './pages/products/AerolamSheet';
-import PVCTileSheet from './pages/products/PVCTileSheet';
-import MultiwallSheets from './pages/products/MultiwallSheets';
-import UPVCHighRibSheets from './pages/products/UPVCHighRibSheets';
-import SyntheticRoof from './pages/products/SyntheticRoof';
-import UPVCSheets from './pages/products/UPVCSheets';
-import StructuralPainting from './pages/products/StructuralPainting';
-import SolarInstallation from './pages/products/SolarInstallation';
+const RoofingMetalSheets = lazy(() => import('./pages/products/RoofingMetalSheets'));
+const InsulatedSheets = lazy(() => import('./pages/products/InsulatedSheets'));
+const RoofingAccessories = lazy(() => import('./pages/products/RoofingAccessories'));
+const PVCUPVCSheets = lazy(() => import('./pages/products/PVCUPVCSheets'));
+const Purlins = lazy(() => import('./pages/products/Purlins'));
+const PolycarbonateSheets = lazy(() => import('./pages/products/PolycarbonateSheets'));
+const Ventilators = lazy(() => import('./pages/products/Ventilators'));
+const PEBFabrication = lazy(() => import('./pages/products/PEBFabrication'));
+const DeckingSheet = lazy(() => import('./pages/products/DeckingSheet'));
+const Shingles = lazy(() => import('./pages/products/Shingles'));
+const MetalTileSheet = lazy(() => import('./pages/products/MetalTileSheet'));
+const RockwoolGlasswool = lazy(() => import('./pages/products/RockwoolGlasswool'));
+const HighRoofSeam = lazy(() => import('./pages/products/HighRoofSeam'));
+const AerolamSheet = lazy(() => import('./pages/products/AerolamSheet'));
+const PVCTileSheet = lazy(() => import('./pages/products/PVCTileSheet'));
+const MultiwallSheets = lazy(() => import('./pages/products/MultiwallSheets'));
+const UPVCHighRibSheets = lazy(() => import('./pages/products/UPVCHighRibSheets'));
+const SyntheticRoof = lazy(() => import('./pages/products/SyntheticRoof'));
+const UPVCSheets = lazy(() => import('./pages/products/UPVCSheets'));
+const StructuralPainting = lazy(() => import('./pages/products/StructuralPainting'));
+const SolarInstallation = lazy(() => import('./pages/products/SolarInstallation'));
 
 // Location SEO Pages
-import WaterproofingNaviMumbai from './pages/locations/WaterproofingNaviMumbai';
-import MumbaiRoofing from './pages/locations/MumbaiRoofing';
-import PanvelRoofing from './pages/locations/PanvelRoofing';
-import ThaneRoofing from './pages/locations/ThaneRoofing';
-import TalojaRoofing from './pages/locations/TalojaRoofing';
-import AmbarnathRoofing from './pages/locations/AmbarnathRoofing';
-import NaviMumbaiRoofing from './pages/locations/NaviMumbaiRoofing';
-import DombivliRoofing from './pages/locations/DombivliRoofing';
-import PUFPanelNaviMumbai from './pages/locations/PUFPanelNaviMumbai';
-import LonavlaRoofing from './pages/locations/LonavlaRoofing';
-import ChakanRoofing from './pages/locations/ChakanRoofing';
-import ChakanPainting from './pages/locations/ChakanPainting';
-import NaviMumbaiIndustrial from './pages/locations/NaviMumbaiIndustrial';
-import NaviMumbaiGeneral from './pages/locations/NaviMumbaiGeneral';
-import MumbaiIndustrial from './pages/locations/MumbaiIndustrial';
-import MumbaiGeneral from './pages/locations/MumbaiGeneral';
-import Areas from './pages/Areas';
-import RoofingCostCalculator from './pages/RoofingCostCalculator';
-import AdminDashboard from './pages/AdminDashboard';
-import AdminLogin from './pages/AdminLogin';
+const WaterproofingNaviMumbai = lazy(() => import('./pages/locations/WaterproofingNaviMumbai'));
+const MumbaiRoofing = lazy(() => import('./pages/locations/MumbaiRoofing'));
+const PanvelRoofing = lazy(() => import('./pages/locations/PanvelRoofing'));
+const ThaneRoofing = lazy(() => import('./pages/locations/ThaneRoofing'));
+const TalojaRoofing = lazy(() => import('./pages/locations/TalojaRoofing'));
+const AmbarnathRoofing = lazy(() => import('./pages/locations/AmbarnathRoofing'));
+const NaviMumbaiRoofing = lazy(() => import('./pages/locations/NaviMumbaiRoofing'));
+const DombivliRoofing = lazy(() => import('./pages/locations/DombivliRoofing'));
+const PUFPanelNaviMumbai = lazy(() => import('./pages/locations/PUFPanelNaviMumbai'));
+const LonavlaRoofing = lazy(() => import('./pages/locations/LonavlaRoofing'));
+const ChakanRoofing = lazy(() => import('./pages/locations/ChakanRoofing'));
+const ChakanPainting = lazy(() => import('./pages/locations/ChakanPainting'));
+const NaviMumbaiIndustrial = lazy(() => import('./pages/locations/NaviMumbaiIndustrial'));
+const NaviMumbaiGeneral = lazy(() => import('./pages/locations/NaviMumbaiGeneral'));
+const MumbaiIndustrial = lazy(() => import('./pages/locations/MumbaiIndustrial'));
+const MumbaiGeneral = lazy(() => import('./pages/locations/MumbaiGeneral'));
+const Areas = lazy(() => import('./pages/Areas'));
+const RoofingCostCalculator = lazy(() => import('./pages/RoofingCostCalculator'));
+const AdminDashboard = lazy(() => import('./pages/AdminDashboard'));
+const AdminLogin = lazy(() => import('./pages/AdminLogin'));
 
 // New Service Landing Pages
-import RoofLeakRepairService from './pages/services/RoofLeakRepair';
-import PEBFabricationService from './pages/services/PEBFabrication';
-import WarehouseRoofingService from './pages/services/WarehouseRoofing';
-import MetalRoofInstallationService from './pages/services/MetalRoofInstallation';
+const RoofLeakRepairService = lazy(() => import('./pages/services/RoofLeakRepair'));
+const PEBFabricationService = lazy(() => import('./pages/services/PEBFabrication'));
+const WarehouseRoofingService = lazy(() => import('./pages/services/WarehouseRoofing'));
+const MetalRoofInstallationService = lazy(() => import('./pages/services/MetalRoofInstallation'));
 
 // Lazy-load Chatbot & WhatsApp (non-critical floating UI)
 const Chatbot = lazy(() => import('./components/shared/Chatbot'));
 const WhatsAppButton = lazy(() => import('./components/shared/WhatsAppButton'));
 const BackButton = lazy(() => import('./components/shared/BackButton'));
 const Breadcrumbs = lazy(() => import('./components/shared/Breadcrumbs'));
-
-// Loading component
-const PageLoader = () => (
-  <div style={{
-    height: '60vh',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    color: 'var(--accent-500)',
-    fontSize: 'var(--text-xl)',
-    fontWeight: '600'
-  }}>
-    <div className="loading-spinner">Loading...</div>
-  </div>
-);
 
 // Deferred floating UI — loads 3s after mount so it doesn't compete with FCP/LCP
 const DeferredFloatingUI = () => {
@@ -110,7 +96,7 @@ function App() {
   const location = useLocation();
 
   useEffect(() => {
-    // Dispatch event for pre-renderer after a delay to ensure lazy components are ready
+    // Dispatch event for pre-renderer after a delay
     const timer = setTimeout(() => {
       document.dispatchEvent(new Event('render-event'));
     }, 4000);
@@ -129,7 +115,7 @@ function App() {
           <Suspense fallback={null}>
             <Breadcrumbs />
           </Suspense>
-          <Suspense fallback={<PageLoader />}>
+          <Suspense fallback={<HeroSkeleton />}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/industrial-roofing-projects-navi-mumbai" element={<Projects />} />
@@ -185,7 +171,7 @@ function App() {
               <Route path="/services/warehouse-roofing-solutions" element={<WarehouseRoofingService />} />
               <Route path="/services/metal-roof-installation" element={<MetalRoofInstallationService />} />
 
-              {/* SEO Redirects for shortened URLs */}
+              {/* SEO Redirects */}
               <Route path="/products" element={<Navigate to="/premium-roofing-sheets-navi-mumbai" replace />} />
               <Route path="/services" element={<Navigate to="/industrial-roofing-services-navi-mumbai" replace />} />
               <Route path="/projects" element={<Navigate to="/industrial-roofing-projects-navi-mumbai" replace />} />

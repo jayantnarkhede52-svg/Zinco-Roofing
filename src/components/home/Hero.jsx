@@ -1,4 +1,5 @@
 import { useRef, useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import Button from '../shared/Button';
 import { SOCIAL_LINKS } from '../../utils/constants';
 import styles from './Hero.module.css';
@@ -63,17 +64,19 @@ const Hero = () => {
 
             {/* Content */}
             <div className={styles.content}>
-                <div className={styles.titleWrapper}>
-                    <h1 className={styles.title}>
-                        Roofing Contractor in Navi Mumbai
-                    </h1>
-                    <div className={styles.underline} />
+                <div className={styles.badge}>
+                    <span className={styles.badgeDot}></span>
+                    EXPERT STRUCTURAL SOLUTIONS
                 </div>
-
-                <p className={styles.subtitle}>
-                    Professional <strong>Roofing Contractor in Navi Mumbai</strong> for
-                    <span className={styles.highlight}> Industrial Excellence</span>
-                </p>
+                
+                <motion.h1 
+                    className={styles.title}
+                    initial={{ clipPath: 'polygon(0 100%, 100% 100%, 100% 100%, 0 100%)', opacity: 0, y: 30 }}
+                    animate={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', opacity: 1, y: 0 }}
+                    transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+                >
+                    Trusted Roofing Contractor<br />in <span>Navi Mumbai</span>
+                </motion.h1>
 
                 <p className={styles.description}>
                     Zinco Roofing is the leading <strong>Roofing Contractor in Navi Mumbai</strong> with 8+ years of experience in expert roof installation, PUF panel solutions, and structural shed construction.

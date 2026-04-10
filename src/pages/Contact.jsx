@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { motion, AnimatePresence } from 'framer-motion';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaCheckCircle, FaExclamationCircle } from 'react-icons/fa';
 import { CONTACT_INFO } from '../utils/constants';
 import SEO from '../components/shared/SEO';
 import heroImage from '../assets/productshero/Contact-hero.webp';
@@ -13,9 +13,25 @@ const Contact = () => {
     const [formData, setFormData] = useState({ name: '', phone: '', email: '', message: '' });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState(null); // 'success' | 'error'
+    const [phoneError, setPhoneError] = useState('');
+
+    const validatePhone = (num) => {
+        const regex = /^[6-9]\d{9}$/;
+        if (!num) return 'Phone number is required';
+        if (!regex.test(num)) return 'Please enter a valid 10-digit phone number';
+        return '';
+    };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        
+        const error = validatePhone(formData.phone);
+        if (error) {
+            setPhoneError(error);
+            return;
+        }
+        setPhoneError('');
+
         setIsSubmitting(true);
         try {
             const { error: insertError } = await supabase
@@ -39,11 +55,7 @@ const Contact = () => {
 
     return (
         <div className={styles.contactPage}>
-            <SEO
-                title="Contact Best Roofing Contractors in Navi Mumbai"
-                description="Get a free quote for your roofing project. Contact Zinco Roofing in Navi Mumbai for expert consultation and site inspection. Call now!"
-                keywords="contact roofing contractors, get roofing quote, roofing consultants navi mumbai"
-            />
+            <SEO />
             {/* Hero Section */}
             <section className={styles.hero} style={{ '--hero-image': `url(${heroImage})` }}>
                 <div className={styles.container}>
@@ -67,13 +79,109 @@ const Contact = () => {
             <div className={styles.container}>
                 <div className={styles.content}>
 
+                    <div className={styles.formSection} id="contact-form" style={{ marginTop: 0, marginBottom: 'var(--spacing-3xl)' }}>
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.2 }}
+                            className={styles.formCard}
+                        >
+                            <AnimatePresence mode="wait">
+                                {submitStatus === 'success' ? (
+                                    <motion.div 
+                                        key="success"
+                                        initial={{ opacity: 0, scale: 0.9 }}
+                                        animate={{ opacity: 1, scale: 1 }}
+                                        exit={{ opacity: 0, scale: 0.9 }}
+                                        className={styles.successMessage}
+                                    >
+                                        <FaCheckCircle className={styles.successIcon} />
+                                        <h3>Message Sent Successfully!</h3>
+                                        <p>Thank you for reaching out. Our technical team will get back to you within 24 hours.</p>
+                                        <button onClick={() => setSubmitStatus(null)} className="btn-primary">Send Another Message</button>
+                                    </motion.div>
+                                ) : (
+                                    <motion.div key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+                                        <div className={styles.formHeader}>
+                                            <h2>Request a Site Visit</h2>
+                                            <p>Fill out the details below for a professional inspection and fixed-price quote.</p>
+                                        </div>
+                                        
+                                        <form onSubmit={handleSubmit} className={styles.contactForm}>
+                                            <div className={styles.formGrid}>
+                                                <div className={styles.inputGroup}>
+                                                    <label>Full Name</label>
+                                                    <input 
+                                                        type="text" 
+                                                        placeholder="Your Name" 
+                                                        required 
+                                                        value={formData.name}
+                                                        onChange={(e) => setFormData({...formData, name: e.target.value})}
+                                                    />
+                                                </div>
+                                                <div className={styles.inputGroup}>
+                                                    <label>Phone Number</label>
+                                                    <input 
+                                                        type="tel" 
+                                                        placeholder="Your Phone (10 digits)" 
+                                                        required 
+                                                        className={phoneError ? styles.inputError : ''}
+                                                        value={formData.phone}
+                                                        onChange={(e) => {
+                                                            const val = e.target.value.replace(/\D/g, '').slice(0, 10);
+                                                            setFormData({...formData, phone: val});
+                                                            if (phoneError) setPhoneError('');
+                                                        }}
+                                                    />
+                                                    {phoneError && <span className={styles.errorText}><FaExclamationCircle /> {phoneError}</span>}
+                                                </div>
+                                                <div className={styles.inputGroup}>
+                                                    <label>Email Address (Optional)</label>
+                                                    <input 
+                                                        type="email" 
+                                                        placeholder="Your Email" 
+                                                        value={formData.email}
+                                                        onChange={(e) => setFormData({...formData, email: e.target.value})}
+                                                    />
+                                                </div>
+                                                <div className={styles.inputGroupFull}>
+                                                    <label>How can we help you?</label>
+                                                    <textarea 
+                                                        rows="4" 
+                                                        placeholder="Enter your project details or requirements..." 
+                                                        required
+                                                        value={formData.message}
+                                                        onChange={(e) => setFormData({...formData, message: e.target.value})}
+                                                    ></textarea>
+                                                </div>
+                                            </div>
+                                            
+                                            {submitStatus === 'error' && (
+                                                <p className={styles.errorMessage}>Oops! Something went wrong. Please try again or call us directly.</p>
+                                            )}
+
+                                            <button 
+                                                type="submit" 
+                                                className="btn-primary" 
+                                                disabled={isSubmitting}
+                                            >
+                                                {isSubmitting ? 'Processing Submission...' : 'Get My Free Quote →'}
+                                            </button>
+                                        </form>
+                                    </motion.div>
+                                )}
+                            </AnimatePresence>
+                        </motion.div>
+                    </div>
+
                     {/* Contact Info Grid */}
                     <div className={styles.infoGrid}>
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: 0.2 }}
+                            transition={{ delay: 0.3 }}
                         >
                             <Card className={styles.infoCard}>
                                 <div className={styles.iconWrapper}>
@@ -93,7 +201,7 @@ const Contact = () => {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: 0.3 }}
+                            transition={{ delay: 0.4 }}
                         >
                             <Card className={styles.infoCard}>
                                 <div className={styles.iconWrapper}>
@@ -109,7 +217,7 @@ const Contact = () => {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: 0.4 }}
+                            transition={{ delay: 0.5 }}
                         >
                             <Card className={styles.infoCard}>
                                 <div className={styles.iconWrapper}>
@@ -121,85 +229,6 @@ const Contact = () => {
                                     View on Google Maps
                                 </a>
                             </Card>
-                        </motion.div>
-                    </div>
-
-                    <div className={styles.formSection} id="contact-form">
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.5 }}
-                            className={styles.formCard}
-                        >
-                            <div className={styles.formHeader}>
-                                <h2>Send us a Message</h2>
-                                <p>Fill out the form below and our team will get back to you within 24 hours.</p>
-                            </div>
-                            
-                            {submitStatus === 'success' ? (
-                                <div className={styles.successMessage}>
-                                    <h3>Message Sent Successfully!</h3>
-                                    <p>Thank you for reaching out. Our team will contact you shortly.</p>
-                                    <button onClick={() => setSubmitStatus(null)} className="btn-primary">Send Another Message</button>
-                                </div>
-                            ) : (
-                                <form onSubmit={handleSubmit} className={styles.contactForm}>
-                                    <div className={styles.formGrid}>
-                                        <div className={styles.inputGroup}>
-                                            <label>Full Name</label>
-                                            <input 
-                                                type="text" 
-                                                placeholder="Your Name" 
-                                                required 
-                                                value={formData.name}
-                                                onChange={(e) => setFormData({...formData, name: e.target.value})}
-                                            />
-                                        </div>
-                                        <div className={styles.inputGroup}>
-                                            <label>Phone Number</label>
-                                            <input 
-                                                type="tel" 
-                                                placeholder="Your Phone" 
-                                                required 
-                                                value={formData.phone}
-                                                onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                                            />
-                                        </div>
-                                        <div className={styles.inputGroup}>
-                                            <label>Email Address (Optional)</label>
-                                            <input 
-                                                type="email" 
-                                                placeholder="Your Email" 
-                                                value={formData.email}
-                                                onChange={(e) => setFormData({...formData, email: e.target.value})}
-                                            />
-                                        </div>
-                                        <div className={styles.inputGroupFull}>
-                                            <label>How can we help you?</label>
-                                            <textarea 
-                                                rows="4" 
-                                                placeholder="Enter your project details or requirements..." 
-                                                required
-                                                value={formData.message}
-                                                onChange={(e) => setFormData({...formData, message: e.target.value})}
-                                            ></textarea>
-                                        </div>
-                                    </div>
-                                    
-                                    {submitStatus === 'error' && (
-                                        <p className={styles.errorMessage}>Oops! Something went wrong. Please try again or call us directly.</p>
-                                    )}
-
-                                    <button 
-                                        type="submit" 
-                                        className="btn-primary" 
-                                        disabled={isSubmitting}
-                                    >
-                                        {isSubmitting ? 'Sending Message...' : 'Send Message'}
-                                    </button>
-                                </form>
-                            )}
                         </motion.div>
                     </div>
 

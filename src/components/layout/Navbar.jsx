@@ -46,9 +46,14 @@ const Navbar = () => {
                     ))}
                 </ul>
 
-                <a href={`tel:${CONTACT_INFO.phones[0]}`} className={styles.ctaButton}>
-                    Call: {CONTACT_INFO.phones[0]}
-                </a>
+                <div className={styles.navActions}>
+                    <Link to="/contact" className={styles.primaryBtn}>
+                        Get a Free Quote
+                    </Link>
+                    <a href={`tel:${CONTACT_INFO.phones[0]}`} className={styles.secondaryBtn}>
+                        Call: {CONTACT_INFO.phones[0]}
+                    </a>
+                </div>
 
                 {/* Mobile Menu Toggle */}
                 <button
@@ -91,10 +96,18 @@ const Navbar = () => {
                                 initial={{ opacity: 0, x: -20 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ delay: navLinks.length * 0.1 }}
+                                className={styles.mobileActionGroup}
                             >
+                                <Link
+                                    to="/contact"
+                                    className={styles.mobilePrimaryBtn}
+                                    onClick={() => setIsOpen(false)}
+                                >
+                                    Get a Free Quote
+                                </Link>
                                 <a
                                     href={`tel:${CONTACT_INFO.phones[0]}`}
-                                    className={styles.mobileCta}
+                                    className={styles.mobileSecondaryBtn}
                                     onClick={() => setIsOpen(false)}
                                 >
                                     Call Now

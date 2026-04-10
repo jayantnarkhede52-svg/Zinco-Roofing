@@ -80,43 +80,81 @@
     padding: 0 var(--spacing-lg);
 }
 
-.titleWrapper {
-    margin-bottom: var(--spacing-md);
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-xs) var(--spacing-md);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-full);
+    color: var(--text-inverse);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    margin-bottom: var(--spacing-lg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.badgeDot {
+    width: 8px;
+    height: 8px;
+    background: var(--accent-400);
+    border-radius: 50%;
+    box-shadow: 0 0 8px var(--accent-400);
 }
 
 .title {
-    font-size: clamp(3rem, 10vw, 6.5rem);
-    font-weight: 300;
+    font-size: clamp(2.5rem, 8vw, 5.5rem);
+    font-weight: 300; /* Lighter weight for a more premium look */
     font-family: var(--font-heading);
-    letter-spacing: -0.04em;
-    line-height: 1.1;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
     margin-bottom: var(--spacing-md);
-    color: var(--text-inverse);
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
-}
-
-.underline {
-    width: 140px;
-    height: 4px;
-    margin: var(--spacing-sm) auto var(--spacing-md);
-    background: var(--gradient-accent);
-    border-radius: var(--radius-full);
-}
-
-.subtitle {
-    font-size: clamp(1.25rem, 3vw, 2rem);
-    font-weight: 600;
-    color: var(--text-inverse);
-    margin-bottom: var(--spacing-sm);
-    line-height: 1.4;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
-}
-
-.highlight {
     color: #ffffff;
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.title span {
+    display: inline-block;
     font-weight: 800;
-    text-shadow: none;
-    filter: none;
+    background: linear-gradient(
+        to right,
+        #60a5fa 20%, 
+        #93c5fd 30%, 
+        #ffffff 70%, 
+        #93c5fd 80%, 
+        #60a5fa 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #3b82f6; /* Fallback */
+    animation: textShimmer 3s linear infinite;
+    position: relative;
+    padding-bottom: 4px;
+    z-index: 1;
+}
+
+@keyframes textShimmer {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.title span::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #3b82f6, #60a5fa, transparent);
+    border-radius: 2px;
 }
 
 .description {
@@ -202,38 +240,50 @@
 /* Responsive */
 @media (max-width: 768px) {
     .hero {
-        min-height: 75vh; /* Reduced height to show next section */
-        padding-top: 60px;
+        min-height: 85vh; /* Gives proper breathing room on mobile without forcing scroll early */
+        padding-top: 80px;
+    }
+
+    .badge {
+        font-size: 0.75rem;
+        padding: 0.4rem 1rem;
+        margin-bottom: var(--spacing-md);
     }
 
     .title {
-        font-size: clamp(2rem, 10vw, 3.5rem);
-        font-weight: 800;
+        font-size: clamp(2rem, 9vw, 3rem);
+        margin-bottom: var(--spacing-sm);
     }
-
-    .buttonGroup {
-        flex-direction: row;
-        gap: var(--spacing-sm);
-        justify-content: center;
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .buttonGroup>* {
-        width: auto;
-        flex: 1;
-        font-size: 0.85rem;
-        padding: 0.6rem 1rem;
+    
+    .title span {
+        border-bottom: 2px solid var(--accent-500);
+        padding-bottom: 2px;
     }
 
     .description {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
         padding: 0 var(--spacing-sm);
         margin-bottom: var(--spacing-lg);
+        line-height: 1.5;
+    }
+
+    .buttonGroup {
+        flex-direction: column; /* Stack buttons on mobile for wider touch targets */
+        gap: var(--spacing-md);
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .buttonGroup>* {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.8rem 1.2rem;
+        border-radius: var(--radius-lg);
     }
 
     .scrollIndicator {
-        display: none; /* Hide scroll indicator on small screens to save space */
+        display: none; 
     }
 }
 

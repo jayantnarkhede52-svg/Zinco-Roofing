@@ -150,4 +150,33 @@
     .card {
         padding: var(--spacing-lg);
     }
+
+    .inputGroup label {
+        font-size: var(--text-base);
+    }
+
+    .valueDisplay {
+        font-size: var(--text-3xl);
+    }
+
+    .estimateLabel {
+        font-size: var(--text-base);
+    }
+
+    .price {
+        font-size: var(--text-3xl);
+    }
+
+    .miniInput {
+        font-size: var(--text-base);
+        padding: 12px;
+    }
+
+    .header h2 {
+        font-size: var(--text-3xl);
+    }
+
+    .header p {
+        font-size: var(--text-base);
+    }
 }

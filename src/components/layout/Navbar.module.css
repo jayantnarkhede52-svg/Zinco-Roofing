@@ -17,12 +17,13 @@
 }
 
 .container {
-    max-width: 1280px;
+    max-width: 1440px;
     margin: 0 auto;
-    padding: var(--spacing-sm) var(--spacing-lg);
+    padding: var(--spacing-xs) var(--spacing-lg);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: var(--spacing-md);
 }
 
 .logo {
@@ -39,22 +40,20 @@
 .logoWrapper {
     display: flex;
     align-items: center;
-    background-color: white;
-    padding: 4px 12px;
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-sm);
-    border: 1px solid var(--gray-100);
+    background-color: transparent;
 }
 
 .logoImage {
-    height: 44px;
-    width: auto;
+    height: 55px;
+    width: 100%;
+    min-width: 180px;
     object-fit: contain;
+    object-position: left center;
 }
 
 .navLinks {
     display: flex;
-    gap: var(--spacing-xl);
+    gap: var(--spacing-md);
     list-style: none;
     margin: 0;
     padding: 0;
@@ -65,10 +64,11 @@
     color: var(--text-primary);
     font-family: var(--font-heading);
     font-weight: 700;
-    font-size: var(--text-sm);
+    font-size: 0.85rem;
     text-decoration: none;
-    padding: var(--spacing-xs) var(--spacing-sm);
+    padding: var(--spacing-xs) var(--spacing-xs);
     transition: color var(--transition-base);
+    white-space: nowrap;
 }
 
 .navLink:hover {
@@ -89,24 +89,44 @@
     border-radius: var(--radius-full);
 }
 
-.ctaButton {
+.navActions {
+    display: flex;
+    gap: var(--spacing-sm);
+    align-items: center;
+}
+
+.primaryBtn, .secondaryBtn {
     padding: 0.6rem 1.2rem;
-    background: var(--gradient-accent);
-    color: white;
     font-family: var(--font-heading);
     font-weight: 700;
     border-radius: var(--radius-md);
     text-decoration: none;
     transition: all var(--transition-base);
-    box-shadow: var(--shadow-md);
     font-size: 0.8rem;
     white-space: nowrap;
 }
 
-.ctaButton:hover {
+.primaryBtn {
+    background: var(--accent-600);
+    color: white;
+    box-shadow: var(--shadow-md);
+}
+
+.primaryBtn:hover {
     transform: translateY(-2px);
+    background: var(--accent-700);
     box-shadow: var(--shadow-lg);
-    filter: brightness(1.1);
+}
+
+.secondaryBtn {
+    background: transparent;
+    color: var(--accent-600);
+    border: 2px solid var(--accent-600);
+}
+
+.secondaryBtn:hover {
+    transform: translateY(-2px);
+    background: var(--accent-50);
 }
 
 .menuToggle {
@@ -124,10 +144,10 @@
 }
 
 /* Mobile Responsive */
-@media (max-width: 768px) {
+@media (max-width: 1250px) {
 
     .navLinks,
-    .ctaButton {
+    .navActions {
         display: none;
     }
 
@@ -141,11 +161,12 @@
         top: 100%;
         left: 0;
         right: 0;
-        background: var(--bg-primary);
+        background: #ffffff;
         backdrop-filter: blur(12px);
         border-bottom: 2px solid var(--gray-200);
         overflow: hidden;
         box-shadow: var(--shadow-xl);
+        z-index: 100;
     }
 
     .mobileNavLinks {
@@ -173,17 +194,38 @@
         color: var(--accent-600);
     }
 
-    .mobileCta {
-        display: block;
+    .mobileActionGroup {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-sm);
         margin-top: var(--spacing-md);
-        padding: var(--spacing-lg);
-        background: var(--gradient-accent);
+        margin-bottom: var(--spacing-md);
+        padding: 0 var(--spacing-lg);
+    }
+
+    .mobilePrimaryBtn {
+        display: block;
+        padding: var(--spacing-md);
+        background: var(--accent-600);
         color: white;
         font-family: var(--font-heading);
         font-weight: 700;
         text-align: center;
         border-radius: var(--radius-md);
         text-decoration: none;
-        box-shadow: var(--shadow-lg);
+        box-shadow: var(--shadow-md);
+    }
+
+    .mobileSecondaryBtn {
+        display: block;
+        padding: var(--spacing-md);
+        background: transparent;
+        color: var(--accent-600);
+        border: 2px solid var(--accent-600);
+        font-family: var(--font-heading);
+        font-weight: 700;
+        text-align: center;
+        border-radius: var(--radius-md);
+        text-decoration: none;
     }
 }

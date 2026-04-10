@@ -1,26 +1,24 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import PropTypes from 'prop-types';
 import { useLocation } from 'react-router-dom';
-
-import { supabase } from '../../lib/supabase';
+import { siteData } from '../../data/siteData';
 
 const SEO = ({ title: propTitle, description: propDesc, keywords: propKeywords, canonicalUrl, schema }) => {
     const location = useLocation();
+    
+    // Look up page data from central siteData based on current path
+    const pageData = siteData.pages[location.pathname] || {};
 
-    const title = propTitle;
-    const description = propDesc;
-    const keywords = propKeywords;
+    // Prioritize props, fallback to central siteData, then final defaults
+    const title = propTitle || pageData.title || 'Zinco Roofing Solutions';
+    const description = propDesc || pageData.description || 'Professional industrial roofing solutions in Navi Mumbai and Maharashtra.';
+    const keywords = propKeywords || pageData.keywords || 'industrial roofing, roofing contractors, navi mumbai';
 
     const resolveCanonical = () => {
         if (canonicalUrl) return canonicalUrl;
-        if (typeof window !== 'undefined') {
-            // Force www for canonical to match Vercel redirect rules
-            const hostname = window.location.hostname;
-            const domain = hostname === 'localhost' ? 'http://localhost:5173' : 'https://www.zincoroof.com';
-            return `${domain}${window.location.pathname}`;
-        }
-        return `https://www.zincoroof.com${location.pathname}`;
+        const domain = 'https://www.zincoroof.com';
+        return `${domain}${location.pathname === '/' ? '' : location.pathname}`;
     };
 
     const finalCanonical = resolveCanonical();
@@ -64,11 +62,9 @@ const SEO = ({ title: propTitle, description: propDesc, keywords: propKeywords, 
         }
     };
 
-    // Generate BreadcrumbList Schema if we are not on the home page
+    // Generate BreadcrumbList Schema
     const getBreadcrumbSchema = () => {
-        if (typeof window === 'undefined') return null;
-        
-        const pathnames = window.location.pathname.split('/').filter(x => x);
+        const pathnames = location.pathname.split('/').filter(x => x);
         if (pathnames.length === 0) return null;
 
         const items = [
@@ -102,7 +98,7 @@ const SEO = ({ title: propTitle, description: propDesc, keywords: propKeywords, 
     return (
         <Helmet>
             {/* Standard Metadata */}
-            <title>{title} | Zinco Roofing</title>
+            <title>{title}</title>
             <meta name="description" content={description} />
             {keywords && <meta name="keywords" content={keywords} />}
             {finalCanonical && <link rel="canonical" href={finalCanonical} />}
@@ -132,8 +128,8 @@ const SEO = ({ title: propTitle, description: propDesc, keywords: propKeywords, 
 };
 
 SEO.propTypes = {
-    title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
+    title: PropTypes.string,
+    description: PropTypes.string,
     keywords: PropTypes.string,
     canonicalUrl: PropTypes.string,
     schema: PropTypes.object
