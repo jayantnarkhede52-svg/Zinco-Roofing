@@ -15,12 +15,7 @@
       "statusCode": 308
     }
   ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ],
+  "rewrites": [],
   "headers": [
     {
       "source": "/assets/(.*)",
