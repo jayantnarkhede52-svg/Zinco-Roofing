@@ -18,6 +18,41 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
+<!-- START TRACKING -->
+<!-- START TRACKING -->
+<!-- Google Tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3JJPF4HP18"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  // Analytics Measurement ID
+  gtag('config', 'G-3JJPF4HP18');
+  
+  // Google Ads ID (Replace AW-PLACEHOLDER when you get it)
+  // gtag('config', 'AW-PLACEHOLDER');
+</script>
+
+<!-- Event snippet for Website lead conversion page -->
+<script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        // Replace with your AW-ID and Label when you get them
+        'send_to': 'G-3JJPF4HP18', 
+        'event_callback': callback
+    });
+    return false;
+  }
+</script>
+<!-- END TRACKING -->
+
+<!-- END TRACKING -->
 </head>
 <body>
 
@@ -32,10 +67,12 @@
 <!-- MASTER HEADER SOURCE -->
 <!-- MASTER HEADER SOURCE -->
 <!-- MASTER HEADER SOURCE -->
+<!-- MASTER HEADER SOURCE -->
+<!-- MASTER HEADER SOURCE -->
 <nav class="navbar">
     <div class="container nav-container">
         <a href="index.html" class="logo">
-            <img src="assets/logo.webp" alt="Zinco Roofing Solution">
+            <img src="src/assets/logo.webp" alt="Zinco Roofing Solution">
         </a>
         <ul class="nav-links">
             <li><a href="index.html" class="nav-link">Home</a></li>
@@ -66,6 +103,8 @@
         <a href="tel:9967203090" class="btn-outline" style="margin-top:10px; display:block; text-align:center;">Call: 9967203090</a>
     </div>
 </nav>
+
+
 
 
 
@@ -195,10 +234,12 @@
 <!-- MASTER FOOTER SOURCE -->
 <!-- MASTER FOOTER SOURCE -->
 <!-- MASTER FOOTER SOURCE -->
+<!-- MASTER FOOTER SOURCE -->
+<!-- MASTER FOOTER SOURCE -->
 <footer class="footer">
     <div class="container footer-grid">
         <div class="footer-brand">
-            <img src="assets/logo.webp" alt="Zinco Roofing" style="height:60px; margin-bottom:20px;">
+            <img src="src/assets/logo.webp" alt="Zinco Roofing" style="height:60px; margin-bottom:20px;">
             <p style="font-size:0.9rem; color:var(--text-secondary); line-height:1.6;">
                 Leading Industrial Roofing & PEB Structure solutions in Navi Mumbai, Mumbai & Thane. 8+ years of structural excellence.
             </p>
@@ -385,6 +426,8 @@
         });
     </script>
 </footer>
+
+
 
 
 

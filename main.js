@@ -108,6 +108,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     formStatus.style.color = '#10b981';
                     formStatus.innerText = 'Thank you! We have received your request.';
                     quoteForm.reset();
+
+                    // Trigger Google Ads Conversion
+                    if (typeof gtag_report_conversion === 'function') {
+                        gtag_report_conversion();
+                    }
                 } else {
                     console.error('Supabase library not loaded');
                     formStatus.style.color = '#ef4444';

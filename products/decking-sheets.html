@@ -18,11 +18,48 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="../style.css">
+<!-- START TRACKING -->
+<!-- START TRACKING -->
+<!-- Google Tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3JJPF4HP18"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  // Analytics Measurement ID
+  gtag('config', 'G-3JJPF4HP18');
+  
+  // Google Ads ID (Replace AW-PLACEHOLDER when you get it)
+  // gtag('config', 'AW-PLACEHOLDER');
+</script>
+
+<!-- Event snippet for Website lead conversion page -->
+<script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        // Replace with your AW-ID and Label when you get them
+        'send_to': 'G-3JJPF4HP18', 
+        'event_callback': callback
+    });
+    return false;
+  }
+</script>
+<!-- END TRACKING -->
+
+<!-- END TRACKING -->
 </head>
 <body>
 
     <!-- Navbar -->
     <!-- MASTER HEADER SOURCE -->
+<!-- MASTER HEADER SOURCE -->
+<!-- MASTER HEADER SOURCE -->
 <!-- MASTER HEADER SOURCE -->
 <!-- MASTER HEADER SOURCE -->
 <!-- MASTER HEADER SOURCE -->
@@ -66,6 +103,8 @@
         <a href="tel:9967203090" class="btn-outline" style="margin-top:10px; display:block; text-align:center;">Call: 9967203090</a>
     </div>
 </nav>
+
+
 
 
 
@@ -243,6 +282,8 @@
 
     <!-- Footer -->
     <!-- MASTER FOOTER SOURCE -->
+<!-- MASTER FOOTER SOURCE -->
+<!-- MASTER FOOTER SOURCE -->
 <!-- MASTER FOOTER SOURCE -->
 <!-- MASTER FOOTER SOURCE -->
 <!-- MASTER FOOTER SOURCE -->
@@ -442,6 +483,8 @@
         });
     </script>
 </footer>
+
+
 
 
 

@@ -6,6 +6,7 @@ const ROOT_DIR = process.cwd();
 const HEADER_PATH = path.join(ROOT_DIR, 'templates/header.html');
 const FOOTER_PATH = path.join(ROOT_DIR, 'templates/footer.html');
 const CONTACT_PATH = path.join(ROOT_DIR, 'templates/contact-form.html');
+const TRACKING_PATH = path.join(ROOT_DIR, 'templates/tracking-scripts.html');
 
 console.log(`Root Dir: ${ROOT_DIR}`);
 
@@ -17,6 +18,7 @@ if (!fs.existsSync(HEADER_PATH) || !fs.existsSync(FOOTER_PATH) || !fs.existsSync
 const headerTemplate = fs.readFileSync(HEADER_PATH, 'utf8');
 const footerTemplate = fs.readFileSync(FOOTER_PATH, 'utf8');
 const contactTemplate = fs.readFileSync(CONTACT_PATH, 'utf8');
+const trackingTemplate = fs.existsSync(TRACKING_PATH) ? fs.readFileSync(TRACKING_PATH, 'utf8') : '';
 
 function processFile(filePath) {
     let content = fs.readFileSync(filePath, 'utf8');
@@ -38,11 +40,13 @@ function processFile(filePath) {
     const newHeader = fixPaths(headerTemplate, prefix);
     const newFooter = fixPaths(footerTemplate, prefix);
     const newContact = fixPaths(contactTemplate, prefix);
+    const newTracking = trackingTemplate; // Scripts usually use absolute URLs anyway
 
     // Regex for replacements
     const navRegex = /<nav class="navbar">[\s\S]*?<\/nav>/;
     const footerRegex = /<footer class="footer">[\s\S]*?<\/footer>/;
     const contactRegex = /<section id="quote"[\s\S]*?<\/section>/;
+    const trackingRegex = /<!-- START TRACKING -->[\s\S]*?<!-- END TRACKING -->/;
 
     let modified = false;
 
@@ -64,6 +68,18 @@ function processFile(filePath) {
         const contactClassRegex = /<section class="quote-section"[\s\S]*?<\/section>/;
         if (contactClassRegex.test(content)) {
             content = content.replace(contactClassRegex, newContact);
+            modified = true;
+        }
+    }
+
+    // Sync Tracking Scripts
+    if (newTracking) {
+        const wrappedTracking = `<!-- START TRACKING -->\n${newTracking}\n<!-- END TRACKING -->`;
+        if (trackingRegex.test(content)) {
+            content = content.replace(trackingRegex, wrappedTracking);
+            modified = true;
+        } else if (content.includes('</head>')) {
+            content = content.replace('</head>', `${wrappedTracking}\n</head>`);
             modified = true;
         }
     }
