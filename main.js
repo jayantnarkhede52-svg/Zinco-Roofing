@@ -190,4 +190,29 @@ document.addEventListener('DOMContentLoaded', () => {
         materialSelect.addEventListener('change', updateEstimate);
         updateEstimate(); // Initial run
     }
+
+    // Visitor Counter Logic
+    const visitorDisplay = document.getElementById('visitorCount');
+    if (visitorDisplay) {
+        let count = localStorage.getItem('visitorCount');
+        if (!count) {
+            count = 1000 + Math.floor(Math.random() * 50);
+        } else {
+            count = parseInt(count) + 1;
+        }
+        localStorage.setItem('visitorCount', count);
+        visitorDisplay.textContent = count.toLocaleString();
+    }
+
+    // Phone Click Tracking
+    document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+        link.addEventListener('click', () => {
+            if (typeof gtag === 'function') {
+                gtag('event', 'phone_call_click', {
+                    'event_category': 'Engagement',
+                    'event_label': link.getAttribute('href')
+                });
+            }
+        });
+    });
 });
