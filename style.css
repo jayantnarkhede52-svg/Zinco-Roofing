@@ -1167,21 +1167,56 @@ img {
   display: flex;
   align-items: center;
   gap: var(--spacing-3xl);
-  padding: var(--spacing-4xl) 0;
+  padding: var(--spacing-3xl) 0;
 }
 
 .service-row.reverse {
   flex-direction: row-reverse;
 }
 
-.service-visual, .service-text {
+.service-text {
   flex: 1;
+}
+
+.service-visual {
+  flex: 0 0 320px;
+  width: 320px;
+  height: 320px;
+  display: flex;
 }
 
 .service-visual img {
   border-radius: var(--radius-2xl);
   box-shadow: var(--shadow-2xl);
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .service-row,
+  .service-row.reverse {
+    flex-direction: column;
+  }
+  .service-visual {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 280px;
+  }
+}
+
+.image-card-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.matching-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-2xl);
 }
 
 .icon-circle {
@@ -2937,4 +2972,82 @@ img {
     background: radial-gradient(circle, rgba(37,99,235,0.04) 0%, transparent 70%);
     border-radius: 50%;
     pointer-events: none;
+}
+
+/* Technical Table Styles */
+.tech-table-wrapper {
+    overflow-x: auto;
+    background: #ffffff;
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-md);
+    border: 1px solid var(--gray-200);
+    margin: 40px auto;
+    box-shadow: var(--shadow-sm);
+}
+
+.tech-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.tech-table th, .tech-table td {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-bottom: 1px solid var(--gray-100);
+    text-align: center;
+}
+
+.tech-table th {
+    font-weight: 700;
+    color: var(--text-primary);
+    background: var(--accent-50);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid var(--accent-500);
+}
+
+.tech-table td {
+    color: var(--text-secondary);
+    font-family: inherit;
+    font-size: 0.95rem;
+}
+
+.tech-table tbody tr:hover {
+    background: var(--gray-50);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SPECS TABLE (Product Cards)
+   ═══════════════════════════════════════════════════════════════ */
+.specs-table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.spec-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--gray-100);
+}
+
+.spec-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.spec-label {
+    font-weight: 600;
+    color: var(--text-primary);
+    text-align: left;
+    flex: 1;
+}
+
+.spec-value {
+    color: var(--text-secondary);
+    text-align: right;
+    flex: 1;
 }
