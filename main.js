@@ -15,8 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (icon) {
                 if (mobileMenu.classList.contains('active')) {
                     icon.className = 'fas fa-times'; // Assuming FontAwesome is used
+                    document.body.style.overflow = 'hidden'; // Prevent background scrolling
                 } else {
                     icon.className = 'fas fa-bars';
+                    document.body.style.overflow = ''; // Restore scrolling
                 }
             }
         });
@@ -27,6 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileLinks.forEach(link => {
         link.addEventListener('click', () => {
             mobileMenu.classList.remove('active');
+            document.body.style.overflow = ''; // Restore scrolling
+            const icon = menuToggle.querySelector('i');
+            if (icon) {
+                icon.className = 'fas fa-bars';
+            }
         });
     });
 

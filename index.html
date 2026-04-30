@@ -15,7 +15,11 @@
     <meta property="og:site_name" content="Zinco Roofing">
     
     <!-- Fonts -->
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@300;700;800&display=swap" rel="stylesheet">
     
@@ -91,7 +95,7 @@
             <li><a href="products.html" class="nav-link">Products</a></li>
             <li><a href="projects.html" class="nav-link">Projects</a></li>
             <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-            <li><a href="calculator.html" class="nav-link">Calculator</a></li>
+            <li><a href="blog.html" class="nav-link">Blog</a></li>
             <li><a href="areas.html" class="nav-link">Areas</a></li>
             <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
@@ -108,7 +112,7 @@
         <a href="products.html" class="nav-link">Products</a>
         <a href="projects.html" class="nav-link">Projects</a>
         <a href="gallery.html" class="nav-link">Gallery</a>
-        <a href="calculator.html" class="nav-link">Calculator</a>
+        <a href="blog.html" class="nav-link">Blog</a>
         <a href="areas.html" class="nav-link">Areas</a>
         <a href="contact.html" class="nav-link">Contact</a>
         <a href="tel:9967203090" class="btn-outline" style="margin-top:10px; display:block; text-align:center;">Call: 9967203090</a>
@@ -217,7 +221,7 @@
                 <div class="project-card">
                     <a href="projects.html" class="project-link-overlay" aria-label="View Project Details"></a>
                     <div class="project-image-wrapper">
-                        <img loading="lazy" src="assets/projects/vortex-badlapur.webp" alt="Knott Vortex Badlapur">
+                        <img loading="lazy" decoding="async" src="assets/projects/vortex-badlapur.webp" alt="Knott Vortex Badlapur">
                     </div>
                     <div class="project-content">
                         <div class="project-header-row">
@@ -236,7 +240,7 @@
                 <div class="project-card">
                     <a href="projects.html" class="project-link-overlay" aria-label="View Project Details"></a>
                     <div class="project-image-wrapper">
-                        <img loading="lazy" src="assets/projects/Godreh-ambarnath.webp" alt="Godrej Industry Ltd Ambernath">
+                        <img loading="lazy" decoding="async" src="assets/projects/Godreh-ambarnath.webp" alt="Godrej Industry Ltd Ambernath">
                     </div>
                     <div class="project-content">
                         <div class="project-header-row">
@@ -255,7 +259,7 @@
                 <div class="project-card">
                     <a href="projects.html" class="project-link-overlay" aria-label="View Project Details"></a>
                     <div class="project-image-wrapper">
-                        <img loading="lazy" src="assets/projects/Valvoline-ambarnath.webp" alt="Valvoline Cummins Ltd Ambernath">
+                        <img loading="lazy" decoding="async" src="assets/projects/Valvoline-ambarnath.webp" alt="Valvoline Cummins Ltd Ambernath">
                     </div>
                     <div class="project-content">
                         <div class="project-header-row">
@@ -304,7 +308,7 @@
                 <div class="services-grid" style="margin-top:50px;">
                     <div class="service-card">
                         <div class="service-image-box">
-                            <img loading="lazy" src="assets/img1.webp" alt="Roofing Metal Sheets Navi Mumbai">
+                            <img loading="lazy" decoding="async" src="assets/img1.webp" alt="Roofing Metal Sheets Navi Mumbai">
                         </div>
                         <div class="service-content">
                             <h3>Metal Roofing Sheets</h3>
@@ -314,7 +318,7 @@
                     </div>
                     <div class="service-card">
                         <div class="service-image-box">
-                            <img loading="lazy" src="assets/img2.webp" alt="PUF Panel Manufacturer Navi Mumbai">
+                            <img loading="lazy" decoding="async" src="assets/img2.webp" alt="PUF Panel Manufacturer Navi Mumbai">
                         </div>
                         <div class="service-content">
                             <h3>PUF Panel Insulation</h3>
@@ -324,7 +328,7 @@
                     </div>
                     <div class="service-card">
                         <div class="service-image-box">
-                            <img loading="lazy" src="assets/img3.webp" alt="Polycarbonate Sheets Navi Mumbai">
+                            <img loading="lazy" decoding="async" src="assets/img3.webp" alt="Polycarbonate Sheets Navi Mumbai">
                         </div>
                         <div class="service-content">
                             <h3>Polycarbonate Sheets</h3>
@@ -573,6 +577,11 @@
             <i class="fas fa-users" style="margin-right: 5px;"></i> Total Visitors: <span id="visitorCount" style="font-weight: 600; color: var(--accent-600);">1,000</span>
         </div>
     </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919967203090" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <!-- Automated Chatbot -->
     <div class="chatbot-bubble" id="chatBuddy" aria-label="Open Chat">
